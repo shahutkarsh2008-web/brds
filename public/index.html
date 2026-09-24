@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BRDS | Connection check</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div class="brand">BRDS <span>Bhanwar Rathore Design Studio</span></div><span class="location">RAIPUR</span></header>
+<nav>CBT EXAM SYSTEM <span>PHASE 0 / SETUP</span></nav>
+<main>
+<p class="eyebrow">BUILDING THE FOUNDATION</p>
+<h1>A connected start.</h1>
+<p class="intro">Check that this device can reach the exam server and exchange live messages. Exam features will follow in the next build phases.</p>
+<section class="checks" aria-label="Service status">
+<article><span class="number">01</span><h2>Server & database</h2><p id="health" role="status">Checking connection…</p><button id="check" type="button">Check again</button></article>
+<article><span class="number">02</span><h2>Live connection</h2><p id="socket" role="status">Connecting…</p><p class="hint">WebSocket / same server</p></article>
+</section>
+<section class="echo"><div><p class="eyebrow">DEVICE CONNECTION TEST</p><h2>Send a message. See it return.</h2><p>Try this on both your phone and PC after deployment.</p></div><form id="echo-form"><label for="message">Test message</label><div class="input-row"><input id="message" maxlength="500" value="Hello from BRDS Raipur" required><button id="send" disabled>Send test</button></div></form><output id="reply" aria-live="polite">Your returned message will appear here.</output></section>
+<footer><span>BRDS RAIPUR · COMPUTER-BASED TESTING</span><span>Setup preview · No student data</span></footer>
+</main></body></html>

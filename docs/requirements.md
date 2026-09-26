@@ -41,4 +41,4 @@ One browser application and Node backend for BRDS Raipur, usable on PC and phone
 7. Analytics/branding: full student history, section scores, ranked batch results.
 8. Pilot: 10–15 real students before a full batch.
 
-The build guide specifies confirmation between phases. Current implementation covers the local Phase 0 shell only; public deployment and cross-device acceptance remain pending. Do not label the complete exam system or Phase 0 acceptance as finished.
+The user explicitly requested the remaining Phase 0 work and Phase 1 together. Phase 0 is publicly deployed and its HTTP/PostgreSQL/WebSocket checks pass; the user confirmed the actual-phone test passed on 26 September 2026, completing Phase 0. Phase 1 authentication is implemented and deployed with 19 passing automated tests; real 2Factor setup, OTP delivery and separate-device login acceptance remain pending. The complete exam system is not finished.

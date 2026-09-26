@@ -1,8 +1,8 @@
 # BRDS CBT exam system
 
-Phase 0 hosting shell, in one Node.js application. No exam or authentication logic yet.
+One Node.js backend serves the student, teacher and admin pages, HTTP APIs and WebSockets. Phase 1 authentication is implemented; exam features start in Phase 2.
 
-## Local run
+## Run locally
 
 Requires Node.js 24.15+ (24.x).
 
@@ -12,33 +12,41 @@ npm test
 npm start
 ```
 
-Open http://localhost:3000. A local SQLite database is created at `data/brds.sqlite`. The status page checks the database and lets you test an actual WebSocket message round-trip. Optional configuration goes in `.env` (see `.env.example`); never commit secrets.
+Open http://localhost:3000 for sign-in, or http://localhost:3000/setup for database and WebSocket diagnostics. Local SQLite is stored in `data/brds.sqlite`. Optional private configuration goes in `.env`; see `.env.example`. Never commit real credentials.
 
-## Render deployment
+## Authentication
 
-1. Push this project to your GitHub repository, excluding `.env`, `data`, `node_modules` and `tmp`.
-2. Create/select a Render PostgreSQL database in the same region as the web service. Review its current plan, persistence and expiry conditions before selecting it. No database purchase is automated by this project.
-3. Create a Render Blueprint from the repository using `render.yaml`, or create a Node web service with build `npm ci`, start `npm start`, and health path `/health`.
-4. Set `NODE_ENV=production` and set `DATABASE_URL` to the database's internal connection URL in Render's secret/environment settings. Do not paste the credential into chat or source control.
-5. Deploy. The server binds to `0.0.0.0` and Render's `PORT`. Production startup fails if PostgreSQL is missing; it will not silently use an ephemeral SQLite file.
-6. On both PC and phone, visit the public HTTPS URL. Verify server/database status, send a unique test message, and confirm the exact reply appears. Record URL, devices, time and results in `docs/phase-0-acceptance.md`.
+Admin-issued ID/password, followed by 2Factor mobile OTP. Database-backed sessions survive reload and restart. Student, teacher and admin roles are enforced on server routes and APIs. Admins can create accounts after completing their own OTP sign-in.
 
-Render's free web service is configured for this shell. Validate the chosen hosting plan's sleep/restart behavior before real exams; a passing local smoke test is not a hosted endurance test.
+No accounts or fixed OTP codes are installed by default. See [Phase 1 setup](docs/phase-1-setup.md) for provider configuration and first-administrator bootstrap.
 
-Browser console equivalent:
+## Render
 
-```js
-const socket = new WebSocket(`wss://${location.host}/ws`);
-socket.onmessage = event => console.log('Echo:', event.data);
-socket.onopen = () => socket.send('BRDS device check');
+Repository: https://github.com/shahutkarsh2008-web/brds
+
+- Node web service, Singapore, free plan for initial verification.
+- Build: `npm ci`; start: `npm start`; health path: `/health`.
+- Set `NODE_ENV=production` and the private internal PostgreSQL `DATABASE_URL`.
+- Render's `RENDER_EXTERNAL_URL` supplies the allowed HTTPS origin. Set `APP_ORIGIN` explicitly when using a custom domain.
+- Configure `TWOFACTOR_API_KEY` and optional approved `TWOFACTOR_TEMPLATE`.
+- Set the four `BOOTSTRAP_ADMIN_*` secrets only for first-admin creation, then remove them.
+- Production requires PostgreSQL and an HTTPS origin; it never falls back to ephemeral SQLite.
+- `render.yaml` is available for Blueprint deployment. The current service was submitted through the dashboard using the public repository; verify its auto-deploy behavior or deploy new commits manually.
+
+Render's free database is suitable for this initial check, not indefinite data retention. The created instance shows expiry on October 25, 2026. Free web services can sleep or restart. Review hosting before real exams. [Render free-tier limits](https://render.com/docs/free)
+
+After the live URL is known:
+
+```sh
+npm run deployment:check -- https://YOUR-SERVICE.onrender.com
 ```
 
-Endpoints: `GET /health` returns 200 after a successful database query, or 503 on failure. `/ws` echoes text/binary messages up to 16 KiB and uses ping/pong heartbeats. The echo is a temporary Phase 0 diagnostic, not the future authenticated exam transport.
+This checks hosted PostgreSQL health, a secure WebSocket round-trip, and rejection of unauthenticated teacher requests. It does not substitute for a real phone test or OTP delivery test.
 
-## Verification and boundaries
+## Tests and boundaries
 
-`npm test` checks HTTP routes, database health failure, exact text/binary WebSocket echoes, rejected cross-origin connections, SQLite persistence and production configuration guards. PostgreSQL must also be verified against the actual hosted database; local SQLite tests do not verify it. No load-test or student-readiness claim is made.
+`npm test` runs 19 tests, including authorization, OTP expiry/attempt limits/replay/concurrent verification, account issuance, logout, WebSocket authentication, persistent sessions across restart, and production cookies. Provider tests use simulated responses and do not send SMS.
 
-See `docs/requirements.md` for the reconciled scope and outstanding decisions. Follow the build guide's phase checkpoints before adding the next phase.
+Public endpoints: `/`, `/login`, `/setup`, `/health`, diagnostic `/ws`. Protected pages: `/student`, `/teacher`, `/admin`. Authenticated connection: `/session-ws`.
 
-Official deployment references: [Render health checks](https://render.com/docs/health-checks), [Render WebSockets](https://render.com/docs/websocket), [Render web services](https://render.com/docs/web-services).
+No exam engine, scoring, proctor controls, load-test acceptance or real-student pilot is claimed. See the Phase 0 and Phase 1 completion reports for verified versus pending work.

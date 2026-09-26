@@ -74,3 +74,14 @@ test('SQLite stores schema metadata across reopening the file', async () => {
 test('production refuses ephemeral SQLite fallback', async () => {
   await assert.rejects(openDatabase({ NODE_ENV: 'production' }), /DATABASE_URL/);
 });
+
+test('malformed absolute request targets return 400 without stopping the server', async t => {
+  const { base } = await fixture(t);
+  const { request } = await import('node:http');
+  const status = await new Promise((resolve, reject) => {
+    const req = request({ hostname: '127.0.0.1', port: new URL(base).port, path: 'http://[', method: 'GET' }, res => { res.resume(); resolve(res.statusCode); });
+    req.on('error', reject); req.end();
+  });
+  assert.equal(status, 400);
+  assert.equal((await fetch(base + '/health')).status, 200);
+});

@@ -1,104 +1,75 @@
 # BRDS CBT Exam System — Phase 0 Completion Report
 
-**Report date:** 25 September 2026  
-**Phase:** 0 — Hosting shell  
-**Status:** Local implementation complete and verified; public deployment and final acceptance pending  
-**Selected hosting provider:** Render
+**Updated:** 26 September 2026
+**Phase:** 0 — Hosting shell
+**Status:** Complete — public deployment and phone/PC connection checks passed
+**Hosting:** Render, Singapore
 
-## 1. Phase objective
+## 1. Outcome
 
-Establish one working backend with a health endpoint, a WebSocket echo endpoint, and a database connection before adding authentication or exam features.
+The application is published to GitHub and deployed on Render with PostgreSQL. Public HTTP and secure WebSocket checks passed from this computer.
 
-The supplied build guide requires a public URL that works on both phone and PC, with a successful WebSocket message round-trip. Local verification alone does not complete this acceptance requirement.
+- Application: https://brds-cbt.onrender.com
+- Connection test: https://brds-cbt.onrender.com/setup
+- Health endpoint: https://brds-cbt.onrender.com/health
+- Source: https://github.com/shahutkarsh2008-web/brds
 
-## 2. Work completed
+The main page now shows Phase 1 sign-in. Phase 0 diagnostics remain available at `/setup`.
 
-| Deliverable | Implementation | Status |
+## 2. Completed work
+
+| Deliverable | Evidence | Status |
 | --- | --- | --- |
-| Single application server | One Node.js service serves the setup page, HTTP endpoints, and WebSocket connections. | Verified locally |
-| Health endpoint | `GET /health` returns HTTP 200 after a successful database query and HTTP 503 when the database is unavailable. | Verified locally |
-| WebSocket endpoint | `/ws` echoes text and binary messages, with heartbeat checks and a 16 KiB message limit. | Verified locally |
-| Local database | SQLite creates and persists the initial schema metadata. | Verified locally |
-| Hosted database support | PostgreSQL connection support through `DATABASE_URL`; production startup refuses a SQLite fallback. | Implemented; hosted verification pending |
-| Browser setup page | Displays server/database status and provides a message round-trip test. | Verified locally |
-| Render configuration | Build command, start command, health-check path, and environment-variable configuration prepared. | Prepared; not deployed |
-| Project documentation | Requirements review, deployment instructions, and acceptance checklist created. | Complete |
+| Single Node.js service | Serves UI, HTTP APIs and WebSockets from one backend. | Complete |
+| Public deployment | The public health endpoint responded successfully. | Verified |
+| Health check | HTTP 200 with a successful PostgreSQL query. | Verified publicly |
+| WebSocket endpoint | Exact text message returned over `wss://brds-cbt.onrender.com/ws`. | Verified publicly |
+| Hosted database | Render PostgreSQL instance `brds-cbt-db`; migrations applied by startup. | Connected |
+| Local database | SQLite persistence verified automatically. | Verified |
+| GitHub repository | Initial implementation pushed to `main`. | Complete |
+| Render service configuration | Free Node service; `npm ci`, `npm start`, `/health`, production environment and internal database connection. | Submitted and publicly operational |
+| Deployment checker | `scripts/check-deployment.js`. | Executed successfully |
 
-## 3. Verification results
+## 3. Verification
 
-The following checks were completed during the Phase 0 implementation session. This report records those results; it does not represent an additional test run.
+The command below passed:
 
-**Runtime:** Node.js 24.15.0  
-**Automated command:** `npm test`  
-**Result:** 6 tests passed, 0 failed
+```sh
+node scripts/check-deployment.js https://brds-cbt.onrender.com
+```
 
-| Test | Result |
-| --- | --- |
-| Health endpoint checks the database; page assets are served by the same server. | Passed |
-| Database failure returns HTTP 503 without exposing connection details. | Passed |
-| WebSocket echoes exact text and binary payloads. | Passed |
-| WebSocket rejects foreign browser origins and unknown endpoint paths. | Passed |
-| SQLite schema metadata survives reopening the database file. | Passed |
-| Production refuses to start without `DATABASE_URL`. | Passed |
+Results:
 
-### Browser verification
+1. Public health endpoint and PostgreSQL connection: **PASS**.
+2. Public secure WebSocket exact-message round-trip: **PASS**.
+3. Unauthenticated teacher API access rejected: **PASS**.
 
-- Local URL: `http://localhost:3000/`
-- Browser: Codex in-app browser.
-- Database status: `Online · SQLite connected`.
-- WebSocket status: `Connected · ready to test`.
-- Message sent and received: `Hello from BRDS Raipur`.
-- Observed round-trip time: **3 ms** for this local test.
+The combined Phase 0/1 automated suite also passed **19 tests, 0 failures**. The original local browser check returned `Hello from BRDS Raipur` in 3 ms; that was a local measurement, not a hosted latency benchmark.
 
-The local round-trip measurement is not a hosted latency or load-test result.
+The latest public checks ran from this PC using the verification script. A fresh hosted browser visual review was blocked by the Windows sandbox/browser-tool startup failure. It is not represented as completed.
 
-The dependency installation audit reported **0 vulnerabilities across 16 audited packages** at the time of installation. This is a package audit result, not a full security assessment.
+## 4. Acceptance checklist
 
-## 4. Main project files
+- [x] Single application server.
+- [x] Health endpoint and database check.
+- [x] WebSocket echo.
+- [x] Local persistence.
+- [x] Source published to GitHub.
+- [x] Render web service and PostgreSQL created.
+- [x] Public health and WebSocket checks from this PC.
+- [x] Actual phone: user opened `/setup` and confirmed the database connection and returned message.
+- [x] Cross-device acceptance recorded: PC public checks passed; user confirmed “Phone check passed” on 26 September 2026.
 
-| File | Purpose |
-| --- | --- |
-| `src/server.js` | Starts the server and handles shutdown. |
-| `src/app.js` | HTTP routes, static assets, and WebSocket echo. |
-| `src/database.js` | Local SQLite and hosted PostgreSQL connections. |
-| `public/index.html` | Setup and connection-test page. |
-| `public/app.js` | Browser health check and WebSocket test. |
-| `public/style.css` | Responsive setup-page styling. |
-| `test/app.test.js` | Six automated verification tests. |
-| `render.yaml` | Render service configuration. |
-| `.env.example` | Environment-variable examples without real credentials. |
-| `README.md` | Local run and Render deployment instructions. |
-| `docs/requirements.md` | Reconciled requirements and unresolved product decisions. |
-| `docs/phase-0-acceptance.md` | Phase acceptance checklist. |
+Phone acceptance is user-reported; the agent did not directly operate the phone. The public server/database/WebSocket checks were independently executed from this PC.
 
-## 5. Pending work for full Phase 0 completion
+## 5. Hosting limitations
 
-- [x] Implement the single application server.
-- [x] Verify the health endpoint locally.
-- [x] Verify WebSocket message round-trips locally.
-- [x] Verify local database persistence.
-- [x] Prepare Render deployment configuration.
-- [ ] Create the project GitHub repository and upload the source.
-- [ ] Connect the repository to Render.
-- [ ] Configure a Render PostgreSQL database and the service's `DATABASE_URL`.
-- [ ] Deploy successfully and record the public HTTPS URL.
-- [ ] Verify the deployed health endpoint against PostgreSQL.
-- [ ] Verify the public page and WebSocket round-trip from a PC.
-- [ ] Verify the public page and WebSocket round-trip from a phone.
-- [ ] Record Phase 0 acceptance before beginning Phase 1.
+Both created resources use free plans. The database dashboard shows expiration on **October 25, 2026**. Plan for durable hosting before storing real exam records. Free web services can sleep or restart; no 70–90-user endurance test has been performed. Reference: https://render.com/docs/free
 
-**Current deployment blocker:** No project repository has been created or connected to Render. No public deployment or hosted PostgreSQL verification has been completed.
+No paid plan was selected. Credentials are stored in Render environment configuration, not committed to Git.
 
-## 6. Scope boundaries
+## 6. Progress into Phase 1
 
-Authentication, OTP, student accounts, exam questions, answer saving, timers, teacher monitoring/control, scoring, analytics, and rich-text authoring are not implemented in Phase 0.
+The user explicitly requested Phase 1 in the same task, so implementation proceeded while the remaining cross-device acceptance check was pending. See `BRDS-CBT-Phase-1-Completion-Report.md`.
 
-The current page is a connection-test shell. Its text wordmark and provisional colors are not final branding. No concurrent-user endurance test or real-student pilot has been performed.
-
-## 7. Acceptance decision
-
-**Local Phase 0 implementation: complete and verified.**
-
-**Overall Phase 0 acceptance: pending public deployment and phone/PC verification.**
-
-**Phase 1: not started.**
+**Phase 0: complete.**

@@ -28,7 +28,9 @@ export function createApp(database, options = {}) {
     res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader('Content-Security-Policy', "default-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
     res.setHeader('Cache-Control', 'no-store');
-    const path = new URL(req.url, 'http://localhost').pathname;
+    let path;
+    try { path = new URL(req.url, 'http://localhost').pathname; }
+    catch { res.writeHead(400); return res.end('Invalid request target'); }
     if (path.startsWith('/api/')) return auth.handle(req, res, path);
     if (req.method !== 'GET' && req.method !== 'HEAD') {
       res.writeHead(405, { Allow: 'GET, HEAD' }); return res.end();
@@ -59,7 +61,9 @@ export function createApp(database, options = {}) {
   });
   server.on('upgrade', async (req, socket, head) => {
     socket.on('error', () => {});
-    const path = new URL(req.url, 'http://localhost').pathname;
+    let path;
+    try { path = new URL(req.url, 'http://localhost').pathname; }
+    catch { socket.end('HTTP/1.1 400 Bad Request\r\nConnection: close\r\n\r\n'); return; }
     if (!['/ws', '/session-ws'].includes(path)) {
       socket.end('HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n'); return;
     }

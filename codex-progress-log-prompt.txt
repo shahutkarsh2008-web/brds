@@ -1,0 +1,96 @@
+From now on, alongside your normal coding work, you are also responsible for maintaining a
+shared, real-time file called PROGRESS_LOG.md in the project root. Another AI agent (Antigravity)
+will start working on this same codebase soon and depends entirely on this file to know what
+already exists, what's in progress, and what to avoid touching. Read all of this before your next
+action.
+
+=====================================================================
+STEP 0 — INITIALIZE THE LOG (do this first, before anything else)
+=====================================================================
+1. Create PROGRESS_LOG.md if it doesn't already exist.
+2. Write a single summary entry at the top covering everything built so far, structured as:
+
+### [YYYY-MM-DD HH:MM UTC] Codex — INITIAL STATE SUMMARY
+Referencing BRDS-CBT-build-steps-for-codex.md phases:
+- Phase 0 (Hosting shell): DONE / IN PROGRESS / NOT STARTED — <one line on what exists>
+- Phase 1 (Auth): DONE / IN PROGRESS / NOT STARTED — <one line>
+- Phase 2 (Core exam engine): DONE / IN PROGRESS / NOT STARTED — <one line>
+- Phase 3 (Teacher dashboard, read-only): DONE / IN PROGRESS / NOT STARTED — <one line>
+- Phase 4 (Teacher control actions): DONE / IN PROGRESS / NOT STARTED — <one line>
+- Phase 5 (Load test): DONE / IN PROGRESS / NOT STARTED — <one line>
+- Phase 6 (WYSIWYG admin panel): DONE / IN PROGRESS / NOT STARTED — <one line>
+- Phase 7 (Analytics/branding): DONE / IN PROGRESS / NOT STARTED — <one line>
+KNOWN ASSUMPTIONS MADE SO FAR: <anything you decided without explicit confirmation — e.g. exact
+  library choices, folder structure, naming conventions — so Antigravity doesn't contradict them>
+KNOWN GAPS / TODOs: <anything half-built or stubbed out>
+
+This initial entry matters more than any single entry after it — Antigravity has zero context
+otherwise and may duplicate or break existing work without it.
+
+=====================================================================
+STEP 1 — FILE OWNERSHIP / LOCKING RULES
+=====================================================================
+- Before touching ANY file, check PROGRESS_LOG.md for the most recent entry mentioning it.
+- If the most recent entry says STATUS: IN PROGRESS under Antigravity's name, do not touch that
+  file. Move to a different unclaimed task from the build plan, or wait and re-check periodically.
+- If it says STATUS: DONE, read the WHAT/WHY/NEXT fields before building on it so you don't
+  duplicate or contradict what's there.
+- Never edit, delete, or reorder another agent's log entries. Only append.
+- If two entries claim the same file at nearly the same time, the earlier timestamp holds the
+  lock. If that's you and you're the later one, stop, re-pull latest, check whether the file
+  actually changed, and re-plan.
+
+=====================================================================
+STEP 2 — LOG ENTRY FORMAT (use this exact template every time, going forward)
+=====================================================================
+### [YYYY-MM-DD HH:MM UTC] Codex — Phase <N>: <phase name>
+STATUS: IN PROGRESS | DONE | BLOCKED
+FILES: <files touched or about to be touched>
+WHAT: <plain-language, one or two sentences, exactly what changed>
+WHY: <how it maps to that phase's acceptance criteria in the build plan>
+NEXT: <the concrete next step, for either agent or a future session of yourself>
+
+Example:
+### [2026-09-27 15:10 UTC] Codex — Phase 6: WYSIWYG admin panel
+STATUS: IN PROGRESS
+FILES: client/admin/QuestionEditor.jsx, server/routes/questions.js
+WHAT: Building the rich-text question editor toolbar (bold/italic/image embed).
+WHY: Phase 6 needs teacher-authored questions with formatting, per PRD Core features.
+NEXT: Wire the save button to the questions API once the toolbar renders correctly.
+
+=====================================================================
+STEP 3 — LOGGING GRANULARITY
+=====================================================================
+Log at the level of a working, testable increment — not at the end of a whole phase, and not
+batched at the end of a session. Your session can end mid-task the moment tokens run out, with no
+warning. Anything not logged by then is invisible to Antigravity and to your own future session —
+it will look like it never happened, and may get silently redone or contradicted.
+- One log entry per meaningful increment (a working endpoint, a rendering component, a passing
+  test) — immediately after finishing it, not afterward in a batch.
+- If you're running low on context mid-task, log a BLOCKED entry right away with your best NEXT
+  note, rather than pushing further and losing the chance to log at all.
+
+=====================================================================
+STEP 4 — GIT COMMIT CONVENTION
+=====================================================================
+Prefix every commit with your agent tag, matched to your log entries:
+  [Codex] Phase 6: add question editor toolbar
+Commit at the same granularity as your log entries — not one giant commit per phase.
+
+=====================================================================
+STEP 5 — BEFORE MARKING ANYTHING DONE
+=====================================================================
+Re-check the specific acceptance criteria for that phase in BRDS-CBT-build-steps-for-codex.md.
+State concretely what you tested (not "should work"). If you can't fully verify it yet (e.g.
+missing real 2Factor API keys, no second device to test cross-device sync), mark STATUS: BLOCKED
+and say exactly what's missing rather than marking DONE optimistically.
+
+=====================================================================
+STEP 6 — HANDOFF ON TOKEN LIMIT / SESSION END
+=====================================================================
+The moment you sense you're near your context limit:
+1. Append a log entry immediately, even if incomplete — STATUS: BLOCKED is fine.
+2. Make the NEXT field as specific as possible: exact file, function name, and the next line of
+   logic you were about to write — so nobody has to reverse-engineer half-finished code.
+
+Do Step 0 now, before any other action.

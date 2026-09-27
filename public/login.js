@@ -1,6 +1,7 @@
 const loginForm = document.querySelector('#login-form');
 const otpForm = document.querySelector('#otp-form');
 const message = document.querySelector('#message');
+fetch('/api/development').then(r=>r.json()).then(info=>{if(info.enabled){const note=document.createElement('p');note.className='field-note';note.textContent='LOCAL DEMO · IDs: student1–student5, teacher, admin. Password: BRDS-local-demo-2026! · Simulated OTP: 123456. No SMS is sent.';document.querySelector('.form-content').prepend(note);}}).catch(()=>{});
 async function post(path, data) {
   const response = await fetch(path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data), signal: AbortSignal.timeout(20000) });
   const result = await response.json();

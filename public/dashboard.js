@@ -11,6 +11,7 @@ function connect() {
   if (stopped) return;
   socket = new WebSocket(`${location.protocol === 'https:' ? 'wss:' : 'ws:'}//${location.host}/session-ws`);
   socket.onopen = () => { document.querySelector('#connection').textContent = '● Live connection active'; };
+  socket.onmessage = event => { try { window.dispatchEvent(new CustomEvent('brds-live', { detail: JSON.parse(event.data) })); } catch {} };
   socket.onclose = async event => {
     document.querySelector('#connection').textContent = 'Reconnecting…';
     if (stopped) return;
@@ -57,6 +58,7 @@ async function start() {
   document.querySelector('#empty-title').textContent = copy[2];
   document.querySelector('#empty-description').textContent = copy[3];
   if (role === 'admin') { document.querySelector('#admin-panel').hidden = false; await loadUsers(); }
+  window.brdsUser = user; window.dispatchEvent(new CustomEvent('brds-user', { detail: user }));
   connect();
 }
 window.addEventListener('pagehide', () => { stopped = true; clearTimeout(reconnect); socket?.close(); });

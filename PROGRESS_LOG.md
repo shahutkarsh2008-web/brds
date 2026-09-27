@@ -97,3 +97,19 @@ WHAT: Created both completion reports, local demo/manual acceptance instructions
 WHY: Provide an evidence-based review and distinguish complete code from blocked native-browser acceptance and deferred Phase 8 integration.
 NEXT: Phase 4 is the next implementation phase when requested. Native browser acceptance remains outstanding. Local commits 5614aef (coordination), 66a0224 (backend), 09bb3ab (client/demo) are saved; no Phase 2–3 push/deploy was performed. Leave user-owned antigravity-start-prompt.txt untouched. No Codex file claims remain active.
 
+
+### [2026-09-27 18:11 UTC] Codex — Phase 1: login layout repair
+STATUS: IN PROGRESS
+FILES: public/login.html, public/auth.css
+WHAT: Removing overlapping decorative shapes and rebuilding the sign-in layout with scoped responsive styles.
+WHY: User rejected the screenshot's visual quality.
+NEXT: Verify served markup, responsive rules and unchanged form hooks.
+
+
+### [2026-09-27 18:12 UTC] Codex — Phase 1: login layout repair
+STATUS: BLOCKED
+FILES: public/login.html, public/auth.css
+WHAT: Implemented a scoped login redesign: removed overlapping shapes/tagline, added a compact exam guide, white header, restrained red branding and a single-column layout below 800px. Running localhost:3001 serves revised markup; all seven authentication form hooks are present; git diff --check passes. No active file lock retained.
+WHY: Addresses the user's rejected screenshot. Implementation is complete; native-browser visual acceptance remains unverified because the existing computer-use sandbox failure prevents inspection.
+NEXT: Refresh localhost:3001 to review the revised design; perform desktop/mobile visual acceptance when browser tooling is available. No authentication logic changed.
+

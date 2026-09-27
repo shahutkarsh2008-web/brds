@@ -97,9 +97,10 @@ function score(exam, answers) {
 }
 function studentView(row, time) {
   const exam = JSON.parse(row.exam_json), answers = JSON.parse(row.answers_json);
-  const activeSection = currentSection(exam, row.started_at, time);
+  const pausedAt=row.paused_at==null?null:Number(row.paused_at), offset=Number(row.offset_ms||0);
+  const activeSection = currentSection(exam, Number(row.started_at)+offset, pausedAt??time);
   return { id:row.id, userId:row.user_id, examId:row.exam_id, status:row.status, version:row.version,
-    startedAt:Number(row.started_at), deadline:Number(row.deadline), serverNow:time, activeSection,
+    startedAt:Number(row.started_at), clockStartedAt:Number(row.started_at)+offset, pausedAt, locked:!!row.locked, deadline:Number(row.deadline), serverNow:time, activeSection,
     submittedAt:row.submitted_at === null ? null : Number(row.submitted_at),
     exam:{...exam,questions:exam.questions.map(({answer,...question})=>question)}, answers,
     result:row.result_json ? JSON.parse(row.result_json) : null };
@@ -114,10 +115,11 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     await query('UPDATE attempts SET status=$1,submitted_at=$2,result_json=$3,version=$4 WHERE id=$5', [row.status,row.submitted_at,row.result_json,row.version,row.id]);
     return row;
   }
+  async function controlState(query,row){const control=(await query('SELECT * FROM attempt_controls WHERE attempt_id=$1',[row.id])).rows[0];return Object.assign(row,{paused_at:null,offset_ms:0,locked:0},control||{});}
   async function owned(query,id,userId) {
     const row=(await query('SELECT * FROM attempts WHERE id=$1 AND user_id=$2'+lockSuffix,[id,userId])).rows[0];
     if (!row) fail(404,'Attempt not found.');
-    return row;
+    return controlState(query,row);
   }
   async function list(userId) {
     await sweep();
@@ -132,7 +134,8 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       await query("INSERT INTO attempts(id,exam_id,user_id,exam_json,answers_json,status,started_at,deadline,version) VALUES($1,$2,$3,$4,'{}','active',$5,$6,0) ON CONFLICT(exam_id,user_id) DO NOTHING",
         [randomUUID(),examId,userId,exam.definition,time,time+definition.durationSeconds*1000]);
       const row=(await query('SELECT * FROM attempts WHERE exam_id=$1 AND user_id=$2'+lockSuffix,[examId,userId])).rows[0];
-      if(row.status==='active'&&Number(row.deadline)<=now()) await finish(query,row,'time_expired',now());
+      await controlState(query,row);
+      if(row.status==='active'&&row.paused_at==null&&Number(row.deadline)<=now()) await finish(query,row,'time_expired',now());
       return studentView(row,now());
     }); notify();return view;
   }
@@ -140,7 +143,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     let expired=false;
     const view=await database.transaction(async query=>{
       const row=await owned(query,id,userId);
-      if(row.status==='active'&&Number(row.deadline)<=now()){await finish(query,row,'time_expired',now());expired=true;}
+      if(row.status==='active'&&row.paused_at==null&&Number(row.deadline)<=now()){await finish(query,row,'time_expired',now());expired=true;}
       return studentView(row,now());
     }); if(expired)notify(); return view;
   }
@@ -152,11 +155,12 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       const row=await owned(query,id,userId);
       const duplicate=(await query('SELECT id FROM answer_mutations WHERE attempt_id=$1 AND id=$2',[id,input.mutationId])).rows[0];
       if(duplicate)return studentView(row,now());
+      if(row.paused_at!=null)fail(409,'Your teacher has paused this attempt.','ATTEMPT_PAUSED');
       if(row.status!=='active'||Number(row.deadline)<=now())fail(409,'The exam has ended. This edit was not saved.','EXAM_ENDED');
       if(row.version!==input.expectedVersion)fail(409,'This attempt changed in another tab. Reload the saved version before editing.','VERSION_CONFLICT');
       const exam=JSON.parse(row.exam_json), q=exam.questions.find(q=>q.id===input.questionId);
       if(!q)fail(400,'Unknown question.');
-      const section=currentSection(exam,row.started_at,now());
+      const section=currentSection(exam,Number(row.started_at)+Number(row.offset_ms||0),now());
       if(exam.sections[0].durationSeconds&&section?.id!==q.sectionId)fail(409,'That timed section is closed. This edit was not saved.','SECTION_CLOSED');
       const answers=JSON.parse(row.answers_json);
       answers[q.id]={value:normalizeAnswer(q,input.value),visited:true,review:input.review};
@@ -171,6 +175,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     if(current.status!=='active')return current;
     const view=await database.transaction(async query=>{
       const row=await owned(query,id,userId);
+      if(row.status==='active'&&row.paused_at!=null)fail(409,'Your teacher has paused this attempt.','ATTEMPT_PAUSED');
       if(row.status==='active'&&row.version!==expectedVersion)fail(409,'Save all answers and refresh before submitting.','VERSION_CONFLICT');
       await finish(query,row,Number(row.deadline)<=now()?'time_expired':'student_submitted',now());
       return studentView(row,now());
@@ -187,25 +192,64 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       await query('INSERT INTO activity_flags(id,attempt_id,user_id,type,created_at) VALUES($1,$2,$3,$4,$5) ON CONFLICT(id) DO NOTHING',[input.eventId,id,userId,input.type,now()]);
     });notify();return {ok:true};
   }
+  async function control(id,actorId,input){
+    if(!input||!idPattern.test(input.requestId||'')||!Number.isInteger(input.expectedVersion)||!['freeze','resume','force_submit','lock'].includes(input.action))fail(400,'Invalid teacher action.');
+    const view=await database.transaction(async query=>{
+      const actor=(await query("SELECT role FROM users WHERE id=$1 AND active=1",[actorId])).rows[0];
+      if(!actor||!['teacher','admin'].includes(actor.role))fail(403,'Teacher access required.');
+      const row=(await query('SELECT * FROM attempts WHERE id=$1'+lockSuffix,[id])).rows[0];
+      if(!row)fail(404,'Attempt not found.');
+      await controlState(query,row);
+      const previous=(await query('SELECT * FROM teacher_actions WHERE id=$1',[input.requestId])).rows[0];
+      if(previous){
+        if(previous.attempt_id!==id||previous.actor_id!==actorId||previous.action!==input.action)fail(409,'Action ID already used.');
+        return studentView(row,now());
+      }
+      if(row.version!==input.expectedVersion)fail(409,'Attempt changed. Review the latest state and try again.','VERSION_CONFLICT');
+      if(row.status!=='active')fail(409,'This attempt is already submitted.','EXAM_ENDED');
+      const time=now();
+      if(row.paused_at==null&&Number(row.deadline)<=time){await finish(query,row,'time_expired',time);return studentView(row,time);}
+      if(input.action==='force_submit'||input.action==='lock'){
+        if(input.action==='lock'){row.locked=1;await query('INSERT INTO attempt_controls(attempt_id,paused_at,offset_ms,locked) VALUES($1,$2,$3,1) ON CONFLICT(attempt_id) DO UPDATE SET locked=1',[id,row.paused_at,row.offset_ms]);}
+        await finish(query,row,input.action==='lock'?'teacher_locked':'teacher_submitted',time);
+      }
+      else {
+        if(input.action==='freeze'){
+          if(row.paused_at!=null)fail(409,'Attempt is already paused.');
+          row.paused_at=time;
+        }else{
+          if(row.paused_at==null)fail(409,'Attempt is not paused.');
+          if(row.locked)fail(409,'Unlock the attempt before resuming.');
+          const elapsed=Math.max(0,time-Number(row.paused_at));
+          row.deadline=Number(row.deadline)+elapsed;row.offset_ms=Number(row.offset_ms)+elapsed;row.paused_at=null;
+        }
+        row.version++;
+        await query('INSERT INTO attempt_controls(attempt_id,paused_at,offset_ms,locked) VALUES($1,$2,$3,$4) ON CONFLICT(attempt_id) DO UPDATE SET paused_at=excluded.paused_at,offset_ms=excluded.offset_ms,locked=excluded.locked',[id,row.paused_at,row.offset_ms,row.locked]);
+        await query('UPDATE attempts SET deadline=$1,version=$2 WHERE id=$3',[row.deadline,row.version,id]);
+      }
+      await query('INSERT INTO teacher_actions(id,attempt_id,actor_id,action,created_at) VALUES($1,$2,$3,$4,$5)',[input.requestId,id,actorId,input.action,time]);
+      return studentView(row,time);
+    });notify();return view;
+  }
   async function sweep() {
-    const ids=(await database.query("SELECT id,user_id FROM attempts WHERE status='active' AND deadline<=$1",[now()])).rows;
+    const ids=(await database.query("SELECT id,user_id FROM attempts WHERE status='active' AND deadline<=$1 AND NOT EXISTS(SELECT 1 FROM attempt_controls c WHERE c.attempt_id=attempts.id AND c.paused_at IS NOT NULL)",[now()])).rows;
     for(const row of ids)await get(row.id,row.user_id);
   }
   async function roster(presence) {
     const time=now();
     const users=(await database.query("SELECT id,login_id,name FROM users u WHERE role='student' AND active=1 AND (EXISTS(SELECT 1 FROM sessions s WHERE s.user_id=u.id AND s.expires_at>$1) OR EXISTS(SELECT 1 FROM attempts a WHERE a.user_id=u.id)) ORDER BY login_id",[time])).rows;
-    const attempts=(await database.query('SELECT * FROM attempts ORDER BY started_at DESC')).rows;
+    const attempts=(await database.query('SELECT a.*,c.paused_at,c.offset_ms,c.locked FROM attempts a LEFT JOIN attempt_controls c ON c.attempt_id=a.id ORDER BY a.started_at DESC')).rows;
     const flags=(await database.query('SELECT f.id,f.attempt_id,f.type,f.created_at,u.name,u.login_id FROM activity_flags f JOIN users u ON u.id=f.user_id ORDER BY f.created_at DESC LIMIT 100')).rows;
     const counts=new Map((await database.query('SELECT attempt_id,COUNT(*) AS count FROM activity_flags GROUP BY attempt_id')).rows.map(r=>[r.attempt_id,Number(r.count)]));
     return {type:'roster',serverNow:time,students:users.map(user=>({
       id:user.id,loginId:user.login_id,name:user.name,connected:presence(user.id).connected,lastSeen:presence(user.id).lastSeen,
       attempts:attempts.filter(a=>a.user_id===user.id).map(a=>{
         const exam=JSON.parse(a.exam_json),answers=JSON.parse(a.answers_json);
-        return {id:a.id,examId:a.exam_id,title:exam.title,status:a.status,deadline:Number(a.deadline),startedAt:Number(a.started_at),total:exam.questions.length,
+        return {id:a.id,examId:a.exam_id,title:exam.title,status:a.status,version:a.version,pausedAt:a.paused_at==null?null:Number(a.paused_at),locked:!!a.locked,deadline:Number(a.deadline),startedAt:Number(a.started_at),total:exam.questions.length,
           answered:exam.questions.filter(q=>hasAnswer(answers[q.id]?.value)).length,
           reviewed:exam.questions.filter(q=>answers[q.id]?.review).length,flagCount:counts.get(a.id)||0};
       })})),
       flags:flags.map(f=>({id:f.id,attemptId:f.attempt_id,type:f.type,at:Number(f.created_at),name:f.name,loginId:f.login_id}))};
   }
-  return {list,start,get,answer,submit,flag,sweep,roster};
+  return {list,start,get,answer,submit,flag,sweep,roster,control};
 }

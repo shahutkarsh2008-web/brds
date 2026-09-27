@@ -11,11 +11,13 @@ export async function migrate(database) {
       `CREATE TABLE IF NOT EXISTS attempts (id TEXT PRIMARY KEY,exam_id TEXT NOT NULL REFERENCES exams(id),user_id TEXT NOT NULL REFERENCES users(id),exam_json TEXT NOT NULL,answers_json TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('active','submitted')),started_at BIGINT NOT NULL,deadline BIGINT NOT NULL,version INTEGER NOT NULL,submitted_at BIGINT,result_json TEXT,UNIQUE(exam_id,user_id))`,
       `CREATE TABLE IF NOT EXISTS answer_mutations (attempt_id TEXT NOT NULL REFERENCES attempts(id),id TEXT NOT NULL,PRIMARY KEY(attempt_id,id))`,
       `CREATE TABLE IF NOT EXISTS activity_flags (id TEXT PRIMARY KEY,attempt_id TEXT NOT NULL REFERENCES attempts(id),user_id TEXT NOT NULL REFERENCES users(id),type TEXT NOT NULL,created_at BIGINT NOT NULL)`,
+      `CREATE TABLE IF NOT EXISTS attempt_controls (attempt_id TEXT PRIMARY KEY REFERENCES attempts(id),paused_at BIGINT,offset_ms BIGINT NOT NULL DEFAULT 0,locked INTEGER NOT NULL DEFAULT 0)`,
+      `CREATE TABLE IF NOT EXISTS teacher_actions (id TEXT PRIMARY KEY,attempt_id TEXT NOT NULL REFERENCES attempts(id),actor_id TEXT NOT NULL REFERENCES users(id),action TEXT NOT NULL,created_at BIGINT NOT NULL)`,
       'CREATE INDEX IF NOT EXISTS sessions_user ON sessions(user_id)',
       'CREATE INDEX IF NOT EXISTS challenges_user ON auth_challenges(user_id)',
       'CREATE INDEX IF NOT EXISTS attempts_deadline ON attempts(status,deadline)',
       'CREATE INDEX IF NOT EXISTS flags_attempt ON activity_flags(attempt_id,type,created_at)',
-      "UPDATE system_metadata SET value = '3' WHERE key = 'schema_version'",
+      "UPDATE system_metadata SET value = '4' WHERE key = 'schema_version'",
     ]) await query(sql);
   });
 }

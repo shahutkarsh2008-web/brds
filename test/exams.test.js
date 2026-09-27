@@ -181,3 +181,58 @@ test('production refuses development fixtures',async()=>{
   try{assert.throws(()=>createApp(db,{env:{NODE_ENV:'production',APP_ORIGIN:'https://example.com'},development:true}),/Development fixtures/);}
   finally{await db.close();}
 });
+
+test('teacher freeze persists and preserves exam and section time while rejecting student writes',async t=>{
+  const f=await fixture(t,{timed:true}),attempt=await f.start();
+  f.advance(15000);
+  const input={action:'freeze',expectedVersion:0,requestId:randomUUID()};
+  const frozen=await f.api('/api/attempts/'+attempt.id+'/control',input,'teacher');
+  assert.equal(frozen.status,200);assert.equal(frozen.body.pausedAt,f.now());
+  assert.equal((await f.api('/api/attempts/'+attempt.id+'/control',input,'teacher')).status,200);
+  assert.equal((await f.db.query('SELECT * FROM teacher_actions')).rowCount,1);
+  f.advance(180000);await f.app.engine.sweep();
+  const reloaded=createExamEngine(f.db,{now:f.now});
+  const still=await reloaded.get(attempt.id,f.users.student1.id);
+  assert.equal(still.status,'active');assert.equal(still.pausedAt,frozen.body.pausedAt);
+  assert.equal((await f.api('/api/attempts/'+attempt.id+'/answers',edit(f.definition.questions[0].id,'a',1))).body.code,'ATTEMPT_PAUSED');
+  assert.equal((await f.api('/api/attempts/'+attempt.id+'/submit',{expectedVersion:1})).body.code,'ATTEMPT_PAUSED');
+  const resumed=await f.api('/api/attempts/'+attempt.id+'/control',{action:'resume',expectedVersion:1,requestId:randomUUID()},'teacher');
+  assert.equal(resumed.status,200);assert.equal(resumed.body.pausedAt,null);
+  assert.equal(resumed.body.deadline-f.now(),105000);
+  assert.equal(resumed.body.activeSection.deadline-f.now(),45000);
+  assert.equal(resumed.body.startedAt,attempt.startedAt);
+  assert.equal((await f.api('/api/attempts/'+attempt.id+'/answers',edit(f.definition.questions[0].id,'a',2))).status,200);
+});
+test('teacher lock permanently submits saved answers; force-submit also works while frozen',async t=>{
+  const f=await fixture(t),a=await f.start();
+  await f.api('/api/attempts/'+a.id+'/answers',edit(f.definition.questions[0].id,'a'));
+  const locked=await f.api('/api/attempts/'+a.id+'/control',{action:'lock',expectedVersion:1,requestId:randomUUID()},'teacher');
+  assert.equal(locked.status,200);assert.equal(locked.body.locked,true);
+  assert.equal(locked.body.result.reason,'teacher_locked');assert.equal(locked.body.result.score,4);
+  assert.equal((await f.start()).status,'submitted');
+  assert.equal((await f.api('/api/attempts/'+a.id+'/answers',edit(f.definition.questions[1].id,['a'],2))).status,409);
+  assert.equal((await f.api('/api/attempts/'+a.id+'/control',{action:'resume',expectedVersion:2,requestId:randomUUID()},'teacher')).status,409);
+  const b=await f.start('student2');
+  await f.api('/api/attempts/'+b.id+'/control',{action:'freeze',expectedVersion:0,requestId:randomUUID()},'teacher');
+  const submitted=await f.api('/api/attempts/'+b.id+'/control',{action:'force_submit',expectedVersion:1,requestId:randomUUID()},'teacher');
+  assert.equal(submitted.body.result.reason,'teacher_submitted');assert.equal(submitted.body.status,'submitted');
+});
+test('teacher controls enforce role, origin, stale version and concurrent action protection',async t=>{
+  const f=await fixture(t),a=await f.start(),path='/api/attempts/'+a.id+'/control';
+  const input={action:'freeze',expectedVersion:0,requestId:randomUUID()};
+  assert.equal((await f.api(path,input)).status,403);
+  const responses=await Promise.all([f.api(path,input,'teacher'),f.api(path,{...input,requestId:randomUUID()},'teacher')]);
+  assert.deepEqual(responses.map(r=>r.status).sort(),[200,409]);
+  const stale=await f.api(path,{action:'resume',expectedVersion:0,requestId:randomUUID()},'teacher');
+  assert.equal(stale.body.code,'VERSION_CONFLICT');
+  const base='http://127.0.0.1:'+f.app.server.address().port;
+  const foreign=await fetch(base+path,{method:'POST',headers:{Origin:'https://foreign.invalid',Cookie:f.cookies.teacher,'Content-Type':'application/json'},body:JSON.stringify(input)});
+  assert.equal(foreign.status,403);
+});
+test('expired attempts cannot be revived by freeze or resume',async t=>{
+  const f=await fixture(t,{timed:true}),a=await f.start();
+  f.advance(120001);
+  const result=await f.api('/api/attempts/'+a.id+'/control',{action:'freeze',expectedVersion:0,requestId:randomUUID()},'teacher');
+  assert.equal(result.body.status,'submitted');assert.equal(result.body.result.reason,'time_expired');
+  assert.equal((await f.db.query('SELECT * FROM teacher_actions')).rowCount,0);
+});

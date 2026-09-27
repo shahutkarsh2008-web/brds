@@ -77,7 +77,7 @@ export function createApp(database, options = {}) {
         res.writeHead(error.status || 503); return res.end(error.status === 403 ? 'Access denied' : 'Service unavailable');
       }
     }
-    const media = path.match(/^\/media\/([a-zA-Z0-9_-]+\.(svg|png|jpg|jpeg|webp))$/);
+    const media = path.match(/^\/media\/([-a-zA-Z0-9_]+\.(svg|png|jpg|jpeg|webp))$/);
     const types = { svg:'image/svg+xml',png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg',webp:'image/webp' };
     const asset = media ? ['media/' + media[1], types[media[2]]] : assets.get(path);
     if (!asset) { res.writeHead(404); return res.end('Not found'); }

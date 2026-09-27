@@ -71,3 +71,14 @@ fetch('/api/me').then(response => response.json()).then(result => {
     location.replace(target);
   }
 }).catch(() => {});
+
+const togglePassBtn = document.querySelector('#toggle-password');
+if (togglePassBtn) {
+  togglePassBtn.addEventListener('click', () => {
+    const passInput = document.querySelector('#password');
+    const isPass = passInput.type === 'password';
+    passInput.type = isPass ? 'text' : 'password';
+    togglePassBtn.textContent = isPass ? '🙈' : '👁️';
+  });
+}
+

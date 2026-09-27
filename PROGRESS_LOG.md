@@ -149,3 +149,27 @@ WHAT: Live student enforcement is covered by real sockets and simulated DOM test
 WHY: The original Phase 4 acceptance requires actual student tabs visibly responding to teacher actions.
 NEXT: Use separate teacher/student profiles on localhost:3001; start a student attempt, then verify freeze/resume and both irreversible final actions. Do not count simulated DOM checks as native visual acceptance.
 
+
+### [2026-09-27 18:29 UTC] Codex — Phase 7: supplied brand logo integration
+STATUS: IN PROGRESS
+FILES: public/media/brds-logo-enhanced.png, public/login.html, public/dashboard.html, public/exam.html, public/index.html, public/auth.css, public/exam.css, public/style.css, docs/brand-assets.md
+WHAT: Inspected user ZIP (banner, portrait, floral artwork) and restored the supplied roundel using imagegen. Integrating only the enhanced logo; no portrait or floral background used.
+WHY: User explicitly requested logo enhancement/use and excluded the man's photo. This is a branding increment, not completion of all Phase 7.
+NEXT: Check served asset, image dimensions and page references; record restoration provenance and limitations.
+
+
+### [2026-09-27 18:30 UTC] Codex — Phase 7: brand reference update
+STATUS: IN PROGRESS
+FILES: docs/requirements.md
+WHAT: Updating the former missing-artwork note because the user has now supplied logo references.
+WHY: Prevent later agents from replacing the supplied identity with a text-only placeholder.
+NEXT: Record restored-asset provenance.
+
+
+### [2026-09-27 18:30 UTC] Codex — Phase 7: enhanced logo integration
+STATUS: DONE
+FILES: public/media/brds-logo-enhanced.png, public/login.html, public/dashboard.html, public/exam.html, public/index.html, public/auth.css, public/exam.css, public/style.css, docs/brand-assets.md, docs/requirements.md
+WHAT: Enhanced supplied roundel with built-in imagegen and installed it in four headers/favicons. Verified 1254x1254 PNG with transparent corner alpha, HTTP 200 image/png, all header references, clean diff and 40/40 tests. Banner used only as reference; portrait and floral artwork not deployed.
+WHY: User requested enhanced BRDS branding and explicitly excluded the man's photo.
+NEXT: Native-browser visual acceptance remains unverified due prior computer-use sandbox failure. This is a branding increment only; Phase 7 analytics remain pending. Official vector master may replace this AI-assisted raster restoration later. No active file claims.
+

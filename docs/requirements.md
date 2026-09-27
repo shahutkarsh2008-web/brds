@@ -25,7 +25,7 @@ One browser application and Node backend for BRDS Raipur, usable on PC and phone
 
 - Phase 4 lock semantics confirmed by the user: lock permanently submits server-saved answers for that attempt; no resumption. Freeze is separately reversible and pauses both exam and section clocks.
 - OTP recipients, student phone records, and provider account/template configuration are deferred to final Phase 8 acceptance.
-- Exact roundel artwork is referenced but not included; do not claim a recreated text mark is the official logo. Current shell uses a text wordmark only.
+- User supplied BRDS roundel screenshots and a banner reference. The portal now uses an AI-assisted high-resolution raster restoration; see docs/brand-assets.md. It is not an original official vector master. The supplied portrait is excluded by explicit user instruction.
 - Estimated colors: red #E31E24, black #111111, yellow #FFD400; provisional until confirmed.
 - Phase 2 implements exact-set MSQ scoring, per-question inclusive NAT ranges and fixed sequential optional section windows. These implementation choices are recorded in the shared log. Alternative partial-credit rules and tie rankings remain for later authoring/analytics work.
 

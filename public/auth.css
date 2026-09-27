@@ -49,3 +49,4 @@
  .login-page .login-layout{width:calc(100% - 24px);margin:20px auto;border-radius:12px}
  .login-page .welcome,.login-page .form-panel{padding:24px}
 }
+.brand .brand-logo{display:block;width:60px;height:60px;object-fit:contain;flex-shrink:0}.brand span{border-left:0;padding-left:0}.login-page .brand span{padding-left:0;border-left:0}@media(max-width:600px){.brand .brand-logo{width:48px;height:48px}}

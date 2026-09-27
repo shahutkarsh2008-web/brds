@@ -23,7 +23,7 @@ One browser application and Node backend for BRDS Raipur, usable on PC and phone
 
 ## Unresolved details to settle at the relevant phase
 
-- Lock semantics are not defined in either document: proposed behavior is a persistent access block distinct from freeze; timer behavior and re-entry policy require a decision before Phase 4.
+- Phase 4 lock semantics confirmed by the user: lock permanently submits server-saved answers for that attempt; no resumption. Freeze is separately reversible and pauses both exam and section clocks.
 - OTP recipients, student phone records, and provider account/template configuration are deferred to final Phase 8 acceptance.
 - Exact roundel artwork is referenced but not included; do not claim a recreated text mark is the official logo. Current shell uses a text wordmark only.
 - Estimated colors: red #E31E24, black #111111, yellow #FFD400; provisional until confirmed.
@@ -51,7 +51,7 @@ Complete the code first. Defer real service accounts, login credentials, API key
 - Phase 1: authentication code — implemented; live account/OTP acceptance deferred to Phase 8.
 - Phase 2: exam engine, timers, palette, autosave and resume — code complete; automated persistence/client tests pass; native-browser acceptance unverified.
 - Phase 3: live teacher dashboard and activity flags — code complete; five-student socket test passes; native-browser visual acceptance unverified.
-- Phase 4: force-submit, lock, freeze and resume.
+- Phase 4: force-submit, permanent lock-and-submit, freeze and resume — code complete; backend/live-client tests pass; native-browser acceptance outstanding.
 - Phase 5: load-test script and local testing. Repeat the 70–90-user, 60–90-minute test on final hosting in Phase 8.
 - Phase 6: rich-text question editor and configurable scoring.
 - Phase 7: student records, analytics, rankings and final branding.
@@ -73,4 +73,4 @@ Complete the code first. Defer real service accounts, login credentials, API key
 
 Keep clear configuration placeholders in `.env.example`; inject real values later without changing application logic. Never hardcode or commit real secrets. Any development test accounts or simulated providers must be isolated from production. Track code completion and live integration acceptance separately.
 
-**Remaining implementation: 5 phases — 4 coding phases (4–7), followed by final setup and acceptance (8).** Phase 2–3 native-browser acceptance is still outstanding because computer-use cannot initialize; do not count automated DOM/socket checks as visual acceptance. Latest complete suite: 34 tests passed. See the Phase 2/3 reports and PROGRESS_LOG.md.
+**Remaining implementation: 4 phases — 3 coding phases (5–7), followed by final setup and acceptance (8).** Phase 2–3 native-browser acceptance is still outstanding because computer-use cannot initialize; do not count automated DOM/socket checks as visual acceptance. Latest complete suite: 40 tests passed. Phase 4 native-browser acceptance is also outstanding; see its completion report. See the Phase 2/3 reports and PROGRESS_LOG.md.

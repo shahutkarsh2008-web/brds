@@ -54,7 +54,7 @@ export function createApp(database, options = {}) {
       try {
         await database.check();
         res.writeHead(200, { 'Content-Type': 'application/json' });
-        return res.end(JSON.stringify({ status: 'ok', database: database.kind, phase: 3 }));
+        return res.end(JSON.stringify({ status: 'ok', database: database.kind, phase: 4 }));
       } catch {
         res.writeHead(503, { 'Content-Type': 'application/json' });
         return res.end(JSON.stringify({ status: 'unavailable' }));

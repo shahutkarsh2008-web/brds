@@ -29,7 +29,7 @@ async function student() {
 function monitorShell() {
   $('#intro').textContent='A live view of your students. Changes arrive automatically.';
   $('#role-content').hidden=true;
-  panel.innerHTML='<div class="workspace-heading"><div><p class="eyebrow">LIVE INVIGILATION</p><h2>Classroom overview</h2></div><span class="read-only">Read-only monitoring</span></div><div id="metrics" class="metrics"></div><div class="roster-filters"><label>Exam<select id="exam-filter"><option value="">All exams</option></select></label><label>Find a student<input id="student-search" placeholder="Name or login ID" autocomplete="off"></label></div><div class="table-scroll"><table class="roster"><thead><tr><th>Student</th><th>Connection</th><th>Exam / status</th><th>Progress</th><th>Time left</th><th>Flags</th></tr></thead><tbody id="roster-body"></tbody></table></div><p id="roster-note" class="field-note"></p><section class="activity-panel"><h2>Activity to review</h2><p class="field-note">Browser signals may be incomplete and need human review. They do not identify which external app a student uses.</p><ol id="activity-feed"></ol></section>';
+  panel.innerHTML='<div class="workspace-heading"><div><p class="eyebrow">LIVE INVIGILATION</p><h2>Classroom overview</h2></div><span class="read-only">Live teacher controls</span></div><div id="metrics" class="metrics"></div><div class="roster-filters"><label>Exam<select id="exam-filter"><option value="">All exams</option></select></label><label>Find a student<input id="student-search" placeholder="Name or login ID" autocomplete="off"></label></div><div class="table-scroll"><table class="roster"><thead><tr><th>Student</th><th>Connection</th><th>Exam / status</th><th>Progress</th><th>Time left</th><th>Flags</th><th>Actions</th></tr></thead><tbody id="roster-body"></tbody></table></div><p id="roster-note" class="field-note"></p><section class="activity-panel"><h2>Activity to review</h2><p class="field-note">Browser signals may be incomplete and need human review. They do not identify which external app a student uses.</p><ol id="activity-feed"></ol></section>';
   $('#exam-filter').addEventListener('change',event=>{filter=event.target.value;renderRoster();});
   $('#student-search').addEventListener('input',event=>{search=event.target.value.toLowerCase();renderRoster();});
 }
@@ -48,10 +48,24 @@ function renderRoster() {
     for(const attempt of exams.length?exams:[null]){
       const row=element('tr'),name=element('td');name.append(element('strong',student.name),element('small',student.loginId));row.append(name);
       row.append(element('td',student.connected?'● Online':'○ Offline',student.connected?'online':'offline'));
-      const exam=element('td');exam.append(element('span',attempt?.title||'No attempt started'),element('small',attempt?.status||'Signed in'));row.append(exam);
+      const exam=element('td');exam.append(element('span',attempt?.title||'No attempt started'),element('small',attempt?.locked?'Locked / submitted':attempt?.pausedAt!=null&&attempt.status==='active'?'Frozen':attempt?.status||'Signed in'));row.append(exam);
       row.append(element('td',attempt?attempt.answered+' / '+attempt.total+' answered':'—'));
-      const time=element('td',attempt?.status==='active'?'…':'—','time-cell');if(attempt?.status==='active')time.dataset.deadline=attempt.deadline;row.append(time);
-      row.append(element('td',String(attempt?.flagCount||0),(attempt?.flagCount||0)>0?'flag-count':''));rows.push(row);
+      const time=element('td',attempt?.status==='active'?'…':'—','time-cell');if(attempt?.status==='active'){if(attempt.pausedAt!=null)time.textContent=duration((attempt.deadline-attempt.pausedAt)/1000)+' (paused)';else time.dataset.deadline=attempt.deadline;}row.append(time);
+      row.append(element('td',String(attempt?.flagCount||0),(attempt?.flagCount||0)>0?'flag-count':''));const controls=element('td',undefined,'teacher-controls');
+      if(attempt?.status==='active'){
+        for(const [action,label] of [[attempt.pausedAt!=null?'resume':'freeze',attempt.pausedAt!=null?'Resume':'Freeze'],['force_submit','Force submit'],['lock','Lock & submit']]){
+          const button=element('button',label,'secondary');
+          button.addEventListener('click',async()=>{
+            const explanation=action==='lock'?'Lock and submit saved answers permanently. This attempt cannot be resumed.':action==='force_submit'?'Submit saved answers now. Pending offline edits will not be included.':action==='freeze'?'Pause answers and both timers until you resume.':'Resume answers and timers with the remaining time preserved.';
+            if(!confirm(student.name+' — '+attempt.title+'\n\n'+explanation))return;
+            controls.querySelectorAll('button').forEach(b=>b.disabled=true);
+            try{await api('/api/attempts/'+attempt.id+'/control',{action,expectedVersion:attempt.version,requestId:crypto.randomUUID()});$('#message').textContent=label+' applied for '+student.name+'.';}
+            catch(error){$('#message').textContent=error.message;}
+            finally{try{data=await api('/api/monitor');receivedAt=performance.now();renderRoster();}catch(error){$('#message').textContent=error.message;controls.querySelectorAll('button').forEach(b=>b.disabled=false);}}
+          });controls.append(button);
+        }
+      }else controls.textContent='—';
+      row.append(controls);rows.push(row);
     }
   }
   $('#roster-body').replaceChildren(...rows);

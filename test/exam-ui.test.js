@@ -46,7 +46,12 @@ async function setup(t){
     w.eval(script);
     return {w,$:s=>w.document.querySelector(s),offline(value){offline=value;w.dispatchEvent(new w.Event(value?'offline':'online'));}};
   }
-  return {page,key,get:()=>app.engine.get(attempt.id,user.id)};
+  let teacher;
+  return {page,key,get:()=>app.engine.get(attempt.id,user.id),async control(action){
+    teacher??=await createUser(db,{loginId:'ui-teacher',name:'UI Teacher',role:'teacher',phone:'919999999998',password:'Test-password-123!'});
+    const current=await app.engine.get(attempt.id,user.id);
+    return app.engine.control(attempt.id,teacher.id,{action,expectedVersion:current.version,requestId:crypto.randomUUID()});
+  }};
 }
 test('exam client preserves offline edits across tab recreation and submits recovered answers',async t=>{
   const f=await setup(t),p=f.page();
@@ -83,4 +88,21 @@ test('numeric incomplete entry blocks navigation, valid input autosaves and clea
   p.$('#previous').click();assert.equal(p.$('#numeric-answer').value,'81');
   p.$('#clear').click();await until(async()=> (await f.get()).answers[exam.questions[4].id]?.value===null);
   assert.equal(p.$('#numeric-answer').value,'');
+});
+
+for(const finalAction of ['lock','force_submit'])test('student UI receives freeze, resume and '+finalAction+' over live socket',async t=>{
+  const f=await setup(t),p=f.page();
+  await until(()=>p.$('input[type=radio]')&&p.$('#save-status').textContent.startsWith('All changes saved'));
+  const start=Date.now();await f.control('freeze');
+  await until(()=>p.$('input[type=radio]').disabled);
+  assert.ok(Date.now()-start<1000);
+  assert.match(p.$('#control-notice').textContent,/frozen/);assert.equal(p.$('#submit').disabled,true);
+  const frozenTime=p.$('#timer').textContent;
+  await new Promise(r=>setTimeout(r,350));
+  assert.equal(p.$('#timer').textContent,frozenTime);
+  await f.control('resume');await until(()=>!p.$('input[type=radio]').disabled);
+  assert.equal(p.$('#submit').disabled,false);
+  await f.control(finalAction);await until(()=>!p.$('#result').hidden);
+  assert.equal(p.$('#exam-content').hidden,true);
+  assert.match(p.$('#submission-reason').textContent,finalAction==='lock'?/cannot be resumed/:/teacher submitted/);
 });

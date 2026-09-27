@@ -12,7 +12,7 @@ async function request(path,body,keepalive=false){
 }
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify({updates:queue,flags}));storageOk=true;}catch{storageOk=false;}}
 function merged(){answers=structuredClone(state.answers);for(const update of queue)answers[update.questionId]={value:update.value,review:update.review,visited:true};}
-function serverTime(){return clockBase+(performance.now()-clockAt);}
+function serverTime(){return state?.pausedAt??(clockBase+(performance.now()-clockAt));}
 function takeState(next){if(state&&next.version<state.version)return;state=next;clockBase=next.serverNow;clockAt=performance.now();merged();}
 function saveStatus(){
   if(invalidNumeric){text('#save-status','Numeric entry incomplete — enter a valid number to save it.');$('#save-status').classList.add('pending');return;}
@@ -20,18 +20,19 @@ function saveStatus(){
   $('#save-status').classList.toggle('pending',pending>0||conflict||!navigator.onLine);
   text('#save-status',conflict?'Editing paused — review the message below.':pending?pending+' pending change(s) · '+(navigator.onLine?'Saving / retrying…':'Offline; will retry when connected.')+(!storageOk?' Local backup unavailable; keep this tab open.':''):state?.status==='submitted'?'Submission recorded.':socket?.readyState===1?'All changes saved · Live connection active':'All changes saved · Live connection reconnecting');
 }
-function acceptView(next){takeState(next);saveStatus();if(state.status==='submitted')renderResult();}
+const controlNotice=document.createElement('p');controlNotice.id='control-notice';controlNotice.setAttribute('role','status');$('#save-status').after(controlNotice);
+function acceptView(next){const before=state?.pausedAt;takeState(next);controlNotice.textContent=state.status==='active'&&state.pausedAt!==null?'Your teacher has frozen this attempt. Your timer is paused. Wait for permission to resume.':'';saveStatus();if(state.status==='submitted')renderResult();else if(before!==state.pausedAt){if(state.pausedAt!==null)$('#submit-dialog').close();if(queue.length){conflict=true;$('#reload-saved').hidden=false;text('#error','Teacher controls changed this attempt. Pending edits remain on this device; reload the saved version before continuing.');}renderQuestion(false);}}
 function enqueue(value,review){
-  if(conflict||state.status!=='active')return;
+  if(conflict||state.pausedAt!==null||state.status!=='active')return;
   const q=state.exam.questions[index];
   queue.push({mutationId:crypto.randomUUID(),questionId:q.id,value,review,expectedVersion:state.version+queue.length});
   persist();merged();renderPalette();saveStatus();flush();
 }
 async function flush(){
-  if(saving||conflict||closed)return;
+  if(saving||conflict||closed||state?.pausedAt!==null||state?.status!=='active')return;
   saving=true;
   try{
-    while(queue.length){
+    while(queue.length&&state.status==='active'&&state.pausedAt===null){
       const update=queue[0];
       const next=await request('/api/attempts/'+id+'/answers',update);
       queue.shift();persist();acceptView(next);
@@ -47,22 +48,23 @@ async function flush(){
     saveStatus();
   }finally{saving=false;if(!conflict&&(queue.length||flags.length)&&!closed){clearTimeout(retry);retry=setTimeout(flush,2500);}}
 }
+let refreshAgain=false;
 async function refresh(render=true){
-  if(refreshing)return;refreshing=true;
+  if(refreshing){refreshAgain=true;return;}refreshing=true;
   try{const next=await request('/api/attempts/'+id);acceptView(next);if(render&&state.status==='active'&&!queue.length&&!invalidNumeric)renderQuestion(false);}
   catch(error){text('#error',error.message);}
-  finally{refreshing=false;}
+  finally{refreshing=false;if(refreshAgain&&!closed){refreshAgain=false;await refresh();}}
 }
 function activeSection(){
   if(!state.exam.sections[0].durationSeconds)return null;
-  let deadline=state.startedAt;
+  let deadline=state.clockStartedAt??state.startedAt;
   for(const section of state.exam.sections){deadline+=section.durationSeconds*1000;if(serverTime()<deadline)return{id:section.id,deadline};}
   return null;
 }
 function available(q){const current=activeSection();return !state.exam.sections[0].durationSeconds||current?.id===q.sectionId;}
 function guardNumeric(){const input=$('#numeric-answer');if(input&&!input.checkValidity()){input.reportValidity();return false;}return !invalidNumeric;}
 function go(next){
-  if(!guardNumeric()||conflict)return;
+  if(!guardNumeric()||conflict||state.pausedAt!==null||state.status!=='active')return;
   if(next<0||next>=state.exam.questions.length||!available(state.exam.questions[next]))return;
   index=next;renderQuestion(true);
 }
@@ -113,9 +115,9 @@ function renderQuestion(visit){
       enqueue(value,!!answers[q.id]?.review);
     });label.append(input,node('span',option.text));inputs.append(label);
   }
-  inputs.querySelectorAll('input').forEach(input=>{input.disabled=conflict;});
+  inputs.querySelectorAll('input').forEach(input=>{input.disabled=conflict||state.pausedAt!==null;});
   text('#review',a.review?'Remove review mark':'Mark for review');
-  $('#clear').disabled=conflict;$('#review').disabled=conflict;
+  $('#clear').disabled=conflict||state.pausedAt!==null;$('#review').disabled=conflict||state.pausedAt!==null;$('#submit').disabled=conflict||state.pausedAt!==null;
   $('#previous').disabled=conflict||index===0||!available(state.exam.questions[index-1]);
   $('#next').disabled=conflict||index===state.exam.questions.length-1||!available(state.exam.questions[index+1]);
   renderSections();renderPalette();
@@ -125,7 +127,7 @@ function renderResult(){
   $('#exam-content').hidden=true;$('#submit-dialog').close();$('#result').hidden=false;
   $('#fullscreen').hidden=true;text('#exam-title',state.exam.title);text('#timer','00:00');$('#section-clock').hidden=true;
   text('#score',String(state.result.score));text('#max-score','/ '+state.result.maxMarks+' marks');
-  text('#submission-reason',state.result.reason==='time_expired'?'Time expired. Your last server-saved answers were submitted automatically.':'Your submission has been recorded.');
+  text('#submission-reason',state.result.reason==='teacher_locked'?'Your teacher locked and submitted this attempt. It cannot be resumed.':state.result.reason==='teacher_submitted'?'Your teacher submitted this attempt.':state.result.reason==='time_expired'?'Time expired. Your last server-saved answers were submitted automatically.':'Your submission has been recorded.');
   $('#result-sections').replaceChildren(...state.result.sections.map(section=>{const tr=node('tr');for(const v of [section.title,section.correct,section.incorrect,section.unanswered,section.score+' / '+section.maxMarks])tr.append(node('td',String(v)));return tr;}));
   if(queue.length){text('#error','This exam is submitted. '+queue.length+' pending edit(s) on this device were not included.');}
   else if(storageKey){try{localStorage.removeItem(storageKey);}catch{}}
@@ -148,7 +150,7 @@ function connect(){
   if(closed)return;
   socket=new WebSocket((location.protocol==='https:'?'wss:':'ws:')+'//'+location.host+'/session-ws');
   socket.onopen=()=>{saveStatus();flush();if(!queue.length)refresh();};
-  socket.onmessage=event=>{try{const message=JSON.parse(event.data);if(message.type==='attempt_changed'&&!saving&&!queue.length)refresh();}catch{}};
+  socket.onmessage=event=>{try{const message=JSON.parse(event.data);if(message.type==='attempt_changed')refresh();}catch{}};
   socket.onclose=event=>{saveStatus();if(closed)return;if(event.code===4001){location.replace('/login');return;}setTimeout(connect,2500);};
   socket.onerror=()=>saveStatus();
 }
@@ -167,7 +169,7 @@ $('#previous').addEventListener('click',()=>go(index-1));$('#next').addEventList
 $('#clear').addEventListener('click',()=>{invalidNumeric=false;enqueue(null,!!answers[state.exam.questions[index].id]?.review);renderQuestion(false);});
 $('#review').addEventListener('click',()=>{if(!guardNumeric())return;const a=answers[state.exam.questions[index].id]||{};enqueue(a.value??null,!a.review);renderQuestion(false);});
 $('#submit').addEventListener('click',async()=>{
-  if(!guardNumeric()||conflict)return;
+  if(!guardNumeric()||conflict||state.pausedAt!==null||state.status!=='active')return;
   await flush();if(queue.length||saving){text('#error','Wait until every answer is saved before submitting.');return;}
   const count=state.exam.questions.filter(q=>answered(answers[q.id]?.value)).length;
   text('#submit-summary',count+' answered · '+(state.exam.questions.length-count)+' unanswered.');$('#submit-dialog').showModal();
@@ -192,6 +194,6 @@ async function start(){
   takeState(await request('/api/attempts/'+encodeURIComponent(id)));
   storageKey='brds-attempt:'+state.userId+':'+id;
   try{const saved=JSON.parse(localStorage.getItem(storageKey)||'{}');queue=Array.isArray(saved.updates)?saved.updates:[];flags=Array.isArray(saved.flags)?saved.flags:[];}catch{storageOk=false;}
-  merged();renderQuestion(true);connect();saveStatus();tick();setInterval(tick,250);
+  merged();acceptView(state);renderQuestion(true);connect();saveStatus();tick();setInterval(tick,250);
 }
 start().catch(error=>{text('#error',error.message);text('#save-status','Unable to open this attempt. Return to your exams and try again.');});

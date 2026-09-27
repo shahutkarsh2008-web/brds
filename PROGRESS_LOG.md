@@ -113,3 +113,39 @@ WHAT: Implemented a scoped login redesign: removed overlapping shapes/tagline, a
 WHY: Addresses the user's rejected screenshot. Implementation is complete; native-browser visual acceptance remains unverified because the existing computer-use sandbox failure prevents inspection.
 NEXT: Refresh localhost:3001 to review the revised design; perform desktop/mobile visual acceptance when browser tooling is available. No authentication logic changed.
 
+
+### [2026-09-27 18:18 UTC] Codex — Phase 4: teacher controls
+STATUS: IN PROGRESS
+FILES: src/schema.js, src/exams.js, src/exam-api.js, public/exam.js, public/workspace.js, public/workspace.css, test/exams.test.js, test/exam-ui.test.js, docs/requirements.md, BRDS-CBT-Phase-4-Completion-Report.md
+WHAT: Building persisted freeze/resume and force-submit controls with role checks, audit records and live student enforcement. Lock semantics requested from the user.
+WHY: Phase 4 requires server-enforced teacher actions and immediate student UI updates.
+NEXT: Implement and test timer preservation, races, authorization and client state changes; integrate lock after the user's answer.
+
+
+### [2026-09-27 18:24 UTC] Codex — Phase 4: control implementation and verification
+STATUS: DONE
+FILES: src/schema.js, src/exams.js, src/exam-api.js, public/exam.js, public/workspace.js, public/workspace.css, test/exams.test.js, test/exam-ui.test.js
+WHAT: Implemented freeze/resume, force-submit and permanent lock-and-submit (the user's chosen lock behavior). Backend tests pass for preserved exam/section time, rejected frozen writes/submits, action retries/audit, concurrent/stale actions, role/origin protection and expired attempts. Two new simulated DOM tests verify live freeze/resume and both final actions; freeze disables inputs within one second.
+WHY: Covers Phase 4 enforcement and client response, using real HTTP/WebSockets plus simulated DOM. Native visual browser acceptance remains outstanding.
+NEXT: Finish a refresh-race guard, version labels, full-suite verification and report.
+### [2026-09-27 18:24 UTC] Codex — Phase 4: final integration
+STATUS: IN PROGRESS
+FILES: public/exam.js, src/app.js, src/server.js, test/app.test.js, README.md, docs/requirements.md, BRDS-CBT-Phase-4-Completion-Report.md
+WHAT: Ensuring a control event received during an existing state fetch triggers a follow-up fetch; updating phase labels and documentation.
+WHY: Prevent a concurrent fetch from swallowing the final teacher state update.
+NEXT: Run all tests, restart the local demo and write the handoff report.
+
+
+### [2026-09-27 18:26 UTC] Codex — Phase 4: final integration and handoff
+STATUS: DONE
+FILES: public/exam.js, src/app.js, src/server.js, test/app.test.js, README.md, docs/requirements.md, BRDS-CBT-Phase-4-Completion-Report.md, test/exam-ui.test.js, test/exams.test.js
+WHAT: Full suite passes 40/40. Restarted isolated demo at localhost:3001; health confirms sqlite and phase 4. Added state-fetch follow-up guard, report and roadmap. User explicitly selected permanent lock-and-submit; freeze remains reversible. Implementation claims are released.
+WHY: Completes Phase 4 coding while preserving the user's code-first schedule.
+NEXT: Phase 5 load-test tooling/local soak is next when requested. Final credentials/accounts/API and hosted acceptance remain Phase 8. Latest demo process session: 87667; database is data/development.sqlite. No push/deployment performed.
+### [2026-09-27 18:26 UTC] Codex — Phase 4: native browser acceptance
+STATUS: BLOCKED
+FILES: public/exam.js, public/workspace.js
+WHAT: Live student enforcement is covered by real sockets and simulated DOM tests, but native-browser visual/multi-profile acceptance has not been performed; existing computer-use sandbox initialization failure remains the blocker. No file ownership claim.
+WHY: The original Phase 4 acceptance requires actual student tabs visibly responding to teacher actions.
+NEXT: Use separate teacher/student profiles on localhost:3001; start a student attempt, then verify freeze/resume and both irreversible final actions. Do not count simulated DOM checks as native visual acceptance.
+

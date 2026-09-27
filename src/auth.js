@@ -123,7 +123,8 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
         const challenge = (await database.query(`UPDATE auth_challenges SET attempts=attempts+1
           WHERE token_hash=$1 AND expires_at>$2 AND attempts<5 RETURNING *`, [digest(token), now()])).rows[0];
         if (!challenge) throw new HttpError(401, 'OTP expired or attempts exhausted. Sign in again.');
-        if (!await otp.verify(challenge.provider_session, input.code)) throw new HttpError(401, 'Incorrect or expired OTP.');
+        const targetAccount = (await database.query('SELECT phone FROM users WHERE id=$1', [challenge.user_id])).rows[0];
+        if (!await otp.verify(challenge.provider_session, input.code, targetAccount?.phone)) throw new HttpError(401, 'Incorrect or expired OTP.');
         const rawSession = randomBytes(32).toString('hex');
         const user = await database.transaction(async query => {
           const consumed = await query('DELETE FROM auth_challenges WHERE token_hash=$1 AND expires_at>$2 RETURNING user_id', [digest(token), now()]);

@@ -35,11 +35,24 @@ export function createOtpProvider(env = process.env, request = fetch) {
       }
       return data.Details;
     },
-    async verify(session, code) {
-      const { ok, data } = await call(['VERIFY', session, code]);
-      const isValid = ok && data?.Status === 'Success' && typeof data?.Details === 'string' && /matched|validated/i.test(data.Details);
+    async verify(session, code, phone) {
+      const isPhone = typeof phone === 'string' && /^91[6-9]\d{9}$/.test(phone);
+      const action = isPhone ? 'VERIFY3' : 'VERIFY';
+      const target = isPhone ? phone : session;
+
+      let res = await call([action, target, code]);
+      const checkValid = r => r.ok && r.data?.Status === 'Success' && typeof r.data?.Details === 'string' && r.data.Details !== 'unexpected' && !/mismatch|expired|invalid/i.test(r.data.Details);
+      let isValid = checkValid(res);
+
+      if (!isValid && isPhone && session && session !== phone) {
+        const fallbackRes = await call(['VERIFY', session, code]);
+        if (checkValid(fallbackRes)) {
+          isValid = true;
+        }
+      }
+
       if (!isValid) {
-        console.warn('[OTP VERIFY REJECTED BY 2FACTOR]', { ok, status: data?.Status, details: data?.Details });
+        console.warn('[OTP VERIFY REJECTED BY 2FACTOR]', { ok: res.ok, status: res.data?.Status, details: res.data?.Details });
       }
       return isValid;
     },

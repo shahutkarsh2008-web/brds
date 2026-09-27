@@ -45,12 +45,14 @@ document.querySelector('#create-user').addEventListener('submit', async event =>
 });
 async function start() {
   const role = location.pathname.slice(1);
+  if (role === 'admin') { location.replace('/admin'); return; }
   const { user } = await request(`/api/${role}`);
   const copy = {
     student: ['STUDENT WORKSPACE', 'Ready for your next step.', 'Your exam space is ready.', 'Assigned tests and attempt history will appear here when the exam engine is added.'],
     teacher: ['TEACHER WORKSPACE', 'A clear view of your classroom.', 'Your invigilation space is ready.', 'Live student monitoring and exam controls will be added in the next build phases.'],
     admin: ['ADMIN WORKSPACE', 'Give your students a connected start.', 'You manage access.', 'Create student, teacher, and administrator accounts below. Each account requires mobile OTP verification to sign in.'],
   }[role];
+
   document.querySelector('#role-label').textContent = copy[0];
   document.querySelector('#greeting').textContent = `Hello, ${user.name}.`;
   document.querySelector('#intro').textContent = copy[1];

@@ -236,3 +236,15 @@ test('expired attempts cannot be revived by freeze or resume',async t=>{
   assert.equal(result.body.status,'submitted');assert.equal(result.body.result.reason,'time_expired');
   assert.equal((await f.db.query('SELECT * FROM teacher_actions')).rowCount,0);
 });
+
+test('answer changes notify only the affected student and the teacher',async t=>{
+  const f=await fixture(t),a=await f.start();
+  const one=await f.socket('student1'),two=await f.socket('student2'),teacher=await f.socket('teacher');
+  await new Promise(r=>setTimeout(r,150));one.messages.length=0;two.messages.length=0;teacher.messages.length=0;
+  await f.api('/api/attempts/'+a.id+'/answers',edit(f.definition.questions[0].id,'a'));
+  await new Promise(r=>setTimeout(r,200));
+  assert.ok(one.messages.some(m=>m.type==='attempt_changed'));
+  assert.ok(teacher.messages.some(m=>m.type==='roster'));
+  assert.ok(!two.messages.some(m=>m.type==='attempt_changed'));
+});
+

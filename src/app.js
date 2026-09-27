@@ -10,15 +10,23 @@ import { createLiveHub } from './live.js';
 const assets = new Map([
   ['/', ['login.html', 'text/html; charset=utf-8']],
   ['/login', ['login.html', 'text/html; charset=utf-8']],
+  ['/login.html', ['login.html', 'text/html; charset=utf-8']],
   ['/setup', ['index.html', 'text/html; charset=utf-8']],
   ['/student', ['dashboard.html', 'text/html; charset=utf-8']],
+  ['/dashboard.html', ['dashboard.html', 'text/html; charset=utf-8']],
   ['/exam', ['exam.html', 'text/html; charset=utf-8']],
+  ['/exam.html', ['exam.html', 'text/html; charset=utf-8']],
   ['/exam.js', ['exam.js', 'text/javascript; charset=utf-8']],
   ['/exam.css', ['exam.css', 'text/css; charset=utf-8']],
   ['/workspace.js', ['workspace.js', 'text/javascript; charset=utf-8']],
   ['/workspace.css', ['workspace.css', 'text/css; charset=utf-8']],
   ['/teacher', ['dashboard.html', 'text/html; charset=utf-8']],
-  ['/admin', ['dashboard.html', 'text/html; charset=utf-8']],
+  ['/admin', ['admin.html', 'text/html; charset=utf-8']],
+  ['/admin.html', ['admin.html', 'text/html; charset=utf-8']],
+  ['/author', ['admin.html', 'text/html; charset=utf-8']],
+  ['/author.html', ['admin.html', 'text/html; charset=utf-8']],
+  ['/admin.js', ['admin.js', 'text/javascript; charset=utf-8']],
+  ['/admin.css', ['admin.css', 'text/css; charset=utf-8']],
   ['/login.js', ['login.js', 'text/javascript; charset=utf-8']],
   ['/dashboard.js', ['dashboard.js', 'text/javascript; charset=utf-8']],
   ['/auth.css', ['auth.css', 'text/css; charset=utf-8']],
@@ -30,7 +38,7 @@ export function createApp(database, options = {}) {
   if (options.development && ((options.env || process.env).NODE_ENV === 'production' || process.env.RENDER)) throw new Error('Development fixtures cannot run in production.');
   const sockets = new WebSocketServer({ noServer: true, maxPayload: 16384, perMessageDeflate: false });
   let live;
-  const engine = createExamEngine(database, { now: options.now, changed: () => live?.changed() });
+  const engine = createExamEngine(database, { now: options.now, changed: userId => live?.changed(userId) });
   const auth = createAuth(database, { ...options, onChange: () => live?.changed(), otp: options.otp || createOtpProvider(options.env), onLogout(hash) {
     for (const ws of sockets.clients) if (ws.sessionHash === hash) ws.close(4001, 'Signed out');
   } });
@@ -45,7 +53,7 @@ export function createApp(database, options = {}) {
     try { path = new URL(req.url, 'http://localhost').pathname; }
     catch { res.writeHead(400); return res.end('Invalid request target'); }
     if (path === '/api/development' && req.method === 'GET') { res.writeHead(200, { 'Content-Type':'application/json' }); return res.end(JSON.stringify({ enabled: options.development === true })); }
-    if (path === '/api/exams' || path.startsWith('/api/exams/') || path.startsWith('/api/attempts/') || path === '/api/monitor') return examApi(req, res, path);
+    if (path === '/api/exams' || path.startsWith('/api/exams/') || path.startsWith('/api/attempts/') || path.startsWith('/api/author/') || path.startsWith('/api/analytics/') || path === '/api/monitor') return examApi(req, res, path);
     if (path.startsWith('/api/')) return auth.handle(req, res, path);
     if (req.method !== 'GET' && req.method !== 'HEAD') {
       res.writeHead(405, { Allow: 'GET, HEAD' }); return res.end();
@@ -54,15 +62,17 @@ export function createApp(database, options = {}) {
       try {
         await database.check();
         res.writeHead(200, { 'Content-Type': 'application/json' });
-        return res.end(JSON.stringify({ status: 'ok', database: database.kind, phase: 4 }));
+        return res.end(JSON.stringify({ status: 'ok', database: database.kind, phase: 7 }));
       } catch {
         res.writeHead(503, { 'Content-Type': 'application/json' });
         return res.end(JSON.stringify({ status: 'unavailable' }));
       }
     }
-    if (['/student', '/teacher', '/admin', '/exam'].includes(path)) {
-      try { await auth.requireRole(req, path === '/teacher' ? ['teacher', 'admin'] : [path === '/exam' ? 'student' : path.slice(1)]); }
-      catch (error) {
+    if (['/student', '/teacher', '/admin', '/author', '/exam', '/admin.html', '/author.html', '/dashboard.html', '/exam.html'].includes(path)) {
+      try {
+        const cleanPath = path.replace('.html', '');
+        await auth.requireRole(req, ['/teacher', '/author', '/admin'].includes(cleanPath) ? ['teacher', 'admin'] : [cleanPath === '/exam' ? 'student' : cleanPath.slice(1)]);
+      } catch (error) {
         if (error.status === 401) { res.writeHead(302, { Location: '/login' }); return res.end(); }
         res.writeHead(error.status || 503); return res.end(error.status === 403 ? 'Access denied' : 'Service unavailable');
       }

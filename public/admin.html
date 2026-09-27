@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRDS CBT — Admin & Teacher Workspace</title>
+  <link rel="stylesheet" href="/auth.css">
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <header class="admin-header">
+    <div class="header-brand">
+      <img src="/media/brds-logo-enhanced.png" alt="BRDS Logo" class="brand-logo">
+      <div class="brand-title">
+        <h1>BRDS CBT Portal</h1>
+        <p class="subtitle">Admin & Teacher Control Workspace</p>
+      </div>
+    </div>
+    <div class="header-user">
+      <span id="user-info">Loading...</span>
+      <button id="btn-logout" class="btn btn-secondary btn-sm">Sign out</button>
+    </div>
+  </header>
+
+  <nav class="admin-nav">
+    <button class="nav-tab active" data-tab="authoring">✏️ Question & Exam Authoring</button>
+    <button class="nav-tab" data-tab="assignments">📋 Assign Exams</button>
+    <button class="nav-tab" data-tab="users">👤 User Account Management</button>
+    <button class="nav-tab" data-tab="monitoring">📡 Live Roster & Controls</button>
+    <button class="nav-tab" data-tab="analytics">📊 Analytics & Batch Ranks</button>
+  </nav>
+
+  <main class="admin-container">
+    <!-- TAB 1: EXAM AUTHORING -->
+    <section id="tab-authoring" class="tab-content active">
+      <div class="layout-grid">
+        <div class="author-form-col">
+          <!-- Exam Metadata -->
+          <div class="card">
+            <h2>1. Exam Metadata</h2>
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="exam-id">Exam ID *</label>
+                <input type="text" id="exam-id" placeholder="e.g. design-paper-2026-v1" required>
+              </div>
+              <div class="form-group flex-2">
+                <label for="exam-title">Exam Title *</label>
+                <input type="text" id="exam-title" placeholder="e.g. BRDS Design Aptitude Test 2026" required>
+              </div>
+              <div class="form-group flex-1">
+                <label for="exam-duration">Total Duration (Minutes) *</label>
+                <input type="number" id="exam-duration" value="60" min="1" max="1440" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exam-instructions">Instructions</label>
+              <textarea id="exam-instructions" rows="2" placeholder="e.g. Read each question carefully. Negative marking applies."></textarea>
+            </div>
+          </div>
+
+          <!-- Timed Sections -->
+          <div class="card">
+            <div class="card-header">
+              <h2>2. Exam Sections</h2>
+              <button id="btn-add-section" class="btn btn-secondary btn-sm">+ Add Section</button>
+            </div>
+            <div id="sections-container">
+              <!-- Dynamic section items -->
+            </div>
+          </div>
+
+          <!-- Question Editor -->
+          <div class="card">
+            <h2>3. Question Authoring Editor</h2>
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="q-id">Question ID *</label>
+                <input type="text" id="q-id" placeholder="q1" required>
+              </div>
+              <div class="form-group flex-1">
+                <label for="q-section">Assign Section *</label>
+                <select id="q-section"></select>
+              </div>
+              <div class="form-group flex-1">
+                <label for="q-type">Question Type *</label>
+                <select id="q-type">
+                  <option value="MCQ">MCQ (Single Choice)</option>
+                  <option value="MSQ">MSQ (Multiple Choice)</option>
+                  <option value="NAT">NAT (Numeric Answer Range)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- WYSIWYG Formatting Toolbar -->
+            <div class="form-group">
+              <label>Question Prompt (WYSIWYG Formatting) *</label>
+              <div class="wysiwyg-toolbar">
+                <button type="button" class="toolbar-btn" data-tag="b" title="Bold"><b>B</b></button>
+                <button type="button" class="toolbar-btn" data-tag="i" title="Italic"><i>I</i></button>
+                <button type="button" class="toolbar-btn" data-tag="code" title="Formula / Code">&lt;/&gt;</button>
+                <button type="button" class="toolbar-btn" data-tag="list" title="Bullet List">• List</button>
+                <button type="button" class="toolbar-btn" data-tag="image" title="Embed Image">📷 Image</button>
+              </div>
+              <textarea id="q-prompt" rows="4" placeholder="Enter question prompt text or formatted HTML..."></textarea>
+            </div>
+
+            <!-- Image Embed Optional Fields -->
+            <div class="form-row" id="image-fields" style="display: none;">
+              <div class="form-group flex-2">
+                <label for="q-image-url">Image Path (under /media/)</label>
+                <input type="text" id="q-image-url" placeholder="/media/brds-logo-enhanced.png">
+              </div>
+              <div class="form-group flex-2">
+                <label for="q-image-alt">Image Description (Alt Text)</label>
+                <input type="text" id="q-image-alt" placeholder="Diagram showing rotation">
+              </div>
+            </div>
+
+            <!-- Options / Answers Section -->
+            <div id="options-panel">
+              <div class="card-header">
+                <h3>Options & Correct Answer Key</h3>
+                <button id="btn-add-option" class="btn btn-secondary btn-sm">+ Add Option</button>
+              </div>
+              <div id="options-list"></div>
+            </div>
+
+            <div id="nat-panel" style="display: none;">
+              <h3>Numeric Answer Range (Inclusive)</h3>
+              <div class="form-row">
+                <div class="form-group flex-1">
+                  <label for="nat-min">Minimum Accepted Value *</label>
+                  <input type="number" id="nat-min" step="any" placeholder="10.5">
+                </div>
+                <div class="form-group flex-1">
+                  <label for="nat-max">Maximum Accepted Value *</label>
+                  <input type="number" id="nat-max" step="any" placeholder="10.5">
+                </div>
+              </div>
+            </div>
+
+            <!-- Marking Scheme -->
+            <div class="form-row margin-top">
+              <div class="form-group flex-1">
+                <label for="m-correct">Correct Marks (+)</label>
+                <input type="number" id="m-correct" value="4" step="any" required>
+              </div>
+              <div class="form-group flex-1">
+                <label for="m-incorrect">Incorrect Penalty (-)</label>
+                <input type="number" id="m-incorrect" value="-1" step="any" required>
+              </div>
+              <div class="form-group flex-1">
+                <label for="m-unanswered">Unanswered Marks</label>
+                <input type="number" id="m-unanswered" value="0" step="any" required>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button id="btn-save-question" class="btn btn-primary">+ Add Question to Paper</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Live Preview & Questions List -->
+        <div class="author-preview-col">
+          <div class="card sticky-card">
+            <div class="card-header">
+              <h2>Questions in Paper (<span id="q-count">0</span>)</h2>
+              <button id="btn-save-exam" class="btn btn-success">💾 Save & Author Exam</button>
+            </div>
+            
+            <!-- Live Preview of Current Question -->
+            <div class="preview-box">
+              <span class="badge">Student View Preview</span>
+              <div id="preview-render" class="preview-content">
+                <p class="muted">Start authoring a question to see real-time preview...</p>
+              </div>
+            </div>
+
+            <hr>
+            <h3>Paper Questions Summary</h3>
+            <div id="questions-summary-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: ASSIGN EXAMS -->
+    <section id="tab-assignments" class="tab-content">
+      <div class="card">
+        <h2>Assign Authored Exam to Students</h2>
+        <div class="form-row">
+          <div class="form-group flex-2">
+            <label for="assign-exam-select">Select Authored Exam *</label>
+            <select id="assign-exam-select"></select>
+          </div>
+          <div class="form-group flex-1">
+            <button id="btn-load-students" class="btn btn-secondary margin-top-btn">Refresh Student List</button>
+          </div>
+        </div>
+
+        <h3>Active Student Roster</h3>
+        <p class="muted">Check students who should be assigned this exam paper:</p>
+        <div id="student-checkboxes" class="checkbox-grid"></div>
+
+        <div class="form-actions margin-top">
+          <button id="btn-save-assignment" class="btn btn-primary">Assign Paper to Selected Students</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: USER MANAGEMENT -->
+    <section id="tab-users" class="tab-content">
+      <div class="card">
+        <h2>Issue New User Credentials (Student / Teacher / Admin)</h2>
+        <form id="form-create-user">
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="u-id">Login ID *</label>
+              <input type="text" id="u-id" placeholder="e.g. student99" required>
+            </div>
+            <div class="form-group flex-2">
+              <label for="u-name">Full Name *</label>
+              <input type="text" id="u-name" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="form-group flex-1">
+              <label for="u-phone">Phone (10-digits) *</label>
+              <input type="text" id="u-phone" placeholder="9876543210" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="u-role">Role *</label>
+              <select id="u-role">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="admin">Admin</option>
+              </select>
+            </div>
+            <div class="form-group flex-2">
+              <label for="u-pass">Password (Min 8 chars) *</label>
+              <input type="password" id="u-pass" placeholder="Set initial password" required>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Issue User Account</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card margin-top">
+        <h2>Existing User Accounts</h2>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Login ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Active</th>
+              </tr>
+            </thead>
+            <tbody id="users-table-body">
+              <tr><td colspan="4">Loading accounts...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: LIVE MONITORING -->
+    <section id="tab-monitoring" class="tab-content">
+      <div class="card">
+        <h2>Live Student Exam Roster & Controls</h2>
+        <p>Monitor real-time student activity, tab switches, remaining exam time, and perform teacher controls (Freeze, Resume, Lock, Force-Submit).</p>
+        <a href="/teacher" target="_blank" class="btn btn-primary btn-lg">Open Live Roster Dashboard ↗</a>
+      </div>
+    </section>
+
+    <!-- TAB 5: ANALYTICS & BATCH RANKS -->
+    <section id="tab-analytics" class="tab-content">
+      <div class="card">
+        <div class="card-header">
+          <h2>Batch Performance & Leaderboard Ranks</h2>
+          <button id="btn-export-csv" class="btn btn-success">📥 Download CSV Scorecard</button>
+        </div>
+        <div class="form-row">
+          <div class="form-group flex-2">
+            <label for="analytics-exam-select">Select Authored Exam</label>
+            <select id="analytics-exam-select"></select>
+          </div>
+          <div class="form-group flex-1">
+            <button id="btn-load-analytics" class="btn btn-secondary margin-top-btn">Refresh Analytics</button>
+          </div>
+        </div>
+
+        <!-- KPI Summary Cards -->
+        <div class="kpi-grid margin-top">
+          <div class="kpi-card">
+            <div class="kpi-title">Total Submissions</div>
+            <div class="kpi-value" id="kpi-total">0</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-title">Highest Score</div>
+            <div class="kpi-value" id="kpi-highest">0</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-title">Batch Average Score</div>
+            <div class="kpi-value" id="kpi-average">0</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-title">Average Accuracy</div>
+            <div class="kpi-value" id="kpi-percentage">0%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Performance Breakdowns -->
+      <div class="card margin-top">
+        <h2>Section-by-Section Accuracy Breakdown</h2>
+        <div id="section-analytics-container" class="form-row">
+          <p class="muted">Select an exam to view section accuracy metrics.</p>
+        </div>
+      </div>
+
+      <!-- Leaderboard Table -->
+      <div class="card margin-top">
+        <h2>Batch Leaderboard & Ranks</h2>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Student Name</th>
+                <th>Login ID</th>
+                <th>Score</th>
+                <th>Max Marks</th>
+                <th>Percentage</th>
+                <th>Time Taken</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard-table-body">
+              <tr><td colspan="7" class="muted">Select an exam to view rankings.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

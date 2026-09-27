@@ -107,7 +107,7 @@ function studentView(row, time) {
 }
 export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) {
   const lockSuffix = database.kind === 'postgres' ? ' FOR UPDATE' : '';
-  const notify = () => { try { changed(); } catch {} };
+  const notify = userId => { try { changed(userId); } catch {} };
   async function finish(query, row, reason, time) {
     if (row.status !== 'active') return row;
     row.status = 'submitted'; row.submitted_at = reason === 'time_expired' ? Number(row.deadline) : time; row.version++;
@@ -137,7 +137,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       await controlState(query,row);
       if(row.status==='active'&&row.paused_at==null&&Number(row.deadline)<=now()) await finish(query,row,'time_expired',now());
       return studentView(row,now());
-    }); notify();return view;
+    }); notify(view.userId);return view;
   }
   async function get(id,userId) {
     let expired=false;
@@ -145,7 +145,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       const row=await owned(query,id,userId);
       if(row.status==='active'&&row.paused_at==null&&Number(row.deadline)<=now()){await finish(query,row,'time_expired',now());expired=true;}
       return studentView(row,now());
-    }); if(expired)notify(); return view;
+    }); if(expired)notify(userId); return view;
   }
   async function answer(id,userId,input) {
     if(!input||!idPattern.test(input.mutationId||'')||!Number.isInteger(input.expectedVersion)||input.expectedVersion<0||typeof input.review!=='boolean')fail(400,'Invalid answer update.');
@@ -168,7 +168,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       await query('UPDATE attempts SET answers_json=$1,version=$2 WHERE id=$3',[row.answers_json,row.version,id]);
       await query('INSERT INTO answer_mutations(attempt_id,id) VALUES($1,$2)',[id,input.mutationId]);
       return studentView(row,now());
-    });notify();return view;
+    });notify(view.userId);return view;
   }
   async function submit(id,userId,expectedVersion) {
     const current=await get(id,userId);
@@ -179,7 +179,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       if(row.status==='active'&&row.version!==expectedVersion)fail(409,'Save all answers and refresh before submitting.','VERSION_CONFLICT');
       await finish(query,row,Number(row.deadline)<=now()?'time_expired':'student_submitted',now());
       return studentView(row,now());
-    });notify();return view;
+    });notify(view.userId);return view;
   }
   async function flag(id,userId,input) {
     if(!input||!idPattern.test(input.eventId||'')||!['tab_hidden','window_blur','fullscreen_exit'].includes(input.type))fail(400,'Invalid activity event.');
@@ -190,7 +190,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       const recent=(await query('SELECT created_at FROM activity_flags WHERE attempt_id=$1 AND type=$2 ORDER BY created_at DESC LIMIT 1',[id,input.type])).rows[0];
       if(recent&&now()-Number(recent.created_at)<1000)return;
       await query('INSERT INTO activity_flags(id,attempt_id,user_id,type,created_at) VALUES($1,$2,$3,$4,$5) ON CONFLICT(id) DO NOTHING',[input.eventId,id,userId,input.type,now()]);
-    });notify();return {ok:true};
+    });notify(userId);return {ok:true};
   }
   async function control(id,actorId,input){
     if(!input||!idPattern.test(input.requestId||'')||!Number.isInteger(input.expectedVersion)||!['freeze','resume','force_submit','lock'].includes(input.action))fail(400,'Invalid teacher action.');
@@ -229,7 +229,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       }
       await query('INSERT INTO teacher_actions(id,attempt_id,actor_id,action,created_at) VALUES($1,$2,$3,$4,$5)',[input.requestId,id,actorId,input.action,time]);
       return studentView(row,time);
-    });notify();return view;
+    });notify(view.userId);return view;
   }
   async function sweep() {
     const ids=(await database.query("SELECT id,user_id FROM attempts WHERE status='active' AND deadline<=$1 AND NOT EXISTS(SELECT 1 FROM attempt_controls c WHERE c.attempt_id=attempts.id AND c.paused_at IS NOT NULL)",[now()])).rows;
@@ -251,5 +251,156 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       })})),
       flags:flags.map(f=>({id:f.id,attemptId:f.attempt_id,type:f.type,at:Number(f.created_at),name:f.name,loginId:f.login_id}))};
   }
-  return {list,start,get,answer,submit,flag,sweep,roster,control};
+  async function saveExam(input) {
+    const exam = validateExam(input);
+    await database.query(
+      'INSERT INTO exams(id,title,definition,created_at) VALUES($1,$2,$3,$4) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title, definition=EXCLUDED.definition',
+      [exam.id, exam.title, JSON.stringify(exam), Date.now()]
+    );
+    return { ok: true, id: exam.id, title: exam.title };
+  }
+  async function assignExam(examId, userIds) {
+    if (!Array.isArray(userIds) || !userIds.length || new Set(userIds).size !== userIds.length) fail(400, 'Supply distinct assigned student IDs.');
+    await database.transaction(async query => {
+      const exam = (await query('SELECT id FROM exams WHERE id=$1', [examId])).rows[0];
+      if (!exam) fail(404, 'Exam not found.');
+      for (const inputId of userIds) {
+        const user = (await query("SELECT id FROM users WHERE (id=$1 OR login_id=$1) AND role='student' AND active=1", [inputId])).rows[0];
+        if (!user) fail(400, 'Every assignment must be an active student.');
+        await query('INSERT INTO exam_assignments(exam_id,user_id) VALUES($1,$2) ON CONFLICT(exam_id,user_id) DO NOTHING', [examId, user.id]);
+      }
+    });
+    return { ok: true, assigned: userIds.length };
+  }
+  async function listAuthored() {
+    const rows = (await database.query(
+      `SELECT e.id, e.title, e.created_at, COUNT(a.user_id) AS assignment_count 
+       FROM exams e 
+       LEFT JOIN exam_assignments a ON a.exam_id=e.id 
+       GROUP BY e.id, e.title, e.created_at 
+       ORDER BY e.created_at DESC`
+    )).rows;
+    return rows.map(r => ({ id: r.id, title: r.title, createdAt: Number(r.created_at), assignmentCount: Number(r.assignment_count) }));
+  }
+  async function getAuthored(examId) {
+    const row = (await database.query('SELECT id, title, definition, created_at FROM exams WHERE id=$1', [examId])).rows[0];
+    if (!row) fail(404, 'Exam not found.');
+    return JSON.parse(row.definition);
+  }
+  async function getExamAnalytics(examId) {
+    const examRow = (await database.query('SELECT id, title, definition FROM exams WHERE id=$1', [examId])).rows[0];
+    if (!examRow) fail(404, 'Exam not found.');
+    const exam = JSON.parse(examRow.definition);
+
+    const rows = (await database.query(
+      `SELECT a.*, u.name, u.login_id FROM attempts a
+       JOIN users u ON u.id=a.user_id
+       WHERE a.exam_id=$1 AND a.status='submitted'
+       ORDER BY a.submitted_at ASC`,
+      [examId]
+    )).rows;
+
+    const parsed = rows.map(r => {
+      const result = r.result_json ? JSON.parse(r.result_json) : { score: 0, maxMarks: exam.maxMarks, sections: [] };
+      const timeTakenMs = Math.max(0, Number(r.submitted_at || Date.now()) - Number(r.started_at));
+      return {
+        attemptId: r.id,
+        userId: r.user_id,
+        name: r.name,
+        loginId: r.login_id,
+        score: Number(result.score || 0),
+        maxMarks: Number(result.maxMarks || exam.maxMarks),
+        percentage: Number(((result.score / (result.maxMarks || 1)) * 100).toFixed(2)),
+        submittedAt: Number(r.submitted_at),
+        timeTakenSeconds: Math.round(timeTakenMs / 1000),
+        sections: result.sections || []
+      };
+    });
+
+    parsed.sort((a, b) => b.score - a.score || a.timeTakenSeconds - b.timeTakenSeconds);
+
+    let currentRank = 0;
+    const leaderboard = parsed.map((item, idx) => {
+      if (idx === 0 || item.score !== parsed[idx - 1].score || item.timeTakenSeconds !== parsed[idx - 1].timeTakenSeconds) {
+        currentRank = idx + 1;
+      }
+      return { rank: currentRank, ...item };
+    });
+
+    const totalSubmitted = leaderboard.length;
+    const highestScore = totalSubmitted ? leaderboard[0].score : 0;
+    const totalScoreSum = leaderboard.reduce((sum, item) => sum + item.score, 0);
+    const averageScore = totalSubmitted ? Number((totalScoreSum / totalSubmitted).toFixed(2)) : 0;
+    const averagePercentage = exam.maxMarks ? Number(((averageScore / exam.maxMarks) * 100).toFixed(2)) : 0;
+
+    const sectionStats = exam.sections.map(sec => {
+      let secScoreSum = 0, secMax = 0, correctSum = 0, incorrectSum = 0, unansweredSum = 0;
+      for (const item of leaderboard) {
+        const s = item.sections.find(x => x.id === sec.id);
+        if (s) {
+          secScoreSum += s.score;
+          secMax += s.maxMarks;
+          correctSum += s.correct;
+          incorrectSum += s.incorrect;
+          unansweredSum += s.unanswered;
+        }
+      }
+      const avgSecScore = totalSubmitted ? Number((secScoreSum / totalSubmitted).toFixed(2)) : 0;
+      const accuracyPct = secMax ? Number(((secScoreSum / secMax) * 100).toFixed(2)) : 0;
+      return {
+        id: sec.id,
+        title: sec.title,
+        avgScore: avgSecScore,
+        accuracyPct,
+        totalCorrect: correctSum,
+        totalIncorrect: incorrectSum,
+        totalUnanswered: unansweredSum
+      };
+    });
+
+    return {
+      ok: true,
+      examId: exam.id,
+      title: exam.title,
+      maxMarks: exam.maxMarks,
+      stats: {
+        totalSubmitted,
+        highestScore,
+        averageScore,
+        averagePercentage,
+        sectionStats
+      },
+      leaderboard
+    };
+  }
+
+  async function getStudentHistory(userId) {
+    const rows = (await database.query(
+      `SELECT a.*, e.title FROM attempts a
+       JOIN exams e ON e.id=a.exam_id
+       WHERE a.user_id=$1 ORDER BY a.started_at DESC`,
+      [userId]
+    )).rows;
+
+    const history = rows.map(r => {
+      const result = r.result_json ? JSON.parse(r.result_json) : null;
+      return {
+        attemptId: r.id,
+        examId: r.exam_id,
+        title: r.title,
+        status: r.status,
+        startedAt: Number(r.started_at),
+        submittedAt: r.submitted_at ? Number(r.submitted_at) : null,
+        score: result ? result.score : null,
+        maxMarks: result ? result.maxMarks : null,
+        percentage: result && result.maxMarks ? Number(((result.score / result.maxMarks) * 100).toFixed(2)) : null,
+        sections: result ? result.sections : []
+      };
+    });
+
+    return { ok: true, history };
+  }
+
+  return {list,start,get,answer,submit,flag,sweep,roster,control,saveExam,assignExam,listAuthored,getAuthored,getExamAnalytics,getStudentHistory};
 }
+

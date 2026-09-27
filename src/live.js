@@ -1,31 +1,35 @@
 // One backend instance owns live presence. Database records survive restarts.
 export function createLiveHub(engine, auth, {now=Date.now}={}) {
-  const clients=new Set(),seen=new Map();
-  let timer,closed=false,running=Promise.resolve();
+  const clients=new Set(),seen=new Map(),dirty=new Set();
+  let timer,closed=false,running=Promise.resolve(),busy=false,pending=false;
   const presence=id=>({connected:[...clients].some(ws=>ws.user.id===id&&ws.readyState===1),lastSeen:seen.get(id)||null});
   const snapshot=()=>engine.roster(presence);
-  async function broadcast(){
-    const current=[...clients].filter(ws=>ws.readyState===1);
-    if(!current.length)return;
+  async function broadcast(affected){
+    const current=[...clients].filter(ws=>ws.readyState===1&&(['teacher','admin'].includes(ws.user.role)||affected.has(ws.user.id)));
     const teachers=[];
     for(const ws of current){
       const user=await auth.session(ws.request);
       if(!user){ws.close(4001,'Session expired');continue;}
       if(['teacher','admin'].includes(user.role))teachers.push(ws);
-      else ws.send(JSON.stringify({type:'attempt_changed',serverNow:now()}));
+      else if(ws.readyState===1)ws.send(JSON.stringify({type:'attempt_changed',serverNow:now()}));
     }
     if(teachers.length){
       const payload=JSON.stringify(await snapshot());
       for(const ws of teachers)if(ws.readyState===1)ws.send(payload);
     }
   }
-  function changed(){
-    if(closed||timer)return;
-    timer=setTimeout(()=>{timer=null;running=running.then(broadcast).catch(()=>console.error('Live update failed'));},20);
+  function schedule(){
+    if(closed||timer||busy)return;
+    timer=setTimeout(()=>{
+      timer=null;busy=true;pending=false;
+      const affected=new Set(dirty);dirty.clear();
+      running=broadcast(affected).catch(()=>console.error('Live update failed')).finally(()=>{busy=false;if(pending)schedule();});
+    },20);
   }
+  function changed(userId){if(closed)return;if(userId)dirty.add(userId);pending=true;schedule();}
   function add(ws,user){
-    ws.user=user;clients.add(ws);seen.set(user.id,now());changed();
-    ws.on('close',()=>{clients.delete(ws);seen.set(user.id,now());changed();});
+    ws.user=user;clients.add(ws);seen.set(user.id,now());changed(user.id);
+    ws.on('close',()=>{clients.delete(ws);seen.set(user.id,now());changed(user.id);});
     ws.on('pong',()=>seen.set(user.id,now()));
   }
   async function close(){closed=true;clearTimeout(timer);await running;}

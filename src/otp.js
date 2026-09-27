@@ -23,7 +23,7 @@ export function createOtpProvider(env = process.env, request = fetch) {
     },
     async verify(session, code) {
       const { ok, data } = await call(['VERIFY', session, code]);
-      return ok && data.Status === 'Success' && data.Details === 'OTP Matched';
+      return ok && data.Status === 'Success' && typeof data.Details === 'string' && /matched|validated/i.test(data.Details);
     },
   };
 }

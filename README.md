@@ -1,6 +1,6 @@
 # BRDS CBT exam system
 
-One Node.js backend serves the student, teacher and admin pages, HTTP APIs and WebSockets. Phase 1 authentication is implemented; exam features start in Phase 2.
+One Node.js backend serves the student, teacher and admin pages, HTTP APIs and WebSockets. Authentication, the Phase 2 exam engine and Phase 3 read-only live monitoring are implemented. Real accounts/API setup and hosted acceptance are deferred to final Phase 8.
 
 ## Run locally
 
@@ -18,7 +18,7 @@ Open http://localhost:3000 for sign-in, or http://localhost:3000/setup for datab
 
 Admin-issued ID/password, followed by 2Factor mobile OTP. Database-backed sessions survive reload and restart. Student, teacher and admin roles are enforced on server routes and APIs. Admins can create accounts after completing their own OTP sign-in.
 
-No accounts or fixed OTP codes are installed by default. See [Phase 1 setup](docs/phase-1-setup.md) for provider configuration and first-administrator bootstrap.
+The regular server installs no test accounts or fixed OTP codes. For isolated development, run `npm run demo` and open http://localhost:3001. See [Phase 2–3 setup](docs/phase-2-3-setup.md) for fake demo credentials, exam import and manual review steps. See [Phase 1 setup](docs/phase-1-setup.md) for provider configuration and first-administrator bootstrap.
 
 ## Render
 
@@ -45,8 +45,8 @@ This checks hosted PostgreSQL health, a secure WebSocket round-trip, and rejecti
 
 ## Tests and boundaries
 
-`npm test` runs 19 tests, including authorization, OTP expiry/attempt limits/replay/concurrent verification, account issuance, logout, WebSocket authentication, persistent sessions across restart, and production cookies. Provider tests use simulated responses and do not send SMS.
+`npm test` runs 34 tests, including authorization, OTP expiry/attempt limits/replay/concurrent verification, account issuance, logout, WebSocket authentication, persistent sessions across restart, and production cookies. Provider tests use simulated responses and do not send SMS. Exam tests additionally cover answer persistence/retry/version conflicts, marking, deadlines, five-student WebSocket monitoring, and two simulated DOM recovery/navigation tests.
 
-Public endpoints: `/`, `/login`, `/setup`, `/health`, diagnostic `/ws`. Protected pages: `/student`, `/teacher`, `/admin`. Authenticated connection: `/session-ws`.
+Public endpoints: `/`, `/login`, `/setup`, `/health`, diagnostic `/ws`. Protected pages: `/student`, `/teacher`, `/admin`, `/exam`. Authenticated connection: `/session-ws`.
 
-No exam engine, scoring, proctor controls, load-test acceptance or real-student pilot is claimed. See the Phase 0 and Phase 1 completion reports for verified versus pending work.
+Exam/scoring and read-only monitoring code are complete with passing automated checks. Native-browser visual acceptance is blocked by the local computer-use sandbox initialization error; hosted Phase 2–3 integration is not yet verified. Teacher controls, load-test acceptance, visual question authoring, full analytics and the real-student pilot remain. See the Phase 2 and Phase 3 completion reports and `PROGRESS_LOG.md` for evidence and handoff.

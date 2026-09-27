@@ -89,3 +89,11 @@ WHAT: Coding and automated checks pass, but actual browser-tab closure/re-login 
 WHY: Original build plan explicitly requires browser demonstrations. Simulated DOM and socket tests provide evidence but do not fully satisfy that native-browser criterion.
 NEXT: Launch npm run demo; use separate browser profiles for teacher and students; verify mid-exam reopen/time preservation and five-session updates under one second. Final real-provider/hosted checks are Phase 8 per user instruction.
 
+
+### [2026-09-27 18:08] Codex — Phase 2–3: reports and handoff
+STATUS: DONE
+FILES: README.md, docs/requirements.md, docs/phase-2-3-setup.md, BRDS-CBT-Phase-2-Completion-Report.md, BRDS-CBT-Phase-3-Completion-Report.md
+WHAT: Created both completion reports, local demo/manual acceptance instructions and updated roadmap. Demo started on http://localhost:3001; health returned status ok, database sqlite, phase 3. Full suite: 34/34 passed; git diff --check passed.
+WHY: Provide an evidence-based review and distinguish complete code from blocked native-browser acceptance and deferred Phase 8 integration.
+NEXT: Phase 4 is the next implementation phase when requested. Native browser acceptance remains outstanding. Local commits 5614aef (coordination), 66a0224 (backend), 09bb3ab (client/demo) are saved; no Phase 2–3 push/deploy was performed. Leave user-owned antigravity-start-prompt.txt untouched. No Codex file claims remain active.
+

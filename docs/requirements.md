@@ -24,12 +24,12 @@ One browser application and Node backend for BRDS Raipur, usable on PC and phone
 ## Unresolved details to settle at the relevant phase
 
 - Lock semantics are not defined in either document: proposed behavior is a persistent access block distinct from freeze; timer behavior and re-entry policy require a decision before Phase 4.
-- OTP recipients, student phone records, and provider account/template configuration before Phase 1 acceptance.
+- OTP recipients, student phone records, and provider account/template configuration are deferred to final Phase 8 acceptance.
 - Exact roundel artwork is referenced but not included; do not claim a recreated text mark is the official logo. Current shell uses a text wordmark only.
 - Estimated colors: red #E31E24, black #111111, yellow #FFD400; provisional until confirmed.
-- MSQ partial-credit rules, NAT tolerance, tie rankings and optional section navigation rules require explicit configuration when scoring is built.
+- Phase 2 implements exact-set MSQ scoring, per-question inclusive NAT ranges and fixed sequential optional section windows. These implementation choices are recorded in the shared log. Alternative partial-credit rules and tie rankings remain for later authoring/analytics work.
 
-## Phased acceptance
+## Original phase acceptance reference (schedule revised below)
 
 0. Hosting shell: public Render URL, health, WebSocket echo, persistent database; phone and PC verification.
 1. Authentication: student and teacher login plus actual delivered/verified OTP.
@@ -42,3 +42,35 @@ One browser application and Node backend for BRDS Raipur, usable on PC and phone
 8. Pilot: 10–15 real students before a full batch.
 
 The user explicitly requested the remaining Phase 0 work and Phase 1 together. Phase 0 is publicly deployed and its HTTP/PostgreSQL/WebSocket checks pass; the user confirmed the actual-phone test passed on 26 September 2026, completing Phase 0. Phase 1 authentication is implemented and deployed with 19 passing automated tests; real 2Factor setup, OTP delivery and separate-device login acceptance remain pending. The complete exam system is not finished.
+
+## Updated build order — user decision
+
+Complete the code first. Defer real service accounts, login credentials, API keys and hosted integration acceptance until the final phase. This supersedes earlier instructions that made real OTP setup a prerequisite for further coding.
+
+- Phase 0: hosting foundation — complete.
+- Phase 1: authentication code — implemented; live account/OTP acceptance deferred to Phase 8.
+- Phase 2: exam engine, timers, palette, autosave and resume — code complete; automated persistence/client tests pass; native-browser acceptance unverified.
+- Phase 3: live teacher dashboard and activity flags — code complete; five-student socket test passes; native-browser visual acceptance unverified.
+- Phase 4: force-submit, lock, freeze and resume.
+- Phase 5: load-test script and local testing. Repeat the 70–90-user, 60–90-minute test on final hosting in Phase 8.
+- Phase 6: rich-text question editor and configurable scoring.
+- Phase 7: student records, analytics, rankings and final branding.
+- Phase 8 (final): real accounts, login activation, original API credentials, hosted integration testing and launch readiness.
+
+### Phase 8 — final setup and acceptance
+
+1. Configure the required GitHub/Render/provider accounts and permissions; reuse existing accounts and resources.
+2. Configure actual 2Factor credentials, delivery credit and approved template as needed. Configure any other external service actually used by the finished application.
+3. Set production database connection and environment variables through private environment/secret settings.
+4. Create the first real administrator, then teacher and student accounts with correct roles and registered phone records. Distribute credentials privately.
+5. Verify real OTP delivery, login, logout, session recovery and role restrictions on PC and phone.
+6. Deploy the final code and verify database persistence, HTTPS, authenticated WebSockets and reconnect behavior.
+7. Run end-to-end checks for exam authoring, attempts, autosave, resume, timers, teacher controls, scoring and analytics. Repeat the hosted load test.
+8. After those checks pass, run the 10–15-student pilot before the full batch. The former standalone Phase 8 pilot is now the last acceptance step within this expanded final phase.
+9. Resolve failures and produce the final readiness report. Do not mark live integration accepted based only on simulated tests.
+
+### Coding conventions until Phase 8
+
+Keep clear configuration placeholders in `.env.example`; inject real values later without changing application logic. Never hardcode or commit real secrets. Any development test accounts or simulated providers must be isolated from production. Track code completion and live integration acceptance separately.
+
+**Remaining implementation: 5 phases — 4 coding phases (4–7), followed by final setup and acceptance (8).** Phase 2–3 native-browser acceptance is still outstanding because computer-use cannot initialize; do not count automated DOM/socket checks as visual acceptance. Latest complete suite: 34 tests passed. See the Phase 2/3 reports and PROGRESS_LOG.md.

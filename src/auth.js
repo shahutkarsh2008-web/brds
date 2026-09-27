@@ -27,7 +27,7 @@ export async function createUser(database, input) {
   return { id, loginId, name, role: input.role };
 }
 
-export function createAuth(database, { otp, env = process.env, now = Date.now, onLogout = () => {} }) {
+export function createAuth(database, { otp, env = process.env, now = Date.now, onLogout = () => {}, onChange = () => {} }) {
   const production = env.NODE_ENV === 'production';
   const origin = env.APP_ORIGIN || env.RENDER_EXTERNAL_URL;
   if (production && (!origin || new URL(origin).protocol !== 'https:')) throw new Error('HTTPS APP_ORIGIN or RENDER_EXTERNAL_URL is required');
@@ -117,6 +117,7 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
           return account;
         });
         const oldToken = readCookie(req, sessionName); if (oldToken) onLogout(digest(oldToken));
+        onChange();
         return json(res, 200, { user: publicUser(user), redirect: `/${user.role}` }, [cookie(sessionName, rawSession, SESSION_AGE / 1000), cookie(challengeName, '', 0)]);
       }
       if (path === '/api/logout' && req.method === 'POST') {
@@ -124,6 +125,7 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
         if (token) { await database.query('DELETE FROM sessions WHERE token_hash=$1', [digest(token)]); onLogout(digest(token)); }
         const challenge = readCookie(req, challengeName);
         if (challenge) await database.query('DELETE FROM auth_challenges WHERE token_hash=$1', [digest(challenge)]);
+        onChange();
         return json(res, 200, { ok: true }, [cookie(sessionName, '', 0), cookie(challengeName, '', 0)]);
       }
       if (path === '/api/me' && req.method === 'GET') {

@@ -21,7 +21,7 @@ test('health verifies database and page assets come from the same server', async
   const { base } = await fixture(t);
   const health = await fetch(base + '/health');
   assert.equal(health.status, 200);
-  assert.deepEqual(await health.json(), { status: 'ok', database: 'sqlite', phase: 1 });
+  assert.deepEqual(await health.json(), { status: 'ok', database: 'sqlite', phase: 3 });
   for (const path of ['/', '/app.js', '/style.css']) assert.equal((await fetch(base + path)).status, 200);
   assert.equal((await fetch(base + '/missing')).status, 404);
   assert.equal((await fetch(base + '/health', { method: 'POST' })).status, 405);

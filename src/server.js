@@ -9,7 +9,7 @@ try {
   await bootstrapAdmin(database);
   const app = createApp(database);
   app.server.listen(Number(process.env.PORT || 3000), '0.0.0.0', () => {
-    console.log(`BRDS Phase 1 running on port ${app.server.address().port} (${database.kind})`);
+    console.log(`BRDS Phase 3 running on port ${app.server.address().port} (${database.kind})`);
   });
   app.server.on('error', async error => {
     console.error(`Server failed: ${error.code || 'unknown'}`);

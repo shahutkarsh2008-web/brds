@@ -1,0 +1,244 @@
+{
+  "id": "timed-sections-01",
+  "title": "Timed Sections · Two-minute Trial",
+  "durationSeconds": 120,
+  "totalQuestions": 8,
+  "maxMarks": 32,
+  "instructions": "Two fixed 60-second sections. Only the current section can be edited; earlier sections close automatically. The server submits at two minutes.",
+  "sections": [
+    {
+      "id": "visual",
+      "title": "Visual reasoning",
+      "durationSeconds": 60
+    },
+    {
+      "id": "quant",
+      "title": "Quantitative thinking",
+      "durationSeconds": 60
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "sectionId": "visual",
+      "type": "MCQ",
+      "prompt": "Which principle describes the distribution of visual weight in a composition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Balance"
+        },
+        {
+          "id": "b",
+          "text": "Texture"
+        },
+        {
+          "id": "c",
+          "text": "Hue"
+        },
+        {
+          "id": "d",
+          "text": "Perspective"
+        }
+      ],
+      "answer": "a",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "q2",
+      "sectionId": "visual",
+      "type": "MSQ",
+      "prompt": "Select all shapes that have at least one line of reflection symmetry.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Square"
+        },
+        {
+          "id": "b",
+          "text": "Circle"
+        },
+        {
+          "id": "c",
+          "text": "Scalene triangle"
+        },
+        {
+          "id": "d",
+          "text": "Rectangle"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "q3",
+      "sectionId": "visual",
+      "type": "MCQ",
+      "prompt": "Look at the sequence. Which direction should the next arrow point?",
+      "image": "/media/rotation.svg",
+      "imageAlt": "Three arrows in sequence: up, right, then down.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Up"
+        },
+        {
+          "id": "b",
+          "text": "Right"
+        },
+        {
+          "id": "c",
+          "text": "Down"
+        },
+        {
+          "id": "d",
+          "text": "Left"
+        }
+      ],
+      "answer": "d",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "q4",
+      "sectionId": "visual",
+      "type": "MSQ",
+      "prompt": "Which changes increase contrast between two adjacent areas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Making one much lighter than the other"
+        },
+        {
+          "id": "b",
+          "text": "Making both identical in color and value"
+        },
+        {
+          "id": "c",
+          "text": "Using distinctly different textures"
+        },
+        {
+          "id": "d",
+          "text": "Removing every difference between them"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "q5",
+      "sectionId": "quant",
+      "type": "NAT",
+      "prompt": "A square has a perimeter of 36 cm. What is its area in square centimetres?",
+      "answer": {
+        "min": 81,
+        "max": 81
+      },
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "q6",
+      "sectionId": "quant",
+      "type": "NAT",
+      "prompt": "A circle has radius 3 cm. Using π = 3.14, calculate its circumference in cm. Answers between 18.83 and 18.85 are accepted.",
+      "answer": {
+        "min": 18.83,
+        "max": 18.85
+      },
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "q7",
+      "sectionId": "quant",
+      "type": "MCQ",
+      "prompt": "A model uses a scale of 1:20. A 5 cm length on the model represents what actual length?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 cm"
+        },
+        {
+          "id": "b",
+          "text": "100 cm"
+        },
+        {
+          "id": "c",
+          "text": "250 cm"
+        },
+        {
+          "id": "d",
+          "text": "1,000 cm"
+        }
+      ],
+      "answer": "b",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "q8",
+      "sectionId": "quant",
+      "type": "MSQ",
+      "prompt": "Select every number divisible by both 2 and 3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    }
+  ]
+}

@@ -538,7 +538,36 @@
     el('analytics-exam-select').addEventListener('change', e => loadAnalytics(e.target.value));
     el('btn-load-analytics').addEventListener('click', () => loadAnalytics(el('analytics-exam-select').value));
     el('btn-export-csv').addEventListener('click', exportCSV);
+    const printBtn = el('btn-print-scorecard');
+    if (printBtn) printBtn.addEventListener('click', () => window.print());
+    const backupBtn = el('btn-export-backup');
+    if (backupBtn) backupBtn.addEventListener('click', () => window.location.href = '/api/admin/backup');
   }
+
+  // Global error telemetry logger
+  window.addEventListener('error', event => {
+    fetch('/api/log-client-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        path: window.location.pathname,
+        message: event.message || 'Script error',
+        stack: event.error?.stack || null
+      })
+    }).catch(() => {});
+  });
+
+  window.addEventListener('unhandledrejection', event => {
+    fetch('/api/log-client-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        path: window.location.pathname,
+        message: event.reason?.message || String(event.reason || 'Unhandled Promise Rejection'),
+        stack: event.reason?.stack || null
+      })
+    }).catch(() => {});
+  });
 
   const originalInit = init;
   init = async function() {
@@ -549,4 +578,5 @@
   // Initialize
   document.addEventListener('DOMContentLoaded', init);
 })();
+
 

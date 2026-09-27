@@ -62,7 +62,12 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
   }
   function checkOrigin(req) {
     const expected = origin ? new URL(origin).origin : `http://${req.headers.host}`;
-    if (req.headers.origin !== expected || req.headers['sec-fetch-site'] === 'cross-site') throw new HttpError(403, 'Request origin was rejected.');
+    const allowedOrigins = (env.ALLOWED_ORIGINS || '').split(',').map(x => x.trim()).filter(Boolean);
+    if (allowedOrigins.length > 0) {
+      if (!allowedOrigins.includes(req.headers.origin)) throw new HttpError(403, 'Request origin was rejected.');
+    } else {
+      if (req.headers.origin !== expected || req.headers['sec-fetch-site'] === 'cross-site') throw new HttpError(403, 'Request origin was rejected.');
+    }
   }
   async function body(req) {
     if (!(req.headers['content-type'] || '').startsWith('application/json')) throw new HttpError(415, 'Use application/json.');
@@ -78,6 +83,21 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
   async function handle(req, res, path) {
     try {
       if (req.method === 'POST') checkOrigin(req);
+      if (path === '/api/log-client-event' && req.method === 'POST') {
+        const input = await body(req);
+        await limit(`telemetry:ip:${req.socket.remoteAddress}`, 100);
+        const currentUser = await session(req);
+        console.error('[CLIENT TELEMETRY EVENT]', {
+          timestamp: new Date(now()).toISOString(),
+          userId: currentUser?.id || 'anonymous',
+          role: currentUser?.role || 'none',
+          path: input.path || 'unknown',
+          message: input.message || 'No error message',
+          stack: input.stack || null,
+          userAgent: req.headers['user-agent']
+        });
+        return json(res, 200, { logged: true });
+      }
       if (path === '/api/login' && req.method === 'POST') {
         const input = await body(req);
         const loginId = typeof input.loginId === 'string' ? input.loginId.trim().toLowerCase() : '';
@@ -137,6 +157,27 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
         const user = await requireRole(req, role === 'teacher' ? ['teacher', 'admin'] : [role]);
         return json(res, 200, { user: publicUser(user), phase: 1 });
       }
+      if (path === '/api/admin/verify-pin' && req.method === 'POST') {
+        const user = await requireRole(req, ['admin']);
+        const input = await body(req);
+        if (typeof input.password !== 'string') throw new HttpError(400, 'Enter password to confirm.');
+        const valid = await verifyPassword(input.password, user.password_hash);
+        if (!valid) throw new HttpError(401, 'Incorrect password verification.');
+        return json(res, 200, { verified: true });
+      }
+      if (path === '/api/admin/backup' && req.method === 'GET') {
+        await requireRole(req, ['admin']);
+        const users = (await database.query('SELECT id, login_id, name, role, created_at FROM users')).rows;
+        const exams = (await database.query('SELECT * FROM exams')).rows;
+        const attempts = (await database.query('SELECT * FROM attempts')).rows;
+        const flags = (await database.query('SELECT * FROM activity_flags')).rows;
+        res.setHeader('Content-Disposition', `attachment; filename="brds-cbt-backup-${new Date(now()).toISOString().slice(0,10)}.json"`);
+        return json(res, 200, {
+          exportedAt: new Date(now()).toISOString(),
+          summary: { users: users.length, exams: exams.length, attempts: attempts.length, flags: flags.length },
+          users, exams, attempts, flags
+        });
+      }
       if (path === '/api/admin/users') {
         await requireRole(req, ['admin']);
         if (req.method === 'GET') {
@@ -148,7 +189,13 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
       throw new HttpError(404, 'Endpoint not found.');
     } catch (error) {
       if (error.status === 429) res.setHeader('Retry-After', '900');
-      json(res, error.status || (error instanceof OtpUnavailable ? 503 : 500), { error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP delivery is unavailable. Contact your BRDS administrator.' : 'Request failed. Please try again.' });
+      const statusCode = error.status || (error instanceof OtpUnavailable ? 503 : 500);
+      if (statusCode >= 500) {
+        console.error('[AUTH SERVER ERROR]', { path, status: statusCode, message: error.message, stack: error.stack });
+      } else {
+        console.warn('[AUTH REJECTED]', { path, status: statusCode, message: error.message });
+      }
+      json(res, statusCode, { error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP delivery is unavailable. Contact your BRDS administrator.' : 'Request failed. Please try again.' });
     }
   }
   return { handle, session, requireRole, checkOrigin, async cleanup() {

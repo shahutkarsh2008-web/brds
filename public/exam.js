@@ -197,3 +197,23 @@ async function start(){
   merged();acceptView(state);renderQuestion(true);connect();saveStatus();tick();setInterval(tick,250);
 }
 start().catch(error=>{text('#error',error.message);text('#save-status','Unable to open this attempt. Return to your exams and try again.');});
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && !closed) {
+    fetch('/api/me').then(r => r.json()).then(data => {
+      if (!data.user) location.assign('/login');
+    }).catch(() => {});
+  }
+});
+
+window.addEventListener('error', event => {
+  fetch('/api/log-client-event', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      path: window.location.pathname,
+      message: event.message || 'Exam UI Script Error',
+      stack: event.error?.stack || null
+    })
+  }).catch(() => {});
+});

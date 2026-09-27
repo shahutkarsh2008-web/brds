@@ -282,7 +282,11 @@
       <div class="card">
         <div class="card-header">
           <h2>Batch Performance & Leaderboard Ranks</h2>
-          <button id="btn-export-csv" class="btn btn-success">📥 Download CSV Scorecard</button>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button id="btn-print-scorecard" class="btn btn-primary">🖨️ Print Scorecard</button>
+            <button id="btn-export-csv" class="btn btn-success">📥 Download CSV Scorecard</button>
+            <button id="btn-export-backup" class="btn btn-secondary">💾 Backup Database (JSON)</button>
+          </div>
         </div>
         <div class="form-row">
           <div class="form-group flex-2">

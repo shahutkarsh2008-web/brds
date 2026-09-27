@@ -410,3 +410,33 @@ input:focus, select:focus, textarea:focus {
 .rank-2 { background: #c0c0c0; color: #000; }
 .rank-3 { background: #cd7f32; color: #fff; }
 
+/* Print Stylesheet for Scorecards and Reports */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+  .admin-header, .admin-tabs, .tab-buttons, .btn, button, .toolbar-btn, .wysiwyg-toolbar {
+    display: none !important;
+  }
+  .tab-content {
+    display: block !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+  .card, .kpi-card {
+    border: 1px solid #cccccc !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+  .data-table {
+    border: 1px solid #000000 !important;
+  }
+  .data-table th, .data-table td {
+    border: 1px solid #666666 !important;
+  }
+}
+

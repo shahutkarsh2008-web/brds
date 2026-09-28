@@ -11,7 +11,8 @@
     "deployment:check": "node scripts/check-deployment.js",
     "check:launch": "node scripts/check-launch.js",
     "demo": "node scripts/dev-demo.js",
-    "exam:import": "node --env-file-if-exists=.env scripts/import-exam.js"
+    "exam:import": "node --env-file-if-exists=.env scripts/import-exam.js",
+    "exam:seed": "node --env-file-if-exists=.env scripts/seed-exams.js"
   },
   "type": "module",
   "dependencies": {

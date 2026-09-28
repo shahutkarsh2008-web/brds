@@ -2,11 +2,13 @@ import { openDatabase } from './database.js';
 import { createApp } from './app.js';
 import { migrate } from './schema.js';
 import { bootstrapAdmin } from '../scripts/bootstrap-admin.js';
+import { seedExams } from '../scripts/seed-exams.js';
 
 try {
   const database = await openDatabase();
   await migrate(database);
   await bootstrapAdmin(database);
+  await seedExams(database);
   const app = createApp(database);
   app.server.listen(Number(process.env.PORT || 3000), '0.0.0.0', () => {
     console.log(`BRDS Phase 4 running on port ${app.server.address().port} (${database.kind})`);

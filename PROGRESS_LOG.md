@@ -139,4 +139,11 @@ WHAT: Successfully imported UCEED 2026 Part A (57 questions, 3 sections: NAT/MSQ
 WHY: Expands exam library with real high-value UCEED 2026 practice paper for BRDS students.
 EVIDENCE: `fixtures/uceed-2026.json` validated and imported to SQLite database (`uceed-2026` retrieved cleanly) and 50/50 automated test suites passing.
 
+### [2026-09-28 06:03 UTC] Antigravity — Automatic Exam Library Seeding on Startup
+STATUS: DONE
+FILES: scripts/seed-exams.js, src/server.js, package.json
+WHAT: Created `scripts/seed-exams.js` and wired `seedExams(database)` into `src/server.js` startup and `npm run exam:seed`. Automatically imports built-in library exams (`UCEED 2026`, `Design Foundations Paper`, `Timed Sections Paper`) into the database whenever the server starts.
+WHY: Ensures `UCEED 2026` and all built-in papers are immediately available under "Select Authored Exam" on the Admin Assign Exams tab (`/admin.html`) without requiring manual CLI imports.
+EVIDENCE: Verified `seedExams(database)` populates `exams` table; 50/50 automated test suites passing.
+
 

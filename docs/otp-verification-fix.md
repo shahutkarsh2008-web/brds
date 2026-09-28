@@ -17,3 +17,7 @@ Client trims surrounding whitespace and guards simultaneous form submissions. Us
 50/50 automated tests passed. Coverage includes real adapter send-to-HTTP-login verification with mocked SMS transport, wrong code, replay, malformed/tampered verifier, persisted verifier across adapter recreation, provider failure, expiry and concurrency.
 
 These tests do not prove real SMS delivery. Deployment and a fresh live phone sign-in must be checked separately. No SMS was sent by the assistant during automated testing.
+
+## Live acceptance
+The repaired build was confirmed on brds-cbt.onrender.com after the user triggered Render deployment. Health/PostgreSQL, WSS and unauthenticated-role checks passed. The user then requested a fresh code and explicitly confirmed successful login. Repair commit: eea3bc2.
+

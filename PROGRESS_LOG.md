@@ -107,3 +107,27 @@ WHAT: Implemented exact-code SMS sending with per-challenge HMAC verification, r
 WHY: Eliminate provider session mismatch from the new login flow while preserving OTP security. Previous log evidence supports the provider mismatch diagnosis; no claim of fresh real-phone acceptance yet.
 NEXT: Push repair, verify deployment serves changed client, and request a fresh live OTP sign-in. Old outstanding challenges require starting again.
 
+
+### [2026-09-28 00:10 UTC] Codex — Phase 1: OTP deployment handoff
+STATUS: BLOCKED
+FILES: PROGRESS_LOG.md, docs/otp-verification-fix.md
+WHAT: Repair commit eea3bc2 pushed successfully to origin/main. Automated suite 50/50 passes. Live health/PostgreSQL, secure WebSocket and unauthenticated-role checks pass, but repeated /login.js checks still lack the new authBusy marker, so the repaired build is not confirmed live. Browser control fails during Windows sandbox setup.
+WHY: Correct-code acceptance cannot be claimed from local mocks or old live code. Requested user to trigger Render Manual Deploy of latest commit.
+NEXT: Verify https://brds-cbt.onrender.com/login.js contains 'let authBusy = false', then have user start a fresh sign-in and enter the newly received OTP. Do not use old pending codes. No active implementation file claims. The new untracked load report is from the regression suite and contains no login credentials.
+
+
+### [2026-09-28 00:12 UTC] Codex — Phase 1: repaired build live
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md
+WHAT: After user-triggered Render deployment, live login.js contains the new authBusy marker. Live PostgreSQL health, secure WebSocket and unauthenticated-role checks all pass. Requested a fresh-code phone sign-in from the user; no OTP value requested.
+WHY: Confirms the repaired build is now served, while real SMS acceptance remains distinct from deployment checks.
+NEXT: Record user sign-in result; if it fails, diagnose the new exact error rather than marking authentication complete.
+
+
+### [2026-09-28 00:12 UTC] Codex — Phase 1: live OTP acceptance passed
+STATUS: DONE
+FILES: PROGRESS_LOG.md, docs/otp-verification-fix.md
+WHAT: User confirmed "Login ho gaya" after refreshing the repaired live build and requesting a fresh SMS code. Repair commit eea3bc2 is live; deployment checks and 50/50 automated tests pass.
+WHY: Resolves the reported correct-OTP rejection with fresh real-phone acceptance, not only mocked provider tests.
+NEXT: No OTP repair work remains. Old pending challenges require a fresh sign-in; keep expiry, five-attempt limit and one-time consumption enabled. Implementation claims released.
+

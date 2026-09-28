@@ -128,23 +128,29 @@ test('missing OTP configuration fails closed without granting a session', async 
   assert.equal((await f.database.query('SELECT * FROM sessions')).rowCount, 0);
 });
 
-test('2Factor adapter validates responses and never exposes secrets on transport errors', async () => {
-  const urls = [];
-  const provider = createOtpProvider({ TWOFACTOR_API_KEY: 'test-key', TWOFACTOR_TEMPLATE: 'BRDS OTP' }, async url => {
-    urls.push(url); return new Response(JSON.stringify({ Status: 'Success', Details: url.includes('/VERIFY/') ? 'OTP Matched' : 'provider-session' }));
-  });
-  assert.equal(await provider.send('919999999999'), 'provider-session');
-  assert.equal(await provider.verify('provider-session', '123456'), true);
-  assert.ok(urls[0].endsWith('/919999999999/AUTOGEN/BRDS%20OTP'));
-  assert.ok(urls[1].endsWith('/VERIFY/provider-session/123456'));
-  const unavailable = createOtpProvider({ TWOFACTOR_API_KEY: 'private-key' }, async () => { throw new Error('private-key'); });
-  await assert.rejects(unavailable.send('919999999999'), error => error instanceof OtpUnavailable && !error.message.includes('private-key'));
-  const invalid = createOtpProvider({ TWOFACTOR_API_KEY: 'test' }, async () => new Response(JSON.stringify({ Status: 'Success', Details: 'unexpected' })));
-  assert.equal(await invalid.verify('id', '123456'), false);
+test('2Factor adapter never exposes secrets on transport errors', async () => {
+  const unavailable=createOtpProvider({TWOFACTOR_API_KEY:'private-key'},async()=>{throw new Error('URL includes private-key and secret OTP');});
+  await assert.rejects(unavailable.send('919999999999'),error=>error instanceof OtpUnavailable&&!error.message.includes('private-key'));
 });
 
 test('bootstrap is idempotent and does not reset an existing administrator', async t => {
   const f = await fixture(t);
   await bootstrapAdmin(f.database, { BOOTSTRAP_ADMIN_ID: 'second-admin', BOOTSTRAP_ADMIN_NAME: 'Other', BOOTSTRAP_ADMIN_PHONE: '919999999999', BOOTSTRAP_ADMIN_PASSWORD: password });
   assert.equal((await f.database.query("SELECT * FROM users WHERE role='admin'")).rowCount, 1);
+});
+
+test('real OTP adapter accepts the exact SMS code through login and rejects replay',async t=>{
+  let sentCode;
+  const otp=createOtpProvider({TWOFACTOR_API_KEY:'test-only'},async url=>{
+    sentCode=new URL(url).pathname.split('/').at(-1);
+    return new Response(JSON.stringify({Status:'Success',Details:'sms-session-id'}));
+  });
+  const f=await fixture(t,{otp});
+  assert.equal((await f.request('/api/login',{loginId:'student',password})).status,200);
+  assert.match(sentCode,/^\d{6}$/);
+  const wrong=String((Number(sentCode)+1)%1000000).padStart(6,'0');
+  assert.equal((await f.request('/api/verify-otp',{code:wrong})).status,401);
+  const result=await f.request('/api/verify-otp',{code:' '+sentCode+' '});
+  assert.equal(result.status,200);assert.equal(result.body.user.role,'student');
+  assert.equal((await f.request('/api/verify-otp',{code:sentCode})).status,400);
 });

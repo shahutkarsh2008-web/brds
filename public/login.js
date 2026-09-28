@@ -23,7 +23,10 @@ async function post(path, data) {
   return result;
 }
 
+let authBusy = false;
 async function run(form, work) {
+  if (authBusy) return;
+  authBusy = true;
   const buttons = [...document.querySelectorAll('button')];
   buttons.forEach(button => { button.disabled = true; });
   message.textContent = 'Please wait…';
@@ -32,6 +35,7 @@ async function run(form, work) {
   } catch (error) {
     message.textContent = error.name === 'TimeoutError' ? 'The request timed out. Please try again.' : error.message;
   } finally {
+    authBusy = false;
     buttons.forEach(button => { button.disabled = false; });
   }
 }
@@ -57,7 +61,7 @@ loginForm.addEventListener('submit', event => {
 otpForm.addEventListener('submit', event => {
   event.preventDefault();
   run(otpForm, async () => {
-    const result = await post('/api/verify-otp', { code: document.querySelector('#code').value });
+    const result = await post('/api/verify-otp', { code: document.querySelector('#code').value.trim() });
     const target = (result.user && result.user.role === 'admin') ? '/admin' : (result.redirect || '/');
     location.assign(target);
   });

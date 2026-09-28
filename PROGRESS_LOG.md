@@ -91,3 +91,19 @@ EVIDENCE: Verified directly against 2Factor API via `VERIFY3` returning HTTP 200
 
 
 
+
+### [2026-09-28 00:06 UTC] Codex — Phase 1: correct-code OTP rejection repair
+STATUS: IN PROGRESS
+FILES: src/otp.js, src/auth.js, public/login.js, test/auth.test.js, test/otp.test.js, docs/otp-verification-fix.md
+WHAT: User reports correct OTP rejected on live Render. Reviewed Antigravity changes; its log records provider session/API mismatch and current adapter alternates VERIFY3/VERIFY. Replacing provider-side verification with per-login cryptographically random code, documented custom-code SMS send, and keyed challenge verifier. No fixed code/bypass; existing expiry/attempt/replay controls retained.
+WHY: Bind verification to the exact code sent for this login and eliminate conflicting provider verification endpoints. Raw provider errors must not leak API keys or OTPs.
+NEXT: Regression tests, commit/deploy and fresh-code live acceptance; old pending challenges must request a new code.
+
+
+### [2026-09-28 00:08 UTC] Codex — Phase 1: OTP repair verified locally
+STATUS: DONE
+FILES: src/otp.js, src/auth.js, public/login.js, test/auth.test.js, test/otp.test.js, docs/otp-verification-fix.md
+WHAT: Implemented exact-code SMS sending with per-challenge HMAC verification, removed VERIFY3/VERIFY dependency, sanitized provider failures and guarded duplicate client submits. Full suite 50/50 passed. Original expiry, five attempts and atomic one-time use retained.
+WHY: Eliminate provider session mismatch from the new login flow while preserving OTP security. Previous log evidence supports the provider mismatch diagnosis; no claim of fresh real-phone acceptance yet.
+NEXT: Push repair, verify deployment serves changed client, and request a fresh live OTP sign-in. Old outstanding challenges require starting again.
+

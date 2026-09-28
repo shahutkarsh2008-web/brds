@@ -119,12 +119,11 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
       if (path === '/api/verify-otp' && req.method === 'POST') {
         const input = await body(req);
         const token = readCookie(req, challengeName);
-        if (!token || typeof input.code !== 'string' || !/^\d{4,8}$/.test(input.code)) throw new HttpError(400, 'Enter the OTP from your phone.');
+        if (!token || typeof input.code !== 'string' || !/^\d{4,8}$/.test(input.code.trim())) throw new HttpError(400, 'Enter the OTP from your phone.');
         const challenge = (await database.query(`UPDATE auth_challenges SET attempts=attempts+1
           WHERE token_hash=$1 AND expires_at>$2 AND attempts<5 RETURNING *`, [digest(token), now()])).rows[0];
         if (!challenge) throw new HttpError(401, 'OTP expired or attempts exhausted. Sign in again.');
-        const targetAccount = (await database.query('SELECT phone FROM users WHERE id=$1', [challenge.user_id])).rows[0];
-        if (!await otp.verify(challenge.provider_session, input.code, targetAccount?.phone)) throw new HttpError(401, 'Incorrect or expired OTP.');
+        if (!await otp.verify(challenge.provider_session, input.code.trim())) throw new HttpError(401, 'Incorrect or expired OTP.');
         const rawSession = randomBytes(32).toString('hex');
         const user = await database.transaction(async query => {
           const consumed = await query('DELETE FROM auth_challenges WHERE token_hash=$1 AND expires_at>$2 RETURNING user_id', [digest(token), now()]);
@@ -196,7 +195,7 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
       } else {
         console.warn('[AUTH REJECTED]', { path, status: statusCode, message: error.message });
       }
-      json(res, statusCode, { error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP delivery is unavailable. Contact your BRDS administrator.' : 'Request failed. Please try again.' });
+      json(res, statusCode, { error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP service could not complete this request. Start again to request a fresh code. If this continues, contact your BRDS administrator.' : 'Request failed. Please try again.' });
     }
   }
   return { handle, session, requireRole, checkOrigin, async cleanup() {

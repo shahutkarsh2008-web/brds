@@ -131,3 +131,12 @@ WHAT: User confirmed "Login ho gaya" after refreshing the repaired live build an
 WHY: Resolves the reported correct-OTP rejection with fresh real-phone acceptance, not only mocked provider tests.
 NEXT: No OTP repair work remains. Old pending challenges require a fresh sign-in; keep expiry, five-attempt limit and one-time consumption enabled. Implementation claims released.
 
+
+### [2026-09-28 00:18 UTC] Codex — Phase 6: UCEED 2026 library demo
+STATUS: DONE
+FILES: scripts/build-uceed-2026.py, fixtures/uceed-2026.json, public/media/uceed-2026-*.png, docs/uceed-2026-part-b-practice.md, src/exams.js
+WHAT: Successfully imported UCEED 2026 Part A (57 questions, 3 sections: NAT/MSQ/MCQ, 200 marks, 120 mins) from official 32-page paper and answer key into `fixtures/uceed-2026.json` with 51 cropped diagram PNGs (`/media/uceed-2026-*.png`). Verified 100% database import compatibility.
+WHY: Expands exam library with real high-value UCEED 2026 practice paper for BRDS students.
+EVIDENCE: `fixtures/uceed-2026.json` validated and imported to SQLite database (`uceed-2026` retrieved cleanly) and 50/50 automated test suites passing.
+
+

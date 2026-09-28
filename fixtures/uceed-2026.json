@@ -1,0 +1,1753 @@
+{
+  "id": "uceed-2026",
+  "title": "UCEED 2026",
+  "durationSeconds": 7200,
+  "totalQuestions": 57,
+  "maxMarks": 200,
+  "instructions": "Demo imported from the supplied UCEED 2026 paper and final answer key. Part A only: 57 questions, 200 marks, 120 minutes. All three sections share the two-hour timer; section navigation is unrestricted. NAT Q1–14: +4 correct, 0 otherwise. MSQ Q15–29: +4 for all correct choices; +1/+2/+3 for choosing only 1/2/3 correct options as a proper subset of an accepted key; -1 in other answered cases; 0 blank. MCQ Q30–57: +3 correct, -0.71 incorrect, 0 blank. Part B Q58–59 are drawing tasks for separate offline practice (60 minutes, 100 marks); they are not auto-graded or included in this CBT score. No students are assigned by this import.",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "Section 1 · NAT (56 marks)"
+    },
+    {
+      "id": "msq",
+      "title": "Section 2 · MSQ (60 marks)"
+    },
+    {
+      "id": "mcq",
+      "title": "Section 3 · MCQ (84 marks)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " How many times does the most used black coloured shape appear in the composition shown below?",
+      "image": "/media/uceed-2026-q01.png",
+      "imageAlt": "Original UCEED 2026 question 1 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 14,
+        "max": 14
+      }
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " In the image shown below, PQ = QR = QS = 2 units. Also, QT = TS = QU = UR. The points T and U are the centre points of the semicircles. What is the total area of shaded portions in square units?",
+      "image": "/media/uceed-2026-q02.png",
+      "imageAlt": "Original UCEED 2026 question 2 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " What is the number that you get when you divide the difference between the number of triangles and number of circles by the number of rectangles for the image shown below?",
+      "image": "/media/uceed-2026-q03.png",
+      "imageAlt": "Original UCEED 2026 question 3 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 6,
+        "max": 6
+      }
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " Shown below is the front and top views of two cubes. The red and blue cubes are made up of metal and wax respectively. Red cube is heated and is hot enough to melt wax in the blue cube. As shown in the front and top views, the red cube is moved along the path PQRS creating sharp edges and flat surfaces on the blue cube. What is the total number of surfaces the blue cube will have after the red cube reaches the point S?",
+      "image": "/media/uceed-2026-q04.png",
+      "imageAlt": "Original UCEED 2026 question 4 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 16,
+        "max": 16
+      }
+    },
+    {
+      "id": "q05",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " One of the pots does not belong to the group of pots shown below. What is the number written on that pot?",
+      "image": "/media/uceed-2026-q05.png",
+      "imageAlt": "Original UCEED 2026 question 5 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 62,
+        "max": 62
+      }
+    },
+    {
+      "id": "q06",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " What is the number of different patterns on the capsules shown below?",
+      "image": "/media/uceed-2026-q06.png",
+      "imageAlt": "Original UCEED 2026 question 6 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "id": "q07",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " A composition made of letters is shown below. What is the total number of letters used to create this image?",
+      "image": "/media/uceed-2026-q07.png",
+      "imageAlt": "Original UCEED 2026 question 7 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 31,
+        "max": 31
+      }
+    },
+    {
+      "id": "q08",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " A sharpened pencil with eraser is shown in image P. How many sharpened pencils with erasers are in image Q?",
+      "image": "/media/uceed-2026-q08.png",
+      "imageAlt": "Original UCEED 2026 question 8 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    {
+      "id": "q09",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " Several kettles are shown below. What is the total number of usable kettles that are designed to store and pour hot water?",
+      "image": "/media/uceed-2026-q09.png",
+      "imageAlt": "Original UCEED 2026 question 9 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 13,
+        "max": 13
+      }
+    },
+    {
+      "id": "q10",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Given below are 8 triangular pieces of a puzzle made from the shape P. What is the three-digit number formed when these pieces are arranged correctly?",
+      "image": "/media/uceed-2026-q10.png",
+      "imageAlt": "Original UCEED 2026 question 10 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 745,
+        "max": 745
+      }
+    },
+    {
+      "id": "q11",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " Given below is a drawing on a sheet of paper. Make a cut along the solid arcs and fold the resulting semicircular rings at 90 degrees along the dotted lines. What is the number of raised semicircular rings after following these steps?",
+      "image": "/media/uceed-2026-q11.png",
+      "imageAlt": "Original UCEED 2026 question 11 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    {
+      "id": "q12",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A mobile screen has a dimension of 10 cm x 4 cm (height x width). A mobile user is viewing a picture in portrait mode and it occupies the entire screen. The user rotates the screen to landscape mode. After rotation, the height of the picture is now the width of the screen and its width gets reduced proportionately, leaving equal blank spaces on both sides of the picture. What is the area (in square centimeters) of the blank space on the left-hand side of the picture?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 16.8,
+        "max": 16.8
+      }
+    },
+    {
+      "id": "q13",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "What number will replace the question mark?",
+      "image": "/media/uceed-2026-q13.png",
+      "imageAlt": "Original UCEED 2026 question 13 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 34,
+        "max": 34
+      }
+    },
+    {
+      "id": "q14",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " A tank with internal dimension 10 cm x 10 cm x 10 cm (length x width x height) is fully filled with spherical marbles, each marble having a diameter of 1 cm. Each layer of marbles should have equal number of marbles. Water is then poured into the tank. What is the volume of water in cubic centimeters required to fill the voids? (Use π=22/7)",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 470,
+        "max": 480
+      }
+    },
+    {
+      "id": "q15",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Image P shows an object as seen from the top. Which of the objects given below will appear as shown in image P when viewed from the top? Consider all the objects are made with opaque solids.",
+      "image": "/media/uceed-2026-q15.png",
+      "imageAlt": "Original UCEED 2026 question 15 diagram and labelled answer choices",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q16",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Q, R, S and T are cut-out shapes used to create a composition shown in image P. These cut-out shapes could be rotated and combined without overlapping to create the composition. These cut-out shapes can also be repeated. What is/are the correct combination(s) that can be used to create the composition shown in image P?",
+      "image": "/media/uceed-2026-q16.png",
+      "imageAlt": "Original UCEED 2026 question 16 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "1 cut-out of Q, 1 cut-out of R, 2 cut-outs of S, 2 cut-outs of T"
+        },
+        {
+          "id": "b",
+          "text": "1 cut-out of Q, 1 cut-out of R, 2 cut-outs of S, 1 cut-out of T"
+        },
+        {
+          "id": "c",
+          "text": "2 cut-outs of Q, 2 cut-outs of R, 4 cut-outs of S, 1 cut-out of T"
+        },
+        {
+          "id": "d",
+          "text": "1 cut-out of Q, 2 cut-outs of R, 2 cut-outs of S, 2 cut-outs of T"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q17",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Given below is a pattern P, composed of three different shapes 1, 2, and 3. Which options show the pattern(s) that is/are possible if the shape 2 is cut in half along the vertical axis, the shape 3 is rotated clockwise at the center by 45 degrees, and the shape 1 remains unchanged? Overlapping of shapes is not allowed.",
+      "image": "/media/uceed-2026-q17.png",
+      "imageAlt": "Original UCEED 2026 question 17 diagram and labelled answer choices",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q18",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Given below are five images P, Q, R, S and T. Each of these is rotated about its center. Which of the following statement(s) is/are TRUE? (Ignore minor variations due to pixelated appearance)",
+      "image": "/media/uceed-2026-q18.png",
+      "imageAlt": "Original UCEED 2026 question 18 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Patterns Q, S and T will look the same when rotated by 60°"
+        },
+        {
+          "id": "b",
+          "text": "Patterns Q, R and T will look the same when rotated by 120°"
+        },
+        {
+          "id": "c",
+          "text": "Patterns P, S and T will not look the same when rotated by 60°."
+        },
+        {
+          "id": "d",
+          "text": "Patterns Q, R and T will look the same when rotated by 60° or 120°"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "answerAlternatives": [
+        [
+          "b",
+          "c",
+          "d"
+        ]
+      ]
+    },
+    {
+      "id": "q19",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " In the image below, a combination of gears (1-5), pulley (6), weight (W), belts (connecting 1&2, 4&6) and a shaft drive is shown. The shaft rotates in the direction of the arrow without any horizontal translation. Which of the following statement is /are CORRECT?",
+      "image": "/media/uceed-2026-q19.png",
+      "imageAlt": "Original UCEED 2026 question 19 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "5 rotates clockwise and W moves upwards."
+        },
+        {
+          "id": "b",
+          "text": "4 rotates anticlockwise and W moves downwards."
+        },
+        {
+          "id": "c",
+          "text": "5 and 4 rotate in opposite directions."
+        },
+        {
+          "id": "d",
+          "text": "1 and 4 rotate in opposite direction."
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q20",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Which of the following statements are TRUE for Ajrakh, Paithani, Kalamkari, Phulkari, Khes and Bandhani?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "All of the above are related to textiles of India."
+        },
+        {
+          "id": "b",
+          "text": "At least three of the above are painting techniques of India."
+        },
+        {
+          "id": "c",
+          "text": "Three of the above are artforms from Punjab."
+        },
+        {
+          "id": "d",
+          "text": "Two of the above are weaving crafts from India."
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q21",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Which of the options is/are paintings by the artist M. F. Hussain?",
+      "image": "/media/uceed-2026-q21.png",
+      "imageAlt": "Original UCEED 2026 question 21 diagram and labelled answer choices",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q22",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Which of the below is a/are cinema camera maker(s)?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "RED"
+        },
+        {
+          "id": "b",
+          "text": "ARRI"
+        },
+        {
+          "id": "c",
+          "text": "Canon"
+        },
+        {
+          "id": "d",
+          "text": "Wacom"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q23",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Which Indian city/cities is/are designated by UNESCO as a Creative City, until 2024?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pune"
+        },
+        {
+          "id": "b",
+          "text": "Kozhikode"
+        },
+        {
+          "id": "c",
+          "text": "Gwalior"
+        },
+        {
+          "id": "d",
+          "text": "Varanasi"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q24",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Shown below are Indian vehicle number plates with colour codes. Which of the option/s is/are correct?",
+      "image": "/media/uceed-2026-q24.png",
+      "imageAlt": "Original UCEED 2026 question 24 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "R is a private vehicle"
+        },
+        {
+          "id": "b",
+          "text": "P, S & U are private vehicles"
+        },
+        {
+          "id": "c",
+          "text": "Q, R, T & X are commercial vehicles"
+        },
+        {
+          "id": "d",
+          "text": "X is a defence vehicle"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q25",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "1, 2, 3 and 4 are photographs captured using a camera with a lens set at aperture P, Q, R or S. Which of the options is/are correct?",
+      "image": "/media/uceed-2026-q25.png",
+      "imageAlt": "Original UCEED 2026 question 25 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "P - 3"
+        },
+        {
+          "id": "b",
+          "text": "P - 2"
+        },
+        {
+          "id": "c",
+          "text": "R - 1"
+        },
+        {
+          "id": "d",
+          "text": "S - 3"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q26",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following image(s) can be created by the nib type illustrated below?",
+      "image": "/media/uceed-2026-q26.png",
+      "imageAlt": "Original UCEED 2026 question 26 diagram and labelled answer choices",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q27",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Which of these photographs follow the Rule of Thirds?",
+      "image": "/media/uceed-2026-q27.png",
+      "imageAlt": "Original UCEED 2026 question 27 diagram and labelled answer choices",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q28",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " A continuous strip with a pattern is shown below. Which of the options given below is/are part of the continuous strip?",
+      "image": "/media/uceed-2026-q28.png",
+      "imageAlt": "Original UCEED 2026 question 28 diagram and labelled answer choices",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q29",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " A composition made using letters from a specific font is shown below. Some letters are repeated but there is no distortion, rotation, flip or any change in orientation. Letters are used in the original form as seen in the font. Which of the following words can be formed using the letters shown in the image below?",
+      "image": "/media/uceed-2026-q29.png",
+      "imageAlt": "Original UCEED 2026 question 29 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "note"
+        },
+        {
+          "id": "b",
+          "text": "ghost"
+        },
+        {
+          "id": "c",
+          "text": "short"
+        },
+        {
+          "id": "d",
+          "text": "enter"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "id": "q30",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Which of the following statements is correct for a longitudinal marking provided at the centre of a road?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A broken longitudinal line allows overtaking."
+        },
+        {
+          "id": "b",
+          "text": "A solid longitudinal line always permits overtaking."
+        },
+        {
+          "id": "c",
+          "text": "Longitudinal markings are meant only for aesthetics."
+        },
+        {
+          "id": "d",
+          "text": "Double solid lines may be crossed when overtaking a slow-moving vehicle."
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q31",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "\nFour lines of text from a poem by E. E. Cummings is given below.\nmay come home with smooth round stone\nas small as a world and as large as alone\nfor whatever we may lose (like a you or a me)\nits always ourselves we find at sea\nOne of the four lines is depicted in the images below. Identify the image which correctly\nrepresents one line of the poem.",
+      "image": "/media/uceed-2026-q31.png",
+      "imageAlt": "Original UCEED 2026 question 31 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q32",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Samantha, Reema and Payal went late at night to visit an adventure place called The Mystery Spot. The place has a strange window-less room with white walls. One of the walls has a blue triangle and a red circle painted on it. The girls entered the room in turns. First, Samantha entered the room and came out telling that there were two shapes painted on the wall—one triangle and one circle. Then, Reema entered the same room and came out surprised as she saw only a triangle on the wall. Lastly, Payal entered the room and claimed that she saw only a circle on the wall. Which of the four statements is correct?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "When Samantha entered, the room was lit by a blue light. When Reema entered the room, the light was changed to white light and when Payal entered the room, the light was changed to red."
+        },
+        {
+          "id": "b",
+          "text": "When Samantha entered, the room was lit by a white light. When Reema entered the room, the light was changed to blue light and when Payal entered the room, the light was changed to red."
+        },
+        {
+          "id": "c",
+          "text": "When Samantha entered, the room was lit by a white light. When Reema entered the room, the light was changed to red light and when Payal entered the room, the light was changed to blue."
+        },
+        {
+          "id": "d",
+          "text": "When Samantha entered, the room was lit by a blue light. When Reema entered the room, the light was changed to red light and when Payal entered the room, the light was changed to white."
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q33",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Which of the options will replace the question mark?",
+      "image": "/media/uceed-2026-q33.png",
+      "imageAlt": "Original UCEED 2026 question 33 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q34",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Given below are four letterboxes, three of them are written in the same font. Find the one which is written in a different font.",
+      "image": "/media/uceed-2026-q34.png",
+      "imageAlt": "Original UCEED 2026 question 34 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q35",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Who is the first Indian to receive an Academy Award (Oscar)?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bhanu Athaiya"
+        },
+        {
+          "id": "b",
+          "text": "A. R. Rahman"
+        },
+        {
+          "id": "c",
+          "text": "Satyajit Ray"
+        },
+        {
+          "id": "d",
+          "text": "M. Night Shyamalan"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q36",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are four options, each showing consecutive frames representing the movement of a pendulum of an old-style wall clock for an animation movie. Which is the correct option?",
+      "image": "/media/uceed-2026-q36.png",
+      "imageAlt": "Original UCEED 2026 question 36 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q37",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Match the animals (1, 2, 3, 4) with their respective footprints (P,Q, R, S).",
+      "image": "/media/uceed-2026-q37.png",
+      "imageAlt": "Original UCEED 2026 question 37 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "1-P, 2-R, 3-Q, 4-S"
+        },
+        {
+          "id": "b",
+          "text": "1-Q, 2-R, 3-S, 4-P"
+        },
+        {
+          "id": "c",
+          "text": "1-P, 2-S, 3-R, 4-Q"
+        },
+        {
+          "id": "d",
+          "text": "1-R, 2-S, 3-P, 4-Q"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q38",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Identify the final image created if a circular transparent plastic sheet P printed with opaque shapes is folded in the sequence shown below.",
+      "image": "/media/uceed-2026-q38.png",
+      "imageAlt": "Original UCEED 2026 question 38 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q39",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " ChatGPT is an extremely popular artificial intelligence (AI) chatbot from OpenAI. Which of the following options is the correct symbol/logo of ChatGPT?",
+      "image": "/media/uceed-2026-q39.png",
+      "imageAlt": "Original UCEED 2026 question 39 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q40",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " The word “HOME” was printed on a circular disc and a smaller disc from the center was cut and removed from it. Later, another disc was cut from the smaller disc in the same manner. Find the correct set of discs, if the discs were rotated.",
+      "image": "/media/uceed-2026-q40.png",
+      "imageAlt": "Original UCEED 2026 question 40 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q41",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " P is a completed puzzle made of four-square pieces. If the four pieces are removed to play the puzzle again, which piece shown below will NOT fit into the final image?",
+      "image": "/media/uceed-2026-q41.png",
+      "imageAlt": "Original UCEED 2026 question 41 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q42",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " A delicious triangular shaped chocolate was left open at night. A mouse could smell the yummy chocolate and could not resist but eat some of it. The remaining chocolate is shown below. How many triangles (including partial) have been eaten?",
+      "image": "/media/uceed-2026-q42.png",
+      "imageAlt": "Original UCEED 2026 question 42 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "23"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "25"
+        },
+        {
+          "id": "d",
+          "text": "26"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q43",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Closely observe the effect of light and shadow caused by the Sun on the spheres P, Q, R and S. Which is the correct option?",
+      "image": "/media/uceed-2026-q43.png",
+      "imageAlt": "Original UCEED 2026 question 43 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "P =10 am      Q = 10:30 am   R = 12 noon   S = 6 pm"
+        },
+        {
+          "id": "b",
+          "text": "P = 3 pm        Q = 6 am     R = 12 noon   S = 10:30 am"
+        },
+        {
+          "id": "c",
+          "text": "P = 9:30 am   Q = 3 pm     R = 12 noon   S = 9 am"
+        },
+        {
+          "id": "d",
+          "text": "P = 10:30 am      Q = 6 pm     R =12 noon   S = 1 pm"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q44",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " The little ones of parents A, B, C, and D were separated by a 2D maze. Only one parent could find its baby. Identify the parent.",
+      "image": "/media/uceed-2026-q44.png",
+      "imageAlt": "Original UCEED 2026 question 44 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q45",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " What is the total number of capital letter ‘T’ shown in the image below?",
+      "image": "/media/uceed-2026-q45.png",
+      "imageAlt": "Original UCEED 2026 question 45 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q46",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " If delulu = 010101, skibidi = 0010101, bussin = 010010, and ghosted = 0010010, then what is 010100?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "boujee"
+        },
+        {
+          "id": "b",
+          "text": "mewing"
+        },
+        {
+          "id": "c",
+          "text": "pookie"
+        },
+        {
+          "id": "d",
+          "text": "cheugy"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q47",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options fits with the black solid figure and makes it a square?",
+      "image": "/media/uceed-2026-q47.png",
+      "imageAlt": "Original UCEED 2026 question 47 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q48",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " The following images show cave paintings from India. Which of the options is correct?",
+      "image": "/media/uceed-2026-q48.png",
+      "imageAlt": "Original UCEED 2026 question 48 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "P - Ellora, Q - Ajanta, R - Bhimbetka, S - Sittanavasal"
+        },
+        {
+          "id": "b",
+          "text": "P - Ellora, Q - Ajanta, R - Jhalawar, S - Bhimbetka"
+        },
+        {
+          "id": "c",
+          "text": "P - Ajanta, Q - Ellora, R - Bhimbetka, S - Sittanavasal"
+        },
+        {
+          "id": "d",
+          "text": "P - Ajanta, Q - Ellora, R - Jhalawar, S – Bhimbetka"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q49",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " The following image shows a set of letters in different fonts. Which of the options is the word formed by letters of the same font?",
+      "image": "/media/uceed-2026-q49.png",
+      "imageAlt": "Original UCEED 2026 question 49 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "knowing"
+        },
+        {
+          "id": "b",
+          "text": "pester"
+        },
+        {
+          "id": "c",
+          "text": "delight"
+        },
+        {
+          "id": "d",
+          "text": "navel"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q50",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " P is a transparent glass filled with water as shown below. Q is a white cylinder with parallel lines printed around it. If the cylinder is viewed through the glass from the direction of the arrow, find the correct pattern observed.",
+      "image": "/media/uceed-2026-q50.png",
+      "imageAlt": "Original UCEED 2026 question 50 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q51",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " A toy is made with cardboard and rivets. As shown below, the two car cut-outs are attached on top of the parallel cardboard strips which should move when the child pushes or pulls the horizontal cardboard strip. Different linkage mechanisms are made with cardboard strips (rectangles) and connector pivots (circles). Black circles are fixed pivots (attached to the grey base) and white circles are moving pivots (not attached to the grey base). Which option will show a collision between the two cars?",
+      "image": "/media/uceed-2026-q51.png",
+      "imageAlt": "Original UCEED 2026 question 51 diagram and labelled answer choices",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q52",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " What is the total number of musical instruments in the image below?",
+      "image": "/media/uceed-2026-q52.png",
+      "imageAlt": "Original UCEED 2026 question 52 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "27"
+        },
+        {
+          "id": "b",
+          "text": "28"
+        },
+        {
+          "id": "c",
+          "text": "26"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q53",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are letters ‘e’ taken from four popular logos, arranged in a sequence. Which of the options is the correct sequence?",
+      "image": "/media/uceed-2026-q53.png",
+      "imageAlt": "Original UCEED 2026 question 53 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reliance – Nestle – Google – Acer"
+        },
+        {
+          "id": "b",
+          "text": "Nestle – Reliance – Google – Acer"
+        },
+        {
+          "id": "c",
+          "text": "Google – Nestle – Reliance – Acer"
+        },
+        {
+          "id": "d",
+          "text": "Reliance – Google – Nestle – Acer"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q54",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Shown below are the key frames of a bird flying. Which of the following options is the correct order?",
+      "image": "/media/uceed-2026-q54.png",
+      "imageAlt": "Original UCEED 2026 question 54 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "1 , 4, 5, 3, 2"
+        },
+        {
+          "id": "b",
+          "text": "1, 4, 2, 5, 3"
+        },
+        {
+          "id": "c",
+          "text": "1, 3, 4, 5, 2"
+        },
+        {
+          "id": "d",
+          "text": "1, 5, 4, 2, 3"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q55",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Shown below is a traditional metal artefact made using the lost-wax casting technique. What is this craft called?",
+      "image": "/media/uceed-2026-q55.png",
+      "imageAlt": "Original UCEED 2026 question 55 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bidriware"
+        },
+        {
+          "id": "b",
+          "text": "Thewa"
+        },
+        {
+          "id": "c",
+          "text": "Filigree"
+        },
+        {
+          "id": "d",
+          "text": "Dokra"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q56",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A lever mechanism has Effort (E), Fulcrum (F) and Load (L). For example, a pair of scissors will have an order ‘EFL’ as shown in the image below. Similarly, choose the correct order for a Tweezer and a Nutcracker.",
+      "image": "/media/uceed-2026-q56.png",
+      "imageAlt": "Original UCEED 2026 question 56 diagram",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tweezer=EFL, Nutcracker=FEL"
+        },
+        {
+          "id": "b",
+          "text": "Tweezer=FEL, Nutcracker=ELF"
+        },
+        {
+          "id": "c",
+          "text": "Tweezer=FLE, Nutcracker=FEL"
+        },
+        {
+          "id": "d",
+          "text": "Tweezer=LFE, Nutcracker=LFE"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q57",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "What is the main purpose for the presence of water in a toilet bowl (Western Commode/ Water Closet)?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent back flow of sewer gases."
+        },
+        {
+          "id": "b",
+          "text": "To efficiently flush solid, semi-solid fecal matter."
+        },
+        {
+          "id": "c",
+          "text": "To regulate water temperature in plumbing lines."
+        },
+        {
+          "id": "d",
+          "text": "To neutralize acidic waste materials. PART B  (60 minutes – 100 marks)"
+        }
+      ],
+      "answer": "a"
+    }
+  ]
+}

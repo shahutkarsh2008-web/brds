@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-09-28T00:24:02.444Z",
+  "status": "passed",
+  "scope": "isolated localhost Node child server + file-backed SQLite; not hosted PostgreSQL",
+  "config": {
+    "students": 5,
+    "seconds": 5,
+    "interval": 500,
+    "injectDrop": false
+  },
+  "elapsedSeconds": 5,
+  "rounds": 10,
+  "successfulWrites": 50,
+  "readbacks": 50,
+  "liveReads": 60,
+  "teacherSnapshots": 12,
+  "unexpectedDrops": 0,
+  "errors": [],
+  "errorCount": 0,
+  "missedCadences": 0,
+  "peakServerRssMB": 64,
+  "peakServerHeapMB": 12,
+  "peakServerCpuPercent": 5,
+  "peakServerEventLoopDelayMs": 210,
+  "maxTeacherCatchupMs": 31,
+  "latency": {
+    "write": {
+      "count": 60,
+      "p50Ms": 106.05,
+      "p95Ms": 240.74,
+      "p99Ms": 257.94,
+      "maxMs": 257.94
+    },
+    "read": {
+      "count": 110,
+      "p50Ms": 12.65,
+      "p95Ms": 163.22,
+      "p99Ms": 203.66,
+      "maxMs": 215.77
+    }
+  },
+  "database": "F:\\desktop\\New folder\\tmp\\load-tests\\run-duiUUP\\load.sqlite",
+  "persistedMutations": 50,
+  "verifiedAttempts": 5,
+  "acceptanceDurationMet": false,
+  "finishedAt": "2026-09-28T00:24:09.456Z"
+}

@@ -1,7 +1,17 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BRDS | Workspace</title><link rel="stylesheet" href="/auth.css"><link rel="stylesheet" href="/workspace.css"><script src="/dashboard.js" defer></script><script type="module" src="/workspace.js"></script><link rel="icon" type="image/png" href="/media/brds-logo-enhanced.png"></head><body>
-<header><a class="brand" href="/"><img class="brand-logo" src="/media/brds-logo-enhanced.png" alt="BRDS" width="60" height="60"><span>Bhanwar Rathore<br>Design Studio</span></a><button id="logout" class="header-button">Sign out</button></header><nav><span id="role-label">YOUR WORKSPACE</span><span id="connection" role="status">Connecting…</span></nav>
-<main class="dashboard"><p class="eyebrow">BRDS RAIPUR</p><h1 id="greeting">Welcome.</h1><p id="intro" class="lede"></p><p id="message" role="status" class="message"></p>
-<section id="role-content" class="empty-state"><span class="pill" id="role-pill"></span><h2 id="empty-title"></h2><p id="empty-description"></p></section>
-<section id="admin-panel" hidden><div class="section-heading"><div><p class="eyebrow">ACCOUNT MANAGEMENT</p><h2>Issue a new account.</h2></div></div>
-<form id="create-user" class="account-form"><div><label for="name">Full name</label><input id="name" name="name" maxlength="100" required></div><div><label for="loginId">Login ID</label><input id="loginId" name="loginId" minlength="3" maxlength="40" required></div><div><label for="phone">Mobile number</label><input id="phone" name="phone" placeholder="91 followed by 10-digit number" inputmode="tel" required></div><div><label for="new-password">Issued password</label><input id="new-password" name="password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></div><div><label for="role">Role</label><select id="role" name="role"><option value="student">Student</option><option value="teacher">Teacher / Invigilator</option><option value="admin">Administrator</option></select></div><button type="submit">Create account →</button></form><p class="field-note">Passwords need at least 12 characters. Share login details privately with the account holder.</p><h2>Issued accounts</h2><div class="table-scroll"><table><thead><tr><th>Login ID</th><th>Name</th><th>Role</th><th>Status</th></tr></thead><tbody id="users"></tbody></table></div></section>
-<footer><a href="/setup">Check this device’s connection ↗</a><span>BRDS CBT · Authentication foundation</span></footer></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRDS CBT — Student Workspace Command Center</title>
+  <link rel="stylesheet" href="/workspace-dark.css">
+  <script type="module" src="/dashboard.js?v=20260930"></script>
+  <link rel="icon" type="image/png" href="/media/brds-logo-enhanced.png">
+</head>
+<body>
+  <div id="app">
+    <!-- Complete UI rendered dynamically via JavaScript (dashboard.js) -->
+  </div>
+</body>
+</html>
+

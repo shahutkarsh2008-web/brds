@@ -1,68 +1,12 @@
-const message = document.querySelector('#message');
-let socket, reconnect, stopped = false;
-async function request(path, data) {
-  const response = await fetch(path, data ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) } : {});
-  const result = await response.json();
-  if (response.status === 401) location.replace('/login');
-  if (!response.ok) throw new Error(result.error || 'Request failed.');
-  return result;
-}
-function connect() {
-  if (stopped) return;
-  socket = new WebSocket(`${location.protocol === 'https:' ? 'wss:' : 'ws:'}//${location.host}/session-ws`);
-  socket.onopen = () => { document.querySelector('#connection').textContent = '● Live connection active'; };
-  socket.onmessage = event => { try { window.dispatchEvent(new CustomEvent('brds-live', { detail: JSON.parse(event.data) })); } catch {} };
-  socket.onclose = async event => {
-    document.querySelector('#connection').textContent = 'Reconnecting…';
-    if (stopped) return;
-    if (event.code === 4001) return location.replace('/login');
-    try { const { user } = await request('/api/me'); if (!user) return location.replace('/login'); } catch {}
-    reconnect = setTimeout(connect, 3000);
-  };
-  socket.onerror = () => { document.querySelector('#connection').textContent = 'Connection interrupted'; };
-}
-async function loadUsers() {
-  const { users } = await request('/api/admin/users');
-  document.querySelector('#users').replaceChildren(...users.map(user => {
-    const row = document.createElement('tr');
-    for (const value of [user.loginId, user.name, user.role, user.active ? 'Active' : 'Inactive']) {
-      const cell = document.createElement('td'); cell.textContent = value; row.append(cell);
-    }
-    return row;
-  }));
-}
-document.querySelector('#logout').addEventListener('click', async () => {
-  try { await request('/api/logout', {}); stopped = true; clearTimeout(reconnect); socket?.close(); location.replace('/login'); }
-  catch (error) { message.textContent = error.message; }
-});
-document.querySelector('#create-user').addEventListener('submit', async event => {
-  event.preventDefault(); const button = event.target.querySelector('button'); button.disabled = true;
-  try {
-    const { user } = await request('/api/admin/users', Object.fromEntries(new FormData(event.target)));
-    event.target.reset(); message.textContent = `Account ${user.loginId} created.`; await loadUsers();
-  } catch (error) { message.textContent = error.message; }
-  finally { button.disabled = false; }
-});
-async function start() {
-  const role = location.pathname.slice(1);
-  if (role === 'admin') { location.replace('/admin'); return; }
-  const { user } = await request(`/api/${role}`);
-  const copy = {
-    student: ['STUDENT WORKSPACE', 'Ready for your next step.', 'Your exam space is ready.', 'Assigned tests and attempt history will appear here when the exam engine is added.'],
-    teacher: ['TEACHER WORKSPACE', 'A clear view of your classroom.', 'Your invigilation space is ready.', 'Live student monitoring and exam controls will be added in the next build phases.'],
-    admin: ['ADMIN WORKSPACE', 'Give your students a connected start.', 'You manage access.', 'Create student, teacher, and administrator accounts below. Each account requires mobile OTP verification to sign in.'],
-  }[role];
-
-  document.querySelector('#role-label').textContent = copy[0];
-  document.querySelector('#greeting').textContent = `Hello, ${user.name}.`;
-  document.querySelector('#intro').textContent = copy[1];
-  document.querySelector('#role-pill').textContent = user.role.toUpperCase();
-  document.querySelector('#empty-title').textContent = copy[2];
-  document.querySelector('#empty-description').textContent = copy[3];
-  if (role === 'admin') { document.querySelector('#admin-panel').hidden = false; await loadUsers(); }
-  window.brdsUser = user; window.dispatchEvent(new CustomEvent('brds-user', { detail: user }));
-  connect();
-}
-window.addEventListener('pagehide', () => { stopped = true; clearTimeout(reconnect); socket?.close(); });
-window.addEventListener('pageshow', event => { if (event.persisted) { stopped = false; start().catch(error => { message.textContent = error.message; }); } });
-start().catch(error => { message.textContent = error.message; });
+const state={tab:'overview',open:localStorage.getItem('northstar-sidebar')==='open',exams:null};
+const app=document.querySelector('#app');
+const el=(tag,props={},children=[])=>{const n=document.createElement(tag);Object.assign(n,props);children.forEach(c=>n.append(c?.nodeType?c:document.createTextNode(String(c))));return n;};
+const nav=[['overview','Overview'],['analytics','Analytics'],['practice','Practice'],['papers','Library'],['mocks','Mocks'],['gk','GK Sprint'],['sketches','Sketches'],['bookmarks','Bookmarks'],['guides','Guides'],['settings','Settings']];
+function card(title,body,cls='card'){return el('section',{className:cls},[el('div',{className:'card-header-title'},[title]),...(Array.isArray(body)?body:[el('p',{},[body])])]);}
+function sidebar(){const aside=el('aside',{className:`app-sidebar ${state.open?'sidebar-open':'sidebar-closed'}`});const brand=el('div',{className:'sidebar-brand-mini'},[el('img',{src:'/media/brds-logo-enhanced.png',alt:'BRDS Logo'}),el('button',{className:'sidebar-toggle',onclick:()=>{state.open=!state.open;localStorage.setItem('northstar-sidebar',state.open?'open':'closed');render();}},[state.open?'‹':'›'])]);aside.append(brand);const navEl=el('nav',{className:'sidebar-nav'});nav.forEach(([id,label])=>navEl.append(el('button',{className:`nav-icon-btn ${state.tab===id?'active':''}`,onclick:()=>{state.tab=id;render();}},[el('span',{className:'nav-symbol'},[id==='overview'?'⌂':id==='analytics'?'▥':id==='papers'?'▤':id==='practice'?'◎':id==='mocks'?'◷':'◇']),el('span',{className:'tooltip'},[label])])));aside.append(navEl);return aside;}
+function header(title,sub){return el('header',{className:'top-header-bar'},[el('div',{},[el('h1',{className:'header-title-text'},[title]),el('p',{className:'header-subtitle-text'},[sub])]),el('button',{className:'btn btn-outline',onclick:()=>{document.body.classList.toggle('light-mode');}},['☀ Light'])]);}
+function overview(){const metrics=el('div',{className:'card-grid'},[['Questions Solved','0'],['Practice Time','0s'],['Papers Attempted','0'],['Overall Accuracy','—']].map(([a,b])=>card(a,[el('h2',{className:'card-stat-value'},[b]),el('p',{className:'card-stat-desc'},['Updated from your attempts'])])));const heat=card('365-Day Consistency Calendar',[el('div',{className:'heatmap-grid'},Array.from({length:90},(_,i)=>el('span',{className:`heatmap-cell ${i%9===0?'level-3':''}`})))]);const action=card('Next Best Action',[el('div',{className:'overview-cta-row'},[el('div',{},[el('strong',{},['Choose a paper from Library']),el('span',{},['Start a timed mock after selecting an uploaded paper.'])]),el('button',{className:'btn btn-primary',onclick:()=>{state.tab='papers';render();}},['Open Library →'])])]);const recent=card('Recent Mock Attempts',[el('p',{},['Uploaded exams will appear here after you select them in Library.'])]);const insight=el('div',{className:'overview-insight-grid'},[card('Topic Mastery Breakdown','Attempt at least 10 questions in a topic to see accuracy.'),el('div',{className:'overview-side-stack'},[card('Recent Sparks','Daily login · +50'),card('Recommended Sets','Open Practice to build a custom set.')])]);const opt=card('Optimization Snapshot',[el('div',{className:'overview-optimization-grid'},['28-Day Consistency','Paper Completion','Tracked Weak Topics','Avg Time per Question'].map(x=>el('div',{className:'overview-optimization-tile'},[el('div',{className:'card-header-title'},[x]),el('strong',{},['—'])])))]);return [header('Overview Dashboard','Track practice, papers and exam readiness.'),metrics,el('div',{className:'overview-flow'},[heat,action,recent,insight,opt])];}
+async function library(){const wrap=el('div');wrap.append(header('Papers Library','Select an uploaded paper before entering the exam room.'));const c=card('Uploaded Exams',[el('p',{},['Loading available papers…'])]);wrap.append(c);try{const r=await fetch('/api/exams');const data=await r.json();const list=data.exams||[];c.replaceChildren(el('div',{className:'card-header-title'},[`Uploaded Exams · ${list.length}`]),...list.map(x=>el('button',{className:'year-tile',onclick:()=>location.assign('/exam.html?id='+encodeURIComponent(x.examId||x.id))},[el('div',{className:'year-number'},[(x.title||'Paper').match(/20\\d{2}/)?.[0]||'Paper']),el('div',{className:'year-badge'},[x.title||x.examId])]))); }catch(e){c.append(el('p',{},['Unable to load Library. Refresh after starting the local server.']));}return [wrap];}
+function generic(name,desc){return [header(name,desc),el('div',{className:'card-grid'},[card('Ready Workspace','This feature is available in the Northstar workspace.'),card('Coming Next','Use uploaded papers and practice data to populate this view.')])];}
+async function render(){app.replaceChildren();app.append(sidebar());const main=el('main',{className:`app-main ${state.open?'main-sidebar-open':'main-sidebar-closed'}`});app.append(main);let nodes=state.tab==='overview'?overview():state.tab==='papers'?await library():state.tab==='analytics'?generic('Analytics','Track accuracy, timing, marks and weak topics.'):state.tab==='practice'?generic('Practice','Build topic-wise practice sets from the Library question bank.'):generic(nav.find(x=>x[0]===state.tab)?.[1]||'Workspace','Your study workspace.');main.append(...nodes);}
+render().catch(e=>{app.replaceChildren(el('main',{className:'app-main'},[card('Workspace error',e.message)]));});

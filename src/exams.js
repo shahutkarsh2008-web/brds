@@ -21,7 +21,7 @@ export function validateExam(value) {
     if (!idPattern.test(q.id || '') || questionIds.has(q.id) || !sectionIds.has(q.sectionId)) fail(400, 'Question IDs must be unique and reference a section.');
     questionIds.add(q.id);
     if (!['MCQ','MSQ','NAT'].includes(q.type) || typeof q.prompt !== 'string' || !q.prompt.trim() || q.prompt.length > 10000) fail(400, 'Question type and prompt are required.');
-    if (q.image !== undefined && (!/^\/media\/[a-zA-Z0-9_-]+\.(svg|png|jpg|jpeg|webp)$/.test(q.image) || typeof q.imageAlt !== 'string' || !q.imageAlt.trim())) fail(400, 'Images require a local /media/ filename and alt text.');
+    if (q.image !== undefined && (!/^\/media\/[a-zA-Z0-9_./-]+\.(svg|png|jpg|jpeg|webp)$/.test(q.image) || typeof q.imageAlt !== 'string' || !q.imageAlt.trim())) fail(400, 'Images require a local /media/ filename and alt text.');
     if (!q.marks || !finite(q.marks.correct) || q.marks.correct < 0 || !finite(q.marks.incorrect) || q.marks.incorrect > 0 || !finite(q.marks.unanswered) || q.marks.unanswered > 0) fail(400, 'Explicit correct, incorrect and unanswered marks are required.');
     if (q.type !== 'MSQ' && (q.partialCredit !== undefined || q.answerAlternatives !== undefined)) fail(400, 'Alternative answers and partial credit require MSQ.');
     if (q.type === 'MSQ') {
@@ -51,6 +51,10 @@ export function validateExam(value) {
     instructions: typeof value.instructions === 'string' ? value.instructions.slice(0,10000) : '',
     sections: value.sections.map(s => ({ id: s.id, title: s.title, ...(timed ? { durationSeconds: s.durationSeconds } : {}) })),
     questions: value.questions.map(q => ({ id:q.id, sectionId:q.sectionId, type:q.type, prompt:q.prompt,
+      ...(q.topic ? {topic:q.topic} : {}),
+      ...(q.difficulty ? {difficulty:q.difficulty} : {}),
+      ...(q.tags ? {tags:q.tags} : {}),
+      ...(q.category ? {category:q.category} : {}),
       ...(q.image ? {image:q.image,imageAlt:q.imageAlt} : {}),
       ...(q.type !== 'NAT' ? {options:q.options.map(o=>({id:o.id,text:o.text}))} : {}),
       ...(q.partialCredit ? {partialCredit:{...q.partialCredit}} : {}),
@@ -419,4 +423,5 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
 
   return {list,start,get,answer,submit,flag,sweep,roster,control,saveExam,assignExam,listAuthored,getAuthored,getExamAnalytics,getStudentHistory};
 }
+
 

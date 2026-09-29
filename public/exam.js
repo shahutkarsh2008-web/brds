@@ -129,6 +129,23 @@ function renderResult(){
   text('#score',String(state.result.score));text('#max-score','/ '+state.result.maxMarks+' marks');
   text('#submission-reason',state.result.reason==='teacher_locked'?'Your teacher locked and submitted this attempt. It cannot be resumed.':state.result.reason==='teacher_submitted'?'Your teacher submitted this attempt.':state.result.reason==='time_expired'?'Time expired. Your last server-saved answers were submitted automatically.':'Your submission has been recorded.');
   $('#result-sections').replaceChildren(...state.result.sections.map(section=>{const tr=node('tr');for(const v of [section.title,section.correct,section.partial||0,section.incorrect,section.unanswered,section.score+' / '+section.maxMarks])tr.append(node('td',String(v)));return tr;}));
+  $('#question-review').replaceChildren(...(state.result.questions||[]).map((item,i)=>{
+    const q=state.exam.questions.find(q=>q.id===item.id);
+    if(!q)return node('p','Question unavailable');
+    const card=node('details');card.className='question-review '+item.outcome;
+    const labels={correct:'Correct',incorrect:'Incorrect',partial:'Partially correct',unanswered:'Unanswered'};
+    card.append(node('summary','Q'+(i+1)+' · '+labels[item.outcome]+' · '+item.marks+' / '+item.maxMarks+' marks'));
+    const prompt=node('p',q.prompt);prompt.className='review-prompt';card.append(prompt);
+    if(q.image){const image=node('img');image.src=q.image;image.alt=q.imageAlt;image.loading='lazy';card.append(image);}
+    const format=value=>{
+      if(!answered(value))return 'Not answered';
+      if(q.type==='NAT')return typeof value==='object'?(value.min===value.max?String(value.min):value.min+' to '+value.max+' (inclusive)'):String(value);
+      return (Array.isArray(value)?value:[value]).map(id=>{const option=q.options.find(o=>o.id===id);return id.toUpperCase()+(option?' — '+option.text:'');}).join('; ');
+    };
+    card.append(node('p','Your answer: '+format(item.selectedAnswer)));
+    card.append(node('p','Correct answer: '+[item.correctAnswer,...(item.answerAlternatives||[])].map(format).join(' OR ')));
+    return card;
+  }));
   if(queue.length){text('#error','This exam is submitted. '+queue.length+' pending edit(s) on this device were not included.');}
   else if(storageKey){try{localStorage.removeItem(storageKey);}catch{}}
   saveStatus();

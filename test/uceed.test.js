@@ -64,3 +64,27 @@ test('startup seeds library without assignments, preserves keys and is idempoten
   const view=await engine.start(exam.id,user.id);
   assert.ok(view.exam.questions.every(q=>!('answer' in q)&&!('answerAlternatives' in q)));
 });
+
+test('question outcomes match totals and reviews appear only after submission, including older results',async t=>{
+  const db=await openDatabase({SQLITE_PATH:':memory:'});await migrate(db);t.after(()=>db.close());
+  const user=await createUser(db,{loginId:'review-student',name:'Review Student',role:'student',phone:'919999999999',password:'Test-password-123!'});
+  const engine=createExamEngine(db);
+  await engine.saveExam(raw);await engine.assignExam(raw.id,[user.id]);
+  let view=await engine.start(raw.id,user.id);
+  assert.equal(view.result,null);
+  const responses={q01:'14',q15:['a'],q30:'b'};
+  for(const [questionId,value] of Object.entries(responses))view=await engine.answer(view.id,user.id,{questionId,value,expectedVersion:view.version,mutationId:'review-'+questionId,review:false});
+  view=await engine.submit(view.id,user.id,view.version);
+  assert.equal(view.result.questions.length,57);
+  assert.equal(Number(view.result.questions.reduce((n,q)=>n+q.marks,0).toFixed(6)),view.result.score);
+  assert.deepEqual(view.result.questions.slice(0,2).map(q=>q.outcome),['correct','unanswered']);
+  assert.equal(view.result.questions[14].outcome,'partial');
+  assert.equal(view.result.questions[29].outcome,'incorrect');
+  assert.deepEqual(view.result.questions[17].answerAlternatives,[['b','c','d']]);
+  const legacy={...view.result};delete legacy.questions;
+  await db.query('UPDATE attempts SET result_json=$1 WHERE id=$2',[JSON.stringify(legacy),view.id]);
+  const old=await engine.get(view.id,user.id);
+  assert.equal(old.result.questions.length,57);
+  assert.equal(old.result.score,legacy.score);
+});
+

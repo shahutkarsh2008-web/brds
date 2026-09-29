@@ -24,6 +24,7 @@
 
   // DOM Elements
   const el = id => document.getElementById(id);
+  const escapeText = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
   async function init() {
     try {
@@ -42,7 +43,7 @@
     setupTabs();
     setupSectionsUI();
     setupOptionsUI();
-    setupToolbar();
+
     setupEventListeners();
     updatePreview();
     loadUsers();
@@ -131,8 +132,8 @@
     container.innerHTML = currentOptions.map((opt, idx) => `
       <div class="option-row" data-idx="${idx}">
         <input type="${type === 'MCQ' ? 'radio' : 'checkbox'}" name="correct-ans" value="${opt.id}" class="opt-correct" ${idx === 0 ? 'checked' : ''}>
-        <input type="text" class="opt-id" value="${opt.id}" style="width: 50px;" placeholder="ID">
-        <input type="text" class="opt-text" value="${opt.text}" placeholder="Option choice text">
+        <input type="text" class="opt-id" value="${escapeText(opt.id)}" style="width: 50px;" placeholder="ID">
+        <input type="text" class="opt-text" value="${escapeText(opt.text)}" placeholder="Option choice text">
         ${currentOptions.length > 2 ? `<button type="button" class="btn btn-secondary btn-sm btn-remove-opt">✕</button>` : ''}
       </div>
     `).join('');
@@ -141,33 +142,6 @@
     container.querySelectorAll('.opt-text').forEach((input, i) => input.addEventListener('input', e => { currentOptions[i].text = e.target.value; updatePreview(); }));
     container.querySelectorAll('.opt-correct').forEach(input => input.addEventListener('change', updatePreview));
     container.querySelectorAll('.btn-remove-opt').forEach((btn, i) => btn.addEventListener('click', () => { currentOptions.splice(i, 1); renderOptions(); updatePreview(); }));
-  }
-
-  // 4. WYSIWYG Formatting Toolbar
-  function setupToolbar() {
-    document.querySelectorAll('.toolbar-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tag = btn.dataset.tag;
-        const textarea = el('q-prompt');
-        const start = textarea.selectionStart;
-        const end = textarea.selectionEnd;
-        const selected = textarea.value.substring(start, end);
-
-        let insert = '';
-        if (tag === 'b') insert = `<b>${selected || 'bold text'}</b>`;
-        else if (tag === 'i') insert = `<i>${selected || 'italic text'}</i>`;
-        else if (tag === 'code') insert = `<code>${selected || 'formula or code'}</code>`;
-        else if (tag === 'list') insert = `\n<ul>\n  <li>${selected || 'List item'}</li>\n</ul>\n`;
-        else if (tag === 'image') {
-          el('image-fields').style.display = 'flex';
-          insert = `<img src="${el('q-image-url').value || '/media/brds-logo-enhanced.png'}" alt="${el('q-image-alt').value || 'Diagram'}">`;
-        }
-
-        textarea.value = textarea.value.substring(0, start) + insert + textarea.value.substring(end);
-        textarea.focus();
-        updatePreview();
-      });
-    });
   }
 
   // 5. Live Question Preview
@@ -184,19 +158,19 @@
       choicesHtml = `<div class="margin-top"><b>Numeric Answer Input:</b> [ Enter Number ] <span class="muted">(Accepted Range: ${min || 'min'} to ${max || 'max'})</span></div>`;
     } else {
       choicesHtml = `<div class="margin-top"><b>Choices:</b><ul style="list-style:none; padding-left:0;">` +
-        currentOptions.map(o => `<li><label><input type="${type === 'MCQ' ? 'radio' : 'checkbox'}" disabled> <b>${o.id.toUpperCase()}:</b> ${o.text || '...'}</label></li>`).join('') +
+        currentOptions.map(o => `<li><label><input type="${type === 'MCQ' ? 'radio' : 'checkbox'}" disabled> <b>${escapeText(o.id.toUpperCase())}:</b> ${escapeText(o.text || '...')}</label></li>`).join('') +
         `</ul></div>`;
     }
 
     let imgHtml = '';
-    if (imgUrl) {
-      imgHtml = `<div style="margin:10px 0;"><img src="${imgUrl}" alt="${imgAlt || 'Preview image'}" style="max-width:200px; border:1px solid #ccc; border-radius:4px;"></div>`;
+    if (/^\/media\/[a-zA-Z0-9_-]+\.(svg|png|jpg|jpeg|webp)$/.test(imgUrl)) {
+      imgHtml = `<div style="margin:10px 0;"><img src="${imgUrl}" alt="${escapeText(imgAlt || 'Preview image')}" style="max-width:200px; border:1px solid #ccc; border-radius:4px;"></div>`;
     }
 
     el('preview-render').innerHTML = `
       <div>
         <span class="badge">${type}</span> <b>Prompt:</b>
-        <div>${prompt}</div>
+        <div class="plain-question-preview" style="white-space:pre-wrap;overflow-wrap:anywhere;">${escapeText(prompt)}</div>
         ${imgHtml}
         ${choicesHtml}
       </div>
@@ -369,7 +343,7 @@
       <div class="option-row">
         <div style="flex:1;">
           <b>#${i + 1} (${q.id})</b> [${q.type} | Sec: ${q.sectionId}] - Marks: +${q.marks.correct}/${q.marks.incorrect}<br>
-          <small class="muted">${q.prompt.replace(/<[^>]*>/g, '').slice(0, 60)}...</small>
+          <small class="muted">${escapeText(q.prompt.slice(0, 60))}...</small>
         </div>
         <button type="button" class="btn btn-secondary btn-sm btn-del-q" data-idx="${i}">✕</button>
       </div>

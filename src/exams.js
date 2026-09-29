@@ -93,6 +93,7 @@ function normalizeAnswer(question, value) {
 export function score(exam, answers) {
   const breakdown = exam.sections.map(s => ({ id:s.id,title:s.title,score:0,maxMarks:0,correct:0,incorrect:0,partial:0,unanswered:0 }));
   const bySection = new Map(breakdown.map(s => [s.id,s]));
+  const questions = [];
   for (const q of exam.questions) {
     const value = answers[q.id]?.value;
     const keys = q.type === 'MSQ' ? [q.answer,...(q.answerAlternatives || [])] : [];
@@ -100,10 +101,12 @@ export function score(exam, answers) {
       q.type === 'MSQ' ? keys.some(key => Array.isArray(value) && value.length === key.length && key.every(id => value.includes(id))) : value === q.answer;
     const partial = !correct && q.type === 'MSQ' && Array.isArray(value) && value.length > 0 && keys.some(key => value.length < key.length && value.every(id => key.includes(id))) ? q.partialCredit?.[value.length] || 0 : 0;
     const outcome = !hasAnswer(value) ? 'unanswered' : correct ? 'correct' : partial ? 'partial' : 'incorrect';
-    const section = bySection.get(q.sectionId); section[outcome]++; section.score += partial || q.marks[outcome]; section.maxMarks += q.marks.correct;
+    const marks = partial || q.marks[outcome];
+    questions.push({id:q.id,outcome,marks,maxMarks:q.marks.correct,selectedAnswer:value??null,correctAnswer:q.answer,...(q.answerAlternatives ? {answerAlternatives:q.answerAlternatives} : {})});
+    const section = bySection.get(q.sectionId); section[outcome]++; section.score += marks; section.maxMarks += q.marks.correct;
   }
   for (const s of breakdown) s.score = Number(s.score.toFixed(6));
-  return { score:Number(breakdown.reduce((n,s)=>n+s.score,0).toFixed(6)), maxMarks:exam.maxMarks, sections:breakdown };
+  return { score:Number(breakdown.reduce((n,s)=>n+s.score,0).toFixed(6)), maxMarks:exam.maxMarks, sections:breakdown, questions };
 }
 function studentView(row, time) {
   const exam = JSON.parse(row.exam_json), answers = JSON.parse(row.answers_json);
@@ -113,7 +116,7 @@ function studentView(row, time) {
     startedAt:Number(row.started_at), clockStartedAt:Number(row.started_at)+offset, pausedAt, locked:!!row.locked, deadline:Number(row.deadline), serverNow:time, activeSection,
     submittedAt:row.submitted_at === null ? null : Number(row.submitted_at),
     exam:{...exam,questions:exam.questions.map(({answer,answerAlternatives,...question})=>question)}, answers,
-    result:row.result_json ? JSON.parse(row.result_json) : null };
+    result:row.status === 'submitted' && row.result_json ? {...JSON.parse(row.result_json),questions:JSON.parse(row.result_json).questions || score(exam,answers).questions} : null };
 }
 export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) {
   const lockSuffix = database.kind === 'postgres' ? ' FOR UPDATE' : '';

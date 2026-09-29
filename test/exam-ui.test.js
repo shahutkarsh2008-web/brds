@@ -72,6 +72,11 @@ test('exam client preserves offline edits across tab recreation and submits reco
   resumed.$('#submit').click();await until(()=>resumed.$('#submit-dialog').open);
   resumed.$('#confirm-submit').click();await until(()=>!resumed.$('#result').hidden);
   assert.equal(resumed.$('#score').textContent,'4');
+  assert.equal(resumed.w.document.querySelectorAll('#question-review details').length,8);
+  assert.match(resumed.$('#question-review summary').textContent,/Q1 · Correct/);
+  assert.match(resumed.$('#question-review').textContent,/Your answer: A/);
+  assert.match(resumed.$('#question-review').textContent,/Correct answer:/);
+  assert.match(resumed.$('#question-review').textContent,/Unanswered/);
   assert.equal((await f.get()).status,'submitted');
 });
 test('numeric incomplete entry blocks navigation, valid input autosaves and clear removes it',async t=>{

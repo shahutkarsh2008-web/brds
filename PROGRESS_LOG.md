@@ -186,3 +186,23 @@ WHY: Users can distinguish cooldown from incorrect OTP and know when to retry. N
 EVIDENCE: node --test test/auth.test.js passed 13/13, including cooldown boundary recovery, successful two-factor reset, expiry/replay and role checks.
 NEXT: Deploy latest commit on Render and verify fresh sign-in. Screenshot alone does not establish which live limit fired. Live acceptance pending; file claims released.
 
+
+### [2026-09-29 11:05 UTC] Codex — Phase 7: question-by-question results
+STATUS: IN PROGRESS
+FILES: src/exams.js, public/exam.js, public/exam.html, public/exam.css, test/uceed.test.js, test/exam-ui.test.js
+WHAT: Adding submitted-attempt question outcomes, selected/correct answers and awarded marks with expandable question text and diagrams.
+WHY: User wants to see which individual questions were right or wrong. Keep keys hidden during active attempts.
+NEXT: Verify scoring detail totals, submission-only key visibility and UI rendering; preserve stored totals for older attempts.
+
+
+Additional ownership: public/admin.html, public/admin.js, test/admin-text.test.js. User confirmed plain-text admin question authoring; removing raw HTML toolbar and escaping preview text.
+
+
+### [2026-09-29 11:09 UTC] Codex — Phase 7: question reviews and plain-text authoring
+STATUS: DONE
+FILES: src/exams.js, public/exam.js, public/exam.html, public/exam.css, public/admin.js, public/admin.html, test/uceed.test.js, test/exam-ui.test.js, test/admin-text.test.js, PROGRESS_LOG.md
+WHAT: Submitted attempts expose per-question correct/incorrect/partial/unanswered status, saved selected answer, accepted key(s) and marks. Expandable result cards show prompt and diagram. Active attempts retain null results and hidden keys. Older submitted snapshots gain review details without rewriting stored totals. Admin question authoring is now plain text with preserved newlines, escaped previews/options, and a separate optional diagram field; raw HTML toolbar removed per user request.
+WHY: User requested individual question feedback and direct question typing instead of HTML editing.
+EVIDENCE: Full suite passed 57/57 after review changes; additional plain-text jsdom test passed 1/1 after supplying its required question ID. Coverage includes review mark totals, all four outcomes, legacy snapshots, submitted UI cards, and literal HTML-looking text. Admin script syntax checked.
+NEXT: Deploy latest commit to Render, then visually verify admin typing and submitted review on phone/desktop. Native-browser and hosted acceptance pending. No active file claims; no production attempts changed.
+

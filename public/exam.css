@@ -566,3 +566,13 @@ footer {
   .question-tools { flex-direction: column; }
   .question-tools button { width: 100%; }
 }
+
+.question-review { margin: 12px 0; padding: 14px; border: 1px solid #cbd5e1; border-left: 4px solid #64748b; border-radius: 8px; }
+.question-review summary { cursor: pointer; font-weight: 700; }
+.question-review.correct { border-left-color: #15803d; }
+.question-review.incorrect { border-left-color: #dc2626; }
+.question-review.partial { border-left-color: #b45309; }
+.question-review img { max-width: 100%; height: auto; }
+.question-review p { overflow-wrap: anywhere; }
+.review-prompt { white-space: pre-wrap; }
+

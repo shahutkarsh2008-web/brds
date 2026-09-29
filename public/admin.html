@@ -93,19 +93,13 @@
 
             <!-- WYSIWYG Formatting Toolbar -->
             <div class="form-group">
-              <label>Question Prompt (WYSIWYG Formatting) *</label>
-              <div class="wysiwyg-toolbar">
-                <button type="button" class="toolbar-btn" data-tag="b" title="Bold"><b>B</b></button>
-                <button type="button" class="toolbar-btn" data-tag="i" title="Italic"><i>I</i></button>
-                <button type="button" class="toolbar-btn" data-tag="code" title="Formula / Code">&lt;/&gt;</button>
-                <button type="button" class="toolbar-btn" data-tag="list" title="Bullet List">• List</button>
-                <button type="button" class="toolbar-btn" data-tag="image" title="Embed Image">📷 Image</button>
-              </div>
-              <textarea id="q-prompt" rows="4" placeholder="Enter question prompt text or formatted HTML..."></textarea>
+              <label>Question text *</label>
+              <p class="muted">Type plain text below. No HTML needed. Add a diagram separately if required.</p>
+              <textarea id="q-prompt" rows="6" placeholder="Type or paste your question here. Use Enter for a new line."></textarea>
             </div>
 
             <!-- Image Embed Optional Fields -->
-            <div class="form-row" id="image-fields" style="display: none;">
+            <div class="form-row" id="image-fields">
               <div class="form-group flex-2">
                 <label for="q-image-url">Image Path (under /media/)</label>
                 <input type="text" id="q-image-url" placeholder="/media/brds-logo-enhanced.png">

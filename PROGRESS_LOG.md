@@ -674,3 +674,11 @@ WHAT: Reviewed the supplied UCEED syllabus PDF and reference screenshots, then r
 WHY: Each tab needs an understandable working surface instead of a generic placeholder, with the syllabus acting as the topic contract for practice and analytics.
 EVIDENCE: PDF rendered to seven pages for visual review; dashboard JavaScript syntax check passes; feature-specific card content is selected by active tab.
 NEXT: Wire each feature card to its backend action one tab at a time, starting with Practice topic selection and Analytics attempt data.
+
+### [2026-09-30 17:20 UTC] Codex — Fix Library exam launch attempt handoff
+STATUS: DONE
+FILES: public/dashboard.js, PROGRESS_LOG.md
+WHAT: Updated Library paper actions to call POST /api/exams/{examId}/start first, then redirect to exam.html with the returned attempt ID.
+WHY: The exam room requires an attempt ID; passing a paper/exam ID directly caused “Attempt not found.”
+EVIDENCE: Dashboard JavaScript syntax check passes; launch handler now handles API errors and uses the created attempt identifier.
+NEXT: Reload Library, select the Spatial Reasoning paper, and verify the exam timer/questions render.

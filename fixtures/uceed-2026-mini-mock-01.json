@@ -1,0 +1,474 @@
+{
+  "id": "uceed-2026-mini-mock-01",
+  "title": "UCEED 2026 · Mini Mock 01",
+  "durationSeconds": 1920,
+  "totalQuestions": 15,
+  "maxMarks": 53,
+  "instructions": "Short practice set using 15 selected questions from the supplied official UCEED 2026 Part A paper; these are not new questions. Practice duration: 32 minutes (shortened for this mock, not the official exam duration). 4 NAT + 4 MSQ + 7 MCQ; maximum 53 marks. NAT: +4 correct, 0 incorrect or blank. MSQ: +4 for an accepted complete answer; +3 for three correct choices when all four are correct; +2 for two correct choices when at least three are correct; +1 for one correct choice when at least two are correct. Partial credit requires no incorrect selection. Other answered MSQs: -1; blank: 0. MCQ: +3 correct, -0.71 incorrect, 0 blank. All sections share one timer. Part B drawing is not included.",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "NAT · 4 questions · 16 marks"
+    },
+    {
+      "id": "msq",
+      "title": "MSQ · 4 questions · 16 marks"
+    },
+    {
+      "id": "mcq",
+      "title": "MCQ · 7 questions · 21 marks"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " How many times does the most used black coloured shape appear in the composition shown below?",
+      "image": "/media/uceed-2026-q01.png",
+      "imageAlt": "Original UCEED 2026 question 1 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 14,
+        "max": 14
+      }
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " One of the pots does not belong to the group of pots shown below. What is the number written on that pot?",
+      "image": "/media/uceed-2026-q05.png",
+      "imageAlt": "Original UCEED 2026 question 5 diagram",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 62,
+        "max": 62
+      }
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A mobile screen has a dimension of 10 cm x 4 cm (height x width). A mobile user is viewing a picture in portrait mode and it occupies the entire screen. The user rotates the screen to landscape mode. After rotation, the height of the picture is now the width of the screen and its width gets reduced proportionately, leaving equal blank spaces on both sides of the picture. What is the area (in square centimeters) of the blank space on the left-hand side of the picture?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 16.8,
+        "max": 16.8
+      }
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": " A tank with internal dimension 10 cm x 10 cm x 10 cm (length x width x height) is fully filled with spherical marbles, each marble having a diameter of 1 cm. Each layer of marbles should have equal number of marbles. Water is then poured into the tank. What is the volume of water in cubic centimeters required to fill the voids? (Use π=22/7)",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 470,
+        "max": 480
+      }
+    },
+    {
+      "id": "q05",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Q, R, S and T are cut-out shapes used to create a composition shown in image P. These cut-out shapes could be rotated and combined without overlapping to create the composition. These cut-out shapes can also be repeated. What is/are the correct combination(s) that can be used to create the composition shown in image P?",
+      "image": "/media/uceed-2026-q16.png",
+      "imageAlt": "Original UCEED 2026 question 16 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 cut-out of Q, 1 cut-out of R, 2 cut-outs of S, 2 cut-outs of T"
+        },
+        {
+          "id": "b",
+          "text": "2 cut-outs of Q, 1 cut-out of R, 2 cut-outs of S, 2 cut-outs of T"
+        },
+        {
+          "id": "c",
+          "text": "2 cut-outs of Q, 2 cut-outs of R, 4 cut-outs of S, 1 cut-out of T"
+        },
+        {
+          "id": "d",
+          "text": "2 cut-outs of Q, 2 cut-outs of R, 2 cut-outs of S, 2 cut-outs of T"
+        }
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q06",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Given below are five images P, Q, R, S and T. Each of these is rotated about its center. Which of the following statement(s) is/are TRUE? (Ignore minor variations due to pixelated appearance)",
+      "image": "/media/uceed-2026-q18.png",
+      "imageAlt": "Original UCEED 2026 question 18 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Patterns Q, S and T will look the same when rotated by 60°"
+        },
+        {
+          "id": "b",
+          "text": "Patterns Q, R and T will look the same when rotated by 120°"
+        },
+        {
+          "id": "c",
+          "text": "Patterns P, S and T will not look the same when rotated by 60°."
+        },
+        {
+          "id": "d",
+          "text": "Patterns Q, R and T will look the same when rotated by 60° or 120°"
+        }
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "answerAlternatives": [
+        [
+          "b",
+          "c",
+          "d"
+        ]
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q07",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Which of the options is/are paintings by the artist M. F. Hussain?",
+      "image": "/media/uceed-2026-q21.png",
+      "imageAlt": "Original UCEED 2026 question 21 diagram and labelled answer choices",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q08",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": " Which Indian city/cities is/are designated by UNESCO as a Creative City, until 2024?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pune"
+        },
+        {
+          "id": "b",
+          "text": "Kozhikode"
+        },
+        {
+          "id": "c",
+          "text": "Gwalior"
+        },
+        {
+          "id": "d",
+          "text": "Varanasi"
+        }
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q09",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Which of the following statements is correct for a longitudinal marking provided at the centre of a road?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A broken longitudinal line allows overtaking."
+        },
+        {
+          "id": "b",
+          "text": "A solid longitudinal line always permits overtaking."
+        },
+        {
+          "id": "c",
+          "text": "Longitudinal markings are meant only for aesthetics."
+        },
+        {
+          "id": "d",
+          "text": "Double solid lines may be crossed when overtaking a slow-moving vehicle."
+        }
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "answer": "a"
+    },
+    {
+      "id": "q10",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Which of the options will replace the question mark?",
+      "image": "/media/uceed-2026-q33.png",
+      "imageAlt": "Original UCEED 2026 question 33 diagram and labelled answer choices",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "answer": "b"
+    },
+    {
+      "id": "q11",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Who is the first Indian to receive an Academy Award (Oscar)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bhanu Athaiya"
+        },
+        {
+          "id": "b",
+          "text": "A. R. Rahman"
+        },
+        {
+          "id": "c",
+          "text": "Satyajit Ray"
+        },
+        {
+          "id": "d",
+          "text": "M. Night Shyamalan"
+        }
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "answer": "a"
+    },
+    {
+      "id": "q12",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Identify the final image created if a circular transparent plastic sheet P printed with opaque shapes is folded in the sequence shown below.",
+      "image": "/media/uceed-2026-q38.png",
+      "imageAlt": "Original UCEED 2026 question 38 diagram and labelled answer choices",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see labelled image"
+        },
+        {
+          "id": "b",
+          "text": "B — see labelled image"
+        },
+        {
+          "id": "c",
+          "text": "C — see labelled image"
+        },
+        {
+          "id": "d",
+          "text": "D — see labelled image"
+        }
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "answer": "b"
+    },
+    {
+      "id": "q13",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " Closely observe the effect of light and shadow caused by the Sun on the spheres P, Q, R and S. Which is the correct option?",
+      "image": "/media/uceed-2026-q43.png",
+      "imageAlt": "Original UCEED 2026 question 43 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P =10 am      Q = 10:30 am   R = 12 noon   S = 6 pm"
+        },
+        {
+          "id": "b",
+          "text": "P = 3 pm        Q = 6 am     R = 12 noon   S = 10:30 am"
+        },
+        {
+          "id": "c",
+          "text": "P = 9:30 am   Q = 3 pm     R = 12 noon   S = 9 am"
+        },
+        {
+          "id": "d",
+          "text": "P = 10:30 am      Q = 6 pm     R =12 noon   S = 1 pm"
+        }
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "answer": "d"
+    },
+    {
+      "id": "q14",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": " The following image shows a set of letters in different fonts. Which of the options is the word formed by letters of the same font?",
+      "image": "/media/uceed-2026-q49.png",
+      "imageAlt": "Original UCEED 2026 question 49 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "knowing"
+        },
+        {
+          "id": "b",
+          "text": "pester"
+        },
+        {
+          "id": "c",
+          "text": "delight"
+        },
+        {
+          "id": "d",
+          "text": "navel"
+        }
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "answer": "c"
+    },
+    {
+      "id": "q15",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "What is the main purpose for the presence of water in a toilet bowl (Western Commode/ Water Closet)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent back flow of sewer gases."
+        },
+        {
+          "id": "b",
+          "text": "To efficiently flush solid, semi-solid fecal matter."
+        },
+        {
+          "id": "c",
+          "text": "To regulate water temperature in plumbing lines."
+        },
+        {
+          "id": "d",
+          "text": "To neutralize acidic waste materials. PART B  (60 minutes – 100 marks)"
+        }
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "answer": "a"
+    }
+  ]
+}

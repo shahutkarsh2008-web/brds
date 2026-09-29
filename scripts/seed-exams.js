@@ -4,7 +4,7 @@ import { migrate } from '../src/schema.js';
 import { importExam, validateExam } from '../src/exams.js';
 
 export async function seedExams(database) {
-  const files = ['uceed-2026.json', 'design-foundations.json', 'timed-sections.json'];
+  const files = ['uceed-2026.json', 'uceed-2026-mini-mock-01.json', 'design-foundations.json', 'timed-sections.json'];
   let seededCount = 0;
   for (const filename of files) {
     try {

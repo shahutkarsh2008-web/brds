@@ -206,3 +206,20 @@ WHY: User requested individual question feedback and direct question typing inst
 EVIDENCE: Full suite passed 57/57 after review changes; additional plain-text jsdom test passed 1/1 after supplying its required question ID. Coverage includes review mark totals, all four outcomes, legacy snapshots, submitted UI cards, and literal HTML-looking text. Admin script syntax checked.
 NEXT: Deploy latest commit to Render, then visually verify admin typing and submitted review on phone/desktop. Native-browser and hosted acceptance pending. No active file claims; no production attempts changed.
 
+
+### [2026-09-29 11:13 UTC] Codex — Phase 6: short UCEED mock
+STATUS: IN PROGRESS
+FILES: fixtures/uceed-2026-mini-mock-01.json, docs/uceed-2026-mini-mock-01.md, scripts/seed-exams.js, test/uceed.test.js
+WHAT: Creating 15-question selected-paper practice set with 4 NAT, 4 MSQ, 7 MCQ, 53 marks and a shortened 32-minute timer. Reuses official-paper questions, verified keys and images.
+WHY: User requested a short mock with UCEED 2026 marking.
+NEXT: Validate scoring, seed library with zero student assignments, and push.
+
+
+### [2026-09-29 11:14 UTC] Codex — Phase 6: mini mock in library
+STATUS: DONE
+FILES: fixtures/uceed-2026-mini-mock-01.json, docs/uceed-2026-mini-mock-01.md, scripts/seed-exams.js, test/uceed.test.js, PROGRESS_LOG.md
+WHAT: Added UCEED 2026 Mini Mock 01: 15 selected official-paper questions (4 NAT, 4 MSQ, 7 MCQ), 53 marks, shared 32-minute practice timer, original marking and diagrams. Source-question mapping documented. Included in startup seeding.
+WHY: Delivers the requested short UCEED mock. Instructions explicitly identify selected existing questions and shortened practice duration; Part B excluded.
+EVIDENCE: Validated fixture and all-correct score 53/53; isolated import has zero assignments; UCEED tests passed 5/5 including idempotent seeding. Live PostgreSQL import returned uceed-2026-mini-mock-01 with assignments=0.
+NEXT: Refresh Admin library and preview Mini Mock 01. Assign selected students when requested. Latest scoring/review UI requires the previously pushed Render deployment; native browser acceptance not claimed. File claims released.
+

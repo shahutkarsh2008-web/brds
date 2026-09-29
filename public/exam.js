@@ -96,7 +96,7 @@ function renderQuestion(visit){
   $('#exam-content').hidden=false;
   text('#exam-title',state.exam.title);text('#question-number','QUESTION '+(index+1)+' OF '+state.exam.questions.length);
   text('#question-type',q.type==='MSQ'?'MULTIPLE SELECT':q.type==='NAT'?'NUMERIC ANSWER':'SINGLE CHOICE');
-  text('#prompt',q.prompt);text('#marks','Correct +'+q.marks.correct+' · Incorrect '+q.marks.incorrect+' · Unanswered '+q.marks.unanswered+(q.type==='MSQ'?' · Exact match required':''));
+  text('#prompt',q.prompt);text('#marks','Correct +'+q.marks.correct+' · Incorrect '+q.marks.incorrect+' · Unanswered '+q.marks.unanswered+(q.type==='MSQ'?(q.partialCredit?' · Partial credit for correct subsets; see instructions':' · Exact match required'):''));
   const image=$('#question-image');image.hidden=!q.image;if(q.image){image.src=q.image;image.alt=q.imageAlt;}else image.removeAttribute('src');
   const a=answers[q.id]||{value:null,review:false};const inputs=$('#answer-input');inputs.replaceChildren();invalidNumeric=false;
   if(q.type==='NAT'){
@@ -128,7 +128,7 @@ function renderResult(){
   $('#fullscreen').hidden=true;text('#exam-title',state.exam.title);text('#timer','00:00');$('#section-clock').hidden=true;
   text('#score',String(state.result.score));text('#max-score','/ '+state.result.maxMarks+' marks');
   text('#submission-reason',state.result.reason==='teacher_locked'?'Your teacher locked and submitted this attempt. It cannot be resumed.':state.result.reason==='teacher_submitted'?'Your teacher submitted this attempt.':state.result.reason==='time_expired'?'Time expired. Your last server-saved answers were submitted automatically.':'Your submission has been recorded.');
-  $('#result-sections').replaceChildren(...state.result.sections.map(section=>{const tr=node('tr');for(const v of [section.title,section.correct,section.incorrect,section.unanswered,section.score+' / '+section.maxMarks])tr.append(node('td',String(v)));return tr;}));
+  $('#result-sections').replaceChildren(...state.result.sections.map(section=>{const tr=node('tr');for(const v of [section.title,section.correct,section.partial||0,section.incorrect,section.unanswered,section.score+' / '+section.maxMarks])tr.append(node('td',String(v)));return tr;}));
   if(queue.length){text('#error','This exam is submitted. '+queue.length+' pending edit(s) on this device were not included.');}
   else if(storageKey){try{localStorage.removeItem(storageKey);}catch{}}
   saveStatus();

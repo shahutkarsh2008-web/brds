@@ -147,3 +147,25 @@ WHY: Ensures `UCEED 2026` and all built-in papers are immediately available unde
 EVIDENCE: Verified `seedExams(database)` populates `exams` table; 50/50 automated test suites passing.
 
 
+
+### [2026-09-29 00:00 UTC] Codex — Phase 6: verify UCEED library and marking
+STATUS: IN PROGRESS
+FILES: src/exams.js, public/exam.js, test/uceed.test.js, scripts/build-uceed-2026.py, fixtures/uceed-2026.json
+WHAT: Reviewed Antigravity startup seeding. Current importExam rejects empty assignments, so seedExams cannot insert library-only papers. validateExam also drops UCEED partialCredit and answerAlternatives; scoring uses exact match only. Repairing these verified gaps and checking source transcription.
+WHY: User approved a library-only UCEED demo with official marking, with no bulk student assignment. Earlier DONE log does not establish these behaviors.
+NEXT: Test isolated SQLite seeding, marking and answer-key privacy; preserve external src/exam-api.js edits. Live acceptance remains separate.
+
+FILES (additional ownership): public/exam.html — result partial-credit column.
+
+
+FILES (additional ownership): public/admin.js — expose partial-credit count in section analytics. Timestamp correction: this session is 2026-09-29 10:48 UTC; the earlier 00:00 entry used an approximate date boundary.
+
+
+### [2026-09-29 10:51 UTC] Codex — Phase 6: UCEED library and scoring corrections verified
+STATUS: DONE
+FILES: src/exams.js, public/exam.js, public/exam.html, public/admin.js, scripts/build-uceed-2026.py, fixtures/uceed-2026.json, test/uceed.test.js, PROGRESS_LOG.md
+WHAT: Fixed library-only import (explicit empty assignments), retained and validated MSQ partial credit/alternative keys, scored both Q18 accepted combinations, stripped every answer key from student views, and displayed partial counts in student/admin results. Corrected Q16 B/D text against source PDF. Live PostgreSQL now contains uceed-2026 with zero assignments; no student attempts created.
+WHY: Completes the requested library-only Part A demo with 57 questions, 200 marks and 120 minutes. Actual diagram count is 47 (not 51 in the earlier entry); ten text-only questions remain native text. Part B remains separate offline drawing practice.
+EVIDENCE: npm test passed 54/54; isolated SQLite seeded three libraries idempotently with zero assignments; all-correct UCEED score 200; partial/negative/blank/NAT-boundary and key-privacy tests pass. All six crop contact sheets and final answer key visually inspected; Q16 source page checked. public/admin.js and public/exam.js syntax checks pass. Live read before insert found no UCEED entry; import returned assignments=0.
+NEXT: Deploy this scoring/client correction to Render before assigning the paper. Verify admin library preview and student results in a native browser after deployment; hosted scoring/native-browser acceptance remains pending. Do not assign all students. Existing external src/exam-api.js modification and prior load report left untouched. No implementation claims retained.
+

@@ -23,6 +23,12 @@ export function validateExam(value) {
     if (!['MCQ','MSQ','NAT'].includes(q.type) || typeof q.prompt !== 'string' || !q.prompt.trim() || q.prompt.length > 10000) fail(400, 'Question type and prompt are required.');
     if (q.image !== undefined && (!/^\/media\/[a-zA-Z0-9_-]+\.(svg|png|jpg|jpeg|webp)$/.test(q.image) || typeof q.imageAlt !== 'string' || !q.imageAlt.trim())) fail(400, 'Images require a local /media/ filename and alt text.');
     if (!q.marks || !finite(q.marks.correct) || q.marks.correct < 0 || !finite(q.marks.incorrect) || q.marks.incorrect > 0 || !finite(q.marks.unanswered) || q.marks.unanswered > 0) fail(400, 'Explicit correct, incorrect and unanswered marks are required.');
+    if (q.type !== 'MSQ' && (q.partialCredit !== undefined || q.answerAlternatives !== undefined)) fail(400, 'Alternative answers and partial credit require MSQ.');
+    if (q.type === 'MSQ') {
+      const validKey = key => Array.isArray(key) && key.length > 0 && new Set(key).size === key.length && key.every(id => q.options?.some(o => o.id === id));
+      if (q.answerAlternatives !== undefined && (!Array.isArray(q.answerAlternatives) || q.answerAlternatives.length > 20 || !q.answerAlternatives.every(validKey))) fail(400, 'Invalid alternative MSQ answers.');
+      if (q.partialCredit !== undefined && (!q.partialCredit || typeof q.partialCredit !== 'object' || Array.isArray(q.partialCredit) || !Object.entries(q.partialCredit).every(([count, marks]) => /^[1-9]$/.test(count) && Number(count) < (q.options?.length || 0) && finite(marks) && marks > 0 && marks < q.marks.correct))) fail(400, 'Invalid MSQ partial credit.');
+    }
     if (q.type === 'NAT') {
       if (!q.answer || !finite(q.answer.min) || !finite(q.answer.max) || q.answer.min > q.answer.max) fail(400, 'NAT questions require an inclusive numeric answer range.');
     } else {
@@ -46,11 +52,13 @@ export function validateExam(value) {
     questions: value.questions.map(q => ({ id:q.id, sectionId:q.sectionId, type:q.type, prompt:q.prompt,
       ...(q.image ? {image:q.image,imageAlt:q.imageAlt} : {}),
       ...(q.type !== 'NAT' ? {options:q.options.map(o=>({id:o.id,text:o.text}))} : {}),
+      ...(q.partialCredit ? {partialCredit:{...q.partialCredit}} : {}),
+      ...(q.answerAlternatives ? {answerAlternatives:q.answerAlternatives.map(key=>[...key])} : {}),
       marks:{correct:q.marks.correct,incorrect:q.marks.incorrect,unanswered:q.marks.unanswered},answer:q.answer })) };
 }
 export async function importExam(database, input, userIds) {
   const exam = validateExam(input);
-  if (!Array.isArray(userIds) || !userIds.length || new Set(userIds).size !== userIds.length) fail(400, 'Supply distinct assigned student IDs.');
+  if (!Array.isArray(userIds) || new Set(userIds).size !== userIds.length) fail(400, 'Supply an array of distinct assigned student IDs (empty for library only).');
   await database.transaction(async query => {
     for (const id of userIds) {
       const user = (await query("SELECT id FROM users WHERE id=$1 AND role='student' AND active=1", [id])).rows[0];
@@ -82,15 +90,17 @@ function normalizeAnswer(question, value) {
   if (typeof value !== 'string' || value.length > 40 || !/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(value.trim()) || !Number.isFinite(Number(value))) fail(400, 'Enter a finite decimal number.');
   return value.trim();
 }
-function score(exam, answers) {
-  const breakdown = exam.sections.map(s => ({ id:s.id,title:s.title,score:0,maxMarks:0,correct:0,incorrect:0,unanswered:0 }));
+export function score(exam, answers) {
+  const breakdown = exam.sections.map(s => ({ id:s.id,title:s.title,score:0,maxMarks:0,correct:0,incorrect:0,partial:0,unanswered:0 }));
   const bySection = new Map(breakdown.map(s => [s.id,s]));
   for (const q of exam.questions) {
     const value = answers[q.id]?.value;
+    const keys = q.type === 'MSQ' ? [q.answer,...(q.answerAlternatives || [])] : [];
     const correct = q.type === 'NAT' ? Number(value) >= q.answer.min && Number(value) <= q.answer.max :
-      q.type === 'MSQ' ? JSON.stringify([...(value || [])].sort()) === JSON.stringify([...q.answer].sort()) : value === q.answer;
-    const outcome = !hasAnswer(value) ? 'unanswered' : correct ? 'correct' : 'incorrect';
-    const section = bySection.get(q.sectionId); section[outcome]++; section.score += q.marks[outcome]; section.maxMarks += q.marks.correct;
+      q.type === 'MSQ' ? keys.some(key => Array.isArray(value) && value.length === key.length && key.every(id => value.includes(id))) : value === q.answer;
+    const partial = !correct && q.type === 'MSQ' && Array.isArray(value) && value.length > 0 && keys.some(key => value.length < key.length && value.every(id => key.includes(id))) ? q.partialCredit?.[value.length] || 0 : 0;
+    const outcome = !hasAnswer(value) ? 'unanswered' : correct ? 'correct' : partial ? 'partial' : 'incorrect';
+    const section = bySection.get(q.sectionId); section[outcome]++; section.score += partial || q.marks[outcome]; section.maxMarks += q.marks.correct;
   }
   for (const s of breakdown) s.score = Number(s.score.toFixed(6));
   return { score:Number(breakdown.reduce((n,s)=>n+s.score,0).toFixed(6)), maxMarks:exam.maxMarks, sections:breakdown };
@@ -102,7 +112,7 @@ function studentView(row, time) {
   return { id:row.id, userId:row.user_id, examId:row.exam_id, status:row.status, version:row.version,
     startedAt:Number(row.started_at), clockStartedAt:Number(row.started_at)+offset, pausedAt, locked:!!row.locked, deadline:Number(row.deadline), serverNow:time, activeSection,
     submittedAt:row.submitted_at === null ? null : Number(row.submitted_at),
-    exam:{...exam,questions:exam.questions.map(({answer,...question})=>question)}, answers,
+    exam:{...exam,questions:exam.questions.map(({answer,answerAlternatives,...question})=>question)}, answers,
     result:row.result_json ? JSON.parse(row.result_json) : null };
 }
 export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) {
@@ -260,7 +270,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     return { ok: true, id: exam.id, title: exam.title };
   }
   async function assignExam(examId, userIds) {
-    if (!Array.isArray(userIds) || !userIds.length || new Set(userIds).size !== userIds.length) fail(400, 'Supply distinct assigned student IDs.');
+    if (!Array.isArray(userIds) || new Set(userIds).size !== userIds.length) fail(400, 'Supply an array of distinct assigned student IDs (empty for library only).');
     await database.transaction(async query => {
       const exam = (await query('SELECT id FROM exams WHERE id=$1', [examId])).rows[0];
       if (!exam) fail(404, 'Exam not found.');
@@ -334,7 +344,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     const averagePercentage = exam.maxMarks ? Number(((averageScore / exam.maxMarks) * 100).toFixed(2)) : 0;
 
     const sectionStats = exam.sections.map(sec => {
-      let secScoreSum = 0, secMax = 0, correctSum = 0, incorrectSum = 0, unansweredSum = 0;
+      let secScoreSum = 0, secMax = 0, correctSum = 0, incorrectSum = 0, partialSum = 0, unansweredSum = 0;
       for (const item of leaderboard) {
         const s = item.sections.find(x => x.id === sec.id);
         if (s) {
@@ -342,6 +352,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
           secMax += s.maxMarks;
           correctSum += s.correct;
           incorrectSum += s.incorrect;
+          partialSum += s.partial || 0;
           unansweredSum += s.unanswered;
         }
       }
@@ -354,6 +365,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
         accuracyPct,
         totalCorrect: correctSum,
         totalIncorrect: incorrectSum,
+        totalPartial: partialSum,
         totalUnanswered: unansweredSum
       };
     });

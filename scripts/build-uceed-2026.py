@@ -45,7 +45,7 @@ for pn,page in enumerate(doc):
    for r in images[1:]:rect=rect|r
    if n==16:
     rect.y1=332
-    options=[{'id':c,'text':t} for c,t in zip('abcd',['1 cut-out of Q, 1 cut-out of R, 2 cut-outs of S, 2 cut-outs of T','1 cut-out of Q, 1 cut-out of R, 2 cut-outs of S, 1 cut-out of T','2 cut-outs of Q, 2 cut-outs of R, 4 cut-outs of S, 1 cut-out of T','1 cut-out of Q, 2 cut-outs of R, 2 cut-outs of S, 2 cut-outs of T'])]
+    options=[{'id':c,'text':t} for c,t in zip('abcd',['1 cut-out of Q, 1 cut-out of R, 2 cut-outs of S, 2 cut-outs of T','2 cut-outs of Q, 1 cut-out of R, 2 cut-outs of S, 2 cut-outs of T','2 cut-outs of Q, 2 cut-outs of R, 4 cut-outs of S, 1 cut-out of T','2 cut-outs of Q, 2 cut-outs of R, 2 cut-outs of S, 2 cut-outs of T'])]
    rect=fitz.Rect(rect.x0-2,rect.y0-2,rect.x1+2,rect.y1+2)
    name=f'uceed-2026-q{n:02}.png'
    page.get_pixmap(matrix=fitz.Matrix(2.5,2.5),clip=rect,alpha=False).save(out/name)

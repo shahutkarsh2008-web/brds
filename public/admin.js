@@ -461,6 +461,7 @@
           <div class="margin-top" style="font-size:0.85rem; color:#555;">
             Average Score: <b>${sec.avgScore}</b><br>
             Correct: <b style="color:var(--success-green);">${sec.totalCorrect}</b> | 
+            Partial: <b>${sec.totalPartial || 0}</b> | 
             Incorrect: <b style="color:var(--brds-red);">${sec.totalIncorrect}</b> | 
             Unanswered: <b>${sec.totalUnanswered}</b>
           </div>

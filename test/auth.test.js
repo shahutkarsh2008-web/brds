@@ -154,3 +154,34 @@ test('real OTP adapter accepts the exact SMS code through login and rejects repl
   assert.equal(result.status,200);assert.equal(result.body.user.role,'student');
   assert.equal((await f.request('/api/verify-otp',{code:sentCode})).status,400);
 });
+
+test('rate limits report the actual remaining window and recover after it expires', async t => {
+  const f = await fixture(t);
+  await f.request('/api/login', {loginId:'student',password});
+  const sms = await f.request('/api/login', {loginId:'student',password});
+  assert.equal(sms.status,429);
+  assert.match(sms.body.error,/OTP was already requested/);
+  assert.ok(sms.body.retryAfterSeconds>=1 && sms.body.retryAfterSeconds<=60);
+  assert.equal(sms.headers.get('retry-after'),String(sms.body.retryAfterSeconds));
+  f.advance(sms.body.retryAfterSeconds*1000);
+  assert.equal((await f.request('/api/login',{loginId:'student',password})).status,200);
+  for(let i=0;i<10;i++) await f.request('/api/login',{loginId:'teacher',password:'wrong'});
+  const blocked=await f.request('/api/login',{loginId:'teacher',password});
+  assert.equal(blocked.status,429);
+  assert.ok(blocked.body.retryAfterSeconds>=1 && blocked.body.retryAfterSeconds<=900);
+  f.advance(blocked.body.retryAfterSeconds*1000);
+  assert.equal((await f.request('/api/login',{loginId:'teacher',password})).status,200);
+});
+
+test('only complete two-factor success resets the account request limit', async t => {
+  const f=await fixture(t);
+  for(let i=0;i<8;i++) await f.request('/api/login',{loginId:'student',password:'wrong'});
+  assert.equal((await f.request('/api/login',{loginId:'student',password})).status,200);
+  assert.equal((await f.request('/api/verify-otp',{code:'000000'})).status,401);
+  assert.equal((await f.request('/api/verify-otp',{code:'123456'})).status,200);
+  f.advance(60000);
+  assert.equal((await f.request('/api/login',{loginId:'student',password})).status,200);
+  f.advance(60000);
+  assert.equal((await f.request('/api/login',{loginId:'student',password})).status,200);
+});
+

@@ -169,3 +169,20 @@ WHY: Completes the requested library-only Part A demo with 57 questions, 200 mar
 EVIDENCE: npm test passed 54/54; isolated SQLite seeded three libraries idempotently with zero assignments; all-correct UCEED score 200; partial/negative/blank/NAT-boundary and key-privacy tests pass. All six crop contact sheets and final answer key visually inspected; Q16 source page checked. public/admin.js and public/exam.js syntax checks pass. Live read before insert found no UCEED entry; import returned assignments=0.
 NEXT: Deploy this scoring/client correction to Render before assigning the paper. Verify admin library preview and student results in a native browser after deployment; hosted scoring/native-browser acceptance remains pending. Do not assign all students. Existing external src/exam-api.js modification and prior load report left untouched. No implementation claims retained.
 
+
+### [2026-09-29 10:54 UTC] Codex — Phase 1: clarify login cooldown
+STATUS: IN PROGRESS
+FILES: src/auth.js, test/auth.test.js
+WHAT: Generic screenshot can mean SMS or account/IP request limits; fixed Retry-After was always 900. Adding actual remaining window and resetting account requests only after successful two-factor login.
+WHY: Explain recovery without disabling abuse limits or OTP verification.
+NEXT: Test cooldown recovery and successful-login reset; exact live bucket is not established from screenshot.
+
+
+### [2026-09-29 10:55 UTC] Codex — Phase 1: cooldown recovery verified locally
+STATUS: DONE
+FILES: src/auth.js, test/auth.test.js, PROGRESS_LOG.md
+WHAT: SMS cooldown now has its own message; all rate-limit replies report actual seconds to the fixed-window reset in text, JSON and Retry-After. Successful password plus OTP authentication resets only the current account request bucket; SMS/IP limits remain intact.
+WHY: Users can distinguish cooldown from incorrect OTP and know when to retry. No blanket production limit reset or verification bypass performed.
+EVIDENCE: node --test test/auth.test.js passed 13/13, including cooldown boundary recovery, successful two-factor reset, expiry/replay and role checks.
+NEXT: Deploy latest commit on Render and verify fresh sign-in. Screenshot alone does not establish which live limit fired. Live acceptance pending; file claims released.
+

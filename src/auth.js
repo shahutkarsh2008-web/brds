@@ -45,7 +45,13 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
     const bucket = digest(`${key}:${Math.floor(time / window)}`);
     const result = await database.query(`INSERT INTO auth_limits(bucket,count,expires_at) VALUES($1,1,$2)
       ON CONFLICT(bucket) DO UPDATE SET count=auth_limits.count+1 RETURNING count`, [bucket, time + window]);
-    if (result.rows[0].count > maximum) throw new HttpError(429, 'Too many attempts. Please wait and try again.');
+    if (result.rows[0].count > maximum) {
+      const seconds = Math.max(1, Math.ceil(((Math.floor(time / window) + 1) * window - time) / 1000));
+      const message = key.startsWith('sms:') ? 'An OTP was already requested.' : 'Too many sign-in requests.';
+      const error = new HttpError(429, message + ' Try again in ' + seconds + ' seconds.');
+      error.retryAfter = seconds;
+      throw error;
+    }
   }
   async function session(req) {
     const token = readCookie(req, sessionName);
@@ -134,6 +140,9 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
           if (oldToken) await query('DELETE FROM sessions WHERE token_hash=$1', [digest(oldToken)]);
           await query('INSERT INTO sessions(token_hash,user_id,created_at,expires_at) VALUES($1,$2,$3,$4)', [digest(rawSession), account.id, now(), now() + SESSION_AGE]);
           await query('INSERT INTO login_history(id,user_id,logged_in_at) VALUES($1,$2,$3)', [randomUUID(), account.id, now()]);
+          // Clear only this account's current request bucket after both factors succeed.
+          // SMS cooldown and shared IP protection remain in effect.
+          await query('DELETE FROM auth_limits WHERE bucket=$1', [digest(`login:user:${account.login_id}:${Math.floor(now() / (15 * MINUTE))}`)]);
           return account;
         });
         const oldToken = readCookie(req, sessionName); if (oldToken) onLogout(digest(oldToken));
@@ -188,14 +197,14 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
       }
       throw new HttpError(404, 'Endpoint not found.');
     } catch (error) {
-      if (error.status === 429) res.setHeader('Retry-After', '900');
+      if (error.status === 429) res.setHeader('Retry-After', String(error.retryAfter || 900));
       const statusCode = error.status || (error instanceof OtpUnavailable ? 503 : 500);
       if (statusCode >= 500) {
         console.error('[AUTH SERVER ERROR]', { path, status: statusCode, message: error.message, stack: error.stack });
       } else {
         console.warn('[AUTH REJECTED]', { path, status: statusCode, message: error.message });
       }
-      json(res, statusCode, { error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP service could not complete this request. Start again to request a fresh code. If this continues, contact your BRDS administrator.' : 'Request failed. Please try again.' });
+      json(res, statusCode, { ...(error.retryAfter ? {retryAfterSeconds:error.retryAfter} : {}), error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP service could not complete this request. Start again to request a fresh code. If this continues, contact your BRDS administrator.' : 'Request failed. Please try again.' });
     }
   }
   return { handle, session, requireRole, checkOrigin, async cleanup() {

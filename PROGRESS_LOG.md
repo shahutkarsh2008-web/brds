@@ -666,3 +666,11 @@ WHAT: Recreated the corrupted Phase 4 smoke test, ran the full test suite succes
 WHY: Completes the remaining recovery checklist: source recovery, test repair, validation, and a durable Git checkpoint.
 EVIDENCE: `npm test` passed 67/67; commit `9c11a36` `[Codex] Recover dashboard and Library workflow` created successfully.
 NEXT: Continue with Analytics data wiring from this checkpoint; do not overwrite the dashboard renderer without committing first.
+
+### [2026-09-30 17:00 UTC] Codex — Map syllabus and reference imagery into tab redesign
+STATUS: DONE
+FILES: public/dashboard.js, PROGRESS_LOG.md, tmp/pdfs/topics-1.png through topics-7.png
+WHAT: Reviewed the supplied UCEED syllabus PDF and reference screenshots, then replaced generic tab placeholders with feature-specific workspace cards for Analytics, Practice, GK Sprint, Sketches, Bookmarks, Guides, Settings and Mocks. Labels now reflect the supplied syllabus domains and Roughworks-style information hierarchy while retaining Northstar styling.
+WHY: Each tab needs an understandable working surface instead of a generic placeholder, with the syllabus acting as the topic contract for practice and analytics.
+EVIDENCE: PDF rendered to seven pages for visual review; dashboard JavaScript syntax check passes; feature-specific card content is selected by active tab.
+NEXT: Wire each feature card to its backend action one tab at a time, starting with Practice topic selection and Analytics attempt data.

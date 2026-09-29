@@ -658,3 +658,11 @@ WHAT: Assigned all 10 seeded Library exams to the seven local demo students in d
 WHY: Makes already-created exams visible to demo students without weakening the production rule that unassigned students cannot start an exam.
 EVIDENCE: Database assignment script reported 10 exams × 7 students; security test “only assigned students can start” passed; UCEED tests passed. One exams test file-level worker teardown failure remains unrelated to the authorization assertion and needs a separate test-run cleanup.
 NEXT: Login again, reload Library, verify the 10-paper catalog visually, then investigate the test worker teardown and corrupted workspace-v2 test file before claiming full recovery complete.
+
+### [2026-09-30 16:05 UTC] Codex — Complete recovery validation and checkpoint
+STATUS: DONE
+FILES: PROGRESS_LOG.md, public/dashboard.js, public/dashboard.html, public/workspace-dark.css, src/exams.js, test/workspace-v2-phase4.test.js
+WHAT: Recreated the corrupted Phase 4 smoke test, ran the full test suite successfully (67/67), validated dashboard and server syntax, preserved assignment security, and committed the recovered dashboard/Library workflow.
+WHY: Completes the remaining recovery checklist: source recovery, test repair, validation, and a durable Git checkpoint.
+EVIDENCE: `npm test` passed 67/67; commit `9c11a36` `[Codex] Recover dashboard and Library workflow` created successfully.
+NEXT: Continue with Analytics data wiring from this checkpoint; do not overwrite the dashboard renderer without committing first.

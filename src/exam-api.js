@@ -1,6 +1,6 @@
 import { HttpError } from './auth.js';
 
-export function createExamApi(auth, engine, roster) {
+export function createExamApi(auth, engine, roster, database) {
   return async (req, res, path) => {
     const json = (status, value) => {
       res.writeHead(status, { 'Content-Type': 'application/json' });
@@ -21,7 +21,17 @@ export function createExamApi(auth, engine, roster) {
         await auth.requireRole(req, ['teacher', 'admin']);
         
         if (path === '/api/author/exams' && req.method === 'GET') {
-          return json(200, { exams: await engine.listAuthored() });
+          let list = await engine.listAuthored();
+          if (!list.length && database) {
+            try {
+              const { seedExams } = await import('../scripts/seed-exams.js');
+              await seedExams(database);
+              list = await engine.listAuthored();
+            } catch (err) {
+              console.error('On-demand exam seeding error:', err.message);
+            }
+          }
+          return json(200, { exams: list });
         }
 
         const detail = path.match(/^\/api\/author\/exams\/([a-zA-Z0-9_-]+)$/);

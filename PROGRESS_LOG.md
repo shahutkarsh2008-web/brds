@@ -223,3 +223,20 @@ WHY: Delivers the requested short UCEED mock. Instructions explicitly identify s
 EVIDENCE: Validated fixture and all-correct score 53/53; isolated import has zero assignments; UCEED tests passed 5/5 including idempotent seeding. Live PostgreSQL import returned uceed-2026-mini-mock-01 with assignments=0.
 NEXT: Refresh Admin library and preview Mini Mock 01. Assign selected students when requested. Latest scoring/review UI requires the previously pushed Render deployment; native browser acceptance not claimed. File claims released.
 
+
+### [2026-09-29 11:48 UTC] Codex — Phase 6: UCEED 2024 import
+STATUS: IN PROGRESS
+FILES: scripts/build-uceed-2024.py, fixtures/uceed-2024.json, public/media/uceed-2024-*.png, docs/uceed-2024-import.md, docs/uceed-2024-part-b-practice.md, scripts/seed-exams.js, src/exams.js, public/exam.js, test/uceed.test.js, test/uceed-2024.test.js
+WHAT: Importing supplied 2024 Part A and official IIT Bombay final key. Q14 accepts discrete 12 OR 13; adding explicit NAT accepted values so 12.5 is not incorrectly accepted.
+WHY: Preserve actual marking, plain-text prompts and PDF diagrams. Library only; Part B offline drawing reference.
+NEXT: Build, visually inspect crops and keys, validate scoring and seed with zero assignments.
+
+
+### [2026-09-29 11:53 UTC] Codex — Phase 6: UCEED 2024 prepared; original animation required
+STATUS: BLOCKED
+FILES: scripts/build-uceed-2024.py, fixtures/uceed-2024.json, public/media/uceed-2024-*.png, docs/uceed-2024-import.md, docs/uceed-2024-part-b-practice.md, src/exams.js, public/exam.js, test/uceed-2024.test.js
+WHAT: Prepared all 57 questions and 53 diagram crops with official key; exact NAT accepted-values support prevents Q14 12.5 from earning marks. User requires original Q31 animation, not omission. Supplied PDF has only still image and no embedded media or links; official-source search did not locate verified original animation.
+WHY: A still image cannot reproduce the Q31 exam stimulus. No fabricated motion or changed scoring.
+EVIDENCE: Seven crop contact sheets and key reviewed; Q49 crop corrected. Targeted tests passed 10/10; all-correct score 200; Q14 accepts only 12/13; range/partial/asset checks pass.
+NEXT: Obtain authentic Q31 animation from user or verified source, implement local playback if needed, then seed/import uceed-2024 with zero assignments. Fixture deliberately NOT seeded or imported live. No implementation file claims retained.
+

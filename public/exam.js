@@ -139,7 +139,7 @@ function renderResult(){
     if(q.image){const image=node('img');image.src=q.image;image.alt=q.imageAlt;image.loading='lazy';card.append(image);}
     const format=value=>{
       if(!answered(value))return 'Not answered';
-      if(q.type==='NAT')return typeof value==='object'?(value.min===value.max?String(value.min):value.min+' to '+value.max+' (inclusive)'):String(value);
+      if(q.type==='NAT')return typeof value==='object'?(value.values?value.values.join(' OR '):value.min===value.max?String(value.min):value.min+' to '+value.max+' (inclusive)'):String(value);
       return (Array.isArray(value)?value:[value]).map(id=>{const option=q.options.find(o=>o.id===id);return id.toUpperCase()+(option?' — '+option.text:'');}).join('; ');
     };
     card.append(node('p','Your answer: '+format(item.selectedAnswer)));

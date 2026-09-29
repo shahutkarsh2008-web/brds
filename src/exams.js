@@ -31,6 +31,7 @@ export function validateExam(value) {
     }
     if (q.type === 'NAT') {
       if (!q.answer || !finite(q.answer.min) || !finite(q.answer.max) || q.answer.min > q.answer.max) fail(400, 'NAT questions require an inclusive numeric answer range.');
+      if (q.answer.values !== undefined && (!Array.isArray(q.answer.values) || !q.answer.values.length || q.answer.values.length > 100 || new Set(q.answer.values).size !== q.answer.values.length || !q.answer.values.every(v => finite(v) && v >= q.answer.min && v <= q.answer.max))) fail(400, 'NAT accepted values must be distinct finite numbers within the bounds.');
     } else {
       if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 10) fail(400, 'Choice questions need 2–10 options.');
       const ids = new Set();
@@ -97,7 +98,7 @@ export function score(exam, answers) {
   for (const q of exam.questions) {
     const value = answers[q.id]?.value;
     const keys = q.type === 'MSQ' ? [q.answer,...(q.answerAlternatives || [])] : [];
-    const correct = q.type === 'NAT' ? Number(value) >= q.answer.min && Number(value) <= q.answer.max :
+    const correct = q.type === 'NAT' ? (q.answer.values ? q.answer.values.includes(Number(value)) : Number(value) >= q.answer.min && Number(value) <= q.answer.max) :
       q.type === 'MSQ' ? keys.some(key => Array.isArray(value) && value.length === key.length && key.every(id => value.includes(id))) : value === q.answer;
     const partial = !correct && q.type === 'MSQ' && Array.isArray(value) && value.length > 0 && keys.some(key => value.length < key.length && value.every(id => key.includes(id))) ? q.partialCredit?.[value.length] || 0 : 0;
     const outcome = !hasAnswer(value) ? 'unanswered' : correct ? 'correct' : partial ? 'partial' : 'incorrect';

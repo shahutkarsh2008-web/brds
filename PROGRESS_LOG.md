@@ -700,3 +700,11 @@ WHAT: Expanded the media asset route to allow safe nested paths such as /media/s
 WHY: The exam question loaded but worksheet diagrams were broken because the static media regex only accepted files directly under /media.
 EVIDENCE: `public/media/spatial-worksheet/page-02.png` exists and app.js syntax check passes; the route now accepts nested alphanumeric/underscore/hyphen asset paths.
 NEXT: Restart the local demo server and reload the existing attempt to verify the diagram renders.
+
+### [2026-09-30 17:50 UTC] Codex — Verify nested worksheet asset route
+STATUS: DONE
+FILES: src/app.js, PROGRESS_LOG.md
+WHAT: Corrected the media regex replacement and verified the nested worksheet asset endpoint returns HTTP 200 with image/png for /media/spatial-worksheet/page-02.png.
+WHY: The first attempted patch did not change the regex, so the browser continued showing a broken image.
+EVIDENCE: `Invoke-WebRequest http://localhost:3001/media/spatial-worksheet/page-02.png` returned 200 and 153390 bytes; demo server restarted.
+NEXT: Re-login after the restart and reload the current exam attempt; the worksheet image should now render.

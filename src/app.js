@@ -11,8 +11,13 @@ const assets = new Map([
   ['/', ['login.html', 'text/html; charset=utf-8']],
   ['/login', ['login.html', 'text/html; charset=utf-8']],
   ['/login.html', ['login.html', 'text/html; charset=utf-8']],
+  ['/signup', ['signup.html', 'text/html; charset=utf-8']],
+  ['/signup.html', ['signup.html', 'text/html; charset=utf-8']],
+  ['/signup.js', ['signup.js', 'text/javascript; charset=utf-8']],
   ['/setup', ['index.html', 'text/html; charset=utf-8']],
   ['/student', ['dashboard.html', 'text/html; charset=utf-8']],
+  ['/student.html', ['dashboard.html', 'text/html; charset=utf-8']],
+  ['/dashboard', ['dashboard.html', 'text/html; charset=utf-8']],
   ['/dashboard.html', ['dashboard.html', 'text/html; charset=utf-8']],
   ['/exam', ['exam.html', 'text/html; charset=utf-8']],
   ['/exam.html', ['exam.html', 'text/html; charset=utf-8']],
@@ -20,6 +25,7 @@ const assets = new Map([
   ['/exam.css', ['exam.css', 'text/css; charset=utf-8']],
   ['/workspace.js', ['workspace.js', 'text/javascript; charset=utf-8']],
   ['/workspace.css', ['workspace.css', 'text/css; charset=utf-8']],
+  ['/workspace-dark.css', ['workspace-dark.css', 'text/css; charset=utf-8']],
   ['/teacher', ['dashboard.html', 'text/html; charset=utf-8']],
   ['/admin', ['admin.html', 'text/html; charset=utf-8']],
   ['/admin.html', ['admin.html', 'text/html; charset=utf-8']],
@@ -43,7 +49,7 @@ export function createApp(database, options = {}) {
     for (const ws of sockets.clients) if (ws.sessionHash === hash) ws.close(4001, 'Signed out');
   } });
   live = createLiveHub(engine, auth, { now: options.now });
-  const examApi = createExamApi(auth, engine, live.snapshot);
+  const examApi = createExamApi(auth, engine, live.snapshot, database);
   const server = createServer(async (req, res) => {
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Referrer-Policy', 'no-referrer');
@@ -53,7 +59,8 @@ export function createApp(database, options = {}) {
     try { path = new URL(req.url, 'http://localhost').pathname; }
     catch { res.writeHead(400); return res.end('Invalid request target'); }
     if (path === '/api/development' && req.method === 'GET') { res.writeHead(200, { 'Content-Type':'application/json' }); return res.end(JSON.stringify({ enabled: options.development === true })); }
-    if (path === '/api/exams' || path.startsWith('/api/exams/') || path.startsWith('/api/attempts/') || path.startsWith('/api/author/') || path.startsWith('/api/analytics/') || path === '/api/monitor') return examApi(req, res, path);
+    if (path === '/api/exams' || path.startsWith('/api/exams/') || path.startsWith('/api/attempts/') || path.startsWith('/api/author/') || path.startsWith('/api/analytics/') || path.startsWith('/api/student/') || path === '/api/monitor') return examApi(req, res, path);
+
     if (path.startsWith('/api/')) return auth.handle(req, res, path);
     if (req.method !== 'GET' && req.method !== 'HEAD') {
       res.writeHead(405, { Allow: 'GET, HEAD' }); return res.end();
@@ -68,10 +75,13 @@ export function createApp(database, options = {}) {
         return res.end(JSON.stringify({ status: 'unavailable' }));
       }
     }
-    if (['/student', '/teacher', '/admin', '/author', '/exam', '/admin.html', '/author.html', '/dashboard.html', '/exam.html'].includes(path)) {
+    if (['/student', '/student.html', '/dashboard', '/dashboard.html', '/teacher', '/admin', '/author', '/exam', '/admin.html', '/author.html', '/exam.html'].includes(path)) {
       try {
         const cleanPath = path.replace('.html', '');
-        await auth.requireRole(req, ['/teacher', '/author', '/admin'].includes(cleanPath) ? ['teacher', 'admin'] : [cleanPath === '/exam' ? 'student' : cleanPath.slice(1)]);
+        const allowedRoles = ['/teacher', '/author', '/admin'].includes(cleanPath)
+          ? ['teacher', 'admin']
+          : (['/student', '/dashboard', '/exam'].includes(cleanPath) ? ['student', 'teacher', 'admin'] : [cleanPath.slice(1)]);
+        await auth.requireRole(req, allowedRoles);
       } catch (error) {
         if (error.status === 401) { res.writeHead(302, { Location: '/login' }); return res.end(); }
         res.writeHead(error.status || 503); return res.end(error.status === 403 ? 'Access denied' : 'Service unavailable');
@@ -154,3 +164,4 @@ export function createApp(database, options = {}) {
     },
   };
 }
+

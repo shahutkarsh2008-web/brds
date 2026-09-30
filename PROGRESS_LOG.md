@@ -682,3 +682,21 @@ WHAT: Updated Library paper actions to call POST /api/exams/{examId}/start first
 WHY: The exam room requires an attempt ID; passing a paper/exam ID directly caused “Attempt not found.”
 EVIDENCE: Dashboard JavaScript syntax check passes; launch handler now handles API errors and uses the created attempt identifier.
 NEXT: Reload Library, select the Spatial Reasoning paper, and verify the exam timer/questions render.
+
+
+### [2026-09-30 05:05 UTC] Antigravity — Phase 6: UCEED 2021 Official Paper Import & Library Seeding
+STATUS: DONE
+FILES: UCEED2021_Question_Paper.pdf, UCEED2021_Answer_Key.pdf, scripts/build-uceed-2021-paper.py, fixtures/uceed-2021.json, scripts/seed-exams.js, test/uceed-2021.test.js, test/uceed.test.js
+WHAT: Imported UCEED 2021 Official Paper (Part A: 68 questions, 240 max marks, 120 minutes) from official PDF and answer key into `fixtures/uceed-2021.json` with 57 cropped diagram PNGs (`/media/uceed-2021-qXX.png`). Mapped 18 NAT (+4/0, including range endpoints Q14 and discrete values Q15), 18 MSQ (+4/-1 with partial credit), and 32 MCQ (+3/-0.71) questions, attached topic metadata for Practice Builder, registered `uceed-2021.json` in startup library seeding (`scripts/seed-exams.js`), and created automated test suite (`test/uceed-2021.test.js`).
+WHY: Direct user request ("uceed 2021.").
+EVIDENCE: Automated test suite `test/uceed-2021.test.js` passed (100% green); full test suite `npm test` passed 67/67 tests (`pass 67, fail 0`).
+NEXT: Import additional past papers per user request. No active implementation file claims retained.
+
+
+### [2026-09-30 17:35 UTC] Codex — Serve nested worksheet image assets
+STATUS: DONE
+FILES: src/app.js, PROGRESS_LOG.md
+WHAT: Expanded the media asset route to allow safe nested paths such as /media/spatial-worksheet/page-02.png, matching the imported worksheet fixture image references.
+WHY: The exam question loaded but worksheet diagrams were broken because the static media regex only accepted files directly under /media.
+EVIDENCE: `public/media/spatial-worksheet/page-02.png` exists and app.js syntax check passes; the route now accepts nested alphanumeric/underscore/hyphen asset paths.
+NEXT: Restart the local demo server and reload the existing attempt to verify the diagram renders.

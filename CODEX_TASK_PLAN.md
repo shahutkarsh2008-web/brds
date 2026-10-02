@@ -97,3 +97,19 @@ Acceptance:
 - Recovery checkpoint exists before import expansion.
 
 Coordination rule: Codex does not rewrite Antigravity-owned visual blocks without recording the reason in `PROGRESS_LOG.md`.
+
+## Parallel execution protocol
+
+Codex may work in parallel with Antigravity. Codex has exclusive ownership of `src/**`, API/database tests, browser verification scripts and backend contracts. Codex may edit `public/dashboard.js` only for API wiring, state handling and error recovery after recording a handoff note.
+
+Before every change:
+
+1. Read the latest `PROGRESS_LOG.md` entry for the target file.
+2. Claim the file with STATUS: IN PROGRESS and a concrete next step.
+3. Do not edit a file claimed IN PROGRESS by Antigravity.
+4. Append evidence immediately after the increment is verified.
+5. Commit only the owned increment with the `[Codex]` prefix.
+
+Shared-file rule: `public/dashboard.js`, `public/workspace-dark.css`, `PROGRESS_LOG.md` and UI tests require an explicit handoff entry before the other agent edits them. Never overwrite another agent's uncommitted work.
+
+Parallel lane per phase: Codex wires contracts and fixtures in parallel while Antigravity builds the visual surface. Codex runs integration tests only after Antigravity marks the relevant UI increment DONE.

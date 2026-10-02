@@ -749,3 +749,11 @@ WHAT: Created separate five-phase ownership plans for Codex and Antigravity. Cod
 WHY: Prevents duplicate work and accidental overwrites while completing every tab before the next paper-import expansion.
 EVIDENCE: Both plans define phase tasks, owned files, acceptance criteria and coordination rules for Phases 1–5 after Phase 0.
 NEXT: Start Phase 1 with a shared shell/Library review; each agent must read the other plan and claim files in `PROGRESS_LOG.md` before editing.
+
+### [2026-10-02 01:20 UTC] Codex — Update task plans for parallel execution
+STATUS: DONE
+FILES: CODEX_TASK_PLAN.md, ANTIGRAVITY_TASK_PLAN.md, PROGRESS_LOG.md
+WHAT: Added explicit parallel-work protocols, exclusive ownership boundaries, shared-file handoff rules, claim/evidence requirements, commit prefixes and per-phase parallel lanes to both agent task plans.
+WHY: Allows Codex and Antigravity to work simultaneously without overwriting each other's UI, backend or test changes.
+EVIDENCE: Both task plans now state which paths each agent owns and how shared files are handed off before edits.
+NEXT: Begin Phase 1 with separate ownership claims: Antigravity claims visual shell/Library UI; Codex claims Library API/launch verification.

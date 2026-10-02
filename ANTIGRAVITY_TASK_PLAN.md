@@ -101,3 +101,19 @@ Acceptance:
 - Visual checkpoint is committed and handoff notes identify changed files.
 
 Coordination rule: Antigravity must read `PROGRESS_LOG.md` before editing and append a DONE/IN PROGRESS entry immediately after each meaningful increment.
+
+## Parallel execution protocol
+
+Antigravity may work in parallel with Codex. Antigravity has exclusive ownership of visual UI sections, CSS styling and visual smoke tests. Antigravity must not modify `src/**`, API/database contracts, exam scoring, assignment security or import scripts.
+
+Before every change:
+
+1. Read the latest `PROGRESS_LOG.md` entry for the target file.
+2. Claim the file with STATUS: IN PROGRESS and a concrete next step.
+3. Do not edit a file claimed IN PROGRESS by Codex.
+4. Append screenshots/test evidence immediately after the increment is verified.
+5. Commit only the owned increment with the `[Antigravity]` prefix.
+
+Shared-file rule: `public/dashboard.js`, `public/workspace-dark.css`, `PROGRESS_LOG.md` and UI tests require an explicit handoff entry before the other agent edits them. Never replace or regenerate a shared file wholesale.
+
+Parallel lane per phase: Antigravity builds the visual surface in parallel while Codex wires contracts and fixtures. Antigravity marks a tab DONE only when loading, empty, error and populated states are represented and the UI has been browser-checked.

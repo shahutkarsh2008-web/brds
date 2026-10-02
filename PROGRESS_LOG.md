@@ -741,3 +741,11 @@ WHAT: Added the Phase 0 readiness contract covering canonical folders, ownership
 WHY: Creates a clean, recoverable foundation before completing every UI tab; explicitly pauses further paper imports until UI phases are done.
 EVIDENCE: Required project contracts and next-phase acceptance are documented in PHASE_0_READINESS.md; prior full suite evidence is recorded at 67/67 and syntax checks pass on the restored dashboard/server paths.
 NEXT: Begin Phase 1 UI completion with Library catalog and shell verification; do not import additional UCEED years yet.
+
+### [2026-10-02 01:05 UTC] Codex — Create five-phase agent task plans
+STATUS: DONE
+FILES: CODEX_TASK_PLAN.md, ANTIGRAVITY_TASK_PLAN.md, PROGRESS_LOG.md
+WHAT: Created separate five-phase ownership plans for Codex and Antigravity. Codex owns APIs, data contracts, security, tests, browser verification and checkpoints; Antigravity owns tab UI, visual system, responsive styling and interaction presentation.
+WHY: Prevents duplicate work and accidental overwrites while completing every tab before the next paper-import expansion.
+EVIDENCE: Both plans define phase tasks, owned files, acceptance criteria and coordination rules for Phases 1–5 after Phase 0.
+NEXT: Start Phase 1 with a shared shell/Library review; each agent must read the other plan and claim files in `PROGRESS_LOG.md` before editing.

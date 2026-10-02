@@ -70,6 +70,7 @@ export function createExamApi(auth, engine, roster, database) {
           if (typeof input.examId !== 'string' || typeof input.questionId !== 'string' || typeof input.bookmarked !== 'boolean') throw new HttpError(400, 'Exam, question and bookmark state are required.');
           return json(200, await practiceEngine.setBookmark(user.id, input.examId, input.questionId, input.bookmarked));
         }
+        if (path === '/api/student/practice/revision' && req.method === 'GET') return json(200, { questions: await practiceEngine.listRevision(user.id) });
 
         if (path === '/api/student/practice/count' && (req.method === 'GET' || req.method === 'POST')) {
           const filters = req.method === 'GET' ? Object.fromEntries(new URL(req.url, 'http://localhost').searchParams.entries()) : await readStudentJson(req, 8192);

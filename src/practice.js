@@ -1,4 +1,5 @@
 import { randomUUID } from 'node:crypto';
+import { score } from './exams.js';
 
 const parseDefinition = row => {
   try { return JSON.parse(row.definition); } catch { return null; }
@@ -29,7 +30,16 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
         selected.push({
           id: question.id,
           examId: row.id,
+          examTitle: exam.title,
           type: question.type || 'MCQ',
+          prompt: question.prompt,
+          options: question.options || [],
+          image: question.image || null,
+          imageAlt: question.imageAlt || null,
+          marks: question.marks,
+          answer: question.answer,
+          answerAlternatives: question.answerAlternatives || null,
+          partialCredit: question.partialCredit || null,
           topic: question.topic || question.category || question.sectionId || '',
           difficulty: question.difficulty || null,
           tags
@@ -55,11 +65,8 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     let questions = await matchingQuestions({ exam, topics, types, difficulty });
 
     if (skipDone && questions.length) {
-      const { rows = [] } = await database.query('SELECT question_ids_json FROM practice_sets WHERE user_id=$1', [userId]);
-      const seen = new Set();
-      for (const row of rows) {
-        try { for (const id of JSON.parse(row.question_ids_json || '[]')) seen.add(id); } catch {}
-      }
+      const { rows = [] } = await database.query('SELECT DISTINCT a.question_id FROM practice_answers a JOIN practice_sets p ON p.id=a.set_id WHERE p.user_id=$1', [userId]);
+      const seen = new Set(rows.map(row => row.question_id));
       questions = questions.filter(question => !seen.has(question.id));
     }
     const questionIds = [...new Set(questions.map(question => question.id))].slice(0, setSize);
@@ -92,7 +99,16 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     const questionIds = JSON.parse(row.question_ids_json || '[]');
     const answers = await database.query('SELECT question_id,answer_json,answered_at FROM practice_answers WHERE set_id=$1 ORDER BY answered_at', [setId]);
     const answered = new Map((answers.rows || []).map(answer => [answer.question_id, { value: JSON.parse(answer.answer_json), answeredAt: Number(answer.answered_at) }]));
-    return { id: row.id, title: row.title, questionIds, totalQuestions: Number(row.total_questions), completedQuestions: Number(row.completed_questions), status: row.status, answers: Object.fromEntries(answered) };
+    const { rows: examRows = [] } = await database.query('SELECT id,definition FROM exams');
+    const questionMap = new Map();
+    for (const examRow of examRows) {
+      const exam = parseDefinition(examRow);
+      for (const question of exam?.questions || []) if (questionIds.includes(question.id)) {
+        const { answer, answerAlternatives, partialCredit, ...safeQuestion } = question;
+        questionMap.set(question.id, { ...safeQuestion, examId: examRow.id, examTitle: exam.title });
+      }
+    }
+    return { id: row.id, title: row.title, questionIds, questions: questionIds.map(id => questionMap.get(id)).filter(Boolean), totalQuestions: Number(row.total_questions), completedQuestions: Number(row.completed_questions), status: row.status, answers: Object.fromEntries(answered) };
   }
 
   async function saveAnswer(userId, setId, questionId, value) {
@@ -104,6 +120,16 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
       if (!questionIds.includes(questionId)) return false;
       const answeredAt = now();
       await query('INSERT INTO practice_answers(set_id,question_id,answer_json,answered_at) VALUES($1,$2,$3,$4) ON CONFLICT(set_id,question_id) DO UPDATE SET answer_json=excluded.answer_json,answered_at=excluded.answered_at', [setId, questionId, JSON.stringify(value), answeredAt]);
+      const examRows = await query('SELECT e.id,e.definition FROM exams e JOIN practice_sets p ON p.id=$1 WHERE p.user_id=$2', [setId, userId]);
+      let examId = null, examDefinition = null;
+      for (const examRow of examRows.rows || []) {
+        const definition = parseDefinition(examRow);
+        if (definition?.questions?.some(question => question.id === questionId)) { examId = examRow.id; examDefinition = definition; break; }
+      }
+      if (!examDefinition) return false;
+      const question = examDefinition.questions.find(item => item.id === questionId);
+      const result = score(examDefinition, { [questionId]: { value } }).questions.find(item => item.id === questionId);
+      await query('INSERT INTO practice_outcomes(set_id,question_id,exam_id,outcome,marks,updated_at) VALUES($1,$2,$3,$4,$5,$6) ON CONFLICT(set_id,question_id) DO UPDATE SET exam_id=excluded.exam_id,outcome=excluded.outcome,marks=excluded.marks,updated_at=excluded.updated_at', [setId, questionId, examId, result.outcome, result.marks, answeredAt]);
       const count = Number((await query('SELECT COUNT(*) AS count FROM practice_answers WHERE set_id=$1', [setId])).rows[0].count);
       const status = count >= Number(row.total_questions) ? 'completed' : 'in_progress';
       await query('UPDATE practice_sets SET completed_questions=$1,status=$2 WHERE id=$3 AND user_id=$4', [count, status, setId, userId]);
@@ -116,11 +142,27 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     return rows.map(row => ({ questionId: row.questionId || row.question_id, examId: row.examId || row.exam_id, createdAt: Number(row.createdAt ?? row.created_at) }));
   }
 
+  async function listRevision(userId, limit = 50) {
+    const { rows = [] } = await database.query(
+      `SELECT o.question_id,o.exam_id,o.outcome,o.marks,o.updated_at,p.title AS set_title,e.definition
+       FROM practice_outcomes o JOIN practice_sets p ON p.id=o.set_id JOIN exams e ON e.id=o.exam_id
+       WHERE p.user_id=$1 AND o.outcome IN ('incorrect','partial')
+       ORDER BY o.updated_at DESC LIMIT $2`, [userId, Math.max(1, Math.min(100, Number(limit) || 50))]
+    );
+    return rows.map(row => {
+      const exam = parseDefinition(row);
+      const question = exam?.questions?.find(item => item.id === row.question_id);
+      if (!question) return null;
+      const { answer, answerAlternatives, partialCredit, ...safeQuestion } = question;
+      return { ...safeQuestion, examId: row.exam_id, examTitle: exam.title, outcome: row.outcome, marks: Number(row.marks), lastAttemptedAt: Number(row.updated_at), setTitle: row.set_title };
+    }).filter(Boolean);
+  }
+
   async function setBookmark(userId, examId, questionId, bookmarked) {
     if (bookmarked) await database.query('INSERT INTO practice_bookmarks(user_id,question_id,exam_id,created_at) VALUES($1,$2,$3,$4) ON CONFLICT(user_id,question_id,exam_id) DO NOTHING', [userId, questionId, examId, now()]);
     else await database.query('DELETE FROM practice_bookmarks WHERE user_id=$1 AND question_id=$2 AND exam_id=$3', [userId, questionId, examId]);
     return { questionId, examId, bookmarked: Boolean(bookmarked) };
   }
 
-  return { countMatching, createSet, getSets, getSet, saveAnswer, listBookmarks, setBookmark };
+  return { countMatching, createSet, getSets, getSet, saveAnswer, listBookmarks, listRevision, setBookmark };
 }

@@ -48,11 +48,20 @@ test('Phase 2: topic filters return actual unique questions; empty matches stay 
   assert.equal(created.status, 200);
   assert.deepEqual(created.body.set.questionIds, ['spatial-1', 'spatial-2']);
   assert.equal(created.body.set.totalQuestions, 2);
+  const opened = await f.api(`/api/student/practice/sets/${created.body.set.id}`);
+  assert.equal(opened.body.set.questions.length, 2);
+  assert.equal(opened.body.set.questions[0].prompt, 'Spatial rotation sample');
+  assert.ok(!JSON.stringify(opened.body.set.questions).includes('"answer"'));
   const done = await f.api('/api/student/practice/answer', { setId: created.body.set.id, questionId: 'spatial-1', value: 'a' });
   assert.equal(done.body.progress.completedQuestions, 1);
   assert.equal((await f.api(`/api/student/practice/sets/${created.body.set.id}`)).body.set.answers['spatial-1'].value, 'a');
   assert.equal((await f.api(`/api/student/practice/sets/${created.body.set.id}`, undefined, 'practice_b')).status, 404);
   assert.equal((await f.api('/api/student/practice/answer', { setId: created.body.set.id, questionId: 'science-1', value: 4 })).status, 400);
+  await f.api('/api/student/practice/answer', { setId: created.body.set.id, questionId: 'spatial-2', value: 'b' });
+  const revision = await f.api('/api/student/practice/revision');
+  assert.equal(revision.body.questions.length, 1);
+  assert.equal(revision.body.questions[0].id, 'spatial-2');
+  assert.ok(!JSON.stringify(revision.body.questions).includes('"answer"'));
 
   const noMatch = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Astronomy'], type: 'ALL', setSize: 5, skipDone: false });
   assert.equal(noMatch.body.set.totalQuestions, 0);
@@ -63,9 +72,17 @@ test('Phase 2: topic filters return actual unique questions; empty matches stay 
 test('Phase 2: skip-done excludes questions used in prior sets; bookmarks are private and persistent', async t => {
   const f = await setup(t);
   const first = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Scientific Knowledge'], skipDone: false, setSize: 1 });
+  const abandoned = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Spatial Reasoning'], skipDone: false, setSize: 1 });
+  const beforeAnswered = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Spatial Reasoning'], skipDone: true, setSize: 2 });
+  assert.equal(beforeAnswered.body.set.totalQuestions, 2, 'an unanswered saved set must remain available to resume');
+  await f.api('/api/student/practice/answer', { setId: abandoned.body.set.id, questionId: 'spatial-1', value: 'a' });
+  const afterAnswered = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Spatial Reasoning'], skipDone: true, setSize: 2 });
+  assert.deepEqual(afterAnswered.body.set.questionIds, ['spatial-2']);
   const second = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Scientific Knowledge'], skipDone: true, setSize: 1 });
-  assert.deepEqual(first.body.set.questionIds, ['science-1']);
-  assert.equal(second.body.set.totalQuestions, 0);
+  assert.deepEqual(second.body.set.questionIds, ['science-1']);
+  await f.api('/api/student/practice/answer', { setId: second.body.set.id, questionId: 'science-1', value: 4 });
+  const afterScience = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Scientific Knowledge'], skipDone: true, setSize: 1 });
+  assert.equal(afterScience.body.set.totalQuestions, 0);
   assert.equal((await f.api('/api/student/bookmarks', { examId: f.exam.id, questionId: 'spatial-1', bookmarked: true })).status, 200);
   assert.equal((await f.api('/api/student/bookmarks')).body.bookmarks.length, 1);
   assert.equal((await f.api('/api/student/bookmarks', undefined, 'practice_b')).body.bookmarks.length, 0);

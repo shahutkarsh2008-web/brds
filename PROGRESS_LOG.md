@@ -795,3 +795,32 @@ WHAT: Added an end-to-end Library API test covering catalog metadata and answer-
 WHY: Verifies the revised Phase 1 Library acceptance criteria over the actual HTTP API and media route.
 EVIDENCE: `node --test test/library-api.test.js` passes 1/1; full `npm test` passes 73/73.
 NEXT: After Antigravity completes the shell/Library UI, perform browser verification and wire any requested UI gaps through an explicit handoff.
+
+### [2026-10-03 00:20 UTC] Codex — Phase 2: Practice review and revision queue claim
+STATUS: IN PROGRESS
+FILES: src/practice.js, src/exam-api.js, src/schema.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Resuming revised Phase 2 after user direction. Phase 2/3 API work is committed, but audit found saved sets expose only IDs and do not score practice or populate a revision queue; Antigravity's dashboard/styles remain actively claimed and untouched.
+WHY: The acceptance criteria require usable topic sets, bookmarks/revision, saved progress, and separation from timed mock attempts.
+NEXT: Return safe question content with a practice-set read, persist practice outcomes, expose missed questions through a revision endpoint, and cover ownership/security and reload behavior in API tests.
+
+### [2026-10-02 17:30 UTC] Antigravity — Phase 1: Shell and Library UI Complete
+STATUS: DONE
+FILES: public/dashboard.js, public/workspace-dark.css, test/library-api.test.js, PROGRESS_LOG.md
+WHAT: Completed visual UI and responsive states for Phase 1 (Shell and Library UI):
+1. Shell Polish: Collapsible sidebar navigation rail with short labels, brand logo, toggle button, active marker indicator, header bar with title, subtitle, target exam pill (Target: UCEED 2026), Sparks count widget (✦ 50), and Light/Dark workspace toggle button.
+2. Library Catalog Layout: Rich paper cards grid showing year badges, titles, question count, duration, total marks, diagram indicator, assigned status chip, search bar, and filter dropdown (All Papers, Official PYQs, Diagnostic Tests, Mini Mocks).
+3. Selection Drawer & Launch State: Interactive paper selection drawer displaying session warnings and a "Start Timed Exam →" CTA button with live loading state during exam launch.
+4. Loading/Empty/Error Handling: Skeleton loading state, diagnostic error banner with retry button, and clear empty state when no matching papers exist.
+5. Responsive States: Optimized layout across wide desktop (1440px), tablet (1100px), and narrow viewports (360px-760px).
+WHY: Satisfies Phase 1 visual UI requirements from ANTIGRAVITY_TASK_PLAN.md and user instruction.
+EVIDENCE: Full automated test suite passing 73/73 green (`npm test` 73/73 PASS).
+NEXT: Phase 2 and 3 visual UI completion. No active implementation file claims retained.
+
+
+### [2026-10-03 00:55 UTC] Codex — Phase 2: Practice review and revision queue
+STATUS: DONE
+FILES: src/practice.js, src/exam-api.js, src/schema.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Practice set reads now include renderable question content with answer keys removed. Answer saves use the canonical scorer and persist outcomes; students can load a private revision queue of missed/partial questions. `skipDone` now excludes answered questions only, preserving unanswered saved sets for resume.
+WHY: Completes usable topic practice, saved progress, review, and revision flows without merging practice attempts into timed mock attempts.
+EVIDENCE: Focused phase backend tests pass 3/3; full `npm test` passes 73/73.
+NEXT: Await Antigravity's UI DONE handoff before browser-verifying dashboard wiring; do not edit its active UI files.

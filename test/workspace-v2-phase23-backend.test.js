@@ -117,5 +117,28 @@ test('Phase 3: overview has honest empty state and completed attempt KPIs, trend
   assert.equal(result.body.kpis.negativeMarks, 1);
   assert.equal(result.body.sample.reliableTrends, false);
   assert.ok(result.body.topics.some(topic => topic.topic === 'Spatial Reasoning' && topic.accuracy === 50 && topic.reliable === false));
+  assert.equal(result.body.trend.length, 0);
+  assert.ok(result.body.marksLeaks.some(item => item.questionId === 'spatial-2' && item.marksLost === 4 && item.negativeMarks === 1));
+  assert.ok(result.body.questionStrategy.some(item => item.type === 'MCQ'));
+  assert.ok(result.body.riskMap.some(item => item.topic === 'Spatial Reasoning' && item.risk === 'insufficient_data'));
+  assert.equal(result.body.nextBestAction.type, 'collect_sample');
   assert.equal(result.body.calendar.length, 1);
+});
+
+test('Phase 3: three completed mocks expose comparable trends and a useful next action', async t => {
+  const f = await setup(t);
+  for (const examId of [f.exam.id, 'phase23-mock-two', 'phase23-mock-three']) {
+    if (examId !== f.exam.id) await importExam(f.db, { ...structuredClone(f.exam), id: examId, title: examId }, [f.students.practice_a.user.id]);
+    const started = await f.api(`/api/exams/${examId}/start`, {});
+    assert.equal(started.status, 200);
+    const submitted = await f.api(`/api/attempts/${started.body.id}/submit`, { expectedVersion: 0 });
+    assert.equal(submitted.status, 200);
+  }
+  const analytics = (await f.api('/api/student/analytics')).body;
+  assert.equal(analytics.sample.completedAttempts, 3);
+  assert.equal(analytics.sample.reliableTrends, true);
+  assert.equal(analytics.sample.trendAttemptCount, 3);
+  assert.equal(analytics.trend.length, 3);
+  assert.ok(analytics.trend.every(item => typeof item.percentage === 'number'));
+  assert.equal(analytics.nextBestAction.type, 'collect_sample');
 });

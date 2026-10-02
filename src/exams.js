@@ -481,6 +481,45 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       markEfficiency: topic.maxMarks ? Number((topic.marks / topic.maxMarks * 100).toFixed(2)) : null,
       reliable: topic.attempted >= 10
     })).sort((a, b) => (a.accuracy ?? 101) - (b.accuracy ?? 101));
+    const questionStats = new Map();
+    const typeStats = new Map();
+    for (const attempt of completed) {
+      const exam = JSON.parse(rows.find(row => row.id === attempt.attemptId)?.exam_json || '{}');
+      const byId = new Map((exam.questions || []).map(question => [question.id, question]));
+      for (const detail of attempt.questions) {
+        const question = byId.get(detail.questionId || detail.id);
+        if (!question) continue;
+        const topic = question.topic || question.category || question.sectionId || 'Uncategorised';
+        const current = questionStats.get(question.id) || { questionId: question.id, topic, type: question.type, prompt: question.prompt, attempts: 0, wrong: 0, skipped: 0, partial: 0, negativeMarks: 0, marksLost: 0 };
+        current.attempts++;
+        if (detail.outcome === 'incorrect') current.wrong++;
+        if (detail.outcome === 'unanswered') current.skipped++;
+        if (detail.outcome === 'partial') current.partial++;
+        current.negativeMarks += Math.max(0, -(Number(detail.marks) || 0));
+        current.marksLost += Math.max(0, (Number(question.marks?.correct) || 0) - (Number(detail.marks) || 0));
+        questionStats.set(question.id, current);
+        const type = typeStats.get(question.type) || { type: question.type, attempted: 0, correct: 0, incorrect: 0, partial: 0, skipped: 0, marks: 0, maxMarks: 0 };
+        type.attempted++;
+        if (detail.outcome === 'correct') type.correct++;
+        if (detail.outcome === 'incorrect') type.incorrect++;
+        if (detail.outcome === 'partial') type.partial++;
+        if (detail.outcome === 'unanswered') type.skipped++;
+        type.marks += Number(detail.marks) || 0;
+        type.maxMarks += Number(question.marks?.correct) || 0;
+        typeStats.set(question.type, type);
+      }
+    }
+    const riskMap = topics.map(topic => ({ topic: topic.topic, accuracy: topic.accuracy, attempts: topic.attempted, reliable: topic.attempted >= 10, risk: topic.attempted < 5 ? 'insufficient_data' : topic.accuracy < 50 ? 'high' : topic.accuracy < 70 ? 'watch' : 'steady' }));
+    const questionStrategy = [...typeStats.values()].map(type => ({ ...type, accuracy: type.attempted ? Number((type.correct / type.attempted * 100).toFixed(2)) : null, markEfficiency: type.maxMarks ? Number((type.marks / type.maxMarks * 100).toFixed(2)) : null }));
+    const marksLeaks = [...questionStats.values()].filter(question => question.marksLost > 0).map(question => ({ ...question, marksLost: Number(question.marksLost.toFixed(2)), negativeMarks: Number(question.negativeMarks.toFixed(2)), reasons: [question.wrong ? 'incorrect' : null, question.skipped ? 'skipped' : null, question.partial ? 'partial_credit' : null].filter(Boolean) })).sort((a, b) => b.marksLost - a.marksLost || b.attempts - a.attempts);
+    const trend = completed.length >= 3 ? completed.slice(-3).map(attempt => ({ attemptId: attempt.attemptId, examId: attempt.examId, title: attempt.title, score: attempt.score, maxMarks: attempt.maxMarks, percentage: attempt.percentage, timeTakenSeconds: attempt.timeTakenSeconds, submittedAt: attempt.submittedAt })) : [];
+    const reliableTopics = topics.filter(topic => topic.reliable);
+    const weakest = reliableTopics[0] || null;
+    const nextBestAction = completed.length === 0
+      ? { type: 'start_practice', title: 'Complete a practice set', reason: 'There is not enough attempt data to identify a weak topic yet.' }
+      : weakest
+        ? { type: 'practice_topic', topic: weakest.topic, title: `Practice ${weakest.topic}`, reason: `${weakest.attempted} answered questions show ${weakest.accuracy}% accuracy.` }
+        : { type: 'collect_sample', title: 'Build a reliable topic sample', reason: 'Complete at least 10 questions in a topic to unlock topic diagnostics.' };
     const calendar = new Map();
     for (const attempt of attempts) {
       const day = new Date(attempt.startedAt).toISOString().slice(0, 10);
@@ -488,7 +527,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     }
     return {
       ok: true,
-      sample: { completedAttempts: completed.length, reliableTrends: completed.length >= 3 },
+      sample: { completedAttempts: completed.length, reliableTrends: completed.length >= 3, topicThreshold: 10, reliableTopics: reliableTopics.length, trendAttemptCount: trend.length },
       kpis: {
         completedAttempts: completed.length,
         activeAttempts: attempts.filter(attempt => attempt.status === 'active').length,
@@ -500,6 +539,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
         negativeMarks: completed.length ? Number(sum('negativeMarks').toFixed(2)) : null
       },
       attempts: attempts.slice().reverse(), topics,
+      marksLeaks, questionStrategy, riskMap, trend, nextBestAction,
       calendar: [...calendar.entries()].map(([date, questions]) => ({ date, questions }))
     };
   }

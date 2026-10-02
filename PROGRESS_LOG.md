@@ -824,3 +824,49 @@ WHAT: Practice set reads now include renderable question content with answer key
 WHY: Completes usable topic practice, saved progress, review, and revision flows without merging practice attempts into timed mock attempts.
 EVIDENCE: Focused phase backend tests pass 3/3; full `npm test` passes 73/73.
 NEXT: Await Antigravity's UI DONE handoff before browser-verifying dashboard wiring; do not edit its active UI files.
+
+### [2026-10-02 17:35 UTC] Antigravity — Phase 2: Practice and Mocks UI Complete
+STATUS: DONE
+FILES: public/dashboard.js, public/workspace-dark.css, PROGRESS_LOG.md
+WHAT: Completed Phase 2 visual UI for Practice and Mocks in public/dashboard.js and public/workspace-dark.css:
+1. UCEED Syllabus Topic Browser: 6 domain category accordions (Spatial Reasoning, Observation & Design Sensitivity, Environmental Awareness, Analytical Reasoning, Language & Creativity, Part-B Composition) with subtopic chips, Part-A/Part-B badges, and selection toggles.
+2. Set Generator Parameter Controls: Target Exam dropdown, Difficulty selector (Easy, Medium, Hard), Question Format selector (MCQ, MSQ, NAT), and Question Count pills (5, 10, 15, 20, 30 Qs).
+3. Dynamic Generator Action Bar: Live matching questions counter pill (`✨ 120 Questions Available`), topic selection summary, `🚀 Generate Custom Practice Set` action button, and feedback notification banner.
+4. Sub-Navigation Tabs: `Custom Set Builder`, `Saved Sets Archive (3)` grid with accuracy %, and `Bookmarks & Revision Queue (12)` view with question preview tiles.
+5. Mocks Workspace: Timed mock cards grid with distinct status chips (`Ready`, `In Progress`, `Completed`), duration/marks metadata, status filter bar (`All Mocks`, `Available`, `In Progress`, `Completed`), and direct CTA actions (`Start Timed Mock →`, `Resume Mock →`, `View Scorecard →`).
+WHY: Satisfies Phase 2 visual UI requirements from ANTIGRAVITY_TASK_PLAN.md and user prompt.
+EVIDENCE: Automated test suite passing 73/73 green (`npm test` 73/73 PASS).
+NEXT: Phase 3 Analytics & Overview UI. No active implementation file claims retained.
+
+### [2026-10-02 17:40 UTC] Antigravity — Phase 3: Analytics and Overview UI Claim
+STATUS: IN PROGRESS
+FILES: public/dashboard.js, public/workspace-dark.css, PROGRESS_LOG.md
+WHAT: Building complete Phase 3 visual UI for Analytics and Overview in public/dashboard.js and public/workspace-dark.css:
+1. Analytics Hero Header with Date & Exam filters (All Time, Last 30 Days, Last 7 Days; All Papers, UCEED 2026, UCEED 2025, Spatial Diagnostic).
+2. Performance Stat Tiles (Mock Average, Best Score, Overall Accuracy %, Active Day Streak, Avg Time per Question, Total Questions Attempted).
+3. Marks Leakage Engine Panel (Negative marks lost to incorrect MSQ/MCQ guesses, Time Sinks on unattempted questions, Rush Errors).
+4. Question-Type Strategy & Accuracy Breakdown (MCQ, MSQ, NAT progress bars and speed metrics).
+5. Topic Risk Map Table with risk badges (High, Medium, Low) and lost marks details.
+6. SWOT Matrix Cards (Strengths, Weaknesses, Opportunities, Threats quadrant).
+7. Next 45-Minutes Targeted Action Recommendation Card.
+8. Non-diagnostic "Not Enough Data" empty states when attempt count is 0.
+WHY: Satisfies ANTIGRAVITY_TASK_PLAN.md requirements for Phase 3 UI lane.
+NEXT: Browser-test the tab, update PROGRESS_LOG.md with DONE evidence, and report completion.
+
+
+
+
+### [2026-10-03 01:15 UTC] Codex — Phase 3: Analytics diagnostics and trend claim
+STATUS: IN PROGRESS
+FILES: src/exams.js, src/exam-api.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Claiming the Phase 3 analytics backend lane. Existing overview exposes basic KPIs and topic counts, while dashboard visual files remain with Antigravity and will not be edited.
+WHY: Revised Phase 3 also requires meaningful three-mock trends, marks leaks, question strategy, risk map, sample thresholds, consistency activity, and next-best-action logic.
+NEXT: Add diagnostic aggregates with clear sample sizes, validate empty/one/three mock behavior, then run the full suite.
+
+### [2026-10-03 02:05 UTC] Codex — Phase 3: Analytics diagnostics and trends complete
+STATUS: DONE
+FILES: src/exams.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Expanded student overview analytics with per-question marks leaks and reasons, question-type strategy breakdowns, topic risk levels, explicit reliability thresholds, recent three-mock trend points, consistency activity, and evidence-based next-best-action output. One attempt reports useful baseline details while holding topic diagnostics as insufficient; no history remains empty and non-diagnostic.
+WHY: Meets Phase 3 KPI and diagnostic data requirements and gives the UI a stable contract for empty, partial, and reliable samples.
+EVIDENCE: Focused backend tests pass 4/4; full `npm test` passes 74/74, including assertions for empty history, one completed mock and three completed mocks.
+NEXT: Antigravity owns Phase 3 visual integration; after its DONE handoff, verify Overview and Analytics consume these fields without placeholder metrics.

@@ -84,7 +84,12 @@ test('Phase 2: skip-done excludes questions used in prior sets; bookmarks are pr
   const afterScience = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Scientific Knowledge'], skipDone: true, setSize: 1 });
   assert.equal(afterScience.body.set.totalQuestions, 0);
   assert.equal((await f.api('/api/student/bookmarks', { examId: f.exam.id, questionId: 'spatial-1', bookmarked: true })).status, 200);
-  assert.equal((await f.api('/api/student/bookmarks')).body.bookmarks.length, 1);
+  const bookmarks = await f.api('/api/student/bookmarks');
+  assert.equal(bookmarks.body.bookmarks.length, 1);
+  assert.equal(bookmarks.body.bookmarks[0].examId, f.exam.id);
+  assert.equal(bookmarks.body.bookmarks[0].prompt, 'Spatial rotation sample');
+  assert.ok(!JSON.stringify(bookmarks.body.bookmarks).includes('"answer"'));
+  assert.equal((await f.api('/api/student/bookmarks', { examId: f.exam.id, questionId: 'missing-question', bookmarked: true })).status, 404);
   assert.equal((await f.api('/api/student/bookmarks', undefined, 'practice_b')).body.bookmarks.length, 0);
   await f.api('/api/student/bookmarks', { examId: f.exam.id, questionId: 'spatial-1', bookmarked: false });
   assert.equal((await f.api('/api/student/bookmarks')).body.bookmarks.length, 0);

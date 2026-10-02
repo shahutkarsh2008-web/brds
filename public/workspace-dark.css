@@ -775,3 +775,95 @@ body:not(.light-mode) .overview-flow > .card {
 .main-sidebar-open { margin-left:224px; width:calc(100vw - 224px); }
 .main-sidebar-closed { margin-left:72px; width:calc(100vw - 72px); }
 @media (max-width:1100px) { .sidebar-open.app-sidebar { width:224px; } .main-sidebar-open { margin-left:224px; width:calc(100vw - 224px); } }
+
+/* Phase 2 & 3 UI — Responsive Analytics, Practice, Mocks & SWOT Components */
+.filter-bar-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 14px 18px; border-radius: 16px; margin-bottom: 20px; }
+.filter-group-inline { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.filter-select { padding: 8px 12px; background: var(--bg-input); border: 1px solid var(--border-subtle); border-radius: 8px; color: var(--text-primary); font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+.filter-select:focus { outline: none; border-color: var(--brds-red); }
+
+/* Status Chips & Badges */
+.status-chip { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.status-chip.ready { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+.status-chip.in-progress { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+.status-chip.submitted, .status-chip.completed { background: rgba(91, 92, 226, 0.15); color: #5b5ce2; border: 1px solid rgba(91, 92, 226, 0.3); }
+.status-chip.reviewed { background: rgba(59, 130, 246, 0.15); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.3); }
+
+/* Mock Cards Grid */
+.mock-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-bottom: 24px; }
+.mock-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; justify-space-between; gap: 14px; transition: all 0.2s ease; }
+.mock-card:hover { border-color: var(--border-hover); transform: translateY(-2px); }
+.mock-card-title { font-size: 1.05rem; font-weight: 800; color: var(--text-primary); }
+.mock-card-meta { display: flex; gap: 12px; font-size: 0.8rem; color: var(--text-muted); font-weight: 600; flex-wrap: wrap; }
+.mock-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border-subtle); }
+
+/* Marks Leakage Panel */
+.leakage-card { background: var(--bg-card); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 18px; padding: 22px; margin-bottom: 24px; }
+.leakage-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.leakage-title { display: flex; align-items: center; gap: 10px; font-size: 1rem; font-weight: 800; color: #ef4444; }
+.leakage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 14px; }
+.leakage-item { background: var(--bg-input); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 14px 16px; }
+.leakage-item-val { font-size: 1.4rem; font-weight: 800; color: #ef4444; margin-top: 4px; }
+.leakage-item-desc { font-size: 0.78rem; color: var(--text-secondary); margin-top: 2px; }
+
+/* SWOT Matrix Grid */
+.swot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.swot-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 18px; }
+.swot-card.strength { border-top: 4px solid #10b981; }
+.swot-card.weakness { border-top: 4px solid #ef4444; }
+.swot-card.opportunity { border-top: 4px solid #3b82f6; }
+.swot-card.threat { border-top: 4px solid #f59e0b; }
+.swot-card-title { font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.swot-card.strength .swot-card-title { color: #10b981; }
+.swot-card.weakness .swot-card-title { color: #ef4444; }
+.swot-card.opportunity .swot-card-title { color: #3b82f6; }
+.swot-card.threat .swot-card-title { color: #f59e0b; }
+.swot-list { list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.82rem; color: var(--text-secondary); }
+.swot-list li { display: flex; align-items: flex-start; gap: 6px; }
+.swot-list li::before { content: "•"; font-weight: 800; color: inherit; }
+
+/* Progress Bars & Accuracy Indicators */
+.progress-bar-wrap { width: 100%; height: 8px; background: var(--bg-input); border-radius: 4px; overflow: hidden; margin-top: 6px; }
+.progress-bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s ease; }
+.progress-bar-fill.high { background: #10b981; }
+.progress-bar-fill.medium { background: #f59e0b; }
+.progress-bar-fill.low { background: #ef4444; }
+.progress-bar-fill.primary { background: var(--brds-red); }
+
+/* Topic Risk Map Table */
+.risk-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.risk-table th, .risk-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-subtle); font-size: 0.85rem; }
+.risk-table th { color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; }
+
+/* Question Preview Card */
+.question-preview-tile { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 16px; margin-bottom: 12px; display: flex; flex-direction: column; gap: 10px; }
+.question-preview-header { display: flex; justify-content: space-between; align-items: center; }
+.question-tag { font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; background: var(--bg-input); border: 1px solid var(--border-subtle); color: var(--text-secondary); }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .filter-bar-row { flex-direction: column; align-items: stretch; }
+  .mock-card-grid { grid-template-columns: 1fr; }
+  .swot-grid { grid-template-columns: 1fr; }
+}
+
+/* Risk Level Status Chips */
+.status-chip.insufficient_data { background: rgba(100, 116, 139, 0.15); color: #94a3b8; border: 1px solid rgba(100, 116, 139, 0.3); }
+.status-chip.high { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
+.status-chip.watch { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+.status-chip.steady { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+
+/* Active Practice Question Renderer */
+.practice-question-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 18px; padding: 24px; margin-bottom: 20px; }
+.practice-question-prompt { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 12px 0 18px; line-height: 1.5; white-space: pre-line; }
+.option-choice-list { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+.option-choice-btn { width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px 18px; background: var(--bg-input); border: 1px solid var(--border-subtle); border-radius: 10px; color: var(--text-primary); font-size: 0.9rem; text-align: left; cursor: pointer; transition: all 0.15s ease; }
+.option-choice-btn:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
+.option-choice-btn.selected { border-color: var(--brds-red); background: rgba(91, 92, 226, 0.12); font-weight: 700; }
+.option-choice-key { font-weight: 800; font-size: 0.85rem; padding: 4px 10px; border-radius: 6px; background: var(--bg-card); border: 1px solid var(--border-subtle); color: var(--text-secondary); }
+
+/* Sample Threshold Banner */
+.sample-threshold-banner { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); color: var(--accent-blue); padding: 12px 16px; border-radius: 12px; font-size: 0.84rem; font-weight: 600; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.practice-error-message { color: #ef4444; font-size: .85rem; font-weight: 700; margin: 10px 0; }
+
+

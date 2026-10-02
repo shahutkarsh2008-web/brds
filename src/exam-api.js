@@ -68,7 +68,9 @@ export function createExamApi(auth, engine, roster, database) {
         if (path === '/api/student/bookmarks' && req.method === 'POST') {
           const input = await readStudentJson(req, 8192);
           if (typeof input.examId !== 'string' || typeof input.questionId !== 'string' || typeof input.bookmarked !== 'boolean') throw new HttpError(400, 'Exam, question and bookmark state are required.');
-          return json(200, await practiceEngine.setBookmark(user.id, input.examId, input.questionId, input.bookmarked));
+          const result = await practiceEngine.setBookmark(user.id, input.examId, input.questionId, input.bookmarked);
+          if (result === false) throw new HttpError(404, 'Question was not found in that exam.');
+          return json(200, result);
         }
         if (path === '/api/student/practice/revision' && req.method === 'GET') return json(200, { questions: await practiceEngine.listRevision(user.id) });
 

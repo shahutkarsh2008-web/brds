@@ -138,13 +138,19 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
   }
 
   async function listBookmarks(userId) {
-    const { rows = [] } = await database.query('SELECT question_id AS "questionId",exam_id AS "examId",created_at AS "createdAt" FROM practice_bookmarks WHERE user_id=$1 ORDER BY created_at DESC', [userId]);
-    return rows.map(row => ({ questionId: row.questionId || row.question_id, examId: row.examId || row.exam_id, createdAt: Number(row.createdAt ?? row.created_at) }));
+    const { rows = [] } = await database.query('SELECT b.question_id,b.exam_id,b.created_at,e.definition FROM practice_bookmarks b JOIN exams e ON e.id=b.exam_id WHERE b.user_id=$1 ORDER BY b.created_at DESC', [userId]);
+    return rows.map(row => {
+      const exam = parseDefinition(row);
+      const question = exam?.questions?.find(item => item.id === row.question_id);
+      if (!question) return null;
+      const { answer, answerAlternatives, partialCredit, ...safeQuestion } = question;
+      return { ...safeQuestion, questionId: row.question_id, examId: row.exam_id, examTitle: exam.title, createdAt: Number(row.created_at), bookmarked: true };
+    }).filter(Boolean);
   }
 
   async function listRevision(userId, limit = 50) {
     const { rows = [] } = await database.query(
-      `SELECT o.question_id,o.exam_id,o.outcome,o.marks,o.updated_at,p.title AS set_title,e.definition
+      `SELECT o.set_id,o.question_id,o.exam_id,o.outcome,o.marks,o.updated_at,p.title AS set_title,e.definition
        FROM practice_outcomes o JOIN practice_sets p ON p.id=o.set_id JOIN exams e ON e.id=o.exam_id
        WHERE p.user_id=$1 AND o.outcome IN ('incorrect','partial')
        ORDER BY o.updated_at DESC LIMIT $2`, [userId, Math.max(1, Math.min(100, Number(limit) || 50))]
@@ -154,11 +160,14 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
       const question = exam?.questions?.find(item => item.id === row.question_id);
       if (!question) return null;
       const { answer, answerAlternatives, partialCredit, ...safeQuestion } = question;
-      return { ...safeQuestion, examId: row.exam_id, examTitle: exam.title, outcome: row.outcome, marks: Number(row.marks), lastAttemptedAt: Number(row.updated_at), setTitle: row.set_title };
+      return { ...safeQuestion, setId: row.set_id, examId: row.exam_id, examTitle: exam.title, outcome: row.outcome, marks: Number(row.marks), lastAttemptedAt: Number(row.updated_at), setTitle: row.set_title, bookmarked: false };
     }).filter(Boolean);
   }
 
   async function setBookmark(userId, examId, questionId, bookmarked) {
+    const examResult = await database.query('SELECT definition FROM exams WHERE id=$1', [examId]);
+    const exam = examResult.rows?.[0] ? parseDefinition(examResult.rows[0]) : null;
+    if (!exam?.questions?.some(question => question.id === questionId)) return false;
     if (bookmarked) await database.query('INSERT INTO practice_bookmarks(user_id,question_id,exam_id,created_at) VALUES($1,$2,$3,$4) ON CONFLICT(user_id,question_id,exam_id) DO NOTHING', [userId, questionId, examId, now()]);
     else await database.query('DELETE FROM practice_bookmarks WHERE user_id=$1 AND question_id=$2 AND exam_id=$3', [userId, questionId, examId]);
     return { questionId, examId, bookmarked: Boolean(bookmarked) };

@@ -142,7 +142,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
   async function list(userId) {
     await sweep();
     const rows=(await database.query('SELECT e.id,e.definition,a.id AS attempt_id,a.status,a.result_json FROM exams e JOIN exam_assignments x ON x.exam_id=e.id LEFT JOIN attempts a ON a.exam_id=e.id AND a.user_id=x.user_id WHERE x.user_id=$1 ORDER BY e.created_at DESC',[userId])).rows;
-    return rows.map(row=>{const exam=JSON.parse(row.definition);return {id:row.id,title:exam.title,durationSeconds:exam.durationSeconds,totalQuestions:exam.totalQuestions,maxMarks:exam.maxMarks,instructions:exam.instructions,attemptId:row.attempt_id,status:row.status||'available',result:row.result_json?JSON.parse(row.result_json):null};});
+    return rows.map(row=>{const exam=JSON.parse(row.definition);return {id:row.id,title:exam.title,durationSeconds:exam.durationSeconds,totalQuestions:exam.totalQuestions,maxMarks:exam.maxMarks,hasImages:exam.questions.some(question=>Boolean(question.image)),instructions:exam.instructions,attemptId:row.attempt_id,status:row.status||'available',result:row.result_json?JSON.parse(row.result_json):null};});
   }
   async function start(examId,userId) {
     const view=await database.transaction(async query=>{

@@ -900,3 +900,11 @@ WHAT: Took the dashboard claim after Antigravity's DONE handoff and fixed the ac
 WHY: Makes Phase 1 Library and Phase 2 Practice/Mocks work against the existing secured APIs, with honest empty/error states and persistent progress.
 EVIDENCE: `node --check` passes for dashboard and touched server files. DOM integration test evaluates the dashboard, visits Library and Practice, verifies honest missing metadata, sends the selected exam filter, opens fetched question content, and saves MSQ arrays. Focused Library/practice integration tests pass; full `npm test` passes 75/75.
 NEXT: Phase 1/2 implementation is complete. Browser screenshot verification remains unavailable because localhost:3001 has no server; the repository demo launcher clears sessions in `data/development.sqlite`, so I left that database untouched. Continue the remaining project phase only when requested.
+
+### [2026-10-02 12:41 UTC] Codex — Phase 1 & 2: Mock dashboard UI regression coverage
+STATUS: DONE
+FILES: test/dashboard-ui-integration.test.js, PROGRESS_LOG.md
+WHAT: Extended the dashboard DOM integration test to verify active mocks show “Resume Mock,” submitted mocks show “View Scorecard,” and diagram indicators appear only when image metadata is present. Corrected the metadata assertion to scope it to the test’s actual library content.
+WHY: Covers Phase 1/2 UI status rendering and avoids a false failure when a valid mock paper includes images.
+EVIDENCE: `node --test test/dashboard-ui-integration.test.js` passes; full `npm test` passes 75/75; `node --check test/dashboard-ui-integration.test.js` and `git diff --check -- test/dashboard-ui-integration.test.js` pass.
+NEXT: Phase 1/2 code work is complete. Browser screenshot verification remains unavailable because localhost:3001 has no server; do not start the demo launcher because it clears existing development sessions.

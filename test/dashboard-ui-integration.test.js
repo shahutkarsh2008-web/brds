@@ -17,7 +17,11 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
     calls.push({ path, options, body: options.body ? JSON.parse(options.body) : null });
     let payload = {};
     if (path === '/api/student/dashboard') payload = { user: { name: 'Test Student', targetExam: 'UCEED 2026' }, sparks: 0, kpis: { questionsAnswered: 0, completedAttempts: 0 }, calendar: [], attempts: [], topics: [], nextBestAction: { title: 'Start', reason: 'Try a paper.' } };
-    else if (path === '/api/exams') payload = { exams: [{ id: 'library-paper', title: 'Library Paper', totalQuestions: null, maxMarks: null, durationSeconds: null, hasImages: false, status: 'available' }] };
+    else if (path === '/api/exams') payload = { exams: [
+      { id: 'library-paper', title: 'Library Paper', totalQuestions: null, maxMarks: null, durationSeconds: null, hasImages: false, status: 'available' },
+      { id: 'active-paper', title: 'Active Mock', totalQuestions: 2, maxMarks: 6, durationSeconds: 600, hasImages: false, status: 'active', attemptId: 'attempt-active' },
+      { id: 'completed-paper', title: 'Completed Mock', totalQuestions: 2, maxMarks: 6, durationSeconds: 600, hasImages: true, status: 'submitted', attemptId: 'attempt-completed' }
+    ] };
     else if (path === '/api/student/practice/count') payload = { count: 1 };
     else if (path === '/api/student/practice/create') payload = { set: { id: 'set-1', questionIds: ['q1'], totalQuestions: 1, status: 'in_progress' } };
     else if (path === '/api/student/practice/sets/set-1') payload = { set: { id: 'set-1', title: 'Spatial Set', questionIds: ['q1'], questions: [question], answers: {}, totalQuestions: 1, completedQuestions: 0, status: 'in_progress' } };
@@ -33,7 +37,8 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
   assert.match(libraryText, /— Questions/);
   assert.match(libraryText, /— Mins/);
   assert.match(libraryText, /— Marks/);
-  assert.doesNotMatch(libraryText, /57 Questions|200 Marks|Diagrams Included/);
+  assert.doesNotMatch(libraryText, /57 Questions|200 Marks/);
+  assert.equal((libraryText.match(/Diagrams Included/g) || []).length, 1, 'only the paper with image metadata should show the diagram indicator');
 
   nav[2].click();
   await tick(); await tick();
@@ -55,5 +60,13 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
   option.click(); await tick(); await tick();
   const savedAnswers = calls.filter(call => call.path === '/api/student/practice/answer');
   assert.deepEqual(savedAnswers.at(-1).body.value, ['a', 'b']);
+
+  [...dom.window.document.querySelectorAll('.nav-icon-btn')][4].click();
+  await tick(); await tick();
+  const mocksText = dom.window.document.querySelector('#app').textContent;
+  assert.match(mocksText, /Active Mock/);
+  assert.match(mocksText, /Completed Mock/);
+  assert.match(mocksText, /Resume Mock/);
+  assert.match(mocksText, /View Scorecard/);
   dom.window.close();
 });

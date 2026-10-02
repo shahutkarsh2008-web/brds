@@ -13,11 +13,15 @@ export async function migrate(database) {
       `CREATE TABLE IF NOT EXISTS activity_flags (id TEXT PRIMARY KEY,attempt_id TEXT NOT NULL REFERENCES attempts(id),user_id TEXT NOT NULL REFERENCES users(id),type TEXT NOT NULL,created_at BIGINT NOT NULL)`,
       `CREATE TABLE IF NOT EXISTS attempt_controls (attempt_id TEXT PRIMARY KEY REFERENCES attempts(id),paused_at BIGINT,offset_ms BIGINT NOT NULL DEFAULT 0,locked INTEGER NOT NULL DEFAULT 0)`,
       `CREATE TABLE IF NOT EXISTS teacher_actions (id TEXT PRIMARY KEY,attempt_id TEXT NOT NULL REFERENCES attempts(id),actor_id TEXT NOT NULL REFERENCES users(id),action TEXT NOT NULL,created_at BIGINT NOT NULL)`,
+      `CREATE TABLE IF NOT EXISTS practice_sets (id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id),title TEXT NOT NULL,filters_json TEXT NOT NULL,question_ids_json TEXT NOT NULL,total_questions INTEGER NOT NULL,completed_questions INTEGER NOT NULL DEFAULT 0,status TEXT NOT NULL DEFAULT 'in_progress',created_at BIGINT NOT NULL)`,
+      `CREATE TABLE IF NOT EXISTS practice_answers (set_id TEXT NOT NULL REFERENCES practice_sets(id) ON DELETE CASCADE,question_id TEXT NOT NULL,answer_json TEXT NOT NULL,answered_at BIGINT NOT NULL,PRIMARY KEY(set_id,question_id))`,
+      `CREATE TABLE IF NOT EXISTS practice_bookmarks (user_id TEXT NOT NULL REFERENCES users(id),question_id TEXT NOT NULL,exam_id TEXT NOT NULL,created_at BIGINT NOT NULL,PRIMARY KEY(user_id,question_id,exam_id))`,
       'CREATE INDEX IF NOT EXISTS sessions_user ON sessions(user_id)',
       'CREATE INDEX IF NOT EXISTS challenges_user ON auth_challenges(user_id)',
       'CREATE INDEX IF NOT EXISTS attempts_deadline ON attempts(status,deadline)',
       'CREATE INDEX IF NOT EXISTS flags_attempt ON activity_flags(attempt_id,type,created_at)',
-      "UPDATE system_metadata SET value = '4' WHERE key = 'schema_version'",
+      'CREATE INDEX IF NOT EXISTS practice_sets_user ON practice_sets(user_id)',
+      "UPDATE system_metadata SET value = '5' WHERE key = 'schema_version'",
     ]) await query(sql);
   });
 }

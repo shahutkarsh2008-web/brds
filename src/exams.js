@@ -421,7 +421,90 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     return { ok: true, history };
   }
 
-  return {list,start,get,answer,submit,flag,sweep,roster,control,saveExam,assignExam,listAuthored,getAuthored,getExamAnalytics,getStudentHistory};
+  async function getStudentOverview(userId) {
+    const { rows = [] } = await database.query(
+      `SELECT a.id,a.exam_id,a.status,a.started_at,a.submitted_at,a.exam_json,a.answers_json,a.result_json,e.title
+       FROM attempts a JOIN exams e ON e.id=a.exam_id WHERE a.user_id=$1 ORDER BY a.started_at ASC`,
+      [userId]
+    );
+    const attempts = rows.map(row => {
+      let exam = {}, answers = {}, result = null;
+      try { exam = JSON.parse(row.exam_json || '{}'); } catch {}
+      try { answers = JSON.parse(row.answers_json || '{}'); } catch {}
+      try { result = row.result_json ? JSON.parse(row.result_json) : null; } catch {}
+      const questions = Array.isArray(exam.questions) ? exam.questions : [];
+      const submitted = row.status === 'submitted';
+      const answered = Object.keys(answers).length;
+      const elapsedSeconds = submitted && row.submitted_at
+        ? Math.max(0, Math.round((Number(row.submitted_at) - Number(row.started_at)) / 1000))
+        : null;
+      const details = result?.questions || [];
+      const outcomes = details.reduce((acc, question) => {
+        acc[question.outcome] = (acc[question.outcome] || 0) + 1;
+        return acc;
+      }, {});
+      return {
+        attemptId: row.id, examId: row.exam_id, title: row.title, status: row.status,
+        startedAt: Number(row.started_at), submittedAt: row.submitted_at ? Number(row.submitted_at) : null,
+        questionCount: questions.length, answeredCount: submitted ? Number(outcomes.correct || 0) + Number(outcomes.incorrect || 0) + Number(outcomes.partial || 0) : answered, score: result?.score ?? null,
+        maxMarks: result?.maxMarks ?? exam.maxMarks ?? null, percentage: result?.maxMarks ? Number((result.score / result.maxMarks * 100).toFixed(2)) : null,
+        timeTakenSeconds: elapsedSeconds, correct: Number(outcomes.correct || 0), incorrect: Number(outcomes.incorrect || 0),
+        partial: Number(outcomes.partial || 0), skipped: submitted ? Math.max(0, questions.length - answered) : null,
+        negativeMarks: Number(details.reduce((sum, q) => sum + Math.max(0, -(Number(q.marks) || 0)), 0).toFixed(2)),
+        sections: result?.sections || [], questions: details
+      };
+    });
+    const completed = attempts.filter(attempt => attempt.status === 'submitted');
+    const sum = key => completed.reduce((total, attempt) => total + Number(attempt[key] || 0), 0);
+    const answered = sum('correct') + sum('incorrect') + sum('partial');
+    const accuracy = answered ? Number((sum('correct') / answered * 100).toFixed(2)) : null;
+    const totalTime = sum('timeTakenSeconds');
+    const topicTotals = new Map();
+    for (const attempt of completed) {
+      const exam = JSON.parse(rows.find(row => row.id === attempt.attemptId)?.exam_json || '{}');
+      const byId = new Map((exam.questions || []).map(question => [question.id, question]));
+      for (const detail of attempt.questions) {
+        const question = byId.get(detail.questionId || detail.id);
+        const topic = question?.topic || question?.category || question?.sectionId || 'Uncategorised';
+        const current = topicTotals.get(topic) || { topic, correct: 0, attempted: 0, marks: 0, maxMarks: 0, count: 0 };
+        current.count++;
+        if (detail.outcome !== 'unanswered') current.attempted++;
+        if (detail.outcome === 'correct') current.correct++;
+        current.marks += Number(detail.marks || 0);
+        current.maxMarks += Number(question?.marks?.correct || 0);
+        topicTotals.set(topic, current);
+      }
+    }
+    const topics = [...topicTotals.values()].map(topic => ({
+      ...topic,
+      accuracy: topic.attempted ? Number((topic.correct / topic.attempted * 100).toFixed(2)) : null,
+      markEfficiency: topic.maxMarks ? Number((topic.marks / topic.maxMarks * 100).toFixed(2)) : null,
+      reliable: topic.attempted >= 10
+    })).sort((a, b) => (a.accuracy ?? 101) - (b.accuracy ?? 101));
+    const calendar = new Map();
+    for (const attempt of attempts) {
+      const day = new Date(attempt.startedAt).toISOString().slice(0, 10);
+      calendar.set(day, (calendar.get(day) || 0) + attempt.answeredCount);
+    }
+    return {
+      ok: true,
+      sample: { completedAttempts: completed.length, reliableTrends: completed.length >= 3 },
+      kpis: {
+        completedAttempts: completed.length,
+        activeAttempts: attempts.filter(attempt => attempt.status === 'active').length,
+        questionsAnswered: completed.reduce((total, attempt) => total + attempt.answeredCount, 0),
+        accuracyPct: accuracy,
+        averageTimeSeconds: completed.length ? Math.round(totalTime / completed.length) : null,
+        marks: completed.length ? Number(sum('score').toFixed(2)) : null,
+        skipped: completed.length ? sum('skipped') : null,
+        negativeMarks: completed.length ? Number(sum('negativeMarks').toFixed(2)) : null
+      },
+      attempts: attempts.slice().reverse(), topics,
+      calendar: [...calendar.entries()].map(([date, questions]) => ({ date, questions }))
+    };
+  }
+
+  return {list,start,get,answer,submit,flag,sweep,roster,control,saveExam,assignExam,listAuthored,getAuthored,getExamAnalytics,getStudentHistory,getStudentOverview};
 }
 
 

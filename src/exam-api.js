@@ -1,6 +1,24 @@
 import { HttpError } from './auth.js';
+import { createPracticeEngine } from './practice.js';
+
+async function readStudentJson(req, limit) {
+  if (!(req.headers['content-type'] || '').startsWith('application/json')) throw new HttpError(415, 'Use application/json.');
+  let text = '', length = 0;
+  for await (const chunk of req) {
+    length += chunk.length;
+    if (length > limit) throw new HttpError(413, 'Request too large.');
+    text += chunk;
+  }
+  try {
+    const value = JSON.parse(text || '{}');
+    if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error();
+    return value;
+  } catch { throw new HttpError(400, 'Invalid JSON.'); }
+}
 
 export function createExamApi(auth, engine, roster, database) {
+  const practiceEngine = database ? createPracticeEngine(database) : null;
+
   return async (req, res, path) => {
     const json = (status, value) => {
       res.writeHead(status, { 'Content-Type': 'application/json' });
@@ -15,6 +33,63 @@ export function createExamApi(auth, engine, roster, database) {
         await engine.sweep();
         return json(200, await roster());
       }
+
+      // Student Practice & Dashboard routes
+      if (path.startsWith('/api/student/')) {
+        const user = await auth.requireRole(req, ['student', 'teacher', 'admin']);
+
+        if (path === '/api/student/dashboard' && req.method === 'GET') {
+          return json(200, { ...(await engine.getStudentOverview(user.id)), user: { id: user.id, name: user.name, loginId: user.login_id || user.loginId, targetExam: user.target_exam || 'UCEED 2026' } });
+        }
+        if (path === '/api/student/analytics' && req.method === 'GET') return json(200, await engine.getStudentOverview(user.id));
+
+        if (path === '/api/student/practice/sets' && req.method === 'GET') {
+          const sets = practiceEngine ? await practiceEngine.getSets(user.id) : [];
+          return json(200, { sets });
+        }
+
+      const practiceSet = path.match(/^\/api\/student\/practice\/sets\/([a-zA-Z0-9_-]+)$/);
+        if (practiceSet && req.method === 'GET') {
+          const set = practiceEngine ? await practiceEngine.getSet(user.id, practiceSet[1]) : null;
+          if (!set) throw new HttpError(404, 'Practice set not found.');
+          return json(200, { set });
+        }
+
+        if (path === '/api/student/practice/answer' && req.method === 'POST') {
+          const input = await readStudentJson(req, 65536);
+          if (typeof input.setId !== 'string' || typeof input.questionId !== 'string' || !Object.hasOwn(input, 'value')) throw new HttpError(400, 'Set, question and answer are required.');
+          const saved = await practiceEngine.saveAnswer(user.id, input.setId, input.questionId, input.value);
+          if (saved === null) throw new HttpError(404, 'Practice set not found.');
+          if (saved === false) throw new HttpError(400, 'Question is not part of this practice set.');
+          return json(200, { progress: saved });
+        }
+
+        if (path === '/api/student/bookmarks' && req.method === 'GET') return json(200, { bookmarks: await practiceEngine.listBookmarks(user.id) });
+        if (path === '/api/student/bookmarks' && req.method === 'POST') {
+          const input = await readStudentJson(req, 8192);
+          if (typeof input.examId !== 'string' || typeof input.questionId !== 'string' || typeof input.bookmarked !== 'boolean') throw new HttpError(400, 'Exam, question and bookmark state are required.');
+          return json(200, await practiceEngine.setBookmark(user.id, input.examId, input.questionId, input.bookmarked));
+        }
+
+        if (path === '/api/student/practice/count' && (req.method === 'GET' || req.method === 'POST')) {
+          const filters = req.method === 'GET' ? Object.fromEntries(new URL(req.url, 'http://localhost').searchParams.entries()) : await readStudentJson(req, 8192);
+          if (filters.topics && typeof filters.topics === 'string') filters.topics = filters.topics.split(',').filter(Boolean);
+          const countRes = practiceEngine ? await practiceEngine.countMatching(filters) : { count: 0 };
+          return json(200, countRes);
+        }
+
+        if (path === '/api/student/practice/create' && req.method === 'POST') {
+          if (!(req.headers['content-type'] || '').startsWith('application/json')) throw new HttpError(415, 'Use application/json.');
+          const input = await readStudentJson(req, 65536);
+          const created = practiceEngine ? await practiceEngine.createSet(user.id, input) : null;
+          if (!created) throw new HttpError(503, 'Practice storage is unavailable.');
+          return json(200, { set: created });
+        }
+
+        throw new HttpError(404, 'Endpoint not found.');
+      }
+
+      // Authoring routes for Teachers & Admins
 
       // Authoring routes for Teachers & Admins
       if (path.startsWith('/api/author/')) {

@@ -757,3 +757,41 @@ WHAT: Added explicit parallel-work protocols, exclusive ownership boundaries, sh
 WHY: Allows Codex and Antigravity to work simultaneously without overwriting each other's UI, backend or test changes.
 EVIDENCE: Both task plans now state which paths each agent owns and how shared files are handed off before edits.
 NEXT: Begin Phase 1 with separate ownership claims: Antigravity claims visual shell/Library UI; Codex claims Library API/launch verification.
+
+### [2026-10-02 12:20 UTC] Codex — Phase 2: Practice and Mocks backend/API claim
+STATUS: IN PROGRESS
+FILES: src/practice.js, src/exam-api.js, src/schema.js, test/workspace-v2-phase2.test.js, test/workspace-v2-phase3.test.js, PROGRESS_LOG.md
+WHAT: Claiming backend and test work for the revised Phase 2 Practice/Mocks and Phase 3 Analytics/Overview lanes from CODEX_TASK_PLAN.md. Existing shared changes in src/exam-api.js and untracked tests will be preserved and reviewed before extension.
+WHY: Current practice behavior can invent fallback questions/counts, does not persist progress/bookmarks, and revised plan requires separated practice/mock state plus analytics based on completed attempts.
+NEXT: Add scoped persisted practice progress/bookmark operations and data-backed counts, then API tests; inspect exam result shape before analytics KPI tests.
+
+### [2026-10-02 17:25 UTC] Antigravity — Phase 2 & 3: Visual UI and Responsive States
+STATUS: IN PROGRESS
+FILES: public/dashboard.js, public/workspace-dark.css, PROGRESS_LOG.md
+WHAT: Building complete visual UI, rich layouts, UCEED syllabus topic browser, set builder, mock cards, analytics panels, marks leakage, SWOT matrix, and responsive states for Phase 2 and Phase 3 in public/dashboard.js and public/workspace-dark.css.
+WHY: Fulfills user instruction and ANTIGRAVITY_TASK_PLAN.md requirements for Phase 2 and Phase 3 UI lanes.
+NEXT: Browser-test the tabs, update PROGRESS_LOG.md with DONE evidence, and commit with [Antigravity].
+
+
+### [2026-10-02 17:40 UTC] Codex — Phase 1: Library API and launch verification claim
+STATUS: IN PROGRESS
+FILES: src/exams.js, src/exam-api.js, src/app.js, test/workspace-v2-phase1.test.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Claiming the Codex backend/API lane for revised Phase 1 Shell and Library. Antigravity currently owns dashboard visual files; no UI files will be edited.
+WHY: Phase 1 acceptance requires a live assigned catalog, secure start/resume, status/result metadata, and valid nested fixture images.
+NEXT: Add integration checks for assigned catalog metadata and attempt start/resume/submission, verify nested media serving, then fix only backend contract gaps demonstrated by tests.
+
+### [2026-10-02 18:05 UTC] Codex — Phase 2: Practice and Mocks backend increment complete
+STATUS: DONE
+FILES: src/practice.js, src/exam-api.js, src/schema.js, src/exams.js, test/workspace-v2-phase3.test.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Replaced synthetic practice-bank fallbacks with actual imported-question matching, stable deduplicated sets, persisted answer progress/resume state, per-student bookmarks, and filter-aware counts. Added student analytics/overview aggregation for active/completed attempts, accuracy, marks, timing, skips, negative marks, topic reliability, and practice calendar activity.
+WHY: Implements the revised Phase 2 and Phase 3 backend/API contracts while keeping practice progress distinct from timed exam attempts; empty banks now report empty states honestly.
+EVIDENCE: Focused practice/overview integration tests pass 3/3; full `npm test` passes 72/72 at the end of this increment.
+NEXT: Continue Phase 1 Library API validation; UI wiring remains with Antigravity until handoff.
+
+### [2026-10-02 18:10 UTC] Codex — Phase 1: Library API integration verified
+STATUS: DONE
+FILES: test/library-api.test.js, PROGRESS_LOG.md
+WHAT: Added an end-to-end Library API test covering catalog metadata and answer-key privacy, assignment visibility/start enforcement, stable attempt resume ID, submitted status/result propagation, and nested fixture image serving.
+WHY: Verifies the revised Phase 1 Library acceptance criteria over the actual HTTP API and media route.
+EVIDENCE: `node --test test/library-api.test.js` passes 1/1; full `npm test` passes 73/73.
+NEXT: After Antigravity completes the shell/Library UI, perform browser verification and wire any requested UI gaps through an explicit handoff.

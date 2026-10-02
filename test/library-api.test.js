@@ -1,0 +1,50 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { once } from 'node:events';
+import { openDatabase } from '../src/database.js';
+import { migrate } from '../src/schema.js';
+import { createApp } from '../src/app.js';
+import { createUser, digest } from '../src/auth.js';
+import { importExam } from '../src/exams.js';
+
+test('Phase 1 Library: assigned metadata, secure start/resume, submitted status, nested image', async t => {
+  const db = await openDatabase({ SQLITE_PATH: ':memory:' });
+  await migrate(db);
+  const student = await createUser(db, { loginId: 'library_student', name: 'Library Student', role: 'student', password: 'Password12345!', phone: '919876543211' });
+  const outsider = await createUser(db, { loginId: 'library_outsider', name: 'Library Outsider', role: 'student', password: 'Password12345!', phone: '919876543212' });
+  const token = 'a'.repeat(64), outsiderToken = 'b'.repeat(64);
+  for (const [value, user] of [[token, student], [outsiderToken, outsider]]) await db.query('INSERT INTO sessions(token_hash,user_id,created_at,expires_at) VALUES($1,$2,$3,$4)', [digest(value), user.id, Date.now(), Date.now() + 86400000]);
+  const exam = { id: 'library-phase1-test', title: 'Library Phase 1 Test Paper', durationSeconds: 600, totalQuestions: 1, maxMarks: 2, instructions: ['Choose one answer.'], sections: [{ id: 'part-a', title: 'Part A' }], questions: [{ id: 'q1', sectionId: 'part-a', type: 'MCQ', prompt: 'What is the answer?', options: [{ id: 'a', text: 'A' }, { id: 'b', text: 'B' }], answer: 'a', marks: { correct: 2, incorrect: -1, unanswered: 0 } }] };
+  await importExam(db, exam, [student.id]);
+  const app = createApp(db, { otp: { send: async () => 'fixture', verify: async () => true } });
+  app.server.listen(0, '127.0.0.1'); await once(app.server, 'listening');
+  t.after(async () => { await new Promise(resolve => app.server.close(resolve)); await db.close(); });
+  const base = `http://127.0.0.1:${app.server.address().port}`;
+  const headers = value => ({ Cookie: `brds_session=${value}`, Origin: base, 'Content-Type': 'application/json' });
+  const studentHeaders = headers(token), outsiderHeaders = headers(outsiderToken);
+  const listed = await fetch(`${base}/api/exams`, { headers: studentHeaders });
+  assert.equal(listed.status, 200);
+  const catalog = (await listed.json()).exams;
+  assert.equal(catalog.length, 1);
+  assert.deepEqual({ id: catalog[0].id, title: catalog[0].title, durationSeconds: catalog[0].durationSeconds, totalQuestions: catalog[0].totalQuestions, maxMarks: catalog[0].maxMarks, status: catalog[0].status }, { id: exam.id, title: exam.title, durationSeconds: 600, totalQuestions: 1, maxMarks: 2, status: 'available' });
+  assert.ok(!JSON.stringify(catalog).includes('"answer"'));
+  assert.equal((await fetch(`${base}/api/exams`, { headers: outsiderHeaders })).status, 200);
+  assert.equal((await (await fetch(`${base}/api/exams`, { headers: outsiderHeaders })).json()).exams.length, 0);
+  assert.equal((await fetch(`${base}/api/exams/${exam.id}/start`, { method: 'POST', headers: outsiderHeaders, body: '{}' })).status, 404);
+
+  const started = await fetch(`${base}/api/exams/${exam.id}/start`, { method: 'POST', headers: studentHeaders, body: '{}' });
+  assert.equal(started.status, 200);
+  const attempt = await started.json();
+  assert.equal(attempt.status, 'active'); assert.ok(attempt.id); assert.ok(!Object.hasOwn(attempt.exam.questions[0], 'answer'));
+  const listedInProgress = (await (await fetch(`${base}/api/exams`, { headers: studentHeaders })).json()).exams[0];
+  assert.equal(listedInProgress.status, 'active'); assert.equal(listedInProgress.attemptId, attempt.id);
+  const resumed = await fetch(`${base}/api/exams/${exam.id}/start`, { method: 'POST', headers: studentHeaders, body: '{}' });
+  assert.equal((await resumed.json()).id, attempt.id);
+  const submitted = await fetch(`${base}/api/attempts/${attempt.id}/submit`, { method: 'POST', headers: studentHeaders, body: JSON.stringify({ expectedVersion: 0 }) });
+  assert.equal(submitted.status, 200);
+  const final = (await (await fetch(`${base}/api/exams`, { headers: studentHeaders })).json()).exams[0];
+  assert.equal(final.status, 'submitted'); assert.equal(final.result.score, 0);
+
+  const image = await fetch(`${base}/media/spatial-worksheet/page-02.png`);
+  assert.equal(image.status, 200); assert.match(image.headers.get('content-type'), /^image\/png/);
+});

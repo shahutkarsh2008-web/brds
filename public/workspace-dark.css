@@ -866,4 +866,39 @@ body:not(.light-mode) .overview-flow > .card {
 .sample-threshold-banner { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); color: var(--accent-blue); padding: 12px 16px; border-radius: 12px; font-size: 0.84rem; font-weight: 600; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .practice-error-message { color: #ef4444; font-size: .85rem; font-weight: 700; margin: 10px 0; }
 
+/* Mock Calendar & Schedule Styles */
+.mock-calendar-list { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+.mock-calendar-item { background: var(--bg-input); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 16px 20px; transition: all 0.2s ease; }
+.mock-calendar-item:hover { border-color: var(--border-hover); }
+
+/* GK Retention & Flashcard Mastery Styles */
+.gk-retention-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 10px; }
+
+/* Mock Progress Timeline Styles */
+.mock-timeline-list { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+.mock-timeline-item { background: var(--bg-input); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 16px; }
+
+/* Next 45-Minutes Action Plan Styles */
+.next-45-container { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 20px; }
+
+/* Responsive Media Queries (Desktop 1440px, Tablet 1024px, Narrow 360-768px) */
+@media (max-width: 1024px) {
+  .app-main { padding: 20px 24px; }
+  .overview-insight-grid { grid-template-columns: 1fr; }
+  .leakage-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .app-main { padding: 16px 12px; overflow-x: hidden; }
+  .header-left h1 { font-size: 1.3rem; }
+  .top-header-bar { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .header-right { width: 100%; justify-content: space-between; }
+  .mock-card-grid { grid-template-columns: 1fr; }
+  .swot-grid { grid-template-columns: 1fr; }
+  .leakage-grid { grid-template-columns: 1fr; }
+  .risk-table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  .overview-optimization-grid { grid-template-columns: 1fr 1fr; }
+}
+
+
 

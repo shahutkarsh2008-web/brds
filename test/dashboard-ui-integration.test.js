@@ -70,6 +70,10 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
   assert.match(mocksText, /Completed Mock/);
   assert.match(mocksText, /Resume Mock/);
   assert.match(mocksText, /View Scorecard/);
+  assert.match(mocksText, /Scheduled Mock Exam Calendar/);
+  assert.match(mocksText, /No scheduled mock exams are currently configured/);
+  assert.doesNotMatch(mocksText, /78\.4%/);
+  assert.doesNotMatch(mocksText, /Oct 12, 2026/);
 
   analyticsPayload = {
     sample: { completedAttempts: 1, reliableTrends: false, topicThreshold: 10 },
@@ -87,6 +91,11 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
   assert.doesNotMatch(analyticsText, /null%/);
   assert.match(analyticsText, /No reliable strengths yet/);
   assert.match(analyticsText, /1 unanswered question/);
+  assert.match(analyticsText, /GK Flashcard Mastery & Retention/);
+  assert.match(analyticsText, /GK flashcard retention data is not available yet/);
+  assert.match(analyticsText, /Mock Exam Score Trajectory & Timeline/);
+  assert.match(analyticsText, /Targeted Action Plan/);
+  assert.doesNotMatch(analyticsText, /78\.4%/);
 
   const examFilterSelect = [...dom.window.document.querySelectorAll('.analytics-container select')].at(-1);
   examFilterSelect.value = 'uceed-2025';
@@ -99,7 +108,7 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
   analyticsPayload = {
     ...analyticsPayload,
     sample: { completedAttempts: 3, reliableTrends: true, topicThreshold: 10 },
-    attempts: [1, 2, 3].map(index => ({ ...analyticsPayload.attempts[0], attemptId: `a${index}`, title: `UCEED 2026 Mini Mock ${index}`, submittedAt: Date.now() - index * 86400000 })),
+    attempts: [1, 2, 3].map(index => ({ ...analyticsPayload.attempts[0], attemptId: `a${index}`, status: 'submitted', title: `UCEED 2026 Mini Mock ${index}`, submittedAt: Date.now() - index * 86400000 })),
     trend: [1, 2, 3].map(index => ({ attemptId: `a${index}`, score: index * 3, maxMarks: 6, percentage: index * 10, submittedAt: Date.now() - index * 86400000 }))
   };
   const refresh = [...dom.window.document.querySelectorAll('button')].find(button => button.textContent.includes('Refresh Analytics'));
@@ -108,6 +117,8 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
   assert.doesNotMatch(analyticsText, /Complete 3 full-length mocks/);
   assert.match(analyticsText, /3 mock\(s\) completed/);
   assert.match(analyticsText, /-9\.0 Marks Total Leak/);
+  assert.match(analyticsText, /GK Flashcard Mastery & Retention/);
+  assert.match(analyticsText, /Targeted Action Plan/);
   dom.window.close();
 });
 

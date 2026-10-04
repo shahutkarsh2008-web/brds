@@ -1086,7 +1086,23 @@ async function mocksView() {
     ]);
   }));
 
-  wrap.append(card('Available Mock Papers', [grid]));
+  const calendarCard = card('🗓️ Scheduled Mock Exam Calendar', [
+    el('div', { className: 'mock-calendar-empty' }, [
+      el('p', { className: 'card-stat-desc', style: 'margin-bottom: 12px; font-size: 0.9rem;' }, [
+        'No scheduled mock exams are currently configured for your account. All available papers can be attempted on-demand from the Papers Library.'
+      ]),
+      el('button', {
+        className: 'btn btn-outline',
+        style: 'font-size:0.82rem;',
+        onclick: () => {
+          state.tab = 'papers';
+          render();
+        }
+      }, ['Browse Available Papers in Library →'])
+    ])
+  ]);
+
+  wrap.append(card('Available Mock Papers', [grid]), calendarCard);
   return [wrap];
 }
 
@@ -1398,16 +1414,52 @@ async function analyticsView() {
     ])
   ]);
 
-  // Next Best Action Recommendation
-  const nba = data?.nextBestAction || { title: 'Complete a Practice Set', reason: 'Attempt questions to unlock weak topic analysis.' };
+  // Mock Timeline Progress Panel (Submitted attempts in chronological order)
+  const submittedAttempts = (data?.attempts || []).filter(att => att.status === 'submitted');
+  const mockTimelinePanel = card('📈 Mock Exam Score Trajectory & Timeline', [
+    el('div', { className: 'mock-timeline-list' }, submittedAttempts.length === 0 ? [
+      el('p', { className: 'card-stat-desc' }, ['No submitted mock attempts to chart yet. Complete a paper from Library to populate timeline.'])
+    ] : submittedAttempts.map((att, idx) => el('div', { className: 'mock-timeline-item' }, [
+      el('div', { style: 'display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;' }, [
+        el('div', {}, [
+          el('span', { className: 'year-badge' }, [`Mock #${idx + 1}`]),
+          el('strong', { style: 'margin-left:8px; font-size:0.95rem; color:var(--text-primary);' }, [att.title || att.examId]),
+          el('span', { className: 'card-stat-desc', style: 'margin-left:8px;' }, [att.submittedAt ? new Date(att.submittedAt).toLocaleDateString() : 'Recent'])
+        ]),
+        el('div', { style: 'display:flex; align-items:center; gap:12px;' }, [
+          el('span', { className: 'status-chip ready' }, [`${att.accuracy ?? att.percentage ?? 0}% Accuracy`]),
+          el('strong', { style: 'color:var(--brds-red); font-size:1.1rem;' }, [`${att.score} / ${att.maxMarks} Marks`])
+        ])
+      ]),
+      el('div', { className: 'progress-bar-wrap', style: 'margin-top:10px;' }, [
+        el('div', { className: `progress-bar-fill ${(att.percentage ?? 0) >= 70 ? 'high' : (att.percentage ?? 0) >= 50 ? 'medium' : 'low'}`, style: `width:${Math.max(5, att.percentage ?? 0)}%;` })
+      ])
+    ])))
+  ]);
+
+  // GK Flashcard Mastery & Retention Panel (Honest unconfigured state)
+  const gkRetentionPanel = card('📚 GK Flashcard Mastery & Retention', [
+    el('p', { className: 'card-stat-desc', style: 'margin-bottom:12px; font-size:0.9rem;' }, [
+      'GK flashcard retention data is not available yet. Attempt flashcard practice rounds in GK Sprint to record retention metrics.'
+    ]),
+    el('button', {
+      className: 'btn btn-outline',
+      style: 'padding:6px 14px; font-size:0.8rem;',
+      onclick: () => { state.tab = 'gk'; render(); }
+    }, ['Open GK Sprint →'])
+  ]);
+
+  // Targeted Action Plan (Derived truthfully from data.nextBestAction)
+  const nba = data?.nextBestAction || { title: 'Choose a paper from Library', reason: 'Start a full-length timed mock paper to test exam readiness.' };
   const nextActionCard = card('Targeted Action Plan', [
     el('div', { className: 'overview-cta-row' }, [
       el('div', {}, [
-        el('strong', { style: 'font-size:1.05rem; display:block;' }, [nba.title]),
-        el('span', {}, [nba.reason])
+        el('strong', { style: 'font-size:1.05rem; display:block; color:var(--text-primary);' }, [nba.title]),
+        el('span', { className: 'card-stat-desc', style: 'display:block; margin-top:4px;' }, [nba.reason])
       ]),
       el('button', {
         className: 'btn btn-primary',
+        style: 'padding:10px 18px; font-size:0.9rem;',
         onclick: () => {
           if (nba.topic) {
             state.tab = 'practice';
@@ -1417,11 +1469,11 @@ async function analyticsView() {
           }
           render();
         }
-      }, [nba.topic ? `Practice ${nba.topic} →` : 'Start Practice →'])
+      }, [nba.topic ? `Practice ${nba.topic} →` : 'Open Practice Builder →'])
     ])
   ]);
 
-  wrap.append(heroMetrics, leakagePanel, strategyCard, riskCard, swotMatrix, nextActionCard);
+  wrap.append(heroMetrics, leakagePanel, mockTimelinePanel, strategyCard, riskCard, gkRetentionPanel, swotMatrix, nextActionCard);
   return [wrap];
 }
 

@@ -433,12 +433,25 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       try { answers = JSON.parse(row.answers_json || '{}'); } catch {}
       try { result = row.result_json ? JSON.parse(row.result_json) : null; } catch {}
       const questions = Array.isArray(exam.questions) ? exam.questions : [];
+      const sectionTitles = new Map((exam.sections || []).map(section => [section.id, section.title]));
+      const questionsById = new Map(questions.map(question => [question.id, question]));
       const submitted = row.status === 'submitted';
       const answered = Object.keys(answers).length;
       const elapsedSeconds = submitted && row.submitted_at
         ? Math.max(0, Math.round((Number(row.submitted_at) - Number(row.started_at)) / 1000))
         : null;
       const details = result?.questions || [];
+      const analyticsQuestions = details.map(detail => {
+        const question = questionsById.get(detail.questionId || detail.id);
+        if (!question) return detail;
+        return {
+          ...detail,
+          questionId: question.id,
+          type: question.type,
+          topic: question.topic || question.category || sectionTitles.get(question.sectionId) || question.sectionId || 'Uncategorised',
+          maxMarks: question.marks.correct
+        };
+      });
       const outcomes = details.reduce((acc, question) => {
         acc[question.outcome] = (acc[question.outcome] || 0) + 1;
         return acc;
@@ -451,7 +464,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
         timeTakenSeconds: elapsedSeconds, correct: Number(outcomes.correct || 0), incorrect: Number(outcomes.incorrect || 0),
         partial: Number(outcomes.partial || 0), skipped: submitted ? Math.max(0, questions.length - answered) : null,
         negativeMarks: Number(details.reduce((sum, q) => sum + Math.max(0, -(Number(q.marks) || 0)), 0).toFixed(2)),
-        sections: result?.sections || [], questions: details
+        sections: result?.sections || [], questions: analyticsQuestions
       };
     });
     const completed = attempts.filter(attempt => attempt.status === 'submitted');
@@ -459,13 +472,15 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     const answered = sum('correct') + sum('incorrect') + sum('partial');
     const accuracy = answered ? Number((sum('correct') / answered * 100).toFixed(2)) : null;
     const totalTime = sum('timeTakenSeconds');
+    const totalQuestions = completed.reduce((total, attempt) => total + attempt.questionCount, 0);
+    const potentialMarks = Number(completed.reduce((total, attempt) => total + Number(attempt.maxMarks || 0), 0).toFixed(2));
     const topicTotals = new Map();
     for (const attempt of completed) {
       const exam = JSON.parse(rows.find(row => row.id === attempt.attemptId)?.exam_json || '{}');
       const byId = new Map((exam.questions || []).map(question => [question.id, question]));
       for (const detail of attempt.questions) {
         const question = byId.get(detail.questionId || detail.id);
-        const topic = question?.topic || question?.category || question?.sectionId || 'Uncategorised';
+      const topic = question?.topic || question?.category || exam.sections?.find(section => section.id === question?.sectionId)?.title || question?.sectionId || 'Uncategorised';
         const current = topicTotals.get(topic) || { topic, correct: 0, attempted: 0, marks: 0, maxMarks: 0, count: 0 };
         current.count++;
         if (detail.outcome !== 'unanswered') current.attempted++;
@@ -489,17 +504,18 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       for (const detail of attempt.questions) {
         const question = byId.get(detail.questionId || detail.id);
         if (!question) continue;
-        const topic = question.topic || question.category || question.sectionId || 'Uncategorised';
-        const current = questionStats.get(question.id) || { questionId: question.id, topic, type: question.type, prompt: question.prompt, attempts: 0, wrong: 0, skipped: 0, partial: 0, negativeMarks: 0, marksLost: 0 };
+        const topic = question.topic || question.category || exam.sections?.find(section => section.id === question.sectionId)?.title || question.sectionId || 'Uncategorised';
+        const questionKey = `${attempt.examId}:${question.id}`;
+        const current = questionStats.get(questionKey) || { examId: attempt.examId, questionId: question.id, topic, type: question.type, prompt: question.prompt, attempts: 0, wrong: 0, skipped: 0, partial: 0, negativeMarks: 0, marksLost: 0 };
         current.attempts++;
         if (detail.outcome === 'incorrect') current.wrong++;
         if (detail.outcome === 'unanswered') current.skipped++;
         if (detail.outcome === 'partial') current.partial++;
         current.negativeMarks += Math.max(0, -(Number(detail.marks) || 0));
         current.marksLost += Math.max(0, (Number(question.marks?.correct) || 0) - (Number(detail.marks) || 0));
-        questionStats.set(question.id, current);
+        questionStats.set(questionKey, current);
         const type = typeStats.get(question.type) || { type: question.type, attempted: 0, correct: 0, incorrect: 0, partial: 0, skipped: 0, marks: 0, maxMarks: 0 };
-        type.attempted++;
+        if (detail.outcome !== 'unanswered') type.attempted++;
         if (detail.outcome === 'correct') type.correct++;
         if (detail.outcome === 'incorrect') type.incorrect++;
         if (detail.outcome === 'partial') type.partial++;
@@ -533,8 +549,9 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
         activeAttempts: attempts.filter(attempt => attempt.status === 'active').length,
         questionsAnswered: completed.reduce((total, attempt) => total + attempt.answeredCount, 0),
         accuracyPct: accuracy,
-        averageTimeSeconds: completed.length ? Math.round(totalTime / completed.length) : null,
+        averageTimeSeconds: completed.length && totalQuestions ? Math.round(totalTime / totalQuestions) : null,
         marks: completed.length ? Number(sum('score').toFixed(2)) : null,
+        potentialMarks: completed.length ? potentialMarks : null,
         skipped: completed.length ? sum('skipped') : null,
         negativeMarks: completed.length ? Number(sum('negativeMarks').toFixed(2)) : null
       },

@@ -8,6 +8,7 @@ const tick = () => new Promise(resolve => setTimeout(resolve, 0));
 
 test('dashboard parses, Library shows honest metadata, and filtered Practice create opens fetched MSQ content', async () => {
   const calls = [];
+  let analyticsPayload = null;
   const dom = new JSDOM('<!doctype html><html><body><div id="app"></div></body></html>', {
     url: 'http://localhost/dashboard', runScripts: 'outside-only', virtualConsole: new VirtualConsole()
   });
@@ -16,7 +17,8 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
     const path = String(url);
     calls.push({ path, options, body: options.body ? JSON.parse(options.body) : null });
     let payload = {};
-    if (path === '/api/student/dashboard') payload = { user: { name: 'Test Student', targetExam: 'UCEED 2026' }, sparks: 0, kpis: { questionsAnswered: 0, completedAttempts: 0 }, calendar: [], attempts: [], topics: [], nextBestAction: { title: 'Start', reason: 'Try a paper.' } };
+    if (path === '/api/student/dashboard') payload = analyticsPayload || { user: { name: 'Test Student', targetExam: 'UCEED 2026' }, sparks: 0, kpis: { questionsAnswered: 0, completedAttempts: 0 }, calendar: [], attempts: [], topics: [], nextBestAction: { title: 'Start', reason: 'Try a paper.' } };
+    else if (path === '/api/student/analytics') payload = analyticsPayload || { sample: { completedAttempts: 0, reliableTrends: false, topicThreshold: 10 }, kpis: { completedAttempts: 0 }, attempts: [], topics: [], marksLeaks: [], questionStrategy: [], riskMap: [], trend: [], calendar: [], nextBestAction: { title: 'Complete practice', reason: 'Need more attempts.' } };
     else if (path === '/api/exams') payload = { exams: [
       { id: 'library-paper', title: 'Library Paper', totalQuestions: null, maxMarks: null, durationSeconds: null, hasImages: false, status: 'available' },
       { id: 'active-paper', title: 'Active Mock', totalQuestions: 2, maxMarks: 6, durationSeconds: 600, hasImages: false, status: 'active', attemptId: 'attempt-active' },
@@ -68,5 +70,45 @@ test('dashboard parses, Library shows honest metadata, and filtered Practice cre
   assert.match(mocksText, /Completed Mock/);
   assert.match(mocksText, /Resume Mock/);
   assert.match(mocksText, /View Scorecard/);
+
+  analyticsPayload = {
+    sample: { completedAttempts: 1, reliableTrends: false, topicThreshold: 10 },
+    kpis: { completedAttempts: 1, questionsAnswered: 1, accuracyPct: 100, averageTimeSeconds: 15, marks: 3, skipped: 1, negativeMarks: 0 },
+    attempts: [{ attemptId: 'a1', examId: 'uceed-2026-mini', title: 'UCEED 2026 Mini Mock', status: 'submitted', submittedAt: Date.now(), score: 3, maxMarks: 6, percentage: 50, answeredCount: 1, correct: 1, incorrect: 0, partial: 0, skipped: 1, negativeMarks: 0, timeTakenSeconds: 15, questions: [
+      { questionId: 'q1', type: 'MSQ', topic: 'Spatial Reasoning', outcome: 'correct', marks: 3, maxMarks: 3 },
+      { questionId: 'q2', type: 'MSQ', topic: 'Spatial Reasoning', outcome: 'unanswered', marks: 0, maxMarks: 3 }
+    ] }],
+    topics: [], marksLeaks: [], questionStrategy: [], riskMap: [], trend: [], calendar: [{ date: new Date().toISOString().slice(0, 10), questions: 1 }],
+    nextBestAction: { title: 'Build a reliable topic sample', reason: 'More questions needed.' }
+  };
+  nav[1].click(); await tick(); await tick();
+  let analyticsText = documentText(dom.window);
+  assert.match(analyticsText, /Baseline analytics loaded from 1 completed attempt/);
+  assert.doesNotMatch(analyticsText, /null%/);
+  assert.match(analyticsText, /No reliable strengths yet/);
+  assert.match(analyticsText, /1 unanswered question/);
+
+  const examFilterSelect = [...dom.window.document.querySelectorAll('.analytics-container select')].at(-1);
+  examFilterSelect.value = 'uceed-2025';
+  examFilterSelect.dispatchEvent(new dom.window.Event('change', { bubbles: true })); await tick(); await tick();
+  analyticsText = documentText(dom.window);
+  assert.match(analyticsText, /No Completed Exam Attempts Found/);
+  examFilterSelect.value = 'all';
+  examFilterSelect.dispatchEvent(new dom.window.Event('change', { bubbles: true })); await tick(); await tick();
+
+  analyticsPayload = {
+    ...analyticsPayload,
+    sample: { completedAttempts: 3, reliableTrends: true, topicThreshold: 10 },
+    attempts: [1, 2, 3].map(index => ({ ...analyticsPayload.attempts[0], attemptId: `a${index}`, title: `UCEED 2026 Mini Mock ${index}`, submittedAt: Date.now() - index * 86400000 })),
+    trend: [1, 2, 3].map(index => ({ attemptId: `a${index}`, score: index * 3, maxMarks: 6, percentage: index * 10, submittedAt: Date.now() - index * 86400000 }))
+  };
+  const refresh = [...dom.window.document.querySelectorAll('button')].find(button => button.textContent.includes('Refresh Analytics'));
+  refresh.click(); await tick(); await tick();
+  analyticsText = documentText(dom.window);
+  assert.doesNotMatch(analyticsText, /Complete 3 full-length mocks/);
+  assert.match(analyticsText, /3 mock\(s\) completed/);
+  assert.match(analyticsText, /-9\.0 Marks Total Leak/);
   dom.window.close();
 });
+
+function documentText(dom) { return dom.window.document.querySelector('#app').textContent; }

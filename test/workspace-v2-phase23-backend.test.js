@@ -120,6 +120,7 @@ test('Phase 3: overview has honest empty state and completed attempt KPIs, trend
   assert.equal(result.body.kpis.accuracyPct, 50);
   assert.equal(result.body.kpis.skipped, 2);
   assert.equal(result.body.kpis.negativeMarks, 1);
+  assert.equal(result.body.kpis.potentialMarks, 10);
   assert.equal(result.body.sample.reliableTrends, false);
   assert.ok(result.body.topics.some(topic => topic.topic === 'Spatial Reasoning' && topic.accuracy === 50 && topic.reliable === false));
   assert.equal(result.body.trend.length, 0);
@@ -127,6 +128,10 @@ test('Phase 3: overview has honest empty state and completed attempt KPIs, trend
   assert.ok(result.body.questionStrategy.some(item => item.type === 'MCQ'));
   assert.ok(result.body.riskMap.some(item => item.topic === 'Spatial Reasoning' && item.risk === 'insufficient_data'));
   assert.equal(result.body.nextBestAction.type, 'collect_sample');
+  assert.equal(result.body.questionStrategy.find(item => item.type === 'MCQ').attempted, 2, 'unanswered questions must not count as attempted');
+  assert.equal(result.body.questionStrategy.find(item => item.type === 'MCQ').skipped, 1);
+  assert.equal(result.body.attempts[0].questions[0].topic, 'Spatial Reasoning');
+  assert.equal(result.body.attempts[0].questions[0].type, 'MCQ');
   assert.equal(result.body.calendar.length, 1);
 });
 

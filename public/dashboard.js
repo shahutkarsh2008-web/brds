@@ -30,7 +30,8 @@ const state = {
   practiceFeedback: null,
   mockFilter: 'all',
   analyticsDate: 'all',
-  analyticsExam: 'all'
+  analyticsExam: 'all',
+  analyticsError: null
 };
 
 const app = document.querySelector('#app');
@@ -63,6 +64,18 @@ async function apiFetch(url, options = {}) {
   const data = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(data.error || data.message || `HTTP ${r.status}`);
   return data;
+}
+
+function invalidateAttemptAnalytics() {
+  state.overviewData = null;
+  state.analyticsData = null;
+}
+
+function isWithinAnalyticsDate(value) {
+  if (!value || state.analyticsDate === 'all') return true;
+  const submittedAt = Number(value);
+  const days = state.analyticsDate === '7days' ? 7 : 30;
+  return Number.isFinite(submittedAt) && submittedAt >= Date.now() - days * 24 * 60 * 60 * 1000;
 }
 
 function card(title, body, cls = 'card') {
@@ -123,8 +136,8 @@ function header(title, sub) {
       el('div', { className: 'exam-target-pill' }, [`🎯 Target: ${target}`]),
       el('div', { className: 'sparks-widget' }, [
         el('span', { className: 'sparks-icon-star' }, ['✦']),
-        el('span', {}, [String(state.overviewData?.sparks ?? 0)]),
-        el('span', { className: 'sparks-info-icon', title: 'Sparks earned from practice consistency' }, ['i'])
+        el('span', {}, [state.overviewData?.sparks === undefined ? '—' : String(state.overviewData.sparks)]),
+        el('span', { className: 'sparks-info-icon', title: state.overviewData?.sparks === undefined ? 'Practice rewards are not tracked yet' : 'Sparks earned from practice consistency' }, ['i'])
       ]),
       el('button', {
         className: 'btn btn-outline',
@@ -140,13 +153,21 @@ async function overview() {
   const wrap = el('div', { className: 'overview-container' });
 
   let data = state.overviewData;
-  if (!data) {
-    try {
-      data = await apiFetch('/api/student/dashboard');
-      state.overviewData = data;
-    } catch (e) {
-      console.warn('Unable to load dashboard data:', e.message);
-    }
+  let overviewError = null;
+  try {
+    data = await apiFetch('/api/student/dashboard');
+    state.overviewData = data;
+  } catch (e) {
+    overviewError = e.message || 'Unable to load dashboard data.';
+    console.warn('Unable to load dashboard data:', e.message);
+  }
+
+  if (overviewError) {
+    wrap.append(header('Overview Dashboard', 'Track daily practice, full-length papers, and exam readiness.'), card('Dashboard Could Not Be Loaded', [
+      el('p', { className: 'card-stat-desc' }, [overviewError]),
+      el('button', { className: 'btn btn-outline', onclick: () => { state.overviewData = null; render(); } }, ['Retry Dashboard'])
+    ]));
+    return [wrap];
   }
 
   const kpis = data?.kpis || {};
@@ -154,7 +175,7 @@ async function overview() {
 
   const metrics = el('div', { className: 'card-grid' }, [
     ['Questions Solved', String(kpis.questionsAnswered ?? 0)],
-    ['Practice Time', kpis.averageTimeSeconds ? `${kpis.averageTimeSeconds}s / Q` : '0s'],
+    ['Average Exam Time / Question', kpis.averageTimeSeconds !== null && kpis.averageTimeSeconds !== undefined ? `${kpis.averageTimeSeconds}s / Q` : '—'],
     ['Papers Attempted', String(kpis.completedAttempts ?? 0)],
     ['Overall Accuracy', kpis.accuracyPct !== null && kpis.accuracyPct !== undefined ? `${kpis.accuracyPct}%` : '—']
   ].map(([a, b]) => card(a, [
@@ -164,13 +185,20 @@ async function overview() {
 
   const calendarDays = data?.calendar || [];
   const activeStreak = calendarDays.length;
+  const activityByDay = new Map(calendarDays.map(day => [day.date, day]));
+  const today = new Date();
+  const calendarCells = Array.from({ length: 90 }, (_, index) => {
+    const date = new Date(today);
+    date.setDate(today.getDate() - (89 - index));
+    const key = date.toISOString().slice(0, 10);
+    return { date: key, activity: activityByDay.get(key) };
+  });
 
-  const heat = card(`365-Day Consistency Calendar (${activeStreak} Active Days)`, [
+  const heat = card(`90-Day Consistency Calendar (${activeStreak} Active Days)`, [
     el('div', { className: 'heatmap-container' }, [
-      el('div', { className: 'heatmap-grid' }, Array.from({ length: 90 }, (_, i) => {
-        const item = calendarDays[i];
-        const lvl = item ? (item.questions > 15 ? 'level-4' : item.questions > 8 ? 'level-3' : 'level-2') : '';
-        return el('span', { className: `heatmap-cell ${lvl}`, title: item ? `${item.date}: ${item.questions} Qs` : `Day ${i + 1}` });
+      el('div', { className: 'heatmap-grid' }, calendarCells.map(({ date, activity }) => {
+        const lvl = activity ? (activity.questions > 15 ? 'level-4' : activity.questions > 8 ? 'level-3' : 'level-2') : '';
+        return el('span', { className: `heatmap-cell ${lvl}`, title: activity ? `${date}: ${activity.questions} Qs` : `${date}: No recorded activity` });
       }))
     ])
   ]);
@@ -217,7 +245,8 @@ async function overview() {
     ])))
   ]);
 
-  const topicList = data?.topics || [];
+  const topicThreshold = sample.topicThreshold || 10;
+  const topicList = (data?.topics || []).filter(topic => topic.attempted >= topicThreshold && topic.accuracy !== null);
   const insight = el('div', { className: 'overview-insight-grid' }, [
     card('Topic Mastery Breakdown', topicList.length === 0 ? [
       el('p', { className: 'card-stat-desc' }, ['Attempt at least 10 questions in a topic to calculate mastery score.'])
@@ -231,14 +260,14 @@ async function overview() {
       ])
     ])))),
     el('div', { className: 'overview-side-stack' }, [
-      card('Recent Sparks', [
+      card('Practice Rewards', [
         el('div', {}, [
-          el('span', { className: 'overview-spark-title' }, ['Daily Sign-in Streak']),
-          el('span', { className: 'overview-spark-score' }, [`${data?.sparks ?? 0} Sparks`])
+          el('span', { className: 'overview-spark-title' }, [data?.sparks === undefined ? 'Reward tracking is not configured' : 'Practice Sparks']),
+          el('span', { className: 'overview-spark-score' }, [data?.sparks === undefined ? '—' : `${data.sparks} Sparks`])
         ])
       ]),
       card('Recommended Sets', [
-        el('p', { className: 'card-stat-desc', style: 'margin-bottom: 12px;' }, ['Build a custom practice set across Spatial Reasoning or Design Sensitivity.']),
+        el('p', { className: 'card-stat-desc', style: 'margin-bottom: 12px;' }, [nba.topic ? `Build a practice set for ${nba.topic}.` : 'Build a practice set to collect topic-level results.']),
         el('button', {
           className: 'btn btn-outline',
           onclick: () => {
@@ -255,7 +284,7 @@ async function overview() {
       ['Active Study Days', `${activeStreak} Days`],
       ['Paper Completion', `${kpis.completedAttempts ?? 0} Papers`],
       ['Tracked Weak Topics', `${topicList.filter(t => t.accuracy < 50).length} Topics`],
-      ['Avg Time per Question', kpis.averageTimeSeconds ? `${kpis.averageTimeSeconds}s` : '—']
+      ['Avg Time per Question', kpis.averageTimeSeconds !== null && kpis.averageTimeSeconds !== undefined ? `${kpis.averageTimeSeconds}s` : '—']
     ].map(([x, val]) => el('div', { className: 'overview-optimization-tile' }, [
       el('div', { className: 'card-header-title' }, [x]),
       el('strong', {}, [val])
@@ -411,6 +440,7 @@ async function library() {
                 btn.textContent = 'Launching Exam...';
                 try {
                   const startData = await apiFetch(`/api/exams/${encodeURIComponent(paperId)}/start`, { method: 'POST' });
+                  invalidateAttemptAnalytics();
                   const attemptId = startData.id || startData.attemptId;
                   if (!attemptId) throw new Error('Server did not return a valid attempt ID');
                   location.assign(`/exam.html?id=${encodeURIComponent(attemptId)}`);
@@ -1069,7 +1099,7 @@ async function analyticsView() {
       el('select', {
         className: 'filter-select',
         value: state.analyticsDate || 'all',
-        onchange: (e) => { state.analyticsDate = e.target.value; render(); }
+        onchange: (e) => { state.analyticsDate = e.target.value; state.analyticsData = null; render(); }
       }, [
         el('option', { value: 'all' }, ['All Time']),
         el('option', { value: '30days' }, ['Last 30 Days']),
@@ -1078,7 +1108,7 @@ async function analyticsView() {
       el('select', {
         className: 'filter-select',
         value: state.analyticsExam || 'all',
-        onchange: (e) => { state.analyticsExam = e.target.value; render(); }
+        onchange: (e) => { state.analyticsExam = e.target.value; state.analyticsData = null; render(); }
       }, [
         el('option', { value: 'all' }, ['All Papers & Mocks']),
         el('option', { value: 'uceed-2026' }, ['UCEED 2026']),
@@ -1090,6 +1120,7 @@ async function analyticsView() {
       className: 'btn btn-outline',
       onclick: () => {
         state.analyticsData = null;
+        state.analyticsError = null;
         render();
       }
     }, ['🔄 Refresh Analytics'])
@@ -1098,18 +1129,97 @@ async function analyticsView() {
   wrap.append(filterBar);
 
   let data = state.analyticsData;
-  if (!data) {
-    try {
-      data = await apiFetch('/api/student/analytics');
-      state.analyticsData = data;
-    } catch (e) {
-      console.warn('Analytics fetch error:', e.message);
-    }
+  try {
+    data = await apiFetch('/api/student/analytics');
+    state.analyticsData = data;
+    state.analyticsError = null;
+  } catch (e) {
+    state.analyticsError = e.message || 'Unable to load analytics.';
+    console.warn('Analytics fetch error:', e.message);
   }
+  if (state.analyticsError) {
+    wrap.append(card('Analytics Could Not Be Loaded', [
+      el('p', { className: 'card-stat-desc' }, [state.analyticsError]),
+      el('button', { className: 'btn btn-outline', onclick: () => { state.analyticsData = null; render(); } }, ['Retry Analytics'])
+    ]));
+    return [wrap];
+  }
+
+  const sourceData = data;
+  const selectedExam = state.analyticsExam || 'all';
+  const selectedTitle = selectedExam === 'uceed-2026' ? /UCEED 2026/i
+    : selectedExam === 'uceed-2025' ? /UCEED 2025/i
+      : selectedExam === 'spatial' ? /Spatial Reasoning/i : null;
+  const filterAttempts = (sourceData.attempts || []).filter(attempt =>
+    attempt.status === 'submitted' && isWithinAnalyticsDate(attempt.submittedAt) && (!selectedTitle || selectedTitle.test(attempt.title || '')));
+  const filterIds = new Set(filterAttempts.map(attempt => attempt.attemptId));
+  const filteredTrend = filterAttempts.length >= 3 ? filterAttempts.slice(-3).map(attempt => ({ attemptId: attempt.attemptId, examId: attempt.examId, title: attempt.title, score: attempt.score, maxMarks: attempt.maxMarks, percentage: attempt.percentage, timeTakenSeconds: attempt.timeTakenSeconds, submittedAt: attempt.submittedAt })) : [];
+  const filteredData = {
+    ...sourceData,
+    sample: { ...sourceData.sample, completedAttempts: filterAttempts.length, reliableTrends: filterAttempts.length >= 3 },
+    attempts: filterAttempts,
+    trend: filterAttempts.length >= 3 ? filteredTrend : [],
+    calendar: (sourceData.calendar || []).filter(day => isWithinAnalyticsDate(Date.parse(`${day.date}T23:59:59`))),
+    topics: [], marksLeaks: [], questionStrategy: [], riskMap: [],
+    kpis: { completedAttempts: filterAttempts.length, questionsAnswered: 0, accuracyPct: null, averageTimeSeconds: null, marks: null, potentialMarks: null, skipped: null, negativeMarks: null }
+  };
+  if (filterAttempts.length) {
+    const answerCount = filterAttempts.reduce((sum, attempt) => sum + attempt.answeredCount, 0);
+    const correctCount = filterAttempts.reduce((sum, attempt) => sum + attempt.correct, 0);
+    filteredData.kpis = {
+      completedAttempts: filterAttempts.length,
+      questionsAnswered: answerCount,
+      accuracyPct: answerCount ? Number((correctCount / answerCount * 100).toFixed(2)) : null,
+      averageTimeSeconds: Math.round(filterAttempts.reduce((sum, attempt) => sum + Number(attempt.timeTakenSeconds || 0), 0) / Math.max(1, filterAttempts.reduce((sum, attempt) => sum + Number(attempt.questionCount || 0), 0))),
+      marks: Number(filterAttempts.reduce((sum, attempt) => sum + Number(attempt.score || 0), 0).toFixed(2)),
+      potentialMarks: Number(filterAttempts.reduce((sum, attempt) => sum + Number(attempt.maxMarks || 0), 0).toFixed(2)),
+      skipped: filterAttempts.reduce((sum, attempt) => sum + Number(attempt.skipped || 0), 0),
+      negativeMarks: Number(filterAttempts.reduce((sum, attempt) => sum + Number(attempt.negativeMarks || 0), 0).toFixed(2))
+    };
+    const topics = new Map(), types = new Map(), questions = new Map();
+    for (const attempt of filterAttempts) for (const detail of attempt.questions || []) {
+      const topicName = detail.topic || 'Uncategorised';
+      const topic = topics.get(topicName) || { topic: topicName, attempted: 0, correct: 0, count: 0, marks: 0, maxMarks: 0 };
+      topic.count++;
+      if (detail.outcome !== 'unanswered') topic.attempted++;
+      if (detail.outcome === 'correct') topic.correct++;
+      topic.marks += Number(detail.marks || 0);
+      topic.maxMarks += Number(detail.maxMarks || 0);
+      topics.set(topicName, topic);
+      const type = types.get(detail.type) || { type: detail.type, attempted: 0, correct: 0, incorrect: 0, partial: 0, skipped: 0, marks: 0, maxMarks: 0 };
+      if (detail.outcome !== 'unanswered') type.attempted++;
+      if (detail.outcome === 'correct') type.correct++;
+      if (detail.outcome === 'incorrect') type.incorrect++;
+      if (detail.outcome === 'partial') type.partial++;
+      if (detail.outcome === 'unanswered') type.skipped++;
+      type.marks += Number(detail.marks || 0);
+      type.maxMarks += Number(detail.maxMarks || 0);
+      types.set(detail.type, type);
+      const questionKey = `${attempt.examId}:${detail.questionId}`;
+      const question = questions.get(questionKey) || { examId: attempt.examId, questionId: detail.questionId, topic: topicName, type: detail.type, attempts: 0, wrong: 0, skipped: 0, partial: 0, negativeMarks: 0, marksLost: 0 };
+      question.attempts++;
+      if (detail.outcome === 'incorrect') question.wrong++;
+      if (detail.outcome === 'unanswered') question.skipped++;
+      if (detail.outcome === 'partial') question.partial++;
+      question.negativeMarks += Math.max(0, -(Number(detail.marks) || 0));
+      question.marksLost += Math.max(0, (Number(detail.maxMarks) || 0) - (Number(detail.marks) || 0));
+      questions.set(questionKey, question);
+    }
+    const threshold = sourceData.sample?.topicThreshold || 10;
+    filteredData.topics = [...topics.values()].map(topic => ({ ...topic, accuracy: topic.attempted ? Number((topic.correct / topic.attempted * 100).toFixed(2)) : null, reliable: topic.attempted >= threshold }));
+    filteredData.questionStrategy = [...types.values()].map(type => ({ ...type, accuracy: type.attempted ? Number((type.correct / type.attempted * 100).toFixed(2)) : null }));
+    filteredData.marksLeaks = [...questions.values()].filter(item => item.marksLost > 0).map(item => ({ ...item, negativeMarks: Number(item.negativeMarks.toFixed(2)), marksLost: Number(item.marksLost.toFixed(2)) }));
+    filteredData.riskMap = filteredData.topics.map(topic => ({ topic: topic.topic, accuracy: topic.accuracy, attempts: topic.attempted, reliable: topic.reliable, risk: topic.attempted < 5 ? 'insufficient_data' : topic.accuracy < 50 ? 'high' : topic.accuracy < 70 ? 'watch' : 'steady' }));
+    const weakestReliableTopic = filteredData.topics.filter(topic => topic.reliable && topic.accuracy !== null).sort((a, b) => a.accuracy - b.accuracy)[0];
+    filteredData.nextBestAction = weakestReliableTopic
+      ? { type: 'practice_topic', topic: weakestReliableTopic.topic, title: `Practice ${weakestReliableTopic.topic}`, reason: `${weakestReliableTopic.attempted} answered questions show ${weakestReliableTopic.accuracy}% accuracy in the selected results.` }
+      : { type: 'collect_sample', title: 'Build a reliable topic sample', reason: `Complete at least ${threshold} questions in one of the selected results to unlock topic diagnostics.` };
+  }
+  data = filteredData;
 
   const sample = data?.sample || {};
   const kpis = data?.kpis || {};
-  const completedCount = sample.completedAttempts || kpis.completedAttempts || 0;
+  const completedCount = sample.completedAttempts ?? kpis.completedAttempts ?? 0;
 
   // Respect sample thresholds: empty history must remain non-diagnostic
   if (completedCount === 0) {
@@ -1139,11 +1249,11 @@ async function analyticsView() {
 
   // Hero Metric Stat Tiles (6 Cards)
   const heroMetrics = el('div', { className: 'card-grid' }, [
-    ['Mock Score Average', kpis.marks !== null && kpis.marks !== undefined ? `${kpis.marks} Marks` : '—', `${completedCount} mock(s) completed`],
-    ['Best Mock Score', data?.trend && data.trend.length ? `${Math.max(...data.trend.map(t => t.score))} Marks` : (kpis.marks ? `${kpis.marks} Marks` : '—'), 'Peak performance'],
+    ['Mock Score Average', kpis.marks !== null && kpis.marks !== undefined ? `${(kpis.marks / Math.max(1, completedCount)).toFixed(1)} Marks` : '—', `${completedCount} mock(s) completed`],
+    ['Best Mock Score', data?.attempts?.length ? `${Math.max(...data.attempts.map(attempt => attempt.score || 0))} Marks` : '—', 'Peak performance'],
     ['Overall Accuracy', kpis.accuracyPct !== null && kpis.accuracyPct !== undefined ? `${kpis.accuracyPct}%` : '—', `${kpis.questionsAnswered || 0} total questions answered`],
-    ['Active Day Streak', `${data?.calendar ? data.calendar.length : 1} Days`, '365-day consistency grid'],
-    ['Avg Time / Question', kpis.averageTimeSeconds ? `${kpis.averageTimeSeconds}s` : '—', 'Target: <90s per question'],
+    ['Active Study Days', `${data?.calendar?.length ?? 0} Days`, 'Days with recorded attempt activity'],
+    ['Avg Time / Question', kpis.averageTimeSeconds !== null && kpis.averageTimeSeconds !== undefined ? `${kpis.averageTimeSeconds}s` : '—', 'Based on completed exam time'],
     ['Total Solved', `${kpis.questionsAnswered || 0} Qs`, `Skipped: ${kpis.skipped || 0} Qs`]
   ].map(([title, val, desc]) => card(title, [
     el('h2', { className: 'card-stat-value' }, [val]),
@@ -1159,7 +1269,7 @@ async function analyticsView() {
       el('div', { className: 'leakage-title' }, [
         '⚠️ Marks Leakage Diagnostic Engine',
         el('span', { className: 'status-chip', style: 'background:rgba(239,68,68,0.15); color:#ef4444;' }, [
-          `-${(negMarks + (kpis.skipped || 0) * 0.5).toFixed(1)} Marks Total Leak`
+          `-${Math.max(0, Number(kpis.potentialMarks || 0) - Number(kpis.marks || 0)).toFixed(1)} Marks Total Leak`
         ])
       ]),
       el('span', { className: 'card-stat-desc' }, ['Data-backed from your attempts'])
@@ -1183,13 +1293,15 @@ async function analyticsView() {
     ]),
     el('div', { style: 'margin-top:16px; background:var(--bg-input); padding:12px 16px; border-radius:10px; border:1px solid var(--border-subtle); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;' }, [
       el('div', { style: 'font-size:0.82rem; font-weight:700; color:var(--text-primary);' }, [
-        '💡 Strategy Tip: Eliminating low-confidence MSQ guesses will prevent negative mark penalties.'
+        negMarks > 0 ? `💡 ${negMarks} negative mark(s) recorded; review incorrect answers before the next mock.`
+          : (kpis.skipped || 0) > 0 ? `💡 ${kpis.skipped} unanswered question(s); practice pacing to reduce skips.`
+            : '💡 No negative marks or unanswered questions recorded in this sample.'
       ]),
       el('button', {
         className: 'btn btn-outline',
         style: 'padding:6px 12px; font-size:0.78rem;',
-        onclick: () => { state.tab = 'practice'; state.practiceType = 'msq'; render(); }
-      }, ['Practice MSQs →'])
+        onclick: () => { state.tab = 'practice'; if (negMarks > 0) state.practiceType = 'msq'; render(); }
+      }, [negMarks > 0 ? 'Practice MSQs →' : 'Open Practice Builder →'])
     ])
   ]);
 
@@ -1204,7 +1316,7 @@ async function analyticsView() {
         el('span', { className: 'card-stat-desc' }, [`${st.attempted} Attempted`])
       ]),
       el('div', { style: 'display:flex; justify-content:space-between; align-items:center; margin-top:8px;' }, [
-        el('span', { style: 'font-size:1.4rem; font-weight:800; color:var(--text-primary);' }, [st.accuracy !== null ? `${st.accuracy}%` : '—']),
+        el('span', { style: 'font-size:1.4rem; font-weight:800; color:var(--text-primary);' }, [st.accuracy !== null && st.accuracy !== undefined ? `${st.accuracy}%` : '—']),
         el('span', { className: 'card-stat-desc' }, [`Marks: ${st.marks}/${st.maxMarks}`])
       ]),
       el('div', { className: 'progress-bar-wrap' }, [
@@ -1250,37 +1362,37 @@ async function analyticsView() {
 
   // Dynamic SWOT Matrix
   const topics = data?.topics || [];
-  const strongTopics = topics.filter(t => t.accuracy >= 70);
-  const weakTopics = topics.filter(t => t.accuracy < 50);
+  const threshold = sample.topicThreshold || 10;
+  const supportedTopics = topics.filter(t => t.accuracy !== null && t.attempted >= threshold);
+  const strongTopics = supportedTopics.filter(t => t.accuracy >= 70);
+  const weakTopics = supportedTopics.filter(t => t.accuracy < 50);
 
   const swotMatrix = card('SWOT Performance Matrix', [
     el('div', { className: 'swot-grid', style: 'margin-top:10px;' }, [
       el('div', { className: 'swot-card strength' }, [
         el('div', { className: 'swot-card-title' }, ['💪 Strengths']),
         el('ul', { className: 'swot-list' }, strongTopics.length ? strongTopics.map(t => el('li', {}, [`${t.topic} accuracy (${t.accuracy}%)`])) : [
-          el('li', {}, [`Overall accuracy: ${kpis.accuracyPct || 0}%`]),
-          el('li', {}, [`Active streak: ${calendarDays.length} days`])
+          el('li', {}, ['No reliable strengths yet; more topic answers are needed.'])
         ])
       ]),
       el('div', { className: 'swot-card weakness' }, [
         el('div', { className: 'swot-card-title' }, ['⚠️ Weaknesses']),
         el('ul', { className: 'swot-list' }, weakTopics.length ? weakTopics.map(t => el('li', {}, [`${t.topic} accuracy (${t.accuracy}%)`])) : [
-          el('li', {}, [`Negative mark penalty: -${negMarks} marks`]),
-          el('li', {}, [`Skipped questions: ${kpis.skipped || 0} Qs`])
+          el('li', {}, ['No reliable weak topics yet; more topic answers are needed.'])
         ])
       ]),
       el('div', { className: 'swot-card opportunity' }, [
         el('div', { className: 'swot-card-title' }, ['🎯 Opportunities']),
         el('ul', { className: 'swot-list' }, [
-          el('li', {}, ['Eliminate negative MSQ guesses to save marks']),
-          el('li', {}, ['Practice weak syllabus topics before next mock'])
+          el('li', {}, [`${leaks.length} question(s) with marks lost can be reviewed.`]),
+          el('li', {}, [weakTopics.length ? `Practice ${weakTopics[0].topic} based on its reliable sample.` : `${Math.max(0, kpis.skipped || 0)} skipped answer(s) can be reviewed.`])
         ])
       ]),
       el('div', { className: 'swot-card threat' }, [
         el('div', { className: 'swot-card-title' }, ['🚨 Threats']),
         el('ul', { className: 'swot-list' }, [
-          el('li', {}, [`Unattempted items causing score drops`]),
-          el('li', {}, [`Time management on high-density NAT items`])
+          el('li', {}, [`${kpis.skipped || 0} unanswered question(s) across these attempts.`]),
+          el('li', {}, [`${negMarks} negative mark(s) recorded across these attempts.`])
         ])
       ])
     ])

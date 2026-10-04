@@ -908,3 +908,32 @@ WHAT: Extended the dashboard DOM integration test to verify active mocks show �
 WHY: Covers Phase 1/2 UI status rendering and avoids a false failure when a valid mock paper includes images.
 EVIDENCE: `node --test test/dashboard-ui-integration.test.js` passes; full `npm test` passes 75/75; `node --check test/dashboard-ui-integration.test.js` and `git diff --check -- test/dashboard-ui-integration.test.js` pass.
 NEXT: Phase 1/2 code work is complete. Browser screenshot verification remains unavailable because localhost:3001 has no server; do not start the demo launcher because it clears existing development sessions.
+
+### [2026-10-04 18:49 UTC] Codex — Phase 3: Overview and Analytics browser verification
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md
+WHAT: Starting live UI verification after Antigravity's Phase 3 DONE handoff. The test server uses only `data/codex-review-isolated.sqlite`; dashboard UI and CSS remain unedited.
+WHY: Confirm the Overview/Analytics states and API-backed values in a real browser, beyond static contract assertions.
+NEXT: Verify zero-attempt empty state, one-attempt baseline, and three-attempt trend/risk thresholds, then record browser and test evidence.
+
+### [2026-10-04 18:55 UTC] Codex — Phase 3: Analytics integration repair claim
+STATUS: IN PROGRESS
+FILES: public/dashboard.js, test/dashboard-ui-integration.test.js, PROGRESS_LOG.md
+WHAT: Live browser verification confirmed honest zero-attempt and data-backed one-attempt analytics, and identified stale dashboard caches, analytics filters that only redraw without filtering, and hard-coded SWOT claims.
+WHY: Phase 3 requires current attempt KPIs, meaningful analytics filters, and diagnostic UI statements supported by student attempt data.
+NEXT: Invalidate Overview/Analytics caches after attempt mutations and on refresh; apply date/exam filters; replace static SWOT claims with API-backed insight categories and null-safe values; add DOM integration assertions and recheck at three attempts.
+
+### [2026-10-04 19:10 UTC] Codex — Phase 3: Refresh dashboard integration asset
+STATUS: IN PROGRESS
+FILES: public/dashboard.html, public/dashboard.js, PROGRESS_LOG.md
+WHAT: Adding the shared dashboard HTML shell to the active Phase 3 integration claim because browser verification showed its asset URL still points to the Phase 1/2 cache key, serving stale Overview/Analytics JavaScript after the verified fixes.
+WHY: The browser must load the corrected, API-backed Phase 3 integration rather than cached JS for accurate acceptance checks.
+NEXT: Bump the dashboard script cache key, finish null-safe Overview sample values, then rerun live browser and test verification.
+
+### [2026-10-04 19:17 UTC] Codex — Phase 3: Analytics contract and dashboard consistency verified
+STATUS: DONE
+FILES: public/dashboard.js, public/dashboard.html, src/exams.js, test/dashboard-ui-integration.test.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Completed the Phase 3 integration repair: dashboard values refresh from the APIs; date and exam filters recalculate the selected attempt subset; diagnostics avoid unsupported SWOT claims and null percentages; consistency activity is placed against actual dates; reward tracking is identified as unavailable; attempt results carry topic/type/mark metadata; and Overview time values remain consistent when zero. Updated the dashboard asset cache key.
+WHY: Completes the Analytics and Overview acceptance criteria for honest empty/partial states, data-backed KPIs and diagnostics, reliable three-attempt trends, and consistency tracking.
+EVIDENCE: Browser at `http://127.0.0.1:3010/dashboard.html` verified Overview and Analytics with the isolated three-mock fixture, including 3 completed attempts, 100% accuracy, 42 skipped answers, reliable trend unlock, honest topic sample thresholds, no `null%`, and consistent `0s` time displays. DOM/API focused tests pass 5/5; full `npm test` passes 75/75; load-runner test also passes alone; `node --check` and `git diff --check` pass. An earlier parallel full-suite attempt had a transient load-runner timeout, which did not reproduce on the full rerun.
+NEXT: Phase 3 code and local browser review are complete. Real hosted acceptance remains scheduled for Phase 8; continue the next phase from CODEX_TASK_PLAN.md.

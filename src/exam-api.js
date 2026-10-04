@@ -43,6 +43,11 @@ export function createExamApi(auth, engine, roster, database) {
         }
         if (path === '/api/student/analytics' && req.method === 'GET') return json(200, await engine.getStudentOverview(user.id));
 
+        if (path === '/api/student/practice/topics' && req.method === 'GET') {
+          const filters = Object.fromEntries(new URL(req.url, 'http://localhost').searchParams.entries());
+          return json(200, await practiceEngine.topicCatalog(filters));
+        }
+
         if (path === '/api/student/practice/sets' && req.method === 'GET') {
           const sets = practiceEngine ? await practiceEngine.getSets(user.id) : [];
           return json(200, { sets });

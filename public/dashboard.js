@@ -868,69 +868,37 @@ async function practiceView() {
     ])
   ]);
 
-  const syllabusDomains = [
-    {
-      id: 'spatial',
-      part: 'part-a',
-      title: '🔷 Spatial Reasoning & Visualization',
-      topics: ['3D Isometric Rotations', 'Pattern Counting', 'Paper Folding & Unfolding', 'Spatial Assembly', 'Orthographic Projections', 'Surface Development']
-    },
-    {
-      id: 'observation',
-      part: 'part-a',
-      title: '👁️ Observation & Design Sensitivity',
-      topics: ['Visual Acuity', 'Shadow & Light Analysis', 'Font & Logo Identification', 'Aesthetic Golden Ratio', 'Texture & Pattern Matching']
-    },
-    {
-      id: 'env',
-      part: 'part-a',
-      title: '🌿 Environmental & Social Awareness',
-      topics: ['Eco-Design & Sustainability', 'Indian Art & Craft Culture', 'Architectural History', 'Design Icons & Products', 'Climate & Renewable Energy']
-    },
-    {
-      id: 'analytical',
-      part: 'part-a',
-      title: '🧩 Analytical & Logical Reasoning',
-      topics: ['Pattern Sequences', 'Mechanical Reasoning', 'Spatial Puzzles', 'Venn Diagrams', 'Ratio & Proportion']
-    },
-    {
-      id: 'language',
-      part: 'part-a',
-      title: '🔤 Language & Creativity',
-      topics: ['Typography & Fonts', 'Visual Analogies', 'Idiom Visualization', 'Poster & Branding Concepts']
-    },
-    {
-      id: 'drawing',
-      part: 'part-b',
-      title: '✏️ Part-B Drawing & Composition',
-      topics: ['Perspective & Grid Drawing', 'Human Anatomy & Proportion', 'Object & Environment Study', 'Storyboard Sequence']
-    }
-  ];
-
-  const syllabusCard = card('Step 2: Select UCEED Syllabus Topics', [
-    el('div', {}, syllabusDomains.map(d => el('div', { className: 'syllabus-category-card' }, [
-      el('div', { className: 'syllabus-category-header' }, [
-        el('div', { className: 'syllabus-category-title' }, [
-          d.title,
-          el('span', { className: `syllabus-part-badge ${d.part}` }, [d.part.toUpperCase()])
+  const syllabusCard = card('Step 2: Select Topics from Question Library', []);
+  try {
+    const query = new URLSearchParams({ exam: state.practiceExamFilter, difficulty: state.practiceDifficulty, type: state.practiceType });
+    const catalog = await apiFetch('/api/student/practice/topics?' + query);
+    if (!catalog.categories?.length) syllabusCard.append(el('p', { className: 'card-stat-desc' }, ['No questions match these exam, difficulty and format filters yet.']));
+    for (const domain of catalog.categories || []) {
+      syllabusCard.append(el('div', { className: 'syllabus-category-card' }, [
+        el('div', { className: 'syllabus-category-header' }, [
+          el('div', { className: 'syllabus-category-title' }, [domain.title]),
+          el('span', { className: 'card-stat-desc' }, [domain.topics.length + ' Topics'])
         ]),
-        el('span', { className: 'card-stat-desc' }, [`${d.topics.length} Subtopics`])
-      ]),
-      el('div', { className: 'topic-subchips-grid' }, d.topics.map(t => {
-        const isSel = state.selectedTopics && state.selectedTopics.has(t);
-        return el('div', {
-          className: `topic-subchip ${isSel ? 'selected' : ''}`,
-          onclick: () => {
-            if (!state.selectedTopics) state.selectedTopics = new Set();
-            if (state.selectedTopics.has(t)) state.selectedTopics.delete(t);
-            else state.selectedTopics.add(t);
-            updateMatchingCount();
-            render();
-          }
-        }, [isSel ? '✓ ' : '+ ', t]);
-      }))
-    ])))
-  ]);
+        el('div', { className: 'topic-subchips-grid' }, domain.topics.map(({ topic, count }) => {
+          const selected = state.selectedTopics.has(topic);
+          return el('button', {
+            type: 'button', className: 'topic-subchip' + (selected ? ' selected' : ''),
+            ariaPressed: String(selected),
+            onclick: () => {
+              if (state.selectedTopics.has(topic)) state.selectedTopics.delete(topic);
+              else state.selectedTopics.add(topic);
+              updateMatchingCount();
+              render();
+            }
+          }, [(selected ? '✓ ' : '+ ') + topic + ' (' + count + ')']);
+        }))
+      ]));
+    }
+    syllabusCard.append(el('p', { className: 'card-stat-desc' }, ['Questions stay linked to their original mock paper. Exact copies appear once in mixed practice.']));
+  } catch (error) {
+    syllabusCard.append(el('p', { className: 'card-stat-desc', role: 'alert' }, ['Could not load question topics: ' + error.message]),
+      el('button', { className: 'btn btn-outline btn-sm', onclick: () => render() }, ['Retry topics']));
+  }
 
   const selectedCount = state.selectedTopics ? state.selectedTopics.size : 0;
   const matchDisplay = state.practiceMatchingCount !== null ? state.practiceMatchingCount : 'Loading…';

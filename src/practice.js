@@ -1,14 +1,41 @@
 import { randomUUID } from 'node:crypto';
 import { score } from './exams.js';
+import { HttpError } from './auth.js';
+import { categoriseExam, matchesTopic } from './question-topics.js';
 
 const parseDefinition = row => {
-  try { return JSON.parse(row.definition); } catch { return null; }
+  try { return categoriseExam(JSON.parse(row.definition)); } catch { return null; }
 };
+
+const sourceKey = (examId, questionId) => `${examId}::${questionId}`;
+const originalId = (examId, questionId) => questionId.startsWith(`${examId}::`) ? questionId.slice(examId.length + 2) : questionId;
+const contentKey = q => JSON.stringify([
+  /^T\d+-\d+\s+[—-]\s+(see diagram|use the worksheet diagram)/i.test(q.prompt) && q.image ? q.prompt.match(/^T\d+-\d+/i)[0] : q.prompt.trim(),
+  q.image || '', q.type, q.options || [], q.answer, q.answerAlternatives || null
+]);
+
+function resolveQuestion(rows, filters, id) {
+  const source = filters.questionSources?.[id];
+  const candidates = [];
+  for (const row of rows) {
+    if (source && source.examId !== row.id) continue;
+    const exam = parseDefinition(row);
+    if (!exam) continue;
+    if (!source && filters.exam && filters.exam !== 'ALL' && !`${row.id} ${exam.title}`.toLowerCase().includes(String(filters.exam).toLowerCase())) continue;
+    const question = exam.questions.find(q => source ? q.id === source.questionId : q.id === id || sourceKey(row.id, q.id) === id);
+    if (question) candidates.push({ exam, question, examId: row.id });
+  }
+  if (candidates.length > 1) throw new HttpError(409, 'This older practice set has ambiguous question sources. Please create a new set.');
+  return candidates[0];
+}
 
 export function createPracticeEngine(database, { now = Date.now } = {}) {
   async function matchingQuestions(filters = {}) {
     const { rows = [] } = await database.query('SELECT id, definition FROM exams ORDER BY id');
     const selected = [];
+    const idCounts = new Map();
+    for (const row of rows) for (const q of parseDefinition(row)?.questions || []) idCounts.set(q.id, (idCounts.get(q.id) || 0) + 1);
+    const seenContent = new Set();
     const examFilter = String(filters.exam || 'ALL').toLowerCase();
     const topics = Array.isArray(filters.topics) ? filters.topics.map(String).filter(x => x && x !== 'ALL') : [];
     const wantedType = String(filters.types || filters.type || 'ALL').toUpperCase();
@@ -20,15 +47,15 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
       if (examFilter !== 'all' && !`${row.id} ${exam.title || ''}`.toLowerCase().includes(examFilter)) continue;
       for (const question of exam.questions) {
         if (wantedType !== 'ALL' && String(question.type || '').toUpperCase() !== wantedType) continue;
-        if (wantedDifficulty !== 'all' && question.difficulty && String(question.difficulty).toLowerCase() !== wantedDifficulty) continue;
+        if (wantedDifficulty !== 'all' && String(question.difficulty || '').toLowerCase() !== wantedDifficulty) continue;
         const tags = Array.isArray(question.tags) ? question.tags.map(String) : [];
-        const haystack = [question.topic, question.category, question.sectionId, question.prompt, ...tags].filter(Boolean).join(' ').toLowerCase();
-        if (topics.length && !topics.some(topic => {
-          const lower = topic.toLowerCase();
-          return haystack.includes(lower) || lower.split(/[\s,–—()/]+/).filter(word => word.length > 3).some(word => haystack.includes(word));
-        })) continue;
+        if (topics.length && !topics.some(topic => matchesTopic(question, topic))) continue;
+        const fingerprint = contentKey(question);
+        if (seenContent.has(fingerprint)) continue;
+        seenContent.add(fingerprint);
         selected.push({
-          id: question.id,
+          id: idCounts.get(question.id) > 1 ? sourceKey(row.id, question.id) : question.id,
+          originalQuestionId: question.id,
           examId: row.id,
           examTitle: exam.title,
           type: question.type || 'MCQ',
@@ -41,6 +68,7 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
           answerAlternatives: question.answerAlternatives || null,
           partialCredit: question.partialCredit || null,
           topic: question.topic || question.category || question.sectionId || '',
+          category: question.category || 'Other topics',
           difficulty: question.difficulty || null,
           tags
         });
@@ -54,6 +82,18 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     return { count: questions.length };
   }
 
+  async function topicCatalog(filters = {}) {
+    const questions = await matchingQuestions({ ...filters, topics: [] });
+    const groups = new Map();
+    for (const question of questions) {
+      const category = question.category;
+      if (!groups.has(category)) groups.set(category, new Map());
+      const topics = groups.get(category);
+      topics.set(question.topic, (topics.get(question.topic) || 0) + 1);
+    }
+    return { totalQuestions: questions.length, categories: [...groups].sort(([a], [b]) => a.localeCompare(b)).map(([title, topics]) => ({ title, topics: [...topics].sort(([a], [b]) => a.localeCompare(b)).map(([topic, count]) => ({ topic, count })) })) };
+  }
+
   async function createSet(userId, options = {}) {
     if (!userId) throw new Error('User ID is required.');
     const exam = options.exam || 'ALL';
@@ -65,15 +105,17 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     let questions = await matchingQuestions({ exam, topics, types, difficulty });
 
     if (skipDone && questions.length) {
-      const { rows = [] } = await database.query('SELECT DISTINCT a.question_id FROM practice_answers a JOIN practice_sets p ON p.id=a.set_id WHERE p.user_id=$1', [userId]);
-      const seen = new Set(rows.map(row => row.question_id));
-      questions = questions.filter(question => !seen.has(question.id));
+      const { rows = [] } = await database.query('SELECT o.question_id,o.exam_id,e.definition FROM practice_outcomes o JOIN practice_sets p ON p.id=o.set_id JOIN exams e ON e.id=o.exam_id WHERE p.user_id=$1', [userId]);
+      const seen = new Set(rows.map(row => sourceKey(row.exam_id, originalId(row.exam_id, row.question_id))));
+      const answeredContent = new Set(rows.map(row => parseDefinition(row)?.questions.find(q => q.id === originalId(row.exam_id, row.question_id))).filter(Boolean).map(contentKey));
+      questions = questions.filter(question => !seen.has(sourceKey(question.examId, question.originalQuestionId)) && !answeredContent.has(contentKey(question)));
     }
     const questionIds = [...new Set(questions.map(question => question.id))].slice(0, setSize);
     const id = `set-${randomUUID()}`;
     const createdAt = now();
     const title = String(options.title || `Custom ${exam} Practice Set (${questionIds.length} Qs)`).slice(0, 160);
-    const filters = { exam, topics, types, difficulty, skipDone, setSize };
+    const questionSources = Object.fromEntries(questions.filter(q => questionIds.includes(q.id)).map(q => [q.id, { examId: q.examId, questionId: q.originalQuestionId }]));
+    const filters = { exam, topics, types, difficulty, skipDone, setSize, questionSources };
     await database.query(
       'INSERT INTO practice_sets (id,user_id,title,filters_json,question_ids_json,total_questions,completed_questions,status,created_at) VALUES ($1,$2,$3,$4,$5,$6,0,$7,$8)',
       [id, userId, title, JSON.stringify(filters), JSON.stringify(questionIds), questionIds.length, questionIds.length ? 'in_progress' : 'empty', createdAt]
@@ -101,11 +143,12 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     const answered = new Map((answers.rows || []).map(answer => [answer.question_id, { value: JSON.parse(answer.answer_json), answeredAt: Number(answer.answered_at) }]));
     const { rows: examRows = [] } = await database.query('SELECT id,definition FROM exams');
     const questionMap = new Map();
-    for (const examRow of examRows) {
-      const exam = parseDefinition(examRow);
-      for (const question of exam?.questions || []) if (questionIds.includes(question.id)) {
+    for (const id of questionIds) {
+      const resolved = resolveQuestion(examRows, JSON.parse(row.filters_json || '{}'), id);
+      if (resolved) {
+        const { exam, question, examId } = resolved;
         const { answer, answerAlternatives, partialCredit, ...safeQuestion } = question;
-        questionMap.set(question.id, { ...safeQuestion, examId: examRow.id, examTitle: exam.title });
+        questionMap.set(id, { ...safeQuestion, id, originalQuestionId: question.id, examId, examTitle: exam.title });
       }
     }
     return { id: row.id, title: row.title, questionIds, questions: questionIds.map(id => questionMap.get(id)).filter(Boolean), totalQuestions: Number(row.total_questions), completedQuestions: Number(row.completed_questions), status: row.status, answers: Object.fromEntries(answered) };
@@ -119,16 +162,12 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
       const questionIds = JSON.parse(row.question_ids_json || '[]');
       if (!questionIds.includes(questionId)) return false;
       const answeredAt = now();
-      await query('INSERT INTO practice_answers(set_id,question_id,answer_json,answered_at) VALUES($1,$2,$3,$4) ON CONFLICT(set_id,question_id) DO UPDATE SET answer_json=excluded.answer_json,answered_at=excluded.answered_at', [setId, questionId, JSON.stringify(value), answeredAt]);
       const examRows = await query('SELECT e.id,e.definition FROM exams e JOIN practice_sets p ON p.id=$1 WHERE p.user_id=$2', [setId, userId]);
-      let examId = null, examDefinition = null;
-      for (const examRow of examRows.rows || []) {
-        const definition = parseDefinition(examRow);
-        if (definition?.questions?.some(question => question.id === questionId)) { examId = examRow.id; examDefinition = definition; break; }
-      }
-      if (!examDefinition) return false;
-      const question = examDefinition.questions.find(item => item.id === questionId);
-      const result = score(examDefinition, { [questionId]: { value } }).questions.find(item => item.id === questionId);
+      const resolved = resolveQuestion(examRows.rows || [], JSON.parse(row.filters_json || '{}'), questionId);
+      if (!resolved) return false;
+      const { exam: examDefinition, question, examId } = resolved;
+      const result = score(examDefinition, { [question.id]: { value } }).questions.find(item => item.id === question.id);
+      await query('INSERT INTO practice_answers(set_id,question_id,answer_json,answered_at) VALUES($1,$2,$3,$4) ON CONFLICT(set_id,question_id) DO UPDATE SET answer_json=excluded.answer_json,answered_at=excluded.answered_at', [setId, questionId, JSON.stringify(value), answeredAt]);
       await query('INSERT INTO practice_outcomes(set_id,question_id,exam_id,outcome,marks,updated_at) VALUES($1,$2,$3,$4,$5,$6) ON CONFLICT(set_id,question_id) DO UPDATE SET exam_id=excluded.exam_id,outcome=excluded.outcome,marks=excluded.marks,updated_at=excluded.updated_at', [setId, questionId, examId, result.outcome, result.marks, answeredAt]);
       const count = Number((await query('SELECT COUNT(*) AS count FROM practice_answers WHERE set_id=$1', [setId])).rows[0].count);
       const status = count >= Number(row.total_questions) ? 'completed' : 'in_progress';
@@ -141,7 +180,7 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     const { rows = [] } = await database.query('SELECT b.question_id,b.exam_id,b.created_at,e.definition FROM practice_bookmarks b JOIN exams e ON e.id=b.exam_id WHERE b.user_id=$1 ORDER BY b.created_at DESC', [userId]);
     return rows.map(row => {
       const exam = parseDefinition(row);
-      const question = exam?.questions?.find(item => item.id === row.question_id);
+      const question = exam?.questions?.find(item => item.id === originalId(row.exam_id, row.question_id));
       if (!question) return null;
       const { answer, answerAlternatives, partialCredit, ...safeQuestion } = question;
       return { ...safeQuestion, questionId: row.question_id, examId: row.exam_id, examTitle: exam.title, createdAt: Number(row.created_at), bookmarked: true };
@@ -157,14 +196,15 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     );
     return rows.map(row => {
       const exam = parseDefinition(row);
-      const question = exam?.questions?.find(item => item.id === row.question_id);
+      const question = exam?.questions?.find(item => item.id === originalId(row.exam_id, row.question_id));
       if (!question) return null;
       const { answer, answerAlternatives, partialCredit, ...safeQuestion } = question;
-      return { ...safeQuestion, setId: row.set_id, examId: row.exam_id, examTitle: exam.title, outcome: row.outcome, marks: Number(row.marks), lastAttemptedAt: Number(row.updated_at), setTitle: row.set_title, bookmarked: false };
+      return { ...safeQuestion, id: row.question_id, originalQuestionId: question.id, setId: row.set_id, examId: row.exam_id, examTitle: exam.title, outcome: row.outcome, marks: Number(row.marks), lastAttemptedAt: Number(row.updated_at), setTitle: row.set_title, bookmarked: false };
     }).filter(Boolean);
   }
 
   async function setBookmark(userId, examId, questionId, bookmarked) {
+    questionId = originalId(examId, questionId);
     const examResult = await database.query('SELECT definition FROM exams WHERE id=$1', [examId]);
     const exam = examResult.rows?.[0] ? parseDefinition(examResult.rows[0]) : null;
     if (!exam?.questions?.some(question => question.id === questionId)) return false;
@@ -173,5 +213,5 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     return { questionId, examId, bookmarked: Boolean(bookmarked) };
   }
 
-  return { countMatching, createSet, getSets, getSet, saveAnswer, listBookmarks, listRevision, setBookmark };
+  return { countMatching, topicCatalog, createSet, getSets, getSet, saveAnswer, listBookmarks, listRevision, setBookmark };
 }

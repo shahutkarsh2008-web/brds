@@ -970,3 +970,31 @@ WHY: Fully satisfies ANTIGRAVITY_TASK_PLAN.md acceptance criteria and user instr
 EVIDENCE: Verified via automated browser/layout test (`scratch/verify-responsive-browser.js`) across 1440px, 1024px, 768px, 360px viewports (0 horizontal overflow), `node --check public/dashboard.js` passing green, and `npm test` passing 75/75 tests green.
 NEXT: Phase 4 & 5 UI work when instructed. No active file claims retained.
 
+### [2026-10-05 02:00 UTC] Codex — Phase 2: Shared topic question library and import audit
+STATUS: IN PROGRESS
+FILES: src/question-topics.js, src/question-topic-map.json, src/practice.js, src/exams.js, scripts/audit-question-library.js, test/question-library.test.js, reports/question-library-audit.json, docs/question-library.md, PROGRESS_LOG.md
+WHAT: Audited local development database and fixture metadata: missing topics, section/type labels used as topics, loose token matching, and repeated question IDs across papers break reliable topic practice. Claiming backend classification and source-qualified practice identity only; Antigravity UI/import fixture work remains untouched.
+WHY: User requests every imported mock question to remain in its paper and also be available by topic across years, with automatic inclusion for future imports.
+NEXT: Add evidence-backed topic mappings, safe unknown-topic review reporting, exact topic/alias filtering, source-safe saved sets, audit existing content, and verify import/practice regressions. No hosted acceptance claim.
+
+### [2026-10-04 20:11 UTC] Codex — Phase 2: Available topic catalog integration
+STATUS: IN PROGRESS
+FILES: src/exam-api.js, public/dashboard.js, public/dashboard.html, test/question-library-ui.test.js, PROGRESS_LOG.md
+WHAT: After Antigravity's 01:35 UTC DONE handoff explicitly released UI claims, claiming only the practice topic selector integration and asset cache key. Preserve its uncommitted UI work; replace the hardcoded topic subset with actual bank topics/counts from a new API.
+WHY: Categorised questions must be discoverable in the student topic picker, including topics absent from the old static six-category selector.
+NEXT: Wire the catalog with loading/error/empty states and regression tests. Stage only Codex's incremental UI patch, never the other agent's existing edits.
+
+### [2026-10-04 20:17 UTC] Codex — Phase 2: Topic classification increment verified; local backfill claim
+STATUS: IN PROGRESS
+FILES: data/development.sqlite (exam topic metadata only), data/backups/question-topics-*.json, src/question-topics.js, src/question-topic-map.json, src/practice.js, src/exams.js, reports/question-library-audit.json, PROGRESS_LOG.md
+WHAT: Classified the valid imported fixtures using prompt review, worksheet section evidence, 41 diagram inspections, and original PDF pages for four missing/corrupt diagram references. The first full regression run passed 80/80. Corrected the preliminary spoken count: the current local database contains 456 entries in 10 papers, not 514; valid fixture papers contain 745 entries in 14 papers.
+WHY: Every current mock question needs useful topic metadata while preserving original IDs, answers, scoring, assignments, and attempts. Future imports are automatically included; uncertain future prompts are explicitly marked for review.
+NEXT: Back up existing exam definitions, apply metadata-only local backfill with concurrent-edit checks, verify zero uncategorised current questions and run final regressions after copy-dedup refinements. Hosted acceptance remains deferred.
+
+### [2026-10-04 20:21 UTC] Codex — Phase 2: Shared topic library completed and verified locally
+STATUS: DONE
+FILES: src/question-topics.js, src/question-topic-map.json, src/practice.js, src/exams.js, src/exam-api.js, public/dashboard.js (topic selector only), public/dashboard.html (cache key only), scripts/audit-question-library.js, test/question-library.test.js, test/question-library-ui.test.js, reports/question-library-audit.json, docs/question-library.md, data/development.sqlite (topic metadata), PROGRESS_LOG.md
+WHAT: Completed content-backed classification for all 745 entries in 14 valid fixture papers and all 456 entries in 10 existing local database papers; zero uncategorised current entries. Existing definitions were backed up before metadata-only backfill. Imports automatically enter the shared bank, topic UI lists actual available topics/counts, and source-pinned practice sets prevent cross-year q01 collisions. Exact copies deduplicate in mixed practice; different questions sharing a worksheet page remain separate. Unknown future content is explicitly reviewable rather than guessed.
+WHY: Meets the requested mock-plus-topic-library behavior while preserving original exam questions, answer keys, marking, assignments and separate timed attempts. Antigravity's existing UI/import edits were preserved, with selector work performed only after its DONE handoff.
+EVIDENCE: Final full npm test passes 81/81. New tests cover cross-year grading, reload, bookmarks/revision, skip-done, future imports, duplicate copies, shared-page worksheet labels, exact topic filters, missing difficulty, unknown-content review, unchanged 2026 answer keys, legacy ambiguity rejection and dynamic topic UI error/retry. Syntax checks and targeted git diff --check pass. Audit report records source counts and per-question topics. Verification is automated API/DOM plus local data audit; no new native browser or hosted acceptance claim.
+NEXT: Local code/data work complete; no active file claims retained. Deploy and run the hosted topic audit in Phase 8. Import lane should repair the pre-existing missing/corrupt diagram references documented in docs/question-library.md. Future papers with needs-review metadata require content review; existing ambiguous legacy sets should be recreated.

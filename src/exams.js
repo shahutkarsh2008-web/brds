@@ -1,5 +1,6 @@
 import { randomUUID } from 'node:crypto';
 import { HttpError } from './auth.js';
+import { categoriseExam } from './question-topics.js';
 
 const fail = (status, message, code) => { const error = new HttpError(status, message); error.code = code; throw error; };
 const finite = value => typeof value === 'number' && Number.isFinite(value);
@@ -47,7 +48,7 @@ export function validateExam(value) {
   const maximum = value.questions.reduce((sum, q) => sum + q.marks.correct, 0);
   if (value.totalQuestions !== value.questions.length || !finite(value.maxMarks) || Math.abs(value.maxMarks - maximum) > 0.000001) fail(400, 'Explicit question total and maximum marks must match the questions.');
   // Only supported fields are retained. Teacher metadata can never leak through student serialization.
-  return { id: value.id, title: value.title.trim(), durationSeconds: value.durationSeconds, totalQuestions: value.totalQuestions, maxMarks: value.maxMarks,
+  return categoriseExam({ id: value.id, title: value.title.trim(), durationSeconds: value.durationSeconds, totalQuestions: value.totalQuestions, maxMarks: value.maxMarks,
     instructions: typeof value.instructions === 'string' ? value.instructions.slice(0,10000) : '',
     sections: value.sections.map(s => ({ id: s.id, title: s.title, ...(timed ? { durationSeconds: s.durationSeconds } : {}) })),
     questions: value.questions.map(q => ({ id:q.id, sectionId:q.sectionId, type:q.type, prompt:q.prompt,
@@ -59,7 +60,7 @@ export function validateExam(value) {
       ...(q.type !== 'NAT' ? {options:q.options.map(o=>({id:o.id,text:o.text}))} : {}),
       ...(q.partialCredit ? {partialCredit:{...q.partialCredit}} : {}),
       ...(q.answerAlternatives ? {answerAlternatives:q.answerAlternatives.map(key=>[...key])} : {}),
-      marks:{correct:q.marks.correct,incorrect:q.marks.incorrect,unanswered:q.marks.unanswered},answer:q.answer })) };
+      marks:{correct:q.marks.correct,incorrect:q.marks.incorrect,unanswered:q.marks.unanswered},answer:q.answer })) });
 }
 export async function importExam(database, input, userIds) {
   const exam = validateExam(input);

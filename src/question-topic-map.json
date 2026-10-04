@@ -1,0 +1,2466 @@
+{
+  "uceed-2019": {
+    "q01": {
+      "code": "count",
+      "fingerprint": "341323e0fb86427d76b95ac38b28b208d617b8c9f785ab8eecb8986f457243ee"
+    },
+    "q02": {
+      "code": "faces",
+      "fingerprint": "0388eb83cfd57fa45491a22c8c25b5001eec6426be1fb52b58f7275e72340e9c"
+    },
+    "q03": {
+      "code": "probability",
+      "fingerprint": "32dce4c36f49730bf92755038fe7e47dd10db87a83e7dcd44a198bb0edc3b384"
+    },
+    "q04": {
+      "code": "blocks",
+      "fingerprint": "6214bd5a49f0340429a17080c2592ab9d2f401d73787cc2f312d227aef4f60ca"
+    },
+    "q05": {
+      "code": "code",
+      "fingerprint": "4214316ee21c664b747ff11ab6b4c48674ca7ac2dcf75363f0ef511443a3927d"
+    },
+    "q06": {
+      "code": "probability",
+      "fingerprint": "0872978af7c8ce38aacafd4a62479c521dcf4fc7686368dabf5dec7fb93c0418"
+    },
+    "q07": {
+      "code": "count",
+      "fingerprint": "07bb445480a5dedfe85219002b71bd8cc62928ad444de4059812727f771ef128"
+    },
+    "q08": {
+      "code": "speed",
+      "fingerprint": "903105e5a6098356ff252379b7cdef31221860958e3e1cbcd88d9631577bbe04"
+    },
+    "q09": {
+      "code": "faces",
+      "fingerprint": "edec6dffd6ad2d59008e0345236a98b905338dacb7994b7fd2bd514e90e9fe20"
+    },
+    "q10": {
+      "code": "blocks",
+      "fingerprint": "5a7174862d1cbaab7fac8218afeb12bcffcd6d3d9ea2090a10883e074464c44e"
+    },
+    "q11": {
+      "code": "faces",
+      "fingerprint": "07ed362d8bead24276a308ef3700563557d1fb36c1cdbbeb7a1989732a883b8c"
+    },
+    "q12": {
+      "code": "geometry",
+      "fingerprint": "46106a9339f2cc6c0b8cf39fa30228564e172c8ae357fd1472452aeef793757e"
+    },
+    "q13": {
+      "code": "code",
+      "fingerprint": "1e87afa1750f52ec7b49d76b3656cadba9587cde034fe1f19e86d303ed4fbff0"
+    },
+    "q14": {
+      "code": "geometry",
+      "fingerprint": "a4ae9b3ba59fcc6f8358b7c1184a717711a622b1879b56654b6e841d030e9cf2"
+    },
+    "q15": {
+      "code": "geometry",
+      "fingerprint": "70ef7189eb0e876b8da145268d949a260f4026af415d5cb5848cfe183ef8fad1"
+    },
+    "q16": {
+      "code": "font",
+      "fingerprint": "a218c9c7d7349b38ea92edcffbf6342e3d0d94139e2e322ca4084726f7f9e65d"
+    },
+    "q17": {
+      "code": "faces",
+      "fingerprint": "472da44bc129ae8aea256d351f2adcde6b045aa4ca9dae8dbfca0b2682cc9d9b"
+    },
+    "q18": {
+      "code": "symmetry",
+      "fingerprint": "574551152486b0f4ac9f888d0e8cab43ded60f07e43c459f5970af1ea757d0f9"
+    },
+    "q19": {
+      "code": "geometry",
+      "fingerprint": "00d5001756413b94138dec62eebc529c322a08015e62a099696972a9cb8b7367"
+    },
+    "q20": {
+      "code": "count",
+      "fingerprint": "587ef72cb06e8be39256c6cadd98c6b0af7f40ce0c09b539b7e7a62e9cc5731a"
+    },
+    "q21": {
+      "code": "pattern",
+      "fingerprint": "ee4f9bda399dc0d99967a7c1ee601a9bc707dda64d0ee8a2af9296f50f319058"
+    },
+    "q22": {
+      "code": "culture",
+      "fingerprint": "a835c2b366c42ab228455965f5f63b094706a6c61ec81180d9fce6debb233b5b"
+    },
+    "q23": {
+      "code": "net",
+      "fingerprint": "463ec71eb776d1b5800b8fe6686b299964e425446928d210e73e6765310d1345"
+    },
+    "q24": {
+      "code": "views",
+      "fingerprint": "fdf6c07cdf04c95dc586e21a23146ba11843783bdf8c9cd927652dc24184c219"
+    },
+    "q25": {
+      "code": "data",
+      "fingerprint": "8c589ef4adc057ae76d636347428b65fa414ba5945cc29e6d001acb3084b6a85"
+    },
+    "q26": {
+      "code": "paths",
+      "fingerprint": "0a53aaf3b646730a2662f6b256ae535ea0bd3a34b8ca13877fce75a7cb9b9c4d"
+    },
+    "q27": {
+      "code": "pattern",
+      "fingerprint": "b3a777c235277f731f30fa4903c9073a6a4c39027633f5fe8ce32cce87419b0d"
+    },
+    "q28": {
+      "code": "logic",
+      "fingerprint": "230930505d322f2455a2af6f01dda639fec446f7adfccb7e0457507d16f5d4f7"
+    },
+    "q29": {
+      "code": "slice",
+      "fingerprint": "c40cb556769bb4293cad4ce19686666594b3771e17362ac31e4fa905ab3ea9dd"
+    },
+    "q30": {
+      "code": "pattern",
+      "fingerprint": "824c863ad99fd4ac4df3cbd93ff5ba80c08fb11f12a11be8ebaa2e426523a335"
+    },
+    "q31": {
+      "code": "nature",
+      "fingerprint": "3da37efbaad78f9ec5de44221f317fbfe8ee64dc1518974f9fdc7fe328c9a19a"
+    },
+    "q32": {
+      "code": "rotate",
+      "fingerprint": "ca28c13fddae325deeba149e73182050c64884b945bff414c24831e0c76893be"
+    },
+    "q33": {
+      "code": "nature",
+      "fingerprint": "ce281f6d558676bb0fd3e60bf15524307562ccd35ca36c2005d22e405c168eaf"
+    },
+    "q34": {
+      "code": "font",
+      "fingerprint": "c05d3331a12cc7aeb1b41198380ec56176a7b1705c3f1b6273d64e11940f64e3"
+    },
+    "q35": {
+      "code": "mechanism",
+      "fingerprint": "926fd915db3c965f2ee770c5cff87c2add2e8db854892f72a357b05060a082c7"
+    },
+    "q36": {
+      "code": "mechanism",
+      "fingerprint": "249eae439c14662b6c567c1d9481b4315ce9a4f5d5acf8891bf617b84b51e115"
+    },
+    "q37": {
+      "code": "fold",
+      "fingerprint": "10d59c3bad9c00c21527579348352a3109a050fa78e23cac272e0408268414c8"
+    },
+    "q38": {
+      "code": "probability",
+      "fingerprint": "819236d77a1e62d071bc35b093bfbb25f778735ca67e1f30e1ca9b73019ba381"
+    },
+    "q39": {
+      "code": "balance",
+      "fingerprint": "773e6bffe1e24a8b447dbf726753fb0f0b213b849225765ba7d19bcf21fe81e8"
+    },
+    "q40": {
+      "code": "logic",
+      "fingerprint": "bba05f8b7eaab9422fa3a358858c199b355358b829f9cec22aaff7faa50bf0ac"
+    },
+    "q41": {
+      "code": "code",
+      "fingerprint": "6b1969c4701a544bc39476100218bd76937789c79b0cbdd58f6b2d6f1207439b"
+    },
+    "q42": {
+      "code": "font",
+      "fingerprint": "99556a5069d74f5a28b9865328de7171048a214798dc94c913fa5f36e33f2c48"
+    },
+    "q43": {
+      "code": "assemble",
+      "fingerprint": "b673eeb4e39bc267398e357e337778e4b57590301a59351efb2831427bf176ec"
+    },
+    "q44": {
+      "code": "fold",
+      "fingerprint": "f065eb027c56b20c934395fa66402f32c60e3482d2ba0f9d9fff54e23f4c2864"
+    },
+    "q45": {
+      "code": "fold",
+      "fingerprint": "b215c3ad126ee9bc76844bc2fadd5ec7f7a5a900d72d237445b398e44844edfd"
+    },
+    "q46": {
+      "code": "light",
+      "fingerprint": "4683e7e8355e0e34a60edee401dd0ac7a8e70222b4419a95f5440f2e6c777ed1"
+    },
+    "q47": {
+      "code": "views",
+      "fingerprint": "977fcf1427024546d3143c70d913643d743a2ab8528be98517e492f1653427a7"
+    },
+    "q48": {
+      "code": "anatomy",
+      "fingerprint": "c748f705a70b4c9f541c03cf2704d772a67bdd54aaf111c0e014df961c28ae08"
+    },
+    "q49": {
+      "code": "views",
+      "fingerprint": "a8bdc59e8982ff510ca7b16363fbfad3c071c50126300a58c84ad31e0a7c5d72"
+    },
+    "q50": {
+      "code": "mirror",
+      "fingerprint": "dfdb8dd1cb12141dbc0cf94dd9b2e42e1a9f73f71cf5588379ca83cd5d39f40c"
+    },
+    "q51": {
+      "code": "light",
+      "fingerprint": "e81115139289802a33af4c9ad1d5351e8d22bd2bfef19c2d6d9ccfa45749bc23"
+    },
+    "q52": {
+      "code": "views",
+      "fingerprint": "7469fe50ed0e56687e205c4e639d9f1834d6e69d9968b140a432cf3e74ae00a7"
+    },
+    "q53": {
+      "code": "arithmetic",
+      "fingerprint": "42874538802a07a3eb1688cc14662306f9419caf741f74d22a3a394d5c3a70d4"
+    },
+    "q54": {
+      "code": "logic",
+      "fingerprint": "8f5eb7e1b9de248d297ae27279fb93d3c86187a7a14447311ec305f3df16792d"
+    },
+    "q55": {
+      "code": "assemble",
+      "fingerprint": "eecb70d0ebb8d921e0c5a7b1f34b4dd8c6726723896d227c9673ed4e7c5338b7"
+    },
+    "q56": {
+      "code": "fold",
+      "fingerprint": "0ef34c2b31dfbd9203acc23235dc7e148c1e6e607ae140b39849e6315cf0043e"
+    },
+    "q57": {
+      "code": "fold",
+      "fingerprint": "5a19a3e17f61299025e3e71da9245e4edd57cadf261a3f66434cea47eff1be44"
+    },
+    "q58": {
+      "code": "sequence",
+      "fingerprint": "c7db0b462284b86672f38b4aa85dc7c87a5fcc6a3d4eb19301b5bbbadfd46c52"
+    },
+    "q59": {
+      "code": "assemble",
+      "fingerprint": "7412eda1b25b50f40dcb93009c6ff406e9269b103972526c2f9beb13db2fa94e"
+    },
+    "q60": {
+      "code": "rotate",
+      "fingerprint": "650ec5ed3314d171544cf83026072e0a75fd191b56b4b84eb2f4118450284e04"
+    },
+    "q61": {
+      "code": "rotate",
+      "fingerprint": "2f36c85f4d72d40acf5fa0accac2af14d12d0dbbffd120f25449d23b03b2e066"
+    },
+    "q62": {
+      "code": "slice",
+      "fingerprint": "8fcf8396da1eb9ef0783e6a3927f0962294f347af14e33d69c89f65f7726657a"
+    },
+    "q63": {
+      "code": "geometry",
+      "fingerprint": "298ae1c08d1699be722c4900a2d976115b3b3045c5596f80a6202f0f5b50c273"
+    },
+    "q64": {
+      "code": "speed",
+      "fingerprint": "9ed824bd22e10f12d8125be5b5031fe48c943d16bbd96a1147a3743452d377d3"
+    },
+    "q65": {
+      "code": "sequence",
+      "fingerprint": "fab8c0282bf5eab26a75c5fe21e96fd7b68b9d02dae24c303b068066c2d3125a"
+    },
+    "q66": {
+      "code": "rotate",
+      "fingerprint": "6d254edaaa757338b0fafa39fa03ea3c9263c91439f3dadd25d0b7ba64a3e147"
+    },
+    "q67": {
+      "code": "blocks",
+      "fingerprint": "ea1beaccd60629c264f7cb7dacfaa34faa346b6c2df28138a372bf0247d7376c"
+    },
+    "q68": {
+      "code": "sequence",
+      "fingerprint": "4c808f9a100a75a567ff825d2da23d37440890c39826a5ab039724ae10cc408e"
+    },
+    "q69": {
+      "code": "logic",
+      "fingerprint": "bd6362c2a7257809dd63ca77e7c6e1dfb010c8d444f568586e78a6f764c2fc10"
+    },
+    "q70": {
+      "code": "mechanism",
+      "fingerprint": "ff17426c275bcc0c4940c3db66e3713eb9dbad636e0ea36ff1a44149d5ce326d"
+    },
+    "q71": {
+      "code": "sequence",
+      "fingerprint": "984f98ed591dfb7fd458ed1c733a390753c4e88be990b0d4a1545ca9778dd70a"
+    },
+    "q72": {
+      "code": "rotate",
+      "fingerprint": "a9ba9c21205bcec747d5bb2fbf1134acf3cfd263212a0e6a54b825d77f1845f4"
+    },
+    "q73": {
+      "code": "culture",
+      "fingerprint": "d8d947eb4475ce11f80c18432eb6618d5e3934577f3c300d60a81695b7dd30fa"
+    },
+    "q74": {
+      "code": "culture",
+      "fingerprint": "1748980275ef7c5211dd2a0fad1f9f46da716cd87b44348dd36690ce5588a43c"
+    },
+    "q75": {
+      "code": "usability",
+      "fingerprint": "1f38221b9f106320ec8165a8f02ae08213422713b1b04569538ae3b59ef2f3de"
+    },
+    "q76": {
+      "code": "mechanism",
+      "fingerprint": "43bd1462768bcb4456d4a341fc59337a1e92e64c023486ab2a6de95e9df6a5c2"
+    },
+    "q77": {
+      "code": "mirror",
+      "fingerprint": "2724a86eb4579382284eed19d74a27fafdd134e14a4f29ec4ace6aa79fd0ff54"
+    },
+    "q78": {
+      "code": "fold",
+      "fingerprint": "31192d82e2171da5961f510382664e15ebd2b10c9a3be693553fedb5a8e10bb4"
+    },
+    "q79": {
+      "code": "net",
+      "fingerprint": "2ac486f17cb3d80a96b7236a0b9ccaba82c186dc7abc773fc3df8b50e5255212"
+    },
+    "q80": {
+      "code": "balance",
+      "fingerprint": "3d93781c4e95aa266bfa4393b4bc326d6654093987d0adeec7cbb7e8ca5c37b6"
+    },
+    "q81": {
+      "code": "assemble",
+      "fingerprint": "79fcc646f7c7e8f0fef904fda123b65a7a73d4df5207418cfa7cc55ec5f83d44"
+    },
+    "q82": {
+      "code": "anatomy",
+      "fingerprint": "69d3723a276196fe63456fd3e3b8f13f039000318bc84e5386ec9607eabe1d8a"
+    },
+    "q83": {
+      "code": "geometry",
+      "fingerprint": "4732fd5b0309ee0afa4b94d67660705cca83c6c17a3a4bdf9d080a16a995899c"
+    },
+    "q84": {
+      "code": "animation",
+      "fingerprint": "dabd7d019c52d828f9aa12af40f1ef6f929d1daf8a214d71fd3f02363a2c8b5f"
+    },
+    "q85": {
+      "code": "assemble",
+      "fingerprint": "ba8064ed49498a37b304f73496a77f2900774f93a06b14ff975e7f7753a11d7a"
+    }
+  },
+  "uceed-2020": {
+    "q01": {
+      "code": "mechanism",
+      "fingerprint": "8914bc19d3f0c50fa0f0ce811e9f91620635ce3391fdb692b229184e4136f579"
+    },
+    "q02": {
+      "code": "count",
+      "fingerprint": "918cf1bee0e0403d4ffea05d4113c6b8428630eef68b04ef8e4fcf557e81a8a2"
+    },
+    "q03": {
+      "code": "net",
+      "fingerprint": "26e97b363417d856b3da1de4e61955a3fc7eae9b0193929f6a48db7be8e4f05b"
+    },
+    "q04": {
+      "code": "count",
+      "fingerprint": "4bc3e1cc1aeac42ee44ffabc2b6f6d7c7303acae02e119a66f1acbe9394b79fa"
+    },
+    "q05": {
+      "code": "geometry",
+      "fingerprint": "3fe2a31fe149133e0cd7d7c653774d547ac423774f1f924fff8a0fe5954e35f2"
+    },
+    "q06": {
+      "code": "pattern",
+      "fingerprint": "d5314e11d8177efc92d3eed9ac3fc33bbc98f3740821b114e569153179dcf9a6"
+    },
+    "q07": {
+      "code": "slice",
+      "fingerprint": "faf042a7997497a114a5d0fa807427f25ba4feabfb6fe35c3764a64b14c9d42a"
+    },
+    "q08": {
+      "code": "count",
+      "fingerprint": "454f3c69400124e79e496dc5127b959d832aa2501d150c7a4955cfed3bdf6f07"
+    },
+    "q09": {
+      "code": "count",
+      "fingerprint": "c1ab72cf5537afa6ca1fafa85be44ed6c5d985b1ea1b4f0468c2fd0d9374c24e"
+    },
+    "q10": {
+      "code": "logic",
+      "fingerprint": "41948b6b2243f820236ba760ee134fbdaa574f983d5a9e69b3f250a79cede773"
+    },
+    "q11": {
+      "code": "logic",
+      "fingerprint": "a90b568910cbba9b7e94642de1ddec98d389acbbb333679b7789ea310dcb8abe"
+    },
+    "q12": {
+      "code": "faces",
+      "fingerprint": "a09700b3826197372da3fca90a70960ab3e8aa34e233eadf3a64060435bcc64b"
+    },
+    "q13": {
+      "code": "arithmetic",
+      "fingerprint": "ac05d8c80b84ad3499ed49a0557f4d0416f77224120f2100fc370b97a88a5654"
+    },
+    "q14": {
+      "code": "pattern",
+      "fingerprint": "5a44a02b47cce38bde026648cc6e2ee01e24400febc05008f51477635512da3c"
+    },
+    "q15": {
+      "code": "slice",
+      "fingerprint": "5b9d47a7ad0cd1a885d24e3065734ca356e628fdaa6d14b6ce8862be3bf4ef06"
+    },
+    "q16": {
+      "code": "difference",
+      "fingerprint": "f72f40ab166b0c710b331ea8d0299833948553ca265cb1ecd78902b5e6f7bc01"
+    },
+    "q17": {
+      "code": "count",
+      "fingerprint": "8f7d6c5f4ecf41e5f37eaaae36568eb1b9dd2b93558cd8806c77876c3a107319"
+    },
+    "q18": {
+      "code": "count",
+      "fingerprint": "8de43fcdc292eab8350e1a21d1092ed1f20c04f357e91c9a9216fdd0f21a0521"
+    },
+    "q19": {
+      "code": "rotate",
+      "fingerprint": "8e4d71476e3f59a00d28a719ef5c8dca14207904fccc3515e8aeba14642512b7"
+    },
+    "q20": {
+      "code": "language",
+      "fingerprint": "e9af6d65ffd1349a86a7b4b860994ee48d477fcbe7a4e1b581e823e8a3d540e5"
+    },
+    "q21": {
+      "code": "rotate",
+      "fingerprint": "24f8bfca49636fb5aaac84926a906babe2c9cf6b174f0c4cd650ac0b2d90d3ba"
+    },
+    "q22": {
+      "code": "logic",
+      "fingerprint": "da173817ee47887806d69b33c154f4c0462643de3738d3731a6ca324d5074360"
+    },
+    "q23": {
+      "code": "light",
+      "fingerprint": "db00d09b7c0e9643a5727c3712d3c4069201673644ddd25072c7406b6c7eb892"
+    },
+    "q24": {
+      "code": "speed",
+      "fingerprint": "fe776f0fbdb28a71601ea82039c73157c1aea4d0bdfd5bdf033f6c8f2b19c5d3"
+    },
+    "q25": {
+      "code": "rotate",
+      "fingerprint": "a6852b90a67f189f26af397a66f2da944bdb67321fd8d1d50e3d7830b5630a15"
+    },
+    "q26": {
+      "code": "views",
+      "fingerprint": "133c4c09cfa1390106c6b2bff56332d4b394b93e8319cbbd7dc56b4b5e2f2751"
+    },
+    "q27": {
+      "code": "fold",
+      "fingerprint": "fb9df515109ed48c0bf751a69d95b16d28aeb0333e9cfcd9b4194c0c47f48ca1"
+    },
+    "q28": {
+      "code": "logic",
+      "fingerprint": "1dfce07fb611097080e5cc785df2fce9fa61b471ec872b3a766038841a1d0ca4"
+    },
+    "q29": {
+      "code": "net",
+      "fingerprint": "30653889809aab9ddb4f4c97fb773ffc688252c15fa356175defdcc73bb253a7"
+    },
+    "q30": {
+      "code": "assemble",
+      "fingerprint": "c650c8db56809d9c4e21c0b005550cc155619d8a46001b764a5e029dbb4803b6"
+    },
+    "q31": {
+      "code": "balance",
+      "fingerprint": "ee3e68032bc4aec33c4006d856b1f4e7d9c176eb254d8d508adfb52987cddb18"
+    },
+    "q32": {
+      "code": "odd",
+      "fingerprint": "4e7d5f432b55c36e97cdb87d53c62a2db907b8853728beec64c01c712afc677b"
+    },
+    "q33": {
+      "code": "rotate",
+      "fingerprint": "2892f1b0dd53fa8baf531047c8768b6a6e02366913dee763732022deffbb5010"
+    },
+    "q34": {
+      "code": "logic",
+      "fingerprint": "768d8a3ba7346a7d7d18507a1aa24e5c60d9cc6e752494448e03eb681510423e"
+    },
+    "q35": {
+      "code": "solid",
+      "fingerprint": "d8268ec150c1bb78932b22f6c17143aff40b1fa8802cf3367cb695c0ac4ca9ae"
+    },
+    "q36": {
+      "code": "net",
+      "fingerprint": "a43cf5b1db73814ecb5d09dfb02feb3fd45b5664cad3489ffa93df37a44d0947"
+    },
+    "q37": {
+      "code": "sequence",
+      "fingerprint": "985c959a091dc6ca9c6be1b9b887a66c1b49fc4f850134d428beb8fbdbcee806"
+    },
+    "q38": {
+      "code": "fold",
+      "fingerprint": "2f185e49ff3679837b205c07ca85f76e18d66dbdcd653f07808a535079b6c11d"
+    },
+    "q39": {
+      "code": "font",
+      "fingerprint": "c4bba65c07e7f615593c490e2e0bec51e39b0e62485176d6bd5ff43b9b4afbaa"
+    },
+    "q40": {
+      "code": "mirror",
+      "fingerprint": "2ad3ae397518c57fc943b137285b276639a57a144f271c304f1eedb13d6d88a2"
+    },
+    "q41": {
+      "code": "perspective",
+      "fingerprint": "c8b0b17a0024812a80ef7b1e0eeadacd0f7820aa3252d5dd58155c06df84f985"
+    },
+    "q42": {
+      "code": "language",
+      "fingerprint": "736d27b2dd912eb70e8efc2ae83f70efdb2dbba3fa506e1d034de21d25086b3b"
+    },
+    "q43": {
+      "code": "animation",
+      "fingerprint": "a408c10efdcc93aad397fc853e4e0632cca77ade2508b23e79a13cc2463d329c"
+    },
+    "q44": {
+      "code": "light",
+      "fingerprint": "7d958431305d08bafbf1cbff5314f1663fd7f185f54ea9cb34a3f408712d5667"
+    },
+    "q45": {
+      "code": "paths",
+      "fingerprint": "024f8deff95b2b33d8a2fdb898a2a0041066c3a28b94d7b1874725558fe2ca3d"
+    },
+    "q46": {
+      "code": "assemble",
+      "fingerprint": "4d7908d5463e70366db8a09a546ded5fe4a83499ae239b6672a4cb485b87588f"
+    },
+    "q47": {
+      "code": "light",
+      "fingerprint": "5d2251bd34b5a2248b3c37f66da6b9c43e8bab876d12cca5efa5806fc5704d0b"
+    },
+    "q48": {
+      "code": "odd",
+      "fingerprint": "1a9794c3ab2ea7eac88b0bef0d3144fc591d9e9026b9f17c3266a8b1782c4ff4"
+    },
+    "q49": {
+      "code": "balance",
+      "fingerprint": "4517470348c837b7acf0766e2bde09705f28fd16aeff12994b029d5084ba674e"
+    },
+    "q50": {
+      "code": "net",
+      "fingerprint": "299e9a8331c64cecaa3b90a47c49162eb45cafc5212656d180b875267fb392a8"
+    },
+    "q51": {
+      "code": "animation",
+      "fingerprint": "4aaaf4f56f78eeb43b1f58914996850b46cf2029f2e924245759a31151ce1f3d"
+    },
+    "q52": {
+      "code": "logic",
+      "fingerprint": "1b8dc78cffa0d0d5b675cc544c4b72387dad8118ab989269e088592504e8bd30"
+    },
+    "q53": {
+      "code": "perspective",
+      "fingerprint": "dd33575c01fa3d05f8af3df0d308f0bc0f7f4b6b69995ba7df4ef41f5dfff49e"
+    },
+    "q54": {
+      "code": "sequence",
+      "fingerprint": "b40f9c9e548993f416983f61e8848a3a2ef5904360315066fa451d06a9e85aa4"
+    },
+    "q55": {
+      "code": "mechanism",
+      "fingerprint": "8414959903c7c9eb470e4f3e7514ec94b92bcd7048a3701432411f348b6aba3d"
+    },
+    "q56": {
+      "code": "light",
+      "fingerprint": "397284a3ef62579079f6a9a5bf9931b329b5ef14e20c1dbb4461eaaadd80c834"
+    },
+    "q57": {
+      "code": "nature",
+      "fingerprint": "8469d50d75efabb0edfe0eaf9b217a9c4530e2a78049ea040719a794f079401c"
+    },
+    "q58": {
+      "code": "pattern",
+      "fingerprint": "efdec4a9f7ec0b7ebde7d276b62907b43c9e374a53e917a009ecea701cef8d9f"
+    },
+    "q59": {
+      "code": "views",
+      "fingerprint": "e8bea702065c2cc4ae7417329141ffa9a64c9d283f43fae93a5ff4d2b298ef89"
+    },
+    "q60": {
+      "code": "rotate",
+      "fingerprint": "984b8424600e7ec16b97f1c2b90076c82b2e08ef2d1684231ad496649490d7d4"
+    },
+    "q61": {
+      "code": "mechanism",
+      "fingerprint": "b65012073457befb6ae7f565eca57c2314082a29ac4696e14e78397ebe947fe6"
+    },
+    "q62": {
+      "code": "colour",
+      "fingerprint": "4f00e96ea24e78974a425f5d63dbb134e6441e499134637c01648adb5c82800e"
+    },
+    "q63": {
+      "code": "rotate",
+      "fingerprint": "53e99b20fdab111ef956f2cdc1442656ecb3f4e756e6f3c3fe037cff9317355f"
+    },
+    "q64": {
+      "code": "views",
+      "fingerprint": "a280c38766afc54fba1be3b6e3a60cb4b43c81086a1000859fa9120fea74e2b7"
+    },
+    "q65": {
+      "code": "assemble",
+      "fingerprint": "e1d682817747618c43b5f36077372e420208c4751e7ca0072acdcf00ad0adbf4"
+    },
+    "q66": {
+      "code": "sequence",
+      "fingerprint": "d7da670ec98c8de06e3d77d504b977816255413c39fed9e581ec0e15aface795"
+    },
+    "q67": {
+      "code": "analogy",
+      "fingerprint": "19cb978aab9b287b3f8d58751e7c6a89698530bafa982f348c22e91e944e7469"
+    },
+    "q68": {
+      "code": "fold",
+      "fingerprint": "f592c310bfbaae904d97203608637c0dbffcffb011f7c18292e45c4c58a6acb8"
+    }
+  },
+  "uceed-2021": {
+    "q01": {
+      "code": "geometry",
+      "fingerprint": "6e15a40fb469b7d64256236f1c8ace75150919c1512b082519f85982560d6f40"
+    },
+    "q02": {
+      "code": "probability",
+      "fingerprint": "9c02a425d0bf645da44ff9bc3b44d3f561e7321c45881e4a247bc985f3f4d289"
+    },
+    "q03": {
+      "code": "fold",
+      "fingerprint": "114df56d8bc2f8384e1030503ddcfa3ad988638b2efedcaa9fddb1bd22dfcb74"
+    },
+    "q04": {
+      "code": "count",
+      "fingerprint": "b2310b0a79ef3deb2d7c4326f75bdae8eabe73fe370423c74171075d1b033597"
+    },
+    "q05": {
+      "code": "geometry",
+      "fingerprint": "f191172ee22b5faf4ed0a84214985db762d22790b418d8e7980195af23ecb418"
+    },
+    "q06": {
+      "code": "probability",
+      "fingerprint": "145e26c0d2f9d9086d1244c4045f0beef99ea10d9f043d45570cb4c88cc1dafb"
+    },
+    "q07": {
+      "code": "material",
+      "fingerprint": "830f4fd1cf3e1deb4e85359ead2cfdcdb93b920b9d2f55a50958029d3b564dce"
+    },
+    "q08": {
+      "code": "paths",
+      "fingerprint": "6234574d634083cf64868d41b2fc320933ecb51af4719a7eb7faa046ee99385e"
+    },
+    "q09": {
+      "code": "font",
+      "fingerprint": "eff477c739b0076ff508b4ae4c4aa1b2269ae2f0f0a9b683ac5cc5dadad4b7c2"
+    },
+    "q10": {
+      "code": "faces",
+      "fingerprint": "066a1959b9c892997c7661e9723c068eed041289534b69c12b428f1b557ef94d"
+    },
+    "q11": {
+      "code": "arithmetic",
+      "fingerprint": "ed4034dddd97d69b2af5d6b08324ca16907922b8d3173497f1d48df83825b4d5"
+    },
+    "q12": {
+      "code": "faces",
+      "fingerprint": "6e23a6c87f210250d50c92395307c794d7421c866939509e02c7420efa8f5e10"
+    },
+    "q13": {
+      "code": "arithmetic",
+      "fingerprint": "c7d6db76af5501fd8aeb8909be9fe1154a80e081d321cbf1b70ce2cc3bc9f437"
+    },
+    "q14": {
+      "code": "geometry",
+      "fingerprint": "bbfaac6a58ac67d015cb3ff8761447e7fb2c5664a24a3d287b443894291d40b9"
+    },
+    "q15": {
+      "code": "geometry",
+      "fingerprint": "db159422f6e89cffb71b1f6a24bc2ef44401ed52743df6c7ae7162001e8e3455"
+    },
+    "q16": {
+      "code": "arithmetic",
+      "fingerprint": "82684a89c74f64a80d12dc0d36d3bfa8bf6cbfbd2c95fa0316bd2a9af15b4d90"
+    },
+    "q17": {
+      "code": "geometry",
+      "fingerprint": "50cf934344cec250d23c09243c76ca56a8f715d325ca83553c89528182f69f96"
+    },
+    "q18": {
+      "code": "count",
+      "fingerprint": "43503606940a832ed7a9ef79f0e350fddd8e047749da251c30e99b05c48a3162"
+    },
+    "q19": {
+      "code": "rotate",
+      "fingerprint": "b4fe9b239ecaf1f2e50e5baee926c6c13fa280228d5b3d5417d187ae1a3d6e0b"
+    },
+    "q20": {
+      "code": "language",
+      "fingerprint": "b805a648199ebdf82c2f858239f1eaf94cd0128a4d4f72b57fb11bae6a132aee"
+    },
+    "q21": {
+      "code": "assemble",
+      "fingerprint": "9873453630406dd692f1658a450e85978fd491121980a8b6f03557ad0ed17e19"
+    },
+    "q22": {
+      "code": "logic",
+      "fingerprint": "cdfd71e3607c8512f6ed78a982a615d90052b4a19803ed2ef3e77b8974c3ebca"
+    },
+    "q23": {
+      "code": "fold",
+      "fingerprint": "15e1a38805a17100c4409705d95cccba992295cbe9b2eed1731d51f70f73bb1c"
+    },
+    "q24": {
+      "code": "speed",
+      "fingerprint": "5424c4ee93f5a9797d90456c791067711fedb6b63e4fa3911120ba5df7381e0a"
+    },
+    "q25": {
+      "code": "symbols",
+      "fingerprint": "2ca3ff4d6aef587ab7e0cc1c3db3fadbc721530031c414bb4284517aacb0a6ca"
+    },
+    "q26": {
+      "code": "animation",
+      "fingerprint": "575a2b2c7d55d08fcf49e8ad0291a09c341c1d66f19ef718bbfad620c375daab"
+    },
+    "q27": {
+      "code": "net",
+      "fingerprint": "c25e40c9d68867f8f5407563a8dbee31bda06cb2f0855b8077f6f8e632547f26"
+    },
+    "q28": {
+      "code": "material",
+      "fingerprint": "820018fc64e1ffabc077f0d93e7dee3f6b2e2ec761bbf581e0ef370e617e6ef8"
+    },
+    "q29": {
+      "code": "pattern",
+      "fingerprint": "05c5371519a88ba7daaf5593db9652edffc393251c18e7747ade8c21898b1d67"
+    },
+    "q30": {
+      "code": "views",
+      "fingerprint": "cbe5beac18042f2a2ebf0bcfba7abeb5709bc824d619d5691d33d317a2830707"
+    },
+    "q31": {
+      "code": "animation",
+      "fingerprint": "7e7b4141aea8585978c0f76922fff9de8602293f9ffd13786a43cf883037cfed"
+    },
+    "q32": {
+      "code": "rotate",
+      "fingerprint": "53e07fa066fb35cae1027fb8243d995fad1002c67371815b64d883400a0ba545"
+    },
+    "q33": {
+      "code": "paths",
+      "fingerprint": "cfb6109211d820261781a28cc36a20d1f36d094c1b97bb2f3a50009ac1b126df"
+    },
+    "q34": {
+      "code": "sets",
+      "fingerprint": "93246ddda93461cd1b007c220c82daa1e79367d1a6d2e17112a0f0489301f2ae"
+    },
+    "q35": {
+      "code": "faces",
+      "fingerprint": "16225161155e8fff5eed7f876b69e4dc3cb0a96e06c9dc37ce6def02f9704149"
+    },
+    "q36": {
+      "code": "slice",
+      "fingerprint": "21932885b231045f2d1e6af5199f2394efe51e2d1b9ee7477c2aba4999530e81"
+    },
+    "q37": {
+      "code": "assemble",
+      "fingerprint": "1d0166874c050cc15dfa80182e393e455d24708f0e3212403f97204f57728f06"
+    },
+    "q38": {
+      "code": "logo",
+      "fingerprint": "7bb645328335b58fc983095f2d5fff67e2081bba97d443848d9245543725121e"
+    },
+    "q39": {
+      "code": "culture",
+      "fingerprint": "e7bb3aaa78fa4b43deb661c9ca37e3715f0bae688e9474dbcb75505e962461bc"
+    },
+    "q40": {
+      "code": "light",
+      "fingerprint": "9756877b498dccf42b347c952f559e2f8888316fd914aed1fcabf716394a1270"
+    },
+    "q41": {
+      "code": "perspective",
+      "fingerprint": "5158d16006593348d980355f188268727a93427ef6b6b34f2ea8f4d92f3ebe65"
+    },
+    "q42": {
+      "code": "sequence",
+      "fingerprint": "f1555af1a62ee579e45fefc8b1bab17776156df3effe921ab896dae8a4e524bd"
+    },
+    "q43": {
+      "code": "mechanism",
+      "fingerprint": "e2625a91966952cb0122458a9d4ef4ce46d4f10633649b83f6372fd00df6baac"
+    },
+    "q44": {
+      "code": "perspective",
+      "fingerprint": "60b9e5e1a4b58fc318c38cd7eba39da0c350cf59644db1b0d12ea3a2beb352fe"
+    },
+    "q45": {
+      "code": "geometry",
+      "fingerprint": "1ab10f6af7457f111f1130b3aefdc8bf151522def8d145d170f0b169f40959d7"
+    },
+    "q46": {
+      "code": "blocks",
+      "fingerprint": "6dc8fbd54679ada915a6fb91aa70ce7aef7d0fae70b41166ca8569c49d5a2b9f"
+    },
+    "q47": {
+      "code": "light",
+      "fingerprint": "2bcdee5e7a1e10f347424906ff83f0d25a8ebc8ac1b6ff305e8606c29aa76870"
+    },
+    "q48": {
+      "code": "sequence",
+      "fingerprint": "1d0847d81e22008c92f86525fb5bb2446899dda5fe3da1e581ca3a37d4bf5515"
+    },
+    "q49": {
+      "code": "perspective",
+      "fingerprint": "92be3b31fb01a312c7914cfbc1d638172af44d44f091a36d959508a65231f8a4"
+    },
+    "q50": {
+      "code": "speed",
+      "fingerprint": "6ad2394f908585860a14b8bb72e76ce4511080319c2e4a468af3ca2988d1c7d3"
+    },
+    "q51": {
+      "code": "usability",
+      "fingerprint": "bd136857ec771cdc1b2b16db3e54648a5df974d9a6a423ef0b981eac2f849b86"
+    },
+    "q52": {
+      "code": "assemble",
+      "fingerprint": "25ffe9d38fd01e44dec88ac6bea355ba702c1bde8a1db545895600de89e488fd"
+    },
+    "q53": {
+      "code": "perspective",
+      "fingerprint": "286da51d2f4df788df2bcad921fe6ac699f39a8be85a0f19652b6bea605d6d50"
+    },
+    "q54": {
+      "code": "assemble",
+      "fingerprint": "c69be11b16c0956737c3544209339101222378d714148d1d92ea9f5a3cec9fb6"
+    },
+    "q55": {
+      "code": "rotate",
+      "fingerprint": "da25e20f0c1c20b37e65d0338d3fea926eddf0df843e0ddc6201ab443403b090"
+    },
+    "q56": {
+      "code": "data",
+      "fingerprint": "2f36871778a3832fc40d85203eefe984b4fec92e4068b22680db5787bd463ec7"
+    },
+    "q57": {
+      "code": "geometry",
+      "fingerprint": "7c9dd18fe66de3c7cb61f4f66c6b2b2a82e5492a983cbf359ed15a69cbcbcb15"
+    },
+    "q58": {
+      "code": "net",
+      "fingerprint": "452550f9a538e76d24ebfade78269b17a7c98b1c9c59c58716944844a7166435"
+    },
+    "q59": {
+      "code": "animation",
+      "fingerprint": "629adfed2789fd441d054c5dd2780572292a5d43c51b2388d69f0faeed60d316"
+    },
+    "q60": {
+      "code": "fold",
+      "fingerprint": "fd968688053ce3d677902395b752e6e51cdf2bc6947b06a3912e403a963d33c7"
+    },
+    "q61": {
+      "code": "rotate",
+      "fingerprint": "befe7c2a56fa540d2eb15555ad3f03210949179ac75c80fb2f1d4706a0596197"
+    },
+    "q62": {
+      "code": "mirror",
+      "fingerprint": "b9bccaca9a3cceaa0ffdc3844d30d73891d53ac7df480ae0a358afac52d072f9"
+    },
+    "q63": {
+      "code": "language",
+      "fingerprint": "fb112f5dce31b2ff6737d99ee05787cbb40d357a6d3b3704aaea4cd8f7959548"
+    },
+    "q64": {
+      "code": "mirror",
+      "fingerprint": "a284227c4d5e6891832249ead41265c00f755f11165074d397cded022e4d402a"
+    },
+    "q65": {
+      "code": "geometry",
+      "fingerprint": "39f091fb0e9a2c265ad92cf5f499f935550c832ec9942353259537852858ea18"
+    },
+    "q66": {
+      "code": "analogy",
+      "fingerprint": "7ea5961f90ab2e0a7ad350612c580ca26334eac70b5618dfae77fac506c4fdcc"
+    },
+    "q67": {
+      "code": "logic",
+      "fingerprint": "82d780199ecd1c80b2c660da33c68751d27b8c79c9bbba45a0b3ad2e356f602f"
+    },
+    "q68": {
+      "code": "logo",
+      "fingerprint": "d43b459db72be89b4188d40a0248d83f01e7a6381df4d63a48976237d65a4702"
+    }
+  },
+  "uceed-2022": {
+    "q01": {
+      "code": "faces",
+      "fingerprint": "d3f643b50c92a43fbc4daca3208c3391bca81041b9687c379c24479c60c46a6b"
+    },
+    "q02": {
+      "code": "paths",
+      "fingerprint": "482c591e834e6995106ce876393bf2ffa6ac2fbfeae46f3db61194570c147582"
+    },
+    "q03": {
+      "code": "assemble",
+      "fingerprint": "b54e0d567d7b739ecda6cb13ca0d9a7feaa5393565461df4c90499c2379132b5"
+    },
+    "q04": {
+      "code": "assemble",
+      "fingerprint": "b65ba11f4ea0c4c255262b4c791bde0a0b57314b622b852ca36cebe88f03d609"
+    },
+    "q05": {
+      "code": "logic",
+      "fingerprint": "b2929273305d4f24f48cdbd9af6b71ba4ebed0b7b94bc4b15d543f83d742fc5a"
+    },
+    "q06": {
+      "code": "count",
+      "fingerprint": "0399691a80fd3c7c0b370cb744c2b5276f0268b26812b56c24eccf5ad3b21ffc"
+    },
+    "q07": {
+      "code": "geometry",
+      "fingerprint": "8132dbcbb2c52be6ceac50b50a5ddbceeee71df5b3cf9221a14698afae9e91d6"
+    },
+    "q08": {
+      "code": "geometry",
+      "fingerprint": "6e6d279eb58c528c6ab0ceeed154f6a78c246cfc8c80a189a6945dbc33caaeca"
+    },
+    "q09": {
+      "code": "sets",
+      "fingerprint": "1cd8bd291c00b9d24c91cddcf3ff23b47e3f2836694fdf611c6f859096c38e77"
+    },
+    "q10": {
+      "code": "font",
+      "fingerprint": "5cea7432378f96e64c82e93b5dd77b323c963fee6dde1df764fc79a38619bd6c"
+    },
+    "q11": {
+      "code": "geometry",
+      "fingerprint": "6faf180136138f26ca831fc1c0e0109863e40fa1310c40e9775e76187c61b10f"
+    },
+    "q12": {
+      "code": "arithmetic",
+      "fingerprint": "248b390fc3245580c3b2ebd8c055f859bc3dbb9a719d7de5af6483d4713ddb31"
+    },
+    "q13": {
+      "code": "logic",
+      "fingerprint": "e5ecf2f6eea60644ea109243b55ea5446f283e63f78289c4dbd8b358a5961bb2"
+    },
+    "q14": {
+      "code": "count",
+      "fingerprint": "f7c30df3c708cec4773a15c686a77405fca2aa65d6322dffaefb47fe7b27c2c2"
+    },
+    "q15": {
+      "code": "balance",
+      "fingerprint": "ca317d48d8db36207ce8cc944615767ce7cc23eb7df4d80da4a70ec8cc6d1850"
+    },
+    "q16": {
+      "code": "mechanism",
+      "fingerprint": "88f02b1aaea0b3d883679e55fc4d0b7f26bd55c46a3e1494441d8a2da7f9c7e8"
+    },
+    "q17": {
+      "code": "faces",
+      "fingerprint": "315402a242605d48c529bc92ed70385bd234e2a204974181508c3f67869b1253"
+    },
+    "q18": {
+      "code": "geometry",
+      "fingerprint": "e6b53d689541522fef364b2c6134d48d67a0348eb1b6dbb194e3fd787bed2c08"
+    },
+    "q19": {
+      "code": "pattern",
+      "fingerprint": "3f1d112a82e2ca3aa701d1f7e3ccb0e23811c5d4701c9476b370e2171a903c6b"
+    },
+    "q20": {
+      "code": "rotate",
+      "fingerprint": "d81dc75e2cce6a9e8c2b209a1abd0962b0f5d7435dc8a837b707477695f0e7e6"
+    },
+    "q21": {
+      "code": "data",
+      "fingerprint": "6bcf1f1cb1a706eb68939dbe1236a3c390387242b1171e86afa1c118c6a30c6a"
+    },
+    "q22": {
+      "code": "paths",
+      "fingerprint": "5125d5ce0fdd42d655d03972e688ca18e18a2dac89ad2ebe93433342c1302f06"
+    },
+    "q23": {
+      "code": "views",
+      "fingerprint": "918189a5b1e269cb0e79f9a8b6e8150160183d58be1e41434575dc7526b01e4c"
+    },
+    "q24": {
+      "code": "balance",
+      "fingerprint": "36e49874075da6652154457b7cbcc6633fdb7ede2cbe4473e75a8472d6d28e68"
+    },
+    "q25": {
+      "code": "pattern",
+      "fingerprint": "5af8aa0a1df8526ab248ce5b09de70873f065c0d5ecd7862a978fc3288099893"
+    },
+    "q26": {
+      "code": "rotate",
+      "fingerprint": "8d77af32f23be9a97012d8c13399f8e211f2e3e4c9fd73d90179f6de6bbbd413"
+    },
+    "q27": {
+      "code": "solid",
+      "fingerprint": "48b73d6789d00de07ca509a4a17b86ba242e959bd431a202497faa0338b336e9"
+    },
+    "q28": {
+      "code": "assemble",
+      "fingerprint": "f7c63072f697bb40d479adfe178251948672682d287c02fd64aba3eecd32f87f"
+    },
+    "q29": {
+      "code": "material",
+      "fingerprint": "c2107c4259b4d9aa5a7589e5c89272464a3ff36dc248917130968aa46d871e77"
+    },
+    "q30": {
+      "code": "blocks",
+      "fingerprint": "13c7e1c388194cc82bf41774c5ead1bd54547eaa715b7fb71d56d22264423e18"
+    },
+    "q31": {
+      "code": "pattern",
+      "fingerprint": "35e5d69561e8a4ce95fb63e255f857c869aa60947a314b1265ce4e8c4e862bd5"
+    },
+    "q32": {
+      "code": "assemble",
+      "fingerprint": "df750db2e226d62a543c811bbcab3c37319e1a73c7c5a4f0cea534d07c683074"
+    },
+    "q33": {
+      "code": "assemble",
+      "fingerprint": "b290f3c8669abd88f3146f21e4103c02b9d0c8ac1c1e41e4e95cf626c6b1626e"
+    },
+    "q34": {
+      "code": "mechanism",
+      "fingerprint": "e35c87ec8aef2a4c7fc50e283ee912647a729cebca3bf48a4b504b5c2f52769c"
+    },
+    "q35": {
+      "code": "rotate",
+      "fingerprint": "8c2acf5d53132639832ed6284a82652e54d6d8292eed88dba6fc1610b379632c"
+    },
+    "q36": {
+      "code": "net",
+      "fingerprint": "0fd79548c26271eb5b0b516480f14bbb9fb494ec0dd933432ac47e987c6ae2ab"
+    },
+    "q37": {
+      "code": "mirror",
+      "fingerprint": "f333c9fafdceb66f1165a0c8c09c17c6658d3b8dc09e21ad16293cf44073ba77"
+    },
+    "q38": {
+      "code": "sequence",
+      "fingerprint": "5588355922db607e94537976dc7764ad9a8090a860cba0a696db583012f3fb92"
+    },
+    "q39": {
+      "code": "rotate",
+      "fingerprint": "80fa11e2a8ced662c59d26ce1a9d3333f50cc56dad4d16c653d313cda6160134"
+    },
+    "q40": {
+      "code": "logic",
+      "fingerprint": "2d59cfa583067ea430b8a33d830675aa291950cbfd072f370e46b7348b6bd8b8"
+    },
+    "q41": {
+      "code": "perspective",
+      "fingerprint": "b8d01c0b7777e697e04822f19a9511057d2cf5ca42cc11efc4bbdc693866fa12"
+    },
+    "q42": {
+      "code": "mirror",
+      "fingerprint": "4c94fdc21659d12f09b251dd8799cee91e570500141d5ea980f6a4e8cb437690"
+    },
+    "q43": {
+      "code": "light",
+      "fingerprint": "b29aff10edb3401dd106128096174e9dd7b5a49bd1f642653da45d60e858c71e"
+    },
+    "q44": {
+      "code": "usability",
+      "fingerprint": "5b70b5eb9116c2e74cb40288a4bcabeaf8c47508783cf1f0c4f6e27c1da63f39"
+    },
+    "q45": {
+      "code": "light",
+      "fingerprint": "b3fdd5a1dd9d412538929129629e09d27de9e074290e309a7faba68e75de454d"
+    },
+    "q46": {
+      "code": "odd",
+      "fingerprint": "f9c0c354088d3e022a1dcb03c21f9ad14cba34b804e041af8a7372d64e8e7648"
+    },
+    "q47": {
+      "code": "net",
+      "fingerprint": "d3c1b0702d5e3d62c522ea939ae93a8e349ea27ce00035bd504216df5294b804"
+    },
+    "q48": {
+      "code": "sequence",
+      "fingerprint": "8582b2e9327027143fffed35a92a1e4ddc902dc524735aed4d0c4b2f8682a808"
+    },
+    "q49": {
+      "code": "geometry",
+      "fingerprint": "ef089bec62f116b215d963972e7504b2ae28739d1857691d5ae646bae484948f"
+    },
+    "q50": {
+      "code": "rotate",
+      "fingerprint": "a13f09c596e3182b84b9e4ad62104d30442cbb0c355fcc7e7de066bd44905496"
+    },
+    "q51": {
+      "code": "views",
+      "fingerprint": "fe05dde9e90664d9bb3971b0e93078285ca597cc167066836fa58125c6cc5c1e"
+    },
+    "q52": {
+      "code": "assemble",
+      "fingerprint": "30e695f9b5a19463f2fb25a275ee92bee985ce7b4d7029c17a45eb342bf75c05"
+    },
+    "q53": {
+      "code": "mirror",
+      "fingerprint": "db337ffbf81bc9811f605d688aaf840fbfaa7f53fa088f82bf06463f719f4f5e"
+    },
+    "q54": {
+      "code": "assemble",
+      "fingerprint": "24a9694bcf920136f4b5ad0a9b6c5dc3df01c3f7730c9e1fdd7daa86a8b3c2f8"
+    },
+    "q55": {
+      "code": "fold",
+      "fingerprint": "10bfa9a64bcf033f6d618fe0a4fda1a51216388f94aef11a59ada6078ecb4389"
+    },
+    "q56": {
+      "code": "difference",
+      "fingerprint": "732fa7be5135a16c3d62eaf0eb6910ea41ed84988c5bcfa760a2c13b72b62721"
+    },
+    "q57": {
+      "code": "colour",
+      "fingerprint": "e135271488a41b7a8769e11bba148d6096113dedd40bca0844e785066487b0d9"
+    },
+    "q58": {
+      "code": "font",
+      "fingerprint": "225b81586e46da22e547a0c0a6b63b4d029ad8359f8ed85ffc0bd784a0f0ab9f"
+    },
+    "q59": {
+      "code": "fold",
+      "fingerprint": "684458f1d1aab305dffe9732f135c148cb2ce074a87aefc8e8a7a832fac6ec00"
+    },
+    "q60": {
+      "code": "perspective",
+      "fingerprint": "2be0fde0fe7f49c6af09ca771e89c785fa1bf988d7e950b8c4a4616611118805"
+    },
+    "q61": {
+      "code": "arithmetic",
+      "fingerprint": "a23f1db0423729ed9e48fe99f529f2555347e95030aa90efea36511e71506c8f"
+    },
+    "q62": {
+      "code": "views",
+      "fingerprint": "a4ef6ce1b94e72f0646c1ad3d950dd370892e5c4218edd18bd2fc3f62613b37a"
+    },
+    "q63": {
+      "code": "views",
+      "fingerprint": "23820eef7619dae63a9533ce6c597145c9e5c074fc819bb646dd3ebead3cfce1"
+    },
+    "q64": {
+      "code": "count",
+      "fingerprint": "2a549854952999dde386e9761bd6ad93f12742f30c01c4dd99528e28a5035f33"
+    },
+    "q65": {
+      "code": "code",
+      "fingerprint": "3265b876bfca42ec9015722b5183c8cdadd4e6e3328344d2d026edffdc4f9d77"
+    },
+    "q66": {
+      "code": "arithmetic",
+      "fingerprint": "7ad6023e27ba2335ed6d27884e6e8ad3ae4034b59f8fcc5fbf9e9f4bae17bb9a"
+    },
+    "q67": {
+      "code": "mechanism",
+      "fingerprint": "9f9691e07b5aa78e7ef3db729854c456058cfb6803d6c8e17a63b15c1d1baf13"
+    },
+    "q68": {
+      "code": "mechanism",
+      "fingerprint": "f9708a1e1493451b580630e4de2de0ac86609eb8781c9ed979babf30510f8395"
+    }
+  },
+  "uceed-2023": {
+    "q01": {
+      "code": "count",
+      "fingerprint": "e15db7689a67a02e60ed141003488284379932390d9121704cf278a3f95e2b79"
+    },
+    "q02": {
+      "code": "geometry",
+      "fingerprint": "d993b5f2769a0d3a75c6cbe0ea917b1ee9159606d6e146e660f5bc642d328ed4"
+    },
+    "q03": {
+      "code": "assemble",
+      "fingerprint": "e77fc77ab896eaddccb020b2c2d9ce74e50828a42f91ae11827a49b4002e6081"
+    },
+    "q04": {
+      "code": "logic",
+      "fingerprint": "def3c33007b9b279a1c4472e10d0a18e4a32ea3ede52a28b0ed088d4f90bb31c"
+    },
+    "q05": {
+      "code": "count",
+      "fingerprint": "1a33ea71d53fc7fce325d50465c8078aee31418acf001bc9e5a9460b5d71abf2"
+    },
+    "q06": {
+      "code": "geometry",
+      "fingerprint": "1d4cdc95e6e2d3192307c4db709c4ba567e679145547ab1548794d4ae400d806"
+    },
+    "q07": {
+      "code": "faces",
+      "fingerprint": "a96ca9910529c045b119d3d6123e04fb942d992d70d940ad5ffa55beee2980b0"
+    },
+    "q08": {
+      "code": "speed",
+      "fingerprint": "4959e68bb8a77b46c6e90a522a0f8c7e4feba069ea650f263d08f146ac05d9be"
+    },
+    "q09": {
+      "code": "difference",
+      "fingerprint": "cc044cfe2da1f5d2e5e6e627ee97172c8f7c44416f773ee510791def0a72b347"
+    },
+    "q10": {
+      "code": "count",
+      "fingerprint": "f6e244937ebf57b7fbd063b11a0af818fa3f81b8cfbd5936396f78940779fc89"
+    },
+    "q11": {
+      "code": "speed",
+      "fingerprint": "b067fee229dd5e8748f008f5fd70b2671ddf969d28214df5f3199c6a824d2057"
+    },
+    "q12": {
+      "code": "geometry",
+      "fingerprint": "722fa4b7ef4f854f3b8fab576079628f2ba804f1d1bb31c7b30b17b26082b767"
+    },
+    "q13": {
+      "code": "geometry",
+      "fingerprint": "efd04373d50ef8857bf2b41bff4e909452250f4f953a05b435788d86f400fa80"
+    },
+    "q14": {
+      "code": "code",
+      "fingerprint": "b3fc0bf8224039cde1a798e542e2b888c3a3a15b15fa5486a0f51164799fac10"
+    },
+    "q15": {
+      "code": "probability",
+      "fingerprint": "0b57bde80347f32ef40dd45ac19f033bed8bbceaf9f740021593dc8ac58ff608"
+    },
+    "q16": {
+      "code": "count",
+      "fingerprint": "f6f3ca828c22ec955e381679be2b869da2a3a47c497e289663c52a143ed4b2d8"
+    },
+    "q17": {
+      "code": "count",
+      "fingerprint": "87b1a058100a8db17821d0e0a10730c8d2f3ce37d7f71a46998ab3ca584a52e1"
+    },
+    "q18": {
+      "code": "rotate",
+      "fingerprint": "00548c1377fbbd0cfce517434b5915cbedd027efa7f6d0bec321e3c22c2ef288"
+    },
+    "q19": {
+      "code": "assemble",
+      "fingerprint": "5057c1473824cf745e4d021453bc2374756ba65a08ef02edefaeafbab16edad6"
+    },
+    "q20": {
+      "code": "colour",
+      "fingerprint": "be45aa9159c9a28976a36bfa9c8cabff7cfa826361f6d3acdfadf261319dfa19"
+    },
+    "q21": {
+      "code": "data",
+      "fingerprint": "0bf6fba2cb5fbc47c43b68b6671bccddfee8dc6a3a8169ae8549d6443212a580"
+    },
+    "q22": {
+      "code": "mechanism",
+      "fingerprint": "d69797b41f03d8481596b9e100fc6aeb34d68755655c9fee4ba270b4b81aba31"
+    },
+    "q23": {
+      "code": "odd",
+      "fingerprint": "d033d9bcb88ea5bb885c262e801ab35990353acca316168a3602eb5b25e4892c"
+    },
+    "q24": {
+      "code": "mechanism",
+      "fingerprint": "05014bd98964a9cb2ac1c0268181a8ebb1757a9318af897e66fd88e531e84748"
+    },
+    "q25": {
+      "code": "perspective",
+      "fingerprint": "5a7a8116abfb51c489fec3009ae4f0362b7899248123cd003df5e805519762eb"
+    },
+    "q26": {
+      "code": "font",
+      "fingerprint": "859ef473803dddb8e32d5dbe3b7111faa67a05052e9755484daada126d382d92"
+    },
+    "q27": {
+      "code": "font",
+      "fingerprint": "3e556fc2a8473d06b71893bef2d0d6bfe8730db9fec0a3d467303a55a61e3934"
+    },
+    "q28": {
+      "code": "assemble",
+      "fingerprint": "c79acae62f0083861c580c9c65ab9e0b994da802099aa49f5c51e290ea1d60df"
+    },
+    "q29": {
+      "code": "views",
+      "fingerprint": "fe2b3957fe6db7b06a84b7a93da4609625c6ad2531e5a701b6b5b84cd06d2b77"
+    },
+    "q30": {
+      "code": "solid",
+      "fingerprint": "e101f8833629758b7f313368e973cfc08625fab2a7151a1e2f22f135e7c36287"
+    },
+    "q31": {
+      "code": "usability",
+      "fingerprint": "4a407c00f81af1ac9d26cc2c19bedb3315ff80ba113de35042e70a4cb499986f"
+    },
+    "q32": {
+      "code": "usability",
+      "fingerprint": "e5f26d0c42c41b17c3ae754bbf34453edc6fe55c0ae7bff4fe3e0e0d3f74fac3"
+    },
+    "q33": {
+      "code": "mechanism",
+      "fingerprint": "a0754a72278cf6e22181fb285b3a2ca514faa0b084272c43ccc02c06c4a37cba"
+    },
+    "q34": {
+      "code": "sequence",
+      "fingerprint": "2cca53bb36ca0ab3ea84c2f0ebed0df808d250d2ea9888c30b4f9bdf4a76b101"
+    },
+    "q35": {
+      "code": "net",
+      "fingerprint": "7e03500fc3e8738577d1fad4f5ae4955854b95624aabaee7d3cb93a4bb8a0303"
+    },
+    "q36": {
+      "code": "balance",
+      "fingerprint": "8ae06031e7d77c9d5b867c513d7f5893a2ade65a85c1979591973e4b03ab369a"
+    },
+    "q37": {
+      "code": "perspective",
+      "fingerprint": "cbc7c20af8f530abdfefcf6afb93b44b843d27abc18350a5a433b0d1373e9ad9"
+    },
+    "q38": {
+      "code": "slice",
+      "fingerprint": "a575d0ccefc9430780d53584ce4ab52983fa41e4bf7a2e6e83ddefd66f74655a"
+    },
+    "q39": {
+      "code": "fold",
+      "fingerprint": "b5c0ed53fdd2626eca8f389c74170eba024ec70761f7e4ba30fcd190fbb1f241"
+    },
+    "q40": {
+      "code": "rotate",
+      "fingerprint": "1474d46fd8d7222f2596b552d1f7c309c28c5105bb87c87787738e176a35c4a6"
+    },
+    "q41": {
+      "code": "net",
+      "fingerprint": "7341e3166db06d73fc998467c5a097f1d8b439acfbd3fe2bc2ff6aaa9d9da457"
+    },
+    "q42": {
+      "code": "sequence",
+      "fingerprint": "252e8c499c94786ce02f60b300e92faa3884de1ba6ec8a0c3ba9e8e4378399b3"
+    },
+    "q43": {
+      "code": "mirror",
+      "fingerprint": "de18ea011bb3863cbac4ba58d3d03df83bc07e784121f9ae8ee643e1e93d926d"
+    },
+    "q44": {
+      "code": "code",
+      "fingerprint": "d8c42684deb9bdc1ddca306d5c7dc8eb4b429095b2c9f84c763efae7af92a5f3"
+    },
+    "q45": {
+      "code": "solid",
+      "fingerprint": "c5bd5eebe29779916e276b1a5b3e528a5b897dd362e9c763b61ca75eae9de8a0"
+    },
+    "q46": {
+      "code": "light",
+      "fingerprint": "a48941dc08765577574c46ecda51cf106c4bf727415eda823037c141e3711bda"
+    },
+    "q47": {
+      "code": "mechanism",
+      "fingerprint": "7629885a70cff2b00cfefdf551243e9a75d1c129c96fedc1d66d66d573325f39"
+    },
+    "q48": {
+      "code": "light",
+      "fingerprint": "5483fef56963f3b82a238100d857c6410f7dcca9754d017aaea441b4f662983d"
+    },
+    "q49": {
+      "code": "net",
+      "fingerprint": "5ca9b5859c7ac1e6a1a73c63995f3cb037cc0764c96b3aef6d2c00a9958bd03e"
+    },
+    "q50": {
+      "code": "usability",
+      "fingerprint": "04f425922c81333b4d445a2abf515df18c277b97ea3fbeb596fac281393eeef7"
+    },
+    "q51": {
+      "code": "usability",
+      "fingerprint": "8caf5e840a88bdb43a03dbb173235a9413da94c6c1f21b0991e1419086c3e910"
+    },
+    "q52": {
+      "code": "rotate",
+      "fingerprint": "0b6c30e1ce5b8f50e3e04d30107c7c3d998d521a0cd7bbe9e87af68593165e35"
+    },
+    "q53": {
+      "code": "views",
+      "fingerprint": "8f8b0030d4e1fd44f238fee79d4e7806c634ccc6814e98f450843402eb39f8ab"
+    },
+    "q54": {
+      "code": "fold",
+      "fingerprint": "0469bfe2945847cca589246b980f455686494ba446c13a916a65aa1a3e61ae0c"
+    },
+    "q55": {
+      "code": "fold",
+      "fingerprint": "a5ab677b87d606cc8178837f7760879fa9a4d2643df6347c69e49248b9b8a980"
+    },
+    "q56": {
+      "code": "count",
+      "fingerprint": "4d6076fd9115a16d3f387336d2646b9b8556630cac8983316f620dda61c0ff79"
+    },
+    "q57": {
+      "code": "pattern",
+      "fingerprint": "d46e670135f338d0b9f0ed265e78f5c4b1324a7c1ec532dfe29e462819875461"
+    },
+    "q58": {
+      "code": "analogy",
+      "fingerprint": "53bc7d5b7952fb2b61d1934fade2e62181a2102812c495ac9bd8c02c128abdd5"
+    },
+    "q59": {
+      "code": "mirror",
+      "fingerprint": "278d9b41b88c86bb595f5676e4b39404fbccae639adde504c2d1fe6652ad084a"
+    },
+    "q60": {
+      "code": "odd",
+      "fingerprint": "c3613a647b3e2c10678999216b039859ec47b3044471456717ad9dc25e3b49fb"
+    },
+    "q61": {
+      "code": "code",
+      "fingerprint": "aab98798efd2f115dce9a615ad0436ecc9ca75467168b6d4ca11c48e58fefc91"
+    },
+    "q62": {
+      "code": "views",
+      "fingerprint": "a254450262fe906d85abaf83804362c79ca91648c725781f88d837f957e62852"
+    },
+    "q63": {
+      "code": "usability",
+      "fingerprint": "ba4b2fdf65fc63d5ce225cef2a22a8147fafc23295b1a3112495b77ae94945db"
+    },
+    "q64": {
+      "code": "logic",
+      "fingerprint": "28bfb2ee3eb58f486ed9ead2bc42148a93a955716d7fe691bd77e7cfe95ad2ea"
+    },
+    "q65": {
+      "code": "assemble",
+      "fingerprint": "3f305396c60584caa04e5af524ff52e94c5f37f22834b6386448e96578ffc950"
+    },
+    "q66": {
+      "code": "views",
+      "fingerprint": "b0427b1385c156436a7a54054e068b33e2d83b2eaac895c944ebc21498251671"
+    },
+    "q67": {
+      "code": "mechanism",
+      "fingerprint": "bb83e89bcd65dd6aaf799d88d02e37ac332867d12d1c0db1edab4cc219fa4251"
+    },
+    "q68": {
+      "code": "code",
+      "fingerprint": "b8cf0170875931e3b4edc3252190683328e60022489c43ada8a0223b63d90248"
+    }
+  },
+  "uceed-2024": {
+    "q01": {
+      "code": "assemble",
+      "fingerprint": "91dee9ed108e7c777c23dedf978bf7da8488b9c21be0f0e7a43ce5156f64951c"
+    },
+    "q02": {
+      "code": "count",
+      "fingerprint": "8d940864c3ec7a7144637ad26e79d7bb6a8dfb73fbd3e0c5aeb3f30fc72ad8c8"
+    },
+    "q03": {
+      "code": "assemble",
+      "fingerprint": "abcdf728130dc25b1a41379c9142744843a028cb4db7e32bff2ad325dcce26ad"
+    },
+    "q04": {
+      "code": "faces",
+      "fingerprint": "199a04794fc1f39b424750383cf2932c110e7314b4ff477ac90b12a261af804e"
+    },
+    "q05": {
+      "code": "slice",
+      "fingerprint": "56403971705c1957de16e479d119de29a108d45f729209c28535aff5b62d780d"
+    },
+    "q06": {
+      "code": "count",
+      "fingerprint": "41ce7e2d381214540479a3bf85cacc99b231c3a1af3e67775d15ef3e3deed586"
+    },
+    "q07": {
+      "code": "faces",
+      "fingerprint": "3906363bd41be72c4e3972ebbe7742304fdc61c64ce5281fd141a8c8a2c02a92"
+    },
+    "q08": {
+      "code": "speed",
+      "fingerprint": "a95103a1189723497fdd5de9c630abcf1b12acb1b20b0cc78e4095f4d79f23f3"
+    },
+    "q09": {
+      "code": "geometry",
+      "fingerprint": "8678d042cb82b1498f2abcab5d26911b38eb7d10b6a764ad488bd55af6b8c5c2"
+    },
+    "q10": {
+      "code": "geometry",
+      "fingerprint": "27d3aa2c76317f60d882c967c90042432bd11441a9462676fc4f8c49273750d3"
+    },
+    "q11": {
+      "code": "blocks",
+      "fingerprint": "78453969dda5241b21e521de40cc1de7bf7a2d350ddc60a67459f0d0e7c1ac45"
+    },
+    "q12": {
+      "code": "geometry",
+      "fingerprint": "e5c24324a407b08e9431582c0bb49747ef8ef76577fe79204e6c64510d7c5991"
+    },
+    "q13": {
+      "code": "blocks",
+      "fingerprint": "8ec219a9784aa0f5a3f32d9d08cb7e4decbdd30eca5682b17c392273e89f3699"
+    },
+    "q14": {
+      "code": "paths",
+      "fingerprint": "f76e76bb047bf9b689442e1b67dca735ef80707f0aafe593e2107401eaeba13c"
+    },
+    "q15": {
+      "code": "pattern",
+      "fingerprint": "c88ae657aa7ee0356fa808228d2ae307a1c946f10f96cb0300a8ab1dacb61c3d"
+    },
+    "q16": {
+      "code": "code",
+      "fingerprint": "27101164920b42ded7891f4d60d4620bddae4be40b252e961ed6d879ecef6365"
+    },
+    "q17": {
+      "code": "pattern",
+      "fingerprint": "aca6bae411bc6ddb0f5afd3f560d58a58d29b5900ea4b86a78136a5bc3be2099"
+    },
+    "q18": {
+      "code": "mechanism",
+      "fingerprint": "6f7adbc5ef7a172bd5e5fba1311fe6e84dc9a863f9c11a87fe709a8f45292fea"
+    },
+    "q19": {
+      "code": "mechanism",
+      "fingerprint": "bf63c1e4e42f3fa632e498d67cbff675a8b8646bb81ff91dab6aecdb9dd4d311"
+    },
+    "q20": {
+      "code": "views",
+      "fingerprint": "56a8a334af7083ba64829062a268172acad5de1f104d6e040779ee551bfad315"
+    },
+    "q21": {
+      "code": "colour",
+      "fingerprint": "020716ad96dbb5ba7a4829739627cf58f6dd8514d15daefd30e9b155bdaf2618"
+    },
+    "q22": {
+      "code": "speed",
+      "fingerprint": "6ca3b2d98d1ac78fff2b485ec1e6886dd48e05809b8ef0c14bb72c8ba9a0505d"
+    },
+    "q23": {
+      "code": "nature",
+      "fingerprint": "cda7f908f66b4c8550259b5687732d7e6b017aacaf7ecc4daabdb5dc62fb6020"
+    },
+    "q24": {
+      "code": "net",
+      "fingerprint": "19cc059129f918226d6aa528c07120a97491af054b0d61abb077c24d14605def"
+    },
+    "q25": {
+      "code": "perspective",
+      "fingerprint": "c5866368fd49f6c1e0a8dc2dce52f84897b596ce854637fe3f8b6385dc2a0846"
+    },
+    "q26": {
+      "code": "mirror",
+      "fingerprint": "de239ff9699968fae68df92a23be755d462d19bfa6a61de3d634d35e6f99bd57"
+    },
+    "q27": {
+      "code": "pattern",
+      "fingerprint": "efa1d5bfd1a395a4b6624d5802c36ae28e6683d4ab179e1ceb3ec37678f6b4d7"
+    },
+    "q28": {
+      "code": "sets",
+      "fingerprint": "c5599f3bba337386094de140a73dd2e87f25eb95291f559aa08c5f992511690e"
+    },
+    "q29": {
+      "code": "pattern",
+      "fingerprint": "16a91d2215581549eed0c45b444a551762de5f20c134f99d7451d880dc5bb977"
+    },
+    "q30": {
+      "code": "rotate",
+      "fingerprint": "bc52f8ad51cce7e3cdb4e29740f5197bc785666ded7af7304001fefffca2f4f6"
+    },
+    "q31": {
+      "code": "animation",
+      "fingerprint": "74da699075c97c1a24a6353ae102a2910892971b89f24fc489db76a3f144dd8c"
+    },
+    "q32": {
+      "code": "sequence",
+      "fingerprint": "7dcbbaddc44b76492c2d39b11e5a79c7b546905b58e11723120c54b4a444454c"
+    },
+    "q33": {
+      "code": "assemble",
+      "fingerprint": "f2421b0fe596b9b89ecf3e03e4a50af28ab3ce6096efa758b6d2999ec3e12ac4"
+    },
+    "q34": {
+      "code": "sequence",
+      "fingerprint": "450db0a165b7dd5db682990a54a5603bc33744e642b34bd97a21a44b93f4de31"
+    },
+    "q35": {
+      "code": "pattern",
+      "fingerprint": "e95134a7af7221ae03548782e7752951da3d78ff0927453b64ae418ccb46c6f4"
+    },
+    "q36": {
+      "code": "data",
+      "fingerprint": "a243dd4ed1c87d38f52626d7236503cf74b37c33d5028b3045318bc7050e863f"
+    },
+    "q37": {
+      "code": "light",
+      "fingerprint": "609a630f31c2f9a7d5a5153dfeccff2435c15aa2215b5f3a20320a8ae695eef5"
+    },
+    "q38": {
+      "code": "fold",
+      "fingerprint": "f5fad4849666074f7d162ccc44e1afe485106d4ea98ac654ccbe4cd0727270a9"
+    },
+    "q39": {
+      "code": "language",
+      "fingerprint": "c886229706e696bd658a73c05a50af3bd392305af841d91ac492914ead063ece"
+    },
+    "q40": {
+      "code": "light",
+      "fingerprint": "f8347bef4ea14cec80188a0637c95f6aeaf0ba7acf85c90c72da436b700cd2b4"
+    },
+    "q41": {
+      "code": "animation",
+      "fingerprint": "1b60b6dc0bd87ff89baf825fe75d13c6ca9c464b8c3cb1a0141a1913a9bf30c9"
+    },
+    "q42": {
+      "code": "sequence",
+      "fingerprint": "2145ecbeac6dd573f826fc2b3743ddcf7fec5121c1b8b439f2241d9e921efdb3"
+    },
+    "q43": {
+      "code": "sequence",
+      "fingerprint": "6f7a4ac40ad9c5118a14c46a135e98f24fb4d371c35ec05ff68faed55ec483be"
+    },
+    "q44": {
+      "code": "assemble",
+      "fingerprint": "106da2c3e5e2b3f37f5c36ec2b52cdfada85e7347321e69be484b612c4eed9d4"
+    },
+    "q45": {
+      "code": "code",
+      "fingerprint": "b4d0569db114a537546cdb8c790139e87655835b9409a04aad57b2e41e53298c"
+    },
+    "q46": {
+      "code": "analogy",
+      "fingerprint": "0c7fb299b77afefaf32e45c7d71ac0e6e5540d04e40b61802639a96915298559"
+    },
+    "q47": {
+      "code": "mechanism",
+      "fingerprint": "656a8a2e59afd03f22424eb3792c8878d455f487e2b0f13c3041637de3f6dd6a"
+    },
+    "q48": {
+      "code": "mechanism",
+      "fingerprint": "10e40ed710c6756bdf7c97db3685c06c9c63530cc97480a15bc06d0da79d596e"
+    },
+    "q49": {
+      "code": "views",
+      "fingerprint": "3b7921110081723abc892a62db04e25fdfe6594246f1d265dc7a69bcc45be873"
+    },
+    "q50": {
+      "code": "net",
+      "fingerprint": "20943751223369b1d730008ec011172c4de4c32117be9ab8d59b24ec36ebeafa"
+    },
+    "q51": {
+      "code": "logic",
+      "fingerprint": "2f76f25986b06f78d7263da96e37b1cb8034a2046969f6750080b7636ba15f5d"
+    },
+    "q52": {
+      "code": "net",
+      "fingerprint": "e7d950b8c0b0149f4d67f93443693cb6cec58246ce2223c9fd5452e7a12adace"
+    },
+    "q53": {
+      "code": "assemble",
+      "fingerprint": "9a6eee34c38d4096b5d61b2eada4f1e8f7cb3ff736678daa31c5ede04763b9f6"
+    },
+    "q54": {
+      "code": "font",
+      "fingerprint": "3a9ffab1c32aaa9746f1799cf4a1256fec8c843832b73363a777ff4ace13a3b9"
+    },
+    "q55": {
+      "code": "fold",
+      "fingerprint": "e2677aedb34ae66d1eedf16c0dca0395de16a2cfbfadf7c742a36a85e0d87511"
+    },
+    "q56": {
+      "code": "analogy",
+      "fingerprint": "0d125239561a240641283ad5f27356c670657c2726fa3500444515879a73938c"
+    },
+    "q57": {
+      "code": "animation",
+      "fingerprint": "f979e67c7cb3904b570c5981bfe29387f563e1f258990b04a2cb6e01820dc83d"
+    }
+  },
+  "uceed-2025-official-part-a": {
+    "u25_q01": {
+      "code": "arithmetic",
+      "fingerprint": "5780b9d1a8e247fc0c740437602f8ddab483b9d5251640d14d2a87c9e8d49248"
+    },
+    "u25_q02": {
+      "code": "count",
+      "fingerprint": "8540ab9b3c8907f139af903fb42c7d372c767f25bb21ef05828a99196130a3fb"
+    },
+    "u25_q03": {
+      "code": "logic",
+      "fingerprint": "33259293aa77f7e3e4f9daabbaab10764bfc07ff7a315095cfd77b5f12f7bb8c"
+    },
+    "u25_q04": {
+      "code": "logic",
+      "fingerprint": "8f1c4c14051695b4270d43b7da3fa58d63a7923d74c495d0caf2f5c6ecd5ce91"
+    },
+    "u25_q05": {
+      "code": "faces",
+      "fingerprint": "661c5bc0e9040d68105b202cb2057fa280d5247279a4381538bf0f1c4b8c1e20"
+    },
+    "u25_q06": {
+      "code": "geometry",
+      "fingerprint": "c4df6b5f9a108c7bd0e81b9401f501f165ac99b1d31896aa645518c3c3e5aa3e"
+    },
+    "u25_q07": {
+      "code": "count",
+      "fingerprint": "51060a938f3af022bd2e9b3f69d5ebb1bb0fbfd1aab518203f8fdf327db842db"
+    },
+    "u25_q08": {
+      "code": "geometry",
+      "fingerprint": "60a5a5e41f0e3405826658ab6d05caa39c37ab8e6693054cf21f4ea259bc6eb5"
+    },
+    "u25_q09": {
+      "code": "arithmetic",
+      "fingerprint": "20274feabae7075c06335c7aa7dd5153a9bbd30651eeabf2f9a1972ac8a79383"
+    },
+    "u25_q10": {
+      "code": "sequence",
+      "fingerprint": "6b9a8e50aac373508991aa52b3b7857abcaf05c6cf6dd5d1bf2c39441ecf835e"
+    },
+    "u25_q11": {
+      "code": "arithmetic",
+      "fingerprint": "e1b3a52dfca295f19ede004e2a412b2db23b0d6b74d6be21d325678b26e385ec"
+    },
+    "u25_q12": {
+      "code": "blocks",
+      "fingerprint": "30355185bf0eb194767db5c5d9e357a55b4241b6ad5da71d38508d1d5bc6bb29"
+    },
+    "u25_q13": {
+      "code": "rotate",
+      "fingerprint": "4b07cbf1f0e3a3509ec8306c928e0ea6b027242c9fded779bddbff92e984487c"
+    },
+    "u25_q14": {
+      "code": "count",
+      "fingerprint": "680c9fb07c0e5f111696939a3f5a86aa77bbb02d36854a5bf1f9ccc7d5167c6e"
+    },
+    "u25_q15": {
+      "code": "assemble",
+      "fingerprint": "9971af94e959e47aacf2cdddca001522a586bb403df30efdf9ac1b23c435ed43"
+    },
+    "u25_q16": {
+      "code": "nature",
+      "fingerprint": "200401d7ac07b74666dd5d0bd9f83f9f89ba38e19c615d982aaae1fd9c29aed4"
+    },
+    "u25_q17": {
+      "code": "solid",
+      "fingerprint": "4bd912d8d185f40ea00c12edc50eaae05d2ebfb87eb94e0f17f5123e02249afa"
+    },
+    "u25_q18": {
+      "code": "mechanism",
+      "fingerprint": "657e1184bb0a90c1a1cb8615d25a8a510858865b4b884a1f8e01812d70abfdc2"
+    },
+    "u25_q19": {
+      "code": "mechanism",
+      "fingerprint": "e661d552139a68ad5162f91da2ef8109fb5e2a8f5541129923b00c3538e7e9d3"
+    },
+    "u25_q20": {
+      "code": "assemble",
+      "fingerprint": "b4a64c6b4625eb968979ebd2e7391e4ba67f5363e2adde911a51b5edecda5791"
+    },
+    "u25_q21": {
+      "code": "views",
+      "fingerprint": "8ee747da3bc4d967a32cce81a8eacbe715be87beadfba8909bacaf845c93f34f"
+    },
+    "u25_q22": {
+      "code": "culture",
+      "fingerprint": "4f8537a3bb9d196f5111dd79b7881a6360c013dbacb2891cd1982b54d9adbb97"
+    },
+    "u25_q23": {
+      "code": "culture",
+      "fingerprint": "db2c0d9ea19446fef434b6ccae9165efcbdfc0e8925ea30cbf0afefe29f465f6"
+    },
+    "u25_q24": {
+      "code": "geometry",
+      "fingerprint": "fca5f53ec8fa7aeba80e0f806e0aa2c17ae59ae6dd07f3f2b513cf2e0a0c9bb7"
+    },
+    "u25_q25": {
+      "code": "paths",
+      "fingerprint": "b0b341dddebfec3be1ab929693aa8e3052f2f617d2fc9b55ebb2d0d925d68ba4"
+    },
+    "u25_q26": {
+      "code": "code",
+      "fingerprint": "573de0b190dd0dcf21b118c02eba8d59e93b4d548e88a0ee79a1f5b39ade4cd3"
+    },
+    "u25_q27": {
+      "code": "pattern",
+      "fingerprint": "5bb39281526ea01ed8eaa49ab383d0d29ffc41e95fabc27f9ca33794768eada4"
+    },
+    "u25_q28": {
+      "code": "light",
+      "fingerprint": "306ed1bf2a842e99004320edefb10876a670bcb804757cffaaa2baeb55970f92"
+    },
+    "u25_q29": {
+      "code": "solid",
+      "fingerprint": "86a06a039a9b0effe374e489deca626a31c82f659f4a6d01ff67c8b37a8be1b2"
+    },
+    "u25_q30": {
+      "code": "geometry",
+      "fingerprint": "206105750ce5967b8a28fe1f07bab8224c0b0a14ad4a1cc1c8496012a1327fc1"
+    },
+    "u25_q31": {
+      "code": "count",
+      "fingerprint": "9503ff609c2665c5bad80565d602d18a43aff96f671d752280723a49dfcfe7ff"
+    },
+    "u25_q32": {
+      "code": "rotate",
+      "fingerprint": "b37c780d076649f7b636575d450b1f5c4f06c379fa7ac49e8d4a8de3fc3f6485"
+    },
+    "u25_q33": {
+      "code": "logo",
+      "fingerprint": "bb0f3e0fe7021ed4765374eb09f1a978e55de7322bb254b260db20325f0a5338"
+    },
+    "u25_q34": {
+      "code": "sequence",
+      "fingerprint": "3c5990973068a6ab675a062d0b19109c1d22e4a776b0ae5e36e4f33713008934"
+    },
+    "u25_q35": {
+      "code": "odd",
+      "fingerprint": "0ba89a9dc1063648337000764164d28cbaf2d56d9452d40967bce11d897acee2"
+    },
+    "u25_q36": {
+      "code": "sequence",
+      "fingerprint": "a9144959b7a2ca280c68fbcc77d8426bf4ccf96a87157bfd8bb08800a7692c7a"
+    },
+    "u25_q37": {
+      "code": "culture",
+      "fingerprint": "81cdf0ef31475acecb1da0e27156ad195ac597654f967a63de490b0bcf50e32b"
+    },
+    "u25_q38": {
+      "code": "font",
+      "fingerprint": "32448ac6903314be81e75512a6ceb03eccd207e340134249186c557df697b1aa"
+    },
+    "u25_q39": {
+      "code": "culture",
+      "fingerprint": "d53d154018a563665fca519d78d218007a793488a37c37f4094fd54230059e36"
+    },
+    "u25_q40": {
+      "code": "culture",
+      "fingerprint": "238fc80cd975cbd5f5410856507f7ba915d3e7261a20d707c7c53d55eff15a2a"
+    },
+    "u25_q41": {
+      "code": "balance",
+      "fingerprint": "574e2c18a6548561b3e01ecfc91278b35d4deae8a5c3a0d14aa323001c0ec8bb"
+    },
+    "u25_q42": {
+      "code": "odd",
+      "fingerprint": "f22f9f12460a03dfe1419bd7219823ba324f29bfc785d61d7ad362fa9449cdef"
+    },
+    "u25_q43": {
+      "code": "odd",
+      "fingerprint": "96df55e85747fce643166d1ffb31ff307241563be510545685ebfb67774676be"
+    },
+    "u25_q44": {
+      "code": "sequence",
+      "fingerprint": "a032c2346dbafbf00233afba4a157aaaea8141c587df2dc8af3a6d079e43430d"
+    },
+    "u25_q45": {
+      "code": "culture",
+      "fingerprint": "aa3f3d2c39319828d6090042ff3bc1934c9b82cad01e514a558c00a04f72af24"
+    },
+    "u25_q46": {
+      "code": "nature",
+      "fingerprint": "567cbee3605aa6157ab1028a37de8d283468c0d2c530e29cb7dc33ded59cad67"
+    },
+    "u25_q47": {
+      "code": "nature",
+      "fingerprint": "31ef7b315e09a1a71a9ba3dcbb8cd2ff1e1780522bdac1499dca454441d356af"
+    },
+    "u25_q48": {
+      "code": "animation",
+      "fingerprint": "927223240b483169de717beb962b2e6023ab869f2c3997c4a3f71cf3fa5d83f4"
+    },
+    "u25_q49": {
+      "code": "material",
+      "fingerprint": "2244199d24ca287358d85d18cb7c5cafedf4a568eac1a8fcea04e2c7ec7c57a2"
+    },
+    "u25_q50": {
+      "code": "colour",
+      "fingerprint": "a3442b8dfe1dd4e09b34f080e20f594f0d438b4df2894566db536533abda55c6"
+    },
+    "u25_q51": {
+      "code": "mirror",
+      "fingerprint": "b55138db49897f159b2b1bf1c14912dbea05030d96ee4b38484044db1a43c40a"
+    },
+    "u25_q52": {
+      "code": "rotate",
+      "fingerprint": "01796423a86070bc42e1aa955875e0a1adae049ff3de2d91a0a80708983cba92"
+    },
+    "u25_q53": {
+      "code": "logic",
+      "fingerprint": "3cf69807d0f09ea7f69dce74cdaf1e093b7cb9f325eb928b9425c7cb2b77c199"
+    },
+    "u25_q54": {
+      "code": "animation",
+      "fingerprint": "0226c1bf81d36d65c945db182d081c02a4174385f1bec62e3b0322f94815cebf"
+    },
+    "u25_q55": {
+      "code": "mirror",
+      "fingerprint": "925697f0686798a11945d40bf2f751b036bbb48b929bc3f8646cbe7259eef78a"
+    },
+    "u25_q56": {
+      "code": "faces",
+      "fingerprint": "08bc47d328c46541d31718c02f67ac65e4d20e9235530d332bd72d0891f6115b"
+    },
+    "u25_q57": {
+      "code": "paths",
+      "fingerprint": "e13d5e7daf79f4ece257d0df7da9b2d449a59587169c5225b808ea502d59b7d5"
+    }
+  },
+  "uceed-2026": {
+    "q01": {
+      "code": "count",
+      "fingerprint": "c2abd72cdd5dc8f7b57ffa7bd0a9766fbd96e38d13da34bab9ca5dc967b4a4de"
+    },
+    "q02": {
+      "code": "geometry",
+      "fingerprint": "e0b59e6275e05b7027c5857b43b06e796c4bc35f8073a8730c93a496bf7f4908"
+    },
+    "q03": {
+      "code": "count",
+      "fingerprint": "bad43ea252b906cd6e899ec523ab07c0035f53bf1b59acd93e57f13d590e6d7a"
+    },
+    "q04": {
+      "code": "faces",
+      "fingerprint": "7bb150fca8e4cfb43dd7d14fb14bc461f12fd364e0e978991192725d98ee1e25"
+    },
+    "q05": {
+      "code": "odd",
+      "fingerprint": "94a1c8a5f15c686a916614bf9ea08c99bd6b4736d57efc6ed0c7b25bc14e019d"
+    },
+    "q06": {
+      "code": "count",
+      "fingerprint": "229cd542bcd2bd89be0757da2b3000be3d68d5a5e2f86e29c14c1a7aea52cb56"
+    },
+    "q07": {
+      "code": "count",
+      "fingerprint": "517cc16c0091e84094a1331a4ded66767abfec8f2a8c4cf0cdd6a133aa5cb13d"
+    },
+    "q08": {
+      "code": "count",
+      "fingerprint": "907da9beef136a22c2ed56d0daf3cd66a110bc7f0c8e494181da6421aec792c2"
+    },
+    "q09": {
+      "code": "usability",
+      "fingerprint": "82225d2190182dd9b108ba9a5454b09b01acd7680b041bc6ed53c6e725092923"
+    },
+    "q10": {
+      "code": "assemble",
+      "fingerprint": "4406889ed85f835c457fa084b73baa55606b1cc6d6999418a21a2533f8123fba"
+    },
+    "q11": {
+      "code": "fold",
+      "fingerprint": "f4b56c5303945ae3be53b35afeedcb7e49ecb62f7a4377228e3bdf13a19a4c3a"
+    },
+    "q12": {
+      "code": "arithmetic",
+      "fingerprint": "f8b79b473f8bacfac499c820a054f34b5581f8681a62170d57d9ee041fc3295e"
+    },
+    "q13": {
+      "code": "sequence",
+      "fingerprint": "11657ab9786d920bcac66c7691036f4717111fa663cedad9771149eda94e3e8d"
+    },
+    "q14": {
+      "code": "geometry",
+      "fingerprint": "e2067d67ae7cf00cd3de13ed5ce35f60b4439d9e4697876338db9958d007a81c"
+    },
+    "q15": {
+      "code": "views",
+      "fingerprint": "da5a4eaeded7a52538ca96188b6d4aa803b08ffb06b771f5f6429011b208ceb2"
+    },
+    "q16": {
+      "code": "assemble",
+      "fingerprint": "57667ad66603ca2e660e4f4260bdffbb9eb3341ebc6ae79238af6a2fb4f27056"
+    },
+    "q17": {
+      "code": "rotate",
+      "fingerprint": "473b7031cfc6a89462fdefb3548343cec79937dd46c8d6509dd12bed0903d2b1"
+    },
+    "q18": {
+      "code": "symmetry",
+      "fingerprint": "e5465430dc28732e8caea6cee64b6ad62bee3894e76b268a9a8ce67e6feea965"
+    },
+    "q19": {
+      "code": "mechanism",
+      "fingerprint": "339d13a7ac2deab83e5d87a037d21a15662394bde7c2cb9e19796cd1f2b862af"
+    },
+    "q20": {
+      "code": "culture",
+      "fingerprint": "e241028a354a3e22398f5ea1ab5bf0100ffc27f3546d0097e10f56cca11148f8"
+    },
+    "q21": {
+      "code": "culture",
+      "fingerprint": "38e7d6a91d9008df539e58a0b42cd17dec570b747493bb62c6ed7819e92e545f"
+    },
+    "q22": {
+      "code": "logo",
+      "fingerprint": "9100b8d32620fa26df043616bd5a9ab901e1d543f98bb13d5cc689d372346824"
+    },
+    "q23": {
+      "code": "culture",
+      "fingerprint": "8ac7f9c6faa7cd607dc459ede82d2ee3801066e19b47f6b4b5b11e3f838e26d0"
+    },
+    "q24": {
+      "code": "symbols",
+      "fingerprint": "dbe894e3ba5bc2c9efee1f900bdf630de9a9a7f4a666a724e7547b63fa876dcf"
+    },
+    "q25": {
+      "code": "light",
+      "fingerprint": "164dbcc4ac2648de4c397de8ebef6d519eaccb97ba08ed388bace556f6bc46e6"
+    },
+    "q26": {
+      "code": "font",
+      "fingerprint": "c266f02739ff91eaadaa0d2a7b43ae0bc3ce3a869cbf8b3bf83be63b592ddb63"
+    },
+    "q27": {
+      "code": "colour",
+      "fingerprint": "d8ff5f0bc06239f618f50bb793bd1de720e829b8173876f38408d2c7abf1cec8"
+    },
+    "q28": {
+      "code": "pattern",
+      "fingerprint": "9f74687defa9ccd9745b53b4df82768d4f4e451acfe60eb0fb6e054ab35ffc11"
+    },
+    "q29": {
+      "code": "font",
+      "fingerprint": "c13648aa6897ce159d8742192f994365838ad5e1dfa4c1563ee3c10664c4d4ad"
+    },
+    "q30": {
+      "code": "symbols",
+      "fingerprint": "26f3109d2bebdb87794073478ef1d2bd5b76635c0b26b972c05ac42afc1b7d9f"
+    },
+    "q31": {
+      "code": "analogy",
+      "fingerprint": "02a70304fadabaa10621e2bd84a06096b4f9543986fea270a51f14b79509e3e7"
+    },
+    "q32": {
+      "code": "light",
+      "fingerprint": "92fa51fc6327aa1950d1a2b95eae06fbdbea096bfbd09f6563b4232040c645f7"
+    },
+    "q33": {
+      "code": "sequence",
+      "fingerprint": "31440bdc28351e1bd182ed8f587bd4676bcdd04dd867a59d3cb50b2f2fb4d149"
+    },
+    "q34": {
+      "code": "font",
+      "fingerprint": "d9ff05cd5bb282f0290cd8560d3d2c3880f2ead78e3283c04e3d57cf74b3245d"
+    },
+    "q35": {
+      "code": "culture",
+      "fingerprint": "fe900dcc046ef5393e948029e3ec2c13fd4170594682b0dffddd316b7d9b3b19"
+    },
+    "q36": {
+      "code": "animation",
+      "fingerprint": "0796543d8873c62fe82ffcb14c67754b64e1b9e532ac11184fdf29a21c90189e"
+    },
+    "q37": {
+      "code": "nature",
+      "fingerprint": "1e1e3cf8560b33959cc6697e30aa4483eee805122f4d5e84d3884cb5b8b26bef"
+    },
+    "q38": {
+      "code": "fold",
+      "fingerprint": "9348134aeb2b94c1a1b67ab7a4c5c162d7526c3d8d7f55acb78c1aff40796105"
+    },
+    "q39": {
+      "code": "logo",
+      "fingerprint": "1124c9df775f6dd67ea3b77158467933296dd035840bf19063c31888dcef7b77"
+    },
+    "q40": {
+      "code": "rotate",
+      "fingerprint": "423114a9b65fd543039848ffc3bc50a5773e4ccce21544fa99f97a678112bb96"
+    },
+    "q41": {
+      "code": "assemble",
+      "fingerprint": "2ba6e1e93ac0f1b47435efb8f9eac674c804650b03bce4a0fd067dd2914a551d"
+    },
+    "q42": {
+      "code": "count",
+      "fingerprint": "09c1c040a18ae41a2bb32aa24b74817932d5f849b7bf46aca8739c2384917a5d"
+    },
+    "q43": {
+      "code": "light",
+      "fingerprint": "c552bb1751b34d4b53d74f84f74a7b206f22b4fc76fdc0e137324d9182ce2e53"
+    },
+    "q44": {
+      "code": "paths",
+      "fingerprint": "1f7e6c177e50c333bfd8be90adadabd90a7f4c7c5390092bb3494bdf20243698"
+    },
+    "q45": {
+      "code": "count",
+      "fingerprint": "1b71fc475b3ff3c66cf8524094b5858cc65ec80439a468c7a1099a6d73c71568"
+    },
+    "q46": {
+      "code": "code",
+      "fingerprint": "45d554f680648be1a341bdd4856161b828388f4160a57c5eaee349b7ae039ba6"
+    },
+    "q47": {
+      "code": "assemble",
+      "fingerprint": "3939717ed19358874a2869701ade542148cc1415f3337fe5400dfcfb4ddbe68c"
+    },
+    "q48": {
+      "code": "culture",
+      "fingerprint": "56413f9ed061358d041bbcb1c1867f4ab2b5bdd51843af749f378f9534b87403"
+    },
+    "q49": {
+      "code": "font",
+      "fingerprint": "5729db416ee927ca70d16513527d8d6bb3a3d103181b28724424464e54994980"
+    },
+    "q50": {
+      "code": "light",
+      "fingerprint": "49eeebc0f66b312599d51763fc749f145b71398ae3992116f10bb1d51b037148"
+    },
+    "q51": {
+      "code": "mechanism",
+      "fingerprint": "bac8028292158c19cb47406d562b53a6caba518b3fb623541ed3239d1190c737"
+    },
+    "q52": {
+      "code": "count",
+      "fingerprint": "63a544ac8d64f1c4823c49627ab9a2a5dffc7832240937ee64651628862add15"
+    },
+    "q53": {
+      "code": "logo",
+      "fingerprint": "4f3307220087369600ca4358653da0f7d91a0490065b0c9b52bc907b58671606"
+    },
+    "q54": {
+      "code": "animation",
+      "fingerprint": "add7141057fda2aa832f2eb2bd19b2ce80df3d751b52679d905f272233deeda1"
+    },
+    "q55": {
+      "code": "culture",
+      "fingerprint": "ba603c97d4b1cf8baa6c3f833edd88befcf29bcc6eea8d6e2a2b17352219e972"
+    },
+    "q56": {
+      "code": "mechanism",
+      "fingerprint": "718be0f5a6b14ce77b2c020a6af3a392161f1e1ff022bc6c3f085a90069af9dd"
+    },
+    "q57": {
+      "code": "usability",
+      "fingerprint": "163ea78343ebeef1a40206ed08dcba977bfa70da6bf5aaca7dcbf497968535ec"
+    }
+  },
+  "design-foundations-01": {
+    "q1": {
+      "code": "colour",
+      "fingerprint": "9384d6ec95782e6d8f29c3aab4c64c4c3e7612d8f6f49dfd88be54e8558f7720"
+    },
+    "q2": {
+      "code": "symmetry",
+      "fingerprint": "40915a12788ca4903acfabedc96e902c579638b30fbaa3ab7112ab7bd0bf444a"
+    },
+    "q3": {
+      "code": "sequence",
+      "fingerprint": "3d761eae04dfa867b60282af3bf48840f52ae3b06f1dfb12c5c9cdc773bb0070"
+    },
+    "q4": {
+      "code": "colour",
+      "fingerprint": "5138a93cafb229ad8474759a29bf3e8d46546141027aa1924bc37322e607030a"
+    },
+    "q5": {
+      "code": "geometry",
+      "fingerprint": "f479a4bf3cbe448a276d42f2a571ffa1426d7a9cdaa7278b0d61a96299656735"
+    },
+    "q6": {
+      "code": "geometry",
+      "fingerprint": "f08eb35a00a9908061c152aa69291d77be51a17cfd4291d2d2e74a29fec1d0ef"
+    },
+    "q7": {
+      "code": "arithmetic",
+      "fingerprint": "7b853ab6dc8042fccceab4181de7cc8f3bd5c101908bd96bfbb0e9d9a273c319"
+    },
+    "q8": {
+      "code": "arithmetic",
+      "fingerprint": "536a68d49f632a7c02680774b227f0188ab0211c7344964888a007307124b353"
+    }
+  },
+  "timed-sections-01": {
+    "q1": {
+      "code": "colour",
+      "fingerprint": "9384d6ec95782e6d8f29c3aab4c64c4c3e7612d8f6f49dfd88be54e8558f7720"
+    },
+    "q2": {
+      "code": "symmetry",
+      "fingerprint": "40915a12788ca4903acfabedc96e902c579638b30fbaa3ab7112ab7bd0bf444a"
+    },
+    "q3": {
+      "code": "sequence",
+      "fingerprint": "3d761eae04dfa867b60282af3bf48840f52ae3b06f1dfb12c5c9cdc773bb0070"
+    },
+    "q4": {
+      "code": "colour",
+      "fingerprint": "5138a93cafb229ad8474759a29bf3e8d46546141027aa1924bc37322e607030a"
+    },
+    "q5": {
+      "code": "geometry",
+      "fingerprint": "f479a4bf3cbe448a276d42f2a571ffa1426d7a9cdaa7278b0d61a96299656735"
+    },
+    "q6": {
+      "code": "geometry",
+      "fingerprint": "f08eb35a00a9908061c152aa69291d77be51a17cfd4291d2d2e74a29fec1d0ef"
+    },
+    "q7": {
+      "code": "arithmetic",
+      "fingerprint": "7b853ab6dc8042fccceab4181de7cc8f3bd5c101908bd96bfbb0e9d9a273c319"
+    },
+    "q8": {
+      "code": "arithmetic",
+      "fingerprint": "536a68d49f632a7c02680774b227f0188ab0211c7344964888a007307124b353"
+    }
+  },
+  "uceed-spatial-reasoning-diagnostic": {
+    "q1": {
+      "code": "net",
+      "fingerprint": "6b409afd4043bc424cf27e408608a81652469d5021ddf671f24de1e7f404729a"
+    },
+    "q2": {
+      "code": "solid",
+      "fingerprint": "888c796cf032f8d4acc63a2bd8b8d220101c30707b492e2f0c993dc6361d6bea"
+    },
+    "q3": {
+      "code": "rotate",
+      "fingerprint": "223fd9d3ed73dd6f9031bf9b8d6a3cb9ca6b3ca2715579b569d07298372cbee2"
+    },
+    "q4": {
+      "code": "mirror",
+      "fingerprint": "e59b4b88f54c888808959e6ebf465e267d24dcbc93e5bdd658252e8ea46c2983"
+    },
+    "q5": {
+      "code": "mirror",
+      "fingerprint": "bed4138b03055aaddf23c89a1f503c7fe1c68c78c00844bacea6301b3bb9de41"
+    },
+    "q6": {
+      "code": "rotate",
+      "fingerprint": "c69a8b146d4431c1015eaf052aaedbf63c5a5b70c0aae9748e458719c36475df"
+    },
+    "q7": {
+      "code": "mirror",
+      "fingerprint": "8e8991c94af4de25f2ab5b677c8aa90d7d799b074c049edd754f8dd051f03ca9"
+    },
+    "q8": {
+      "code": "mirror",
+      "fingerprint": "7a392d1374d27b4264b34d7aed2200170c575058a0021e789cb34d8795d5445e"
+    },
+    "q9": {
+      "code": "mirror",
+      "fingerprint": "e543775dd3ed93dbaf8e9c707947437f5f2f464da46146db26ec4517581f26b5"
+    },
+    "q10": {
+      "code": "mirror",
+      "fingerprint": "e1d989c42de904d836510bb1d3ff77d6b8e8b5eb6be25e80a2744956f7e86aa8"
+    },
+    "q11": {
+      "code": "symmetry",
+      "fingerprint": "b50c92ad7584cfb556f142cfca556fba558dd1236d068384849195df0f694e74"
+    },
+    "q12": {
+      "code": "symmetry",
+      "fingerprint": "5f739fc28df3717da183f1031f233aa3bc41b7fe69b45aa6e4a181304c392f19"
+    },
+    "q13": {
+      "code": "symmetry",
+      "fingerprint": "fdaf44b07d6613913662650f61ce5b16203e4a15dfc2d8bec2e52d586d16eb42"
+    },
+    "q14": {
+      "code": "views",
+      "fingerprint": "8f168803d59c19209fa98d049c26bf6e67f975fb44bac9cf8adbeffc51250a32"
+    },
+    "q15": {
+      "code": "views",
+      "fingerprint": "d289e9d4f060396bc71a7c1c18bd1e1080c40ab164e35bd12a792ee556edaac8"
+    },
+    "q16": {
+      "code": "slice",
+      "fingerprint": "710e4460eee707110842007192b6c0da5eea0daf3feed8be5427f0288ef75b68"
+    },
+    "q17": {
+      "code": "blocks",
+      "fingerprint": "4ef4faf092295fe60729a8719fba4e116fbf34d567a1e708341261311028e9e2"
+    },
+    "q18": {
+      "code": "symmetry",
+      "fingerprint": "52858c4b44f0f5756e3d8b5af44d42b55c337f39dd084bc2e6c8c44d1e26e859"
+    }
+  },
+  "uceed-spatial-reasoning-practice-48": {
+    "t2_13": {
+      "code": "rotate",
+      "fingerprint": "0e633d9663ae32f790cddbd6ff64fd4cc36ca3cebfc501eead08feb0ca38d1c0"
+    },
+    "t2_14": {
+      "code": "rotate",
+      "fingerprint": "8237d152ebd7f0994adfaf105f72b0388bb89fece77c01edf016dbaf428bb06f"
+    },
+    "t2_15": {
+      "code": "rotate",
+      "fingerprint": "6cfb9d7724f00599d0e1558b8ddd33ef6aaf9af7343710c6558dcf9c90d7bfa2"
+    },
+    "t2_16": {
+      "code": "rotate",
+      "fingerprint": "2de3e5cf06cc32a8ec88c4bd3f45b04e8d185b5c68150c45a5aa6caa4ed5ecaa"
+    },
+    "t2_17": {
+      "code": "rotate",
+      "fingerprint": "b8a4567418fc09d6829886e7de0edfe59bd6e79b07b52f127a091d9c5df68ce9"
+    },
+    "t2_18": {
+      "code": "rotate",
+      "fingerprint": "96f7e726421d06bdb7efd93460893738eae7a325c0d353e7c7cb1d9df4af5a59"
+    },
+    "t2_19": {
+      "code": "rotate",
+      "fingerprint": "2562922f3f6a14411ebdaff15ce868964d4ef1d3e02e003f22bf404cce5b202a"
+    },
+    "t2_20": {
+      "code": "rotate",
+      "fingerprint": "2eab566c979a66916812c508a138339a5bf4d20d584a95b3100257cd425c32d9"
+    },
+    "t3_10": {
+      "code": "rotate",
+      "fingerprint": "838ea8f969eff9135776dbeb4e8cc871b7287c399200418de44ea443cf2faa22"
+    },
+    "t3_11": {
+      "code": "rotate",
+      "fingerprint": "7bf74e38be5d877952eca5af4fe484ab15641992beff85fcc22405f421ea766a"
+    },
+    "t3_12": {
+      "code": "rotate",
+      "fingerprint": "fa5c06ba42f6f1d0ce9c09d7785865d3d7216af7cd4c1b6ebf866f3f0a55e7f7"
+    },
+    "t3_13": {
+      "code": "rotate",
+      "fingerprint": "ba5c084ad5d412b9aebeb87d6c2018b2648d0ff7ab31cc1739bbb09383a2db87"
+    },
+    "t3_14": {
+      "code": "rotate",
+      "fingerprint": "e6066b90e41d504a8d31e274300228d57982b9b98ef938cbb73c5add22ff1b42"
+    },
+    "t3_15": {
+      "code": "rotate",
+      "fingerprint": "b52eadc097f477b3bdf6f0961ba22c9e8f1ea25bce495df4ef10dbac4e631274"
+    },
+    "t3_16": {
+      "code": "rotate",
+      "fingerprint": "aba7aae6f6f8fad146259ff96e12284e1828ad2e9418947565b02884bc51130c"
+    },
+    "t3_17": {
+      "code": "rotate",
+      "fingerprint": "0ddead9b7dd2db828adf760f608b16426739a8a941385c0c1c46898e785366a2"
+    },
+    "t3_18": {
+      "code": "rotate",
+      "fingerprint": "a97158b778ee0086333e5995b7dabf9cae28c5fd59eb77a264c6d656d46638a6"
+    },
+    "t3_19": {
+      "code": "rotate",
+      "fingerprint": "7219f914f161b0938da2da1b215f65c5c99e9d5eb6bc22aafe2c44afd7e3eb52"
+    },
+    "t3_20": {
+      "code": "rotate",
+      "fingerprint": "d98d313ef49c61a730605f1363e98bdb85f83fce25f2ada972b77a4a35681e3b"
+    },
+    "t4_07": {
+      "code": "mirror",
+      "fingerprint": "a1e578d94931a91f66891502197ac4b5f93dab9efe5185028b0004a705bd5c62"
+    },
+    "t4_08": {
+      "code": "mirror",
+      "fingerprint": "236f08c9f36c3f0663eb52b60139edecbe0d79641d6c7c1e2f02f1388ba355d9"
+    },
+    "t4_09": {
+      "code": "mirror",
+      "fingerprint": "6128d26643d7dac2eb704489d72e28dafaa8fbc953957bc51ec41613daa4d900"
+    },
+    "t4_10": {
+      "code": "mirror",
+      "fingerprint": "bfa3b8edc4b75348fa6bff1f8d5056fcdb1d532bed1026320a1a30871aa02a0a"
+    },
+    "t4_11": {
+      "code": "mirror",
+      "fingerprint": "cbd996911bc77c9803736e42b4d6678bf650b8ea88ee647c2a7a062f8287076d"
+    },
+    "t4_12": {
+      "code": "mirror",
+      "fingerprint": "904dd74e8ede91cb265c226b64b935a08a4012a4b067dc22136642273fdc892f"
+    },
+    "t4_13": {
+      "code": "mirror",
+      "fingerprint": "447e8929766ff82c9c8d54b1ed32f6a4a5f7155e230808e2ec24ed2fedf5717a"
+    },
+    "t4_14": {
+      "code": "mirror",
+      "fingerprint": "fd7859b9c29efb51076fbe8b4abd0d65d1bbc45d591d83086950aecde0a3b429"
+    },
+    "t4_15": {
+      "code": "mirror",
+      "fingerprint": "27737e72f5cc4bed5e35dd6b9c46c5ef091640d6196d77a8b0b6763edcfad409"
+    },
+    "t4_16": {
+      "code": "mirror",
+      "fingerprint": "83c56cc6370f87c2476bfc698ba6dd439b1300598a272e3d3bf7fd2ba4744d27"
+    },
+    "t4_17": {
+      "code": "mirror",
+      "fingerprint": "828edfeb5f1d33fca1449a3e7a156767a31b2d5e21eb760d40193e0b8e5c5771"
+    },
+    "t4_18": {
+      "code": "mirror",
+      "fingerprint": "12dd142059c8cfbd588429ae3d10cb1e6d2d630d202acca15deb4abd04ed943c"
+    },
+    "t4_19": {
+      "code": "mirror",
+      "fingerprint": "f939a46a10ac251aa2dfd6db3b0fc737b09db3ed648dd2d922580763b94a6bed"
+    },
+    "t4_20": {
+      "code": "mirror",
+      "fingerprint": "108c0f56e3efe4780e2b2404568a8888820991d027fb70cf16d730b4ba44d5f6"
+    },
+    "t5_06": {
+      "code": "symmetry",
+      "fingerprint": "ed045d7dd155606d66a89cfc3d69a01564dce44b6a025080635e9cfb2c601d0b"
+    },
+    "t5_07": {
+      "code": "symmetry",
+      "fingerprint": "46075426a6e9a718f773d355840ca39efdfc3bc885e5a4b143c91cdd4887f870"
+    },
+    "t5_08": {
+      "code": "symmetry",
+      "fingerprint": "3573d18442ed2ed3c7221579410de7ae88bbc5565c19b0f27e2bc08d5f14730a"
+    },
+    "t5_09": {
+      "code": "symmetry",
+      "fingerprint": "544c8a5a5465c3d30e75aae81024d955f9bbf33156ca1d5e54b4552e119174b8"
+    },
+    "t5_10": {
+      "code": "symmetry",
+      "fingerprint": "f1d3182c7b823fc50dff4dc192edb3f68d07d32d9cf53d9fa38703947b2a11ef"
+    },
+    "t5_11": {
+      "code": "symmetry",
+      "fingerprint": "193cf917c085b5d4b1e11f119675b5863cd897050ec2797c647e275ce0557021"
+    },
+    "t5_12": {
+      "code": "symmetry",
+      "fingerprint": "0d1441889646a2e7affa476351ad2edbb817693dc9486772df60f83b7b3f45fb"
+    },
+    "t5_13": {
+      "code": "symmetry",
+      "fingerprint": "46313e04af38b5ca10f91a09c14ee19fb05046e0b040ce8b0a5781fa61540152"
+    },
+    "t5_14": {
+      "code": "symmetry",
+      "fingerprint": "e17d8a75e1fc9530c51164861ce16e58f8a4bcf029112cfc13f30143453596c6"
+    },
+    "t5_15": {
+      "code": "symmetry",
+      "fingerprint": "a6f22c50a0e0f62ab9b6f4f29cd3836b9f9b13c3206f40efed9415838b0127bb"
+    },
+    "t5_16": {
+      "code": "symmetry",
+      "fingerprint": "8c5f1d387ac908308a9944b8e16e6d059f5ac2383cff5f343735162772679f10"
+    },
+    "t5_17": {
+      "code": "symmetry",
+      "fingerprint": "2edf0d688b4bb524085603915f15aecf521f513f7d113b7810cf8c4f67646058"
+    },
+    "t5_18": {
+      "code": "symmetry",
+      "fingerprint": "006955c1ead3bab97aa530fc16becfed7dc0a42234e667d24c8c9a0d69ff8975"
+    },
+    "t5_19": {
+      "code": "symmetry",
+      "fingerprint": "03e28de57542ba60dd0b74b110b2207ca4f6738fa53343782aaabdcb05412c6d"
+    },
+    "t5_20": {
+      "code": "symmetry",
+      "fingerprint": "e803c7355af0edc6780e6d36b2201ba91fe821c1ba88d41f67292edf43a2fefc"
+    }
+  }
+}

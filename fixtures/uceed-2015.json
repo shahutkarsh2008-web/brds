@@ -1,0 +1,3548 @@
+{
+  "id": "uceed-2015",
+  "title": "UCEED 2015 Official Paper",
+  "durationSeconds": 7200,
+  "totalQuestions": 100,
+  "maxMarks": 300,
+  "instructions": "Official UCEED 2015 Question Paper & Final Answer Key (Part A: 100 questions, 300 marks, 120 minutes). Section 1 NAT: Q1–20 (+3/-1). Section 2 MSQ: Q21–50 (+3/0, no partial credit). Section 3 MCQ: Q51–100 (+3/-1).",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "Section 1 · NAT (60 marks)"
+    },
+    {
+      "id": "msq",
+      "title": "Section 2 · MSQ (90 marks)"
+    },
+    {
+      "id": "mcq",
+      "title": "Section 3 · MCQ (150 marks)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The examination is of 3 hours duration. There are a total of 100 questions carrying a total of 300 marks. The entire paper is divided into three sections, A, B and C. All sections are compulsory. Questions in each section are of different types.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 22,
+        "max": 22
+      }
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Section A (60 marks) contains a total of 20 Numerical Answer Type (NAT) questions. For these NAT type questions, the answer is a real number that needs to be entered using the virtual keyboard on the monitor. No choices will be shown for these questions. There is NEGATIVE marking for this section. Each correct answer will be awarded 3 marks and each wrong answer will be awarded −1 marks. Questions not attempted will result in zero mark. Questions 1-20 belong to this section.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Section B (90 marks) contains a total of 30 Multiple Select Questions (MSQ). Each MSQ type question may have one or more than one correct choice(s) that are correct out of the four given choices. The candidate gets 3 marks only if ALL the correct answers, and no wrong answers are selected. There is NO NEGATIVE or PARTIAL marking for this section. Questions not attempted will be given zero marks. Questions 21-50 belong to this section.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 37,
+        "max": 37
+      }
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Section C (150 marks) contains a total of 50 Multiple Choice Questions (MCQ). Each MCQ type question has four choices out of which only one is the correct answer. There is NEGATIVE marking for this section. Each correct answer will be awarded 3 marks and each wrong answer will be awarded −1 marks. Questions not attempted will be given zero marks. Questions 51-100 belong to this section.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 14,
+        "max": 14
+      }
+    },
+    {
+      "id": "q05",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Calculators, charts, graph sheets, tables, cellular phone or other electronic gadgets are NOT allowed in the examination hall.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 9,
+        "max": 9
+      }
+    },
+    {
+      "id": "q06",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A Scribble Pad will be provided for rough work.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 286,
+        "max": 286
+      }
+    },
+    {
+      "id": "q07",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Count the number of spelling mistakes in the given passage.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q07.png",
+      "imageAlt": "UCEED 2015 Question 7 Diagram",
+      "answer": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "q08",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below are three types of interlocking rods. There are total 12 rods, of which 6 are type A, 2 are type B and 4 are type C respectively. What is the maximum length that can be achieved by connecting the rods appropriately?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q08.png",
+      "imageAlt": "UCEED 2015 Question 8 Diagram",
+      "answer": {
+        "min": 70,
+        "max": 70
+      }
+    },
+    {
+      "id": "q09",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The given figure is made of letters L, T, H, I, E and F, set in different orientations. Find the total number of occurrences of capital letter T in the figure.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q09.png",
+      "imageAlt": "UCEED 2015 Question 9 Diagram",
+      "answer": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "q10",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below, to the left, are three types of pencils: A, B and C. Find the total number of type A pencils in the figure on the right, which shows various pencils pointing in either of the  two directions, up or down.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q10.png",
+      "imageAlt": "UCEED 2015 Question 10 Diagram",
+      "answer": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "q11",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Count the total number of parallelograms in the given figure.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q11.png",
+      "imageAlt": "UCEED 2015 Question 11 Diagram",
+      "answer": {
+        "min": 15,
+        "max": 15
+      }
+    },
+    {
+      "id": "q12",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Imagine letters are extruded into three dimensional objects, as shown in the figure on the left (the letter A). If the word LOVE (shown on the right) were to be extruded, how many surfaces would it have?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q12.png",
+      "imageAlt": "UCEED 2015 Question 12 Diagram",
+      "answer": {
+        "min": 35,
+        "max": 35
+      }
+    },
+    {
+      "id": "q13",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Count the number of unique patterns in the given grid.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q13.png",
+      "imageAlt": "UCEED 2015 Question 13 Diagram",
+      "answer": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "q14",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "In photography, f-numbers represent lens aperture. Write the missing f-number in the sequence below. f/2.8, f/3.2, f/3.5, f/__, f/4.5, f/5.0, f/5.6",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 4,
+        "max": 4
+      }
+    },
+    {
+      "id": "q15",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Given below are eight pieces of a puzzle. Arranged correctly they form a four digit number. What is the number formed after the correct arrangement?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q15.png",
+      "imageAlt": "UCEED 2015 Question 15 Diagram",
+      "answer": {
+        "min": 2823,
+        "max": 2823
+      }
+    },
+    {
+      "id": "q16",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The following excerpt is from an article on Indonesian Shadow Puppet Theatre: “Muslim Indonesia is a fascinating story of tolerance and absorption, a relaxed compromise between religions, unlike any of the other multi-faith societies. Wayang Kulit---'skin theatre'---is an ancient Indonesian art of shadow theatre. Historically, performances in the Theatre of Shadows featured Hindu epics and lasted throughout the night. Light from an oil lamp behind the puppeteer's head cast the shadows from the puppets onto a white sheet. Some members of the audience---usually the women and children---sit on the shadow side of the screen, while the men would sit on the favoured other side, where the features and colours of the puppets could be seen. The puppeteer, known as a dalang, would not only control the puppets, but also conduct the accompanying music, performed by a gamelan orchestra”. The following statements have been derived based on both explicit and implicit reading of the above passage: I. Indonesian society accorded pre-eminence to women and children. II. Modern Wayang Kulit probably uses electric lights to cast shadows. III. Wayang Kulit had Islamic origins. IV. Gamelan is a traditional ensemble music of Java and Bali in Indonesia. V. The puppets are made of fabric for easy manipulation by the dalang. How many of the above statements are FALSE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "q17",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below is a belt and pulley arrangement. How many pulleys are rotating clockwise?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q17.png",
+      "imageAlt": "UCEED 2015 Question 17 Diagram",
+      "answer": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    {
+      "id": "q18",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Two views of the same solid object are shown below. Count the number of surfaces the solid object has.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q18.png",
+      "imageAlt": "UCEED 2015 Question 18 Diagram",
+      "answer": {
+        "min": 18,
+        "max": 18
+      }
+    },
+    {
+      "id": "q19",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Count the number of cubes in the given figure. No cube has been removed from parts of the figure that are not visible.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q19.png",
+      "imageAlt": "UCEED 2015 Question 19 Diagram",
+      "answer": {
+        "min": 158,
+        "max": 158
+      }
+    },
+    {
+      "id": "q20",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A, B, C, D, E and F are six robots. Each robot can contact some other robots, though none of the robots can contact all the robots. The rules of contacting are as follows: B can contact E and can be contacted by C D can be contacted by A, E and F F can contact C D can contact C and E F can be contacted by A A robot can receive a message from other robots that can contact it and can relay the message to another robot it is allowed to contact. What is the minimum number of robots that are required between robot A and robot B, to send a message from robot A to robot B?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "nat"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "id": "q21",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jacques Lacan was a French psychoanalyst and psychiatrist."
+        },
+        {
+          "id": "b",
+          "text": "Claude Lévi-Strauss is called the father of structural anthropology."
+        },
+        {
+          "id": "c",
+          "text": "Michel Foucault was a French writer who wrote, \"Being and Nothingness\"."
+        },
+        {
+          "id": "d",
+          "text": "Ferdinand de Saussure was a Swiss linguist and semiotician."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q22",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the four figures shown on the right exactly fit the figure shown on the left?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q22.png",
+      "imageAlt": "UCEED 2015 Question 22 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "I and II"
+        },
+        {
+          "id": "b",
+          "text": "II and III"
+        },
+        {
+          "id": "c",
+          "text": "I and IV"
+        },
+        {
+          "id": "d",
+          "text": "None of the above options"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q23",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ellora caves contain Hindu Shaivaite sculptures."
+        },
+        {
+          "id": "b",
+          "text": "Elephanta caves contain only Hindu Vaishnavaite sculptures."
+        },
+        {
+          "id": "c",
+          "text": "Ellora caves contain only Hindu Shaivaite sculptures."
+        },
+        {
+          "id": "d",
+          "text": "Elephanta caves contain Hindu Shaivaite sculptures."
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ]
+    },
+    {
+      "id": "q24",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the given figures can be drawn without either lifting the pen or retracing any line?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q24.png",
+      "imageAlt": "UCEED 2015 Question 24 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q25",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The triangular shape (at left) is broken into several parts. Choose the correct set of parts from the figures (on the right) to put the triangle together again.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q25.png",
+      "imageAlt": "UCEED 2015 Question 25 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q26",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The given heart shape (on top) is made of different parts put together. Which of the shapes in the options can be constructed using all the parts of the given heart shape?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q26.png",
+      "imageAlt": "UCEED 2015 Question 26 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q27",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ustad Mansur was a painter during the reign of Jahangir, and he is well known for depicting plants and animals."
+        },
+        {
+          "id": "b",
+          "text": "The painting of \"Emperor Jahangir Weighs Prince Khurram\" in the Tuzk-e-Jahangiri is attributed to Manohar Das."
+        },
+        {
+          "id": "c",
+          "text": "Govardhan was a painter during the reigns of Akbar, Jahangir and Shah Jahan. He was one of the illustrators of the Baburnama."
+        },
+        {
+          "id": "d",
+          "text": "Nainsukh was a court painter during the reign of Aurangzeb, and he is well known for painting several of Aurangzeb’s portraits."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q28",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A square with four sets of symbols in it (shown below, at left) is to be divided into four equal parts such that each part has all four symbols in it. Which of the four shapes shown below (at right) fulfill(s) the condition?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "id": "q29",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The Lion Capital of Ashoka found in Sarnath is carved out of granite rock."
+        },
+        {
+          "id": "b",
+          "text": "The Ellora caves are carved in granite rock."
+        },
+        {
+          "id": "c",
+          "text": "The descent of the Ganges in Mahabalipuram is carved out of granite rock."
+        },
+        {
+          "id": "d",
+          "text": "The Ajanta caves are carved in basalt rock."
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q30",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options is/are simple rotations of the given figure?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q30.png",
+      "imageAlt": "UCEED 2015 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "d"
+      ]
+    },
+    {
+      "id": "q31",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of these paintings is/are by Paul Klee?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q31.png",
+      "imageAlt": "UCEED 2015 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q32",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following terms relate(s) to printmaking?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Serigraphy"
+        },
+        {
+          "id": "b",
+          "text": "Lithography"
+        },
+        {
+          "id": "c",
+          "text": "Cartography"
+        },
+        {
+          "id": "d",
+          "text": "Etching"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q33",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Kuntaka was a Kashmiri Sanskrit poetician and literary theorist who is known for his work Vakroktijivitam in which he postulates the Vakrokti Siddhanta."
+        },
+        {
+          "id": "b",
+          "text": "Abhinavagupta was a Kashmiri aesthetician well known for his commentary on the Natya Shastra and for introducing the Shanta Rasa."
+        },
+        {
+          "id": "c",
+          "text": "Mammata Bhatta was the author of Dhvanyaloka, and is credited with creating \"Dhvani Theory\"."
+        },
+        {
+          "id": "d",
+          "text": "Anandavardhana was a Sanskrit rhetorician from Kashmir, and is credited with writing the Kavya Prakasa a work on poetry and rhetoric."
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "id": "q34",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are three objects in 3D --- one cube and two right-angled prisms. Assume that they can be merged into each other to form one 3D object. From the options given below, choose the possible object(s) that can be formed by this merging.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q34.png",
+      "imageAlt": "UCEED 2015 Question 34 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q35",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are steps in creating a pattern. From the options given below, identify the element(s) that can be repeated in order to create this pattern.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q35.png",
+      "imageAlt": "UCEED 2015 Question 35 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q36",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of these paintings is/are by Anjali Ila Menon?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q36.png",
+      "imageAlt": "UCEED 2015 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q37",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A person has six daughters, P, Q, R, S, T and U, who live in four metros. They are a Pilot, Accountant, Diplomat, Banker, Commando, and Teacher. Three daughters are married. S, who lives in Mumbai, is a Diplomat. Those staying in Kolkata are the Commando and the Accountant. One of the two Mumbaiites is married, while two of the unmarried ones live in Kolkata and Delhi respectively. The Teacher lives in Chennai. T, the Accountant, is married. U lives in Mumbai and P, in Delhi. Q is a Commando, and Commandos do not marry. Which of the following assertions is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "If the Banker is unmarried, then the pilot is P."
+        },
+        {
+          "id": "b",
+          "text": "R is the teacher, and lives in Chennai."
+        },
+        {
+          "id": "c",
+          "text": "Q is unmarried."
+        },
+        {
+          "id": "d",
+          "text": "If the Diplomat is married, then so is the Banker."
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q38",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Select the statement(s) about the Indus Valley Civilization that is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "At its peak, the Indus Valley Civilization encompassed nearly 200,000 Square Miles."
+        },
+        {
+          "id": "b",
+          "text": "Stone seals from the Indus Valley Civilization have been found as far afield as Greece and Macedonia."
+        },
+        {
+          "id": "c",
+          "text": "The largest of the Indus Valley cities, such as Harappa and Mohen-jo-Daro, had populations of a 100,000 people and more."
+        },
+        {
+          "id": "d",
+          "text": "Despite the existence of highly ordered cities in the Indus Valley, there is no evidence of kings or pharaohs or any leader at all."
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ]
+    },
+    {
+      "id": "q39",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Read the following paragraph and answer the question related to it. The Green Revolution has arguably been the most striking technological triumph of the 20th century in the realm of food production and land yields. Yet, there are serious concerns about its ill-effects on the environment. Which of the following concerns is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The disruption of the Nitrogen cycle by the massive use of chemical fertilizers is unsustainable for the environment."
+        },
+        {
+          "id": "b",
+          "text": "The Green Revolution has unequivocally been the most striking technological triumph of the 20th century in the realm of food production."
+        },
+        {
+          "id": "c",
+          "text": "Large monocultures of crops brought about by the Green Revolution are susceptible to sudden destruction by pests and disease."
+        },
+        {
+          "id": "d",
+          "text": "Increasing the supply of food through the Green Revolution would encourage the appearance of more and more new individuals, leading to worldwide famine as the human population becomes limitless."
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q40",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Read the following paragraph and answer the question related to it. There are many subtleties to designing with audio in order to create useful, non-intrusive experiences that offer instruction, information, and feedback when users interact with everyday devices, such as mobile phones, cars, toys etc. If audio might play a part in your design, what are some considerations, with specific regard to cognitive loads on users and aesthetics of interaction that you must keep in mind? Pick all that apply.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Audio is linear, time-sensitive, and transient, therefore good design must limit the number of audio menu options."
+        },
+        {
+          "id": "b",
+          "text": "Users will often listen to all choices before picking one, and a long list limits their ability to remember them all. So it is necessary to keep choices pertinent and parsimonious."
+        },
+        {
+          "id": "c",
+          "text": "Using jargon in instruction enhances user experience, since it enables users to create shortcuts more easily, and to utilize the offered functionality of a device in wider and deeper ways."
+        },
+        {
+          "id": "d",
+          "text": "It is good to differentiate between a novice user and an expert user by keeping track of the number of interactions that the user has with the device, and tailoring an audio experience for first-time users, while playing shortened prompts to expert users."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q41",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Read the following paragraph and answer the question related to it. Anaximander, in the sixth century BCE, had a theory of evolution, and maintained that men are descended from fishes. This was philosophy because it was a speculation unsupported by detailed evidence, but Darwin's theory of evolution was science, because it was based on the succession of forms of life as found in fossils, and upon the distribution of animals and plants in many parts of the world. A man might say, with enough truth to justify a joke: 'Science is what we know and philosophy is what we don't know.' But it should be added that philosophical speculation as to what we do not yet know has shown itself a valuable preliminary to exact scientific knowledge. The guesses of the Pythagoreans in astronomy, of Anaximander and Empedocles in biological evolution, and of Democritus as to the atomic constitution of matter, provided the men of science in later times with hypotheses which, but for the philosophers, might never have entered their heads. We may say that, on its theoretical side, philosophy consists, at least in part, in the framing of large general hypotheses which science is not yet in a position to test; but when it becomes possible to test the hypotheses they become, if verified, a part of science, and cease to count as ‘philosophy’. Which of the following statements is/are TRUE of the paragraph above?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Even though Anaximander had a theory of evolution in the sixth century BCE that seems untenable to our modern minds, the author explains how philosophical speculation is rigorous enough to have spawned scientific hypotheses that have often proved entirely plausible and empirically provable in later times."
+        },
+        {
+          "id": "b",
+          "text": "Anaximander’s philosophical speculation on the theory of evolution, as far back as the sixth century BCE, is implausible given the evidence that supports Darwin’s theory of evolution, and the tone of the passage seems to suggest that the author finds such idle conjecture as being---at best---immaterial to the trajectories of actual science."
+        },
+        {
+          "id": "c",
+          "text": "Even though Anaximander had a theory of evolution in the sixth century BCE that seems untenable to our modern minds, the author explains that philosophy is often the source of the large frameworks that inform and inspire scientific imagination."
+        },
+        {
+          "id": "d",
+          "text": "Between the speculations of Pythagoreans in astronomy, Anaximander and Empedocles in biological evolution, and Democritus on the atomic constitution of matter, the author bemoans the loss of later advances in scientific understanding---though based on these conjectures---from being considered as also belonging to philosophy."
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q42",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Identify which of the options given below can be folded to make the 3D object in the picture shown below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q42.png",
+      "imageAlt": "UCEED 2015 Question 42 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q43",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are four structures made with rigid elements. They are joined to each other at red points by screws that allow elements to move. Identify the structure/s that is/are NOT rigid.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q43.png",
+      "imageAlt": "UCEED 2015 Question 43 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q44",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the statements is/are TRUE with respect to the picture shown below?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q44.png",
+      "imageAlt": "UCEED 2015 Question 44 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A and B need to be strong in tension, and C and E in compression."
+        },
+        {
+          "id": "b",
+          "text": "C needs to be strong in tension, and A and D in compression."
+        },
+        {
+          "id": "c",
+          "text": "C and D need to be strong in tension."
+        },
+        {
+          "id": "d",
+          "text": "B needs to be strong in compression, and all others need to be strong in tension."
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q45",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the statements is/are TRUE about the FIVE symbols given below?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q45.png",
+      "imageAlt": "UCEED 2015 Question 45 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "All are musical notes."
+        },
+        {
+          "id": "b",
+          "text": "Two are not musical notes."
+        },
+        {
+          "id": "c",
+          "text": "Only one is not a musical note."
+        },
+        {
+          "id": "d",
+          "text": "At least three are musical notes."
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q46",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are three panels with cutouts in three shapes. From the given pairs of blocks, identify which pairs will PASS THROUGH all the cutouts.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q46.png",
+      "imageAlt": "UCEED 2015 Question 46 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only pair A"
+        },
+        {
+          "id": "b",
+          "text": "Only pair C"
+        },
+        {
+          "id": "c",
+          "text": "Only pairs A & C"
+        },
+        {
+          "id": "d",
+          "text": "All pairs A, B and C"
+        }
+      ],
+      "answer": [
+        "d"
+      ]
+    },
+    {
+      "id": "q47",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the materials given below was/were used for writing on in ancient India?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coconut Leaves"
+        },
+        {
+          "id": "b",
+          "text": "Palm Leaves"
+        },
+        {
+          "id": "c",
+          "text": "Bamboo Leaves"
+        },
+        {
+          "id": "d",
+          "text": "Birch Bark"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q48",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown are logos of different Companies/Organisations. Select the option(s) that identifies (identify) the designers of the logos.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q48.png",
+      "imageAlt": "UCEED 2015 Question 48 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sudarshan Dheer, Ray and Kesavan"
+        },
+        {
+          "id": "b",
+          "text": "R K Joshi, Benoy Sarkar,"
+        },
+        {
+          "id": "c",
+          "text": "Yeshwant Chaudhary, Vikas Satwalekar"
+        },
+        {
+          "id": "d",
+          "text": "Sudarshan Dheer, R K Joshi"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q49",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Below are two patterns created by a repetition of circles. For each of the patterns, identify the configuration of circles from which it has been created, from the set of options given below and then answer the question that follows. Which of the following statements is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q49.png",
+      "imageAlt": "UCEED 2015 Question 49 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "I can be created from 3 and 4; and II can be created from 5 and 6"
+        },
+        {
+          "id": "b",
+          "text": "I can be created from 1 and 2; and II can be created from 5, 6 and 7"
+        },
+        {
+          "id": "c",
+          "text": "I can be created from 4; and II can be created from 6"
+        },
+        {
+          "id": "d",
+          "text": "I can be created from 4 and 5; and II can be created from 6 and 7"
+        }
+      ],
+      "answer": [
+        "c"
+      ]
+    },
+    {
+      "id": "q50",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are schematic diagrams of a single arm of a 3-fold umbrella. Identify the correct representation/s.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "msq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q50.png",
+      "imageAlt": "UCEED 2015 Question 50 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b"
+      ]
+    },
+    {
+      "id": "q51",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If the following terms were to be written in the sequence: Subphylum, Class, Order, Family and Genus, which one would be correct?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mammalia  Vertebrata  Felidae  Carnivora  Panthera"
+        },
+        {
+          "id": "b",
+          "text": "Vertebrata  Mammalia  Felidae  Carnivora  Panthera"
+        },
+        {
+          "id": "c",
+          "text": "Mammalia  Carnivora  Vertebrata  Felidae  Panthera"
+        },
+        {
+          "id": "d",
+          "text": "Vertebrata  Mammalia  Carnivora  Felidae  Panthera"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q52",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Question 52",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q52.png",
+      "imageAlt": "UCEED 2015 Question 52 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q53",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the colour that should replace the question mark.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q53.png",
+      "imageAlt": "UCEED 2015 Question 53 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q54",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Pick an option from the right which will correctly complete the colour pattern on the left.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q54.png",
+      "imageAlt": "UCEED 2015 Question 54 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q55",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the option that would replace the question mark to correctly complete the pattern.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q55.png",
+      "imageAlt": "UCEED 2015 Question 55 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q56",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the figure that should replace the question mark.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q56.png",
+      "imageAlt": "UCEED 2015 Question 56 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q57",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the set of colours which is present in this painting.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q57.png",
+      "imageAlt": "UCEED 2015 Question 57 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q58",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Look carefully at the sentence given below. It is written in a specific font. From the options, choose the letter which belongs to the same font family.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q58.png",
+      "imageAlt": "UCEED 2015 Question 58 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q59",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options would replace the missing block?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q59.png",
+      "imageAlt": "UCEED 2015 Question 59 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q60",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Find the odd one out among the letters below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q60.png",
+      "imageAlt": "UCEED 2015 Question 60 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q61",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Given below is are three matrices with dots, the dots are arranged using a particular logic. Identify the logic and choose the option that matches the logic of the matrices.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q61.png",
+      "imageAlt": "UCEED 2015 Question 61 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q62",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the option that follows the logic of the hatch sequence shown below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q62.png",
+      "imageAlt": "UCEED 2015 Question 62 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q63",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the stamp used for printing the sample (in blue) from the options given below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q63.png",
+      "imageAlt": "UCEED 2015 Question 63 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q64",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the pattern that completes the sequence shown below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q64.png",
+      "imageAlt": "UCEED 2015 Question 64 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q65",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "In pigment colors, if Green is Blue, Yellow is Green, Blue is White and Red is Yellow, what is the complementary color of White and Green?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orange"
+        },
+        {
+          "id": "b",
+          "text": "Purple"
+        },
+        {
+          "id": "c",
+          "text": "Red"
+        },
+        {
+          "id": "d",
+          "text": "Green"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q66",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A square piece of paper is folded down into a triangle (as shown), after which a cut is made at a corner (again, as shown). Choose the option that shows the correct cut when the paper is unfolded.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q66.png",
+      "imageAlt": "UCEED 2015 Question 66 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q67",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The shapes below correspond to different numbers. Choose the option that replaces the question mark.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q67.png",
+      "imageAlt": "UCEED 2015 Question 67 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q68",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the option that follows the logic of the sequence shown below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q68.png",
+      "imageAlt": "UCEED 2015 Question 68 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q69",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown are symbols used for different functions. Identify the correct description sequence from the given choices.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q69.png",
+      "imageAlt": "UCEED 2015 Question 69 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chemical weapon, Computing, Cosmology, Death"
+        },
+        {
+          "id": "b",
+          "text": "Chemical Bonds, Computing, Aliens, War Zone"
+        },
+        {
+          "id": "c",
+          "text": "Isotopes, Computing, Biohazard, Devil Spirits"
+        },
+        {
+          "id": "d",
+          "text": "Chemical weapon, Radioactive, Biohazard, Toxic"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q70",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are images that have different visual features.  Identify the correct sequence of visual features associated with these images from the given choices.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q70.png",
+      "imageAlt": "UCEED 2015 Question 70 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Translational Symmetry, Asymmetric Repetition, Fractal Image, Fibonacci Series"
+        },
+        {
+          "id": "b",
+          "text": "Tessellation, Translational Repetition, Symmetric Repetition, Fractal Image"
+        },
+        {
+          "id": "c",
+          "text": "Fibonacci Series, Tiled Fractals, Figure and Ground Image, Spiral Symmetry"
+        },
+        {
+          "id": "d",
+          "text": "Radial Symmetry, Tessellation, Fractal Image, Rotational Repetition"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q71",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Given below are steps in a typical design process, but they seem to be mixed up. What is the most logical sequence of these steps? I. Build a business out of the idea that is designed. II. Building prototypes to test ideas and get feedback. III. Analysis of the findings, looking for insights and find opportunities for design. IV. Finding a need and locating a problem to solve and trying to understanding the problem by conducting research. V. Product and technology development. VI. Ideation and coming out with initial concepts.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I,  IV,  VI,  V,  III,  II"
+        },
+        {
+          "id": "b",
+          "text": "IV,  VI,  III,  II,  V,  I"
+        },
+        {
+          "id": "c",
+          "text": "IV,  III,  VI,  II,  V,  I"
+        },
+        {
+          "id": "d",
+          "text": "VI,  IV,  III,  II,  I,  V"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q72",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Given below is a write-up on the discovery of the Mouse. But the sentences seem to be mixed up. What is the correct logical sequence of these sentences? I. We use the mouse not just because Doug Engelbart invented it, but because it turned out to be the pointing device that performed best for pointing and clicking on a display, outperforming light pens, cursor keys, joysticks, trackballs, and everything else that was tried in early tests with users. II. Years later, when he was searching for a device to select objects on a computer screen, he remembered those notes, and together with Bill English, he built the first mouse. III. He was bored at a conference, and wrote in his notebook about putting two wheels at right angles to track movement on a plane. IV. The mouse won because it was the easiest to use. V. When he was a student, he was measuring the area under some complex-shaped curves, using a device with wheels that would roll in one direction and slide sideways in the axis at ninety degrees. VI. Doug Engelbart tells the story of how he invented the mouse.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I,    IV,   VI,    V,   III,   II"
+        },
+        {
+          "id": "b",
+          "text": "VI,  V,    III,   II,     I,    IV"
+        },
+        {
+          "id": "c",
+          "text": "VI,   I,    IV,  III,    V,    II"
+        },
+        {
+          "id": "d",
+          "text": "IV,   I,    VI,   V,   III,    II"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q73",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the following statements related to the earth’s environment I. Water vapour, and not carbon dioxide, is the most prevalent greenhouse gas in the earth's atmosphere. II. Besides China and the United States, India and Brazil are the highest greenhouse emitting countries. III. Although about 70% of the Earth is covered by water, and there's more beneath the surface, only about 5% of earth’s water is fresh, liquid and found above ground.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q74",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the following statements related to the economy I. Rebuilding efforts in the wake of natural disasters can give a boost to the economy. II. An increase in consumer spending is most likely to cause a decrease in employment. III. Carbon trading helps reduce carbon emissions mainly because low polluters buy excess permits to pollute and high polluters are fined by the carbon regulator. IV. Economic growth of a nation increases the demand for labour, thereby raising income levels. Which of the above statements is/are TRUE?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I & II"
+        },
+        {
+          "id": "b",
+          "text": "II & III"
+        },
+        {
+          "id": "c",
+          "text": "IV only"
+        },
+        {
+          "id": "d",
+          "text": "None of the above options"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q75",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the following design context: The city of Mumbai is facing a severe shortage of parking spaces. The problem is acute in south Mumbai where land is expensive and undeveloped land almost non-existent. A panel of experts consisting of city and town planners, transportation engineers and designers, economists, historians and policy makers has studied the problem carefully and has recommended a set of measures: I. Start a free public bicycle program in which people are encouraged to use public transport for longer distances and shared common bicycles for shorter distances. II. Allow people to download a mobile App which will allow vehicle owners to book parking spots up to one week in advance. III. Ban vehicles with even registration numbers on the even days of the month, and odd registration numbers on odd days of the month. IV. Make parking prohibitively expensive. V. Build more multi-storied and underground parking complexes. VI. Declare the whole of south Mumbai as a heritage district to prevent any further construction and limit vehicle entry by imposing toll. VII. Design self-parking vehicles. VIII. Create a car pooling mobile App that will connect people to share cars and reduce the number of cars on the road. IX. Make the roads more pedestrian-friendly.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q76",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify which option given below can be folded to make the 3D object in the picture shown below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q76.png",
+      "imageAlt": "UCEED 2015 Question 76 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q77",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Figures 1 to 5 are views of a cube. From the options given below, choose the sixth view of the cube in the series.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q77.png",
+      "imageAlt": "UCEED 2015 Question 77 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q78",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Figure 1 shows an unfolded cuboid. Below it are four options showing four fully-folded cuboids. Identify the cuboid that can be unfolded as Figure 1.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q78.png",
+      "imageAlt": "UCEED 2015 Question 78 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q79",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The image below shows a 3D object. Only one of the options shows the same object from a different view. Identify it.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q79.png",
+      "imageAlt": "UCEED 2015 Question 79 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q80",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the three statements below and the conclusions deduced from these statements. Statements: All Surrealists are melted clocks. Some melted clocks are Dalis. All Dalis are macabre works. Conclusions: (i) Some macabre works are Dalis. (ii) Some macabre works are melted clocks. (iii) Some Dalis are Surrealist.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q81",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Select the option that best explains how the two statements below are related. The fiction novel, Gone Girl, by Gillian Flynn, was very popular. It was on several bestseller lists in the US for over 34 weeks in 2012, and later made into a movie.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The first sentence contradicts the second."
+        },
+        {
+          "id": "b",
+          "text": "The first sentence explains the meaning of the second."
+        },
+        {
+          "id": "c",
+          "text": "The second sentence explains why the book is popular."
+        },
+        {
+          "id": "d",
+          "text": "The second sentence provides evidence for the first."
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q82",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The building shown in Picture 1 can look as it does in Picture 2 if photographed using:",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q82.png",
+      "imageAlt": "UCEED 2015 Question 82 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tilt-Shift Lens"
+        },
+        {
+          "id": "b",
+          "text": "Mirror Lens"
+        },
+        {
+          "id": "c",
+          "text": "USM Lens"
+        },
+        {
+          "id": "d",
+          "text": "Stereoscopic Lens"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q83",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Three views of a block with seven different shapes printed on its surfaces are shown below. Find the same block from the options given.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q83.png",
+      "imageAlt": "UCEED 2015 Question 83 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q84",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The green arrow is pointing at a mark on a DSLR camera body. What does this mark represent?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q84.png",
+      "imageAlt": "UCEED 2015 Question 84 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Infinity Focus"
+        },
+        {
+          "id": "b",
+          "text": "Closed Aperture"
+        },
+        {
+          "id": "c",
+          "text": "Focal Plane"
+        },
+        {
+          "id": "d",
+          "text": "Firmware Reset"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q85",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The image below shows a product designed by Raymond Loewy. Identify the product.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q85.png",
+      "imageAlt": "UCEED 2015 Question 85 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pencil sharpener"
+        },
+        {
+          "id": "b",
+          "text": "Turbine engine"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q86",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "These are modified images by famous artists. Identify the correct sequence of artists of the original images.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q86.png",
+      "imageAlt": "UCEED 2015 Question 86 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leonardo da Vinci, Vermeer, Van Gogh, Michaelangelo"
+        },
+        {
+          "id": "b",
+          "text": "Michaelangelo, Vermeer, Van Gogh, Leonardo da Vinci"
+        },
+        {
+          "id": "c",
+          "text": "Michaelangelo, Rembrandt, Van Gogh, Leonardo da Vinci"
+        },
+        {
+          "id": "d",
+          "text": "Leonardo da Vinci, Rembrandt, Van Gogh, Michaelangelo"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q87",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "These images are made using different art techniques. Identify the correct sequence of techniques from options below.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q87.png",
+      "imageAlt": "UCEED 2015 Question 87 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oil Paint, Crayon, Watercolour, Pastel"
+        },
+        {
+          "id": "b",
+          "text": "Ink, Acrylic, Oil Paint, Tempera"
+        },
+        {
+          "id": "c",
+          "text": "Watercolour, Crayon, Acrylic, Oil Paint"
+        },
+        {
+          "id": "d",
+          "text": "Tempera, Pastel, Oil Paint, Acrylic"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q88",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Given below are steps to tie a shoelace, but the steps seem to be mixed up. What is the correct logical sequence of these steps?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q89",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Given below is a list of sixteen idioms which originated from sports. Each option contains four sports.  Identify the option that has all its four sports represented in at least one of the idioms in the list. i. Back to square one ii. Ball in his court iii. Below par iv. Breaking one’s duck v. Down to the wire vi. Full court press vii. Going the distance viii. Jump the gun ix. Level playing field x. On the back foot xi. Play it close to one's chest xii. Pole position xiii. Saved by the bell xiv. Stalemate xv. Throw in the towel xvi. Touché",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Boxing, Baseball, Chess, Cricket"
+        },
+        {
+          "id": "b",
+          "text": "Basketball, Soccer, Horse Racing, Weight Lifting"
+        },
+        {
+          "id": "c",
+          "text": "Fencing, Poker, Pole Vault, Tennis"
+        },
+        {
+          "id": "d",
+          "text": "Athletics, Golf, Motor Racing, Snakes and Ladder"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q90",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is an image made from line segments. Identify the element, from the options at right, which is NOT part of the image.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q90.png",
+      "imageAlt": "UCEED 2015 Question 90 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q91",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the following paragraph and answer the question that follows. The correct answer is: A) astounding, consolidation, time, law B) patronizing, assimilation, concept, sham C) critical, association, opportunity, truth D) worrisome, organization, place, joy",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q91.png",
+      "imageAlt": "UCEED 2015 Question 91 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q92",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the following paragraph and answer the question that follows. The correct answer is",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q92.png",
+      "imageAlt": "UCEED 2015 Question 92 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "uncertain, freedom, stubbled, extol"
+        },
+        {
+          "id": "b",
+          "text": "equivocal, confidence, unshaven, endanger"
+        },
+        {
+          "id": "c",
+          "text": "inconclusive, appetite, hirsute, decrease"
+        },
+        {
+          "id": "d",
+          "text": "indubitable, agility, hirsute, increase"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q93",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "On the left hand side are pieces of a jigsaw puzzle. Identify the image that can be reproduced using all the pieces shown at left.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q93.png",
+      "imageAlt": "UCEED 2015 Question 93 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q94",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the set of operations (not necessarily in order) that can be applied on form A to get form B?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q94.png",
+      "imageAlt": "UCEED 2015 Question 94 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cut vertically, Taper, Cut at an angle, Bend, Twist"
+        },
+        {
+          "id": "b",
+          "text": "Cut horizontally, Bend, Cut at an angle, Taper, Twist"
+        },
+        {
+          "id": "c",
+          "text": "Cut vertically, Stretch, Twist, Bend, Cut at an angle"
+        },
+        {
+          "id": "d",
+          "text": "Cut vertically, Twist, Stretch, Cut at an angle, Fold"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q95",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the most accurate shadow of the object given below. The arrow indicates direction of light.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q95.png",
+      "imageAlt": "UCEED 2015 Question 95 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q96",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "At left is an empty glass with a straw in it. From the options given, identify the correct representation of the straw when the glass is half-filled with water.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q96.png",
+      "imageAlt": "UCEED 2015 Question 96 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q97",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If the given flat shape is revolved about the Y axis by 360°, identify the solid shape that will be generated.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q97.png",
+      "imageAlt": "UCEED 2015 Question 97 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q98",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are schematic diagrams of a regular door latch. X represents the door, and Y represents the frame in the wall. Identify which latch can be used for correctly locking the door.",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q98.png",
+      "imageAlt": "UCEED 2015 Question 98 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q99",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Pick a point on the outermost ring of the maze shown below, in order to find your way home. Each point indicates the direction of your next move. Which point on the outermost ring should be your starting point in order to reach home in the fewest steps?",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q99.png",
+      "imageAlt": "UCEED 2015 Question 99 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "W"
+        },
+        {
+          "id": "b",
+          "text": "N"
+        },
+        {
+          "id": "c",
+          "text": "NE"
+        },
+        {
+          "id": "d",
+          "text": "NW"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q100",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is a triangular prism cut into two parts, P and Q. Identify which option represents part P. END OF THE QUESTION PAPER",
+      "topic": "Design Aptitude & Visual Observation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2015",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2015-q100.png",
+      "imageAlt": "UCEED 2015 Question 100 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    }
+  ]
+}

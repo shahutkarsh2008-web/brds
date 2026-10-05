@@ -1,0 +1,3013 @@
+{
+  "id": "uceed-2019",
+  "title": "UCEED 2019 Official Paper",
+  "durationSeconds": 7200,
+  "totalQuestions": 85,
+  "maxMarks": 300,
+  "instructions": "Official UCEED 2019 Question Paper & Final Answer Key (Part A: 85 questions, 300 marks, 120 minutes). Section 1 NAT: Q1–20 (+4/0). Section 2 MSQ: Q21–45 (+4/-1 with partial credit). Section 3 MCQ: Q46–85 (+3/-0.71).",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "Section 1 · NAT (60 marks)"
+    },
+    {
+      "id": "msq",
+      "title": "Section 2 · MSQ (60 marks)"
+    },
+    {
+      "id": "mcq",
+      "title": "Section 3 · MCQ (180 marks)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below are sole designs of slippers, of which some are matched-pairs (one left foot\nand one right foot). Identify the total number of matched-pairs in the image.",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q01.png",
+      "imageAlt": "UCEED 2019 Question 1 Diagram",
+      "answer": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "X1 is a 3D form generated from the shape X, using certain 3D operations. It has 11 surfaces\nin total. If the same operations are carried out on shape Y, how many surfaces would the resulting\n3D form have?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q02.png",
+      "imageAlt": "UCEED 2019 Question 2 Diagram",
+      "answer": {
+        "min": 22,
+        "max": 22
+      }
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Fifteen people from different places came together for a family reunion. Each one of them\nhad two gifts each for every other person. When the gifts were exchanged they hugged each other.\nWhat is the difference between the number of hugs and the number of gifts exchanged?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q03.png",
+      "imageAlt": "UCEED 2019 Question 3 Diagram",
+      "answer": {
+        "min": -315,
+        "max": 315,
+        "values": [
+          315,
+          -315
+        ]
+      }
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A tetrahedral puzzle is made of smaller tetrahedrons. Shown below is one side of the puzzle\nand a small tetrahedron. Assuming that all the faces of the puzzle are same, how many small\ntetrahedrons are there on the faces of the larger tetrahedron?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q04.png",
+      "imageAlt": "UCEED 2019 Question 4 Diagram",
+      "answer": {
+        "min": 44,
+        "max": 44
+      }
+    },
+    {
+      "id": "q05",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The picture shows decimal numbers encoded in colors in some other number system.\nEncodings of six numbers have been given in the picture on the left. Picture on the right shows a\nmultiplication that we need to perform. What decimal number represents the result of this\nmultiplication?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q05.png",
+      "imageAlt": "UCEED 2019 Question 5 Diagram",
+      "answer": {
+        "min": 18,
+        "max": 18
+      }
+    },
+    {
+      "id": "q06",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A cube has its six faces numbered 1 to 6. A school boy tosses up the cube twice and notes\ndown the two numbers appearing on top in these two tosses. He multiplies these two numbers and\nnotes down the multiplication result. How many unique multiplication results can he possibly get\nthrough this tossing game?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q06.png",
+      "imageAlt": "UCEED 2019 Question 6 Diagram",
+      "answer": {
+        "min": 18,
+        "max": 18
+      }
+    },
+    {
+      "id": "q07",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Three transparent glass pieces with different engravings are shown below. They are to be\noverlapped, one on top of the other, with the red corner exactly matching each other. What is the\ntotal number of triangles in the resultant figure?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q07.png",
+      "imageAlt": "UCEED 2019 Question 7 Diagram",
+      "answer": {
+        "min": 20,
+        "max": 20
+      }
+    },
+    {
+      "id": "q08",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A diagram of three blocks A, B and C and their direction of movement is shown below. The\nblocks move continuously in units and change directions after hitting the side walls. From the given\nposition, if block A moves at a speed of 2 units per second, and block B and block C move at a speed\nof 1 unit per second, what is the least time (in seconds) that is required for all blocks to align exactly\none below the other?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q08.png",
+      "imageAlt": "UCEED 2019 Question 8 Diagram",
+      "answer": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "q09",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A UNION of two solids, a pentagonal prism and a hexagonal prism is shown below. The side\nview (on the right) depicts how the solids intersect. Visualise the new solid formed by their\nINTERSECTION (the part common to both of them). How many surfaces will the new solid have?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q09.png",
+      "imageAlt": "UCEED 2019 Question 9 Diagram",
+      "answer": {
+        "min": 9,
+        "max": 9
+      }
+    },
+    {
+      "id": "q10",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A solid object made of cubes is shown below. This object is symmetric about all three axes,\nand does not contain cavities (no hollow spaces). How many cubes does the solid contain?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q10.png",
+      "imageAlt": "UCEED 2019 Question 10 Diagram",
+      "answer": {
+        "min": 57,
+        "max": 57
+      }
+    },
+    {
+      "id": "q11",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A solid is drilled using a cylindrical drill in a direction, as shown below. How many surfaces\nwill the solid have after the drilling is complete?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q11.png",
+      "imageAlt": "UCEED 2019 Question 11 Diagram",
+      "answer": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "q12",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The figure below shows a hinged structure made up of 12 sticks. The structure can be\nelongated and compressed by changing the angle ABR. As shown in the figure, the distance between\nB and Q is 150√6 (one hundred and fifty times root six) units when the angle ABR is 90 degrees.\nWhat will this distance be when the angle ABR is changed to 60 degrees?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q12.png",
+      "imageAlt": "UCEED 2019 Question 12 Diagram",
+      "answer": {
+        "min": 450,
+        "max": 450
+      }
+    },
+    {
+      "id": "q13",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "In a new form of decimal system, the numbers 0 to 9 are represented by a new set of\nsymbols. For example, the equation 1 + 4 = 5 is represented as equation (i). If in the solution to\nequation (iv) one digit appears twice, what number will replace the question mark?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q13.png",
+      "imageAlt": "UCEED 2019 Question 13 Diagram",
+      "answer": {
+        "min": 399,
+        "max": 399
+      }
+    },
+    {
+      "id": "q14",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "What is the area (in cm2) of the black portion, if the square is of length 16 cm?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q14.png",
+      "imageAlt": "UCEED 2019 Question 14 Diagram",
+      "answer": {
+        "min": 96,
+        "max": 96
+      }
+    },
+    {
+      "id": "q15",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The figure shows two concentric equilateral triangles with a circle within, such that the circle\ntouches all the edges of the triangle. If the radius of the circle is √3 (square root of three), what is the\ntotal length of the star shaped outer border formed by the two intersecting triangles?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q15.png",
+      "imageAlt": "UCEED 2019 Question 15 Diagram",
+      "answer": {
+        "min": 24,
+        "max": 24
+      }
+    },
+    {
+      "id": "q16",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Except for one number, all the four-digit numbers given below are written using a single\nfont. Identify the number that does not use the same font as the other numbers.",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q16.png",
+      "imageAlt": "UCEED 2019 Question 16 Diagram",
+      "answer": {
+        "min": 1190,
+        "max": 1190
+      }
+    },
+    {
+      "id": "q17",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Two perspective views of the same solid object are shown below. Count the total number of\nsurfaces in the object. Assume hidden surfaces to be flat.",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q17.png",
+      "imageAlt": "UCEED 2019 Question 17 Diagram",
+      "answer": {
+        "min": 22,
+        "max": 23,
+        "values": [
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "id": "q18",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The image given below is made out of separate pieces. What is the least number of pieces\nthat need to be moved and/or rotated and/or flipped for achieving symmetry about the central\nvertical axis?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q18.png",
+      "imageAlt": "UCEED 2019 Question 18 Diagram",
+      "answer": {
+        "min": 9,
+        "max": 9
+      }
+    },
+    {
+      "id": "q19",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A logo was designed by creating a pattern of orange petals using four semicircles. These\npetals were then inscribed in a green circular shape with an inner diameter of 14√2 (fourteen times\nsquare root of two) units, what is the area of the orange part in the logo? (Assume π = 22/7)",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q19.png",
+      "imageAlt": "UCEED 2019 Question 19 Diagram",
+      "answer": {
+        "min": 112,
+        "max": 112
+      }
+    },
+    {
+      "id": "q20",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shyam runs a dairy. In his cattle herd, each white cow gives 12 litres of milk, each brown cow\ngives 7 litres of milk and each yellow cow gives 10 litres of milk every day. He has drawn a sketch of\nhis herd which is shown below. Using this sketch, calculate the amount of milk (in litres) produced by\nhis diary per day?",
+      "marks": {
+        "correct": 3,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Section A: Numerical Answer Type (NAT)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-a-nat"
+      ],
+      "image": "/media/uceed-2019-q20.png",
+      "imageAlt": "UCEED 2019 Question 20 Diagram",
+      "answer": {
+        "min": 160,
+        "max": 160
+      }
+    },
+    {
+      "id": "q21",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Tile X was used to create a seamless pattern when arranged as shown below. Which tile(s)\nfrom the options will create a seamless pattern (pattern without gaps)?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q21.png",
+      "imageAlt": "UCEED 2019 Question 21 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q22",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements related to Indian musicians is/are TRUE?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q22.png",
+      "imageAlt": "UCEED 2019 Question 22 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ustad Allah Rakha and Ustad Zakir Hussain are known for playing the Tabla"
+        },
+        {
+          "id": "b",
+          "text": "Pandit Nikhil Banerjee and Ustad Vilayat Khan are known for playing the Sitar"
+        },
+        {
+          "id": "c",
+          "text": "Ustad Ali Akbar Khan, Ustad Amjad Ali Khan and Dr. L. Subramaniam are known for playing\n       the Violin"
+        },
+        {
+          "id": "d",
+          "text": "Pandit Ravi Shankar and Pt.Hariprasad Chaurasia are known for playing the Shehanai"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "id": "q23",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options on the right can be formed by folding the profile shown on the left?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q23.png",
+      "imageAlt": "UCEED 2019 Question 23 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q24",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "In a 3D structure made of cubes of equal size, an L shaped hole is made by removing a few\ncubes, as shown on the left. Which of the 3D structures in the options on the right would\nsuccessfully pass through the L shaped hole, given that that they are also made of cubes of same\nsize?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q24.png",
+      "imageAlt": "UCEED 2019 Question 24 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q25",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The figure given below shows six bar charts corresponding to the volume of agricultural\nproduce from farms of various farmers. The actual quantities are also shown in the figure. Red bars\nindicate tomatoes, green bars indicate leafy vegetables, and blue bars indicate berries. Assume that\nthey have seen each other’s bar charts. Who can correctly make at least one of the following\nstatements?\n\n(i) Everyone who produced any one item more than what I produced, she also produced every other\nitem more. (ii) Everyone who produced one item less than what I produced, she also produced at\nleast one other item less.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q25.png",
+      "imageAlt": "UCEED 2019 Question 25 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vinita"
+        },
+        {
+          "id": "b",
+          "text": "Priya"
+        },
+        {
+          "id": "c",
+          "text": "Neela"
+        },
+        {
+          "id": "d",
+          "text": "Suneeta"
+        }
+      ],
+      "answer": [
+        "c"
+      ]
+    },
+    {
+      "id": "q26",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The figure shows four road networks. Which of these four road networks can be traversed\nby a traveller, such that the following challenge can be satisfied: “The traveller must cover all the\nroads in the network. She is allowed to visit a city more than once, but she is not allowed to travel\non any road more than once. Also, the traveller must come back to the city where she starts.”",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q26.png",
+      "imageAlt": "UCEED 2019 Question 26 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q27",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The grid of squares shown in the figure is to be tiled (covered with tiles) with the tiles shown\nin the options. The covering tiles must not overlap and should not have gaps around them. Only four\nsquares in the middle are not to be tiled. Once a tile is chosen, other tiles must be of that type only.\nTiles can be flipped and rotated if required. Which of the tiles can be used to tile the given grid?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q27.png",
+      "imageAlt": "UCEED 2019 Question 27 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "c"
+      ]
+    },
+    {
+      "id": "q28",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Suresh, Biju and Tina bring one gift each. When they meet, they swap their gifts in such a\nway that no one gets back what they had brought with them. The gifts are, a book, a pen, and a ball.\n\nSuresh says: I gave my gift to the one who gave away the ball.\n\nBiju says: I received my gift from the one who gave gift to the one who gave away the ball.\n\nTina says: I got what I always wanted.\n\nBiju says: But Tina, you had to give away your pen.\n\nWhich of these statements is/are TRUE?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q28.png",
+      "imageAlt": "UCEED 2019 Question 28 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tina gets the Ball"
+        },
+        {
+          "id": "b",
+          "text": "Tina gets the Book"
+        },
+        {
+          "id": "c",
+          "text": "Suresh gets the pen"
+        },
+        {
+          "id": "d",
+          "text": "Biju gets the Book"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q29",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "If the geometric solid blocks shown below, are cut along a single flat plane, which of these\ncan have the cross section of a regular hexagon (all sides equal)? Assume, all blocks are extruded\nfrom polygons with sides of equal length.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q29.png",
+      "imageAlt": "UCEED 2019 Question 29 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "id": "q30",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The following patterns are made on a wall by using ceramic tiles. Which of the given\npatterns is/are made from a single type of tile?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q30.png",
+      "imageAlt": "UCEED 2019 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q31",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements about the areas of Indian states is/are TRUE?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q31.png",
+      "imageAlt": "UCEED 2019 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arunachal Pradesh is larger than Kerala"
+        },
+        {
+          "id": "b",
+          "text": "Punjab is larger than Assam"
+        },
+        {
+          "id": "c",
+          "text": "Chhattisgarh is larger than Jharkhand"
+        },
+        {
+          "id": "d",
+          "text": "West Bengal is larger than Uttarakhand"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q32",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Image P shows a portion of a larger photograph. Some operations have been done on that\nphotograph using an image manipulation software. Image Q shows a portion of the resulting\nphotograph. Identify the option(s) that specifies/specify the correct operations.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q32.png",
+      "imageAlt": "UCEED 2019 Question 32 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rotate clockwise by 90 degrees, flip horizontally, then rotate clockwise by 90 degrees"
+        },
+        {
+          "id": "b",
+          "text": "Rotate clockwise by 180 degrees, then flip horizontally"
+        },
+        {
+          "id": "c",
+          "text": "Rotate clockwise by 180 degrees, then flip vertically"
+        },
+        {
+          "id": "d",
+          "text": "Rotate clockwise by 90 degrees, flip vertically, then rotate clockwise by 90 degrees"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q33",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following birds is/are native to (found in) India?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q33.png",
+      "imageAlt": "UCEED 2019 Question 33 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q34",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The word given below uses a particular font. Which option(s) belongs/belong to the same\nfont?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q34.png",
+      "imageAlt": "UCEED 2019 Question 34 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q35",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A set of two frames with square openings when perfectly overlapped with each other allow\nlight though it in certain patterns. Shown below are four sets of such frames. These frames are\neither hinged (A and B) or pivoted (C and D) to each other. Assuming that the red frames are fixed\nand the blue frames are allowed to move, which option(s) will allow light to pass through as in the\npattern shown on the left?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q35.png",
+      "imageAlt": "UCEED 2019 Question 35 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q36",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Refer to the tools below and read the statements. Based on what you can see, which of the\nfollowing options is/are correct?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q36.png",
+      "imageAlt": "UCEED 2019 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "All tools have atleast one common working principle"
+        },
+        {
+          "id": "b",
+          "text": "All of them can be used for cutting fabric"
+        },
+        {
+          "id": "c",
+          "text": "Only one has spring back element, at least one has provision to crack nuts"
+        },
+        {
+          "id": "d",
+          "text": "Three of them have a provision to crack nuts"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q37",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Multiple pages of a book are often printed on a single sheet. The sheet is later folded and\ncut appropriately to get the pages in a correct sequence and orientation. Mistakes happened while\nprinting this particular 16 page booklet. The sheet was printed with pages numbered and oriented as\nshown on the left. The sheet was folded and cut in the sequence as shown on the right. Given this,\nwhich of the options is/are TRUE about the final booklet?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q37.png",
+      "imageAlt": "UCEED 2019 Question 37 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Page 13 appears before page 10"
+        },
+        {
+          "id": "b",
+          "text": "Page 11 is the last odd-numbered page"
+        },
+        {
+          "id": "c",
+          "text": "Page 4 is the first even-numbered page"
+        },
+        {
+          "id": "d",
+          "text": "All pages appear in the correct orientation"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q38",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A bag contains 20 socks, of which 10 are white and 10 are black. If the socks are drawn\nwithout replacement, which of the options is/are TRUE?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q38.png",
+      "imageAlt": "UCEED 2019 Question 38 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "If 1 sock is drawn at random, the chance that it is white is 50%"
+        },
+        {
+          "id": "b",
+          "text": "If 2 socks are drawn at random, the chance that both of them are the same colour is 50%"
+        },
+        {
+          "id": "c",
+          "text": "If 3 socks are drawn at random, the chance that at least two of them are the same colour is\n        higher than if only 2 socks are drawn at random"
+        },
+        {
+          "id": "d",
+          "text": "If 4 socks are drawn at random, the chance that at least two of them will be the same colour\n           is higher than if only 3 socks are drawn at random"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q39",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "In the figure below, a person is putting small packets of potatoes in one of the bins A, B or C.\nThe packets are placed on a table, and the bins A, B and C are placed on tables which are lower in\nheight as compared to table on which the packets rest. Which of the following statements is/are\nTRUE?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q39.png",
+      "imageAlt": "UCEED 2019 Question 39 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lifting the bag from the table and placing it in bin B will be less effortful compared to lifting\n      and placing it in bin C"
+        },
+        {
+          "id": "b",
+          "text": "Lifting the bag from the table and placing it in bin A will be more effortful compared to\n         sliding it in bin C"
+        },
+        {
+          "id": "c",
+          "text": "Lifting the bag from the table and placing it in bin B will be less effortful than sliding it to bin\n      C"
+        },
+        {
+          "id": "d",
+          "text": "Sliding the bag from the table to bin C will be less effortful than lifting it and placing it in bin\n      C"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "id": "q40",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "In a town, there are four kinds of persons: Mizrabs, Frets, Dictions and Scripts. People of any\ngiven kind play exactly two musical instruments. An instrument is played exactly by people of two\nkinds. Some Mizrabs play Tabla. Some Frets play Sitar. The kind that plays Harmonium does not play\nSarod. The kind that plays Tabla does not play Sitar. Mizrabs and Dictions do not play the same\ninstrument. Frets and Scripts do not play the same instrument. Dictions do not play Harmonium.\n\nWhich of the following is/are TRUE?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-b-msq"
+      ],
+      "image": "/media/uceed-2019-q40.png",
+      "imageAlt": "UCEED 2019 Question 40 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frets do not play Tabla"
+        },
+        {
+          "id": "b",
+          "text": "Scripts play Tabla"
+        },
+        {
+          "id": "c",
+          "text": "Mizrabs play Harmonium"
+        },
+        {
+          "id": "d",
+          "text": "Dictions play Sitar"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "q41",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Maharashtra = ?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q41.png",
+      "imageAlt": "UCEED 2019 Question 41 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q42",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The word given below uses a particular font. Which option belongs to the same font?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q42.png",
+      "imageAlt": "UCEED 2019 Question 42 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q43",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q44",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An envelope made of a single piece of paper is taken, and a few cuts are made on it. The\nenvelope and the cuts are shown below. Identify the resulting figure when the envelope is unfolded?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q45",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown in the four figures A, B, C, and D on the right, are broken lines drawn on a transparent\nsheet. Each figure is folded over along the dotted lines as shown. Identify the correct option that will\ngenerate the motif shown on the left.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q46",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A light source is attached to a rod fixed in the centre of the ceiling of a square room. This\nsource rotates 360 degrees with the rod as its axis. This source projects a red beam of light onto the\nfour walls of the room. This setup is shown in the isometric view and the side view in the figure\nbelow. Identify the correct path of the beam of light on the four walls of the room.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q47",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The figure below shows the top view, the front view, and the side view of a three-\ndimensional solid object. What is the minimum number of surfaces that a solid with these views, can\nhave? Assume that there are no hidden lines.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "30"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q48",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Sheetal is running. Which option denotes the most natural pose?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q49",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the correct profile of the cricketer that corresponds to the given front pose.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q50",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Seema on the left, is looking at a mirror. Which option shows her reflection correctly?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q51",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Kavita is holding a lit torch below her face as she narrates a ghost story to her friends in a\ndark room. Which option shows the lighting correctly?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q51.png",
+      "imageAlt": "UCEED 2019 Question 51 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q52",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option correctly represents the top view for the given perspective view?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q52.png",
+      "imageAlt": "UCEED 2019 Question 52 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q53",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A milkman is returning from his trip on his bicycle. He has two empty containers of 5 litres\nand 3 litres hanging on one side of the bicycle, and a full 8 litres milk container on the other side. He\nwas not able to ride the bicycle properly. So he stopped and decided to distribute the milk, so that\nthe load becomes balanced on the both sides of the bicycle. Unfortunately he has forgotten his\nmeasuring cup on his last stop.\n\nHow many minimum turns will it take for him to be able to distribute the milk into two equal halves\nto balance the load? Ignore the weight and other material properties of the containers and the\nbicycle.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q53.png",
+      "imageAlt": "UCEED 2019 Question 53 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q54",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Four students P, Q, R and S are shown a box which contains a few white balls, and a few red\nballs. Their teacher asks each of them individually to make a statement. The teacher knows that\nexactly one of them is a liar and others are not. From the statements that they make, the teacher is\nable to find out who the liar is. Given below are the statements made by the students. Who is the\nliar?\n\nP says: There are equal number of red balls and white balls.\nQ says: P is a liar and there are 3 red balls and 2 white balls.\nR says: Q is not a liar and there are some red balls and some white balls in the box.\nS says: R is not a liar.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q54.png",
+      "imageAlt": "UCEED 2019 Question 54 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P is the liar"
+        },
+        {
+          "id": "b",
+          "text": "Q is the liar"
+        },
+        {
+          "id": "c",
+          "text": "R is the liar"
+        },
+        {
+          "id": "d",
+          "text": "S is the liar"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q55",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is an image with straight lines, in which, a tilted-square has been cut out. From\nthe given options identify the missing cut out of the square that completes the original image.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q55.png",
+      "imageAlt": "UCEED 2019 Question 55 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q56",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A T-shirt with folding marks and the folding sequence is shown on the left. The folding is\ndone backwards and perfectly along the lines. After completing all the folds, the T-shirt is then\nturned around. Identify the correct folded T-shirt from the options on the right.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q56.png",
+      "imageAlt": "UCEED 2019 Question 56 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q57",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A paper strip is rolled and then punched by a triangular punch, as shown below. After\nunrolling the paper strip, what would be the pattern of holes on the paper?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q57.png",
+      "imageAlt": "UCEED 2019 Question 57 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q58",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the option that will replace the question mark.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q58.png",
+      "imageAlt": "UCEED 2019 Question 58 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q59",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "How should the two solids be joined in order to form a tetrahedron?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q59.png",
+      "imageAlt": "UCEED 2019 Question 59 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "ci, ag, be"
+        },
+        {
+          "id": "b",
+          "text": "af, bg, ci"
+        },
+        {
+          "id": "c",
+          "text": "ae, ci, bf"
+        },
+        {
+          "id": "d",
+          "text": "ci, ae, dh"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q60",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Perspective view of an object is shown below. The object is rotated 180 degrees around y-\naxis (when viewed from a point on the positive y-axis towards the origin) and then similarly rotated\n180 degrees around z-axis. Which of the following perspective view options will be the result of the\nrotations? Assume positive x and y axes point in the direction of the viewer.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q60.png",
+      "imageAlt": "UCEED 2019 Question 60 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q61",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "On a glass entrance door of a building, there is an arrow sign pointing towards the newly\nshifted office space on the first floor. The sign is printed on a paper and pasted on the outside of the\ndoor using two tapes, one at the top-middle, and other at the bottom-middle. Due to the frequent\nuse of the door, the top tape is peeled off, and the paper falls with the bottom tape holding it. After\nfalling, from inside the building one can see the arrow sign pointing towards the Southwest\ndirection. If that is the case, in which direction was the arrow sign originally pointing to (as seen from\noutside)?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q61.png",
+      "imageAlt": "UCEED 2019 Question 61 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Southeast"
+        },
+        {
+          "id": "b",
+          "text": "Northeast"
+        },
+        {
+          "id": "c",
+          "text": "Northwest"
+        },
+        {
+          "id": "d",
+          "text": "North"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q62",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A cube and a truncated cone are shown below. The cube has dimensions 10 × 10 × 10 units.\nThe truncated cone has a base diameter of 12 units, height of 11 units and top diameter of 6 units.\nImagine these two solids are intersecting while positioned coaxially on the same base. Further\nimagine the cube vanishes completely along with the intersected portion of the truncated cone.\nWhat remains?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q62.png",
+      "imageAlt": "UCEED 2019 Question 62 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q63",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Afreen is a teacher. She decides to give biscuits to her students Javed, Jai, Joshua and\nJaspreet. She has biscuits of four different sizes, all of which have the same perimeter and thickness.\nThe proportions of the biscuits are shown below. She asks Javed, Jai, Joshua and Jaspreet, in that\norder, to pick biscuits in descending (largest to smallest) order of volume. Which biscuits should Jai\nand Jaspreet pick up respectively?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q63.png",
+      "imageAlt": "UCEED 2019 Question 63 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Q and R"
+        },
+        {
+          "id": "b",
+          "text": "P and S"
+        },
+        {
+          "id": "c",
+          "text": "Q and S"
+        },
+        {
+          "id": "d",
+          "text": "P and R"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q64",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A crocodile at point P sees four meatballs at A, B, C and D across the river. The crocodile\nmoves with the same speed on ground as well as in water. If the speed of river is half the speed of\ncrocodile, which meatball can it catch in the shortest time?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q64.png",
+      "imageAlt": "UCEED 2019 Question 64 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q65",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which number will replace the question mark?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q65.png",
+      "imageAlt": "UCEED 2019 Question 65 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "21"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "28"
+        },
+        {
+          "id": "d",
+          "text": "30"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q66",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which black shape from the options will match the white shape in the figure, using simple\nrotation.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q66.png",
+      "imageAlt": "UCEED 2019 Question 66 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q67",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The figure below shows a 3 × 3 cube with 4 colours. The same coloured shapes are detached\nand shown separately for reference. Identify the shape of the red block from the given options.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q67.png",
+      "imageAlt": "UCEED 2019 Question 67 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q68",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q68.png",
+      "imageAlt": "UCEED 2019 Question 68 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q69",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Jaya, Sushama, Rama, Dilip, Sudhir and Arun are doctors working in a hospital specialising in\ngynaecology, neurosurgery, paediatrics, orthopaedics, anaesthesia and intensive care, not\nnecessarily in that order. What is Rama’s specialisation if the following conditions are to be met:\n\n       Jaya, Arun and Sushama work together.\n      Neurosurgeons always need the help of orthopaedic surgeons in the operation theatre.\n       Orthopaedic surgeries cannot happen on the same days that gynaecological surgeries\n       happen.\n       Gynaecologists need paediatricians on standby during their operating hours.\n      Though Sudhir and Dilip work together, neither has ever met Sushma in the hospital.\n       All specialisations except intensive care need to work with Arun, the anaesthetist.\n       Doctors don’t work together other than as mentioned above.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q69.png",
+      "imageAlt": "UCEED 2019 Question 69 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neurosurgery"
+        },
+        {
+          "id": "b",
+          "text": "Intensive care"
+        },
+        {
+          "id": "c",
+          "text": "Orthopaedics"
+        },
+        {
+          "id": "d",
+          "text": "Paediatrics"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q70",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below on the left is a Ferris wheel which is not in motion. A photographer has clicked\na photograph of the Ferris wheel while it was rotating at its maximum speed in an anti-clockwise\ndirection. Which of the options below is the image that he has captured?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q70.png",
+      "imageAlt": "UCEED 2019 Question 70 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q71",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q71.png",
+      "imageAlt": "UCEED 2019 Question 71 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q72",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the correct order of rotation.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q72.png",
+      "imageAlt": "UCEED 2019 Question 72 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q73",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The following images are iconic art forms/products of certain countries. Identify the correct\nset of countries they all can be predominantly attributed to. The individual countries in each set are\nin a random sequence.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q73.png",
+      "imageAlt": "UCEED 2019 Question 73 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "India, Turkey, Mongolia, Russia"
+        },
+        {
+          "id": "b",
+          "text": "Mongolia, Burma, Afghanistan, India"
+        },
+        {
+          "id": "c",
+          "text": "India, Russia, Japan, Turkey"
+        },
+        {
+          "id": "d",
+          "text": "Pakistan, Japan, India, Mongolia"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q74",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Refer the following images of a metal artefact made using traditional manual tools, skills and\nprocesses. Identify the correct set of operations required to make it.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q74.png",
+      "imageAlt": "UCEED 2019 Question 74 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forging, Bending, Punching, Twisting"
+        },
+        {
+          "id": "b",
+          "text": "Casting, Bending, Punching, Twisting"
+        },
+        {
+          "id": "c",
+          "text": "Twisting, Drilling, Punching, Bending"
+        },
+        {
+          "id": "d",
+          "text": "Bending, Casting, Forging, Punching"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q75",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Refer to the chairs shown below. Which of the following options is TRUE?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q75.png",
+      "imageAlt": "UCEED 2019 Question 75 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P is most stable in terms of centre of gravity and R is made of least number of visible parts"
+        },
+        {
+          "id": "b",
+          "text": "S is made of least number of visible parts and Q is most stable in terms of centre of gravity"
+        },
+        {
+          "id": "c",
+          "text": "P is most stable in terms of centre of gravity and S is made of least number of visible parts"
+        },
+        {
+          "id": "d",
+          "text": "R is ergonomically comfortable and Q is most stable in terms of centre of gravity"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q76",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Refer to the following image of a wooden product and read the statements below.\n\n    1.   It has provision for cracking nuts, and it has a good grip\n    2.   It has a good grip, and it has provision for opening cans as well as cracking nuts\n    3.   It has provision for a grinding nuts, and its making involves drilling, twisting, and casting\n    4.   Its making involves drilling, turning, and twisting\n\n      Which of the following options is correct?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q76.png",
+      "imageAlt": "UCEED 2019 Question 76 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 is true, 2 and 3 are false"
+        },
+        {
+          "id": "b",
+          "text": "2 is true, 3 and 4 are false"
+        },
+        {
+          "id": "c",
+          "text": "3 is true, rest are false"
+        },
+        {
+          "id": "d",
+          "text": "4 is true, 1 and 3 are false"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q77",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown is a quadrant that is mirrored first on x-axis and then on y-axis. Identify the correct\ncomplete figure from the given options.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q77.png",
+      "imageAlt": "UCEED 2019 Question 77 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q78",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Thamarai’s father has made a roti for her lunch. She folds the roti in the following sequence\nand packs it into her lunch box. Identify the folded roti.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q78.png",
+      "imageAlt": "UCEED 2019 Question 78 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q79",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An unwrapped cube is shown below. This cube has cuts of specific shapes on all sides. When\nthe cube is folded, what would be the view as seen from direction X?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q79.png",
+      "imageAlt": "UCEED 2019 Question 79 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q80",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The four figures below show a hand gripping a cylinder. In which of these figures, will the\ngrip exert the maximum force?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q80.png",
+      "imageAlt": "UCEED 2019 Question 80 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q81",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Four cut-outs of shapes (labelled p, q, r, s) are shown below. Using one or more of the cut-\nout pieces, how many unique combinations can be made that will create a square/rectangle?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q81.png",
+      "imageAlt": "UCEED 2019 Question 81 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q82",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The figures show simplified shapes of the neck portion of the vertebral column of a horse.\nWhich of the options is most correct?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q82.png",
+      "imageAlt": "UCEED 2019 Question 82 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q83",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "How many times is the area of the outermost triangle compared to the area of the\ninnermost triangle?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q83.png",
+      "imageAlt": "UCEED 2019 Question 83 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "9.42"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q84",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark as the frog jumps in an animation sequence?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q84.png",
+      "imageAlt": "UCEED 2019 Question 84 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q85",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1.32,
+        "unanswered": 0
+      },
+      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "tags": [
+        "uceed-2019",
+        "pyq",
+        "section-c-mcq"
+      ],
+      "image": "/media/uceed-2019-q85.png",
+      "imageAlt": "UCEED 2019 Question 85 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    }
+  ]
+}

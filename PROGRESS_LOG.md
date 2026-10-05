@@ -1202,3 +1202,31 @@ WHAT: Removed old-plan Phase 8 wording from the hosted-readiness and testing sli
 WHY: Keep the next-action guidance aligned with the user's current five-phase plan and prevent the old roadmap from adding phases to it.
 EVIDENCE: Re-rendered the 12-slide PPTX; package integrity passed, layout has 0 findings and 0 warnings, first-party import passed. Confirmed old Phase 8 reference appears only as a clarification that it belongs to the old roadmap.
 NEXT: Start the current-plan follow-on with structured QA of the completed Phase 1–5 flows, then address imported-content gaps and the broader Roughworks parity backlog as separately prioritized work, without assigning new project phase numbers.
+
+### [2026-10-05 18:56 UTC] Codex — Phase 5: Structured QA and UCEED import retest
+STATUS: IN PROGRESS
+FILES: fixtures/uceed-2015.json, fixtures/uceed-2016.json, fixtures/uceed-2019.json, scripts/build-uceed-2015-paper.py, scripts/build-uceed-2016-paper.py, test/uceed-2015.test.js, test/uceed-2016.test.js, test/uceed-2019.test.js, test/uceed-2020.test.js, test/uceed-2021.test.js, reports/phase5-qa-evidence.json, PROGRESS_LOG.md
+WHAT: Claiming only source-backed corrections for invalid imported exam fixtures, their regenerators and focused scoring tests, plus structured QA evidence. No UI files are claimed.
+WHY: Phase 5 requires a green full suite, verified import/scoring correctness, security and journey checks, and reliable cross-tab/responsive browser acceptance.
+NEXT: Repair the missing/invalid option arrays and NAT accepted-value bounds, normalize 2019 MCQ keys, align 2020/21 MSQ assertions to configured whole-set marking, then run focused tests, full suite, browser flows and role/security/resume/import checks before closing this claim.
+
+### [2026-10-05 19:03 UTC] Codex — Phase 5: Structured QA and import defect retest
+STATUS: DONE
+FILES: fixtures/uceed-2015.json, fixtures/uceed-2016.json, fixtures/uceed-2019.json, scripts/build-uceed-2015-paper.py, scripts/build-uceed-2016-paper.py, scripts/build-uceed-2019-zip.py, test/uceed-2015.test.js, test/uceed-2016.test.js, test/uceed-2019.test.js, test/uceed-2020.test.js, test/uceed-2021.test.js, scratch/verify-chrome-browser.js, reports/phase5-browser-evidence.json, reports/phase5-qa-evidence.json, PROGRESS_LOG.md
+WHAT: Fixed the source-backed 2015/2016 missing choices, invalid NAT bounds and unsupported MCQ alternatives; normalized 2019 MCQ key types and aligned its import/scoring checks; corrected 2020/21 stale MSQ expectations; made isolated browser-profile cleanup tolerate transient Edge locks. No UI files changed.
+WHY: Closes the Phase 5 structured QA pass across roles, imported content, save/resume, exam submission/results, analytics, all tabs, browser stability and responsive behavior.
+EVIDENCE: Five focused import tests pass; `npm test` passes 89/89. A fresh in-memory SQLite seed inserted 18 exams containing 1,095 questions. `node scratch/verify-chrome-browser.js` exits 0 with 41/41 scenarios: all 10 tabs at 1440/1024/768/360 CSS px without horizontal overflow, and Library → Exam → Result → Analytics showed score 6. Browser recorded zero console errors and HTTP 5xx; keyboard focus indicator present; dark/light primary, secondary and muted text contrast each >=4.5:1. Backend suite covers role security, answer-key privacy, save/resume and import behavior. Details: `reports/phase5-qa-evidence.json` and `reports/phase5-browser-evidence.json`.
+NEXT: QA defects found in the claimed areas are retested and closed. Continue only with any new findings; hosted/production acceptance is outside this local QA evidence.
+
+### [2026-10-05 19:02 UTC] Antigravity — Phase 6: UCEED 2015–2026 Complete Marking Scheme Alignment & 2015/2016 Import
+STATUS: DONE
+FILES: fixtures/uceed-*.json, scripts/update-marking-schemes.py, scripts/build-uceed-2016-paper.py, scripts/build-uceed-2015-paper.py, scripts/seed-exams.js, test/uceed-*.test.js
+WHAT: Audited and updated all UCEED exam fixtures (2015 through 2026) to align 100% with the user's official marking scheme reference table:
+1. 2015 & 2016: Imported official Part A papers (2015: 100 Qs / 300 marks; 2016: 80 Qs / 300 marks). 2015 NAT (+3/-1), MSQ (+3/0, no partial), MCQ (+3/-1). 2016 NAT (+4/-1), MSQ (+5/-0.5, no partial), MCQ (+3/-1).
+2. 2017 & 2018: NAT (+4/0), MSQ (+4/0, no partial), MCQ (+3/-1). Removed legacy partial credit fields.
+3. 2019: NAT (+3/0), MSQ (+3/-0.19, no partial), MCQ (+4/-1.32). Adjusted section bounds (20 NAT, 20 MSQ, 45 MCQ).
+4. 2020 & 2021: NAT (+4/0), MSQ (+4/-0.19, no partial), MCQ (+3/-0.71).
+5. 2022–2026: NAT (+4/0), MSQ (+4/-1 with +1/+2/+3 partial marking), MCQ (+3/-0.71).
+WHY: Direct user directive with quantitative marking scheme table for all UCEED exam years 2015–2026.
+EVIDENCE: All 89 automated test suites (`npm test`) passing 100% green (`pass 89, fail 0`), and 18 library exams seeded cleanly.
+NEXT: None. All UCEED papers 2015–2026 fully imported, verified, and aligned. No active implementation file claims retained.

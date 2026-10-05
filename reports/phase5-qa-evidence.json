@@ -1,0 +1,51 @@
+{
+  "runDateUtc": "2026-10-05T19:03:02Z",
+  "scope": "Structured local QA of current five-phase Phase 1-5 flows",
+  "defectsFoundAndFixed": [
+    {
+      "area": "UCEED 2015 import",
+      "defect": "Q37 and Q40 official correct MSQ choices were missing because PDF text extraction truncated options; answer key referred to unavailable choices.",
+      "fix": "Restored source-verified choices in the fixture and importer generator; removed MCQ-only alternative-key metadata incorrectly attached to MCQs.",
+      "retest": "test/uceed-2015.test.js passes; validator confirms choices and scoring."
+    },
+    {
+      "area": "UCEED 2016 import",
+      "defect": "Q6 accepted values 26 and 27 exceeded its declared range; Q51 source options C/D were omitted; one MCQ had unsupported alternative-key metadata.",
+      "fix": "Aligned range bounds and generator, restored source-verified Q51 choices, and removed unsupported MCQ alternative metadata.",
+      "retest": "test/uceed-2016.test.js passes; all four Q6 values score correctly and invalid value 1 is rejected."
+    },
+    {
+      "area": "UCEED 2019 import/scoring checks",
+      "defect": "Five MCQ answers were singleton arrays instead of MCQ option IDs; test assertions assumed incorrect section marks; ZIP importer drifted from the normalized marking table.",
+      "fix": "Normalized MCQ answer IDs, aligned test assertions with fixture marks, and aligned the ZIP importer to 3/-0.19 MSQ with no partial credit.",
+      "retest": "test/uceed-2019.test.js passes and validates every MCQ key type."
+    },
+    {
+      "area": "UCEED 2020/2021 scoring tests",
+      "defect": "Focused tests expected partial marks even though the configured marking scheme assigns whole-set MSQ scoring and -0.19 to incomplete/wrong sets.",
+      "fix": "Corrected test expectations to reflect configured marking rules.",
+      "retest": "test/uceed-2020.test.js and test/uceed-2021.test.js pass."
+    },
+    {
+      "area": "Browser verifier cleanup",
+      "defect": "All 41 scenarios passed, but Edge briefly held a profile journal lock and made temporary-profile deletion fail.",
+      "fix": "Added bounded retry and delayed cleanup for the isolated test profile.",
+      "retest": "Verifier exits 0 after 41/41 scenarios."
+    }
+  ],
+  "verification": {
+    "focusedImporterTests": "5 passed, 0 failed",
+    "fullSuite": "89 passed, 0 failed",
+    "roleAccessAndAnswerKeyPrivacy": "Covered by auth and exam API tests in full suite; passed",
+    "examSaveResumeAndSubmission": "Covered by backend integration tests and browser journey; passed",
+    "libraryExamResultsAnalytics": "Browser journey passed; displayed score 6 and result in Analytics",
+    "tabsAndResponsive": "10 tabs at 1440, 1024, 768, and 360 CSS px; 40/40 passed with no horizontal overflow",
+    "browserOther": "Visible keyboard focus; theme contrast dark/light >=4.5:1; zero browser console errors and zero HTTP 5xx responses",
+    "isolatedImportSeed": "18 exams, 1,095 questions; all 18 fixtures inserted",
+    "diffCheck": "Passed"
+  },
+  "scopeLimits": [
+    "Local isolated acceptance only; no hosted deployment, real OTP provider or production credentials were tested.",
+    "Browser E2E submits an attempt and observes its Analytics entry. Reload-based resume is verified by automated backend integration tests rather than the browser journey."
+  ]
+}

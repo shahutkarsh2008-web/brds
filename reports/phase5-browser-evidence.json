@@ -772,8 +772,8 @@
     }
   ],
   "browserSummary": {
-    "loadEventEndMs": 22.899999998509884,
-    "domContentLoadedMs": 22.299999998882413,
+    "loadEventEndMs": 26.900000002235174,
+    "domContentLoadedMs": 26.300000000745058,
     "transferBytes": 1055879,
     "keyboardFocus": {
       "tag": "BUTTON",

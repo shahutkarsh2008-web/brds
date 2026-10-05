@@ -504,7 +504,18 @@ async function runChromeVerification() {
       try { await app.close(); } catch {}
     }
     if (profileDir && profileDir.startsWith(profileRoot) && profileDir.includes('brds-phase5-cdp-')) {
-      await rm(profileDir, { recursive: true, force: true });
+      let cleanupError;
+      for (let attempt = 0; attempt < 8; attempt++) {
+        try {
+          await rm(profileDir, { recursive: true, force: true, maxRetries: 3, retryDelay: 250 });
+          cleanupError = null;
+          break;
+        } catch (error) {
+          cleanupError = error;
+          if (attempt < 7) await new Promise(resolve => setTimeout(resolve, 500));
+        }
+      }
+      if (cleanupError && existsSync(profileDir)) throw cleanupError;
     }
   }
 }

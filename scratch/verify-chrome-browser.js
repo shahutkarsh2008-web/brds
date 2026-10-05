@@ -87,7 +87,7 @@ async function runChromeVerification() {
   console.log(`Test App Server listening on ${base}`);
 
   const debugPort = 9222 + Math.floor(Math.random() * 1000);
-  profileDir = await mkdtemp(join(profileRoot, 'brds-phase14-cdp-'));
+  profileDir = await mkdtemp(join(profileRoot, 'brds-phase5-cdp-'));
   chromeProcess = spawn(CHROME_PATH, [
     '--headless=new',
     `--remote-debugging-port=${debugPort}`,
@@ -163,6 +163,23 @@ async function runChromeVerification() {
   await sendTargetCDP('Page.enable');
   await sendTargetCDP('Network.enable');
   await sendTargetCDP('DOM.enable');
+  await sendTargetCDP('Runtime.enable');
+  await sendTargetCDP('Log.enable');
+
+  const browserErrors = [];
+  const failedResponses = [];
+  targetWs.on('message', data => {
+    let event;
+    try { event = JSON.parse(data); } catch { return; }
+    if (event.method === 'Runtime.exceptionThrown') {
+      const details = event.params.exceptionDetails;
+      browserErrors.push({ type: 'exception', text: details.text, url: details.url || details.exception?.description || '' });
+    } else if (event.method === 'Log.entryAdded' && event.params.entry.level === 'error') {
+      browserErrors.push({ type: 'console', text: event.params.entry.text, url: event.params.entry.url || '' });
+    } else if (event.method === 'Network.responseReceived' && event.params.response.status >= 500) {
+      failedResponses.push({ status: event.params.response.status, url: event.params.response.url });
+    }
+  });
 
   // Set session cookie for authenticated dashboard rendering
   const cookieResult = await sendTargetCDP('Network.setCookie', {
@@ -174,7 +191,7 @@ async function runChromeVerification() {
   });
   if (!cookieResult.success) throw new Error('CDP rejected the isolated dashboard session cookie.');
 
-  const screenshotDir = new URL('../reports/phase14-browser-verification/', import.meta.url);
+  const screenshotDir = new URL('../reports/phase5-browser-verification/', import.meta.url);
   await mkdir(screenshotDir, { recursive: true });
 
   const viewports = [
@@ -183,6 +200,7 @@ async function runChromeVerification() {
     { name: 'tablet-portrait-768', width: 768, height: 1024, label: 'Tablet Portrait (768px)' },
     { name: 'mobile-narrow-360', width: 360, height: 800, label: 'Narrow Mobile (360px)' }
   ];
+  const viewportsToRun = process.env.PHASE5_QUICK === '1' ? [viewports[0]] : viewports;
 
   const routes = [
     { id: 'overview', nav: 'Overview', title: 'Overview Dashboard' },
@@ -199,7 +217,7 @@ async function runChromeVerification() {
 
   const verificationEvidence = [];
 
-  for (const vp of viewports) {
+  for (const vp of viewportsToRun) {
     console.log(`\nTesting Real Chrome Viewport: ${vp.label} (${vp.width}x${vp.height})`);
 
     await sendTargetCDP('Emulation.setDeviceMetricsOverride', {
@@ -304,7 +322,7 @@ async function runChromeVerification() {
       }
 
       const screenshot = await sendTargetCDP('Page.captureScreenshot', { format: 'png' });
-      const screenshotPath = new URL(`../reports/phase14-browser-verification/${route.id}-${vp.name}.png`, import.meta.url);
+      const screenshotPath = new URL(`../reports/phase5-browser-verification/${route.id}-${vp.name}.png`, import.meta.url);
       await writeFile(screenshotPath, Buffer.from(screenshot.data, 'base64'));
 
       verificationEvidence.push({
@@ -314,12 +332,159 @@ async function runChromeVerification() {
         routeTitle: route.title,
         metrics,
         interactions: interactionChecks,
-        screenshotSaved: `reports/phase14-browser-verification/${route.id}-${vp.name}.png`
+        screenshotSaved: `reports/phase5-browser-verification/${route.id}-${vp.name}.png`
       });
 
       console.log(`  ✓ Route '${route.id}' at ${vp.width}px: scrollWidth=${metrics.scrollWidth}px, clientWidth=${metrics.clientWidth}px, overflow=${metrics.hasHorizontalOverflow}`);
     }
   }
+
+  // Exercise real keyboard focus and persistent appearance preference.
+  await sendTargetCDP('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+  await sendTargetCDP('Page.navigate', { url: `${base}/dashboard.html` });
+  let dashboardReady = false;
+  for (let attempt = 0; attempt < 60; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `!!document.querySelector('.app-sidebar .nav-icon-btn') && !!document.querySelector('.app-main')`, returnByValue: true });
+    if (result.result.value) { dashboardReady = true; break; }
+  }
+  if (!dashboardReady) throw new Error('Dashboard did not load for keyboard/theme acceptance checks.');
+  await sendTargetCDP('Runtime.evaluate', { expression: `document.activeElement.blur()`, returnByValue: true });
+  await sendTargetCDP('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Tab', code: 'Tab', windowsVirtualKeyCode: 9 });
+  await sendTargetCDP('Input.dispatchKeyEvent', { type: 'keyUp', key: 'Tab', code: 'Tab', windowsVirtualKeyCode: 9 });
+  const focusState = await sendTargetCDP('Runtime.evaluate', {
+    expression: `(() => { const node = document.activeElement; const css = getComputedStyle(node); return { tag: node.tagName, label: node.getAttribute('aria-label') || node.innerText?.trim() || node.getAttribute('title') || '', focusVisible: node.matches(':focus-visible'), outlineStyle: css.outlineStyle, outlineWidth: css.outlineWidth, outlineColor: css.outlineColor }; })()`,
+    returnByValue: true
+  });
+  const keyboardFocus = focusState.result.value;
+  if (!keyboardFocus.focusVisible || keyboardFocus.outlineStyle === 'none' || parseFloat(keyboardFocus.outlineWidth) < 2) {
+    throw new Error(`Keyboard tab focus is not visibly indicated: ${JSON.stringify(keyboardFocus)}`);
+  }
+
+  const clickNav = async label => sendTargetCDP('Runtime.evaluate', {
+    expression: `(() => { const button = [...document.querySelectorAll('.nav-icon-btn')].find(item => item.querySelector('.tooltip')?.textContent.trim() === ${JSON.stringify(label)}); if (!button) throw new Error('Missing navigation control ${label}'); button.click(); return true; })()`,
+    returnByValue: true
+  });
+  await clickNav('Settings');
+  await new Promise(resolve => setTimeout(resolve, 200));
+  await sendTargetCDP('Runtime.evaluate', { expression: `(() => { const theme = document.querySelector('#settings-theme'); theme.value = 'light'; theme.dispatchEvent(new Event('change', { bubbles: true })); document.querySelector('.btn-primary').click(); return true; })()`, returnByValue: true });
+  let lightSaved = false;
+  for (let attempt = 0; attempt < 40; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.body.classList.contains('light-mode') && document.body.innerText.includes('Preferences saved to your account.')`, returnByValue: true });
+    if (result.result.value) { lightSaved = true; break; }
+  }
+  if (!lightSaved) throw new Error('Light appearance preference did not save.');
+  await sendTargetCDP('Page.navigate', { url: `${base}/dashboard.html` });
+  let themeRestored = false;
+  for (let attempt = 0; attempt < 60; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.body.classList.contains('light-mode') && !!document.querySelector('.app-main')`, returnByValue: true });
+    if (result.result.value) { themeRestored = true; break; }
+  }
+  if (!themeRestored) throw new Error('Saved light appearance did not restore after a full reload.');
+  await clickNav('Settings');
+  await new Promise(resolve => setTimeout(resolve, 200));
+  await sendTargetCDP('Runtime.evaluate', { expression: `(() => { const theme = document.querySelector('#settings-theme'); theme.value = 'dark'; theme.dispatchEvent(new Event('change', { bubbles: true })); document.querySelector('.btn-primary').click(); return true; })()`, returnByValue: true });
+  let darkSaved = false;
+  for (let attempt = 0; attempt < 40; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `!document.body.classList.contains('light-mode') && document.body.innerText.includes('Preferences saved to your account.')`, returnByValue: true });
+    if (result.result.value) { darkSaved = true; break; }
+  }
+  if (!darkSaved) throw new Error('Dark appearance preference did not save after the persistence test.');
+
+  // Run Library → Exam → Result → Analytics with the isolated assigned paper.
+  await clickNav('Library');
+  let paperReady = false;
+  for (let attempt = 0; attempt < 60; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `!![...document.querySelectorAll('.mock-card')].find(card => card.textContent.includes('UCEED 2026 Grand Mock Exam'))`, returnByValue: true });
+    if (result.result.value) { paperReady = true; break; }
+  }
+  if (!paperReady) throw new Error('Assigned fixture paper was not available in the Library.');
+  await sendTargetCDP('Runtime.evaluate', { expression: `([...document.querySelectorAll('.mock-card')].find(card => card.textContent.includes('UCEED 2026 Grand Mock Exam')).querySelector('button')).click()`, returnByValue: true });
+  await sendTargetCDP('Runtime.evaluate', { expression: `([...document.querySelectorAll('.mock-card .btn-primary')].find(button => button.textContent.includes('Start Timed Exam'))).click()`, returnByValue: true });
+  let examReady = false;
+  for (let attempt = 0; attempt < 80; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `location.pathname === '/exam.html' && !!document.querySelector('#exam-content:not([hidden]) input')`, returnByValue: true });
+    if (result.result.value) { examReady = true; break; }
+  }
+  if (!examReady) throw new Error('Library launch did not open the live exam room.');
+  await sendTargetCDP('Runtime.evaluate', { expression: `(() => { document.querySelectorAll('#answer-input input[type=checkbox]').forEach(input => input.click()); document.querySelector('#next').click(); return true; })()`, returnByValue: true });
+  for (let attempt = 0; attempt < 40; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 50));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('#prompt')?.textContent.includes('light direction')`, returnByValue: true });
+    if (result.result.value) break;
+    if (attempt === 39) throw new Error('Exam did not advance to question two.');
+  }
+  await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('#answer-input input[value="a"]').click()`, returnByValue: true });
+  let answerSaved = false;
+  for (let attempt = 0; attempt < 60; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('#save-status')?.textContent.startsWith('All changes saved')`, returnByValue: true });
+    if (result.result.value) { answerSaved = true; break; }
+  }
+  if (!answerSaved) throw new Error('Exam answer did not finish saving before submission.');
+  await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('#submit').click()`, returnByValue: true });
+  let submitDialogReady = false;
+  for (let attempt = 0; attempt < 30; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 50));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('#submit-dialog')?.open === true`, returnByValue: true });
+    if (result.result.value) { submitDialogReady = true; break; }
+  }
+  if (!submitDialogReady) {
+    const debug = await sendTargetCDP('Runtime.evaluate', { expression: `({ href: location.href, prompt: document.querySelector('#prompt')?.textContent, submitDisabled: document.querySelector('#submit')?.disabled, saveStatus: document.querySelector('#save-status')?.textContent, error: document.querySelector('#error')?.textContent, body: document.body.innerText.slice(0, 900) })`, returnByValue: true });
+    throw new Error(`Exam submit confirmation did not open: ${JSON.stringify(debug.result.value)}`);
+  }
+  await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('#confirm-submit').click()`, returnByValue: true });
+  let resultReady = false;
+  for (let attempt = 0; attempt < 80; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `!!document.querySelector('#result:not([hidden])') && document.querySelector('#score')?.textContent !== ''`, returnByValue: true });
+    if (result.result.value) { resultReady = true; break; }
+  }
+  if (!resultReady) {
+    const debug = await sendTargetCDP('Runtime.evaluate', { expression: `({ href: location.href, status: document.querySelector('#save-status')?.textContent, error: document.querySelector('#error')?.textContent, dialogOpen: document.querySelector('#submit-dialog')?.open, body: document.body.innerText.slice(0, 1200) })`, returnByValue: true });
+    throw new Error(`Exam submission did not display a score result: ${JSON.stringify(debug.result.value)}`);
+  }
+  const scoreState = await sendTargetCDP('Runtime.evaluate', { expression: `({ score: document.querySelector('#score').textContent, resultTitle: document.querySelector('#result h2').textContent })`, returnByValue: true });
+  await sendTargetCDP('Page.navigate', { url: `${base}/dashboard.html` });
+  for (let attempt = 0; attempt < 60; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `!!document.querySelector('.app-main')`, returnByValue: true });
+    if (result.result.value) break;
+  }
+  await clickNav('Analytics');
+  let analyticsReady = false;
+  for (let attempt = 0; attempt < 60; attempt++) {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('.header-title-text')?.textContent.trim() === 'Performance Analytics & Marks Leakage' && document.body.innerText.includes('UCEED 2026 Grand Mock Exam')`, returnByValue: true });
+    if (result.result.value) { analyticsReady = true; break; }
+  }
+  if (!analyticsReady) throw new Error('Submitted attempt did not flow into the Analytics timeline.');
+  verificationEvidence.push({ acceptance: 'Library → Exam → Result → Analytics', result: scoreState.result.value, completed: analyticsReady });
+
+  const contrastExpression = `(() => { const rgb = value => { if (value.startsWith('#')) { const hex = value.slice(1); const full = hex.length === 3 ? [...hex].map(c => c+c).join('') : hex; return [0,2,4].map(i => parseInt(full.slice(i,i+2),16)/255); } return value.match(/[0-9.]+/g).slice(0,3).map(Number).map(channel => channel/255); }; const lum = value => { const [r,g,b] = rgb(value).map(c => c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4); return .2126*r + .7152*g + .0722*b; }; const vars = getComputedStyle(document.body); const bg = vars.getPropertyValue('--bg-canvas').trim(); const ratios = Object.fromEntries(['--text-primary','--text-secondary','--text-muted'].map(key => { const fg = vars.getPropertyValue(key).trim(); const a = lum(fg), b = lum(bg); return [key, { foreground: fg, ratio: Number(((Math.max(a,b)+.05)/(Math.min(a,b)+.05)).toFixed(2)) }]; })); return { background: bg, ratios }; })()`;
+  const darkContrastResult = await sendTargetCDP('Runtime.evaluate', { expression: contrastExpression, returnByValue: true });
+  await sendTargetCDP('Runtime.evaluate', { expression: `document.body.classList.add('light-mode')`, returnByValue: true });
+  const lightContrastResult = await sendTargetCDP('Runtime.evaluate', { expression: contrastExpression, returnByValue: true });
+  await sendTargetCDP('Runtime.evaluate', { expression: `document.body.classList.remove('light-mode')`, returnByValue: true });
+  const themeContrast = { dark: darkContrastResult.result.value, light: lightContrastResult.result.value };
+  for (const [theme, result] of Object.entries(themeContrast)) {
+    for (const [token, measurement] of Object.entries(result.ratios)) {
+      if (measurement.ratio < 4.5) throw new Error(`${theme} theme ${token} contrast is ${measurement.ratio}:1 (needs 4.5:1 for normal text): ${JSON.stringify(result)}`);
+    }
+  }
+
+  if (browserErrors.length || failedResponses.length) {
+    throw new Error(`Browser errors or server failures: ${JSON.stringify({ browserErrors, failedResponses })}`);
+  }
+  const browserSummary = await sendTargetCDP('Runtime.evaluate', {
+    expression: `(() => { const nav = performance.getEntriesByType('navigation')[0]; return { loadEventEndMs: nav?.loadEventEnd || null, domContentLoadedMs: nav?.domContentLoadedEventEnd || null, transferBytes: performance.getEntriesByType('resource').reduce((sum, item) => sum + (item.transferSize || 0), 0), keyboardFocus: ${JSON.stringify(keyboardFocus)}, themeContrast: ${JSON.stringify(themeContrast)}, consoleErrors: 0, server5xxResponses: 0 }; })()`,
+    returnByValue: true
+  });
 
   console.log('\n==================================================');
   console.log('REAL BROWSER (CHROME DEVTOOLS PROTOCOL) VERIFICATION COMPLETED');
@@ -327,8 +492,8 @@ async function runChromeVerification() {
   console.log('==================================================\n');
 
   await writeFile(
-    new URL('../reports/phase14-browser-evidence.json', import.meta.url),
-    JSON.stringify(verificationEvidence, null, 2)
+    new URL('../reports/phase5-browser-evidence.json', import.meta.url),
+    JSON.stringify({ scenarios: verificationEvidence, browserSummary: browserSummary.result.value, networkFailures: failedResponses, browserErrors }, null, 2)
   );
 
   } finally {
@@ -338,7 +503,7 @@ async function runChromeVerification() {
     if (app) {
       try { await app.close(); } catch {}
     }
-    if (profileDir && profileDir.startsWith(profileRoot) && profileDir.includes('brds-phase14-cdp-')) {
+    if (profileDir && profileDir.startsWith(profileRoot) && profileDir.includes('brds-phase5-cdp-')) {
       await rm(profileDir, { recursive: true, force: true });
     }
   }

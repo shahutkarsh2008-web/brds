@@ -1110,3 +1110,49 @@ WHAT: Replaced generic feature placeholders with GK flashcard rounds and review 
 WHY: Completes the Antigravity Phase 4 visible feature surfaces and Codex Phase 4 API integration without fabricating unavailable schedule, pricing or notification-delivery data.
 EVIDENCE: Full `npm test` passes 86/86. Syntax checks for the changed JS files, focused Phase 4 tests and `git diff --check` pass. Real Edge/Chromium verified all 10 sidebar tabs at 1440, 1024, 768 and 360 CSS pixels (40/40 rendered with no horizontal overflow); the browser also uploaded a PNG, previewed it, saved it through the authenticated API and saw it in the gallery. JSDOM interaction coverage exercises flashcard reveal/review, timer start/pause, revision mark-reviewed, quiz submission and settings persistence. See `reports/phase14-browser-evidence.json` and screenshots.
 NEXT: Phase 4 local code/UI work is complete. Real reminder delivery and schedule/pricing configuration remain unavailable/unconfigured and must use verified product configuration when supplied. Continue to Phase 5/8 only when requested.
+
+### [2026-10-05 00:00 UTC] Codex — Phase 5: Acceptance and hardening
+STATUS: IN PROGRESS
+FILES: scratch/verify-chrome-browser.js, reports/phase5-browser-evidence.json, reports/phase5-browser-verification/*.png, PROGRESS_LOG.md
+WHAT: Claiming the released real-browser verifier and isolated Phase 5 evidence paths for final acceptance checks: every tab and viewport, keyboard/focus and persisted theme behavior, Library → Exam → Result → Analytics, runtime/route errors and basic load timing.
+WHY: Phase 5 requires an end-to-end browser acceptance pass, responsive/keyboard/theme checks, security regression review and a recovery checkpoint before import expansion.
+NEXT: Extend the CDP flow without modifying UI-owned source, run the focused/full suite and security tests, record measured outcomes, then commit only the claimed files as [Codex].
+
+### [2026-10-05 16:01 UTC] Codex — Phase 5: Log timestamp correction
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md
+WHAT: The preceding Phase 5 claim used a placeholder midnight timestamp; this append-only note records its actual claim time as 16:00 UTC.
+WHY: Ownership history should preserve accurate ordering for shared files.
+NEXT: Continue with the Phase 5 acceptance work already claimed above.
+
+### [2026-10-05 16:01 UTC] Codex — Phase 5: Keyboard focus handoff
+STATUS: IN PROGRESS
+FILES: public/workspace-dark.css, PROGRESS_LOG.md
+WHAT: The Phase 4 CSS work is DONE/released. Recording explicit handoff to add and browser-verify a visible keyboard focus indicator because current CSS suppresses outlines and has no focus-visible replacement.
+WHY: Phase 5 requires keyboard focus acceptance across the student workspace.
+NEXT: Add a visible, theme-aware :focus-visible treatment and verify keyboard navigation at desktop and narrow widths.
+
+
+### [2026-10-05 16:03 UTC] Codex — Phase 5: Remove stale feature placeholder rule
+STATUS: IN PROGRESS
+FILES: public/workspace-dark.css, PROGRESS_LOG.md
+WHAT: Audited the completed Phase 4 feature surfaces and found .feature-placeholder-grid .card has no corresponding DOM usage; claiming removal of that obsolete placeholder-only selector as the Antigravity visual acceptance handoff.
+WHY: Phase 5 visual acceptance includes removing obsolete placeholder styles after replacing generic cards with complete tabs.
+NEXT: Remove the unreferenced selector, then rerun syntax, CSS/UI browser and regression checks.
+
+
+### [2026-10-05 16:04 UTC] Codex — Phase 5: Light theme text contrast handoff
+STATUS: IN PROGRESS
+FILES: public/workspace-dark.css, PROGRESS_LOG.md
+WHAT: Browser visual review measured light-theme muted text at 3.32:1 against the canvas, below the 4.5:1 normal-text threshold. Claiming a focused color-token adjustment under the Phase 5 visual handoff.
+WHY: Phase 5 Antigravity visual acceptance includes checking readable contrast in both themes.
+NEXT: Darken the muted text token and re-measure the rendered theme palette in the browser.
+
+
+### [2026-10-05 16:12 UTC] Codex — Phase 5: Acceptance and hardening complete
+STATUS: DONE
+FILES: public/workspace-dark.css, scratch/verify-chrome-browser.js, reports/phase5-browser-evidence.json, reports/phase5-browser-verification/*.png, PROGRESS_LOG.md
+WHAT: Added a visible 3px keyboard focus indicator, raised light-theme muted text contrast from 3.32:1 to 4.85:1, and removed the unused feature-placeholder CSS rule. Extended the isolated Edge/CDP run to exercise keyboard focus, light/dark preference persistence, the complete Library → Exam → Result → Analytics flow, browser/5xx errors, transfer/load timing and contrast in both themes.
+WHY: Completes the Phase 5 acceptance criteria and records a reproducible recovery checkpoint before import expansion.
+EVIDENCE: `npm test` passes 86/86; focused `node --test test/exams.test.js test/library-api.test.js test/uceed.test.js` passes 24/24. Final `node scratch/verify-chrome-browser.js` passes 41/41 real Edge scenarios: all 10 tabs at 1440, 1024, 768 and 360 CSS px with no horizontal overflow, plus E2E exam submission (6/6 marks) visible in Analytics. Keyboard focus is `:focus-visible` with a 3px solid outline; saved theme restores after reload. Light theme primary/secondary/muted contrast is 14.65:1 / 5.61:1 / 4.85:1; dark theme is 19.02:1 / 11.81:1 / 5.23:1. Browser reported 0 console errors and 0 server 5xx responses; dashboard load 23 ms, DOMContentLoaded 22.5 ms, transferred resource data 1,055,879 bytes in the isolated run. See `reports/phase5-browser-evidence.json` and screenshots.
+NEXT: Phase 5 local acceptance is complete. Hosted integration remains deferred to Phase 8 per project instructions.

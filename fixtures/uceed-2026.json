@@ -35,7 +35,9 @@
       "answer": {
         "min": 14,
         "max": 14
-      }
+      },
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q02",
@@ -52,7 +54,9 @@
       "answer": {
         "min": 2,
         "max": 2
-      }
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q03",
@@ -69,7 +73,9 @@
       "answer": {
         "min": 6,
         "max": 6
-      }
+      },
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q04",
@@ -86,7 +92,9 @@
       "answer": {
         "min": 16,
         "max": 16
-      }
+      },
+      "topic": "Faces, edges and vertices",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q05",
@@ -103,7 +111,9 @@
       "answer": {
         "min": 62,
         "max": 62
-      }
+      },
+      "topic": "Odd-one-out",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q06",
@@ -120,7 +130,9 @@
       "answer": {
         "min": 4,
         "max": 4
-      }
+      },
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q07",
@@ -137,7 +149,9 @@
       "answer": {
         "min": 31,
         "max": 31
-      }
+      },
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q08",
@@ -154,7 +168,9 @@
       "answer": {
         "min": 8,
         "max": 8
-      }
+      },
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q09",
@@ -171,7 +187,9 @@
       "answer": {
         "min": 13,
         "max": 13
-      }
+      },
+      "topic": "Usability",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q10",
@@ -188,7 +206,9 @@
       "answer": {
         "min": 745,
         "max": 745
-      }
+      },
+      "topic": "Spatial Assembly",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q11",
@@ -205,7 +225,9 @@
       "answer": {
         "min": 5,
         "max": 5
-      }
+      },
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q12",
@@ -220,7 +242,9 @@
       "answer": {
         "min": 16.8,
         "max": 16.8
-      }
+      },
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q13",
@@ -237,7 +261,9 @@
       "answer": {
         "min": 34,
         "max": 34
-      }
+      },
+      "topic": "Pattern Sequences",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q14",
@@ -252,7 +278,9 @@
       "answer": {
         "min": 470,
         "max": 480
-      }
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q15",
@@ -293,7 +321,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q16",
@@ -333,7 +363,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Spatial Assembly",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q17",
@@ -374,7 +406,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q18",
@@ -421,7 +455,9 @@
           "c",
           "d"
         ]
-      ]
+      ],
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q19",
@@ -461,7 +497,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q20",
@@ -499,7 +537,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q21",
@@ -541,7 +581,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q22",
@@ -580,7 +622,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Logo Identification",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q23",
@@ -619,7 +663,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q24",
@@ -659,7 +705,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Signs and symbols & symbol interpretation",
+      "category": "Creativity"
     },
     {
       "id": "q25",
@@ -699,7 +747,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q26",
@@ -740,7 +790,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity"
     },
     {
       "id": "q27",
@@ -781,7 +833,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Colour and composition",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q28",
@@ -821,7 +875,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q29",
@@ -861,7 +917,9 @@
         "1": 1,
         "2": 2,
         "3": 3
-      }
+      },
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity"
     },
     {
       "id": "q30",
@@ -891,7 +949,9 @@
           "text": "Double solid lines may be crossed when overtaking a slow-moving vehicle."
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "topic": "Signs and symbols & symbol interpretation",
+      "category": "Creativity"
     },
     {
       "id": "q31",
@@ -923,7 +983,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Visual analogies",
+      "category": "Creativity"
     },
     {
       "id": "q32",
@@ -953,7 +1015,9 @@
           "text": "When Samantha entered, the room was lit by a blue light. When Reema entered the room, the light was changed to red light and when Payal entered the room, the light was changed to white."
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q33",
@@ -985,7 +1049,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Pattern Sequences",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q34",
@@ -1017,7 +1083,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity"
     },
     {
       "id": "q35",
@@ -1047,7 +1115,9 @@
           "text": "M. Night Shyamalan"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q36",
@@ -1079,7 +1149,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Sequence of operation",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q37",
@@ -1111,7 +1183,9 @@
           "text": "1-R, 2-S, 3-P, 4-Q"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Natural environment and geography",
+      "category": "Environment & Society"
     },
     {
       "id": "q38",
@@ -1143,7 +1217,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q39",
@@ -1175,7 +1251,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "topic": "Logo Identification",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q40",
@@ -1207,7 +1285,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q41",
@@ -1239,7 +1319,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Spatial Assembly",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q42",
@@ -1271,7 +1353,9 @@
           "text": "26"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q43",
@@ -1303,7 +1387,9 @@
           "text": "P = 10:30 am      Q = 6 pm     R =12 noon   S = 1 pm"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q44",
@@ -1335,7 +1421,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Paths, grids and mazes",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q45",
@@ -1367,7 +1455,9 @@
           "text": "18"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q46",
@@ -1397,7 +1487,9 @@
           "text": "cheugy"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Pattern decoding",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q47",
@@ -1429,7 +1521,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Spatial Assembly",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q48",
@@ -1461,7 +1555,9 @@
           "text": "P - Ajanta, Q - Ellora, R - Jhalawar, S – Bhimbetka"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q49",
@@ -1493,7 +1589,9 @@
           "text": "navel"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity"
     },
     {
       "id": "q50",
@@ -1525,7 +1623,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q51",
@@ -1557,7 +1657,9 @@
           "text": "D — see labelled image"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q52",
@@ -1589,7 +1691,9 @@
           "text": "25"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q53",
@@ -1621,7 +1725,9 @@
           "text": "Reliance – Google – Nestle – Acer"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "topic": "Logo Identification",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q54",
@@ -1653,7 +1759,9 @@
           "text": "1, 5, 4, 2, 3"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Sequence of operation",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q55",
@@ -1685,7 +1793,9 @@
           "text": "Dokra"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q56",
@@ -1717,7 +1827,9 @@
           "text": "Tweezer=LFE, Nutcracker=LFE"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q57",
@@ -1747,7 +1859,9 @@
           "text": "To neutralize acidic waste materials. PART B  (60 minutes – 100 marks)"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "topic": "Usability",
+      "category": "Observation & Design Sensitivity"
     }
   ]
 }

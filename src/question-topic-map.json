@@ -161,8 +161,8 @@
       "fingerprint": "bba05f8b7eaab9422fa3a358858c199b355358b829f9cec22aaff7faa50bf0ac"
     },
     "q41": {
-      "code": "code",
-      "fingerprint": "6b1969c4701a544bc39476100218bd76937789c79b0cbdd58f6b2d6f1207439b"
+      "code": "nature",
+      "fingerprint": "3a8363324c1d812257f6f296a7104c4ad92336e4b5b4c777bf1fe43715650cfd"
     },
     "q42": {
       "code": "font",
@@ -2461,6 +2461,110 @@
     "t5_20": {
       "code": "symmetry",
       "fingerprint": "e803c7355af0edc6780e6d36b2201ba91fe821c1ba88d41f67292edf43a2fefc"
+    }
+  },
+  "uceed-2015": {
+    "q81": {
+      "code": "logic",
+      "fingerprint": "a5c77b860a647e1d2d7b89cbfc629161f12553582045fd37d8766523d066bf7a"
+    },
+    "q90": {
+      "code": "count",
+      "fingerprint": "bc69a4208d5cef2654a7fe28289dbf06a52ca7a44291cc7dbbbf798a2520260f"
+    },
+    "q94": {
+      "code": "rotate",
+      "fingerprint": "9d0bc89e25134733fc63d5b5f3a3acbe6e5a54530095f8fcc0400b50e1b87dd2"
+    }
+  },
+  "uceed-2016": {
+    "q39": {
+      "code": "views",
+      "fingerprint": "9b9d59fb58462728c4235d860231208f0a12dd8fbf45ba27c7bd3e626a077653"
+    },
+    "q50": {
+      "code": "pattern",
+      "fingerprint": "90b099a01e0fe24756ad0d3eb66c1efdbf57737887d85546874d11b65bee3bf8"
+    },
+    "q59": {
+      "code": "light",
+      "fingerprint": "79ee9ae67165eaa64b6777f636aa0406cc5844370f6f054af5c4df153b1c870f"
+    },
+    "q72": {
+      "code": "balance",
+      "fingerprint": "bd401b623c0a1940ba836327fbb0f76778df09148c8c7265d21598b30479d748"
+    }
+  },
+  "uceed-2017": {
+    "q07": {
+      "code": "arithmetic",
+      "fingerprint": "54b7a76baac8314ed6d01045debe6a615321233fac7d92454fb352f9dd9799db"
+    },
+    "q19": {
+      "code": "logic",
+      "fingerprint": "c14429421bc2a8da7e01252f55b0a49a75aea5e95c5f5105496c08cc4eb3175f"
+    },
+    "q28": {
+      "code": "logic",
+      "fingerprint": "6f2931c4635bad50f8c8be6e93ef23d49991b45ef70623d7af23bc649492ad07"
+    },
+    "q30": {
+      "code": "pattern",
+      "fingerprint": "0b18c091f3e352d29b7c33252e618b37819343c7715e4cf7bc67877355993188"
+    },
+    "q32": {
+      "code": "mechanism",
+      "fingerprint": "b79672524a09553199af86b16a6166092e273de8c528ab88c6127673d152a120"
+    },
+    "q59": {
+      "code": "font",
+      "fingerprint": "641446c3eddb0e131dec3759c6fee64eeda28692e0ac99e22f16dbc906d20f00"
+    },
+    "q72": {
+      "code": "language",
+      "fingerprint": "3ac36820a35741ff88466e88798930b765220b65d091aa573751825924569cd6"
+    },
+    "q76": {
+      "code": "assemble",
+      "fingerprint": "c51107cd9cd1669b6633cf4ba0c68012d5d7a2c931269b2e42dd6011e5517ff3"
+    },
+    "q83": {
+      "code": "material",
+      "fingerprint": "fea1afb6ebaf77bd5333d841f4a809d85df2eea5576f2c39c9921c0f770bdeea"
+    },
+    "q84": {
+      "code": "perspective",
+      "fingerprint": "7ead8dddde2db183d2bbad140e271115783961a119b79e13da45e9dac2514ae9"
+    }
+  },
+  "uceed-2018": {
+    "q21": {
+      "code": "assemble",
+      "fingerprint": "1fd7f997ce16f2768cadb6fd69f8dc48937cd47e815ced23e28186867bed7a35"
+    },
+    "q23": {
+      "code": "logic",
+      "fingerprint": "434a3a2926894d542d4ec0187cf7639707b56bc3785de19b566daa42ec5d4964"
+    },
+    "q32": {
+      "code": "language",
+      "fingerprint": "8283f9c588a789834098e71c8e25e548a2d531a80de9f9da14c840181ef5c3ce"
+    },
+    "q33": {
+      "code": "language",
+      "fingerprint": "cc733179b3c782747d2bdc306c9a9bd7092f07763ce1a3cbf6a9f7d4d9b0424b"
+    },
+    "q34": {
+      "code": "logic",
+      "fingerprint": "a67b2919d92fbe5bb0c7a8dec8beb4da3c7c7320890f1d9fcf88cc198ccb58c4"
+    },
+    "q35": {
+      "code": "language",
+      "fingerprint": "e4cd600fb74accdf2fa23df2e188bdc62648af73c39b71a5b25d7650fdc28a96"
+    },
+    "q64": {
+      "code": "language",
+      "fingerprint": "269dd0c4a0dcb5dc92391c62be05266db9e339fec126c14ad132c3e3b9185d45"
     }
   }
 }

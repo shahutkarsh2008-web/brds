@@ -35,7 +35,9 @@
       "answer": {
         "min": 14,
         "max": 14
-      }
+      },
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q02",
@@ -52,7 +54,9 @@
       "answer": {
         "min": 62,
         "max": 62
-      }
+      },
+      "topic": "Odd-one-out",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q03",
@@ -67,7 +71,9 @@
       "answer": {
         "min": 16.8,
         "max": 16.8
-      }
+      },
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q04",
@@ -82,7 +88,9 @@
       "answer": {
         "min": 470,
         "max": 480
-      }
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q05",
@@ -122,7 +130,9 @@
       "answer": [
         "b",
         "c"
-      ]
+      ],
+      "topic": "Spatial Assembly",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q06",
@@ -169,7 +179,9 @@
       "answer": [
         "b",
         "c"
-      ]
+      ],
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q07",
@@ -211,7 +223,9 @@
         "b",
         "c",
         "d"
-      ]
+      ],
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q08",
@@ -250,7 +264,9 @@
         "b",
         "c",
         "d"
-      ]
+      ],
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q09",
@@ -280,7 +296,9 @@
         "incorrect": -0.71,
         "unanswered": 0
       },
-      "answer": "a"
+      "answer": "a",
+      "topic": "Signs and symbols & symbol interpretation",
+      "category": "Creativity"
     },
     {
       "id": "q10",
@@ -312,7 +330,9 @@
         "incorrect": -0.71,
         "unanswered": 0
       },
-      "answer": "b"
+      "answer": "b",
+      "topic": "Pattern Sequences",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q11",
@@ -342,7 +362,9 @@
         "incorrect": -0.71,
         "unanswered": 0
       },
-      "answer": "a"
+      "answer": "a",
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society"
     },
     {
       "id": "q12",
@@ -374,7 +396,9 @@
         "incorrect": -0.71,
         "unanswered": 0
       },
-      "answer": "b"
+      "answer": "b",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q13",
@@ -406,7 +430,9 @@
         "incorrect": -0.71,
         "unanswered": 0
       },
-      "answer": "d"
+      "answer": "d",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q14",
@@ -438,7 +464,9 @@
         "incorrect": -0.71,
         "unanswered": 0
       },
-      "answer": "c"
+      "answer": "c",
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity"
     },
     {
       "id": "q15",
@@ -468,7 +496,9 @@
         "incorrect": -0.71,
         "unanswered": 0
       },
-      "answer": "a"
+      "answer": "a",
+      "topic": "Usability",
+      "category": "Observation & Design Sensitivity"
     }
   ]
 }

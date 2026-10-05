@@ -46,7 +46,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Colour and composition",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q2",
@@ -80,7 +82,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q3",
@@ -112,7 +116,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Pattern Sequences",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q4",
@@ -145,7 +151,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Colour and composition",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q5",
@@ -160,7 +168,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q6",
@@ -175,7 +185,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q7",
@@ -205,7 +217,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q8",
@@ -238,7 +252,9 @@
         "correct": 4,
         "incorrect": -1,
         "unanswered": 0
-      }
+      },
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning"
     }
   ]
 }

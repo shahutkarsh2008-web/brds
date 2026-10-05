@@ -1,0 +1,2548 @@
+{
+  "id": "uceed-2022",
+  "title": "UCEED 2022 Official Paper",
+  "durationSeconds": 7200,
+  "totalQuestions": 68,
+  "maxMarks": 240,
+  "instructions": "Official UCEED 2022 Question Paper & Final Answer Key (Part A: 68 questions, 240 marks, 120 minutes). Section 1 NAT: Q1–18 (+4/0). Section 2 MSQ: Q19–36 (+4/-1 with partial credit). Section 3 MCQ: Q37–68 (+3/-0.71).",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "Section 1 · NAT (72 marks)"
+    },
+    {
+      "id": "msq",
+      "title": "Section 2 · MSQ (72 marks)"
+    },
+    {
+      "id": "mcq",
+      "title": "Section 3 · MCQ (96 marks)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A solid square pyramid has triangular cut-outs that pass through and through, as shown in the figure. How many surfaces are there in the resultant solid?",
+      "topic": "Faces, edges and vertices",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q01.png",
+      "imageAlt": "UCEED 2022 Question 1 Diagram",
+      "answer": {
+        "min": 14,
+        "max": 14
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The figure shows different paths for going from A to B. The directions of the paths are indicated by arrows. No node can be visited twice. What is the total number of different paths to go from A to B?",
+      "topic": "Paths, grids and mazes",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q02.png",
+      "imageAlt": "UCEED 2022 Question 2 Diagram",
+      "answer": {
+        "min": 32,
+        "max": 32
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Question 3",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q03.png",
+      "imageAlt": "UCEED 2022 Question 3 Diagram",
+      "answer": {
+        "min": 836975,
+        "max": 836975
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below is a book shelf that has a kid’s adventure novel in a book series of 9 volumes. The spines (binding side) of these books contain parts of a treasure map. What is the sequence of the books that forms the completed treasure map? Enter the answer as a single nine-digit integer.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q04.png",
+      "imageAlt": "UCEED 2022 Question 4 Diagram",
+      "answer": {
+        "min": 742198653,
+        "max": 742198653
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q05",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Perform the following steps: Step 1: Start with x=1, y=2 Step 2: Replace x by x multiplied by y Step 3: Replace y by y+1 Step 4: If y=5, then go to Step 6, otherwise go to Step 5 Step 5: Go to Step 2 Step 6: Stop What is the value of x?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 24,
+        "max": 24
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q06",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The animation depicts morphing of faces and abstract forms. A face consists of two eyes, two ears, a nose and a mouth. How many unique faces appear in this morphing animation?",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q06.png",
+      "imageAlt": "UCEED 2022 Question 6 Diagram",
+      "answer": {
+        "min": 7,
+        "max": 7
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q07",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "If SQ = QR = RS = SP = PQ and PR = 21 units, what is the area of the BLACK portion? (Assume π= 22/7)",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q07.png",
+      "imageAlt": "UCEED 2022 Question 7 Diagram",
+      "answer": {
+        "min": 153.5,
+        "max": 154.5
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q08",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A circle and a semicircle are inscribed in a square as shown below. What fraction of the area of the square is the blue shaded area?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q08.png",
+      "imageAlt": "UCEED 2022 Question 8 Diagram",
+      "answer": {
+        "min": 0.25,
+        "max": 0.25
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q09",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A total of 200 people were surveyed for newspaper readership. It was found that 100 people read publication X, 120 people read publication Y and 50 people do not read either X or Y. What is the total number of people who read either publication X or publication Y but not both?",
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 80,
+        "max": 80
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q10",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Row 1 shows a word with 7 partial letters. Row 2 contains the parts that complete the word in Row 1. The parts in Row 2 are arranged randomly. What should be the correct sequence in Row 2?",
+      "topic": "Typography & Fonts",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q10.png",
+      "imageAlt": "UCEED 2022 Question 10 Diagram",
+      "answer": {
+        "min": 5724361,
+        "max": 5724361
+      },
+      "category": "Language & Creativity"
+    },
+    {
+      "id": "q11",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A square of side 10 units, shaded in yellow, is cut using a square of side 5 units as shown in the figure. What is the perimeter of the resulting shape, shaded in yellow?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q11.png",
+      "imageAlt": "UCEED 2022 Question 11 Diagram",
+      "answer": {
+        "min": 50,
+        "max": 50
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q12",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "X is three times as old as Y was three years ago. After 17 years, Y will be as old as X is today. What is the sum of the ages of X and Y today?",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 43,
+        "max": 43
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q13",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below are three tubes P, Q and R with coloured marbles. Each tube can hold a maximum of 5 marbles. Only one marble can be transferred in a move. What is the minimum number of moves required to transfer the red marble from tube ‘P’ to the bottom of tube ‘R’?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q13.png",
+      "imageAlt": "UCEED 2022 Question 13 Diagram",
+      "answer": {
+        "min": 10,
+        "max": 10
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q14",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many right-angled triangles are there in the image?",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q14.png",
+      "imageAlt": "UCEED 2022 Question 14 Diagram",
+      "answer": {
+        "min": 18,
+        "max": 18
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q15",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The image shows a hanging sculpture created by tying fish-shaped cutouts of different weights by blue strings on brown sticks, as shown. The sticks and strings have negligible weight. The sculpture remains balanced after it is suspended from a ceiling. If the weight of the black fish is 5 grams, what is the weight (in grams) of the red fish?",
+      "topic": "Balance and stability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q15.png",
+      "imageAlt": "UCEED 2022 Question 15 Diagram",
+      "answer": {
+        "min": 60,
+        "max": 60
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q16",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A system of gears and belts is shown below. The diameters of the gears M, N, P, Q, R and S are 3, 1, 2, 1, 3 and 2 meters respectively. If the gear M is rotating at 100 rpm, what is the rpm of gear S?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q16.png",
+      "imageAlt": "UCEED 2022 Question 16 Diagram",
+      "answer": {
+        "min": 75,
+        "max": 75
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q17",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The given 3D object is made by combining three shapes - pentagons, squares and triangles. What is the total number of squares?",
+      "topic": "Faces, edges and vertices",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q17.png",
+      "imageAlt": "UCEED 2022 Question 17 Diagram",
+      "answer": {
+        "min": 30,
+        "max": 30
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q18",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The perimeter of the equilateral triangle and the regular hexagon shown in the figure are equal. The circumference of the red circle inscribed in the triangle is 10 cm. What is the circumference of the blue circle inscribed in the hexagon?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q18.png",
+      "imageAlt": "UCEED 2022 Question 18 Diagram",
+      "answer": {
+        "min": 15,
+        "max": 15
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q19",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown on the left is a pattern printed by repeated use of a single printing block. Which of the printing blocks shown on the right can be used to print the pattern?",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q19.png",
+      "imageAlt": "UCEED 2022 Question 19 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q20",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown on the left is a socket with four holes in it. Which of the plugs will fit perfectly in this socket?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q20.png",
+      "imageAlt": "UCEED 2022 Question 20 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q21",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options show parts of the graph representing the equation 𝑥𝑦= 25  ?",
+      "topic": "Tables, charts and graphs",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q21.png",
+      "imageAlt": "UCEED 2022 Question 21 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q22",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the given figures can be drawn without lifting the pen? The lines can cross each other but cannot overlap on top of one another.",
+      "topic": "Paths, grids and mazes",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q22.png",
+      "imageAlt": "UCEED 2022 Question 22 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q23",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are 2 views of the same solid. Through which of the cutouts shown in the options, will the solid pass?",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q23.png",
+      "imageAlt": "UCEED 2022 Question 23 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q24",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are different forms for a step-stool. Which of the forms will remain stable when a person is standing on the top step?",
+      "topic": "Balance and stability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q24.png",
+      "imageAlt": "UCEED 2022 Question 24 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q25",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Tile X was used to create a pattern which is seamless (without gaps), when arranged as shown in Y. Which of the tiles from the options will create a seamless pattern?",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q25.png",
+      "imageAlt": "UCEED 2022 Question 25 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q26",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A painted solid is shown from two different directions. Which of the options can be the same solid seen from another direction?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q26.png",
+      "imageAlt": "UCEED 2022 Question 26 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q27",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options will form a knot when both the ends are pulled outward?",
+      "topic": "2D and 3D visualization",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q27.png",
+      "imageAlt": "UCEED 2022 Question 27 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q28",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Figure P can be created by tiling 4 identical pieces. The pieces should not overlap while tiling. Which of the pieces shown in the options can be used to create figure P, assuming that you can rotate and flip them?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q28.png",
+      "imageAlt": "UCEED 2022 Question 28 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q29",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below is an isometric view of a cuboidal glass container of size 2 X 2 X 3 units. It contains a solid wooden block and some water. When tilted, which of the options will be the side view(s) of the glass container?",
+      "topic": "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q29.png",
+      "imageAlt": "UCEED 2022 Question 29 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q30",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Four solid pieces P, Q, R and S are arranged to form a cube. Which of the cubes shown in the options is/are NOT possible?",
+      "topic": "Block arrangement and stacking",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q30.png",
+      "imageAlt": "UCEED 2022 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q31",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A contractor has a set of ceramic tiles of which one tile is shown on the left. Which of the options show(s) the pattern(s) created using this tile?",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q31.png",
+      "imageAlt": "UCEED 2022 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q32",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options can be made using all the four pieces shown in the top row? Flipping the pieces is allowed.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q32.png",
+      "imageAlt": "UCEED 2022 Question 32 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q33",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A puzzle board can be covered completely using puzzle pieces, six of which are shown below. Which of the pieces in the options can be used along with these six pieces to cover the board completely? Flipping and rotating of the pieces is allowed. Overlapping of the pieces is NOT allowed.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q33.png",
+      "imageAlt": "UCEED 2022 Question 33 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q34",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the chairs will rock TO AND FRO?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q34.png",
+      "imageAlt": "UCEED 2022 Question 34 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q35",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options is/are simple rotation(s) of the image P?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q35.png",
+      "imageAlt": "UCEED 2022 Question 35 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q36",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown on the left is the development of a cube. Which of the options can be created when the shown development is folded?",
+      "topic": "Cube and cuboid nets",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q36.png",
+      "imageAlt": "UCEED 2022 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q37",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Three paper clips are attached to a paper as shown on the left. Which of the options shows the back side of the paper?",
+      "topic": "Mirror images and water images",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q37.png",
+      "imageAlt": "UCEED 2022 Question 37 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q38",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Question 38",
+      "topic": "Pattern Sequences",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q38.png",
+      "imageAlt": "UCEED 2022 Question 38 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q39",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An animation of revolving circles is shown on the left. If it is flipped horizontally and then flipped vertically, what will be the resulting animation?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q39.png",
+      "imageAlt": "UCEED 2022 Question 39 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q40",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "You can set preferences in a mobile app by making a series of selections. You want to be notified of promotions and transactions, but do not want to receive newsletters. You want to allow access to your location and mic, but do not want to allow access to your contacts. What is the correct sequence of actions?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q40.png",
+      "imageAlt": "UCEED 2022 Question 40 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check, skip, check, check, skip, check"
+        },
+        {
+          "id": "b",
+          "text": "Skip, Skip, check, skip, check, check"
+        },
+        {
+          "id": "c",
+          "text": "Check, skip, skip, skip, check, check"
+        },
+        {
+          "id": "d",
+          "text": "Skip, skip, check, check, check, check"
+        }
+      ],
+      "answer": "d",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q41",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A story depicts Sabina encountering a spider. The continuing scene has to represent the spider’s point of view of Sabina. What is the most appropriate option?",
+      "topic": "Perspective and depth",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q41.png",
+      "imageAlt": "UCEED 2022 Question 41 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q42",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option is the correct mirror image of the figure given on the left?",
+      "topic": "Mirror images and water images",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q42.png",
+      "imageAlt": "UCEED 2022 Question 42 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q43",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A solid sphere is kept on a planar surface. Parallel rays of light are falling on it as shown in the image. Which option correctly represents the shadow cast by the sphere on the planar surface?",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q43.png",
+      "imageAlt": "UCEED 2022 Question 43 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q44",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Four students were given a task to design a stencil for the word ’pedagogy’ for spray painting. Shown in the options are designs of each student that are to be cut into stencils for painting. Identify the design that will NOT work as a stencil to paint the given word?",
+      "topic": "Usability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q44.png",
+      "imageAlt": "UCEED 2022 Question 44 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q45",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A group of friends are on a trek. The sunlight is directly above them. No other light source is present. Identify the most appropriate lighting for this scene.",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q45.png",
+      "imageAlt": "UCEED 2022 Question 45 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q46",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the odd one.",
+      "topic": "Odd-one-out",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q46.png",
+      "imageAlt": "UCEED 2022 Question 46 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q47",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are the 2 views of a cube. If face P is opposite to 1, Q is opposite to 2 and R is opposite to 3, which option can be folded to make the cube?",
+      "topic": "Cube and cuboid nets",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q47.png",
+      "imageAlt": "UCEED 2022 Question 47 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q48",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Question 48",
+      "topic": "Pattern Sequences",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q48.png",
+      "imageAlt": "UCEED 2022 Question 48 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q49",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The options show maps of some states of India. In only one of the options, the map has been scaled (either up or down). Which is that option?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q49.png",
+      "imageAlt": "UCEED 2022 Question 49 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q50",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Gita placed some objects on a white plate. She took a photo with a camera. Without disturbing the arrangement of objects, she took two more photos while turning the plate. Soon after, Shefali placed same objects on a similar plate and under similar lighting conditions, took a photo. Which option shows Shefali’s photo?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q50.png",
+      "imageAlt": "UCEED 2022 Question 50 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q51",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Two views of the same object are shown in the box. Which option depicts the same object?",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q51.png",
+      "imageAlt": "UCEED 2022 Question 51 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q52",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The image shown below is made up of triangles only, from which the central portion is missing. Identify the missing portion.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q52.png",
+      "imageAlt": "UCEED 2022 Question 52 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q53",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The figure shown below is mirrored along the axes P, Q, R, S, T and U. What would be the resultant figure?",
+      "topic": "Mirror images and water images",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q53.png",
+      "imageAlt": "UCEED 2022 Question 53 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q54",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Question 54",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q54.png",
+      "imageAlt": "UCEED 2022 Question 54 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q55",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An A4 size paper is cut as shown below and folded across the dotted lines such that it has eight faces named from ‘P’ to ‘W’. It is further folded to make a small booklet for the purpose of a zine design. From the given options, select the correct sequence of pages.",
+      "topic": "Paper folding, cutting and punching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q55.png",
+      "imageAlt": "UCEED 2022 Question 55 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P, Q, R, S, T, U, V, W"
+        },
+        {
+          "id": "b",
+          "text": "W, S, R. V, U, Q, P, T"
+        },
+        {
+          "id": "c",
+          "text": "W, S, R, Q, P, T, U, V"
+        },
+        {
+          "id": "d",
+          "text": "W, V, U, T, S, R, Q, P"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q56",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The left image below shows Nandu’s study room. The image is sliced in 9 equal parts. From the given options, find the correct set of images.",
+      "topic": "Spot the difference",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q56.png",
+      "imageAlt": "UCEED 2022 Question 56 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q57",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Question 57",
+      "topic": "Colour and composition",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q57.png",
+      "imageAlt": "UCEED 2022 Question 57 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q58",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Fill in the blank with the same font.",
+      "topic": "Typography & Fonts",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q58.png",
+      "imageAlt": "UCEED 2022 Question 58 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Language & Creativity"
+    },
+    {
+      "id": "q59",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A folding paper fan P is dipped in orange colour and then in red colour as shown. Which option is the closest representation of the resultant fan?",
+      "topic": "Paper folding, cutting and punching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q59.png",
+      "imageAlt": "UCEED 2022 Question 59 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q60",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A painting was created on the road as shown in the image. From the given options, identify which image was used to plan the painting (as seen from the top view).",
+      "topic": "Perspective and depth",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q60.png",
+      "imageAlt": "UCEED 2022 Question 60 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q61",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A game board was set with multiple decks of cards arranged in such a way that sum total of the cards on each side was equal (1+2+3+4=10). However, a new card was added on one side (blue card) and the cards were rearranged to maintain the rule, namely, that the sum total equals 10. How many cards can be added (starting from original position as shown on the left) before the game ends and no more cards can be added? Assume that every position must have at least one card and the sum total rule of 10 must be followed.",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q61.png",
+      "imageAlt": "UCEED 2022 Question 61 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q62",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Fatima is shown kicking the football. Identify the most appropriate illustration of the scene observed from behind.",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q62.png",
+      "imageAlt": "UCEED 2022 Question 62 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q63",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the correct silhouette of the coloured dragon.",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q63.png",
+      "imageAlt": "UCEED 2022 Question 63 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q64",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are trajectories of 4 flies over the juice glasses. Identify the fly that crossed over the maximum number of glasses.",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q64.png",
+      "imageAlt": "UCEED 2022 Question 64 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q65",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A list of 8 country names in Vietnamese (shown in red), and their English translations (shown in blue) are given below. The translation list is mixed up. Which of the following statements is TRUE?",
+      "topic": "Pattern decoding",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q65.png",
+      "imageAlt": "UCEED 2022 Question 65 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ðan Mạch is Denmark, Thụy Ðiển is Sweden, Phần Lan is Poland"
+        },
+        {
+          "id": "b",
+          "text": "Hà Lan is Netherlands, Áo is Austria, and Ba Lan is Poland"
+        },
+        {
+          "id": "c",
+          "text": "Bỉ is Belgium, Hà Lan is Finland, and Na Uy is Norway"
+        },
+        {
+          "id": "d",
+          "text": "Na Uy is Netherlands, Thụy Ðiển is Denmark, and Phần Lan is Finland"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q66",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "India and Australia are playing the finals of World Cup T20 cricket match. India won the toss and decided to bat. At the end of 5 overs, India scored 24 runs with one wicket down. From there on, in every 5 overs, India scored 50% more runs than the previous 5 overs and lost two wickets. From the options, identify the correct graph that shows India’s final score.",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q66.png",
+      "imageAlt": "UCEED 2022 Question 66 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q67",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Figure P shows a profile of a bus with circular wheels on a flat road. The options below show profiles of 4 wheels and corresponding roads. If the ‘wheel’ always moves without slipping or sliding, which of the options will result in the bumpiest ride?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q67.png",
+      "imageAlt": "UCEED 2022 Question 67 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q68",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "In the figure shown below, the drive wheel P engages with the driven wheel Q through a pin marked in red. Which of the options describes the movement of Q, when P moves in the clockwise direction?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2022",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2022-q68.png",
+      "imageAlt": "UCEED 2022 Question 68 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuously anti-clockwise"
+        },
+        {
+          "id": "b",
+          "text": "Intermittently anti-clockwise"
+        },
+        {
+          "id": "c",
+          "text": "To and fro"
+        },
+        {
+          "id": "d",
+          "text": "Intermittently clockwise"
+        }
+      ],
+      "answer": "b",
+      "category": "Practical & Scientific Knowledge"
+    }
+  ]
+}

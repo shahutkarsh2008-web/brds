@@ -6,13 +6,18 @@ definitions; there is no second manually maintained bank to forget to update.
 
 ## Classification
 
-`src/question-topic-map.json` contains content-fingerprinted classifications for
-the supplied 2019–2026 UCEED papers, demo questions and spatial diagnostic/short
-worksheet. The full worksheet's named sections supply its topic metadata.
-Classification was based on the supplied question text and diagrams. Image-only
-items were visually inspected, including original PDF pages where image assets
-were missing or unreadable. These are local editorial classifications, not an
-official IIT question-by-question taxonomy.
+`src/question-topic-map.json` contains reviewed, content-fingerprinted labels;
+`src/question-topics.js` applies concept rules to explicit question stems. The
+current audit covers all 18 seeded fixtures (UCEED 2015–2026, three practice
+sets, and two demo papers): 1,095 questions, each with a topic and category and
+zero review items. Classification is based on source question text and diagrams;
+it is a local editorial taxonomy, not an official IIT question-by-question list.
+
+The 2015–2017 import builders now skip the cover and numbered instruction page.
+Their first six records had incorrectly been populated with paper instructions
+instead of actual question stems. Those stems were restored from the official
+question papers. UCEED 2015 Q52 is image-led in the source, so its topic was
+assigned from the supplied diagram rather than inventing missing prompt text.
 
 `src/question-topics.js` applies the same classifications when importing and when
 reading older definitions for practice. It supports the earlier UI topic aliases
@@ -53,11 +58,11 @@ The script requires an explicit SQLite path, never reads `.env`, and refuses a
 concurrent definition change within its transactional update. It does not reset
 sessions, import unseeded papers, or alter attempts.
 
-The completed local audit covers 14 valid fixture papers / 745 question entries
-and 10 already imported local papers / 456 entries, with no uncategorised entries.
-Fixture files are not overwritten because another agent maintains paper imports.
-The local development database has been backed up and updated. Hosted data and
-deployment acceptance remain Phase 8 work.
+The current fixture audit covers 18 papers / 1,095 questions and the local
+development database audit covers 10 papers / 456 questions, with zero
+uncategorised items in both. Audit results are recorded in
+`reports/question-library-audit.json`. Hosted data and deployment acceptance
+remain separate operational launch checks.
 
 Known source-content issues encountered during classification: the 2019 Q43 and
 2025 Q18 fixture references lacked images, and the 2023 Q42/Q52 image files could
@@ -67,7 +72,8 @@ not certify OCR, answer-key or diagram integrity across the uploaded papers.
 
 ## Validation
 
-`test/question-library.test.js` covers cross-year ID collisions, scoring, reload,
+`test/question-library.test.js` covers all-seeded-fixture topic coverage,
+cross-year ID collisions, scoring, reload,
 bookmarks/revision, future imports, copy deduplication, two questions on one page,
 unknown difficulty, exact topic matching, unchanged answers, and legacy safety.
 `test/question-library-ui.test.js` covers actual catalog counts, topic selection,

@@ -1218,6 +1218,28 @@ WHY: Closes the Phase 5 structured QA pass across roles, imported content, save/
 EVIDENCE: Five focused import tests pass; `npm test` passes 89/89. A fresh in-memory SQLite seed inserted 18 exams containing 1,095 questions. `node scratch/verify-chrome-browser.js` exits 0 with 41/41 scenarios: all 10 tabs at 1440/1024/768/360 CSS px without horizontal overflow, and Library → Exam → Result → Analytics showed score 6. Browser recorded zero console errors and HTTP 5xx; keyboard focus indicator present; dark/light primary, secondary and muted text contrast each >=4.5:1. Backend suite covers role security, answer-key privacy, save/resume and import behavior. Details: `reports/phase5-qa-evidence.json` and `reports/phase5-browser-evidence.json`.
 NEXT: QA defects found in the claimed areas are retested and closed. Continue only with any new findings; hosted/production acceptance is outside this local QA evidence.
 
+### [2026-10-05 19:10 UTC] Codex — Phase 5 follow-up: Complete question topic assignment
+STATUS: IN PROGRESS
+FILES: fixtures/*.json (seeded exam/practice fixtures only), src/question-topic-map.json, src/question-topics.js, scripts/audit-question-library.js, test/question-library.test.js, reports/question-library-audit.json, docs/question-library.md, PROGRESS_LOG.md
+WHAT: Claiming a full source-aware topic coverage audit and explicit topic assignment for every seeded question. Uncertain image-only items must be inspected or clearly marked for review, never assigned by question type alone.
+WHY: Topic-wise practice and useful analytics require each question to appear under its actual concept, including newly imported UCEED 2015–2026 and practice-bank questions.
+NEXT: Run the fixture audit to identify uncovered and weakly classified questions, use existing reviewed fingerprints plus paper prompts/images to classify them, then assert coverage and topic filter results before marking complete.
+
+### [2026-10-05 19:18 UTC] Codex — Phase 5 follow-up: Repair misparsed stems and close topic coverage
+STATUS: IN PROGRESS
+FILES: fixtures/uceed-2015.json, fixtures/uceed-2016.json, fixtures/uceed-2017.json, scripts/build-uceed-2015-paper.py, scripts/build-uceed-2016-paper.py, scripts/build-uceed-2017-paper.py, src/question-topic-map.json, src/question-topics.js, test/question-library.test.js, reports/question-library-audit.json, docs/question-library.md, PROGRESS_LOG.md
+WHAT: Claiming source-verified restoration of the first six question stems in three papers; the PDF importer currently mistakes its numbered instruction list for scored questions. Also claiming explicit classification of the image-only UCEED 2015 Q52 and a zero-review regression gate for all current seeded items.
+WHY: All topic practice content must be a real, accurately described question with a useful concept label; section instructions and placeholder text cannot be offered as practice questions.
+NEXT: Replace instruction/placeholder stems with exact source prompts, fix builders to skip instruction pages, classify the corrected stems, and require zero missing/generic/review labels over all 1,095 current fixture questions.
+
+### [2026-10-05 19:28 UTC] Codex — Phase 5 follow-up: All seeded questions assigned topics
+STATUS: DONE
+FILES: fixtures/*.json (18 seeded fixtures), scripts/build-uceed-2015-paper.py, scripts/build-uceed-2016-paper.py, scripts/build-uceed-2017-paper.py, src/question-topics.js, src/question-topic-map.json, test/question-library.test.js, reports/question-library-audit.json, docs/question-library.md, PROGRESS_LOG.md
+WHAT: Persisted a specific topic and category on every seeded fixture question. Restored source-correct opening stems for UCEED 2015–2017, linked available diagrams, fixed all three builders to ignore numbered instruction pages, and labeled the image-only 2015 Q52 from its supplied diagram.
+WHY: Topic practice must expose every actual question under its concept and avoid counting paper instructions/placeholders as study content.
+EVIDENCE: Audit: 18 fixtures / 1,095 questions, zero missing topics/categories and zero review items; local development DB: 10 exams / 456 questions, zero review items. Isolated rebuilds of all three official PDFs yielded 100/80/85 questions and real Q1–6 stems; UCEED 2015 Q52 no longer falls back to “Question 52”. Topic coverage and import regressions pass; `npm test` passes 91/91; `git diff --check` passes. Official source pages for 2015–2017 were read and representative 2015 Q52 diagram inspected.
+NEXT: Next content pass: complete an independent visual/source answer-key check of 2015–2017 (including diagrams/options), then prioritize verified CEED/NIFT/NID imports and the unlabelled PDF; afterward expand GK and Part B/community content. Live hosted acceptance remains a separate operational gate.
+
 ### [2026-10-05 19:02 UTC] Antigravity — Phase 6: UCEED 2015–2026 Complete Marking Scheme Alignment & 2015/2016 Import
 STATUS: DONE
 FILES: fixtures/uceed-*.json, scripts/update-marking-schemes.py, scripts/build-uceed-2016-paper.py, scripts/build-uceed-2015-paper.py, scripts/seed-exams.js, test/uceed-*.test.js

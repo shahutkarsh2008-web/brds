@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T20:19:58.821Z",
+  "generatedAt": "2026-10-05T19:28:30.276Z",
   "fixtures": [
     {
       "file": "design-foundations.json",
@@ -130,6 +130,2243 @@
       ]
     },
     {
+      "file": "uceed-2015.json",
+      "examId": "uceed-2015",
+      "title": "UCEED 2015 Official Paper",
+      "totalQuestions": 100,
+      "topics": {
+        "Area, perimeter, volume and surface area": 13,
+        "Pattern Counting": 6,
+        "Tables, charts and graphs": 2,
+        "Reading comprehension": 7,
+        "Everyday objects and mechanisms": 5,
+        "Faces, edges and vertices": 1,
+        "Texture & Pattern Matching": 8,
+        "Arithmetic": 2,
+        "Traditional crafts and objects": 11,
+        "Block arrangement and stacking": 1,
+        "Logical conditions and statements": 12,
+        "Sets and grouping": 7,
+        "Spatial Assembly": 10,
+        "Rotation and reflection": 2,
+        "Colour and composition": 1,
+        "Typography & Fonts": 1,
+        "Light, reflection and refraction": 3,
+        "Signs and symbols & symbol interpretation": 1,
+        "Usability": 3,
+        "Natural environment and geography": 1,
+        "Economy & Society": 2,
+        "Top, front and side views": 1
+      },
+      "needsReview": [],
+      "questions": [
+        {
+          "id": "q01",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q02",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q03",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q04",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q05",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q06",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q07",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q08",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q09",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q10",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q11",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q12",
+          "topic": "Faces, edges and vertices",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q13",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q14",
+          "topic": "Arithmetic",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q15",
+          "topic": "Arithmetic",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q16",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q17",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q18",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q19",
+          "topic": "Block arrangement and stacking",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q20",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q21",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q22",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q23",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q24",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q25",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q26",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q27",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q28",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q29",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q30",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q31",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q32",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q33",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q34",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q35",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q36",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q37",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q38",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q39",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q40",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q41",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q42",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q43",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q44",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q45",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q46",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q47",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q48",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q49",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q50",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q51",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q52",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q53",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q54",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q55",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q56",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q57",
+          "topic": "Colour and composition",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q58",
+          "topic": "Typography & Fonts",
+          "category": "Language & Creativity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q59",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q60",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q61",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q62",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q63",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q64",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q65",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q66",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q67",
+          "topic": "Signs and symbols & symbol interpretation",
+          "category": "Creativity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q68",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q69",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q70",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q71",
+          "topic": "Usability",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q72",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q73",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q74",
+          "topic": "Economy & Society",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q75",
+          "topic": "Economy & Society",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q76",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q77",
+          "topic": "Top, front and side views",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q78",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q79",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q80",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q81",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q82",
+          "topic": "Usability",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q83",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q84",
+          "topic": "Usability",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q85",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q86",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q87",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q88",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q89",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q90",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q91",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q92",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q93",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q94",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q95",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q96",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q97",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q98",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q99",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q100",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        }
+      ]
+    },
+    {
+      "file": "uceed-2016.json",
+      "examId": "uceed-2016",
+      "title": "UCEED 2016 Official Paper",
+      "totalQuestions": 80,
+      "topics": {
+        "Area, perimeter, volume and surface area": 12,
+        "Pattern Counting": 5,
+        "Logical conditions and statements": 8,
+        "Tables, charts and graphs": 3,
+        "Distance and speed": 1,
+        "Texture & Pattern Matching": 6,
+        "Arithmetic": 2,
+        "Signs and symbols & symbol interpretation": 1,
+        "Counting and arrangements": 1,
+        "Traditional crafts and objects": 7,
+        "Reading comprehension": 4,
+        "Natural environment and geography": 6,
+        "Light, reflection and refraction": 5,
+        "Spatial Assembly": 4,
+        "Rotation and reflection": 2,
+        "Human Anatomy & Proportion": 1,
+        "Everyday objects and mechanisms": 3,
+        "Top, front and side views": 3,
+        "Economy & Society": 1,
+        "Usability": 1,
+        "Sequence of operation": 1,
+        "Balance and stability": 1,
+        "Sets and grouping": 1,
+        "Typography & Fonts": 1
+      },
+      "needsReview": [],
+      "questions": [
+        {
+          "id": "q01",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q02",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q03",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q04",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q05",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q06",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q07",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q08",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q09",
+          "topic": "Distance and speed",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q10",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q11",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q12",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q13",
+          "topic": "Arithmetic",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q14",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q15",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q16",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q17",
+          "topic": "Arithmetic",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q18",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q19",
+          "topic": "Signs and symbols & symbol interpretation",
+          "category": "Creativity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q20",
+          "topic": "Counting and arrangements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q21",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q22",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q23",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q24",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q25",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q26",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q27",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q28",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q29",
+          "topic": "Human Anatomy & Proportion",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q30",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q31",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q32",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q33",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q34",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q35",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q36",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q37",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q38",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q39",
+          "topic": "Top, front and side views",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q40",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q41",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q42",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q43",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q44",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q45",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q46",
+          "topic": "Top, front and side views",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q47",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q48",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q49",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q50",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q51",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q52",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q53",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q54",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q55",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q56",
+          "topic": "Economy & Society",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q57",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q58",
+          "topic": "Usability",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q59",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q60",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q61",
+          "topic": "Sequence of operation",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q62",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q63",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q64",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q65",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q66",
+          "topic": "Top, front and side views",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q67",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q68",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q69",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q70",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q71",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q72",
+          "topic": "Balance and stability",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q73",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q74",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q75",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q76",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q77",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q78",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q79",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q80",
+          "topic": "Typography & Fonts",
+          "category": "Language & Creativity",
+          "classification": "metadata"
+        }
+      ]
+    },
+    {
+      "file": "uceed-2017.json",
+      "examId": "uceed-2017",
+      "title": "UCEED 2017 Official Paper",
+      "totalQuestions": 85,
+      "topics": {
+        "Area, perimeter, volume and surface area": 11,
+        "Pattern Counting": 2,
+        "Typography & Fonts": 2,
+        "Economy & Society": 1,
+        "Arithmetic": 1,
+        "Tables, charts and graphs": 2,
+        "Rotation and reflection": 6,
+        "Everyday objects and mechanisms": 6,
+        "Counting and arrangements": 1,
+        "Top, front and side views": 1,
+        "Distance and speed": 2,
+        "Logical conditions and statements": 10,
+        "Traditional crafts and objects": 5,
+        "Natural environment and geography": 2,
+        "Sets and grouping": 5,
+        "Texture & Pattern Matching": 5,
+        "Spatial Assembly": 10,
+        "Colour and composition": 1,
+        "Light, reflection and refraction": 3,
+        "Reading comprehension": 5,
+        "Paper folding, cutting and punching": 1,
+        "Signs and symbols & symbol interpretation": 1,
+        "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)": 1,
+        "Perspective and depth": 1
+      },
+      "needsReview": [],
+      "questions": [
+        {
+          "id": "q01",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q02",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q03",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q04",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q05",
+          "topic": "Typography & Fonts",
+          "category": "Language & Creativity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q06",
+          "topic": "Economy & Society",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q07",
+          "topic": "Arithmetic",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q08",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q09",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q10",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q11",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q12",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q13",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q14",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q15",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q16",
+          "topic": "Counting and arrangements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q17",
+          "topic": "Top, front and side views",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q18",
+          "topic": "Distance and speed",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q19",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q20",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q21",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q22",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q23",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q24",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q25",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q26",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q27",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q28",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q29",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q30",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q31",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q32",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q33",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q34",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q35",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q36",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q37",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q38",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q39",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q40",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q41",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q42",
+          "topic": "Colour and composition",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q43",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q44",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q45",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q46",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q47",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q48",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q49",
+          "topic": "Paper folding, cutting and punching",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q50",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q51",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q52",
+          "topic": "Signs and symbols & symbol interpretation",
+          "category": "Creativity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q53",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q54",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q55",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q56",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q57",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q58",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q59",
+          "topic": "Typography & Fonts",
+          "category": "Language & Creativity",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q60",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q61",
+          "topic": "Distance and speed",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q62",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q63",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q64",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q65",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q66",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q67",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q68",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q69",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q70",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q71",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q72",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q73",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q74",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q75",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q76",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q77",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q78",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q79",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q80",
+          "topic": "Texture & Pattern Matching",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q81",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q82",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q83",
+          "topic": "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q84",
+          "topic": "Perspective and depth",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q85",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        }
+      ]
+    },
+    {
+      "file": "uceed-2018.json",
+      "examId": "uceed-2018",
+      "title": "UCEED 2018 Official Paper",
+      "totalQuestions": 85,
+      "topics": {
+        "Pattern Counting": 4,
+        "Logical conditions and statements": 9,
+        "Block arrangement and stacking": 2,
+        "Typography & Fonts": 2,
+        "Area, perimeter, volume and surface area": 11,
+        "Faces, edges and vertices": 1,
+        "Everyday objects and mechanisms": 1,
+        "Distance and speed": 2,
+        "Reading comprehension": 10,
+        "Usability": 3,
+        "Paths, grids and mazes": 3,
+        "Arithmetic": 1,
+        "Economy & Society": 2,
+        "Spatial Assembly": 4,
+        "Natural environment and geography": 6,
+        "Sets and grouping": 4,
+        "Traditional crafts and objects": 11,
+        "Rotation and reflection": 2,
+        "Gestalt Principles of Perception": 1,
+        "Tables, charts and graphs": 2,
+        "Light, reflection and refraction": 2,
+        "Human Anatomy & Proportion": 1,
+        "Top, front and side views": 1
+      },
+      "needsReview": [],
+      "questions": [
+        {
+          "id": "q01",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q02",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q03",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q04",
+          "topic": "Block arrangement and stacking",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q05",
+          "topic": "Typography & Fonts",
+          "category": "Language & Creativity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q06",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q07",
+          "topic": "Faces, edges and vertices",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q08",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q09",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q10",
+          "topic": "Block arrangement and stacking",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q11",
+          "topic": "Everyday objects and mechanisms",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q12",
+          "topic": "Distance and speed",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q13",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q14",
+          "topic": "Usability",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q15",
+          "topic": "Paths, grids and mazes",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q16",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q17",
+          "topic": "Arithmetic",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q18",
+          "topic": "Economy & Society",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q19",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q20",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q21",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q22",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q23",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q24",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q25",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q26",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q27",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q28",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q29",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q30",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q31",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q32",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q33",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q34",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q35",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q36",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q37",
+          "topic": "Gestalt Principles of Perception",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q38",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q39",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q40",
+          "topic": "Sets and grouping",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q41",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q42",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q43",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q44",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q45",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q46",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q47",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q48",
+          "topic": "Paths, grids and mazes",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q49",
+          "topic": "Usability",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q50",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q51",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q52",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q53",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q54",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q55",
+          "topic": "Typography & Fonts",
+          "category": "Language & Creativity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q56",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q57",
+          "topic": "Tables, charts and graphs",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q58",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q59",
+          "topic": "Spatial Assembly",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q60",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q61",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q62",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q63",
+          "topic": "Rotation and reflection",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q64",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "reviewed-content"
+        },
+        {
+          "id": "q65",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q66",
+          "topic": "Economy & Society",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q67",
+          "topic": "Human Anatomy & Proportion",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q68",
+          "topic": "Distance and speed",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q69",
+          "topic": "Pattern Counting",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q70",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q71",
+          "topic": "Light, reflection and refraction",
+          "category": "Practical & Scientific Knowledge",
+          "classification": "metadata"
+        },
+        {
+          "id": "q72",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q73",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q74",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q75",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q76",
+          "topic": "Traditional crafts and objects",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q77",
+          "topic": "Paths, grids and mazes",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q78",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q79",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q80",
+          "topic": "Reading comprehension",
+          "category": "Language",
+          "classification": "metadata"
+        },
+        {
+          "id": "q81",
+          "topic": "Usability",
+          "category": "Observation & Design Sensitivity",
+          "classification": "metadata"
+        },
+        {
+          "id": "q82",
+          "topic": "Area, perimeter, volume and surface area",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q83",
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
+        },
+        {
+          "id": "q84",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
+          "classification": "metadata"
+        },
+        {
+          "id": "q85",
+          "topic": "Top, front and side views",
+          "category": "Visualization & Spatial Reasoning",
+          "classification": "metadata"
+        }
+      ]
+    },
+    {
       "file": "uceed-2019.json",
       "examId": "uceed-2019",
       "title": "UCEED 2019 Official Paper",
@@ -139,7 +2376,7 @@
         "Faces, edges and vertices": 4,
         "Counting and arrangements": 3,
         "Block arrangement and stacking": 3,
-        "Pattern decoding": 3,
+        "Pattern decoding": 2,
         "Distance and speed": 2,
         "Area, perimeter, volume and surface area": 6,
         "Typography & Fonts": 3,
@@ -150,18 +2387,18 @@
         "Top, front and side views": 4,
         "Tables, charts and graphs": 1,
         "Paths, grids and mazes": 1,
-        "Logical conditions and statements": 4,
+        "Logical conditions and statements": 5,
         "Cross-sections and slicing": 2,
-        "Natural environment and geography": 2,
+        "Natural environment and geography": 3,
         "Rotation and reflection": 5,
         "Everyday objects and mechanisms": 4,
         "Paper folding, cutting and punching": 6,
         "Balance and stability": 2,
-        "Spatial Assembly": 5,
         "Light, reflection and refraction": 2,
         "Human Anatomy & Proportion": 2,
         "Mirror images and water images": 2,
         "Arithmetic": 1,
+        "Spatial Assembly": 4,
         "Pattern Sequences": 4,
         "Usability": 1,
         "Sequence of operation": 1
@@ -410,33 +2647,33 @@
         },
         {
           "id": "q41",
-          "topic": "Pattern decoding",
-          "category": "Analytical & Logical Reasoning",
+          "topic": "Natural environment and geography",
+          "category": "Environment & Society",
           "classification": "reviewed-content"
         },
         {
           "id": "q42",
           "topic": "Typography & Fonts",
           "category": "Language & Creativity",
-          "classification": "reviewed-content"
+          "classification": "metadata"
         },
         {
           "id": "q43",
-          "topic": "Spatial Assembly",
-          "category": "Visualization & Spatial Reasoning",
-          "classification": "reviewed-content"
+          "topic": "Logical conditions and statements",
+          "category": "Analytical & Logical Reasoning",
+          "classification": "metadata"
         },
         {
           "id": "q44",
           "topic": "Paper folding, cutting and punching",
           "category": "Visualization & Spatial Reasoning",
-          "classification": "reviewed-content"
+          "classification": "metadata"
         },
         {
           "id": "q45",
           "topic": "Paper folding, cutting and punching",
           "category": "Visualization & Spatial Reasoning",
-          "classification": "reviewed-content"
+          "classification": "metadata"
         },
         {
           "id": "q46",

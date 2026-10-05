@@ -57,6 +57,9 @@ def build_uceed_2015_paper():
             "d": "It is good to differentiate between a novice user and an expert user by keeping track of the number of interactions that the user has with the device, and tailoring an audio experience for first-time users, while playing shortened prompts to expert users."
         }
     }
+    prompt_overrides = {
+        52: "If the first colour transformation shown is applied to the pink square, which option shows the resulting colour?"
+    }
 
     questions = []
     manifest = []
@@ -66,6 +69,8 @@ def build_uceed_2015_paper():
     sub_dir.mkdir(parents=True, exist_ok=True)
 
     for pn in range(len(doc)):
+        if pn < 2:  # Skip cover and numbered paper-specific instructions.
+            continue
         page = doc[pn]
         blocks = page.get_text("dict")["blocks"]
         lines = []
@@ -152,7 +157,7 @@ def build_uceed_2015_paper():
                 "id": q_id,
                 "sectionId": sec_id,
                 "type": q_type,
-                "prompt": " ".join(prompt).strip() or f"Question {n}",
+                "prompt": prompt_overrides.get(n) or " ".join(prompt).strip() or f"Question {n}",
                 "topic": "Design Aptitude & Visual Observation",
                 "difficulty": "Medium",
                 "tags": ["uceed-2015", q_type.lower()],

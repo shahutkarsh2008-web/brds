@@ -1,0 +1,3101 @@
+{
+  "id": "uceed-2017",
+  "title": "UCEED 2017 Official Paper",
+  "durationSeconds": 7200,
+  "totalQuestions": 85,
+  "maxMarks": 300,
+  "instructions": "Official UCEED 2017 Question Paper & Final Answer Key (Part A: 85 questions, 300 marks, 120 minutes). Section 1 NAT: Q1–20 (+4/0). Section 2 MSQ: Q21–45 (+4/0 with partial credit). Section 3 MCQ: Q46–85 (+3/-1).",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "Section 1 · NAT (80 marks)"
+    },
+    {
+      "id": "msq",
+      "title": "Section 2 · MSQ (100 marks)"
+    },
+    {
+      "id": "mcq",
+      "title": "Section 3 · MCQ (120 marks)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A 12 cm wooden cube is painted and shown in four views, then sliced into 64 equal cubes. How many small cubes have exactly one green face and exactly one orange face on the same cube?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 12,
+        "max": 12
+      },
+      "category": "Analytical & Logical Reasoning",
+      "image": "/media/uceed-2017-q01.png",
+      "imageAlt": "UCEED 2017 Question 1 Diagram"
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The following figure is cloned and the clone is reflected along the XY axis. How many rectangles are present in the resultant figure?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 25,
+        "max": 25
+      },
+      "category": "Analytical & Logical Reasoning",
+      "image": "/media/uceed-2017-q02.png",
+      "imageAlt": "UCEED 2017 Question 2 Diagram"
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below are pieces of a regular polygon. How many sides does the polygon have?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 7,
+        "max": 7
+      },
+      "category": "Analytical & Logical Reasoning",
+      "image": "/media/uceed-2017-q03.png",
+      "imageAlt": "UCEED 2017 Question 3 Diagram"
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many different types of characters appear in the figure given below?",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 28,
+        "max": 28
+      },
+      "category": "Observation & Design Sensitivity",
+      "image": "/media/uceed-2017-q04.png",
+      "imageAlt": "UCEED 2017 Question 4 Diagram"
+    },
+    {
+      "id": "q05",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many fonts are used in the given set of words?",
+      "topic": "Typography & Fonts",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 11,
+        "max": 11
+      },
+      "category": "Language & Creativity",
+      "image": "/media/uceed-2017-q05.png",
+      "imageAlt": "UCEED 2017 Question 5 Diagram"
+    },
+    {
+      "id": "q06",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A shopkeeper offers discounts according to a series shown in a table. How much is the discount for a purchase of 75,000 rupees?",
+      "topic": "Economy & Society",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 7669,
+        "max": 7669
+      },
+      "category": "Environment & Society",
+      "image": "/media/uceed-2017-q06.png",
+      "imageAlt": "UCEED 2017 Question 6 Diagram"
+    },
+    {
+      "id": "q07",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Given the following equation, how many parrots are equal to one elephant?",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q07.png",
+      "imageAlt": "UCEED 2017 Question 7 Diagram",
+      "answer": {
+        "min": 1.5,
+        "max": 1.5
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q08",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many of the alphabets using the font shown below when flipped on the horizontal axis, can still be read as capital alphabets in the same font?",
+      "topic": "Tables, charts and graphs",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q08.png",
+      "imageAlt": "UCEED 2017 Question 8 Diagram",
+      "answer": {
+        "min": 11,
+        "max": 11
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q09",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below in figure 1 is a layout of a chess board with one knight and several pawns. Given that the knight cannot land on any square that has a pawn, but can jump over it, the pawns cannot move, and the knight moves on a chess board as shown in figure 2, what is the least number of steps required for the knight to reach square x?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q09.png",
+      "imageAlt": "UCEED 2017 Question 9 Diagram",
+      "answer": {
+        "min": 8,
+        "max": 8
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q10",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below is a fan with red coloured patterns on it. When it rotates, the patterns make circles. How many red circles will be seen when the fan rotates?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q10.png",
+      "imageAlt": "UCEED 2017 Question 10 Diagram",
+      "answer": {
+        "min": 8,
+        "max": 8
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q11",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Figure 1 has been constructed by overlapping some alphabets. Assuming the alphabets may be rotated, how many alphabets from figure 2 cannot be overlapped to fit within figure 1?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q11.png",
+      "imageAlt": "UCEED 2017 Question 11 Diagram",
+      "answer": {
+        "min": 17,
+        "max": 17
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q12",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Two gears A and B with red arrows are shown below. Gear A rotates in clockwise direction. How many complete rotations does the gear B have to make for the red arrows to meet?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q12.png",
+      "imageAlt": "UCEED 2017 Question 12 Diagram",
+      "answer": {
+        "min": 10,
+        "max": 10
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q13",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Figure 1 is an image composed of partial circles. Some cuts in the circles form the corners of triangles as shown in Figure 2. What is the total number of triangles whose three corners are formed by three circles?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q13.png",
+      "imageAlt": "UCEED 2017 Question 13 Diagram",
+      "answer": {
+        "min": 10,
+        "max": 10
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q14",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "There are two discs, one with numbers and other with three cut-outs as shown in the figure 1 and are overlapped as shown in figure 2. For every second, the numbered disc rotates two numbers in anti-clockwise direction and the cut-out disc rotates one number in the clockwise direction. If the arrangement at zero second is as shown in figure 2, what will be the number inside the pentagonal cut-out at 5 seconds?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q14.png",
+      "imageAlt": "UCEED 2017 Question 14 Diagram",
+      "answer": {
+        "min": 3,
+        "max": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q15",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Figure 1 is formed by a black square inscribed in a white circle which in turn is inscribed in another black square of side 2 cm as shown. If a point is chosen at random inside figure 1, what is the probability that the point will be in the area shaded black?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q15.png",
+      "imageAlt": "UCEED 2017 Question 15 Diagram",
+      "answer": {
+        "min": 0.7,
+        "max": 0.72
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q16",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Two discs shown below are spun randomly and they come to rest after some time. What is the probability that the sum of the two numbers in the two discs pointed by the red arrows equals seven or more?",
+      "topic": "Counting and arrangements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q16.png",
+      "imageAlt": "UCEED 2017 Question 16 Diagram",
+      "answer": {
+        "min": 0.7,
+        "max": 0.71
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q17",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below are two views of the same 3D object. How many non-contiguous surfaces are there in the object?",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q17.png",
+      "imageAlt": "UCEED 2017 Question 17 Diagram",
+      "answer": {
+        "min": 36,
+        "max": 36
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q18",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Sharmila takes the office bus home every day in the evening. She takes the five o' clock bus and gets off exactly at six o' clock at the bus stop nearest to her house. Her husband driving from home picks her up at the bus stop, and they drive back home. One day Sharmila decided to take the four o' clock bus and reached her bus stop at five o' clock. Thinking that her husband won't be able to pick her up earlier than usual, she decided to walk home. At some point during her walk, her husband picked her up and they reached home ten minutes earlier than they usually reach home. Assuming that Sharmila's husband always drives at a constant speed, and that on this occasion he left home as usual, how long (in minutes) Sharmila walked before she was picked up?",
+      "topic": "Distance and speed",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 55,
+        "max": 55
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q19",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A 3 × 3 grid as shown in figure 1 is to be filled with numbers 1 to 9 according to the following rules: - 8 is above 9 and to the right of 2 - 3 is to the right of 7 and above 9 which is to the left of 4 - 2 is to the left of 5 - 7 is above 6 and 2 - 1 is above 5 - ‘To the left of’ or ‘to the right of’ means in the same row - ‘Above’ or ‘below’ means in the same column What is the sum of the three numbers in the middle row?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q19.png",
+      "imageAlt": "UCEED 2017 Question 19 Diagram",
+      "answer": {
+        "min": 15,
+        "max": 15
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q20",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A greenhouse constructed in the shape of a hemi-spherical dome houses a cuboid structure as shown in the given figure. The top four corners of the cuboid just touch the inside of the hemi- sphere. The diameter of the hemi-sphere is 20 m. The centre of the base of the cuboid and the centre of the base of the hemi-sphere coincide. A ladder AB is placed from one corner of the cuboid as indicated by the point B, reaching the centre of the top surface of the cuboid as indicated by the point A. What is the length of the ladder AB?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q20.png",
+      "imageAlt": "UCEED 2017 Question 20 Diagram",
+      "answer": {
+        "min": 10,
+        "max": 10
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q21",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the sculpture(s) given below belong(s) to the Gandhara style?",
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q21.png",
+      "imageAlt": "UCEED 2017 Question 21 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q22",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Consider a scenario in India in the year 2000: Women from several nomadic tribes are in danger of having complicated pregnancies. At times, they have little or no knowledge of pregnancy or childbirth related ailments, interventions and government schemes. The problem is worsened by the fact that women’s literacy within these communities is low and since they keep moving from place to place, access to electricity is low. An NGO decides to address this problem and hopes to improve maternal health in this community through information dissemination. Which of the following could be effective in communicating this information to this community? I. Smartphone applications II. Smart watches with health monitoring sensors III. Camps and workshops IV. Folk songs V. Radio VI. Folk theatre VII. Pregnancy tracking websites VIII. Posters IX.  Printed booklets",
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "I, II, VII"
+        },
+        {
+          "id": "b",
+          "text": "IV, VI"
+        },
+        {
+          "id": "c",
+          "text": "V, III"
+        },
+        {
+          "id": "d",
+          "text": "VIII, IX"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q23",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the statement(s) is/are TRUE for the photos given below?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q23.png",
+      "imageAlt": "UCEED 2017 Question 23 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "There are only two mammals"
+        },
+        {
+          "id": "b",
+          "text": "There are only two reptiles"
+        },
+        {
+          "id": "c",
+          "text": "There are only two fishes"
+        },
+        {
+          "id": "d",
+          "text": "There is only one bird"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q24",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Consider the following paragraphs: Somewhere, on some remote planet set at precisely the right distance from a star of just the right magnitude and the right temperature, on the other side of our galaxy, there is at this moment a committee nearing the end of a year-long study of our own tiny, provincial solar system. The intelligent beings of that place are putting their signatures (numbers of some sort, no doubt) to a paper which asserts, with finality, that life is out of the question here and the place is not worth an expedition. Their instruments have detected the presence of that most lethal of all gases, oxygen, and that is the end of that. They had planned to come, bringing along mobile factories for manufacturing life-giving ammonia, but what’s the use of risking strangulation? The only part of this scenario that I really believe in is that committee. I take it as an article of faith that this is the most fundamental aspect of nature that we know about. If you are going to go looking for evidences of life on other celestial bodies, you need special instruments with delicate sensors for detecting the presence of committees. If there is life there, you will find consortia, collaborating groups, working parties, all over the place. At least this is true for our kind of life. Which of the following statements is/are TRUE of the paragraph above?",
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The author suggests that bureaucratic committees waste a lot of time before taking decisions on important projects."
+        },
+        {
+          "id": "b",
+          "text": "The basic error in the passage is in the assertion that oxygen can be a lethal gas."
+        },
+        {
+          "id": "c",
+          "text": "Past the veneer of sarcasm, the author admits to a deep faith in the fundamental human urge to collaborate and consort in all large endeavours."
+        },
+        {
+          "id": "d",
+          "text": "Whether as numerals or symbols, the author believes in the universality of numbers as a language that transcends boundaries."
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q25",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Consider the following paragraph: A central part of disgust’s pathology is the bifurcation of the world into the “pure” and the “impure”—the construction of a “we” who are without flaw and a “they” who are dirty, evil, and contaminating. Much bad thinking about international politics shows the traces of this pathology, as people prove all too ready to think about some group of others as black and sullied, while they themselves are on the side of the angels. We now notice that this very deep- seated human tendency is nourished by many time-honored modes of storytelling to children, which suggest that the world will be set right when some ugly and disgusting witch or monster is killed, or even cooked in her own oven. Many contemporary stories for children purvey the same worldview. We should be grateful for artists who suggest to children the world’s real complexity: the Japanese filmmaker Hayao Miyazaki, for example, whose wild and fantastic films contain a view of good and evil that is both gentler and more nuanced, in which dangers may come from such real and complex sources as decent humans’ relation to the environment; or Maurice Sendak, whose Max, in Where the Wild Things Are—which has now become an impressive film— romps with monsters that represent his own inner world and the dangerous aggression that lurks there. Nor are the monsters even entirely hideous; for the hatred of one’s own internal demons is a frequent source of the need to project them outward onto others. Stories learned in childhood become powerful constituents of the world we inhabit as adults. Which of the following statements is/are TRUE of the paragraph above?",
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The ability to feel concern and to respond with sympathy and imaginative perspective is a deep part of our evolutionary heritage."
+        },
+        {
+          "id": "b",
+          "text": "Traditional storytelling often feeds a deep-seated human tendency to divide the world into binaries, such as pure-impure, us-them, etc., nurturing a pathology that needs to be brought in check."
+        },
+        {
+          "id": "c",
+          "text": "Children’s stories need not be a matter of much concern, since the world of adults is complex enough to comfortably accommodate and/or mitigate the tendencies reflected in such tales."
+        },
+        {
+          "id": "d",
+          "text": "Hayao Miyazaki and Maurice Sendak are held up as exemplars of a new, more nuanced kind of storytelling, that carries the possibility of a changed relationship with the self and the world."
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q26",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Read the three statements below, and the conclusions deduced from these statements. Statements: All letters of the Greek alphabet have symbol-to-sound mapping. Some letters of the Greek alphabet are aspirated plosives. All aspirated plosives in Greek are consonants in Greek. Based on the above, which of the conclusions actually follows from the statements?",
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Some consonants are aspirated plosives."
+        },
+        {
+          "id": "b",
+          "text": "Some consonants have symbol-to-sound mapping."
+        },
+        {
+          "id": "c",
+          "text": "All aspirated plosives are letters of the Greek alphabet."
+        },
+        {
+          "id": "d",
+          "text": "No letters of the Greek alphabet are consonants."
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q27",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the visual element(s) is/are part of the design shown below? The element(s) may be rotated or scaled.",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q27.png",
+      "imageAlt": "UCEED 2017 Question 27 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q28",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the figure(s) can be drawn by neither lifting the pen nor redrawing the line?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q28.png",
+      "imageAlt": "UCEED 2017 Question 28 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q29",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below is a design pattern. Which of the given option(s) can be used as blocks to print the given pattern?",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q29.png",
+      "imageAlt": "UCEED 2017 Question 29 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q30",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are fractal images generated by the repetition and scaling of basic units (shown next to the fractal). Which of the option(s) has/have the correct basic unit?",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q30.png",
+      "imageAlt": "UCEED 2017 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q31",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below is a print roller. Which of the given option(s) is/are partly or fully printed using the roller?",
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q31.png",
+      "imageAlt": "UCEED 2017 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q32",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below is a wooden partition with hinges along KK, LL, MM, NN and OO. The partitions are folded in such a way that only two panels are to be visible side by side at any time. Which of the given option(s) showing the folds is/are possible?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q32.png",
+      "imageAlt": "UCEED 2017 Question 32 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q33",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Consider the following paragraph: “Imagine a gigantic banquet. Hundreds of millions of people come to eat. They eat and drink to their hearts’ content—eating food that is better and more abundant than at the finest tables in ancient Athens or Rome, or even in the palaces of medieval Europe. Then, one day, a man arrives, wearing a white dinner jacket. He says he is holding the bill. Not surprisingly, the diners are in shock. Some begin to deny that this is their bill. Others deny that there even is a bill. Still others deny that they partook of the meal. One diner suggests that the man is not really a waiter, but is only trying to get attention for himself or to raise money for his own projects. Finally, the group concludes that if they simply ignore the waiter, he will go away. This is where we stand today on the subject of global warming. For the past 150 years, industrial civilization has been dining on the energy stored in fossil fuels, and the bill has come due. Yet, we have sat around the dinner table denying that it is our bill, and doubting the credibility of the man who delivered it.” So said Naomi Oreskes in “Merchants of Doubt”. Which of the statements reflect/s the author’s position:",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Global warming is due to our usage of fossil fuels."
+        },
+        {
+          "id": "b",
+          "text": "Global warming may not be man-made, but it is still real."
+        },
+        {
+          "id": "c",
+          "text": "Some are sceptical of what science is telling us about global warming."
+        },
+        {
+          "id": "d",
+          "text": "Some are not willing to take responsibility for global warming."
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q34",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Given below are images of sculpture, furniture and buildings. Which of the statement(s) is/are TRUE for the images given below?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q34.png",
+      "imageAlt": "UCEED 2017 Question 34 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "M and L are by the same designer"
+        },
+        {
+          "id": "b",
+          "text": "P and Q are  by the same designer"
+        },
+        {
+          "id": "c",
+          "text": "L and N are by the same designer"
+        },
+        {
+          "id": "d",
+          "text": "P and R are by same architect"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q35",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the statement(s) is/are TRUE?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Agricultural activities and use of fertilizers leads to higher nitrous oxide concentration"
+        },
+        {
+          "id": "b",
+          "text": "Deforestation leads to decrease in carbon dioxide due to human activities"
+        },
+        {
+          "id": "c",
+          "text": "Oxygen and ozone are not greenhouse gases"
+        },
+        {
+          "id": "d",
+          "text": "Global warming leads to sea level rise"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q36",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the pieces given below can be joined together to form a complete cube?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q36.png",
+      "imageAlt": "UCEED 2017 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q37",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Given all the batteries in the circuits shown below are of same voltage and all the bulbs are of same wattage, and the internal resistance is negligible in all the cases, which of the statement(s) is/are TRUE?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q37.png",
+      "imageAlt": "UCEED 2017 Question 37 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bulbs in circuit Q and R will have same intensity"
+        },
+        {
+          "id": "b",
+          "text": "Bulbs in circuit P and R will have same intensity"
+        },
+        {
+          "id": "c",
+          "text": "Bulb in circuit Q will be the brightest"
+        },
+        {
+          "id": "d",
+          "text": "Bulb in circuit S will not glow"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q38",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Figure 1 shows an unfolded view of a box. The dotted lines depict the folding lines. The options show four fully folded boxes. Identify the box(es) that can be unfolded as figure 1?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q38.png",
+      "imageAlt": "UCEED 2017 Question 38 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q39",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "When force is applied on arms P and Q in the direction indicated by the arrows, R and S move away from each other. When that force is removed, R and S fall back towards each other. Which of the option(s) satisfies (satisfy) the above condition?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q39.png",
+      "imageAlt": "UCEED 2017 Question 39 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q40",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the option(s) given below can fit in the empty box?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q40.png",
+      "imageAlt": "UCEED 2017 Question 40 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q41",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements is/are TRUE about sound?",
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "As you tighten a drum skin, the sound made when you beat it gets lower in pitch."
+        },
+        {
+          "id": "b",
+          "text": "As the water level in a bottle increases, the sound made when you blow over the top of it gets lower in pitch."
+        },
+        {
+          "id": "c",
+          "text": "As the water level in a bottle decreases, the sound you make when you tap on the mouth, periodically gets lower in pitch."
+        },
+        {
+          "id": "d",
+          "text": "When you hit a steel plate to make a loud sound and then hold the edge of the plate tightly between your fingers, the sound becomes higher in pitch."
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q42",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below are photographs of same objects using different settings. Given that the lighting conditions were constant in all, which of the following statement(s) is/are TRUE?",
+      "topic": "Colour and composition",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q42.png",
+      "imageAlt": "UCEED 2017 Question 42 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": " All the photographs are of equal exposure"
+        },
+        {
+          "id": "b",
+          "text": " The third photograph was taken with a moving camera"
+        },
+        {
+          "id": "c",
+          "text": " The photographs are in the order of small to large aperture size"
+        },
+        {
+          "id": "d",
+          "text": "The third photograph was taken with a higher shutter-speed compared to the first photograph"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "answerAlternatives": [
+        [
+          "a",
+          "c"
+        ]
+      ],
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q43",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "When photographs are taken on bright sunny days, there is a possibility of an intense glare appearing in the photograph. Which action(s) can be taken to avoid the glare?",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Change the angle of the camera"
+        },
+        {
+          "id": "b",
+          "text": "Open up the aperture to its maximum"
+        },
+        {
+          "id": "c",
+          "text": "Attach a lens hood"
+        },
+        {
+          "id": "d",
+          "text": "Use a polarizing filter"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q44",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the option(s) describe(s) the films shown below in the correct order?",
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q44.png",
+      "imageAlt": "UCEED 2017 Question 44 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Animation, Adventure, Interview, Fantasy, Comedy, Documentary"
+        },
+        {
+          "id": "b",
+          "text": "Comedy, Adventure, Documentary, Science-Fiction, Mystery, Action"
+        },
+        {
+          "id": "c",
+          "text": "Animation, Adventure, Documentary, Action, Film Noir, War"
+        },
+        {
+          "id": "d",
+          "text": "Comedy, Drama, Action, Science-Fiction, Romance, Thriller"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q45",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown on the left is the logo of Beijing Olympics. Which of the pictogram(s) was/were used in the same Olympics?",
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q45.png",
+      "imageAlt": "UCEED 2017 Question 45 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q46",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the poem given below and identify the Rasa in it. Ashadha’s ending on the mountain found Him weakened, gold ring slipping from his wrist, And mixed his pleasure when a cloud came down So playfully to hug the summit mist, As elephants in heat will butt the ground. In tears withheld he took that fall from grace, From wealth attending on the King of Kings. The otherworld that brimmed in cloudy air Was still discomfort when far longing brings A breath to hold him to that neck’s embrace. With now the rainy month stood close at hand, To fresh Kutaja blooms he adds his plea And asks most courteously the cloud bring news Of welfare to his loved-one—words that she, Revived to hear of him, will understand.",
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Veera often translated as Valour"
+        },
+        {
+          "id": "b",
+          "text": "Hasya often translated as Comic"
+        },
+        {
+          "id": "c",
+          "text": "Adbhuta often translated as Wonder"
+        },
+        {
+          "id": "d",
+          "text": "Shringara often translated as Love"
+        }
+      ],
+      "answer": "d",
+      "category": "Language"
+    },
+    {
+      "id": "q47",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An oxymoron is a figure of speech in which contradictory images or words are juxtaposed in order to intensify a statement or to produce a heightened poetic effect.  Which of the statements given below is NOT an oxymoron?",
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "We eat in order to live, not live in order to eat."
+        },
+        {
+          "id": "b",
+          "text": "Still-waking sleep, that is not what it is!"
+        },
+        {
+          "id": "c",
+          "text": "No light, but rather darkness visible."
+        },
+        {
+          "id": "d",
+          "text": "To that bad eminence; and from despair."
+        }
+      ],
+      "answer": "a",
+      "category": "Language"
+    },
+    {
+      "id": "q48",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the option that will replace the question mark.",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q48.png",
+      "imageAlt": "UCEED 2017 Question 48 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q49",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shape P is folded along the dotted lines to form shape Q and then folded again to form shape R. Identify the pattern on the backside of P.",
+      "topic": "Paper folding, cutting and punching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q49.png",
+      "imageAlt": "UCEED 2017 Question 49 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q50",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An image strip is cut into four pieces. Identify the correct sequence that will complete the image correctly.",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q50.png",
+      "imageAlt": "UCEED 2017 Question 50 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Q, R, P, S"
+        },
+        {
+          "id": "b",
+          "text": "Q, P, S, R"
+        },
+        {
+          "id": "c",
+          "text": "P, S, Q, R"
+        },
+        {
+          "id": "d",
+          "text": "R, P, S, Q"
+        }
+      ],
+      "answer": "d",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q51",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the option that will replace the question mark.",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q51.png",
+      "imageAlt": "UCEED 2017 Question 51 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q52",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Each of the shapes is associated with one or more alphabets. Identify the alphabet(s) for the last shape.",
+      "topic": "Signs and symbols & symbol interpretation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q52.png",
+      "imageAlt": "UCEED 2017 Question 52 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "H"
+        },
+        {
+          "id": "b",
+          "text": "HF"
+        },
+        {
+          "id": "c",
+          "text": "G"
+        },
+        {
+          "id": "d",
+          "text": "J"
+        }
+      ],
+      "answer": "a",
+      "category": "Creativity"
+    },
+    {
+      "id": "q53",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the option that will replace the question mark.",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q53.png",
+      "imageAlt": "UCEED 2017 Question 53 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q54",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The object shown below is rotated by 180 degrees about the X axis in the anticlockwise direction as seen from the top. Identify the trail left by the orange blobs when seen from the top.",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q54.png",
+      "imageAlt": "UCEED 2017 Question 54 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q55",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which shape will exactly fit with Figure 1 without leaving any gaps, given that the shapes can be rotated?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q55.png",
+      "imageAlt": "UCEED 2017 Question 55 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q56",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A cube, a cuboid, a cone and a sphere were developed from an experimental material. In vacuum, the combined mass of the cuboid and the sphere is equivalent to the combined mass of the cube and the cone. The mass of the cuboid is equivalent to the combined mass of the sphere and the cone. The sphere weighed 2 kilograms and occupied a volume of 62.5 cubic cm in vacuum. One of the properties of this material is such that the length of the side of the cube doubles when exposed to air. How many cubes are needed to fill a tank of dimension 50 cm x 50 cm x 50 cm in air?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "1000"
+        },
+        {
+          "id": "b",
+          "text": "125"
+        },
+        {
+          "id": "c",
+          "text": "100"
+        },
+        {
+          "id": "d",
+          "text": "81"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q57",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are the different views of the same ball. Identify its top view.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q57.png",
+      "imageAlt": "UCEED 2017 Question 57 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q58",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the odd one out.",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q58.png",
+      "imageAlt": "UCEED 2017 Question 58 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q59",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The enclosed yellow shape within the letter ‘b’ is called a counter. Which option has the red shape as the counter?",
+      "topic": "Typography & Fonts",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q59.png",
+      "imageAlt": "UCEED 2017 Question 59 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Language & Creativity"
+    },
+    {
+      "id": "q60",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is a schematic figure of two rows of test tubes with the ground shadows seen from the top. The test tubes are of varying heights. Identify the set of test tubes that cast the shadows.",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q60.png",
+      "imageAlt": "UCEED 2017 Question 60 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q61",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A naughty kid plays with a clock kept on a table as shown below. She changes the hour and minute hands clockwise adding 8 hours and 45 minutes to the time and places the clock by rotating 270 degrees anti-clock wise. Identify the option that shows the modified time?",
+      "topic": "Distance and speed",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q61.png",
+      "imageAlt": "UCEED 2017 Question 61 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q62",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "In 2001, one lakh people (10% of the total population) of a city used private vehicles and 50% of the population used public transportation. In 2011, there was a decadal growth of 10% and it was observed that five lakh people used public transportation, while 2 lakh people used private vehicles. Which pie chart depicts the transportation mode usage in 2011?",
+      "topic": "Tables, charts and graphs",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q62.png",
+      "imageAlt": "UCEED 2017 Question 62 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q63",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "In a school of 600 students, 10% played football, hockey and cricket while 60 were engaged in other sports. 18% of the students played football while 90 played cricket exclusively. 60 students played both football and cricket. 66 students played hockey exclusively and another 11% played both hockey and cricket. Which option represents the school?",
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q63.png",
+      "imageAlt": "UCEED 2017 Question 63 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q64",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A cube of side 10 cm is merged with a square pyramid of base 10 cm and height 15 cm. The centers of the base for both the objects are aligned. Identify the top view of the resultant figure from the options given below.",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q64.png",
+      "imageAlt": "UCEED 2017 Question 64 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q65",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Following operations, in the given order have been performed on the figure shown in the box. i. Rotate 180° ii. Flip horizontal (about an axis perpendicular to the plane of the computer screen) iii. Rotate 180° iv. Flip vertical (about an axis perpendicular to the plane of the computer screen) Identify the resultant figure.",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q65.png",
+      "imageAlt": "UCEED 2017 Question 65 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q66",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If gear ‘P’ is the driving gear and rotates clockwise, which of the following statements is true?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q66.png",
+      "imageAlt": "UCEED 2017 Question 66 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Q will rotate clockwise and S will rotate anticlockwise"
+        },
+        {
+          "id": "b",
+          "text": "R and T both will rotate anticlockwise"
+        },
+        {
+          "id": "c",
+          "text": "R will rotate clockwise and U will rotate anticlockwise"
+        },
+        {
+          "id": "d",
+          "text": "S will rotate anticlockwise and U will rotate clockwise"
+        }
+      ],
+      "answer": "c",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q67",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The image in the box on the left hand side shows the open and closed positions for a metal stand. The other two images show the various joints in the stand. If a fixed joint is denoted by ‘f’ and a hinged joint is denoted by ‘h’ then which of the options is correct?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q67.png",
+      "imageAlt": "UCEED 2017 Question 67 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P-f ; Q-h ; R-f ; S-h ; T-h ; U-f ; V-f"
+        },
+        {
+          "id": "b",
+          "text": "P-h ; Q-h ; R-h ; S-f ; T-h ; U-f ; V-h"
+        },
+        {
+          "id": "c",
+          "text": "P-f ; Q-h ; R-f ; S-h ; T-h ; U-h ; V-h"
+        },
+        {
+          "id": "d",
+          "text": "P-f ; Q-h ; R-f ; S-f ; T-h ; U-h ; V-h"
+        }
+      ],
+      "answer": "d",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q68",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Three holes have been drilled through a cube of size 5 x 5 x 5 units. From the options given, identify the form that can fill the holes perfectly?",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q68.png",
+      "imageAlt": "UCEED 2017 Question 68 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q69",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The image in the box given below shows a 3D object. Only one of the options shows the same object from a different view. Identify it.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q69.png",
+      "imageAlt": "UCEED 2017 Question 69 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q70",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Given below is a list of ten idioms with animal/bird/fish/insect origins. Each of the four options contains four meanings. Identify the option that contains four correct meanings for any four of the idioms. I. The elephant in the room II. Hold your horses III. Pig headed IV. Wild goose chase V. Wolf down VI. Red herring VII. Go to the dogs VIII. Hogwash IX. Sacred cow X. Clam up",
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Obvious, adamant, brave attempt, deteriorate"
+        },
+        {
+          "id": "b",
+          "text": "Too big, Stubborn, devour, bluff"
+        },
+        {
+          "id": "c",
+          "text": "Obstinate, foolish pursuit, subterfuge, rubbish"
+        },
+        {
+          "id": "d",
+          "text": "Be patient, recalcitrant, clean up, protected interest"
+        }
+      ],
+      "answer": "c",
+      "category": "Language"
+    },
+    {
+      "id": "q71",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Choose the set of words that will correctly complete the following five sentences from the word sets given in the options I. He (lays / lies) the book on the table. II. The new rules (affected / effected) positive changes in the school. III. The road through the mountains was (tortuous / torturous). IV. The nurse was able to (staunch / stanch) the bleeding. V. When rain threatens, fans are (reticent / reluctant) to buy tickets to the cricket match.",
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "lies, effected, tortuous, stanch, reluctant."
+        },
+        {
+          "id": "b",
+          "text": "lies, affected, torturous, staunch, reticent."
+        },
+        {
+          "id": "c",
+          "text": "lays, effected, torturous, staunch, reluctant."
+        },
+        {
+          "id": "d",
+          "text": "lays, effected, tortuous, stanch, reluctant."
+        }
+      ],
+      "answer": "d",
+      "category": "Language"
+    },
+    {
+      "id": "q72",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Our natural ______________ to focus on the unusual, the dramatic and the _________ is strengthened ______________ by newspapers and other media, but our interest __________ quickly as well.",
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "aversion, grotesque, considerably, increases"
+        },
+        {
+          "id": "b",
+          "text": "penchant, unique, inestimably, intensifies"
+        },
+        {
+          "id": "c",
+          "text": "proclivity, new, immeasurably, wanes"
+        },
+        {
+          "id": "d",
+          "text": "dislike, bizarre, greatly, diminishes"
+        }
+      ],
+      "answer": "c",
+      "category": "Language"
+    },
+    {
+      "id": "q73",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the option that will bisect the given shape into two identical shapes.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q73.png",
+      "imageAlt": "UCEED 2017 Question 73 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q74",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below are two metal bolts. Suppose they were to be rotated (at the same rate) in the two directions as shown by the two arrows respectively, what would happen to the distance between the two bolt heads?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q74.png",
+      "imageAlt": "UCEED 2017 Question 74 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Move closer to each other"
+        },
+        {
+          "id": "b",
+          "text": "Move farther apart from each other"
+        },
+        {
+          "id": "c",
+          "text": "Remain at the same distance from each other"
+        },
+        {
+          "id": "d",
+          "text": "The bolts cannot be rotated"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q75",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Three positions X, Y and Z are marked on the cutting edges of a pair of scissors as shown. Rank the points in terms of cutting strength from strongest to weakest.",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q75.png",
+      "imageAlt": "UCEED 2017 Question 75 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "XYZ"
+        },
+        {
+          "id": "b",
+          "text": "ZYX"
+        },
+        {
+          "id": "c",
+          "text": "YXZ"
+        },
+        {
+          "id": "d",
+          "text": "All are of equal strength"
+        }
+      ],
+      "answer": "a",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q76",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The shapes given in the options can be used to cut figure 1 into a number of identical pieces. Which shape will cut figure 1 such that, all four symbols are included in each of the pieces, and no symbols are left over?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q76.png",
+      "imageAlt": "UCEED 2017 Question 76 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q77",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The given figure 1 is cut into pieces. Identify the option whose pieces can be correctly assembled to form the figure 1.",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q77.png",
+      "imageAlt": "UCEED 2017 Question 77 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q78",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Below is an animation sequence of Raju playing with his hair. However except Frame no.1 all others seem to be mixed up. Choose the correct order.",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q78.png",
+      "imageAlt": "UCEED 2017 Question 78 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q79",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An angry bird is flying in front of a pin-hole camera as seen in the picture below. If it flies back in the opposite direction, what would be the image cast on the inner wall of the camera?",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q79.png",
+      "imageAlt": "UCEED 2017 Question 79 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q80",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A short interview is being planned for live TV as described below: “We start with establishing the interview space, then close-up of the interviewer who introduces the interviewee. As the interview continues we shift between both of them as the questions are answered. After three questions, we end the interview showing both of them in the frame and then close with showing the interview space.” For filming it, four cameras 1, 2, 3 and 4 have been placed as seen in the image below. From the options given, choose the sequence that was most closely followed.",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q80.png",
+      "imageAlt": "UCEED 2017 Question 80 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "2, 4, 1, 4, 1, 4, 1, 4, 1, 2, 3"
+        },
+        {
+          "id": "b",
+          "text": "3, 4, 1, 4, 1, 4, 1, 4, 1, 3, 2"
+        },
+        {
+          "id": "c",
+          "text": "2, 4, 1, 3, 1, 4, 1, 4, 1, 4, 2"
+        },
+        {
+          "id": "d",
+          "text": "2, 4, 1, 4, 1, 4, 1, 4, 1, 3, 2"
+        }
+      ],
+      "answer": "d",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q81",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Two different views of a solid object are shown below. If viewed from a different direction as the arrows suggest, what would the view be?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q81.png",
+      "imageAlt": "UCEED 2017 Question 81 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q82",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Ida is standing on the structure as shown below. She wants to reach points A, B or C, but she can only travel on a continuous surface. Which of the following statements is true?",
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q82.png",
+      "imageAlt": "UCEED 2017 Question 82 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ida will be able to reach only A and B"
+        },
+        {
+          "id": "b",
+          "text": "Ida will be able to reach only C"
+        },
+        {
+          "id": "c",
+          "text": "Ida will be able to reach only A and C"
+        },
+        {
+          "id": "d",
+          "text": "Ida will be able to reach only A"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q83",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Water is kept in four identical beakers but made of four different materials—shiny tin, matt black tin, shiny stainless steel and blue colour plastic. When kept under the sun, with the same amounts of water and for the same amount of time, water in which of the beakers will be the hottest?",
+      "topic": "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Shiny tin beaker"
+        },
+        {
+          "id": "b",
+          "text": "Shiny stainless steel beaker"
+        },
+        {
+          "id": "c",
+          "text": "Blue colour plastic beaker"
+        },
+        {
+          "id": "d",
+          "text": "Matt black tin beaker"
+        }
+      ],
+      "answer": "d",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q84",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is a one point perspective drawing where all the blocks except one share the same converging point. Identify the block.",
+      "topic": "Perspective and depth",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q84.png",
+      "imageAlt": "UCEED 2017 Question 84 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q85",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Below is a set of pictures that show the variety of domes used in Islamic architecture in India. Select the order in which the design of the domes were developed, from the 13th to the 18th centuries CE.",
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2017",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2017-q85.png",
+      "imageAlt": "UCEED 2017 Question 85 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "ii, iii, iv, i, v"
+        },
+        {
+          "id": "b",
+          "text": "iii, i , ii, iv, v"
+        },
+        {
+          "id": "c",
+          "text": "iii, ii, i, iv, v"
+        },
+        {
+          "id": "d",
+          "text": "ii, iii, v, i, iv END OF THE QUESTION PAPER"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    }
+  ]
+}

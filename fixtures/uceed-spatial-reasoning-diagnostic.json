@@ -1,0 +1,664 @@
+{
+  "id": "uceed-spatial-reasoning-diagnostic",
+  "title": "UCEED Spatial Reasoning — Diagnostic Test",
+  "durationSeconds": 1800,
+  "totalQuestions": 18,
+  "maxMarks": 36,
+  "instructions": "18-question spatial reasoning diagnostic covering 2D→3D visualization, rotation, reflection, mirror/water images, symmetry and orthographic views. +2 correct, -0.5 incorrect, 0 unanswered.",
+  "sections": [
+    {
+      "id": "spatial",
+      "title": "Spatial Reasoning"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "In a cube net, faces two positions apart in a straight strip become:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adjacent"
+        },
+        {
+          "id": "b",
+          "text": "Opposite"
+        },
+        {
+          "id": "c",
+          "text": "Coincident"
+        },
+        {
+          "id": "d",
+          "text": "Parallel only"
+        }
+      ],
+      "answer": "b",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "3d-net-logic"
+      ],
+      "topic": "Cube and cuboid nets",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q2",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A 2D rectangle is extruded perpendicular to its plane. The resulting solid is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cylinder"
+        },
+        {
+          "id": "b",
+          "text": "Cone"
+        },
+        {
+          "id": "c",
+          "text": "Cuboid"
+        },
+        {
+          "id": "d",
+          "text": "Sphere"
+        }
+      ],
+      "answer": "c",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "extrusion"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q3",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A figure is rotated 90° clockwise and then 270° clockwise. Net result:",
+      "options": [
+        {
+          "id": "a",
+          "text": "0°"
+        },
+        {
+          "id": "b",
+          "text": "90° clockwise"
+        },
+        {
+          "id": "c",
+          "text": "180°"
+        },
+        {
+          "id": "d",
+          "text": "270° anticlockwise"
+        }
+      ],
+      "answer": "a",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "rotation-composition"
+      ],
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q4",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "Which operation changes handedness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90° rotation"
+        },
+        {
+          "id": "b",
+          "text": "180° rotation"
+        },
+        {
+          "id": "c",
+          "text": "Reflection"
+        },
+        {
+          "id": "d",
+          "text": "Translation"
+        }
+      ],
+      "answer": "c",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "handedness"
+      ],
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q5",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "Reflection in a vertical axis exchanges:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Top/bottom"
+        },
+        {
+          "id": "b",
+          "text": "Left/right"
+        },
+        {
+          "id": "c",
+          "text": "Front/back"
+        },
+        {
+          "id": "d",
+          "text": "Diagonals only"
+        }
+      ],
+      "answer": "b",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "reflection"
+      ],
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q6",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "Reflection in a horizontal axis followed by a vertical-axis reflection is equivalent to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Translation"
+        },
+        {
+          "id": "b",
+          "text": "90° rotation"
+        },
+        {
+          "id": "c",
+          "text": "180° rotation"
+        },
+        {
+          "id": "d",
+          "text": "No change"
+        }
+      ],
+      "answer": "c",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "combined-reflections"
+      ],
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q7",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A vertical mirror is placed to the right of a word. The image has:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Left-right reversal"
+        },
+        {
+          "id": "b",
+          "text": "Top-bottom reversal"
+        },
+        {
+          "id": "c",
+          "text": "No reversal"
+        },
+        {
+          "id": "d",
+          "text": "90° rotation"
+        }
+      ],
+      "answer": "a",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "mirror-image"
+      ],
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q8",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A water image below a figure reverses:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Left/right only"
+        },
+        {
+          "id": "b",
+          "text": "Top/bottom only"
+        },
+        {
+          "id": "c",
+          "text": "Both axes"
+        },
+        {
+          "id": "d",
+          "text": "Neither"
+        }
+      ],
+      "answer": "b",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "water-image"
+      ],
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q9",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "Two mirrors at 90° form how many images of an object between them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "answer": "c",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "multiple-mirrors"
+      ],
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q10",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "Two mirrors at 60° form how many images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "answer": "c",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "multiple-mirrors"
+      ],
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q11",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A regular hexagon has how many lines of symmetry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "answer": "d",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "symmetry-lines"
+      ],
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q12",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A non-square rectangle has rotational symmetry of order:",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "answer": "b",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "rotational-symmetry"
+      ],
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q13",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A rhombus (not square) has how many lines of symmetry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "answer": "c",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "shape-symmetry"
+      ],
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q14",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A solid cylinder standing upright appears from the top as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Circle"
+        },
+        {
+          "id": "b",
+          "text": "Rectangle"
+        },
+        {
+          "id": "c",
+          "text": "Triangle"
+        },
+        {
+          "id": "d",
+          "text": "Semicircle"
+        }
+      ],
+      "answer": "a",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "top-view"
+      ],
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q15",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A cuboid viewed from the front generally shows:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rectangle"
+        },
+        {
+          "id": "b",
+          "text": "Circle"
+        },
+        {
+          "id": "c",
+          "text": "Triangle"
+        },
+        {
+          "id": "d",
+          "text": "Hexagon"
+        }
+      ],
+      "answer": "a",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "front-view"
+      ],
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q16",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A cube sliced parallel to one face produces a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Square"
+        },
+        {
+          "id": "b",
+          "text": "Circle"
+        },
+        {
+          "id": "c",
+          "text": "Pentagon"
+        },
+        {
+          "id": "d",
+          "text": "Ellipse"
+        }
+      ],
+      "answer": "a",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "section-view"
+      ],
+      "topic": "Cross-sections and slicing",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q17",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A 3x3x3 cube has how many completely hidden unit cubes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "answer": "b",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "hidden-cubes"
+      ],
+      "topic": "Block arrangement and stacking",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q18",
+      "sectionId": "spatial",
+      "type": "MCQ",
+      "prompt": "A pinwheel can have rotational symmetry but:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Must have four lines of symmetry"
+        },
+        {
+          "id": "b",
+          "text": "Can have no line of symmetry"
+        },
+        {
+          "id": "c",
+          "text": "Cannot rotate"
+        },
+        {
+          "id": "d",
+          "text": "Is always mirror-symmetric"
+        }
+      ],
+      "answer": "b",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "rotational-vs-line-symmetry"
+      ],
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    }
+  ]
+}

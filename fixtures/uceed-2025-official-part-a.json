@@ -1,0 +1,2703 @@
+{
+  "id": "uceed-2025-official-part-a",
+  "title": "UCEED 2025 Official Question Paper — Part A",
+  "durationSeconds": 7200,
+  "totalQuestions": 57,
+  "maxMarks": 200,
+  "instructions": "Paper Specific Instructions\n\n1. The total duration of the examination is 3 hours. The question paper contains two parts – Part A and Part B. The duration of Part A is 2 hours. Part B will begin after Part A ends. The duration of Part B is 1 hour.\n\n2. Part A is divided into three sections: 1, 2 and 3. All sections are compulsory. Questions in each section are of different types. There are a total of 57 questions in Part A carrying a total of 200 marks. Questions of Part A will appear on the computer for the first 2 hours. Answers to Part A have to be entered in the computer within the first 2 hours.\n\n3. Part B is also compulsory and contains 2 drawing questions of 50 marks each. Questions of Part B will appear on the computer after 2 hours. Answers to Part B have to be given in the answer book provided by the invigilator.\n\n4. Marking scheme of Part A is as follows: Section 1 – Numerical Answer Type (NAT): 14 questions, 4 marks for correct answer, 0 marks for wrong answer, 0 marks for not attempted, 56 marks total. Section 2 – Multiple Select Question (MSQ): 15 questions, partial marking, -1 mark for wrong answer, 0 marks for not attempted, 60 marks total. Section 3 – Multiple Choice Question (MCQ): 28 questions, 3 marks for correct answer, -0.71 marks for wrong answer, 0 marks for not attempted, 84 marks total. Part A total: 57 questions, 200 marks.\n\n5. Section 1: Numerical Answer Type (NAT): 14 questions (4 marks each; no negative marks). For these questions, the answer is a number that needs to be entered using the virtual keyboard on the computer screen. No choices will be shown for these questions. Questions from 1 to 14 belong to this section.\n\n6. Section 2: Multiple Select Questions (MSQ): 15 questions. Each MSQ may have one or more than one correct choice(s) out of the four given. The following is the marking scheme: Full Marks: (+4) If only (all) the correct option(s) is(are) chosen and NONE of the incorrect options is chosen. Partial Marks: (+3) If all the four options are correct but ONLY three options are chosen and NONE of the incorrect options is chosen. Partial Marks: (+2) If three or more options are correct but ONLY two options are chosen, both of which are correct and NONE of the incorrect options is chosen. Partial Marks: (+1) If two or more options are correct but ONLY one option is chosen and it is a correct option and NONE of the incorrect options is chosen. Zero Marks: (0) If NONE of the options is chosen (i.e. the question is unanswered). Negative Marks: (-1) In all other cases. Questions from 15 to 29 belong to this section.\n\n7. Section 3: Multiple Choice Questions (MCQ): 28 questions (3 marks each for the correct answer; 0.71 negative marks for incorrect answers). Each MCQ has four choices out of which ONLY ONE is the correct answer. Questions from 30 to 57 belong to this section.\n\n8. Part B (100 Marks) contains two drawing questions of 50 marks each. Both questions in Part B are mandatory. There is NO NEGATIVE marking in this section. Questions 58 and 59 belong to this section.\n\n9. Calculators, charts, graph-sheets, mathematical tables, mobile phone, watches of any type and other electronic gadgets are NOT allowed in the examination hall.\n\n10. Blank sheets of paper will be provided for rough work.",
+  "sections": [
+    {
+      "id": "part-a-section-1-nat",
+      "title": "Section 1: Numerical Answer Type (NAT)"
+    },
+    {
+      "id": "part-a-section-2-msq",
+      "title": "Section 2: Multiple Select Questions (MSQ)"
+    },
+    {
+      "id": "part-a-section-3-mcq",
+      "title": "Section 3: Multiple Choice Questions (MCQ)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "u25_q01",
+      "originalNumber": "1",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Arithmetic",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "A painter mixes white and black paints to create different shades in two different buckets. He prepares 10 kg in one bucket with 20% black paint in it. He then prepares 20 kg of another shade in the second bucket with 20% black paint in it. He pours the second bucket into the first one. What is the percentage of black paint in the mixture?",
+      "options": [],
+      "answer": {
+        "min": 20,
+        "max": 20
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 4,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.01",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q02",
+      "originalNumber": "2",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Pattern Counting",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "“Betty bought some butter but the butter was too bitter, so she put a little gummy to make the bitter butter yummy.” In the above sentence, if you replace every letter ‘t’ with letter ‘b’, what is the total number of instances in which the same letter appears at least twice in a word?",
+      "options": [],
+      "answer": {
+        "min": 14,
+        "max": 14
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 4,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.02",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q03",
+      "originalNumber": "3",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Logical conditions and statements",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "In the 3 × 3 square on the left, the numbers from 1 to 9 have been filled so that the sum in each row / column / diagonal adds up to 15. If the same exercise is to be carried out for the 4 × 4 square, using the numbers from 1 to 16, what will be the sum of the numbers in each row / column / diagonal?",
+      "options": [],
+      "answer": {
+        "min": 34,
+        "max": 34
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_03.png",
+      "sourcePage": 4,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.03",
+      "imageAlt": "UCEED 2025 diagram for Q.03",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q04",
+      "originalNumber": "4",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Logical conditions and statements",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "10 people are standing in a circle. Each person is assigned a number as shown in the figure below. The first person (numbered 1) is removed. Thereafter, in the clockwise direction, every third person is removed and this is repeated till only two people are left. What is the sum of the numbers assigned to the two people who are left at the end?",
+      "options": [],
+      "answer": {
+        "min": 10,
+        "max": 10
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_04.png",
+      "sourcePage": 5,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.04",
+      "imageAlt": "UCEED 2025 diagram for Q.04",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q05",
+      "originalNumber": "5",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Faces, edges and vertices",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "A cube 4 cm x 4 cm x 4 cm has all its corners chamfered as shown in the figure below. On each of its faces it has got a small tetrahedral notch having edges of 1 cm each. What is the sum of the number of vertices and the number of edges in this solid?",
+      "options": [],
+      "answer": {
+        "min": 120,
+        "max": 120
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_05.png",
+      "sourcePage": 5,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.05",
+      "imageAlt": "UCEED 2025 diagram for Q.05",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q06",
+      "originalNumber": "6",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Area, perimeter, volume and surface area",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "With a straight cut you can slice a circular piece of paper into two pieces. A second cut that crosses the first cut will produce a maximum of four pieces. What is the maximum number of pieces that you can get with a total of four straight cuts?",
+      "options": [],
+      "answer": {
+        "min": 11,
+        "max": 11
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 5,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.06",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q07",
+      "originalNumber": "7",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Pattern Counting",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "What is the highest number of occurrences of a shape in the figure shown?",
+      "options": [],
+      "answer": {
+        "min": 9,
+        "max": 9
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_07.png",
+      "sourcePage": 6,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.07",
+      "imageAlt": "UCEED 2025 diagram for Q.07",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q08",
+      "originalNumber": "8",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Area, perimeter, volume and surface area",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "Each of the rings in the chain in the given figure has an outer diameter of 5 cm and a cross-sectional diameter of 1 cm. What is the maximum end to end length of the chain in cm?",
+      "options": [],
+      "answer": {
+        "min": 32,
+        "max": 32
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_08.png",
+      "sourcePage": 6,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.08",
+      "imageAlt": "UCEED 2025 diagram for Q.08",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q09",
+      "originalNumber": "9",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Arithmetic",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "If 1 inch = 25 mm = 6 pica and 1 pica = 12 points = 16 pixels, what is 6 points + 2 inches + 3 picas + 8 pixels + 25 mm, represented in pixels?",
+      "options": [],
+      "answer": {
+        "min": 352,
+        "max": 352
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 6,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.09",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q10",
+      "originalNumber": "10",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Pattern Sequences",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "What number will replace the question mark?",
+      "options": [],
+      "answer": {
+        "min": 120,
+        "max": 120
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_10.png",
+      "sourcePage": 6,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.10",
+      "imageAlt": "UCEED 2025 diagram for Q.10",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q11",
+      "originalNumber": "11",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Arithmetic",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "What three-digit number can be made from the digits 2, 3, 5, and 7, such that no two digits of the three-digit number are the same and the three-digit number is divisible by each of the digits in it?",
+      "options": [],
+      "answer": {
+        "min": 735,
+        "max": 735
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 7,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.11",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q12",
+      "originalNumber": "12",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Block arrangement and stacking",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "27 cubes of edge 10 cm are arranged to create a larger cube. If the cubes at the eight corners are replaced with spheres of diameter 10 cm, what is the minimum number of cubes that do not touch any of the spheres?",
+      "options": [],
+      "answer": {
+        "min": 7,
+        "max": 7
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 7,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.12",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q13",
+      "originalNumber": "13",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Rotation and reflection",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "Some of the shapes in the image K are either flipped or rotated in the image J. What is the number of flipped shapes in image J?",
+      "options": [],
+      "answer": {
+        "min": 2,
+        "max": 2
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_13.png",
+      "sourcePage": 7,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.13",
+      "imageAlt": "UCEED 2025 diagram for Q.13",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q14",
+      "originalNumber": "14",
+      "topicId": "part-a-section-1-nat",
+      "topic": "Pattern Counting",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "How many different patterns of pens are present in the given figure?",
+      "options": [],
+      "answer": {
+        "min": 5,
+        "max": 5
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_14.png",
+      "sourcePage": 7,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 1",
+        "NAT"
+      ],
+      "sectionId": "part-a-section-1-nat",
+      "originalId": "Q.14",
+      "imageAlt": "UCEED 2025 diagram for Q.14",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q15",
+      "originalNumber": "15",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Spatial Assembly",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options below can be rearranged to make image Q?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_15.png",
+      "sourcePage": 8,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.15",
+      "imageAlt": "UCEED 2025 diagram for Q.15",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q16",
+      "originalNumber": "16",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Natural environment and geography",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "The Tropic of Cancer passes through which of the states shown below?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_16.png",
+      "sourcePage": 8,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.16",
+      "imageAlt": "UCEED 2025 diagram for Q.16",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q17",
+      "originalNumber": "17",
+      "topicId": "part-a-section-2-msq",
+      "topic": "2D and 3D visualization",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the following is / are TRUE for the strip of paper shown in the image?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has two edges."
+        },
+        {
+          "id": "b",
+          "text": "An ant can walk all over the surface of the strip without having to cross an edge."
+        },
+        {
+          "id": "c",
+          "text": "A rotating belt that is similar to the strip of paper will have a uniform wear and tear."
+        },
+        {
+          "id": "d",
+          "text": "This is an optical illusion that can be created as a 2D image but is not possible in 3D."
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_17.png",
+      "sourcePage": 9,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.17",
+      "imageAlt": "UCEED 2025 diagram for Q.17",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q18",
+      "originalNumber": "18",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Everyday objects and mechanisms",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options is / are CORRECT?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The cap of a water bottle is tightened by rotating it in the clockwise direction (as seen from the top)."
+        },
+        {
+          "id": "b",
+          "text": "To turn on a tap, the tap head is rotated clockwise; to turn it off it is rotated counter-clockwise (as seen from the top)."
+        },
+        {
+          "id": "c",
+          "text": "To loosen a nut of a car wheel, a spanner is turned counter-clockwise clockwise (from the point of view of the person using the spanner)."
+        },
+        {
+          "id": "d",
+          "text": "The earth as seen from the North Pole rotates clockwise about its axis."
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 9,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.18",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "u25_q19",
+      "originalNumber": "19",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Everyday objects and mechanisms",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "In the image below, gear 1 rotates in the direction of the arrow. Which of the statements is / are CORRECT?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 and 6 rotate in the same direction."
+        },
+        {
+          "id": "b",
+          "text": "3 and 6 rotate in the opposite direction."
+        },
+        {
+          "id": "c",
+          "text": "1 and 4 rotate in the opposite direction."
+        },
+        {
+          "id": "d",
+          "text": "2 and 6 rotate in the same direction."
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_19.png",
+      "sourcePage": 10,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.19",
+      "imageAlt": "UCEED 2025 diagram for Q.19",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "u25_q20",
+      "originalNumber": "20",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Spatial Assembly",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options does NOT / do NOT match the pieces in the jigsaw puzzle shown in image K?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_20.png",
+      "sourcePage": 10,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.20",
+      "imageAlt": "UCEED 2025 diagram for Q.20",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q21",
+      "originalNumber": "21",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Top, front and side views",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "P and Q show two different views of the same solid object. Which of the options represent(s) the top view of the solid object?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_21.png",
+      "sourcePage": 11,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.21",
+      "imageAlt": "UCEED 2025 diagram for Q.21",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q22",
+      "originalNumber": "22",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Traditional crafts and objects",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which consultant(s) to the Government of India suggested that the metal lota (shown in the given figure) used by many Indians is an appropriate symbol for indigenous design traditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walter Gropius"
+        },
+        {
+          "id": "b",
+          "text": "Charles Eames"
+        },
+        {
+          "id": "c",
+          "text": "Hannes Meyer"
+        },
+        {
+          "id": "d",
+          "text": "Ray Eames"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_22.png",
+      "sourcePage": 11,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.22",
+      "imageAlt": "UCEED 2025 diagram for Q.22",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q23",
+      "originalNumber": "23",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Traditional crafts and objects",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Given below are the silhouettes of two iconic figures in Indian history. Which of the following statements is / are TRUE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both had degrees in law"
+        },
+        {
+          "id": "b",
+          "text": "Both spent time in South Africa"
+        },
+        {
+          "id": "c",
+          "text": "The birthdays of both are in the same month"
+        },
+        {
+          "id": "d",
+          "text": "Both dressed in a manner that expressed their ideology"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_23.png",
+      "sourcePage": 11,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.23",
+      "imageAlt": "UCEED 2025 diagram for Q.23",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q24",
+      "originalNumber": "24",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Area, perimeter, volume and surface area",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Centuries ago, a rich man left behind a treasure represented as a red dot, in the schematic drawing below. If the corners of the triangle represent central locations in the states of Bihar, Telangana and Rajasthan, which is / are the state(s) where one could hunt for this treasure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "West Bengal"
+        },
+        {
+          "id": "b",
+          "text": "Chhattisgarh"
+        },
+        {
+          "id": "c",
+          "text": "Punjab"
+        },
+        {
+          "id": "d",
+          "text": "Madhya Pradesh"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_24.png",
+      "sourcePage": 13,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.24",
+      "imageAlt": "UCEED 2025 diagram for Q.24",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q25",
+      "originalNumber": "25",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Paths, grids and mazes",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options has / have been created by using only a single wire?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_25.png",
+      "sourcePage": 13,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.25",
+      "imageAlt": "UCEED 2025 diagram for Q.25",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q26",
+      "originalNumber": "26",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Pattern decoding",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TATA"
+        },
+        {
+          "id": "b",
+          "text": "AAAAAA"
+        },
+        {
+          "id": "c",
+          "text": "TAAT"
+        },
+        {
+          "id": "d",
+          "text": "TTT"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_26.png",
+      "sourcePage": 14,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.26",
+      "imageAlt": "UCEED 2025 diagram for Q.26",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q27",
+      "originalNumber": "27",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Texture & Pattern Matching",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options has / have shapes that DO NOT match the outlines in figure K?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_27.png",
+      "sourcePage": 14,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.27",
+      "imageAlt": "UCEED 2025 diagram for Q.27",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q28",
+      "originalNumber": "28",
+      "topicId": "part-a-section-2-msq",
+      "topic": "Light, reflection and refraction",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "An object was sharply focused and a photograph was taken using a camera. The photographer wants to blur the background (change the depth of field) in the next photograph. This can be achieved by changing the",
+      "options": [
+        {
+          "id": "a",
+          "text": "size of opening of the lens (aperture)."
+        },
+        {
+          "id": "b",
+          "text": "distance of the object from the camera and again focusing."
+        },
+        {
+          "id": "c",
+          "text": "shutter speed to change the duration for which light enters the camera."
+        },
+        {
+          "id": "d",
+          "text": "focal length of the lens."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 14,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.28",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "u25_q29",
+      "originalNumber": "29",
+      "topicId": "part-a-section-2-msq",
+      "topic": "2D and 3D visualization",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options can be generated by revolving the quadrilateral in image K, about its edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_29.png",
+      "sourcePage": 15,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 2",
+        "MSQ"
+      ],
+      "sectionId": "part-a-section-2-msq",
+      "originalId": "Q.29",
+      "imageAlt": "UCEED 2025 diagram for Q.29",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "partialCredit": {
+        "1": 1,
+        "2": 2,
+        "3": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q30",
+      "originalNumber": "30",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Area, perimeter, volume and surface area",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "What is the length of the edge of the largest cube that can be placed inside a sphere of radius 10 cm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 / (√ 2) cm"
+        },
+        {
+          "id": "b",
+          "text": "10 / (√ 3) cm"
+        },
+        {
+          "id": "c",
+          "text": "20 / (√ 2) cm"
+        },
+        {
+          "id": "d",
+          "text": "20 / (√ 3) cm"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 16,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.30",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q31",
+      "originalNumber": "31",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Pattern Counting",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "What is the total number of triangles in the figure given below?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "26"
+        },
+        {
+          "id": "d",
+          "text": "27"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_31.png",
+      "sourcePage": 16,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.31",
+      "imageAlt": "UCEED 2025 diagram for Q.31",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q32",
+      "originalNumber": "32",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Rotation and reflection",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Image K is rotated by an angle of 45 degrees anticlockwise. Which option represents the rotated image?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_32.png",
+      "sourcePage": 16,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.32",
+      "imageAlt": "UCEED 2025 diagram for Q.32",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q33",
+      "originalNumber": "33",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Logo Identification",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which of the options is the correct logo of India Post?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_33.png",
+      "sourcePage": 17,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.33",
+      "imageAlt": "UCEED 2025 diagram for Q.33",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q34",
+      "originalNumber": "34",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Pattern Sequences",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "What is the next number in the sequence below? 341, 214, 123, 62, 25, ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 17,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.34",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q35",
+      "originalNumber": "35",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Odd-one-out",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option is the odd one out?",
+      "options": [
+        {
+          "id": "a",
+          "text": "WOW MADAM"
+        },
+        {
+          "id": "b",
+          "text": "CIVIC ROTATOR"
+        },
+        {
+          "id": "c",
+          "text": "SOLO LEVEL"
+        },
+        {
+          "id": "d",
+          "text": "NOON SAGAS"
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 17,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.35",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q36",
+      "originalNumber": "36",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Pattern Sequences",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_36.png",
+      "sourcePage": 18,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.36",
+      "imageAlt": "UCEED 2025 diagram for Q.36",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q37",
+      "originalNumber": "37",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Traditional crafts and objects",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Phulkari, Chikankari, Sambalpuri and Paithani are weaving traditions from different states of India. Which option lists them in the correct sequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uttar Pradesh, Maharashtra, Assam, Punjab"
+        },
+        {
+          "id": "b",
+          "text": "Punjab, Uttar Pradesh, Odisha, Maharashtra"
+        },
+        {
+          "id": "c",
+          "text": "Uttar Pradesh, Odisha, Punjab, Maharashtra"
+        },
+        {
+          "id": "d",
+          "text": "Odisha, Uttar Pradesh, Assam, Punjab"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 18,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.37",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q38",
+      "originalNumber": "38",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Typography & Fonts",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "What is the number of fonts used in the following sentence?\n\nFrom the time of Leonardo Da Vinci, until the end of the eighteenth century, Science and Art were much closer than today.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_38.png",
+      "sourcePage": 18,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.38",
+      "imageAlt": "UCEED 2025 diagram for Q.38",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Language & Creativity"
+    },
+    {
+      "id": "u25_q39",
+      "originalNumber": "39",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Traditional crafts and objects",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "The _______ government organizes the Hornbill Festival each December, promoting cultural heritage and fostering interaction between tribes. The festival has been named after a ______.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chhatisgarh, bird"
+        },
+        {
+          "id": "b",
+          "text": "Nagaland, bird"
+        },
+        {
+          "id": "c",
+          "text": "Manipur, flower"
+        },
+        {
+          "id": "d",
+          "text": "Shillong, tribal musical instrument"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 19,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.39",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q40",
+      "originalNumber": "40",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Traditional crafts and objects",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "The lost wax process is used for ______________.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Honey making"
+        },
+        {
+          "id": "b",
+          "text": "Jaggery making"
+        },
+        {
+          "id": "c",
+          "text": "Batik painting"
+        },
+        {
+          "id": "d",
+          "text": "Metal casting"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 19,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.40",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q41",
+      "originalNumber": "41",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Balance and stability",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "You need to hang a large rectangular picture frame on a wall in an empty room. To ensure that it is vertical (and not tilted), which of the following will help you hang the picture correctly (not tilted)? (No additional items are to be used other than the ones specified in each of the options)",
+      "options": [
+        {
+          "id": "a",
+          "text": "A wooden stick, a cutter and a pencil"
+        },
+        {
+          "id": "b",
+          "text": "A pencil, a compass and a cutter"
+        },
+        {
+          "id": "c",
+          "text": "A flexible and transparent pipe and a mug of water"
+        },
+        {
+          "id": "d",
+          "text": "Some card paper, a steel-ruler and a pair of scissors"
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 19,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.41",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "u25_q42",
+      "originalNumber": "42",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Odd-one-out",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which of the options is the odd one?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cobra"
+        },
+        {
+          "id": "b",
+          "text": "Krait"
+        },
+        {
+          "id": "c",
+          "text": "Rat Snake"
+        },
+        {
+          "id": "d",
+          "text": "Viper"
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 19,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.42",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q43",
+      "originalNumber": "43",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Odd-one-out",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which of the following options is the odd one?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electroplating"
+        },
+        {
+          "id": "b",
+          "text": "Anodizing"
+        },
+        {
+          "id": "c",
+          "text": "Powder Coating"
+        },
+        {
+          "id": "d",
+          "text": "Drilling"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 19,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.43",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q44",
+      "originalNumber": "44",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Pattern Sequences",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "What is the next number in the sequence below? 7, 11, 18, 30, 50, ___",
+      "options": [
+        {
+          "id": "a",
+          "text": "83"
+        },
+        {
+          "id": "b",
+          "text": "84"
+        },
+        {
+          "id": "c",
+          "text": "85"
+        },
+        {
+          "id": "d",
+          "text": "86"
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 20,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.44",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q45",
+      "originalNumber": "45",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Traditional crafts and objects",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "The well-known masterpiece “Mona Lisa” was painted by Leonardo Da Vinci in the 16th Century. Nearly 500 years later another artist made a satirical reference to it; he copied the “Mona Lisa” but painted a moustache on her! Which art movement was this artist associated with?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dadaism"
+        },
+        {
+          "id": "b",
+          "text": "Cubism"
+        },
+        {
+          "id": "c",
+          "text": "Impressionism"
+        },
+        {
+          "id": "d",
+          "text": "Pop-art"
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 20,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.45",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q46",
+      "originalNumber": "46",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Natural environment and geography",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which of the options matches the fruit and the leaf correctly? (the images are not to scale)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mango-1, Chikoo-2, Guava-3, Jackfruit-4"
+        },
+        {
+          "id": "b",
+          "text": "Mango-3, Chikoo-4, Guava-2, Jackfruit-1"
+        },
+        {
+          "id": "c",
+          "text": "Mango-4, Chikoo-2, Guava-3, Jackfruit-1"
+        },
+        {
+          "id": "d",
+          "text": "Mango-2, Chikoo-3, Guava-1, Jackfruit-4"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_46.png",
+      "sourcePage": 20,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.46",
+      "imageAlt": "UCEED 2025 diagram for Q.46",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q47",
+      "originalNumber": "47",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Natural environment and geography",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which are the rivers numbered from 1 to 4 in the map below?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ravi, Ganga, Krishna, Cauvery"
+        },
+        {
+          "id": "b",
+          "text": "Sutlej, Yamuna, Godavari, Cauvery"
+        },
+        {
+          "id": "c",
+          "text": "Indus, Ganga, Godavari, Krishna"
+        },
+        {
+          "id": "d",
+          "text": "Chenab, Yamuna, Godavari, Cauvery"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_47.png",
+      "sourcePage": 21,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.47",
+      "imageAlt": "UCEED 2025 diagram for Q.47",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "u25_q48",
+      "originalNumber": "48",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Sequence of operation",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which of the sequences in the options will result in the right pattern for a running man?",
+      "options": [
+        {
+          "id": "a",
+          "text": "K Q J G Y F H"
+        },
+        {
+          "id": "b",
+          "text": "K G J Q Y F H"
+        },
+        {
+          "id": "c",
+          "text": "K F Q G Y J H"
+        },
+        {
+          "id": "d",
+          "text": "K F Q J Y G H"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_48.png",
+      "sourcePage": 21,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.48",
+      "imageAlt": "UCEED 2025 diagram for Q.48",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q49",
+      "originalNumber": "49",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which of the following is the hardest wood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Teak"
+        },
+        {
+          "id": "b",
+          "text": "Thorny Acacia"
+        },
+        {
+          "id": "c",
+          "text": "Mango"
+        },
+        {
+          "id": "d",
+          "text": "Rosewood"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 22,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.49",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "u25_q50",
+      "originalNumber": "50",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Colour and composition",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Hex codes are used to specify colours on the computer. What colour is the Hex Code CCCCCC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "White (100% white)"
+        },
+        {
+          "id": "b",
+          "text": "Black (100% black)"
+        },
+        {
+          "id": "c",
+          "text": "Dark Grey (80% black, 20% white)"
+        },
+        {
+          "id": "d",
+          "text": "Light Grey (20% black, 80% white)"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 22,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.50",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q51",
+      "originalNumber": "51",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Mirror images and water images",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which is the correct representation in the options, if the image K shown below is flipped about the vertical axis (shown on the right side of K)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_51.png",
+      "sourcePage": 22,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.51",
+      "imageAlt": "UCEED 2025 diagram for Q.51",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q52",
+      "originalNumber": "52",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Rotation and reflection",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Shapes are cut out from two Black Discs, Disc-X and Disc-Y as given below. Identify the correct image, when Disc-Y is kept on top of Disc-X and rotated 60 degrees anti-clockwise.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_52.png",
+      "sourcePage": 22,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.52",
+      "imageAlt": "UCEED 2025 diagram for Q.52",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q53",
+      "originalNumber": "53",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Logical conditions and statements",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "In the cursed land of Weirdisthan, strength of animals was disproportionately distributed. Horse has half the strength of a Dog and four times the strength of an Elephant. Monkey has three times the strength of a Rhino. Elephant has half the strength of a Rhino. One Dog was becoming a danger for other animals and they decided to assign a team of animal soldiers to overpower him. Which team of soldiers managed to overpower the dog?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One Rhino and One Monkey"
+        },
+        {
+          "id": "b",
+          "text": "One Rhino, One Horse and One Elephant"
+        },
+        {
+          "id": "c",
+          "text": "One Horse and One Monkey"
+        },
+        {
+          "id": "d",
+          "text": "Two Horses"
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "sourcePage": 23,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.53",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "u25_q54",
+      "originalNumber": "54",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Sequence of operation",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "A clock is displaced horizontally at a uniform rate along the direction shown. If the tip of the hour hand is traced from 2 AM to 9 AM, which option shows the correct tracing pattern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_54.png",
+      "sourcePage": 23,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.54",
+      "imageAlt": "UCEED 2025 diagram for Q.54",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "u25_q55",
+      "originalNumber": "55",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Mirror images and water images",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which of the options shows the word “TRANSFORM” as it would appear after it is reflected horizontally along AXIS 1 and then vertically along AXIS 2, as indicated in the figure below?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_55.png",
+      "sourcePage": 24,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.55",
+      "imageAlt": "UCEED 2025 diagram for Q.55",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q56",
+      "originalNumber": "56",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Faces, edges and vertices",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "The shape L is extruded along Z-axis to form a solid as shown in the figure. How many shapes in the Set K will have more than 8 surfaces when extruded along Z-axis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_56.png",
+      "sourcePage": 24,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.56",
+      "imageAlt": "UCEED 2025 diagram for Q.56",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "u25_q57",
+      "originalNumber": "57",
+      "topicId": "part-a-section-3-mcq",
+      "topic": "Paths, grids and mazes",
+      "sourceLabel": "UCEED 2025. Question Paper",
+      "examYear": 2025,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Residents of planet Earthella are planning to abandon it and fly to planet Marsella because of an acute water crisis. They may choose any of the flight paths connecting Earthella to Marsella through a set of intermediate refuelling stations. How many unique flight paths be charted out if paths cannot retrace any segment that they have already traversed or revisit any station (including Earthella)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "19"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "/media/uceed-2025/Q_57.png",
+      "sourcePage": 24,
+      "tags": [
+        "UCEED 2025",
+        "Part A",
+        "Section 3",
+        "MCQ"
+      ],
+      "sectionId": "part-a-section-3-mcq",
+      "originalId": "Q.57",
+      "imageAlt": "UCEED 2025 diagram for Q.57",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "category": "Visualization & Spatial Reasoning"
+    }
+  ]
+}

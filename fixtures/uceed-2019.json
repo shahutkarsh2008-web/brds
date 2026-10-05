@@ -30,7 +30,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Pattern Counting",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -41,7 +41,8 @@
       "answer": {
         "min": 3,
         "max": 3
-      }
+      },
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q02",
@@ -53,7 +54,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Faces, edges and vertices",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -64,7 +65,8 @@
       "answer": {
         "min": 22,
         "max": 22
-      }
+      },
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q03",
@@ -76,7 +78,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Counting and arrangements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -91,7 +93,8 @@
           315,
           -315
         ]
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q04",
@@ -103,7 +106,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Block arrangement and stacking",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -114,7 +117,8 @@
       "answer": {
         "min": 44,
         "max": 44
-      }
+      },
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q05",
@@ -126,7 +130,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Pattern decoding",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -137,7 +141,8 @@
       "answer": {
         "min": 18,
         "max": 18
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q06",
@@ -149,7 +154,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Counting and arrangements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -160,7 +165,8 @@
       "answer": {
         "min": 18,
         "max": 18
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q07",
@@ -172,7 +178,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Pattern Counting",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -183,7 +189,8 @@
       "answer": {
         "min": 20,
         "max": 20
-      }
+      },
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q08",
@@ -195,7 +202,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Distance and speed",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -206,7 +213,8 @@
       "answer": {
         "min": 7,
         "max": 7
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q09",
@@ -218,7 +226,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Faces, edges and vertices",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -229,7 +237,8 @@
       "answer": {
         "min": 9,
         "max": 9
-      }
+      },
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q10",
@@ -241,7 +250,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Block arrangement and stacking",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -252,7 +261,8 @@
       "answer": {
         "min": 57,
         "max": 57
-      }
+      },
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q11",
@@ -264,7 +274,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Faces, edges and vertices",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -275,7 +285,8 @@
       "answer": {
         "min": 10,
         "max": 10
-      }
+      },
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q12",
@@ -287,7 +298,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Area, perimeter, volume and surface area",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -298,7 +309,8 @@
       "answer": {
         "min": 450,
         "max": 450
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q13",
@@ -310,7 +322,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Pattern decoding",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -321,7 +333,8 @@
       "answer": {
         "min": 399,
         "max": 399
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q14",
@@ -333,7 +346,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Area, perimeter, volume and surface area",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -344,7 +357,8 @@
       "answer": {
         "min": 96,
         "max": 96
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q15",
@@ -356,7 +370,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Area, perimeter, volume and surface area",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -367,7 +381,8 @@
       "answer": {
         "min": 24,
         "max": 24
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q16",
@@ -379,7 +394,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Typography & Fonts",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -390,7 +405,8 @@
       "answer": {
         "min": 1190,
         "max": 1190
-      }
+      },
+      "category": "Language & Creativity"
     },
     {
       "id": "q17",
@@ -402,7 +418,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Faces, edges and vertices",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -417,7 +433,8 @@
           22,
           23
         ]
-      }
+      },
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q18",
@@ -429,7 +446,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Symmetry — reflection and rotational",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -440,7 +457,8 @@
       "answer": {
         "min": 9,
         "max": 9
-      }
+      },
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q19",
@@ -452,7 +470,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Area, perimeter, volume and surface area",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -463,7 +481,8 @@
       "answer": {
         "min": 112,
         "max": 112
-      }
+      },
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q20",
@@ -475,7 +494,7 @@
         "incorrect": 0,
         "unanswered": 0
       },
-      "topic": "Section A: Numerical Answer Type (NAT)",
+      "topic": "Pattern Counting",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -486,7 +505,8 @@
       "answer": {
         "min": 160,
         "max": 160
-      }
+      },
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q21",
@@ -498,7 +518,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Texture & Pattern Matching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -527,7 +547,8 @@
       "answer": [
         "c",
         "d"
-      ]
+      ],
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q22",
@@ -539,7 +560,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Traditional crafts and objects",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -568,7 +589,8 @@
       "answer": [
         "a",
         "b"
-      ]
+      ],
+      "category": "Environment & Society"
     },
     {
       "id": "q23",
@@ -580,7 +602,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Cube and cuboid nets",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -610,7 +632,8 @@
         "b",
         "c",
         "d"
-      ]
+      ],
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q24",
@@ -622,7 +645,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Top, front and side views",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -653,7 +676,8 @@
         "b",
         "c",
         "d"
-      ]
+      ],
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q25",
@@ -665,7 +689,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Tables, charts and graphs",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -693,7 +717,8 @@
       ],
       "answer": [
         "c"
-      ]
+      ],
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q26",
@@ -705,7 +730,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Paths, grids and mazes",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -734,7 +759,8 @@
       "answer": [
         "b",
         "d"
-      ]
+      ],
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q27",
@@ -746,7 +772,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Texture & Pattern Matching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -774,7 +800,8 @@
       ],
       "answer": [
         "c"
-      ]
+      ],
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q28",
@@ -786,7 +813,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Logical conditions and statements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -816,7 +843,8 @@
         "a",
         "c",
         "d"
-      ]
+      ],
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q29",
@@ -828,7 +856,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Cross-sections and slicing",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -857,7 +885,8 @@
       "answer": [
         "a",
         "b"
-      ]
+      ],
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q30",
@@ -869,7 +898,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Texture & Pattern Matching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -898,7 +927,8 @@
       "answer": [
         "a",
         "c"
-      ]
+      ],
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q31",
@@ -910,7 +940,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Natural environment and geography",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -940,7 +970,8 @@
         "a",
         "c",
         "d"
-      ]
+      ],
+      "category": "Environment & Society"
     },
     {
       "id": "q32",
@@ -952,7 +983,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Rotation and reflection",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -981,7 +1012,8 @@
       "answer": [
         "b",
         "d"
-      ]
+      ],
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q33",
@@ -993,7 +1025,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Natural environment and geography",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1023,7 +1055,8 @@
         "a",
         "b",
         "d"
-      ]
+      ],
+      "category": "Environment & Society"
     },
     {
       "id": "q34",
@@ -1035,7 +1068,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Typography & Fonts",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1064,7 +1097,8 @@
       "answer": [
         "b",
         "d"
-      ]
+      ],
+      "category": "Language & Creativity"
     },
     {
       "id": "q35",
@@ -1076,7 +1110,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Everyday objects and mechanisms",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1105,7 +1139,8 @@
       "answer": [
         "a",
         "c"
-      ]
+      ],
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q36",
@@ -1117,7 +1152,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Everyday objects and mechanisms",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1146,7 +1181,8 @@
       "answer": [
         "a",
         "c"
-      ]
+      ],
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q37",
@@ -1158,7 +1194,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Paper folding, cutting and punching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1188,7 +1224,8 @@
         "a",
         "b",
         "d"
-      ]
+      ],
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q38",
@@ -1200,7 +1237,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Counting and arrangements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1229,7 +1266,8 @@
       "answer": [
         "a",
         "c"
-      ]
+      ],
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q39",
@@ -1241,7 +1279,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Balance and stability",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1270,7 +1308,8 @@
       "answer": [
         "b",
         "d"
-      ]
+      ],
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q40",
@@ -1282,7 +1321,7 @@
         "incorrect": -0.19,
         "unanswered": 0
       },
-      "topic": "Section B: Multiple Select Questions (MSQ)",
+      "topic": "Logical conditions and statements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1313,7 +1352,8 @@
         "b",
         "c",
         "d"
-      ]
+      ],
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q41",
@@ -1325,7 +1365,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Natural environment and geography",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1351,7 +1391,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Environment & Society"
     },
     {
       "id": "q42",
@@ -1363,7 +1404,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Typography & Fonts",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1389,7 +1430,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Language & Creativity"
     },
     {
       "id": "q43",
@@ -1401,7 +1443,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Logical conditions and statements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1425,7 +1467,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q44",
@@ -1437,7 +1480,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Paper folding, cutting and punching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1461,7 +1504,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q45",
@@ -1473,7 +1517,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Paper folding, cutting and punching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1497,7 +1541,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q46",
@@ -1509,7 +1554,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Light, reflection and refraction",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1533,7 +1578,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q47",
@@ -1545,7 +1591,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Top, front and side views",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1569,7 +1615,8 @@
           "text": "30"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q48",
@@ -1581,7 +1628,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Human Anatomy & Proportion",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1605,7 +1652,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q49",
@@ -1617,7 +1665,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Top, front and side views",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1641,7 +1689,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q50",
@@ -1653,7 +1702,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Mirror images and water images",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1677,7 +1726,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q51",
@@ -1689,7 +1739,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Light, reflection and refraction",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1715,7 +1765,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q52",
@@ -1727,7 +1778,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Top, front and side views",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1753,7 +1804,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q53",
@@ -1765,7 +1817,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Arithmetic",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1791,7 +1843,8 @@
           "text": "9"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q54",
@@ -1803,7 +1856,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Logical conditions and statements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1829,7 +1882,8 @@
           "text": "S is the liar"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q55",
@@ -1841,7 +1895,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Spatial Assembly",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1867,7 +1921,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q56",
@@ -1879,7 +1934,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Paper folding, cutting and punching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1905,7 +1960,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q57",
@@ -1917,7 +1973,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Paper folding, cutting and punching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1943,7 +1999,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q58",
@@ -1955,7 +2012,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Pattern Sequences",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -1981,7 +2038,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q59",
@@ -1993,7 +2051,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Spatial Assembly",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2019,7 +2077,8 @@
           "text": "ci, ae, dh"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q60",
@@ -2031,7 +2090,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Rotation and reflection",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2057,7 +2116,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q61",
@@ -2069,7 +2129,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Rotation and reflection",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2095,7 +2155,8 @@
           "text": "North"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q62",
@@ -2107,7 +2168,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Cross-sections and slicing",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2133,7 +2194,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q63",
@@ -2145,7 +2207,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Area, perimeter, volume and surface area",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2171,7 +2233,8 @@
           "text": "P and R"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q64",
@@ -2183,7 +2246,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Distance and speed",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2209,7 +2272,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q65",
@@ -2221,7 +2285,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Pattern Sequences",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2247,7 +2311,8 @@
           "text": "30"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q66",
@@ -2259,7 +2324,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Rotation and reflection",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2285,7 +2350,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q67",
@@ -2297,7 +2363,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Block arrangement and stacking",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2323,7 +2389,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q68",
@@ -2335,7 +2402,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Pattern Sequences",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2361,7 +2428,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q69",
@@ -2373,7 +2441,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Logical conditions and statements",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2399,7 +2467,8 @@
           "text": "Paediatrics"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q70",
@@ -2411,7 +2480,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Everyday objects and mechanisms",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2437,7 +2506,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q71",
@@ -2449,7 +2519,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Pattern Sequences",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2475,7 +2545,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q72",
@@ -2487,7 +2558,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Rotation and reflection",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2513,7 +2584,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q73",
@@ -2525,7 +2597,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Traditional crafts and objects",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2551,7 +2623,8 @@
           "text": "Pakistan, Japan, India, Mongolia"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Environment & Society"
     },
     {
       "id": "q74",
@@ -2563,7 +2636,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Traditional crafts and objects",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2589,7 +2662,8 @@
           "text": "Bending, Casting, Forging, Punching"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Environment & Society"
     },
     {
       "id": "q75",
@@ -2601,7 +2675,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Usability",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2627,7 +2701,8 @@
           "text": "R is ergonomically comfortable and Q is most stable in terms of centre of gravity"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q76",
@@ -2639,7 +2714,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Everyday objects and mechanisms",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2665,7 +2740,8 @@
           "text": "4 is true, 1 and 3 are false"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q77",
@@ -2677,7 +2753,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Mirror images and water images",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2703,7 +2779,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q78",
@@ -2715,7 +2792,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Paper folding, cutting and punching",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2741,7 +2818,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q79",
@@ -2753,7 +2831,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Cube and cuboid nets",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2779,7 +2857,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q80",
@@ -2791,7 +2870,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Balance and stability",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2817,7 +2896,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "d"
+      "answer": "d",
+      "category": "Practical & Scientific Knowledge"
     },
     {
       "id": "q81",
@@ -2829,7 +2909,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Spatial Assembly",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2855,7 +2935,8 @@
           "text": "3"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
     },
     {
       "id": "q82",
@@ -2867,7 +2948,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Human Anatomy & Proportion",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2893,7 +2974,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "b"
+      "answer": "b",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q83",
@@ -2905,7 +2987,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Area, perimeter, volume and surface area",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2931,7 +3013,8 @@
           "text": "12"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
     },
     {
       "id": "q84",
@@ -2943,7 +3026,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Sequence of operation",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -2969,7 +3052,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "c"
+      "answer": "c",
+      "category": "Observation & Design Sensitivity"
     },
     {
       "id": "q85",
@@ -2981,7 +3065,7 @@
         "incorrect": -1.32,
         "unanswered": 0
       },
-      "topic": "Section C: Multiple Choice Questions (MCQ)",
+      "topic": "Spatial Assembly",
       "tags": [
         "uceed-2019",
         "pyq",
@@ -3007,7 +3091,8 @@
           "text": "D — see diagram"
         }
       ],
-      "answer": "a"
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
     }
   ]
 }

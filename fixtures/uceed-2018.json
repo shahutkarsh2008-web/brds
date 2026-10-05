@@ -1,0 +1,3122 @@
+{
+  "id": "uceed-2018",
+  "title": "UCEED 2018 Official Paper",
+  "durationSeconds": 7200,
+  "totalQuestions": 85,
+  "maxMarks": 300,
+  "instructions": "Official UCEED 2018 Question Paper & Final Answer Key (Part A: 85 questions, 300 marks, 120 minutes). Section 1 NAT: Q1–20 (+4/0). Section 2 MSQ: Q21–45 (+4/0 with partial credit). Section 3 MCQ: Q46–85 (+3/-0.71).",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "Section 1 · NAT (80 marks)"
+    },
+    {
+      "id": "msq",
+      "title": "Section 2 · MSQ (100 marks)"
+    },
+    {
+      "id": "mcq",
+      "title": "Section 3 · MCQ (120 marks)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many different types of characters appear in the figure given below?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q01.png",
+      "imageAlt": "UCEED 2018 Question 1 Diagram",
+      "answer": {
+        "min": 21,
+        "max": 21
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Given below is a series of numbers. Which number will replace the question mark?\n101, 103, 107, 109, ?, 127, 131, 137, 139, 149, 151, 157, 163",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q02.png",
+      "imageAlt": "UCEED 2018 Question 2 Diagram",
+      "answer": {
+        "min": 113,
+        "max": 113
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many lines are there in the image given below?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q03.png",
+      "imageAlt": "UCEED 2018 Question 3 Diagram",
+      "answer": {
+        "min": 22,
+        "max": 22
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many configurations of blocks appear only once in the figure given below?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Block arrangement and stacking",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q04.png",
+      "imageAlt": "UCEED 2018 Question 4 Diagram",
+      "answer": {
+        "min": 12,
+        "max": 12
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q05",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "What is the number of fonts used in the words given below?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Typography & Fonts",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q05.png",
+      "imageAlt": "UCEED 2018 Question 5 Diagram",
+      "answer": {
+        "min": 6,
+        "max": 6
+      },
+      "category": "Language & Creativity"
+    },
+    {
+      "id": "q06",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "What is the maximum number of whole cuboids of length = 2 cm, breadth = 1 cm and height = 1 cm that can be packed into a larger cuboid of length = 3 cm, breadth = 3 cm and height = 11 cm?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q06.png",
+      "imageAlt": "UCEED 2018 Question 6 Diagram",
+      "answer": {
+        "min": 49,
+        "max": 49
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q07",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Prof. Paittiyam, in an attempt to create the world’s most delicious dish, managed to merge a cylindrical Idli (diameter = 17 cm, height = 6 cm) with a torus shaped medu wada (inner hole diameter = 2 cm, outer diameter = 16 cm, and tube diameter i.e height of torus = 7 cm) such that the medu wada is parallel to the base of the Idli and the centeroids of the two solids coincide. How many surfaces does the resulting solid contain?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Faces, edges and vertices",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q07.png",
+      "imageAlt": "UCEED 2018 Question 7 Diagram",
+      "answer": {
+        "min": 7,
+        "max": 7
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q08",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "What is the maximum number of equilateral triangles (side 3 cm) that can be placed in a square of side 6.8 cm without overlapping each other?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q08.png",
+      "imageAlt": "UCEED 2018 Question 8 Diagram",
+      "answer": {
+        "min": 8,
+        "max": 8
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q09",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many triangles are there in the figure shown below?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q09.png",
+      "imageAlt": "UCEED 2018 Question 9 Diagram",
+      "answer": {
+        "min": 40,
+        "max": 40
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q10",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Count the number of stacked triangular pieces in the image shown below.",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Block arrangement and stacking",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q10.png",
+      "imageAlt": "UCEED 2018 Question 10 Diagram",
+      "answer": {
+        "min": 46,
+        "max": 46
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q11",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown below is a combination of fixed pulleys. If the triangular load moves down, how many pulleys will rotate in the same direction as the smallest pulley (including itself)? The overlapping paths do not interfere with each other.",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q11.png",
+      "imageAlt": "UCEED 2018 Question 11 Diagram",
+      "answer": {
+        "min": 11,
+        "max": 11
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q12",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The current time is 10 minutes past 3 in the afternoon. What will the angle be between the hour hand and the minute hand of the clock, 4 hours and 40 minutes from now?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Distance and speed",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q12.png",
+      "imageAlt": "UCEED 2018 Question 12 Diagram",
+      "answer": {
+        "min": 65,
+        "max": 65
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q13",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The word ‘Ape’ is an anagram of ‘Pea’. How many of the following words are anagrams of animals?\nGlow, flow, loin, sit, balm, bare, god, lane, act, tab, bit, tar, reef",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q13.png",
+      "imageAlt": "UCEED 2018 Question 13 Diagram",
+      "answer": {
+        "min": 8,
+        "max": 8
+      },
+      "category": "Language"
+    },
+    {
+      "id": "q14",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Privacy of a space depends on the level of closure it has from its surroundings i.e. the difficulty of accessing that space from outside the house. The figure below shows the plans of four houses at a village street junction. Which is the most private room amongst all the rooms across all the houses?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Usability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q14.png",
+      "imageAlt": "UCEED 2018 Question 14 Diagram",
+      "answer": {
+        "min": 25,
+        "max": 25
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q15",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The figure below shows the layout plan of the conservative Themmalwadi village which consists of a cluster of houses. Black lines represent walls and the openings in those walls represent either windows or doors. Also marked are the houses of Riya (who lives with her family) and Barkya, who are in love and having an affair. So, hidden from the eyes of the villagers, they regularly meet at night in Barkya’s house. Themmalwadi is so conservative that even the sight of women on the street at night raises eyebrows. If Riya takes the path that has the least number of openings, what is the number of openings that she will have to pass by to get to Barkya’s house?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Paths, grids and mazes",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q15.png",
+      "imageAlt": "UCEED 2018 Question 15 Diagram",
+      "answer": {
+        "min": 3,
+        "max": 3
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q16",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Shown in the figure is a pyramid with a square base, formed by vertices EFGH and a top vertex I. The diagonally opposite vertices, EG and FH are connected to form the vertex J at their intersection. The vertices I and J are also connected as shown. How many triangles are formed by all these vertices?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q16.png",
+      "imageAlt": "UCEED 2018 Question 16 Diagram",
+      "answer": {
+        "min": 18,
+        "max": 18
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q17",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The length and breadth of the white rectangle are 6 and 4 respectively. The proportions of the outer black, middle red and inner white rectangles are the same. What is the length of the hypotenuse of triangle ABC?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q17.png",
+      "imageAlt": "UCEED 2018 Question 17 Diagram",
+      "answer": {
+        "min": 20,
+        "max": 20
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q18",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Meethapur works on a barter system. Each person there loves different sweets. Mukund is willing to exchange 2 toffees for a lollypop and 3 ice creams for a toffee. Ranjana is willing to exchange one ice cream for 2 lollypops and 3 toffees for a lollypop. Mukund and Ranjana don’t know each other, but both of them know Sita who loves toffees. Sita has one lollypop. She can meet Ranjana and Mukund only once (not necessarily in that order). What is the maximum number of toffees that Sita can get?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Economy & Society",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q18.png",
+      "imageAlt": "UCEED 2018 Question 18 Diagram",
+      "answer": {
+        "min": 36,
+        "max": 36
+      },
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q19",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Atul has nine cats that always fight with each other. He puts all of them into a square box. What is the least number of square partitions he must use to keep all the cats separated from each other? You may use any size of square partitions.",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q19.png",
+      "imageAlt": "UCEED 2018 Question 19 Diagram",
+      "answer": {
+        "min": 2,
+        "max": 2
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q20",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many differences are there in the two images shown below?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "nat"
+      ],
+      "image": "/media/uceed-2018-q20.png",
+      "imageAlt": "UCEED 2018 Question 20 Diagram",
+      "answer": {
+        "min": 10,
+        "max": 10
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q21",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "On the left is a photograph. Which option(s) is/are part(s) of that photograph?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q21.png",
+      "imageAlt": "UCEED 2018 Question 21 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q22",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "If spaces and special characters are ignored in the following text, which country/countries is/are hidden in the text shown below? I think the earth’s ecosystem will collapse very soon. Natural resources have been exploited for far too long at the cost of the wellbeing of humankind, I am afraid. I don’t want to stir another controversy but I ardently feel that the time has come for us to take urgent actions to save our planet from manmade disasters.",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q22.png",
+      "imageAlt": "UCEED 2018 Question 22 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghana"
+        },
+        {
+          "id": "b",
+          "text": "India"
+        },
+        {
+          "id": "c",
+          "text": "Peru"
+        },
+        {
+          "id": "d",
+          "text": "Iran"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q23",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The CBI is investigating a dangerous gang of three criminals. The criminals are Donga, Tirudan and Daaku. The investigation team consists of Pradyuman, Daya, Fredricks, Salunkhe, Tarika and Purvi. Each criminal is to be investigated by exactly two investigators, and each investigator investigates exactly one criminal. The investigation is to be conducted subject to the following constraints: Pradyuman and Daya do not investigate the same criminal. Fredricks and Salunkhe investigate the same criminal. If Fredricks investigates Tirudan, then Tarika must investigate Daaku. Given these constrains, which of the following could be the acceptable assignment(s) of investigators to potential criminals?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q23.png",
+      "imageAlt": "UCEED 2018 Question 23 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fredricks & Salunkhe investigate Tirudan, Pradyuman & Daya investigate Donga and Tarika & Purvi investigate Daaku"
+        },
+        {
+          "id": "b",
+          "text": "Fredricks & Salunkhe investigate Donga, Tarika & Pradyuman investigate Tirudan and Daya & Purvi investigate Daaku"
+        },
+        {
+          "id": "c",
+          "text": "Tarika & Purvi investigate Donga, Fredricks & Pradyuman investigate Tirudan and Salunkhe & Daya investigate Daaku"
+        },
+        {
+          "id": "d",
+          "text": "Daya & Purvi investigate Tirudan, Tarika & Pradyuman investigate Daaku and Fredricks & Salunkhe investigate Donga"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q24",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "If, 9 + 8 means 9 is the child of 8, and 7 * 6 means that 6 is the wife of 7, then which of the following statements can be derived from 2 + 3 * 1 + 4 * 5?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q24.png",
+      "imageAlt": "UCEED 2018 Question 24 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 is the grandchild of 4"
+        },
+        {
+          "id": "b",
+          "text": "1 is the daughter of 5"
+        },
+        {
+          "id": "c",
+          "text": "5 is the grandfather of 3"
+        },
+        {
+          "id": "d",
+          "text": "1 is the mother of 2"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q25",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "30 circles are given below, with a set of rules: 1. The bigger the circle, the farther away it is from us. 2. The thinner the line of the circle, the closer it is to us. 3. The red circles are farther away from us as compared to the blue circles. Which of the options given below is/are TRUE?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q25.png",
+      "imageAlt": "UCEED 2018 Question 25 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Circle 25 is the closest to us"
+        },
+        {
+          "id": "b",
+          "text": "Circle 25 is farthest from us"
+        },
+        {
+          "id": "c",
+          "text": "Circle 24 is closer to us than circle 14"
+        },
+        {
+          "id": "d",
+          "text": "Circle 6 is closer to us than circle 8"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q26",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which concept does this image by Escher illustrate?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q26.png",
+      "imageAlt": "UCEED 2018 Question 26 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tessellation"
+        },
+        {
+          "id": "b",
+          "text": "Figure and Ground"
+        },
+        {
+          "id": "c",
+          "text": "Mise en Scene"
+        },
+        {
+          "id": "d",
+          "text": "Collage"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q27",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Read the passage given below, written by Nick Hughes: “We tend to treat power as though it is intrinsically valuable. We seek it out and covet it, quite irrespective of how we might wield it and what it might get us. One need only look at the history of totalitarian politics to recognise this tendency in its most grotesque form. But power isn’t intrinsically valuable, it’s only instrumentally valuable – valuable as a means to an end. And whether or not they are objectively valuable, the ends that matter to us, the things that we care about most – our relationships, our projects and goals, our shared experiences, social justice, the pursuit of knowledge, the creation and appreciation of art, music and literature, and the future and fate of ours and other species – do not depend to any considerable extent on our having control over a vast but largely irrelevant Universe. We might be distinctly lacking in power from the cosmic perspective, and so, in a sense, insignificant. But having such power and such significance wouldn’t make much of a difference anyway. To lament its lack and respond with despair and nihilism is merely a form of narcissism. Most of what matters to us is right here on Earth.” Which of the statements is/are TRUE of the paragraph above:",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q27.png",
+      "imageAlt": "UCEED 2018 Question 27 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "The author argues that intrinsic value is distinct from instrumental value and that power possesses the latter of the two."
+        },
+        {
+          "id": "b",
+          "text": "“Humans and our significance in the universe”, is one of the themes discussed in the passage."
+        },
+        {
+          "id": "c",
+          "text": "The philosophies of nihilism and narcissism are suggested as remedies by the author."
+        },
+        {
+          "id": "d",
+          "text": "The author suggests that we look at the history of totalitarian politics to recognise that we shun power in the most grotesque form."
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q28",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which option(s) is/are simple rotations of the figure given below?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q28.png",
+      "imageAlt": "UCEED 2018 Question 28 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q29",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Read the statements below: All female and male natives in their country are strong. Some men in their country are migrants. All migrants in their country are not strong. Not all migrants are women. Based on the above, which conclusion(s) stated in the options is/are valid?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q29.png",
+      "imageAlt": "UCEED 2018 Question 29 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Some women in their country are strong."
+        },
+        {
+          "id": "b",
+          "text": "Some migrants in their country are men."
+        },
+        {
+          "id": "c",
+          "text": "Some people in their country are not strong."
+        },
+        {
+          "id": "d",
+          "text": "All strong people in their country are women."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q30",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following words are similar in meaning?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q30.png",
+      "imageAlt": "UCEED 2018 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scribble"
+        },
+        {
+          "id": "b",
+          "text": "Doodle"
+        },
+        {
+          "id": "c",
+          "text": "Nibble"
+        },
+        {
+          "id": "d",
+          "text": "Feeble"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q31",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following words is/are similar in meaning to ‘Centre’?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q31.png",
+      "imageAlt": "UCEED 2018 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heart"
+        },
+        {
+          "id": "b",
+          "text": "Core"
+        },
+        {
+          "id": "c",
+          "text": "Nucleus"
+        },
+        {
+          "id": "d",
+          "text": "Nub"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q32",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Consider this poem:\nNow, marriages happen in halls They used to happen at home Honeymoon too Before they wandered into halls Stage. Actors. Audiences from afar. Receptions never really took place Yet they would go on for days. Now, receptions include\nThose who don’t really figure. Show face, shove envelope (gifts not accepted) Grin for the camera. Get out. Not all that bad. Quick and efficient. No one really cares. Which mood(s) does the poem evoke?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q32.png",
+      "imageAlt": "UCEED 2018 Question 32 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cynicism"
+        },
+        {
+          "id": "b",
+          "text": "Nostalgia"
+        },
+        {
+          "id": "c",
+          "text": "Happiness"
+        },
+        {
+          "id": "d",
+          "text": "Lust"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q33",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Goethe said, “Doubt grows with knowledge”. From this perspective, who would a knowledgeable person be?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q33.png",
+      "imageAlt": "UCEED 2018 Question 33 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "One for whom doubt does not grow with knowledge"
+        },
+        {
+          "id": "b",
+          "text": "One who has no doubt"
+        },
+        {
+          "id": "c",
+          "text": "One who has doubt"
+        },
+        {
+          "id": "d",
+          "text": "One whose doubt grows with knowledge"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q34",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Theory is already existing knowledge and Practice is knowledge that comes by ‘doing’. Based on this statement which of the following is/are TRUE?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q34.png",
+      "imageAlt": "UCEED 2018 Question 34 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Theory precedes Practice."
+        },
+        {
+          "id": "b",
+          "text": "Practice is knowledge in action."
+        },
+        {
+          "id": "c",
+          "text": "Knowledge without ‘doing’ is Theory."
+        },
+        {
+          "id": "d",
+          "text": "Theory and Practice are one and the same."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q35",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following quotes celebrate(s) technology?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q35.png",
+      "imageAlt": "UCEED 2018 Question 35 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "“Did that search engine really know what you want, or are you playing along, lowering your standards to make it seem clever?”"
+        },
+        {
+          "id": "b",
+          "text": "“ I fear that we are beginning to design ourselves to suit digital models of us, and I worry about a leaching (leakage) of empathy and humanity in the process”"
+        },
+        {
+          "id": "c",
+          "text": "“The approach to digital culture I abhor would indeed turn all the world’s book into one book”."
+        },
+        {
+          "id": "d",
+          "text": "“What a computer is to me is the most remarkable tool that we can ever come up with. It’s the equivalent of a bicycle for our minds”."
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q36",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Consider the drip irrigation system in villages on hilly terrain. Which of the following statements is/are correct?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q36.png",
+      "imageAlt": "UCEED 2018 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bamboo pipes can be used to divert perennial springs on the hilltops to the lower reaches by gravity."
+        },
+        {
+          "id": "b",
+          "text": "If the bamboo pipes have to cross a road they can be taken above the land."
+        },
+        {
+          "id": "c",
+          "text": "This irrigation system is useful for the places with high ground water level."
+        },
+        {
+          "id": "d",
+          "text": "The bamboo pipes could be replaced with PVC pipes."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q37",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Six pacmen have joined hands to take revenge from an evil ghost. They are standing around in a circlular formation. Lo and behold, a white star full of pure light emerges in the centre. In complete disbelief, the pacmen are mesmerized. Which of the gestalt laws of perception explain(s) the appearance of the star in the centre?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Gestalt Principles of Perception",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q37.png",
+      "imageAlt": "UCEED 2018 Question 37 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proximity"
+        },
+        {
+          "id": "b",
+          "text": "Continuity"
+        },
+        {
+          "id": "c",
+          "text": "Figure and ground"
+        },
+        {
+          "id": "d",
+          "text": "Closure"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q38",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "If the black lines represent cutting lines and dotted pink lines are folding lines, which of the options correctly represent(s) the opened up surfaces of the solid shown?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q38.png",
+      "imageAlt": "UCEED 2018 Question 38 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q39",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following images belong(s) to Ajanta?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q39.png",
+      "imageAlt": "UCEED 2018 Question 39 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "H"
+        },
+        {
+          "id": "b",
+          "text": "L"
+        },
+        {
+          "id": "c",
+          "text": "K and M"
+        },
+        {
+          "id": "d",
+          "text": "J and I"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q40",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Based on the paintings below, which of the following statements is/are TRUE?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Sets and grouping",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q40.png",
+      "imageAlt": "UCEED 2018 Question 40 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "These paintings use geometric grids for their construction."
+        },
+        {
+          "id": "b",
+          "text": "All three painting are from Maharashtra."
+        },
+        {
+          "id": "c",
+          "text": "All these paintings draw upon tribal folklore."
+        },
+        {
+          "id": "d",
+          "text": "These paintings are wall murals."
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q41",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following is/are greenhouse gas(es)?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q41.png",
+      "imageAlt": "UCEED 2018 Question 41 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hydrogen Sulphide"
+        },
+        {
+          "id": "b",
+          "text": "Carbon Dioxide"
+        },
+        {
+          "id": "c",
+          "text": "Chlorine"
+        },
+        {
+          "id": "d",
+          "text": "Methane"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q42",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options represent(s) correctly the opened up surfaces of the solid shown?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q42.png",
+      "imageAlt": "UCEED 2018 Question 42 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q43",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Consider the following text by Edward Shanken: “By 2000, it had become increasingly apparent that the exclusion and ghettoization confronting the practice and criticism of new media art and the larger historiography of art and technology required an explicit suturing strategy. In ‘Art in the Information Age’ (2001) I argued that by ‘interpreting conceptual art and art-and-technology as reflections and constituents of broad cultural transformations during the information age’ categorical distinctions can be relaxed, allowing parallels to be drawn between seemingly diverse theory of systems aesthetics and the notion of software as a metaphor for art. My analysis of works by Levine, Haacke and Kosuth in ‘Software’ led to the conclusion that in the information age, ‘meaning and value are not embedded in objects, institutions or individuals so much as they are abstracted in the production, manipulation and distribution of signs and information’. Finally, I implicitly applied Burnham’s systems approach to analyse the system by which art history is written. Using Haacke and Ascott as examples, I claimed that the historicization of an artist’s work as conceptual art or art and technology ‘says less about their work than it does about the institutional mechanisms that have created and reinforced categorical distinctions...at the expense of identifying continuities between them.” Which of the statements is/are TRUE of the paragraph above?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q43.png",
+      "imageAlt": "UCEED 2018 Question 43 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Historicization of an artist’s work speaks only of institutional mechanisms that create and define categories."
+        },
+        {
+          "id": "b",
+          "text": "Categorical distinctions do not allow parallels to be drawn between seemingly diverse practices."
+        },
+        {
+          "id": "c",
+          "text": "If software is a metaphor for art, meaning and value are more in the making and distribution of signs and information."
+        },
+        {
+          "id": "d",
+          "text": "Conceptual art cannot be interpreted as reflections of broad cultural transformations."
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q44",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The following diagram shows the distribution of population in an apartment building as per the profession of its residents.\nWhich of the following is/are correct?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Tables, charts and graphs",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q44.png",
+      "imageAlt": "UCEED 2018 Question 44 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doctors and businessmen combined is less than half of the total residents."
+        },
+        {
+          "id": "b",
+          "text": "About 1/3 of the population is engineers."
+        },
+        {
+          "id": "c",
+          "text": "Engineers and designers combined is about 60% of the residents."
+        },
+        {
+          "id": "d",
+          "text": "Doctors and businessmen combined is more than half of the total residents."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q45",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "In which of the following applications is a convex lens used?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "msq"
+      ],
+      "image": "/media/uceed-2018-q45.png",
+      "imageAlt": "UCEED 2018 Question 45 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Peepholes"
+        },
+        {
+          "id": "b",
+          "text": "Magnifying glass"
+        },
+        {
+          "id": "c",
+          "text": "Microscope"
+        },
+        {
+          "id": "d",
+          "text": "Car headlight"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q46",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Who is the woman in this painting by Raja Ravi Varma?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q46.png",
+      "imageAlt": "UCEED 2018 Question 46 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shakuntala"
+        },
+        {
+          "id": "b",
+          "text": "Lakshmi"
+        },
+        {
+          "id": "c",
+          "text": "Saraswati"
+        },
+        {
+          "id": "d",
+          "text": "Damayanti"
+        }
+      ],
+      "answer": "d",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q47",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option arranges the states in an ascending order in terms of area?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q47.png",
+      "imageAlt": "UCEED 2018 Question 47 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gujarat, Kerala, Uttar Pradesh, Rajasthan"
+        },
+        {
+          "id": "b",
+          "text": "Gujarat, Kerala, Rajasthan, Uttar Pradesh"
+        },
+        {
+          "id": "c",
+          "text": "Kerala, Gujarat, Uttar Pradesh, Rajasthan"
+        },
+        {
+          "id": "d",
+          "text": "Kerala, Gujarat, Rajasthan, Uttar Pradesh"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q48",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is a map of a city with names of prominent localities. A man starts walking from Hampalkatte towards the west, takes the second right, second left, first left, third right, second left, and walks on straight to the end of the street. Where does he reach?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Paths, grids and mazes",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q48.png",
+      "imageAlt": "UCEED 2018 Question 48 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kandivali"
+        },
+        {
+          "id": "b",
+          "text": "Gurugram"
+        },
+        {
+          "id": "c",
+          "text": "Navrangpura"
+        },
+        {
+          "id": "d",
+          "text": "Hoskote"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q49",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The door height of entrance of an Indian Public Hall is to be finalised. Which of the following should be considered to decide the height of the door frame?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Usability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q49.png",
+      "imageAlt": "UCEED 2018 Question 49 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "The height of tallest 5 percent of Indian male population."
+        },
+        {
+          "id": "b",
+          "text": "The height of tallest 50 percent of Indian female population."
+        },
+        {
+          "id": "c",
+          "text": "The average height of tallest 95 percent of Indian male and female population."
+        },
+        {
+          "id": "d",
+          "text": "The height of tallest 95 percent of Indian male child population."
+        }
+      ],
+      "answer": "a",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q50",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Two different views of a sphere are shown below. Select the correct digital image that is mapped on the sphere.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q50.png",
+      "imageAlt": "UCEED 2018 Question 50 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q51",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of these is an example of traditional embroidery from Punjab?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q51.png",
+      "imageAlt": "UCEED 2018 Question 51 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q52",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Given below is a sequence of drawings from the animation of a cricket batsman performing a pull shot, with one missing drawing represented by a question mark. Which option would best replace the question mark?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q52.png",
+      "imageAlt": "UCEED 2018 Question 52 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q53",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q53.png",
+      "imageAlt": "UCEED 2018 Question 53 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q54",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is a flower. Which is the leaf of the plant to which the flower belongs?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q54.png",
+      "imageAlt": "UCEED 2018 Question 54 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q55",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The word shown below s a specific font. From the options choose the letter that belongs to the same font.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Typography & Fonts",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q55.png",
+      "imageAlt": "UCEED 2018 Question 55 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Language & Creativity"
+    },
+    {
+      "id": "q56",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q56.png",
+      "imageAlt": "UCEED 2018 Question 56 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q57",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If the following operations were performed in the given sequence on the figure shown in the box, what would the resultant figure be? i. Rotate the figure clockwise by 90 degrees. ii. Flip along the vertical axis passing through its centre. iii. Flip along the horizontal axis passing through its centre.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Tables, charts and graphs",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q57.png",
+      "imageAlt": "UCEED 2018 Question 57 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q58",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "In the left column are names of some National Parks. In the right column are the names of the states in which they are located. Which option contains all correct pairs?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q58.png",
+      "imageAlt": "UCEED 2018 Question 58 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jim Corbett-Assam; Ranthambore-Rajasthan; Kaziranga-Madhya Pradesh; Kanha- Uttarakhand"
+        },
+        {
+          "id": "b",
+          "text": "Jim Corbett-Uttarakhand; Ranthambore-Madhya Pradesh; Kaziranga-Assam; Kanha- Rajasthan"
+        },
+        {
+          "id": "c",
+          "text": "Jim Corbett-Assam; Ranthambore-Rajasthan; Kaziranga-Uttarakhand; Kanha-Madhya Pradesh"
+        },
+        {
+          "id": "d",
+          "text": "Jim Corbett-Uttarakhand; Ranthambore-Rajasthan; Kaziranga-Assam; Kanha-Madhya Pradesh"
+        }
+      ],
+      "answer": "d",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q59",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Figure 1 is unfolded into Figure 2 and individual letters are written on each face. Which option is the correct representation when it is folded back?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q59.png",
+      "imageAlt": "UCEED 2018 Question 59 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q60",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The image below shows four different dance forms. Which states do these dance forms belong to?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q60.png",
+      "imageAlt": "UCEED 2018 Question 60 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "1-Kerala; 2-Orissa; 3-Andhra Pradesh; 4-Assam"
+        },
+        {
+          "id": "b",
+          "text": "1-Kerala; 2-Kerala; 3-Andhra Pradesh; 4-Orissa"
+        },
+        {
+          "id": "c",
+          "text": "1-Kerala; 2-Andhra Pradesh; 3-Kerala; 4-Assam"
+        },
+        {
+          "id": "d",
+          "text": "1-Orissa; 2-Assam; 3-Kerala; 4-Andhra Pradesh"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q61",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A paper is folded in the sequence shown in the image below. Blue patches are the areas that are cut out. What would the resultant figure be when the paper is unfolded?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q61.png",
+      "imageAlt": "UCEED 2018 Question 61 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q62",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If the heptagon with the triangle is mirrored along the common edge (depicted by a dotted line) between two consecutive shapes, what would the resultant figure be?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q62.png",
+      "imageAlt": "UCEED 2018 Question 62 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q63",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the following compositions is possible by rearranging pieces of Tangram puzzle (Sample given on the left)? Rotation of the pieces is allowed but flipping and scaling are not allowed.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q63.png",
+      "imageAlt": "UCEED 2018 Question 63 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q64",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Consider the poem below: Drip drip Drip Drip Dripdripdripdrip Painters far away Fishermen in oceans of colour Who or what from the options, drip?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q64.png",
+      "imageAlt": "UCEED 2018 Question 64 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Painters"
+        },
+        {
+          "id": "b",
+          "text": "Fishermen"
+        },
+        {
+          "id": "c",
+          "text": "Oceans"
+        },
+        {
+          "id": "d",
+          "text": "Beaches"
+        }
+      ],
+      "answer": "a",
+      "category": "Language"
+    },
+    {
+      "id": "q65",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the following crawl on a surface?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q65.png",
+      "imageAlt": "UCEED 2018 Question 65 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helicopters"
+        },
+        {
+          "id": "b",
+          "text": "Words"
+        },
+        {
+          "id": "c",
+          "text": "Fruits"
+        },
+        {
+          "id": "d",
+          "text": "Satellites"
+        }
+      ],
+      "answer": "b",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q66",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the following lines from a poem: Lad Bazaar gallis. Thin and crooked. On the prime prized precincts Sat sleeves rolled Ali Sipping sweet suleimani Props ready, goods ready Theatre of give and take What profession could be attributed to Ali?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Economy & Society",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q66.png",
+      "imageAlt": "UCEED 2018 Question 66 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shopkeeper"
+        },
+        {
+          "id": "b",
+          "text": "Teacher"
+        },
+        {
+          "id": "c",
+          "text": "Pilot"
+        },
+        {
+          "id": "d",
+          "text": "Traffic police"
+        }
+      ],
+      "answer": "a",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q67",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Read the following lines and answer the question given below: Pleading farts and ponderous burps Upset the silence of dignified insides, Sounds of occupation and exile. What makes up dignified insides?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Human Anatomy & Proportion",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q67.png",
+      "imageAlt": "UCEED 2018 Question 67 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stomach"
+        },
+        {
+          "id": "b",
+          "text": "Country"
+        },
+        {
+          "id": "c",
+          "text": "Silence"
+        },
+        {
+          "id": "d",
+          "text": "Circus"
+        }
+      ],
+      "answer": "a",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q68",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The hour hand of a particular clock moves at half the speed, and the minute hand at 6 times the speed of a regular clock. If this strange clock matches time with the regular clock at 12 noon, what is the actual time when the strange clock next looks as shown below?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Distance and speed",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q68.png",
+      "imageAlt": "UCEED 2018 Question 68 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "8.45"
+        },
+        {
+          "id": "b",
+          "text": "9.05"
+        },
+        {
+          "id": "c",
+          "text": "8.05"
+        },
+        {
+          "id": "d",
+          "text": "10.15"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q69",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Count the number of people with a moustache in the picture below:",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q69.png",
+      "imageAlt": "UCEED 2018 Question 69 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "22"
+        }
+      ],
+      "answer": "c",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q70",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the following is the correct logo of Apple Computers?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q70.png",
+      "imageAlt": "UCEED 2018 Question 70 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q71",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "What does a camera use to form an image?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q71.png",
+      "imageAlt": "UCEED 2018 Question 71 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convex lens"
+        },
+        {
+          "id": "b",
+          "text": "Concave lens"
+        },
+        {
+          "id": "c",
+          "text": "Both Convex and Concave lens"
+        },
+        {
+          "id": "d",
+          "text": "Plano Concave lens"
+        }
+      ],
+      "answer": "a",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q72",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The picture shows a man holding a traditional product in his hands. What is it used for?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q72.png",
+      "imageAlt": "UCEED 2018 Question 72 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate rice from husk"
+        },
+        {
+          "id": "b",
+          "text": "Catch fish in shallow water"
+        },
+        {
+          "id": "c",
+          "text": "Separate tea leaves from dust and foreign particles"
+        },
+        {
+          "id": "d",
+          "text": "Separate gravel from sand"
+        }
+      ],
+      "answer": "b",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q73",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options closely match the Avatars with their associations?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q73.png",
+      "imageAlt": "UCEED 2018 Question 73 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P-1, Q-2, R-4, S-3, T-5"
+        },
+        {
+          "id": "b",
+          "text": "P-4, Q-5, R-1, S-3, T-2"
+        },
+        {
+          "id": "c",
+          "text": "P-4, Q-5, R-2, S-1, T-3"
+        },
+        {
+          "id": "d",
+          "text": "P-1, Q-3, R-4, S-2, T-5"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q74",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options correctly match the paintings with corresponding art movements?\n1.Expressionism 2.Realism 3.Pop Art 4.Pointilism 5.Op Art 6.Surrealism",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q74.png",
+      "imageAlt": "UCEED 2018 Question 74 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 – I; 2 – H; 3 – K; 4 – J; 5 – L; 6 - M"
+        },
+        {
+          "id": "b",
+          "text": "1 – J; 2 – K; 3 – M; 4 – I; 5 – H; 6 - L"
+        },
+        {
+          "id": "c",
+          "text": "1 – L; 2 – J; 3 – I; 4 – K; 5 – M; 6 - H"
+        },
+        {
+          "id": "d",
+          "text": "1 – H; 2 – K; 3 – M; 4 – I; 5 – L; 6 - J"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q75",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If the following self portraits by Picasso are arranged in chronological order starting with the earliest painting, which one of these options is correct?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q75.png",
+      "imageAlt": "UCEED 2018 Question 75 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "B, C, A, D"
+        },
+        {
+          "id": "b",
+          "text": "A, D, B, C"
+        },
+        {
+          "id": "c",
+          "text": "C, B, D, A"
+        },
+        {
+          "id": "d",
+          "text": "D, B, A, C"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q76",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Where is this famous painting from?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Traditional crafts and objects",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q76.png",
+      "imageAlt": "UCEED 2018 Question 76 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Korea"
+        },
+        {
+          "id": "b",
+          "text": "China"
+        },
+        {
+          "id": "c",
+          "text": "Japan"
+        },
+        {
+          "id": "d",
+          "text": "Indonesia"
+        }
+      ],
+      "answer": "c",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q77",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Two men start at the same point, walk in opposite directions for 4 meters, turn left and walk another 3 meters. What is the distance between them?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Paths, grids and mazes",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q77.png",
+      "imageAlt": "UCEED 2018 Question 77 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 meters"
+        },
+        {
+          "id": "b",
+          "text": "8 meters"
+        },
+        {
+          "id": "c",
+          "text": "10 meters"
+        },
+        {
+          "id": "d",
+          "text": "12 meters"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q78",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which is the appropriate option that can replace the question mark to complete the series?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q78.png",
+      "imageAlt": "UCEED 2018 Question 78 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q79",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which is the appropriate option that can replace the question mark to complete the series?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q79.png",
+      "imageAlt": "UCEED 2018 Question 79 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q80",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the following options is related to the phrase ‘Easy to understand’?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q80.png",
+      "imageAlt": "UCEED 2018 Question 80 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Functionality"
+        },
+        {
+          "id": "b",
+          "text": "Usability"
+        },
+        {
+          "id": "c",
+          "text": "Durability"
+        },
+        {
+          "id": "d",
+          "text": "Aesthetics"
+        }
+      ],
+      "answer": "b",
+      "category": "Language"
+    },
+    {
+      "id": "q81",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the following options helps in establishing interchangeability of products?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Usability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q81.png",
+      "imageAlt": "UCEED 2018 Question 81 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Standardization"
+        },
+        {
+          "id": "b",
+          "text": "Stylization"
+        },
+        {
+          "id": "c",
+          "text": "Diversification"
+        },
+        {
+          "id": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": "a",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q82",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The figure shows a solid formed by the union of two solids. The first is an elliptic cylinder (cylinder with an elliptical cross-section) of shorter width 4 inches, larger width 5 inches, and height of 11 inches, and the second is a cuboid of 8 inches x 5 inches x 6 inches. The centre of the extruded ellipse is aligned with the edge of the cuboid as shown in the figure. If the resultant solid is cut by a plane (shown by the red dotted line), what will be the cross section of the resulting face as viewed from an angle perpendicular to the face?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q82.png",
+      "imageAlt": "UCEED 2018 Question 82 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q83",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A matrix sequence is shown on the left. Which of the options given on the right can replace the matrix with question marks?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q83.png",
+      "imageAlt": "UCEED 2018 Question 83 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q84",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "What does “carbon footprint” refer to?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q84.png",
+      "imageAlt": "UCEED 2018 Question 84 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "The amount of carbon dioxide produced by a certain human activity."
+        },
+        {
+          "id": "b",
+          "text": "The total greenhouse gases produced by a certain human activity."
+        },
+        {
+          "id": "c",
+          "text": "Geographical mapping of the amount of carbon fixed from carbon dioxide by plants through photosynthesis."
+        },
+        {
+          "id": "d",
+          "text": "The measuring of the presence of prehistoric life based on the fossilised carbon content."
+        }
+      ],
+      "answer": "a",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q85",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which is the correct top view for the solid shown?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2018",
+        "mcq"
+      ],
+      "image": "/media/uceed-2018-q85.png",
+      "imageAlt": "UCEED 2018 Question 85 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    }
+  ]
+}

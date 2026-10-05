@@ -1,0 +1,4596 @@
+{
+  "id": "uceed-spatial-reasoning-complete-120",
+  "title": "UCEED Spatial Reasoning — Complete Worksheet (120)",
+  "durationSeconds": 7200,
+  "totalQuestions": 120,
+  "maxMarks": 240,
+  "instructions": "Complete 120-question spatial reasoning worksheet using the attached diagrams.",
+  "sections": [
+    {
+      "id": "t1",
+      "title": "2D → 3D Visualization"
+    },
+    {
+      "id": "t2",
+      "title": "Rotation"
+    },
+    {
+      "id": "t3",
+      "title": "Reflection"
+    },
+    {
+      "id": "t4",
+      "title": "Mirror / Water Images"
+    },
+    {
+      "id": "t5",
+      "title": "Symmetry"
+    },
+    {
+      "id": "t6",
+      "title": "Top / Front / Side Views"
+    }
+  ],
+  "questions": [
+    {
+      "id": "t1_01",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-01 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-02.png",
+      "imageAlt": "Worksheet diagram for T1-01 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_02",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-02 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-02.png",
+      "imageAlt": "Worksheet diagram for T1-02 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_03",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-03 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-03.png",
+      "imageAlt": "Worksheet diagram for T1-03 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_04",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-04 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-03.png",
+      "imageAlt": "Worksheet diagram for T1-04 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_05",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-05 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-04.png",
+      "imageAlt": "Worksheet diagram for T1-05 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_06",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-06 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-05.png",
+      "imageAlt": "Worksheet diagram for T1-06 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_07",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-07 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-05.png",
+      "imageAlt": "Worksheet diagram for T1-07 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_08",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-08 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-06.png",
+      "imageAlt": "Worksheet diagram for T1-08 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_09",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-09 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-06.png",
+      "imageAlt": "Worksheet diagram for T1-09 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_10",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-10 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-06.png",
+      "imageAlt": "Worksheet diagram for T1-10 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_11",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-11 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-07.png",
+      "imageAlt": "Worksheet diagram for T1-11 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_12",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-12 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-07.png",
+      "imageAlt": "Worksheet diagram for T1-12 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_13",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-13 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-08.png",
+      "imageAlt": "Worksheet diagram for T1-13 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_14",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-14 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-08.png",
+      "imageAlt": "Worksheet diagram for T1-14 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_15",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-15 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-09.png",
+      "imageAlt": "Worksheet diagram for T1-15 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_16",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-16 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-09.png",
+      "imageAlt": "Worksheet diagram for T1-16 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_17",
+      "sectionId": "t1",
+      "type": "MSQ",
+      "prompt": "T1-17 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-10.png",
+      "imageAlt": "Worksheet diagram for T1-17 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_18",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-18 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-11.png",
+      "imageAlt": "Worksheet diagram for T1-18 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_19",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-19 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-12.png",
+      "imageAlt": "Worksheet diagram for T1-19 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t1_20",
+      "sectionId": "t1",
+      "type": "MCQ",
+      "prompt": "T1-20 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-12.png",
+      "imageAlt": "Worksheet diagram for T1-20 2D → 3D Visualization",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T1",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_01",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-01 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-13.png",
+      "imageAlt": "Worksheet diagram for T2-01 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_02",
+      "sectionId": "t2",
+      "type": "MSQ",
+      "prompt": "T2-02 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-14.png",
+      "imageAlt": "Worksheet diagram for T2-02 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_03",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-03 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-14.png",
+      "imageAlt": "Worksheet diagram for T2-03 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_04",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-04 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-15.png",
+      "imageAlt": "Worksheet diagram for T2-04 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_05",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-05 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-15.png",
+      "imageAlt": "Worksheet diagram for T2-05 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_06",
+      "sectionId": "t2",
+      "type": "MSQ",
+      "prompt": "T2-06 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-16.png",
+      "imageAlt": "Worksheet diagram for T2-06 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_07",
+      "sectionId": "t2",
+      "type": "MSQ",
+      "prompt": "T2-07 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-17.png",
+      "imageAlt": "Worksheet diagram for T2-07 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_08",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-08 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-18.png",
+      "imageAlt": "Worksheet diagram for T2-08 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_09",
+      "sectionId": "t2",
+      "type": "MSQ",
+      "prompt": "T2-09 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-19.png",
+      "imageAlt": "Worksheet diagram for T2-09 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_10",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-10 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-20.png",
+      "imageAlt": "Worksheet diagram for T2-10 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_11",
+      "sectionId": "t2",
+      "type": "NAT",
+      "prompt": "T2-11 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-20.png",
+      "imageAlt": "Worksheet diagram for T2-11 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "answer": {
+        "min": 2,
+        "max": 2
+      },
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_12",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-12 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-21.png",
+      "imageAlt": "Worksheet diagram for T2-12 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_13",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-13 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-21.png",
+      "imageAlt": "Worksheet diagram for T2-13 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_14",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-14 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-22.png",
+      "imageAlt": "Worksheet diagram for T2-14 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_15",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-15 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-22.png",
+      "imageAlt": "Worksheet diagram for T2-15 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_16",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-16 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-23.png",
+      "imageAlt": "Worksheet diagram for T2-16 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_17",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-17 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-23.png",
+      "imageAlt": "Worksheet diagram for T2-17 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_18",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-18 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-24.png",
+      "imageAlt": "Worksheet diagram for T2-18 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_19",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-19 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-24.png",
+      "imageAlt": "Worksheet diagram for T2-19 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t2_20",
+      "sectionId": "t2",
+      "type": "MCQ",
+      "prompt": "T2-20 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-25.png",
+      "imageAlt": "Worksheet diagram for T2-20 Rotation",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T2",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_01",
+      "sectionId": "t3",
+      "type": "NAT",
+      "prompt": "T3-01 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-26.png",
+      "imageAlt": "Worksheet diagram for T3-01 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "answer": {
+        "min": 50,
+        "max": 50
+      },
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_02",
+      "sectionId": "t3",
+      "type": "NAT",
+      "prompt": "T3-02 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-26.png",
+      "imageAlt": "Worksheet diagram for T3-02 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "answer": {
+        "min": 25,
+        "max": 25
+      },
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_03",
+      "sectionId": "t3",
+      "type": "NAT",
+      "prompt": "T3-03 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-27.png",
+      "imageAlt": "Worksheet diagram for T3-03 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "answer": {
+        "min": 11,
+        "max": 11
+      },
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_04",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-04 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-27.png",
+      "imageAlt": "Worksheet diagram for T3-04 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_05",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-05 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-28.png",
+      "imageAlt": "Worksheet diagram for T3-05 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_06",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-06 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-28.png",
+      "imageAlt": "Worksheet diagram for T3-06 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_07",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-07 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-29.png",
+      "imageAlt": "Worksheet diagram for T3-07 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_08",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-08 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-29.png",
+      "imageAlt": "Worksheet diagram for T3-08 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_09",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-09 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-30.png",
+      "imageAlt": "Worksheet diagram for T3-09 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_10",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-10 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-30.png",
+      "imageAlt": "Worksheet diagram for T3-10 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_11",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-11 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-31.png",
+      "imageAlt": "Worksheet diagram for T3-11 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_12",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-12 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-31.png",
+      "imageAlt": "Worksheet diagram for T3-12 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_13",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-13 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-32.png",
+      "imageAlt": "Worksheet diagram for T3-13 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_14",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-14 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-32.png",
+      "imageAlt": "Worksheet diagram for T3-14 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_15",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-15 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-33.png",
+      "imageAlt": "Worksheet diagram for T3-15 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_16",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-16 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-33.png",
+      "imageAlt": "Worksheet diagram for T3-16 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_17",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-17 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-34.png",
+      "imageAlt": "Worksheet diagram for T3-17 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_18",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-18 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-34.png",
+      "imageAlt": "Worksheet diagram for T3-18 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_19",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-19 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-35.png",
+      "imageAlt": "Worksheet diagram for T3-19 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t3_20",
+      "sectionId": "t3",
+      "type": "MCQ",
+      "prompt": "T3-20 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-36.png",
+      "imageAlt": "Worksheet diagram for T3-20 Reflection",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T3",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_01",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-01 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-37.png",
+      "imageAlt": "Worksheet diagram for T4-01 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_02",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-02 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-37.png",
+      "imageAlt": "Worksheet diagram for T4-02 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_03",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-03 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-38.png",
+      "imageAlt": "Worksheet diagram for T4-03 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_04",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-04 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-38.png",
+      "imageAlt": "Worksheet diagram for T4-04 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_05",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-05 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-39.png",
+      "imageAlt": "Worksheet diagram for T4-05 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_06",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-06 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-39.png",
+      "imageAlt": "Worksheet diagram for T4-06 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_07",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-07 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-40.png",
+      "imageAlt": "Worksheet diagram for T4-07 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_08",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-08 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-41.png",
+      "imageAlt": "Worksheet diagram for T4-08 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_09",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-09 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-42.png",
+      "imageAlt": "Worksheet diagram for T4-09 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_10",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-10 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-43.png",
+      "imageAlt": "Worksheet diagram for T4-10 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_11",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-11 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-44.png",
+      "imageAlt": "Worksheet diagram for T4-11 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_12",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-12 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-45.png",
+      "imageAlt": "Worksheet diagram for T4-12 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_13",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-13 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-46.png",
+      "imageAlt": "Worksheet diagram for T4-13 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_14",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-14 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-46.png",
+      "imageAlt": "Worksheet diagram for T4-14 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_15",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-15 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-47.png",
+      "imageAlt": "Worksheet diagram for T4-15 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_16",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-16 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-47.png",
+      "imageAlt": "Worksheet diagram for T4-16 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_17",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-17 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-48.png",
+      "imageAlt": "Worksheet diagram for T4-17 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_18",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-18 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-49.png",
+      "imageAlt": "Worksheet diagram for T4-18 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_19",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-19 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-50.png",
+      "imageAlt": "Worksheet diagram for T4-19 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t4_20",
+      "sectionId": "t4",
+      "type": "MCQ",
+      "prompt": "T4-20 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-50.png",
+      "imageAlt": "Worksheet diagram for T4-20 Mirror / Water Images",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T4",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Mirror images and water images",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_01",
+      "sectionId": "t5",
+      "type": "MSQ",
+      "prompt": "T5-01 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-51.png",
+      "imageAlt": "Worksheet diagram for T5-01 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_02",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-02 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-51.png",
+      "imageAlt": "Worksheet diagram for T5-02 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_03",
+      "sectionId": "t5",
+      "type": "NAT",
+      "prompt": "T5-03 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-52.png",
+      "imageAlt": "Worksheet diagram for T5-03 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "pyq"
+      ],
+      "answer": {
+        "min": 57,
+        "max": 57
+      },
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_04",
+      "sectionId": "t5",
+      "type": "NAT",
+      "prompt": "T5-04 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-52.png",
+      "imageAlt": "Worksheet diagram for T5-04 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "pyq"
+      ],
+      "answer": {
+        "min": 9,
+        "max": 9
+      },
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_05",
+      "sectionId": "t5",
+      "type": "NAT",
+      "prompt": "T5-05 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-53.png",
+      "imageAlt": "Worksheet diagram for T5-05 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "pyq"
+      ],
+      "answer": {
+        "min": 72,
+        "max": 72
+      },
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_06",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-06 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-54.png",
+      "imageAlt": "Worksheet diagram for T5-06 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_07",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-07 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-55.png",
+      "imageAlt": "Worksheet diagram for T5-07 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_08",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-08 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-56.png",
+      "imageAlt": "Worksheet diagram for T5-08 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_09",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-09 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-56.png",
+      "imageAlt": "Worksheet diagram for T5-09 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_10",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-10 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-57.png",
+      "imageAlt": "Worksheet diagram for T5-10 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_11",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-11 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-58.png",
+      "imageAlt": "Worksheet diagram for T5-11 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_12",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-12 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-59.png",
+      "imageAlt": "Worksheet diagram for T5-12 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_13",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-13 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-60.png",
+      "imageAlt": "Worksheet diagram for T5-13 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_14",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-14 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-61.png",
+      "imageAlt": "Worksheet diagram for T5-14 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_15",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-15 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-61.png",
+      "imageAlt": "Worksheet diagram for T5-15 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_16",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-16 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-62.png",
+      "imageAlt": "Worksheet diagram for T5-16 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_17",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-17 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-62.png",
+      "imageAlt": "Worksheet diagram for T5-17 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_18",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-18 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-63.png",
+      "imageAlt": "Worksheet diagram for T5-18 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_19",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-19 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-64.png",
+      "imageAlt": "Worksheet diagram for T5-19 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t5_20",
+      "sectionId": "t5",
+      "type": "MCQ",
+      "prompt": "T5-20 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-65.png",
+      "imageAlt": "Worksheet diagram for T5-20 Symmetry",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T5",
+        "practice"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Symmetry — reflection and rotational",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_01",
+      "sectionId": "t6",
+      "type": "NAT",
+      "prompt": "T6-01 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-66.png",
+      "imageAlt": "Worksheet diagram for T6-01 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "answer": {
+        "min": 18,
+        "max": 18
+      },
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_02",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-02 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-66.png",
+      "imageAlt": "Worksheet diagram for T6-02 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_03",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-03 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-67.png",
+      "imageAlt": "Worksheet diagram for T6-03 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_04",
+      "sectionId": "t6",
+      "type": "MSQ",
+      "prompt": "T6-04 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-67.png",
+      "imageAlt": "Worksheet diagram for T6-04 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_05",
+      "sectionId": "t6",
+      "type": "NAT",
+      "prompt": "T6-05 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-67.png",
+      "imageAlt": "Worksheet diagram for T6-05 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "answer": {
+        "min": 36,
+        "max": 36
+      },
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_06",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-06 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-68.png",
+      "imageAlt": "Worksheet diagram for T6-06 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_07",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-07 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-68.png",
+      "imageAlt": "Worksheet diagram for T6-07 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "c",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_08",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-08 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-69.png",
+      "imageAlt": "Worksheet diagram for T6-08 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_09",
+      "sectionId": "t6",
+      "type": "NAT",
+      "prompt": "T6-09 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-69.png",
+      "imageAlt": "Worksheet diagram for T6-09 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "answer": {
+        "min": 22,
+        "max": 23
+      },
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_10",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-10 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-70.png",
+      "imageAlt": "Worksheet diagram for T6-10 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "b",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_11",
+      "sectionId": "t6",
+      "type": "NAT",
+      "prompt": "T6-11 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-70.png",
+      "imageAlt": "Worksheet diagram for T6-11 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "answer": {
+        "min": 21,
+        "max": 21
+      },
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_12",
+      "sectionId": "t6",
+      "type": "NAT",
+      "prompt": "T6-12 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-71.png",
+      "imageAlt": "Worksheet diagram for T6-12 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "answer": {
+        "min": 13,
+        "max": 13
+      },
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_13",
+      "sectionId": "t6",
+      "type": "MSQ",
+      "prompt": "T6-13 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-72.png",
+      "imageAlt": "Worksheet diagram for T6-13 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_14",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-14 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-73.png",
+      "imageAlt": "Worksheet diagram for T6-14 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "d",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_15",
+      "sectionId": "t6",
+      "type": "MSQ",
+      "prompt": "T6-15 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-74.png",
+      "imageAlt": "Worksheet diagram for T6-15 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_16",
+      "sectionId": "t6",
+      "type": "MSQ",
+      "prompt": "T6-16 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-74.png",
+      "imageAlt": "Worksheet diagram for T6-16 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_17",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-17 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-75.png",
+      "imageAlt": "Worksheet diagram for T6-17 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_18",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-18 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-75.png",
+      "imageAlt": "Worksheet diagram for T6-18 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_19",
+      "sectionId": "t6",
+      "type": "MCQ",
+      "prompt": "T6-19 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-76.png",
+      "imageAlt": "Worksheet diagram for T6-19 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": "a",
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "t6_20",
+      "sectionId": "t6",
+      "type": "MSQ",
+      "prompt": "T6-20 — use the worksheet diagram on this page and select/enter the answer.",
+      "image": "/media/spatial-worksheet/page-76.png",
+      "imageAlt": "Worksheet diagram for T6-20 Top / Front / Side Views",
+      "marks": {
+        "correct": 2,
+        "incorrect": -0.5,
+        "unanswered": 0
+      },
+      "tags": [
+        "spatial-reasoning",
+        "T6",
+        "pyq"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "topic": "Top, front and side views",
+      "category": "Visualization & Spatial Reasoning"
+    }
+  ]
+}

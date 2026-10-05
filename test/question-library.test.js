@@ -44,6 +44,37 @@ test('same question IDs from different years retain their own source, answer, bo
   assert.equal(Number((await db.query('SELECT COUNT(*) AS n FROM attempts')).rows[0].n), 0);
 });
 
+test('every seeded fixture question has a specific topic and category', async () => {
+  const files = [
+    'uceed-2026.json', 'uceed-2026-mini-mock-01.json', 'uceed-2025-official-part-a.json',
+    'uceed-2024.json', 'uceed-2023.json', 'uceed-2022.json', 'uceed-2021.json',
+    'uceed-2020.json', 'uceed-2019.json', 'uceed-2018.json', 'uceed-2017.json',
+    'uceed-2016.json', 'uceed-2015.json', 'design-foundations.json', 'timed-sections.json',
+    'uceed-spatial-reasoning-diagnostic.json', 'uceed-spatial-reasoning-practice-48.json',
+    'uceed-spatial-reasoning-complete-120.json'
+  ];
+  for (const file of files) {
+    const raw = JSON.parse(await readFile(new URL(`../fixtures/${file}`, import.meta.url), 'utf8'));
+    const exam = categoriseExam(raw);
+    assert.ok(raw.questions.every(q => q.topic && q.category), `${file} must persist a topic and category on every question`);
+    const unresolved = exam.questions.filter(q => !q.topic || !q.category || q.classification === 'needs-review');
+    assert.deepEqual(unresolved.map(q => q.id), [], `${file} has questions without a reviewed topic`);
+    assert.ok(exam.questions.every(q => !/^Design Aptitude|^Section [ABC1-3]:/.test(q.topic)), `${file} has paper-wide labels instead of topics`);
+  }
+});
+
+test('2015–2017 imported opening questions are real source stems, not numbered instructions', async () => {
+  for (const year of [2015, 2016, 2017]) {
+    const raw = JSON.parse(await readFile(new URL(`../fixtures/uceed-${year}.json`, import.meta.url), 'utf8'));
+    for (const question of raw.questions.slice(0, 6)) {
+      assert.doesNotMatch(question.prompt, /examination is of|section [abc] \(|calculators|scribble pad|papers will be provided/i, `UCEED ${year} ${question.id} should not contain exam instructions`);
+      assert.ok(question.topic && question.category, `UCEED ${year} ${question.id} has a topic`);
+    }
+  }
+  const paper2015 = JSON.parse(await readFile(new URL('../fixtures/uceed-2015.json', import.meta.url), 'utf8'));
+  assert.doesNotMatch(paper2015.questions.find(q => q.id === 'q52').prompt, /^Question 52$/);
+});
+
 test('new imports join topic practice automatically, exact copies deduplicate without removing their mocks', async t => {
   const { db, user, engine } = await fixture(t);
   const first = paper(2027, 4, 'How many surfaces are there in this model?');

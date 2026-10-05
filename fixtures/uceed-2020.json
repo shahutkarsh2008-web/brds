@@ -1,0 +1,2438 @@
+{
+  "id": "uceed-2020",
+  "title": "UCEED 2020 Official Paper",
+  "durationSeconds": 7200,
+  "totalQuestions": 68,
+  "maxMarks": 240,
+  "instructions": "Official UCEED 2020 Question Paper & Final Answer Key (Part A: 68 questions, 240 marks, 120 minutes). Section 1 NAT: Q1–18 (+4/0). Section 2 MSQ: Q19–36 (+4/-1 with partial credit). Section 3 MCQ: Q37–68 (+3/-0.71).",
+  "sections": [
+    {
+      "id": "nat",
+      "title": "Section 1 · NAT (72 marks)"
+    },
+    {
+      "id": "msq",
+      "title": "Section 2 · MSQ (72 marks)"
+    },
+    {
+      "id": "mcq",
+      "title": "Section 3 · MCQ (96 marks)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The figure shows illustrations of six metal rods which have internal or external screw thread patterns at their ends.  The shaded portion in the figure shows the cross section view. What is the maximum length possible by connecting the rods? Threads cannot be connected partially.",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q01.png",
+      "imageAlt": "UCEED 2020 Question 1 Diagram",
+      "answer": {
+        "min": 1020,
+        "max": 1020
+      },
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q02",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The attached image shows a corridor floor that is covered with square tiles of the same size. How many tiles are covered by the green patch?",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q02.png",
+      "imageAlt": "UCEED 2020 Question 2 Diagram",
+      "answer": {
+        "min": 33,
+        "max": 33
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q03",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Figure to the left shows an unfolded pattern of a die. If four such identical dice are stacked one on top of another, as shown on the right, what is the sum of the numbers appearing on the faces which are parallel to the ground?",
+      "topic": "Cube and cuboid nets",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q03.png",
+      "imageAlt": "UCEED 2020 Question 3 Diagram",
+      "answer": {
+        "min": 27,
+        "max": 27
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q04",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Twenty points are arranged on a plane as shown in the figure below. What is the highest number of squares that can be drawn using any four points as corners? Area of black surface in the following image is ________  cm2.",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q04.png",
+      "imageAlt": "UCEED 2020 Question 4 Diagram",
+      "answer": {
+        "min": 21,
+        "max": 21
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q05",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Note:  1. All curves have same radii.  2. Use the value of pi as 22/7",
+      "topic": "Area, perimeter, volume and surface area",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q05.png",
+      "imageAlt": "UCEED 2020 Question 5 Diagram",
+      "answer": {
+        "min": 140,
+        "max": 140
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q06",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "The image is a ceramic tile of dimension 20 cm x 20 cm. How many distinct patterns can you create by using two such ceramic tiles in a rectangular patch of 40 cm x 20 cm on the wall? 40 20",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q06.png",
+      "imageAlt": "UCEED 2020 Question 6 Diagram",
+      "answer": {
+        "min": 16,
+        "max": 16
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q07",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A cube is created by stacking 27 smaller cubes as shown in the figure. A plane, going through vertices A, B and C, cuts the cube as shown in the figure. How many smaller cubes will get cut?",
+      "topic": "Cross-sections and slicing",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q07.png",
+      "imageAlt": "UCEED 2020 Question 7 Diagram",
+      "answer": {
+        "min": 9,
+        "max": 9
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q08",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "At most how many triangles can appear by adding two straight lines to the figure? counted separately, for example the motifs P and Q are distinct.",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q08.png",
+      "imageAlt": "UCEED 2020 Question 8 Diagram",
+      "answer": {
+        "min": 10,
+        "max": 10
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q09",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "How many distinct motifs appear in the figure on the right? Flips and rotations are to be",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 8,
+        "max": 8
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q10",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A family of four—grandfather, father, son and daughter—are caught in a heavy rain and are stranded at a bus stop close to their home. However they have only one umbrella with them. The umbrella can take a maximum of two people without either of them getting wet.  The four members of the family take different times to walk from bus stop to home. The grandfather is slowest of all, taking 10 minutes, followed by the father who takes 5 minutes. The son takes 2 minutes, while the daughter takes only a minute. What is the minimum total time (in minutes) for all four members of the family to reach home without any of them getting wet?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 17,
+        "max": 17
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q11",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Six cards are laid out on a table as shown in the figure below. Each of the cards has a number on one side and a letter on the other side. What is the minimum number of cards you need to flip and see to make sure the rule, “cards that have a vowel on one side always have an even number on the other side” is TRUE?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q11.png",
+      "imageAlt": "UCEED 2020 Question 11 Diagram",
+      "answer": {
+        "min": 3,
+        "max": 3
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q12",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "X1 is a 3D form generated from the shape X, using certain 3D operations. It has 14 surfaces in total. If the same operations are carried out on shape Y, how many surfaces would the resulting 3D form have?",
+      "topic": "Faces, edges and vertices",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q12.png",
+      "imageAlt": "UCEED 2020 Question 12 Diagram",
+      "answer": {
+        "min": 16,
+        "max": 16
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q13",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "In 2018, a person spent half the time working, a third in sleeping and one-eighth in cooking. He spent the rest of the time exercising. How many total hours did he spend exercising?",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 365,
+        "max": 365
+      },
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q14",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "If the given shape in the figure is used to tile the grid on the right without any overlaps, what is the minimum number of units that will be left uncovered? Flips and rotations are allowed.",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q14.png",
+      "imageAlt": "UCEED 2020 Question 14 Diagram",
+      "answer": {
+        "min": 4,
+        "max": 4
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q15",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "A rectangular wooden plank has another smaller rectangular hole cut into it as shown in the figure given below. What is the minimum number of cutting planes that can divide the wooden plank into four parts of equal volume?",
+      "topic": "Cross-sections and slicing",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q15.png",
+      "imageAlt": "UCEED 2020 Question 15 Diagram",
+      "answer": {
+        "min": 2,
+        "max": 2
+      },
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q16",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "Count the number of differences between the two images shown below.",
+      "topic": "Spot the difference",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "answer": {
+        "min": 7,
+        "max": 7
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q17",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "An intersection is where two or more lines and/or curves meet or cross. How many intersections are there in the figure?",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q17.png",
+      "imageAlt": "UCEED 2020 Question 17 Diagram",
+      "answer": {
+        "min": 44,
+        "max": 44
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q18",
+      "sectionId": "nat",
+      "type": "NAT",
+      "prompt": "There are different types of pineapples in the given figure. How many pineapples appear only once?",
+      "topic": "Pattern Counting",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "nat"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q18.png",
+      "imageAlt": "UCEED 2020 Question 18 Diagram",
+      "answer": {
+        "min": 2,
+        "max": 2
+      },
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q19",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Two transparent discs with markings on them are shown. Which of the options can be created by overlapping and/or rotating them?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q19.png",
+      "imageAlt": "UCEED 2020 Question 19 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q20",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Read the paragraph given below and answer the question that follows: … Turkle describes the computer as an evocative object, one that raises new questions regarding our common sense of the distinction between artefacts and intelligent others. Her studies include an examination of the impact of computer-based artefacts on children’s conceptions of the difference between categories such as “alive” versus “not alive” and “machine” versus “person.” In dealing with the questions that computer-based objects evoke, children make clear that the differentiation of physical from psychological entities, which as adults we largely take for granted, is the end product of a process of establishing the relationship between the observable behaviour of a thing and its underlying nature. Children have a tendency, for example, to attribute life to physical objects on the basis of behaviours such as autonomous motion or reactivity, though they reserve humanity for entities evidencing such things as emotion, speech, and apparent thought or purposefulness. Turkle’s observation with respect to computational artefacts is that children ascribe to them an “almost aliveness” and a psychology, while maintaining their distinctness from human beings: a view that, as Turkle points out, is remarkable among other things for its correspondence to the views held by those who are the artefacts’ designers. Which of the following statements is/are TRUE of the paragraph above?",
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Turkle argues that children get confused when encountering computational artefacts and mistake them as human-like"
+        },
+        {
+          "id": "b",
+          "text": "Turkle argues that children are able to differentiate between physical and psychological entities by establishing relationship between how a thing behaves and its nature"
+        },
+        {
+          "id": "c",
+          "text": "Turkle concludes that children and adults react and categorise computer-based artefacts in a similar manner"
+        },
+        {
+          "id": "d",
+          "text": "Turkle finally concludes that children have a hard time understanding computer artefacts whereas adults can understand these artefacts far more easily."
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "category": "Language"
+    },
+    {
+      "id": "q21",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below is a T-shaped image on a transparent sheet of paper. Which of the options IS/ARE made by overlapping and/or rotating multiple copies of the transparent sheet?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q21.png",
+      "imageAlt": "UCEED 2020 Question 21 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q22",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Five friends Puru, Qadir, Roy, Sham and Tom live on five vertices of a regular pentagonal ground in a clockwise order. One day while Puru was walking to meet Roy, met Qadir who was on the way to meet Tom. Qadir changed his mind and decided to go with Puru to meet Roy. After meeting Roy all three went to Tom’s house for a cup of tea. If all of them took shortest routes cutting through the ground, which of the following statements is/are TRUE?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Till Tom’s place, Qadir walked more distance than Puru"
+        },
+        {
+          "id": "b",
+          "text": "Till Tom’s place, Puru walked more distance than Qadir"
+        },
+        {
+          "id": "c",
+          "text": "Till Tom’s place, Qadir walked double the distance than Roy"
+        },
+        {
+          "id": "d",
+          "text": "While returning to their respective homes from Tom’s place, Puru has to travel the least."
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q23",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A sphere, a cylinder and a cone, with equal heights are resting on a surface along a straight line. If the source of light is fixed and the light rays are parallel, which of the options show(s) the shadows correctly?",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q23.png",
+      "imageAlt": "UCEED 2020 Question 23 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q24",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the following statements would you consider to be TRUE about the hour and minute hands of analogue clocks?",
+      "topic": "Distance and speed",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "The hour hand and the minute hand would make 90 degrees angle with each other 24 times in a day"
+        },
+        {
+          "id": "b",
+          "text": "The hour hand and minute hand will overlap less than 24 times in a day"
+        },
+        {
+          "id": "c",
+          "text": "The hour hand and minute hand will overlap exactly on the hour number marker only once every half a day"
+        },
+        {
+          "id": "d",
+          "text": "The hour hand and minute hand will make acute angle to each other for almost as long as it will make obtuse angle to each other during the entire day"
+        }
+      ],
+      "answer": [
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q25",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Two friendly bugs were on their usual walk in the north-east direction. When the sun was in the east, they had an argument and one of them turned 45 degrees anticlockwise and walked away. Which of the images below correctly represent(s) their shadow now, when viewed by a person from top?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q25.png",
+      "imageAlt": "UCEED 2020 Question 25 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q26",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A pencil with pentagonal cross-section was sharpened using a pencil sharpener. Which of the options correctly represent(s) side view of the pencil?",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q26.png",
+      "imageAlt": "UCEED 2020 Question 26 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q27",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "A paper strip with a different colour on each side is joined as shown in the figure. If this strip is cut along the dashed line, which of the options correctly represent(s) the result(s)?",
+      "topic": "Paper folding, cutting and punching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q27.png",
+      "imageAlt": "UCEED 2020 Question 27 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q28",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Sundays are longer than Mondays. Mondays are shorter than Fridays. Wednesdays are shorter than Saturdays, which are in turn shorter than Sundays. Thursdays are shorter than Saturdays. Tuesdays are longer than Saturdays. Wednesdays and Thursdays are both longer than Fridays. If all of these are true, which of the options is/are also TRUE?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Wednesdays could be as long as Thursdays."
+        },
+        {
+          "id": "b",
+          "text": "Tuesdays could be the longest days of the week."
+        },
+        {
+          "id": "c",
+          "text": "Mondays are the shortest days of the week."
+        },
+        {
+          "id": "d",
+          "text": "Fridays could be as long as Sundays."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q29",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Which of the options CANNOT be folded along the dotted lines into a package as shown in the image? For simplicity sake, cut lines have not been shown in the given schematic. The cross section of the package is an equilateral triangle.",
+      "topic": "Cube and cuboid nets",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q29.png",
+      "imageAlt": "UCEED 2020 Question 29 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q30",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Each of the options shows a pair of two different pieces. Which of the options CAN NOT be cut out of the given figure?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q30.png",
+      "imageAlt": "UCEED 2020 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q31",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Shown below is an image that represents how cups should stack on top of each other in a stable manner. Among the given different types of cups, which of the cups CANNOT stack on itself in a stable manner?",
+      "topic": "Balance and stability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q31.png",
+      "imageAlt": "UCEED 2020 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q32",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "In the image shown, objects have been duplicated and rotated. Which object(s) is/are NOT arranged around a perfect circle?",
+      "topic": "Odd-one-out",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q32.png",
+      "imageAlt": "UCEED 2020 Question 32 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "c",
+        "d"
+      ],
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q33",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Figures 2 and 3 can be derived from figure 1 by overlapping some of the given options one at a time. If flipping and rotations are allowed, which option(s) will allow you to derive figure 2 and 3?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q33.png",
+      "imageAlt": "UCEED 2020 Question 33 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q34",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "P, Q, R, S, T, U and V are bees living in separate cells of a 2D hive made of hexagonal cells. T and V are neighbours of P. R and S are neighbours of U. V does not share a wall with T, U or R. Q, being the queen, shares a wall with everyone. Which of the options must be TRUE?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "S and V are neighbours"
+        },
+        {
+          "id": "b",
+          "text": "R and T are neighbours"
+        },
+        {
+          "id": "c",
+          "text": "P and U share a wall"
+        },
+        {
+          "id": "d",
+          "text": "S and T are not neighbours"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q35",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "The figures show four different schematics of two flexible strings. If all the ends are pulled tight, which of the options will form a knot?",
+      "topic": "2D and 3D visualization",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q35.png",
+      "imageAlt": "UCEED 2020 Question 35 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q36",
+      "sectionId": "msq",
+      "type": "MSQ",
+      "prompt": "Seven identical playing dice are unfolded in an identical manner. Six of the unfolded dice are laid out on a flat surface and are arranged to touch each other without overlapping. The figure shows a portion of the arrangement. Which face(s) from the seventh unfolded dice CAN NOT replace X if overlap must be avoided?",
+      "topic": "Cube and cuboid nets",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "msq"
+      ],
+      "marks": {
+        "correct": 4,
+        "incorrect": -0.19,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q36.png",
+      "imageAlt": "UCEED 2020 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q37",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "topic": "Pattern Sequences",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q37.png",
+      "imageAlt": "UCEED 2020 Question 37 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q38",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A paper strip is rolled and then cut with two planes at 45 degree as shown below. The middle part of the cut paper is unrolled. Which of the options represents this part?",
+      "topic": "Paper folding, cutting and punching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q38.png",
+      "imageAlt": "UCEED 2020 Question 38 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q39",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The phrase shown below uses a particular font. Which of the options belongs to the same font?",
+      "topic": "Typography & Fonts",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Language & Creativity"
+    },
+    {
+      "id": "q40",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Aastha is sailing a paper boat in still water. Which of the given options represents the reflection correctly?",
+      "topic": "Mirror images and water images",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q40.png",
+      "imageAlt": "UCEED 2020 Question 40 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q41",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An illustration of a walking ant and a pair of glasses lying on the table surface is shown. Which is the correct illustration from the ant’s current point of view?",
+      "topic": "Perspective and depth",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q41.png",
+      "imageAlt": "UCEED 2020 Question 41 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q42",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If drassoglitive means woodboard frassopoolts means bodystudy glitivedrassy means foodwood dressowoolts means digitalscreen Then which word would mean screensize",
+      "topic": "Reading comprehension",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "dressoissics"
+        },
+        {
+          "id": "b",
+          "text": "dressodrasso"
+        },
+        {
+          "id": "c",
+          "text": "issicsdresso"
+        },
+        {
+          "id": "d",
+          "text": "drassodresso"
+        }
+      ],
+      "answer": "c",
+      "category": "Language"
+    },
+    {
+      "id": "q43",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A rolled yellow paper cylinder is rotating clockwise direction at a constant rate of 1 revolution / 60 seconds. A pencil is touching the paper cylinder and is moving from T1 to T2 in 10 seconds and stops for 10 seconds. Then it moves to T3 in next 40 seconds (total time=60 seconds) as shown in figure 2. What would be the graph on paper when it is unrolled?",
+      "topic": "Sequence of operation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q43.png",
+      "imageAlt": "UCEED 2020 Question 43 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q44",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "An opaque circular disc is parallel to the table top. A beam of sunlight casts its shadow on the table top as shown in the figure. Which of the options represents the shape of the shadow as seen in the top view of the table?",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q44.png",
+      "imageAlt": "UCEED 2020 Question 44 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q45",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "In a given version of chess, no piece can capture another piece. Instead, each piece is on a mission. In the scenario shown in the figure on the left, the knight is on a mission to the diagonally opposite square marked by X. Assuming that no other piece moves, what is the minimum number of moves it will take the knight to reach there? (Note: In chess, the knight moves as shown in the figure on the right. The knight cannot land on any square that has a pawn, but can jump over it.)",
+      "topic": "Paths, grids and mazes",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q45.png",
+      "imageAlt": "UCEED 2020 Question 45 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q46",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Three options are made out of the same set of pieces WITHOUT flipping. Which of the options is NOT possible?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q47",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A 10 cm tall card with some cut-outs is placed on a long table in front of a lamp in a dark room as shown in the figure. The lamp is 15 cm tall and is placed 15 cm in front of the card. Which of the options shows the correct shadow cast by the card?",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q47.png",
+      "imageAlt": "UCEED 2020 Question 47 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q48",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which is the odd one out?",
+      "topic": "Odd-one-out",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q48.png",
+      "imageAlt": "UCEED 2020 Question 48 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q49",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the correct set of legs for Mr. Kumar to balance his body as he carries a heavy box.",
+      "topic": "Balance and stability",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q49.png",
+      "imageAlt": "UCEED 2020 Question 49 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q50",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Front and back views of a solid are shown. Which of the options can be folded to form this solid?",
+      "topic": "Cube and cuboid nets",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q50.png",
+      "imageAlt": "UCEED 2020 Question 50 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q51",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Shown below is a paint splatter on a wall surface. A paint squeegee is pulled over it. Which of the options correctly represents the part of the pattern formed?",
+      "topic": "Sequence of operation",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q51.png",
+      "imageAlt": "UCEED 2020 Question 51 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q52",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The adjacent figure has six compartments. Each compartment consists of six squares. These squares are to be filled with six different colours in such a way that each row, each column and each compartment should have all six colours. Which of the options will replace the question marks?",
+      "topic": "Logical conditions and statements",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q52.png",
+      "imageAlt": "UCEED 2020 Question 52 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q53",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A giant creature is walking towards a group of buildings in the city. Which is the correct perspective from the creature’s point-of-view?",
+      "topic": "Perspective and depth",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q53.png",
+      "imageAlt": "UCEED 2020 Question 53 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q54",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options will replace the question mark?",
+      "topic": "Pattern Sequences",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q54.png",
+      "imageAlt": "UCEED 2020 Question 54 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q55",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "The figure shows a mechanism with a disc, two bars and a static surface connected to each other with hinges. The disc rotates about the hinge at its centre as shown. What is the path traced by point X (end point of the longest bar) in this planar set up?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q55.png",
+      "imageAlt": "UCEED 2020 Question 55 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q56",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Identify the correct representation of lighting for this scene, given that the lightening strike is the only light source.",
+      "topic": "Light, reflection and refraction",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q56.png",
+      "imageAlt": "UCEED 2020 Question 56 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q57",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the following lakes has the largest area?",
+      "topic": "Natural environment and geography",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q57.png",
+      "imageAlt": "UCEED 2020 Question 57 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d",
+      "category": "Environment & Society"
+    },
+    {
+      "id": "q58",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the given options matches the patterns (1,2,3,4) with tiles (P,Q,R,S) correctly?",
+      "topic": "Texture & Pattern Matching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q58.png",
+      "imageAlt": "UCEED 2020 Question 58 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "1-S, 2-P, 3-Q, 4-R"
+        },
+        {
+          "id": "b",
+          "text": "1-R, 2-Q,3-P, 4-S"
+        },
+        {
+          "id": "c",
+          "text": "1-Q, 2-S, 3-R, 4-P"
+        },
+        {
+          "id": "d",
+          "text": "1-R, 2-S, 3-P, 4-Q"
+        }
+      ],
+      "answer": "d",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q59",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options correctly shows the silhouettes of the given image?",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q59.png",
+      "imageAlt": "UCEED 2020 Question 59 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q60",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Three rings are shown in the figure. They roll in the specified directions and stop when centres of all the rings coincide at line XX’. What pattern would they make?",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q60.png",
+      "imageAlt": "UCEED 2020 Question 60 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q61",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Figure shows a clothes line attached to four independent pulleys P, Q, R & S. Which of the options represent the correct rotation of pulleys that would result in lowering the clothes line?",
+      "topic": "Everyday objects and mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q61.png",
+      "imageAlt": "UCEED 2020 Question 61 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Practical & Scientific Knowledge"
+    },
+    {
+      "id": "q62",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options will replace the question mark?",
+      "topic": "Colour and composition",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q62.png",
+      "imageAlt": "UCEED 2020 Question 62 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Observation & Design Sensitivity"
+    },
+    {
+      "id": "q63",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Assume that the English alphabet was redesigned, and the new alphabet had alternating upper case and lower case letters. The alphabet starts with uppercase A, and 1) all upper case letters were rotated clockwise by 90 degrees 2) all lower case letters were rotated anti-clock wise by 90 degrees Using the new alphabet, the word “HELP” would be written as:",
+      "topic": "Rotation and reflection",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q64",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "If the given figure represents a cube in 3D, which of the options correctly represents its views from different sides?",
+      "topic": "Top, front and side views",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q64.png",
+      "imageAlt": "UCEED 2020 Question 64 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q65",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "A square is cut into 4 pieces. One of the pieces is shown on the left and the remaining three are in the options. Which of the options is NOT a part of the square?",
+      "topic": "Spatial Assembly",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q65.png",
+      "imageAlt": "UCEED 2020 Question 65 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    },
+    {
+      "id": "q66",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "In the figure given below which of the options will replace the question mark?",
+      "topic": "Pattern Sequences",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q66.png",
+      "imageAlt": "UCEED 2020 Question 66 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b",
+      "category": "Analytical & Logical Reasoning"
+    },
+    {
+      "id": "q67",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Which of the options can be associated with all the objects?",
+      "topic": "Visual analogies",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c",
+      "category": "Creativity"
+    },
+    {
+      "id": "q68",
+      "sectionId": "mcq",
+      "type": "MCQ",
+      "prompt": "Select the correct option.",
+      "topic": "Paper folding, cutting and punching",
+      "difficulty": "Medium",
+      "tags": [
+        "uceed-2020",
+        "mcq"
+      ],
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "image": "/media/uceed-2020-q68.png",
+      "imageAlt": "UCEED 2020 Question 68 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a",
+      "category": "Visualization & Spatial Reasoning"
+    }
+  ]
+}

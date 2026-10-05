@@ -22,6 +22,7 @@ export async function migrate(database) {
       `CREATE TABLE IF NOT EXISTS student_sketches (id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,title TEXT NOT NULL,prompt TEXT NOT NULL,image_data_url TEXT NOT NULL,created_at BIGINT NOT NULL)`,
       `CREATE TABLE IF NOT EXISTS guide_quiz_attempts (id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,guide_id TEXT NOT NULL,correct INTEGER NOT NULL,total INTEGER NOT NULL,submitted_at BIGINT NOT NULL)`,
       `CREATE TABLE IF NOT EXISTS student_revision_reviews (user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,exam_id TEXT NOT NULL,question_id TEXT NOT NULL,reviewed_at BIGINT NOT NULL,PRIMARY KEY(user_id,exam_id,question_id))`,
+      `CREATE TABLE IF NOT EXISTS attempt_history (id TEXT PRIMARY KEY,exam_id TEXT NOT NULL REFERENCES exams(id),user_id TEXT NOT NULL REFERENCES users(id),exam_json TEXT NOT NULL,answers_json TEXT NOT NULL,status TEXT NOT NULL,started_at BIGINT NOT NULL,deadline BIGINT NOT NULL,version INTEGER NOT NULL,submitted_at BIGINT,result_json TEXT,archived_at BIGINT NOT NULL)`,
       'CREATE INDEX IF NOT EXISTS sessions_user ON sessions(user_id)',
       'CREATE INDEX IF NOT EXISTS challenges_user ON auth_challenges(user_id)',
       'CREATE INDEX IF NOT EXISTS attempts_deadline ON attempts(status,deadline)',

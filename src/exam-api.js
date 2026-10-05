@@ -218,6 +218,8 @@ export function createExamApi(auth, engine, roster, database) {
 
       const start = path.match(/^\/api\/exams\/([a-zA-Z0-9_-]+)\/start$/);
       if (start && req.method === 'POST') return json(200, await engine.start(start[1], user.id));
+      const reattempt = path.match(/^\/api\/exams\/([a-zA-Z0-9_-]+)\/reattempt$/);
+      if (reattempt && req.method === 'POST') return json(200, await engine.reattempt(reattempt[1], user.id));
 
       const route = path.match(/^\/api\/attempts\/([a-zA-Z0-9_-]+)(?:\/(answers|submit|flags|control))?$/);
       if (!route) throw new HttpError(404, 'Endpoint not found.');

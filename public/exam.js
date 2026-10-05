@@ -148,6 +148,22 @@ function renderResult(){
   }));
   if(queue.length){text('#error','This exam is submitted. '+queue.length+' pending edit(s) on this device were not included.');}
   else if(storageKey){try{localStorage.removeItem(storageKey);}catch{}}
+  let reattemptBtn=$('#result-reattempt');
+  if(!reattemptBtn){
+    reattemptBtn=node('button','🔁 Re-attempt This Exam','submit');
+    reattemptBtn.id='result-reattempt';
+    reattemptBtn.style.marginTop='20px';
+    reattemptBtn.addEventListener('click',async()=>{
+      if(confirm('Re-attempting will reset this attempt and start a fresh timed exam. Continue?')){
+        try{
+          const next=await request('/api/exams/'+encodeURIComponent(state.exam.id)+'/reattempt',{});
+          if(storageKey){try{localStorage.removeItem(storageKey);}catch{}}
+          location.replace('/exam.html?id='+encodeURIComponent(next.id));
+        }catch(err){alert(err.message);}
+      }
+    });
+    $('#result').append(reattemptBtn);
+  }
   saveStatus();
 }
 function format(ms){const seconds=Math.max(0,Math.ceil(ms/1000));return String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');}

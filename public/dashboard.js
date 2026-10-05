@@ -519,7 +519,21 @@ async function library() {
                 renderLibraryContent();
               }
             }
-          }, [status === 'active' ? 'Resume Exam →' : status === 'submitted' ? 'View Scorecard →' : 'Select Paper →'])
+          }, [status === 'active' ? 'Resume Exam →' : status === 'submitted' ? 'View Scorecard →' : 'Select Paper →']),
+          status === 'submitted' ? el('button', {
+            className: 'btn btn-outline',
+            style: 'margin-left:8px; border-color:var(--brds-red); color:var(--brds-red);',
+            onclick: async () => {
+              if (confirm('Re-attempting will start a fresh timed exam session for this paper. Continue?')) {
+                try {
+                  const data = await apiFetch(`/api/exams/${encodeURIComponent(paperId)}/reattempt`, { method: 'POST' });
+                  invalidateAttemptAnalytics();
+                  state.exams = null;
+                  location.assign(`/exam.html?id=${encodeURIComponent(data.id)}`);
+                } catch (err) { alert(err.message); }
+              }
+            }
+          }, ['🔁 Re-attempt']) : null
         ])
       ]);
     }));

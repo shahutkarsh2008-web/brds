@@ -159,6 +159,31 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
       return studentView(row,now());
     }); notify(view.userId);return view;
   }
+  async function reattempt(examId,userId) {
+    const view=await database.transaction(async query=>{
+      const exam=(await query('SELECT e.definition FROM exams e JOIN exam_assignments x ON x.exam_id=e.id WHERE e.id=$1 AND x.user_id=$2',[examId,userId])).rows[0];
+      if(!exam) fail(404,'Assigned exam not found.');
+      const existing=(await query('SELECT * FROM attempts WHERE exam_id=$1 AND user_id=$2',[examId,userId])).rows[0];
+      const time=now();
+      if(existing){
+        if(existing.status==='submitted'){
+          await query("INSERT INTO attempt_history(id,exam_id,user_id,exam_json,answers_json,status,started_at,deadline,version,submitted_at,result_json,archived_at) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12)",
+            [existing.id,existing.exam_id,existing.user_id,existing.exam_json,existing.answers_json,existing.status,existing.started_at,existing.deadline,existing.version,existing.submitted_at,existing.result_json,time]);
+        }
+        await query('DELETE FROM activity_flags WHERE attempt_id=$1',[existing.id]);
+        await query('DELETE FROM answer_mutations WHERE attempt_id=$1',[existing.id]);
+        await query('DELETE FROM attempt_controls WHERE attempt_id=$1',[existing.id]);
+        await query('DELETE FROM teacher_actions WHERE attempt_id=$1',[existing.id]);
+        await query('DELETE FROM attempts WHERE id=$1',[existing.id]);
+      }
+      const definition=JSON.parse(exam.definition), newId=randomUUID();
+      await query("INSERT INTO attempts(id,exam_id,user_id,exam_json,answers_json,status,started_at,deadline,version) VALUES($1,$2,$3,$4,'{}','active',$5,$6,0)",
+        [newId,examId,userId,exam.definition,time,time+definition.durationSeconds*1000]);
+      const row=(await query('SELECT * FROM attempts WHERE id=$1'+lockSuffix,[newId])).rows[0];
+      await controlState(query,row);
+      return studentView(row,time);
+    }); notify(view.userId);return view;
+  }
   async function get(id,userId) {
     let expired=false;
     const view=await database.transaction(async query=>{
@@ -398,9 +423,13 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
 
   async function getStudentHistory(userId) {
     const rows = (await database.query(
-      `SELECT a.*, e.title FROM attempts a
+      `SELECT a.*, e.title FROM (
+         SELECT id, exam_id, user_id, started_at, submitted_at, status, result_json FROM attempts WHERE user_id=$1
+         UNION ALL
+         SELECT id, exam_id, user_id, started_at, submitted_at, status, result_json FROM attempt_history WHERE user_id=$1
+       ) a
        JOIN exams e ON e.id=a.exam_id
-       WHERE a.user_id=$1 ORDER BY a.started_at DESC`,
+       ORDER BY a.started_at DESC`,
       [userId]
     )).rows;
 
@@ -426,7 +455,11 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
   async function getStudentOverview(userId) {
     const { rows = [] } = await database.query(
       `SELECT a.id,a.exam_id,a.status,a.started_at,a.submitted_at,a.exam_json,a.answers_json,a.result_json,e.title
-       FROM attempts a JOIN exams e ON e.id=a.exam_id WHERE a.user_id=$1 ORDER BY a.started_at ASC`,
+       FROM (
+         SELECT id, exam_id, user_id, status, started_at, submitted_at, exam_json, answers_json, result_json FROM attempts WHERE user_id=$1
+         UNION ALL
+         SELECT id, exam_id, user_id, status, started_at, submitted_at, exam_json, answers_json, result_json FROM attempt_history WHERE user_id=$1
+       ) a JOIN exams e ON e.id=a.exam_id ORDER BY a.started_at ASC`,
       [userId]
     );
     const attempts = rows.map(row => {
@@ -563,7 +596,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
     };
   }
 
-  return {list,start,get,answer,submit,flag,sweep,roster,control,saveExam,assignExam,listAuthored,getAuthored,getExamAnalytics,getStudentHistory,getStudentOverview};
+  return {list,start,reattempt,get,answer,submit,flag,sweep,roster,control,saveExam,assignExam,listAuthored,getAuthored,getExamAnalytics,getStudentHistory,getStudentOverview};
 }
 
 

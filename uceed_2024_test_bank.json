@@ -1,0 +1,2285 @@
+{
+  "id": "uceed-2024-official",
+  "title": "UCEED 2024 Question Paper",
+  "sourceFile": "UCEED_2024_Question_Paper.pdf",
+  "answerKeySourceFile": "UCEED2024_Answer_Key.pdf",
+  "durationSeconds": 10800,
+  "partADurationSeconds": 7200,
+  "partBDurationSeconds": 3600,
+  "instructions": "1. The total duration of the examination is 3 hours. The question paper contains two parts – Part A and Part B. The duration of Part A is 2 hours. Part B will begin after Part A ends. The duration of Part B is 1 hour.\n2. Part A is divided into three sections: 1, 2 and 3. All sections are compulsory. Questions in each section are of different types. There are a total of 57 questions in Part A carrying a total of 200 marks. Questions of Part A will appear on the computer for the first 2 hours. Answers to Part A have to be entered in the computer within the first 2 hours.\n3. Part B is also compulsory and contains 2 drawing questions of 50 marks each. Questions of Part B will appear on the computer after 2 hours. Answers to Part B have to be given in the answer book provided by the invigilator.\n4. Marking scheme of Part A: Section 1 NAT: 14 questions, +4 correct, 0 wrong, 0 not attempted, 56 marks. Section 2 MSQ: 15 questions, partial marking, -1 in all other cases, 0 not attempted, 60 marks. Section 3 MCQ: 28 questions, +3 correct, -0.71 wrong, 0 not attempted, 84 marks. Total: 57 questions, 200 marks.\n5. Section 1: Numerical Answer Type (NAT): 14 questions (4 marks each; no negative marks). For these questions, the answer is a number that needs to be entered using the virtual keyboard on the computer screen. No choices will be shown for these questions. Questions from 1 to 14 belong to this section.\n6. Section 2: Multiple Select Questions (MSQ): 15 questions. Each MSQ may have one or more than one correct choice(s) out of the four given. Full Marks: (+4) If only (all) the correct option(s) is(are) chosen and NONE of the incorrect options is chosen. Partial Marks: (+3) If all the four options are correct but ONLY three options are chosen and NONE of the incorrect options is chosen. Partial Marks: (+2) If three or more options are correct but ONLY two options are chosen, both of which are correct and NONE of the incorrect options is chosen. Partial Marks: (+1) If two or more options are correct but ONLY one option is chosen and it is a correct option and NONE of the incorrect options is chosen. Zero Marks: (0) If NONE of the options are chosen (i.e. the question is unanswered). Negative Marks: (-1) In all other cases. Questions from 15 to 29 belong to this section.\n7. Section 3: Multiple Choice Questions (MCQ): 28 questions (3 marks each for the correct answer; 0.71 negative marks for incorrect answers). Each MCQ has four choices out of which ONLY ONE is the correct answer. Questions from 30 to 57 belong to this section.\n8. Part B (100 Marks) contains two drawing questions of 50 marks each. Both questions in Part B are mandatory. There is NO NEGATIVE marking in this section. Questions 58 and 59 belong to this section.\n9. Calculators, charts, graph-sheets, mathematical tables, mobile phone, watches of any type and other electronic gadgets are NOT allowed in the examination hall.\n10. Blank sheets of paper will be provided for rough work.",
+  "marking": {
+    "correct": null,
+    "incorrect": null,
+    "unanswered": 0,
+    "note": "Marking varies by section; see sections."
+  },
+  "sections": [
+    {
+      "id": "section-1-nat",
+      "name": "Section 1: Numerical Answer Type (NAT)",
+      "part": "A",
+      "questionNumbers": "1-14",
+      "questionCount": 14,
+      "marks": 56,
+      "marking": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "section-2-msq",
+      "name": "Section 2: Multiple Select Questions (MSQ)",
+      "part": "A",
+      "questionNumbers": "15-29",
+      "questionCount": 15,
+      "marks": 60,
+      "marking": {
+        "fullCorrect": 4,
+        "partial": {
+          "threeOfFourWhenAllFourCorrect": 3,
+          "twoCorrectWhenAtLeastThreeCorrect": 2,
+          "oneCorrectWhenAtLeastTwoCorrect": 1
+        },
+        "incorrect": -1,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "section-3-mcq",
+      "name": "Section 3: Multiple Choice Questions (MCQ)",
+      "part": "A",
+      "questionNumbers": "30-57",
+      "questionCount": 28,
+      "marks": 84,
+      "marking": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      }
+    },
+    {
+      "id": "part-b",
+      "name": "Part B",
+      "part": "B",
+      "questionNumbers": "58-59",
+      "questionCount": 2,
+      "marks": 100,
+      "durationSeconds": 3600,
+      "marking": {
+        "correct": null,
+        "incorrect": 0,
+        "unanswered": 0,
+        "note": "Two mandatory drawing/design questions of 50 marks each; evaluated using stated criteria."
+      }
+    }
+  ],
+  "topics": [
+    {
+      "id": "section-1-nat",
+      "name": "Section 1: Numerical Answer Type (NAT)"
+    },
+    {
+      "id": "section-2-msq",
+      "name": "Section 2: Multiple Select Questions (MSQ)"
+    },
+    {
+      "id": "section-3-mcq",
+      "name": "Section 3: Multiple Choice Questions (MCQ)"
+    },
+    {
+      "id": "part-b-drawing",
+      "name": "Part B: Drawing"
+    },
+    {
+      "id": "part-b-design-aptitude",
+      "name": "Part B: Design Aptitude"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q.01",
+      "printedId": "Q.01",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "What is the maximum number of complete circles that will be seen, if the strips given below are re-arranged without rotating?",
+      "options": [],
+      "answer": {
+        "min": 7,
+        "max": 7
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q01.png",
+      "sourcePage": 4,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "7"
+    },
+    {
+      "id": "Q.02",
+      "printedId": "Q.02",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "What is the total number of triangles in the figure given below?",
+      "options": [],
+      "answer": {
+        "min": 24,
+        "max": 24
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q02.png",
+      "sourcePage": 4,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "24"
+    },
+    {
+      "id": "Q.03",
+      "printedId": "Q.03",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "Given below are ten pieces of a puzzle. When arranged correctly they form a four-digit number. What is the number formed after the correct arrangement?",
+      "options": [],
+      "answer": {
+        "min": 8563,
+        "max": 8563
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q03.png",
+      "sourcePage": 5,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "8563"
+    },
+    {
+      "id": "Q.04",
+      "printedId": "Q.04",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "A perspective view of a solid is shown below. The solid is symmetrical, and hidden surfaces such as the base are flat. What is the total number of surfaces in the solid?",
+      "options": [],
+      "answer": {
+        "min": 72,
+        "max": 72
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q04.png",
+      "sourcePage": 5,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "72"
+    },
+    {
+      "id": "Q.05",
+      "printedId": "Q.05",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "A perspective view of a solid object is shown on the left. The object is cut simultaneously along THREE perpendicular planes as shown on the right. How many surfaces will the resulting pieces have in total (i.e. sum of the surfaces of all pieces)?",
+      "options": [],
+      "answer": {
+        "min": 48,
+        "max": 48
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q05.png",
+      "sourcePage": 5,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "48"
+    },
+    {
+      "id": "Q.06",
+      "printedId": "Q.06",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "How many matching pairs of shoes (both left and right shoe) are present in the image below?",
+      "options": [],
+      "answer": {
+        "min": 4,
+        "max": 4
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q06.png",
+      "sourcePage": 6,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "4"
+    },
+    {
+      "id": "Q.07",
+      "printedId": "Q.07",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "A typical football is made by stitching together 12 pentagons and 20 hexagons. How many vertices (junctions) are there in such a football?",
+      "options": [],
+      "answer": {
+        "min": 60,
+        "max": 60
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": null,
+      "sourcePage": 6,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "60"
+    },
+    {
+      "id": "Q.08",
+      "printedId": "Q.08",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "A vehicle with a wheel arrangement is shown in Figure (i). This vehicle is travelling along a circular path as shown in Figure (ii). The wheels do not change their orientation while moving along the circular path. Figure (iii) shows the location of the centres of the wheels. The distance between the centres of Wheel-3 and Wheel-2 is 170 cm, and the distance between the centres of Wheel-1 and Wheel-2 is 180 cm. The radius of the circular path followed by Wheel-2 is 525 cm. What is the radius of the path followed by Wheel-1 in cm?",
+      "options": [],
+      "answer": {
+        "min": 615,
+        "max": 645
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q08.png",
+      "sourcePage": 6,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "615 – 645"
+    },
+    {
+      "id": "Q.09",
+      "printedId": "Q.09",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "Shown below is an image of a circle and six equilateral triangles. The circumference of the circle is 18.85 cm. What is the area of ONE equilateral triangle in cm2? Assume √3 = 1.732 and π = 3.14.",
+      "options": [],
+      "answer": {
+        "min": 5.0,
+        "max": 5.35
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q09.png",
+      "sourcePage": 7,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "5.0 – 5.35"
+    },
+    {
+      "id": "Q.10",
+      "printedId": "Q.10",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "A wooden block of dimension 10cm x 20cm x 30cm is cut into equal sized planks. The cut planks are stacked one above the other to achieve a total height of 100cm exactly. If the minimum number of planks are cut to achieve this height, then what is the volume of each plank in cm3?",
+      "options": [],
+      "answer": {
+        "min": 1500,
+        "max": 1500
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": null,
+      "sourcePage": 7,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "1500"
+    },
+    {
+      "id": "Q.11",
+      "printedId": "Q.11",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "Shown below are two stacked paper cups and a box with their dimensions. If stacking is allowed, then what is the maximum number of cups that can be stored in the box without deforming the cups?",
+      "options": [],
+      "answer": {
+        "min": 75,
+        "max": 75
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q11.png",
+      "sourcePage": 7,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "75"
+    },
+    {
+      "id": "Q.12",
+      "printedId": "Q.12",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "Shown below is a configuration of FOUR solid spheres each of radius 40cm that are placed on four corners of a regular tetrahedron with side 120cm. The centres of the spheres coincide with the corners of the tetrahedron. What is the radius (in cm) of the largest sphere that can be accommodated within the tetrahedron?",
+      "options": [],
+      "answer": {
+        "min": 32.5,
+        "max": 34.5
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q12.png",
+      "sourcePage": 8,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "32.5 – 34.5"
+    },
+    {
+      "id": "Q.13",
+      "printedId": "Q.13",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "Section P shows three views of a regular dice. TEN of such regular dice are stacked on an opaque table as shown in Section Q (two views of the same arrangement). What is the maximum sum that can be achieved adding the numbers on the visible surfaces from all angles?",
+      "options": [],
+      "answer": {
+        "min": 141,
+        "max": 141
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q13.png",
+      "sourcePage": 8,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "141"
+    },
+    {
+      "id": "Q.14",
+      "printedId": "Q.14",
+      "topicId": "section-1-nat",
+      "topic": "Section 1: Numerical Answer Type (NAT)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "NAT",
+      "prompt": "What are the minimum number of tile pieces (shown on the right) that are required to create a path from tile A to tile B, such that ALL the following conditions are met: \n• All tiles are to be used at least once. \n• Tiles cannot overlap. \n• The path on a tile must be connected to another path of a tile. \n• The same type of tile cannot be used one-after-the other in a sequence. \n• Rotation of the tiles is not allowed. \n• Exclude tile A and tile B from the count.",
+      "options": [],
+      "answer": {
+        "acceptedValues": [
+          12,
+          13
+        ]
+      },
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q14.png",
+      "sourcePage": 9,
+      "tags": [
+        "uceed-2024",
+        "nat"
+      ],
+      "answerRaw": "12 OR 13",
+      "answerFormat": "discrete_values"
+    },
+    {
+      "id": "Q.15",
+      "printedId": "Q.15",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which option(s) contain(s) stars that are NOT found in the image below?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q15.png",
+      "sourcePage": 10,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.16",
+      "printedId": "Q.16",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Alphabets A to Z are arranged starting at 6’o clock, and three alphabets with their respective positions are shown in the image given below. Which of the following combinations is/are correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GOA= 3’o clock+ 3’o clock+ 6’o clock"
+        },
+        {
+          "id": "b",
+          "text": "SKY= 9’o clock+ 9’o clock+ 6’o clock"
+        },
+        {
+          "id": "c",
+          "text": "FLY= 3’o clock+ 6’o clock+ 9’o clock"
+        },
+        {
+          "id": "d",
+          "text": "BYE= 9’o clock+ 6’o clock+ 3’o clock"
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q16.png",
+      "sourcePage": 10,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.17",
+      "printedId": "Q.17",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which option(s) contain(s) the exact fragments of the image shown on the left?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q17.png",
+      "sourcePage": 11,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.18",
+      "printedId": "Q.18",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Shown below are the vertical cross-sections of handpumps. Which of the following options depict(s) the correct working principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q18.png",
+      "sourcePage": 11,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.19",
+      "printedId": "Q.19",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options will collapse completely?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q19.png",
+      "sourcePage": 12,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.20",
+      "printedId": "Q.20",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Two views of a solid object are shown on the left. Which of the following options is/are the view(s) of the same object?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q20.png",
+      "sourcePage": 12,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.21",
+      "printedId": "Q.21",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options is/are correct according to pigment colour theory?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q21.png",
+      "sourcePage": 12,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.22",
+      "printedId": "Q.22",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Four spheres start revolving clockwise in concentric circles from their initial positions as shown below. Yellow travels at 2m/sec, green at 4m/sec, red at 2m/sec and blue at 4m/sec. Which of the following statement(s) is/are TRUE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yellow and green never cross (overtake) each other"
+        },
+        {
+          "id": "b",
+          "text": "Red and blue takes the same time to complete one revolution"
+        },
+        {
+          "id": "c",
+          "text": "Yellow takes less time than green to complete one revolution"
+        },
+        {
+          "id": "d",
+          "text": "Blue and red will cross each other twice after the first 3 complete revolutions of blue"
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q22.png",
+      "sourcePage": 13,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.23",
+      "printedId": "Q.23",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Shown below is a cross-section of two different trees of same species and age but found in different locations. Based on the image, which of the statement(s) is/are TRUE.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Growth of the tree X is more consistent than tree Y"
+        },
+        {
+          "id": "b",
+          "text": "Growth of the tree X is healthier than tree Y"
+        },
+        {
+          "id": "c",
+          "text": "Climatic conditions could be the reason for the uneven ring structures in tree Y"
+        },
+        {
+          "id": "d",
+          "text": "Growth of the tree Y is healthier than tree X"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q23.png",
+      "sourcePage": 13,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.24",
+      "printedId": "Q.24",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Given on the left is the unwrapped surface of a hollow sphere that was intersected by a smaller solid sphere. Which of the options would result in this unwrapped surface?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q24.png",
+      "sourcePage": 14,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.25",
+      "printedId": "Q.25",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Six concentric white rings, each of equal thickness but having different diameters, are positioned on different planes in space. A one-point perspective view of the rings is shown below. Based on this view, which of the option(s) is/are TRUE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rings 6 and 3 are closer to the viewer compared to ring 5"
+        },
+        {
+          "id": "b",
+          "text": "Rings 2 and 4 are at equal distance from the viewer"
+        },
+        {
+          "id": "c",
+          "text": "Ring 1 is the nearest to the viewer"
+        },
+        {
+          "id": "d",
+          "text": "Ring 5 is the farthest from the viewer"
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q25.png",
+      "sourcePage": 14,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.26",
+      "printedId": "Q.26",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the options can be created by the stamp shown on the left?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q26.png",
+      "sourcePage": 15,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.27",
+      "printedId": "Q.27",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Tile X was used to create a pattern which is seamless (without gaps) when arranged as shown in Y. Which tile(s) from the options will create a seamless pattern?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "b",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q27.png",
+      "sourcePage": 15,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.28",
+      "printedId": "Q.28",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Which of the following relationship(s) is/are represented by the Venn diagram?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Beverages, Tea, Milk"
+        },
+        {
+          "id": "b",
+          "text": "Men, Designers, Teachers"
+        },
+        {
+          "id": "c",
+          "text": "Mammals, Cats, Animals"
+        },
+        {
+          "id": "d",
+          "text": "Singers, Performers, Actors"
+        }
+      ],
+      "answer": [
+        "a",
+        "d"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q28.png",
+      "sourcePage": 16,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.29",
+      "printedId": "Q.29",
+      "topicId": "section-2-msq",
+      "topic": "Section 2: Multiple Select Questions (MSQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MSQ",
+      "prompt": "Shown below is a portion of a continuous strip. Which of the option(s) is/are part of this strip?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q29.png",
+      "sourcePage": 16,
+      "tags": [
+        "uceed-2024",
+        "msq"
+      ]
+    },
+    {
+      "id": "Q.30",
+      "printedId": "Q.30",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "If the image on the left is flipped horizontally (about Y-axis), and then rotated 180 degrees, what will be the resulting image?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q30.png",
+      "sourcePage": 17,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.31",
+      "printedId": "Q.31",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option represents the key frames of the animation shown below?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q31.png",
+      "sourcePage": 17,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.32",
+      "printedId": "Q.32",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q32.png",
+      "sourcePage": 18,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.33",
+      "printedId": "Q.33",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which collection when arranged correctly will result in the silhouette of the pen shown below?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q33.png",
+      "sourcePage": 18,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.34",
+      "printedId": "Q.34",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option from the right will replace the circles labelled 1, 2 and 3 in the image on the left?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q34.png",
+      "sourcePage": 19,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.35",
+      "printedId": "Q.35",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option is the basic building block for the pattern made on the left?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q35.png",
+      "sourcePage": 19,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.36",
+      "printedId": "Q.36",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option represents the data in the pie-chart?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q36.png",
+      "sourcePage": 20,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.37",
+      "printedId": "Q.37",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Shutter speed is one of the parameters by which exposure of the image can be controlled. How does shutter speed control exposure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By increasing the size of the opening through which light enters the camera."
+        },
+        {
+          "id": "b",
+          "text": "By increasing sensitivity of the image sensor."
+        },
+        {
+          "id": "c",
+          "text": "By increasing the time for light to enter the camera."
+        },
+        {
+          "id": "d",
+          "text": "By increasing the number of pixels in the image."
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": null,
+      "sourcePage": 20,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.38",
+      "printedId": "Q.38",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Given below is a folded sheet of paper with green colour on one side and red colour on the other side. Dotted lines represent the fold lines. Which option shows the correct fold lines when this sheet is unfolded?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q38.png",
+      "sourcePage": 20,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.39",
+      "printedId": "Q.39",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "An animated character speaking a sentence in English is given below. Which sentence is the character saying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I love UCEED!"
+        },
+        {
+          "id": "b",
+          "text": "Today is my day!"
+        },
+        {
+          "id": "c",
+          "text": "Oh! Hurry up!"
+        },
+        {
+          "id": "d",
+          "text": "God, help me!"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q39.png",
+      "sourcePage": 21,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.40",
+      "printedId": "Q.40",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "A cube, a triangular prism and a square pyramid of equal height are resting on a surface along a straight line, arranged in a random order. If the source of light is fixed and the light rays are parallel, which of the option shows the shadows correctly in top view?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q40.png",
+      "sourcePage": 21,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.41",
+      "printedId": "Q.41",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "A ball with a thin elastic rod moves from left to right as shown below. Which option represents the movement of the rod?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q41.png",
+      "sourcePage": 22,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.42",
+      "printedId": "Q.42",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q42.png",
+      "sourcePage": 22,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.43",
+      "printedId": "Q.43",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q43.png",
+      "sourcePage": 23,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.44",
+      "printedId": "Q.44",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q44.png",
+      "sourcePage": 23,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.45",
+      "printedId": "Q.45",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "A printed code word (in capital letters) has been shredded into strips and the strips are jumbled. Identify the code word.",
+      "options": [
+        {
+          "id": "a",
+          "text": "AEFITFHLEA"
+        },
+        {
+          "id": "b",
+          "text": "AEFHIFTLEA"
+        },
+        {
+          "id": "c",
+          "text": "AFEHITFELA"
+        },
+        {
+          "id": "d",
+          "text": "AFEIHFTELA"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q45.png",
+      "sourcePage": 24,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.46",
+      "printedId": "Q.46",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q46.png",
+      "sourcePage": 24,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.47",
+      "printedId": "Q.47",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Construction materials are to be moved using the trolleys in the options. Assume friction is negligible. Which trolley requires the least amount of effort?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q47.png",
+      "sourcePage": 24,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.48",
+      "printedId": "Q.48",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "A cyclist was peddling a geared cycle on an upward inclined road and decided to stop on the incline. Which option can be used to stop the bicycle on the incline only using force on foot pedals?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q48.png",
+      "sourcePage": 25,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.49",
+      "printedId": "Q.49",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option represents the solid shown below?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q49.png",
+      "sourcePage": 25,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.50",
+      "printedId": "Q.50",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Two views of a cube are shown on the left. Which option represents the unwrapped cube on the left?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "c",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q50.png",
+      "sourcePage": 26,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.51",
+      "printedId": "Q.51",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "During a long-distance sea voyage, without the Captain realising, steering of the ship started malfunctioning in the following manner. When the Captain was trying to turn the ship 60 degrees to the left, ship was turning 30 degrees to the right. When the Captain was trying to turn the ship 90 degrees to the left, ship was turning 90 degrees to the right. When the Captain was trying to turn the ship 45 degrees to the right, ship was turning 30 degrees to the left. When the Captain was trying to turn the ship 90 degrees to the right, ship was turning 45 degrees to the left. Before the malfunction, ship was going in North-East direction. After the malfunction started, without realising the problem, the Captain tried to turn 90 degrees to the left, then 90 degrees to the right, then 45 degrees to the right and finally 60 degrees to the left. Find the current direction of the ship.",
+      "options": [
+        {
+          "id": "a",
+          "text": "NORTH EAST"
+        },
+        {
+          "id": "b",
+          "text": "EAST"
+        },
+        {
+          "id": "c",
+          "text": "WEST"
+        },
+        {
+          "id": "d",
+          "text": "NORTH WEST"
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": null,
+      "sourcePage": 26,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.52",
+      "printedId": "Q.52",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "A hollow paper cone is cut by a spiral blade. The blade, the cone, the position of the cone and blade, and the line along which it gets cut are shown below. The surface of the cone is then unwrapped on a flat surface. Which option shows the unwrapped surface?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q52.png",
+      "sourcePage": 27,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.53",
+      "printedId": "Q.53",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Two rotating discs are placed on top of each other that are pivoted at the centre. The disc in front has two cut-outs, and the disc in the back has a line pattern. Both discs can rotate in any direction. Shown below are the four positions at which different parts of the line pattern are visible. Which option represents the line pattern on the back disc?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "d",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q53.png",
+      "sourcePage": 27,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.54",
+      "printedId": "Q.54",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option has the same visual grammar of the letters on the left?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q54.png",
+      "sourcePage": 28,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.55",
+      "printedId": "Q.55",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "An irregular piece of paper is folded and cut as shown below. Which option shows the correct cuts when the paper is unfolded?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "a",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q55.png",
+      "sourcePage": 28,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.56",
+      "printedId": "Q.56",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q56.png",
+      "sourcePage": 29,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.57",
+      "printedId": "Q.57",
+      "topicId": "section-3-mcq",
+      "topic": "Section 3: Multiple Choice Questions (MCQ)",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "MCQ",
+      "prompt": "Shown below is the crawling sequence of a worm in eleven frames. Which option represents the missing frames?",
+      "options": [
+        {
+          "id": "a",
+          "text": null
+        },
+        {
+          "id": "b",
+          "text": null
+        },
+        {
+          "id": "c",
+          "text": null
+        },
+        {
+          "id": "d",
+          "text": null
+        }
+      ],
+      "answer": "b",
+      "answerStatus": "verified",
+      "explanation": null,
+      "image": "assets/q57.png",
+      "sourcePage": 29,
+      "tags": [
+        "uceed-2024",
+        "mcq"
+      ]
+    },
+    {
+      "id": "Q.58",
+      "printedId": "Q. 1",
+      "topicId": "part-b-drawing",
+      "topic": "Part B: Drawing",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "DRAWING",
+      "prompt": "On a Sunday morning, 5-year-old Geet, her grandmother and father are cleaning their old garage. It is a big garage with large open windows near the ceiling. It has an old bicycle, a football and other objects. The father is cleaning the cobwebs. The grandmother while cleaning, finds her old guitar which she used to play during her college days. She gets excited and starts playing it as Geet starts dancing around. The garage also has a lot of old memories of Geet’s sporty grandmother and her studious father. Geet’s school friend stands at the door of the garage watching this whole scene.\nDraw this scenario from the friend’s point of view.\nNote:\n• Use only pencil\n• Do not use colours\nEvaluation Criteria:\n• Perspective\n• Proportion\n• Composition\n• Observation\n• Imagination\n• Quality of sketch\n• Attention to detail",
+      "options": [],
+      "answer": null,
+      "answerStatus": "pending_verification",
+      "explanation": null,
+      "image": null,
+      "sourcePage": 30,
+      "tags": [
+        "uceed-2024",
+        "drawing"
+      ],
+      "marks": 50,
+      "questionLabel": "Drawing",
+      "evaluationCriteria": [
+        "Perspective",
+        "Proportion",
+        "Composition",
+        "Observation",
+        "Imagination",
+        "Quality of sketch",
+        "Attention to detail"
+      ]
+    },
+    {
+      "id": "Q.59",
+      "printedId": "Q. 2",
+      "topicId": "part-b-design-aptitude",
+      "topic": "Part B: Design Aptitude",
+      "sourceLabel": "UCEED 2024 Question Paper",
+      "exam": "UCEED",
+      "examYear": 2024,
+      "difficulty": null,
+      "type": "DESIGN_APTITUDE",
+      "prompt": "A six-year old girl is going to school for the first time. She needs to carry a lunch box in her school bag. Her lunch can contain typical Indian food items (both dry as well as liquid food items, such as Roti, Rice, Dosa, Dal, Sambar, etc.). Design a lunch box for her, considering her needs. Sketch your design, and visually explain the features of your design along with clear labels.\nNote:\n• Use only pencil. Do not use colours.\n• Explain your design only through visuals and short labels.\n• Do not write separate explanations.\nEvaluation Criteria:\n• Appropriateness of three-dimensional form and visual graphics\n• Provisions for fulfilling functional requirements\n• Considerations for product usability by the user\n• Attention to detail and explanation of features through visuals only\n• Clarity of the sketch and quality of presentation, and uniqueness of design.",
+      "options": [],
+      "answer": null,
+      "answerStatus": "pending_verification",
+      "explanation": null,
+      "image": null,
+      "sourcePage": 31,
+      "tags": [
+        "uceed-2024",
+        "design_aptitude"
+      ],
+      "marks": 50,
+      "questionLabel": "Design Aptitude",
+      "evaluationCriteria": [
+        "Appropriateness of three-dimensional form and visual graphics",
+        "Provisions for fulfilling functional requirements",
+        "Considerations for product usability by the user",
+        "Attention to detail and explanation of features through visuals only",
+        "Clarity of the sketch and quality of presentation, and uniqueness of design."
+      ]
+    }
+  ],
+  "validationReport": {
+    "totalPages": 31,
+    "answerKeyPages": 1,
+    "totalQuestions": 59,
+    "questionsByTopic": {
+      "Section 1: Numerical Answer Type (NAT)": 14,
+      "Section 2: Multiple Select Questions (MSQ)": 15,
+      "Section 3: Multiple Choice Questions (MCQ)": 28,
+      "Part B: Drawing": 1,
+      "Part B: Design Aptitude": 1
+    },
+    "questionTypeCounts": {
+      "NAT": 14,
+      "MSQ": 15,
+      "MCQ": 28,
+      "DRAWING": 1,
+      "DESIGN_APTITUDE": 1
+    },
+    "missingAnswers": [
+      "Q.58",
+      "Q.59"
+    ],
+    "unreadableQuestions": [],
+    "unreadableImages": [],
+    "duplicateIds": [],
+    "extractedImageCount": 53,
+    "verifiedPartAAnswers": 57
+  }
+}

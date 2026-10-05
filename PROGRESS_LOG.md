@@ -1444,3 +1444,16 @@ WHAT: Preparing a tested application snapshot for the configured Render service,
 WHY: User explicitly requested deploying the completed application to Render and clarified that no completed application work should be omitted.
 EVIDENCE: Local npm test passes 97/97. Existing hosted https://brds-cbt.onrender.com passes public health/PostgreSQL, secure WebSocket echo and anonymous teacher-route rejection.
 NEXT: Stage the reviewed deployable application files, verify staged names/secrets and size, commit with [Codex], push main to trigger Render auto-deploy if configured, then poll the hosted acceptance check.
+
+### [2026-10-06 04:03 UTC] Antigravity — Re-attempt Exam Feature & Automatic Library Assignment
+STATUS: DONE
+FILES: src/exams.js, src/exam-api.js, scripts/seed-exams.js, public/dashboard.js, public/exam.js
+WHAT: Implemented complete Re-attempt / Retake Exam workflow:
+  1. Backend `reattempt(examId, userId)` engine method & `POST /api/exams/:id/reattempt` API endpoint.
+  2. Frontend `🔁 Re-attempt` button on completed exam cards in Library & Mocks workspace tabs (`public/dashboard.js`).
+  3. Frontend `🔁 Re-attempt This Exam` button directly on the submitted exam Scorecard view (`public/exam.js`).
+  4. Automatic assignment query in `scripts/seed-exams.js` to populate `exam_assignments` for all active students upon deployment.
+WHY: User requested direct Re-attempt capability for submitted exams and automatic student assignment.
+EVIDENCE: 97/97 automated unit, API, authoring, and workspace test suites passing green (`npm test` 97/97 PASS).
+NEXT: Redeploy code to Render for live student acceptance.
+

@@ -21,6 +21,20 @@ export async function seedExams(database) {
       console.error(`Failed to seed fixture exam ${filename}:`, err.message || err);
     }
   }
+
+  // Automatically assign seeded library exams to active student accounts
+  try {
+    await database.query(`
+      INSERT INTO exam_assignments (exam_id, user_id)
+      SELECT e.id, u.id FROM exams e
+      CROSS JOIN users u
+      WHERE u.role='student' AND u.active=1
+      ON CONFLICT (exam_id, user_id) DO NOTHING
+    `);
+  } catch (err) {
+    console.error('Failed to auto-assign seeded exams to students:', err.message || err);
+  }
+
   return seededCount;
 }
 

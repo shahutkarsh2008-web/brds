@@ -6,3 +6,17 @@ data/
 tmp/
 *.log
 private/
+.codex-build/
+.user_uploaded/
+.gemini/
+*.pdf
+*.zip
+scratch/
+reports/load-tests/
+tmp_*.png
+media_*.png
+gemini-code-*.json
+answer_key_extract.txt
+worksheet_extract.txt
+
+

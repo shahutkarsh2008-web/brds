@@ -1156,3 +1156,34 @@ WHAT: Added a visible 3px keyboard focus indicator, raised light-theme muted tex
 WHY: Completes the Phase 5 acceptance criteria and records a reproducible recovery checkpoint before import expansion.
 EVIDENCE: `npm test` passes 86/86; focused `node --test test/exams.test.js test/library-api.test.js test/uceed.test.js` passes 24/24. Final `node scratch/verify-chrome-browser.js` passes 41/41 real Edge scenarios: all 10 tabs at 1440, 1024, 768 and 360 CSS px with no horizontal overflow, plus E2E exam submission (6/6 marks) visible in Analytics. Keyboard focus is `:focus-visible` with a 3px solid outline; saved theme restores after reload. Light theme primary/secondary/muted contrast is 14.65:1 / 5.61:1 / 4.85:1; dark theme is 19.02:1 / 11.81:1 / 5.23:1. Browser reported 0 console errors and 0 server 5xx responses; dashboard load 23 ms, DOMContentLoaded 22.5 ms, transferred resource data 1,055,879 bytes in the isolated run. See `reports/phase5-browser-evidence.json` and screenshots.
 NEXT: Phase 5 local acceptance is complete. Hosted integration remains deferred to Phase 8 per project instructions.
+
+### [2026-10-05 18:24 UTC] Codex — Phase 8: Final production/debug audit and competitive backlog
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md, output/presentations/BRDS-CBT-Production-Readiness-and-Roughworks-Backlog.pptx, .codex-build/roughworks-backlog/*
+WHAT: Claiming an isolated production readiness audit, PDF/import inventory and sourced competitor-gap presentation; no existing app code, fixtures, UI or another agent's uncommitted files are claimed.
+WHY: The user asked for a final debug pass before formal testing, import review of supplied PDFs/resources, and an actionable list of remaining work to build a Roughworks competitor.
+NEXT: Verify current local tests and seeded fixture/import counts on an isolated development database, author and validate the PPT, then append measured outcomes; real host/account acceptance stays deferred to Phase 8.
+
+### [2026-10-05 18:22 UTC] Antigravity — Phase 6: UCEED 2017 Official Paper Import & Library Seeding
+STATUS: DONE
+FILES: UCEED2017_Question_Paper.pdf, UCEED2017_Answer_Key.pdf, scripts/build-uceed-2017-paper.py, fixtures/uceed-2017.json, scripts/seed-exams.js, test/uceed-2017.test.js, test/uceed.test.js
+WHAT: Imported UCEED 2017 Official Paper (Part A: 85 questions, 300 max marks, 120 minutes) from official PDF question paper and scanned answer key image into `fixtures/uceed-2017.json` with 69 extracted diagram PNGs (`/media/uceed-2017-qXX.png` and `/media/uceed-2017/`). Mapped 20 NAT (+4/0), 25 MSQ (+4/0 with partial credit & Q42 alternative keys), and 40 MCQ (+3/-1) questions, attached topic metadata for Practice Builder, registered `uceed-2017.json` in startup library seeding (`scripts/seed-exams.js`), and created automated test suite (`test/uceed-2017.test.js`).
+WHY: Direct user request ("2017").
+EVIDENCE: Automated test suite `test/uceed-2017.test.js` passed (100% green); full test suite `npm test` passed 87/87 tests (`pass 87, fail 0`), and 16 library exams seeded idempotently.
+NEXT: Import additional past papers per user request. No active implementation file claims retained.
+
+### [2026-10-05 18:52 UTC] Codex — Phase 8: Final debug and competitive-readiness audit
+STATUS: DONE
+FILES: PROGRESS_LOG.md, output/presentations/BRDS-CBT-Production-Readiness-and-Roughworks-Backlog-v2.pptx
+WHAT: Re-ran the full local test suite (86/86) and real Edge browser verifier (41/41; ten tabs at four widths with no horizontal overflow); inventoried 56 supplied PDFs with page counts and duplicate SHA-256 check; seeded an isolated SQLite database and confirmed 15 configured fixtures/sets with 830 questions (613 official UCEED 2018–26). Created a 12-slide sourced production-gate and Roughworks-parity backlog deck, visually checked all slides, and passed PPTX package/layout/import validation with zero findings.
+WHY: Completes the requested final local debugging pass, distinguishes test readiness from hosted launch acceptance, and provides a concrete competitor roadmap and resource-import queue.
+EVIDENCE: `npm test` — 86 passed, 0 failed; `node scratch/verify-chrome-browser.js` — 41/41, no horizontal overflow; isolated SQLite seeding — 15 exams/sets, 830 questions; PDF inventory — 56 files, no duplicate SHA-256; PPTX validation — 12 slides, package integrity/layout/first-party import passed, 0 findings/warnings. Roughworks public figures were checked 2026-10-05; URLs are embedded in slide notes. Isolated local results are not hosted production acceptance.
+NEXT: Begin structured QA now. Remaining content work: UCEED 2015–17 (265 benchmark questions), verified CEED/NID/NIFT banks and keys, classify the unlabelled PDF, then expand GK and Part B/community. Phase 8 hosted release gates still require authorized deployment target/database/provider configuration, live OTP, backup/restore, monitoring and production load/security acceptance.
+
+### [2026-10-05 18:30 UTC] Codex — Phase 8: Final audit figures refreshed after UCEED 2017 handoff
+STATUS: DONE
+FILES: PROGRESS_LOG.md, output/presentations/BRDS-CBT-Production-Readiness-and-Roughworks-Backlog-v4.pptx
+WHAT: Antigravity added the UCEED 2017 fixture after the first audit snapshot. Re-ran the full current suite (87/87), UCEED 2017 test, browser acceptance (41/41), and isolated idempotent seed audit (16 configured entries, 915 questions; ten official UCEED papers, 698 questions for 2017–26). Refreshed the 12-slide backlog deck to show the remaining UCEED gap as 2015–16 / 180 questions and rechecked all slides plus package/layout/import validation.
+WHY: Keep the final handoff synchronized with concurrent imports and avoid reporting stale test or coverage counts.
+EVIDENCE: Current `npm test` — 87 passed, 0 failed. `node --test test/uceed-2017.test.js` — 1 passed. `node scratch/verify-chrome-browser.js` — 41/41, no overflow at 1440/1024/768/360 widths. Isolated SQLite seed audit — 16 entries / 915 questions; 698 UCEED questions across 2017–26. PPTX — 12 slides, package integrity pass, layout 0 findings/0 warnings, first-party import pass. 56 PDFs inventoried; no duplicate SHA-256; not all PDFs are imported into validated question fixtures yet.
+NEXT: Begin structured QA. Import and independently verify UCEED 2015–16, process the supplied CEED and NIFT papers under verified keys/rights, source NID materials, and classify the unlabelled PDF. Hosted production acceptance remains a separate Phase 8 gate.

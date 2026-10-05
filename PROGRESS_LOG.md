@@ -1187,3 +1187,18 @@ WHAT: Antigravity added the UCEED 2017 fixture after the first audit snapshot. R
 WHY: Keep the final handoff synchronized with concurrent imports and avoid reporting stale test or coverage counts.
 EVIDENCE: Current `npm test` — 87 passed, 0 failed. `node --test test/uceed-2017.test.js` — 1 passed. `node scratch/verify-chrome-browser.js` — 41/41, no overflow at 1440/1024/768/360 widths. Isolated SQLite seed audit — 16 entries / 915 questions; 698 UCEED questions across 2017–26. PPTX — 12 slides, package integrity pass, layout 0 findings/0 warnings, first-party import pass. 56 PDFs inventoried; no duplicate SHA-256; not all PDFs are imported into validated question fixtures yet.
 NEXT: Begin structured QA. Import and independently verify UCEED 2015–16, process the supplied CEED and NIFT papers under verified keys/rights, source NID materials, and classify the unlabelled PDF. Hosted production acceptance remains a separate Phase 8 gate.
+
+### [2026-10-06 04:15 UTC] Codex — Phase 5: Align readiness deck to current five-phase plan
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md, output/presentations/BRDS-CBT-Readiness-and-Backlog-current-five-phase-plan.pptx, .codex-build/roughworks-backlog/deck.mjs
+WHAT: Claiming a focused wording correction to remove old-plan Phase 8 references from the readiness deck and label hosted checks as separate operational launch gates outside the current five-phase development plan.
+WHY: The user clarified that only the five-phase plan is current; old Phase 8 labels must not be carried into the next-action guidance.
+NEXT: Refresh the deck, inspect the affected slides, validate the PPTX, then summarize the immediate QA sequence and later content-parity backlog.
+
+### [2026-10-05 18:47 UTC] Codex — Phase 5: Current-plan wording correction for readiness deck
+STATUS: DONE
+FILES: PROGRESS_LOG.md, output/presentations/BRDS-CBT-Readiness-and-Backlog-current-five-phase-plan-v2.pptx
+WHAT: Removed old-plan Phase 8 wording from the hosted-readiness and testing slides. The deck now says hosted deployment/provider checks are operational launch gates outside the current five-phase development plan; its P0–P5 labels are prioritized work items, not project phases.
+WHY: Keep the next-action guidance aligned with the user's current five-phase plan and prevent the old roadmap from adding phases to it.
+EVIDENCE: Re-rendered the 12-slide PPTX; package integrity passed, layout has 0 findings and 0 warnings, first-party import passed. Confirmed old Phase 8 reference appears only as a clarification that it belongs to the old roadmap.
+NEXT: Start the current-plan follow-on with structured QA of the completed Phase 1–5 flows, then address imported-content gaps and the broader Roughworks parity backlog as separately prioritized work, without assigning new project phase numbers.

@@ -1,0 +1,758 @@
+# UCEED checklist subtopic coverage audit
+
+Generated 2026-10-05T19:59:54.036Z. Detailed evidence and all question-level records are in [the JSON report](uceed-syllabus-subtopic-coverage.json).
+
+## Scope and method
+
+- Inventory: 878 questions from 12 imported official UCEED Part-A paper fixtures, 2015–2026. Practice-only fixtures are excluded.
+- Historical chart totals: 878 by year and 958 across topic rows; the rows overlap, so they are descriptive, not quotas.
+- Checklist: 191 subtopics (Part A: 122; Part B: 69) transcribed from the user-supplied preparation checklist.
+- Part-B status: no Part-B source paper fixture is present in this inventory; its 69 checklist subtopics are uncovered in the current official-paper bank.
+- Stem-evidenced means wording in the imported prompt triggered a mapping rule; it remains a candidate, not independent page-by-page source-PDF verification. Existing tags only create review candidates.
+- A subtopic with no text hit may still appear in a diagram-led question; it is marked as no evidence, not an absolute proof of absence.
+- Subtopic counts overlap and are not expected to add up to the total paper questions.
+
+## Findings
+
+- Questions with one or more explicit stem cues: 619/878.
+- Questions needing label/diagram review: 259.
+- Questions without a text cue or candidate label: 0.
+- Questions requiring follow-up review: 609.
+- Checklist subtopics by status: {"stem-evidence":89,"review-candidates-only":6,"no-evidence-found":27,"uncovered-no-part-b-papers-in-inventory":69}.
+- Questions where existing topic/category may conflict with stem cues: 350.
+
+### Part A
+
+- Checklist subtopics: 122
+- Subtopics with stem evidence: 89
+- Subtopics with metadata-only review candidates: 6
+- Subtopics with no direct or metadata evidence: 27
+
+**Subtopics with no stem evidence:** Spatial relationships; Embedded and hidden figures; Ergonomics; Reach, grip, access and comfort; Safety and stability; Product affordances; Context-sensitive design; Comparing alternative designs; Environment-friendly design; Repair and reuse; Waste management and segregation; Water conservation; Energy conservation; Accessibility and inclusive design; Design for children and elderly people; Design for people with different abilities; Public spaces; Community needs; Symbols and cultural practices; Main idea; Supporting details; Meaning from context; Verbal analogies; Non-verbal analogies; Visual metaphors; Multiple interpretations; Unusual but logical connections
+
+**Metadata-only candidates needing source/diagram review:** 2D and 3D visualization (67: 2015:q22, 2015:q26, 2015:q34, 2015:q42, 2015:q59, 2015:q76, 2015:q79, 2015:q83, 2015:q93, 2015:q100, 2016:q27, 2016:q33, 2016:q55, 2016:q73, 2017:q36, 2017:q38, 2017:q40, 2017:q55, 2017:q57, 2017:q69, 2017:q73, 2017:q76, 2017:q77, 2017:q81, 2018:q21, 2018:q38, 2018:q42, 2018:q59, 2019:q55, 2019:q59, 2019:q81, 2019:q85, 2020:q30, 2020:q35, 2020:q46, 2020:q65, 2021:q21, 2021:q37, 2021:q52, 2021:q54, 2022:q03, 2022:q04, 2022:q27, 2022:q28, 2022:q32, 2022:q33, 2022:q52, 2022:q54, 2023:q03, 2023:q19, 2023:q28, 2023:q30, 2023:q45, 2023:q65, 2024:q01, 2024:q03, 2024:q33, 2024:q44, 2024:q53, 2025:u25_q15, 2025:u25_q17, 2025:u25_q20, 2025:u25_q29, 2026:q10, 2026:q16, 2026:q41, 2026:q47); Shadows (32: 2015:q65, 2015:q95, 2015:q96, 2016:q25, 2016:q45, 2016:q59, 2016:q63, 2016:q67, 2017:q43, 2017:q60, 2017:q79, 2018:q45, 2018:q71, 2019:q46, 2019:q51, 2020:q23, 2020:q44, 2020:q47, 2020:q56, 2021:q40, 2021:q47, 2022:q43, 2022:q45, 2023:q46, 2023:q48, 2024:q37, 2024:q40, 2025:u25_q28, 2026:q25, 2026:q32, 2026:q43, 2026:q50); Human-object interaction (17: 2015:q71, 2015:q82, 2015:q84, 2016:q58, 2018:q14, 2018:q49, 2018:q81, 2019:q75, 2021:q51, 2022:q44, 2023:q31, 2023:q32, 2023:q50, 2023:q51, 2023:q63, 2026:q09, 2026:q57); Usability (17: 2015:q71, 2015:q82, 2015:q84, 2016:q58, 2018:q14, 2018:q49, 2018:q81, 2019:q75, 2021:q51, 2022:q44, 2023:q31, 2023:q32, 2023:q50, 2023:q51, 2023:q63, 2026:q09, 2026:q57); Social behaviour and cultural context (6: 2015:q74, 2015:q75, 2016:q56, 2017:q06, 2018:q18, 2018:q66); Visual analogies (6: 2020:q67, 2021:q66, 2023:q58, 2024:q46, 2024:q56, 2026:q31)
+
+**Stem-evidenced subtopics and question references:**
+
+- **Rotation and reflection** — 73: 2015:q04, 2015:q17, 2015:q30, 2015:q72, 2016:q28, 2016:q46, 2017:q08, 2017:q10, 2017:q11, 2017:q12, 2017:q14, 2017:q27, 2017:q54, 2017:q55, 2017:q61, 2017:q65, 2017:q66, 2017:q74, 2018:q11, 2018:q28, 2018:q57, 2018:q63, 2019:q18, 2019:q27, 2019:q46, 2019:q60, 2019:q66, 2019:q70, 2019:q72, 2020:q09, 2020:q14, 2020:q19, 2020:q21, 2020:q25, 2020:q32, 2020:q33, 2020:q43, 2020:q55, 2020:q61, 2020:q63, 2021:q01, 2021:q19, 2021:q23, 2021:q32, 2021:q37, 2021:q54, 2021:q55, 2021:q61, 2022:q16, 2022:q28, 2022:q33, 2022:q35, 2022:q39, 2023:q12, 2023:q28, 2023:q40, 2024:q01, 2024:q14, 2024:q30, 2024:q51, 2024:q53, 2025:u25_q13, 2025:u25_q19, 2025:u25_q32, 2025:u25_q51, 2025:u25_q52, 2026:q12, 2026:q16, 2026:q17, 2026:q18, 2026:q19, 2026:q29, 2026:q40
+- **Mirror images and water images** — 2: 2016:q71, 2022:q42
+- **Symmetry — reflection and rotational** — 3: 2019:q10, 2019:q18, 2024:q04
+- **Figure completion** — 2: 2015:q59, 2017:q50
+- **Paper folding, cutting and punching** — 15: 2015:q66, 2018:q61, 2019:q37, 2019:q57, 2020:q27, 2020:q29, 2020:q38, 2021:q44, 2021:q60, 2022:q55, 2023:q39, 2024:q38, 2024:q52, 2024:q55, 2025:u25_q06
+- **Cube and cuboid nets** — 5: 2015:q78, 2016:q27, 2018:q38, 2018:q42, 2022:q47
+- **Folding and unfolding 3D objects** — 7: 2015:q42, 2015:q76, 2016:q27, 2016:q33, 2017:q38, 2018:q38, 2020:q50
+- **Faces, edges and vertices** — 71: 2015:q12, 2015:q18, 2015:q73, 2015:q83, 2016:q01, 2016:q13, 2016:q40, 2016:q43, 2017:q01, 2017:q17, 2017:q20, 2017:q75, 2017:q82, 2018:q07, 2018:q16, 2018:q32, 2018:q38, 2018:q42, 2018:q59, 2018:q62, 2018:q65, 2018:q82, 2019:q02, 2019:q04, 2019:q06, 2019:q09, 2019:q11, 2019:q15, 2019:q17, 2019:q47, 2019:q51, 2020:q03, 2020:q04, 2020:q07, 2020:q12, 2020:q22, 2020:q23, 2020:q36, 2020:q41, 2020:q51, 2020:q55, 2021:q01, 2021:q07, 2021:q10, 2021:q12, 2021:q35, 2021:q51, 2021:q58, 2022:q01, 2022:q06, 2022:q43, 2022:q47, 2022:q55, 2023:q07, 2023:q18, 2023:q40, 2023:q41, 2023:q53, 2024:q04, 2024:q05, 2024:q07, 2024:q13, 2024:q24, 2024:q40, 2024:q52, 2025:u25_q05, 2025:u25_q12, 2025:u25_q29, 2025:u25_q30, 2025:u25_q56, 2026:q04
+- **Top, front and side views** — 22: 2015:q18, 2016:q46, 2017:q57, 2017:q64, 2018:q85, 2019:q17, 2019:q46, 2019:q47, 2019:q52, 2020:q26, 2020:q44, 2021:q10, 2021:q30, 2021:q62, 2022:q23, 2022:q29, 2022:q51, 2022:q60, 2023:q62, 2023:q66, 2024:q40, 2025:u25_q21
+- **Viewpoint and orientation** — 16: 2017:q81, 2018:q82, 2019:q37, 2019:q60, 2020:q41, 2021:q06, 2021:q24, 2021:q44, 2021:q55, 2021:q61, 2022:q26, 2022:q41, 2024:q08, 2026:q15, 2026:q29, 2026:q50
+- **Perspective and depth** — 13: 2016:q40, 2017:q84, 2018:q27, 2018:q33, 2019:q17, 2019:q52, 2019:q60, 2020:q53, 2021:q55, 2024:q04, 2024:q05, 2024:q25, 2025:u25_q28
+- **Cross-sections and slicing** — 9: 2016:q35, 2018:q82, 2019:q29, 2020:q01, 2020:q26, 2020:q29, 2021:q36, 2023:q24, 2024:q23
+- **Block arrangement and stacking** — 6: 2018:q10, 2020:q03, 2020:q07, 2024:q10, 2024:q11, 2024:q13
+- **Paths, grids and mazes** — 11: 2015:q13, 2015:q99, 2016:q07, 2017:q19, 2019:q27, 2020:q14, 2020:q55, 2021:q45, 2023:q01, 2024:q14, 2026:q44
+- **Shadow direction** — 2: 2015:q16, 2015:q95
+- **Spatial patterns and sequences** — 4: 2015:q64, 2016:q41, 2016:q52, 2016:q60
+- **Everyday objects and mechanisms** — 17: 2015:q17, 2015:q50, 2015:q84, 2015:q98, 2016:q17, 2017:q12, 2017:q66, 2017:q75, 2018:q11, 2019:q12, 2020:q10, 2020:q55, 2022:q16, 2023:q24, 2025:u25_q19, 2026:q19, 2026:q56
+- **Simple machines** — 5: 2015:q17, 2018:q11, 2020:q01, 2026:q19, 2026:q56
+- **Lever, pulley, wheel-and-axle, inclined plane, screw and wedge** — 5: 2015:q17, 2018:q11, 2020:q01, 2026:q19, 2026:q56
+- **Force, motion and gravity** — 3: 2016:q72, 2017:q39, 2023:q67
+- **Friction** — 1: 2024:q47
+- **Balance and stability** — 5: 2015:q43, 2019:q53, 2020:q31, 2020:q49, 2022:q24
+- **Centre of mass — basic intuition** — 1: 2016:q72
+- **Light, reflection and refraction** — 3: 2018:q45, 2020:q23, 2024:q40
+- **Transparent, translucent and opaque materials** — 11: 2019:q07, 2019:q45, 2020:q19, 2020:q21, 2020:q44, 2021:q32, 2023:q59, 2024:q13, 2026:q15, 2026:q38, 2026:q50
+- **Sound — basic everyday applications** — 1: 2016:q26
+- **Heat and thermal expansion** — 2: 2017:q24, 2017:q46
+- **Materials and their properties** — 1: 2019:q53
+- **Wood, metal, glass, plastic, paper, rubber and fabric** — 1: 2019:q53
+- **Tools and their practical use** — 3: 2016:q58, 2019:q36, 2019:q74
+- **Joints, hinges, folds, handles and fasteners** — 10: 2015:q08, 2016:q23, 2016:q34, 2016:q58, 2017:q32, 2017:q67, 2020:q55, 2021:q41, 2023:q22, 2023:q67
+- **Basic measurement, scale and estimation** — 4: 2021:q07, 2021:q50, 2021:q57, 2025:u25_q09
+- **Visual observation and attention to detail** — 41: 2015:q01, 2015:q02, 2015:q03, 2015:q05, 2015:q07, 2015:q09, 2015:q13, 2015:q18, 2015:q19, 2016:q01, 2016:q02, 2016:q05, 2016:q16, 2016:q18, 2017:q02, 2017:q05, 2017:q13, 2017:q56, 2018:q05, 2018:q09, 2018:q10, 2018:q16, 2018:q69, 2019:q07, 2020:q04, 2020:q16, 2021:q04, 2021:q09, 2021:q10, 2022:q09, 2022:q17, 2023:q05, 2023:q10, 2023:q17, 2024:q02, 2025:u25_q07, 2025:u25_q12, 2025:u25_q31, 2025:u25_q38, 2026:q03, 2026:q07
+- **Spot the difference** — 1: 2015:q90
+- **Classification and grouping** — 15: 2015:q60, 2016:q08, 2016:q39, 2017:q21, 2017:q25, 2017:q33, 2017:q58, 2018:q39, 2018:q60, 2020:q20, 2020:q48, 2020:q53, 2022:q45, 2025:u25_q35, 2026:q05
+- **Odd-one-out** — 5: 2015:q60, 2017:q58, 2020:q48, 2025:u25_q35, 2026:q05
+- **Hidden or concealed properties** — 6: 2018:q15, 2018:q22, 2018:q43, 2019:q17, 2019:q47, 2024:q04
+- **Function from form** — 2: 2015:q84, 2018:q72
+- **Incorrect or impossible construction** — 3: 2015:q43, 2020:q46, 2022:q30
+- **Sequence of operation** — 3: 2015:q71, 2015:q72, 2015:q88
+- **Visual inference** — 1: 2024:q23
+- **Prediction from visual information** — 4: 2015:q52, 2015:q66, 2022:q11, 2024:q30
+- **Reduce, reuse and recycle** — 3: 2015:q74, 2015:q75, 2016:q75
+- **Materials and environmental impact** — 5: 2015:q73, 2016:q75, 2017:q20, 2018:q41, 2018:q84
+- **Transportation and mobility** — 1: 2015:q75
+- **Urban and rural contexts** — 2: 2018:q14, 2018:q15
+- **Traditional crafts and objects** — 17: 2015:q16, 2015:q38, 2015:q47, 2015:q85, 2015:q86, 2016:q21, 2016:q51, 2016:q77, 2016:q78, 2017:q25, 2017:q85, 2018:q43, 2018:q46, 2018:q51, 2019:q19, 2025:u25_q45, 2026:q21
+- **Sustainable and climate-responsive design** — 1: 2016:q75
+- **Human impact on environment** — 2: 2015:q39, 2018:q22
+- **Number patterns and sequences** — 1: 2025:u25_q02
+- **Arithmetic** — 29: 2015:q14, 2015:q15, 2016:q06, 2016:q13, 2016:q17, 2016:q24, 2016:q36, 2016:q77, 2017:q16, 2017:q19, 2017:q33, 2018:q22, 2018:q43, 2019:q20, 2019:q81, 2020:q03, 2020:q20, 2021:q13, 2021:q16, 2021:q65, 2022:q12, 2023:q12, 2023:q15, 2023:q64, 2024:q05, 2024:q23, 2025:u25_q03, 2025:u25_q04, 2025:u25_q05
+- **Percentages** — 2: 2021:q57, 2025:u25_q01
+- **Ratios and proportions** — 5: 2016:q06, 2018:q17, 2019:q63, 2021:q65, 2022:q12
+- **Averages** — 2: 2015:q06, 2023:q08
+- **Time and clocks** — 13: 2016:q09, 2017:q18, 2017:q61, 2018:q12, 2018:q68, 2020:q63, 2021:q16, 2021:q50, 2023:q40, 2023:q55, 2024:q16, 2025:u25_q54, 2026:q36
+- **Distance and speed** — 21: 2015:q89, 2016:q49, 2017:q18, 2017:q24, 2017:q74, 2018:q68, 2018:q77, 2019:q08, 2019:q12, 2019:q64, 2019:q70, 2021:q15, 2021:q31, 2021:q45, 2021:q56, 2023:q08, 2023:q11, 2023:q51, 2024:q08, 2024:q37, 2024:q51
+- **Counting and arrangements** — 19: 2015:q15, 2015:q17, 2016:q08, 2016:q62, 2017:q14, 2018:q11, 2018:q47, 2020:q36, 2021:q06, 2021:q37, 2021:q40, 2022:q50, 2023:q20, 2023:q46, 2024:q03, 2024:q08, 2024:q13, 2026:q16, 2026:q19
+- **Paths and networks** — 18: 2015:q20, 2016:q07, 2016:q21, 2016:q66, 2016:q68, 2018:q11, 2018:q15, 2019:q26, 2019:q46, 2020:q55, 2021:q08, 2022:q02, 2023:q02, 2023:q47, 2024:q08, 2024:q14, 2025:u25_q57, 2026:q04
+- **Logical conditions and statements** — 36: 2015:q16, 2015:q21, 2015:q23, 2015:q27, 2015:q29, 2015:q33, 2015:q41, 2015:q49, 2015:q80, 2016:q22, 2016:q23, 2016:q36, 2016:q56, 2016:q74, 2017:q24, 2017:q25, 2017:q26, 2017:q41, 2017:q66, 2017:q82, 2018:q24, 2018:q36, 2018:q40, 2018:q43, 2019:q22, 2019:q31, 2019:q39, 2019:q69, 2020:q20, 2020:q22, 2020:q24, 2022:q65, 2024:q14, 2025:u25_q23, 2026:q20, 2026:q30
+- **Sets and grouping** — 37: 2015:q05, 2015:q25, 2015:q28, 2015:q49, 2015:q57, 2015:q75, 2015:q80, 2015:q94, 2016:q18, 2016:q50, 2016:q51, 2016:q78, 2017:q05, 2017:q25, 2017:q26, 2017:q60, 2017:q71, 2017:q85, 2018:q25, 2019:q13, 2019:q34, 2019:q35, 2019:q73, 2019:q74, 2020:q46, 2020:q49, 2020:q53, 2021:q09, 2021:q34, 2022:q31, 2022:q45, 2022:q56, 2024:q28, 2025:u25_q57, 2026:q05, 2026:q40, 2026:q49
+- **Matching and assignment** — 5: 2015:q37, 2016:q61, 2018:q23, 2019:q49, 2025:u25_q04
+- **Ranking and ordering** — 28: 2015:q35, 2015:q40, 2015:q51, 2015:q94, 2015:q99, 2016:q03, 2016:q22, 2016:q23, 2016:q78, 2017:q44, 2017:q47, 2017:q65, 2017:q75, 2017:q78, 2017:q85, 2018:q18, 2018:q47, 2018:q75, 2019:q59, 2019:q63, 2019:q69, 2019:q72, 2020:q22, 2021:q54, 2023:q53, 2024:q40, 2026:q54, 2026:q56
+- **Probability basics** — 6: 2016:q20, 2016:q57, 2017:q15, 2017:q16, 2022:q10, 2023:q15
+- **Geometry** — 162: 2015:q01, 2015:q03, 2015:q11, 2015:q19, 2015:q25, 2015:q28, 2015:q34, 2015:q49, 2015:q52, 2015:q66, 2015:q72, 2015:q77, 2015:q78, 2015:q89, 2016:q01, 2016:q04, 2016:q05, 2016:q10, 2016:q11, 2016:q25, 2016:q32, 2016:q40, 2016:q42, 2016:q43, 2016:q47, 2016:q49, 2016:q71, 2016:q74, 2017:q01, 2017:q02, 2017:q03, 2017:q09, 2017:q10, 2017:q13, 2017:q15, 2017:q20, 2017:q36, 2017:q56, 2017:q64, 2017:q68, 2018:q06, 2018:q08, 2018:q09, 2018:q12, 2018:q16, 2018:q17, 2018:q19, 2018:q25, 2018:q47, 2018:q50, 2018:q62, 2018:q82, 2019:q06, 2019:q07, 2019:q10, 2019:q12, 2019:q14, 2019:q15, 2019:q19, 2019:q24, 2019:q25, 2019:q27, 2019:q29, 2019:q35, 2019:q46, 2019:q55, 2019:q62, 2019:q63, 2019:q67, 2019:q79, 2019:q81, 2019:q83, 2020:q02, 2020:q04, 2020:q07, 2020:q08, 2020:q15, 2020:q23, 2020:q29, 2020:q32, 2020:q45, 2020:q52, 2020:q57, 2020:q64, 2020:q65, 2021:q01, 2021:q04, 2021:q05, 2021:q07, 2021:q08, 2021:q14, 2021:q15, 2021:q17, 2021:q21, 2021:q22, 2021:q27, 2021:q29, 2021:q32, 2021:q35, 2021:q44, 2021:q46, 2021:q47, 2021:q54, 2021:q57, 2021:q58, 2021:q61, 2021:q65, 2022:q01, 2022:q07, 2022:q08, 2022:q11, 2022:q14, 2022:q17, 2022:q18, 2022:q30, 2022:q36, 2022:q39, 2022:q43, 2022:q47, 2022:q52, 2023:q01, 2023:q02, 2023:q06, 2023:q07, 2023:q12, 2023:q22, 2023:q28, 2023:q40, 2023:q41, 2023:q43, 2023:q57, 2023:q66, 2024:q01, 2024:q02, 2024:q09, 2024:q10, 2024:q12, 2024:q13, 2024:q22, 2024:q24, 2024:q34, 2024:q40, 2024:q50, 2025:u25_q03, 2025:u25_q04, 2025:u25_q05, 2025:u25_q12, 2025:u25_q24, 2025:u25_q30, 2025:u25_q31, 2025:u25_q32, 2026:q02, 2026:q03, 2026:q04, 2026:q12, 2026:q14, 2026:q32, 2026:q41, 2026:q42, 2026:q43, 2026:q47, 2026:q51
+- **Angles** — 10: 2015:q72, 2016:q71, 2018:q12, 2018:q82, 2019:q12, 2021:q44, 2021:q47, 2023:q01, 2024:q13, 2025:u25_q32
+- **Triangles and quadrilaterals** — 35: 2015:q11, 2015:q25, 2015:q66, 2016:q04, 2016:q05, 2017:q13, 2018:q08, 2018:q09, 2018:q16, 2018:q17, 2018:q62, 2019:q07, 2019:q15, 2019:q83, 2020:q08, 2020:q29, 2021:q04, 2021:q05, 2021:q08, 2021:q14, 2021:q17, 2021:q54, 2021:q57, 2022:q14, 2022:q17, 2022:q18, 2022:q52, 2024:q02, 2024:q09, 2025:u25_q24, 2025:u25_q29, 2025:u25_q31, 2026:q03, 2026:q32, 2026:q42
+- **Circles and polygons** — 46: 2015:q01, 2015:q49, 2016:q03, 2016:q15, 2016:q25, 2016:q42, 2016:q43, 2016:q49, 2016:q74, 2017:q03, 2017:q10, 2017:q13, 2017:q14, 2017:q15, 2017:q16, 2018:q25, 2018:q62, 2019:q15, 2019:q29, 2020:q19, 2020:q32, 2020:q44, 2020:q55, 2021:q05, 2021:q08, 2021:q14, 2021:q17, 2021:q54, 2022:q08, 2022:q17, 2022:q18, 2022:q39, 2023:q06, 2023:q22, 2024:q01, 2024:q07, 2024:q09, 2024:q22, 2024:q34, 2024:q53, 2025:u25_q04, 2025:u25_q52, 2026:q03, 2026:q32, 2026:q40, 2026:q51
+- **Area and perimeter** — 25: 2015:q72, 2017:q15, 2018:q47, 2019:q14, 2019:q19, 2019:q63, 2019:q83, 2020:q04, 2020:q57, 2021:q01, 2021:q05, 2021:q14, 2021:q15, 2021:q17, 2021:q57, 2021:q65, 2022:q07, 2022:q08, 2022:q11, 2022:q18, 2023:q06, 2023:q43, 2024:q09, 2026:q02, 2026:q12
+- **Volume and surface area** — 15: 2015:q18, 2016:q01, 2016:q11, 2017:q56, 2019:q25, 2019:q47, 2019:q63, 2020:q15, 2021:q10, 2023:q07, 2023:q12, 2024:q04, 2024:q10, 2026:q04, 2026:q14
+- **Symmetry and coordinate-style reasoning** — 12: 2015:q97, 2016:q15, 2017:q02, 2017:q54, 2019:q10, 2019:q18, 2019:q60, 2019:q77, 2021:q55, 2023:q45, 2023:q55, 2024:q30
+- **Basic algebra and equations** — 4: 2017:q07, 2019:q13, 2019:q53, 2022:q21
+- **Tables, charts and graphs** — 42: 2015:q04, 2015:q72, 2015:q97, 2016:q06, 2016:q26, 2016:q36, 2017:q02, 2017:q06, 2017:q08, 2017:q33, 2017:q54, 2017:q61, 2017:q62, 2017:q65, 2017:q71, 2018:q57, 2019:q18, 2019:q39, 2019:q46, 2019:q60, 2019:q77, 2020:q11, 2020:q41, 2020:q43, 2020:q44, 2020:q47, 2021:q03, 2021:q55, 2021:q61, 2022:q21, 2022:q66, 2023:q12, 2023:q36, 2023:q45, 2023:q55, 2024:q13, 2024:q30, 2024:q36, 2025:u25_q51, 2025:u25_q55, 2025:u25_q56, 2026:q17
+- **Pattern decoding** — 44: 2015:q53, 2015:q55, 2015:q56, 2015:q67, 2015:q68, 2016:q03, 2016:q19, 2016:q54, 2017:q48, 2017:q51, 2017:q53, 2018:q02, 2018:q52, 2018:q53, 2018:q56, 2018:q78, 2018:q79, 2019:q13, 2019:q43, 2019:q58, 2019:q65, 2019:q68, 2019:q71, 2019:q84, 2019:q85, 2020:q37, 2020:q54, 2020:q62, 2020:q66, 2021:q42, 2021:q54, 2024:q32, 2024:q42, 2024:q43, 2024:q44, 2024:q45, 2024:q46, 2024:q56, 2025:u25_q10, 2025:u25_q26, 2025:u25_q36, 2025:u25_q50, 2026:q13, 2026:q33
+- **Symbol-based arithmetic** — 1: 2017:q07
+- **Estimation and checking** — 33: 2015:q20, 2016:q04, 2016:q08, 2016:q10, 2017:q09, 2018:q06, 2018:q08, 2018:q15, 2018:q18, 2018:q19, 2019:q18, 2019:q47, 2020:q08, 2020:q11, 2020:q14, 2020:q15, 2020:q45, 2021:q02, 2021:q08, 2021:q37, 2021:q50, 2021:q57, 2022:q13, 2022:q64, 2023:q03, 2023:q04, 2023:q18, 2024:q01, 2024:q10, 2024:q11, 2024:q14, 2025:u25_q06, 2025:u25_q12
+- **Reading comprehension** — 13: 2015:q39, 2015:q40, 2015:q41, 2015:q91, 2015:q92, 2016:q22, 2016:q23, 2017:q24, 2017:q25, 2017:q33, 2018:q27, 2018:q43, 2020:q20
+- **Inference** — 1: 2015:q16
+- **Logical relationships between statements** — 45: 2015:q16, 2015:q21, 2015:q23, 2015:q27, 2015:q29, 2015:q33, 2015:q41, 2015:q44, 2015:q45, 2015:q49, 2015:q74, 2015:q80, 2016:q21, 2016:q22, 2016:q23, 2016:q36, 2016:q56, 2016:q74, 2016:q77, 2017:q24, 2017:q25, 2017:q26, 2017:q41, 2017:q66, 2017:q82, 2018:q24, 2018:q27, 2018:q29, 2018:q34, 2018:q36, 2018:q40, 2018:q43, 2019:q22, 2019:q28, 2019:q31, 2019:q39, 2020:q20, 2020:q22, 2020:q24, 2021:q25, 2021:q31, 2022:q65, 2025:u25_q23, 2026:q20, 2026:q30
+- **Sentence interpretation** — 1: 2015:q72
+- **Vocabulary in context** — 2: 2018:q30, 2018:q31
+- **Understanding instructions** — 11: 2015:q34, 2015:q40, 2015:q94, 2016:q17, 2016:q23, 2018:q19, 2019:q25, 2019:q47, 2020:q63, 2022:q61, 2023:q54
+- **Understanding qualifiers — NOT, EXCEPT, ONLY, ALWAYS, etc.** — 17: 2015:q43, 2015:q90, 2017:q47, 2020:q30, 2020:q32, 2020:q36, 2020:q46, 2020:q65, 2021:q49, 2021:q58, 2022:q30, 2022:q33, 2022:q44, 2024:q15, 2025:u25_q20, 2025:u25_q27, 2026:q41
+- **Metaphors** — 1: 2018:q43
+- **Signs and symbols** — 21: 2015:q28, 2015:q45, 2015:q48, 2015:q69, 2016:q02, 2016:q17, 2016:q54, 2017:q26, 2017:q45, 2017:q76, 2018:q43, 2018:q70, 2019:q13, 2019:q19, 2019:q61, 2021:q38, 2021:q68, 2025:u25_q22, 2025:u25_q33, 2026:q39, 2026:q53
+- **Symbol interpretation** — 1: 2015:q69
+- **Pattern-based creative reasoning** — 2: 2015:q54, 2015:q55
+- **Visual communication** — 38: 2015:q28, 2015:q45, 2015:q48, 2015:q58, 2015:q69, 2015:q70, 2016:q02, 2016:q17, 2016:q54, 2016:q80, 2017:q08, 2017:q26, 2017:q45, 2017:q76, 2018:q43, 2018:q55, 2018:q70, 2019:q13, 2019:q16, 2019:q19, 2019:q34, 2019:q42, 2019:q61, 2020:q39, 2021:q09, 2021:q23, 2021:q25, 2021:q38, 2021:q68, 2022:q58, 2023:q27, 2025:u25_q22, 2025:u25_q33, 2026:q29, 2026:q34, 2026:q39, 2026:q49, 2026:q53
+- **Form and function combinations** — 3: 2023:q12, 2023:q51, 2026:q09
+- **Creative problem solving** — 2: 2015:q40, 2015:q71
+
+### Part B
+
+- Checklist subtopics: 69
+- Subtopics with stem evidence: 0
+- Subtopics with metadata-only review candidates: 2
+- Subtopics with no direct or metadata evidence: 67
+
+**Subtopics with no stem evidence:** Line quality and controlled strokes; Basic shapes and forms; Circle and ellipse; Square and rectangle; Cylinder, cone and sphere; Cuboid and box construction; Standing pose; Walking pose; Sitting pose; Bending pose; Reaching pose; Carrying pose; Action poses; People interacting with objects; Product drawing; Furniture drawing; Everyday object drawing; One-point perspective; Two-point perspective; Interior scenes; Exterior scenes; Horizon line / eye level; Vanishing points; Depth and scale; Foreground, middle ground and background; Overlapping; Foreshortening — basic; Composition; Light direction; Cast shadows; Basic shading; Texture indication; Visual storytelling; Scene-based drawing; Clean and readable final drawing; Understanding the problem; Understanding the user; User needs; Empathy; Context and situation; Constraints; Function before decoration; Ergonomics; Grip, reach and access; Comfort; Safety; Stability; Portability; Storage; Ease of use; Material selection; Simple mechanisms; Practical construction; Design for children; Design for elderly users; Inclusive design; Sustainable design; Reuse and upcycling; Public and community problems; Emergency/problem-solving products; Multi-function products; Space-saving products; Improving existing products; Generating multiple concepts; Creativity + feasibility; Communicating the final solution; Showing how the product is used
+
+**Metadata-only candidates needing source/diagram review:** Proportion (4: 2016:q29, 2018:q67, 2019:q48, 2019:q82); Human figure (4: 2016:q29, 2018:q67, 2019:q48, 2019:q82)
+
+**Stem-evidenced subtopics and question references:**
+
+
+
+## Uncertain and unmapped question inventory
+
+All questions needing review are listed here by paper/year/question ID; fixture, source PDF, prompt excerpt, image presence and existing labels are available in the JSON report.
+
+- 2015 q06 — stem-evidence; candidates: Tables, charts and graphs
+- 2015 q07 — stem-evidence; candidates: Reading comprehension; has diagram
+- 2015 q08 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2015 q10 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2015 q13 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2015 q19 — stem-evidence; candidates: Block arrangement and stacking; has diagram
+- 2015 q20 — stem-evidence; candidates: Logical conditions and statements
+- 2015 q21 — stem-evidence; candidates: Sets and grouping
+- 2015 q22 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q23 — stem-evidence; candidates: Sets and grouping
+- 2015 q24 — metadata-review; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2015 q26 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q27 — stem-evidence; candidates: Sets and grouping
+- 2015 q29 — stem-evidence; candidates: Sets and grouping
+- 2015 q31 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2015 q32 — metadata-review; candidates: Traditional crafts and objects
+- 2015 q33 — stem-evidence; candidates: Sets and grouping
+- 2015 q34 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q35 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2015 q36 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2015 q37 — stem-evidence; candidates: Logical conditions and statements
+- 2015 q42 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q43 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2015 q44 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2015 q45 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2015 q46 — metadata-review; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2015 q48 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2015 q51 — stem-evidence; candidates: Spatial patterns and sequences
+- 2015 q53 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2015 q54 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2015 q55 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2015 q56 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2015 q57 — stem-evidence; candidates: Visual communication; has diagram
+- 2015 q60 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2015 q61 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2015 q62 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2015 q63 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2015 q64 — stem-evidence; candidates: none; has diagram
+- 2015 q65 — metadata-review; candidates: Light, reflection and refraction, Shadows
+- 2015 q67 — stem-evidence; candidates: Signs and symbols, Symbol interpretation; has diagram
+- 2015 q68 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2015 q69 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2015 q70 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2015 q71 — stem-evidence; candidates: Usability, Human-object interaction
+- 2015 q73 — stem-evidence; candidates: Human impact on environment
+- 2015 q74 — stem-evidence; candidates: Social behaviour and cultural context
+- 2015 q75 — stem-evidence; candidates: Social behaviour and cultural context
+- 2015 q76 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q77 — stem-evidence; candidates: Top, front and side views; has diagram
+- 2015 q79 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q81 — metadata-review; candidates: Logical conditions and statements
+- 2015 q82 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2015 q83 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q84 — stem-evidence; candidates: Usability, Human-object interaction; has diagram
+- 2015 q87 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2015 q88 — stem-evidence; candidates: Logical conditions and statements
+- 2015 q89 — stem-evidence; candidates: Reading comprehension
+- 2015 q90 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2015 q93 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2015 q94 — stem-evidence; candidates: Rotation and reflection; has diagram
+- 2015 q95 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2015 q96 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2015 q97 — stem-evidence; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2015 q99 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2015 q100 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2016 q03 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2016 q07 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2016 q08 — stem-evidence; candidates: Logical conditions and statements
+- 2016 q12 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2016 q14 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2016 q15 — stem-evidence; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2016 q19 — stem-evidence; candidates: Signs and symbols, Symbol interpretation
+- 2016 q23 — stem-evidence; candidates: Human impact on environment
+- 2016 q24 — stem-evidence; candidates: Human impact on environment
+- 2016 q25 — stem-evidence; candidates: Light, reflection and refraction, Shadows
+- 2016 q27 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2016 q29 — metadata-review; candidates: Human figure, Proportion
+- 2016 q30 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2016 q31 — metadata-review; candidates: Human impact on environment
+- 2016 q33 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2016 q34 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2016 q35 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2016 q37 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2016 q38 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2016 q39 — stem-evidence; candidates: Top, front and side views; has diagram
+- 2016 q41 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2016 q44 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2016 q45 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2016 q48 — metadata-review; candidates: Traditional crafts and objects
+- 2016 q50 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2016 q51 — stem-evidence; candidates: Reading comprehension
+- 2016 q52 — stem-evidence; candidates: none; has diagram
+- 2016 q53 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2016 q54 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2016 q55 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2016 q56 — stem-evidence; candidates: Social behaviour and cultural context
+- 2016 q57 — stem-evidence; candidates: Reading comprehension
+- 2016 q58 — stem-evidence; candidates: Usability, Human-object interaction; has diagram
+- 2016 q59 — metadata-review; candidates: Light, reflection and refraction, Shadows
+- 2016 q60 — stem-evidence; candidates: none; has diagram
+- 2016 q61 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2016 q62 — stem-evidence; candidates: Logical conditions and statements
+- 2016 q63 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2016 q64 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2016 q65 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2016 q66 — stem-evidence; candidates: Top, front and side views
+- 2016 q67 — metadata-review; candidates: Light, reflection and refraction, Shadows
+- 2016 q68 — stem-evidence; candidates: Reading comprehension
+- 2016 q69 — metadata-review; candidates: Human impact on environment
+- 2016 q70 — metadata-review; candidates: Traditional crafts and objects
+- 2016 q71 — stem-evidence; candidates: Rotation and reflection; has diagram
+- 2016 q72 — stem-evidence; candidates: Balance and stability; has diagram
+- 2016 q73 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2016 q75 — stem-evidence; candidates: Human impact on environment
+- 2016 q76 — metadata-review; candidates: Sets and grouping; has diagram
+- 2016 q79 — metadata-review; candidates: Human impact on environment
+- 2017 q04 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2017 q05 — stem-evidence; candidates: Visual communication; has diagram
+- 2017 q06 — stem-evidence; candidates: Social behaviour and cultural context; has diagram
+- 2017 q07 — stem-evidence; candidates: Arithmetic; has diagram
+- 2017 q17 — stem-evidence; candidates: Top, front and side views; has diagram
+- 2017 q19 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2017 q21 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2017 q22 — metadata-review; candidates: Human impact on environment
+- 2017 q23 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2017 q24 — stem-evidence; candidates: Sets and grouping
+- 2017 q25 — stem-evidence; candidates: Human impact on environment
+- 2017 q28 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2017 q29 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2017 q30 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2017 q31 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2017 q32 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2017 q33 — stem-evidence; candidates: Logical conditions and statements
+- 2017 q34 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2017 q35 — metadata-review; candidates: Logical conditions and statements
+- 2017 q36 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q37 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2017 q38 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q39 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2017 q40 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q41 — stem-evidence; candidates: Sets and grouping
+- 2017 q42 — metadata-review; candidates: Visual communication; has diagram
+- 2017 q43 — metadata-review; candidates: Light, reflection and refraction, Shadows
+- 2017 q44 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2017 q45 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2017 q46 — stem-evidence; candidates: Reading comprehension
+- 2017 q47 — stem-evidence; candidates: Reading comprehension
+- 2017 q48 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2017 q49 — metadata-review; candidates: Paper folding, cutting and punching; has diagram
+- 2017 q50 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2017 q51 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2017 q52 — metadata-review; candidates: Signs and symbols, Symbol interpretation; has diagram
+- 2017 q53 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2017 q55 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q57 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q58 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2017 q59 — metadata-review; candidates: Visual communication; has diagram
+- 2017 q60 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2017 q63 — metadata-review; candidates: Sets and grouping; has diagram
+- 2017 q67 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2017 q69 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q70 — metadata-review; candidates: Reading comprehension
+- 2017 q71 — stem-evidence; candidates: Reading comprehension
+- 2017 q72 — metadata-review; candidates: Reading comprehension
+- 2017 q73 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q76 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q77 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q78 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2017 q79 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2017 q80 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2017 q81 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2017 q82 — stem-evidence; candidates: Sets and grouping; has diagram
+- 2017 q83 — metadata-review; candidates: Materials and their properties
+- 2018 q01 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2018 q02 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q03 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2018 q04 — metadata-review; candidates: Block arrangement and stacking; has diagram
+- 2018 q05 — stem-evidence; candidates: Visual communication; has diagram
+- 2018 q13 — metadata-review; candidates: Reading comprehension; has diagram
+- 2018 q14 — stem-evidence; candidates: Usability, Human-object interaction; has diagram
+- 2018 q15 — stem-evidence; candidates: Paths, grids and mazes; has diagram
+- 2018 q17 — stem-evidence; candidates: Arithmetic; has diagram
+- 2018 q18 — stem-evidence; candidates: Social behaviour and cultural context; has diagram
+- 2018 q20 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2018 q21 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2018 q23 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q24 — stem-evidence; candidates: Sets and grouping; has diagram
+- 2018 q26 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2018 q29 — stem-evidence; candidates: Sets and grouping; has diagram
+- 2018 q30 — stem-evidence; candidates: Reading comprehension; has diagram
+- 2018 q31 — stem-evidence; candidates: Reading comprehension; has diagram
+- 2018 q32 — stem-evidence; candidates: Reading comprehension; has diagram
+- 2018 q33 — stem-evidence; candidates: Reading comprehension; has diagram
+- 2018 q34 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q35 — metadata-review; candidates: Reading comprehension; has diagram
+- 2018 q36 — stem-evidence; candidates: Sets and grouping; has diagram
+- 2018 q37 — metadata-review; candidates: Visual observation and attention to detail, Classification and grouping; has diagram
+- 2018 q38 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2018 q39 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2018 q40 — stem-evidence; candidates: Sets and grouping; has diagram
+- 2018 q41 — stem-evidence; candidates: Human impact on environment; has diagram
+- 2018 q42 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2018 q44 — metadata-review; candidates: Tables, charts and graphs; has diagram
+- 2018 q48 — metadata-review; candidates: Paths, grids and mazes; has diagram
+- 2018 q49 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2018 q52 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q53 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q54 — metadata-review; candidates: Human impact on environment; has diagram
+- 2018 q56 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q58 — metadata-review; candidates: Human impact on environment; has diagram
+- 2018 q59 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2018 q60 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2018 q61 — stem-evidence; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2018 q64 — metadata-review; candidates: Reading comprehension; has diagram
+- 2018 q65 — stem-evidence; candidates: Human impact on environment; has diagram
+- 2018 q66 — metadata-review; candidates: Social behaviour and cultural context; has diagram
+- 2018 q67 — metadata-review; candidates: Human figure, Proportion; has diagram
+- 2018 q70 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2018 q71 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2018 q72 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2018 q73 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2018 q74 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2018 q75 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2018 q76 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2018 q77 — stem-evidence; candidates: Paths, grids and mazes; has diagram
+- 2018 q78 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q79 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2018 q80 — metadata-review; candidates: Reading comprehension; has diagram
+- 2018 q81 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2018 q83 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2018 q84 — stem-evidence; candidates: Human impact on environment; has diagram
+- 2019 q01 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2019 q03 — metadata-review; candidates: Counting and arrangements, Probability basics; has diagram
+- 2019 q04 — stem-evidence; candidates: Block arrangement and stacking; has diagram
+- 2019 q05 — metadata-review; candidates: Pattern decoding; has diagram
+- 2019 q06 — stem-evidence; candidates: Counting and arrangements, Probability basics; has diagram
+- 2019 q10 — stem-evidence; candidates: Block arrangement and stacking; has diagram
+- 2019 q20 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2019 q21 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2019 q22 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2019 q23 — metadata-review; candidates: Cube and cuboid nets; has diagram
+- 2019 q24 — stem-evidence; candidates: Top, front and side views; has diagram
+- 2019 q25 — stem-evidence; candidates: Tables, charts and graphs; has diagram
+- 2019 q26 — stem-evidence; candidates: Paths, grids and mazes; has diagram
+- 2019 q27 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2019 q28 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2019 q30 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2019 q31 — stem-evidence; candidates: Human impact on environment; has diagram
+- 2019 q32 — metadata-review; candidates: Rotation and reflection; has diagram
+- 2019 q33 — metadata-review; candidates: Human impact on environment; has diagram
+- 2019 q35 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2019 q36 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2019 q38 — metadata-review; candidates: Counting and arrangements, Probability basics; has diagram
+- 2019 q39 — stem-evidence; candidates: Balance and stability; has diagram
+- 2019 q40 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2019 q41 — metadata-review; candidates: Human impact on environment; has diagram
+- 2019 q43 — stem-evidence; candidates: Logical conditions and statements
+- 2019 q44 — metadata-review; candidates: Paper folding, cutting and punching
+- 2019 q45 — stem-evidence; candidates: Paper folding, cutting and punching
+- 2019 q46 — stem-evidence; candidates: Light, reflection and refraction, Shadows
+- 2019 q48 — metadata-review; candidates: Human figure, Proportion
+- 2019 q49 — stem-evidence; candidates: Top, front and side views
+- 2019 q50 — metadata-review; candidates: Mirror images and water images
+- 2019 q51 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2019 q53 — stem-evidence; candidates: Arithmetic; has diagram
+- 2019 q54 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2019 q55 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2019 q56 — metadata-review; candidates: Paper folding, cutting and punching; has diagram
+- 2019 q58 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2019 q59 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2019 q61 — stem-evidence; candidates: Rotation and reflection; has diagram
+- 2019 q62 — stem-evidence; candidates: Cross-sections and slicing; has diagram
+- 2019 q65 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2019 q67 — stem-evidence; candidates: Block arrangement and stacking; has diagram
+- 2019 q68 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2019 q70 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2019 q71 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2019 q73 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2019 q74 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2019 q75 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2019 q76 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2019 q77 — stem-evidence; candidates: Mirror images and water images; has diagram
+- 2019 q78 — metadata-review; candidates: Paper folding, cutting and punching; has diagram
+- 2019 q79 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2019 q80 — metadata-review; candidates: Balance and stability; has diagram
+- 2019 q81 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2019 q82 — metadata-review; candidates: Human figure, Proportion; has diagram
+- 2019 q84 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2019 q85 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2020 q01 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2020 q02 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2020 q03 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2020 q05 — metadata-review; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2020 q06 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2020 q07 — stem-evidence; candidates: Cross-sections and slicing; has diagram
+- 2020 q08 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2020 q09 — stem-evidence; candidates: Visual observation and attention to detail
+- 2020 q10 — stem-evidence; candidates: Logical conditions and statements
+- 2020 q11 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2020 q13 — metadata-review; candidates: Arithmetic
+- 2020 q14 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2020 q15 — stem-evidence; candidates: Cross-sections and slicing; has diagram
+- 2020 q16 — stem-evidence; candidates: Spot the difference
+- 2020 q17 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2020 q18 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2020 q24 — stem-evidence; candidates: Distance and speed, Time and clocks
+- 2020 q28 — metadata-review; candidates: Logical conditions and statements
+- 2020 q29 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2020 q30 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2020 q32 — stem-evidence; candidates: Odd-one-out; has diagram
+- 2020 q34 — metadata-review; candidates: Logical conditions and statements
+- 2020 q35 — metadata-review; candidates: 2D and 3D visualization; has diagram
+- 2020 q36 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2020 q37 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2020 q40 — metadata-review; candidates: Mirror images and water images; has diagram
+- 2020 q41 — stem-evidence; candidates: Perspective and depth; has diagram
+- 2020 q42 — metadata-review; candidates: Reading comprehension
+- 2020 q43 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2020 q44 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2020 q45 — stem-evidence; candidates: Paths, grids and mazes; has diagram
+- 2020 q46 — stem-evidence; candidates: 2D and 3D visualization, Figure completion
+- 2020 q47 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2020 q50 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2020 q51 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2020 q52 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2020 q54 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2020 q56 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2020 q57 — stem-evidence; candidates: Human impact on environment; has diagram
+- 2020 q58 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2020 q59 — metadata-review; candidates: Top, front and side views; has diagram
+- 2020 q60 — metadata-review; candidates: Rotation and reflection; has diagram
+- 2020 q61 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2020 q62 — stem-evidence; candidates: Visual communication; has diagram
+- 2020 q64 — stem-evidence; candidates: Top, front and side views; has diagram
+- 2020 q65 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2020 q66 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2020 q67 — metadata-review; candidates: Visual analogies
+- 2020 q68 — metadata-review; candidates: Paper folding, cutting and punching; has diagram
+- 2021 q02 — stem-evidence; candidates: Counting and arrangements, Probability basics
+- 2021 q03 — stem-evidence; candidates: Paper folding, cutting and punching; has diagram
+- 2021 q07 — stem-evidence; candidates: Materials and their properties; has diagram
+- 2021 q08 — stem-evidence; candidates: Paths, grids and mazes; has diagram
+- 2021 q11 — metadata-review; candidates: Arithmetic
+- 2021 q18 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2021 q20 — metadata-review; candidates: Reading comprehension
+- 2021 q21 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2021 q22 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2021 q23 — stem-evidence; candidates: Paper folding, cutting and punching; has diagram
+- 2021 q24 — stem-evidence; candidates: Distance and speed, Time and clocks; has diagram
+- 2021 q25 — stem-evidence; candidates: Signs and symbols, Symbol interpretation; has diagram
+- 2021 q26 — metadata-review; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2021 q27 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2021 q28 — metadata-review; candidates: Materials and their properties
+- 2021 q29 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2021 q31 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2021 q33 — metadata-review; candidates: Paths, grids and mazes; has diagram
+- 2021 q37 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2021 q38 — stem-evidence; candidates: Symbol interpretation; has diagram
+- 2021 q39 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2021 q40 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2021 q41 — stem-evidence; candidates: Perspective and depth; has diagram
+- 2021 q42 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2021 q43 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2021 q44 — stem-evidence; candidates: Perspective and depth; has diagram
+- 2021 q45 — stem-evidence; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2021 q46 — stem-evidence; candidates: Block arrangement and stacking; has diagram
+- 2021 q47 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2021 q48 — metadata-review; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2021 q49 — stem-evidence; candidates: Perspective and depth; has diagram
+- 2021 q51 — stem-evidence; candidates: Usability, Human-object interaction; has diagram
+- 2021 q52 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2021 q53 — metadata-review; candidates: Perspective and depth; has diagram
+- 2021 q54 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2021 q56 — stem-evidence; candidates: Tables, charts and graphs; has diagram
+- 2021 q58 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2021 q59 — metadata-review; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2021 q62 — stem-evidence; candidates: Mirror images and water images; has diagram
+- 2021 q63 — metadata-review; candidates: Reading comprehension
+- 2021 q64 — metadata-review; candidates: Mirror images and water images; has diagram
+- 2021 q66 — metadata-review; candidates: Visual analogies; has diagram
+- 2021 q67 — metadata-review; candidates: Logical conditions and statements
+- 2021 q68 — stem-evidence; candidates: Symbol interpretation; has diagram
+- 2022 q02 — stem-evidence; candidates: Paths, grids and mazes; has diagram
+- 2022 q03 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2022 q04 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2022 q05 — metadata-review; candidates: Logical conditions and statements
+- 2022 q06 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2022 q09 — stem-evidence; candidates: Sets and grouping
+- 2022 q10 — stem-evidence; candidates: Visual communication; has diagram
+- 2022 q13 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2022 q14 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2022 q15 — metadata-review; candidates: Balance and stability; has diagram
+- 2022 q17 — stem-evidence; candidates: Faces, edges and vertices; has diagram
+- 2022 q19 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2022 q20 — metadata-review; candidates: Rotation and reflection; has diagram
+- 2022 q22 — metadata-review; candidates: Paths, grids and mazes; has diagram
+- 2022 q25 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2022 q26 — stem-evidence; candidates: Rotation and reflection; has diagram
+- 2022 q27 — metadata-review; candidates: 2D and 3D visualization; has diagram
+- 2022 q28 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2022 q29 — stem-evidence; candidates: Materials and their properties; has diagram
+- 2022 q30 — stem-evidence; candidates: Block arrangement and stacking; has diagram
+- 2022 q31 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2022 q32 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2022 q33 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2022 q34 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2022 q36 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2022 q37 — metadata-review; candidates: Mirror images and water images; has diagram
+- 2022 q38 — metadata-review; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2022 q40 — metadata-review; candidates: Logical conditions and statements; has diagram
+- 2022 q41 — stem-evidence; candidates: Perspective and depth; has diagram
+- 2022 q43 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2022 q44 — stem-evidence; candidates: Usability, Human-object interaction; has diagram
+- 2022 q45 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2022 q46 — metadata-review; candidates: Odd-one-out; has diagram
+- 2022 q48 — metadata-review; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2022 q49 — metadata-review; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2022 q50 — stem-evidence; candidates: Rotation and reflection; has diagram
+- 2022 q52 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2022 q53 — metadata-review; candidates: Mirror images and water images; has diagram
+- 2022 q54 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2022 q56 — stem-evidence; candidates: Spot the difference; has diagram
+- 2022 q57 — metadata-review; candidates: Visual communication; has diagram
+- 2022 q59 — metadata-review; candidates: Paper folding, cutting and punching; has diagram
+- 2022 q60 — stem-evidence; candidates: Perspective and depth; has diagram
+- 2022 q61 — stem-evidence; candidates: Arithmetic; has diagram
+- 2022 q62 — metadata-review; candidates: Top, front and side views; has diagram
+- 2022 q63 — metadata-review; candidates: Top, front and side views; has diagram
+- 2022 q64 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2022 q65 — stem-evidence; candidates: Pattern decoding; has diagram
+- 2022 q66 — stem-evidence; candidates: Arithmetic; has diagram
+- 2022 q67 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2022 q68 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2023 q01 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2023 q03 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2023 q04 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2023 q09 — metadata-review; candidates: Spot the difference; has diagram
+- 2023 q13 — metadata-review; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2023 q14 — metadata-review; candidates: Pattern decoding; has diagram
+- 2023 q16 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2023 q18 — stem-evidence; candidates: Rotation and reflection; has diagram
+- 2023 q19 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2023 q20 — stem-evidence; candidates: Visual communication; has diagram
+- 2023 q21 — metadata-review; candidates: Tables, charts and graphs; has diagram
+- 2023 q22 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2023 q23 — metadata-review; candidates: Odd-one-out
+- 2023 q25 — metadata-review; candidates: Perspective and depth; has diagram
+- 2023 q26 — metadata-review; candidates: Visual communication; has diagram
+- 2023 q28 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2023 q29 — metadata-review; candidates: Top, front and side views; has diagram
+- 2023 q30 — metadata-review; candidates: 2D and 3D visualization; has diagram
+- 2023 q31 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2023 q32 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2023 q33 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2023 q34 — metadata-review; candidates: Number patterns and sequences, Spatial patterns and sequences
+- 2023 q35 — metadata-review; candidates: Cube and cuboid nets; has diagram
+- 2023 q36 — stem-evidence; candidates: Balance and stability; has diagram
+- 2023 q37 — metadata-review; candidates: Perspective and depth; has diagram
+- 2023 q38 — metadata-review; candidates: Cross-sections and slicing; has diagram
+- 2023 q41 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2023 q42 — metadata-review; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2023 q43 — stem-evidence; candidates: Mirror images and water images; has diagram
+- 2023 q44 — metadata-review; candidates: Pattern decoding; has diagram
+- 2023 q45 — stem-evidence; candidates: 2D and 3D visualization; has diagram
+- 2023 q46 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2023 q47 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2023 q48 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2023 q49 — metadata-review; candidates: Cube and cuboid nets; has diagram
+- 2023 q50 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2023 q51 — stem-evidence; candidates: Usability, Human-object interaction; has diagram
+- 2023 q52 — metadata-review; candidates: Rotation and reflection; has diagram
+- 2023 q53 — stem-evidence; candidates: Top, front and side views; has diagram
+- 2023 q54 — stem-evidence; candidates: Paper folding, cutting and punching; has diagram
+- 2023 q55 — stem-evidence; candidates: Paper folding, cutting and punching
+- 2023 q56 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2023 q57 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2023 q58 — metadata-review; candidates: Visual analogies; has diagram
+- 2023 q59 — stem-evidence; candidates: Mirror images and water images; has diagram
+- 2023 q60 — metadata-review; candidates: Odd-one-out; has diagram
+- 2023 q61 — metadata-review; candidates: Pattern decoding; has diagram
+- 2023 q63 — metadata-review; candidates: Usability, Human-object interaction; has diagram
+- 2023 q64 — stem-evidence; candidates: Logical conditions and statements
+- 2023 q65 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2023 q67 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2023 q68 — metadata-review; candidates: Pattern decoding; has diagram
+- 2024 q01 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2024 q03 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2024 q05 — stem-evidence; candidates: Cross-sections and slicing; has diagram
+- 2024 q06 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2024 q15 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2024 q16 — stem-evidence; candidates: Pattern decoding; has diagram
+- 2024 q17 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2024 q18 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2024 q19 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2024 q20 — metadata-review; candidates: Top, front and side views; has diagram
+- 2024 q21 — metadata-review; candidates: Visual communication; has diagram
+- 2024 q22 — stem-evidence; candidates: Distance and speed, Time and clocks; has diagram
+- 2024 q23 — stem-evidence; candidates: Human impact on environment; has diagram
+- 2024 q24 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2024 q26 — metadata-review; candidates: Mirror images and water images; has diagram
+- 2024 q27 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2024 q29 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2024 q31 — metadata-review; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2024 q32 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2024 q33 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2024 q34 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2024 q35 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2024 q37 — stem-evidence; candidates: Light, reflection and refraction, Shadows
+- 2024 q39 — metadata-review; candidates: Reading comprehension; has diagram
+- 2024 q41 — metadata-review; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2024 q42 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2024 q43 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2024 q44 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2024 q46 — stem-evidence; candidates: Visual analogies; has diagram
+- 2024 q47 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2024 q48 — metadata-review; candidates: Everyday objects and mechanisms; has diagram
+- 2024 q49 — metadata-review; candidates: Top, front and side views; has diagram
+- 2024 q50 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2024 q51 — stem-evidence; candidates: Logical conditions and statements
+- 2024 q52 — stem-evidence; candidates: Cube and cuboid nets; has diagram
+- 2024 q53 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2024 q54 — metadata-review; candidates: Visual communication; has diagram
+- 2024 q56 — stem-evidence; candidates: Visual analogies; has diagram
+- 2024 q57 — metadata-review; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2025 u25_q01 — stem-evidence; candidates: Arithmetic
+- 2025 u25_q02 — stem-evidence; candidates: Visual observation and attention to detail
+- 2025 u25_q03 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2025 u25_q04 — stem-evidence; candidates: Logical conditions and statements; has diagram
+- 2025 u25_q06 — stem-evidence; candidates: Geometry, Area and perimeter, Volume and surface area
+- 2025 u25_q08 — metadata-review; candidates: Geometry, Area and perimeter, Volume and surface area; has diagram
+- 2025 u25_q09 — stem-evidence; candidates: Arithmetic
+- 2025 u25_q10 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2025 u25_q11 — metadata-review; candidates: Arithmetic
+- 2025 u25_q12 — stem-evidence; candidates: Block arrangement and stacking
+- 2025 u25_q14 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2025 u25_q15 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2025 u25_q16 — metadata-review; candidates: Human impact on environment; has diagram
+- 2025 u25_q17 — metadata-review; candidates: 2D and 3D visualization; has diagram
+- 2025 u25_q18 — metadata-review; candidates: Everyday objects and mechanisms
+- 2025 u25_q20 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2025 u25_q22 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2025 u25_q23 — stem-evidence; candidates: Traditional crafts and objects; has diagram
+- 2025 u25_q25 — metadata-review; candidates: Paths, grids and mazes; has diagram
+- 2025 u25_q27 — stem-evidence; candidates: Spatial patterns and sequences; has diagram
+- 2025 u25_q28 — stem-evidence; candidates: Light, reflection and refraction, Shadows
+- 2025 u25_q29 — stem-evidence; candidates: 2D and 3D visualization; has diagram
+- 2025 u25_q33 — stem-evidence; candidates: Symbol interpretation; has diagram
+- 2025 u25_q34 — metadata-review; candidates: Number patterns and sequences, Spatial patterns and sequences
+- 2025 u25_q36 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2025 u25_q37 — metadata-review; candidates: Traditional crafts and objects
+- 2025 u25_q38 — stem-evidence; candidates: Visual communication; has diagram
+- 2025 u25_q39 — metadata-review; candidates: Traditional crafts and objects
+- 2025 u25_q40 — metadata-review; candidates: Traditional crafts and objects
+- 2025 u25_q41 — metadata-review; candidates: Balance and stability
+- 2025 u25_q42 — metadata-review; candidates: Odd-one-out
+- 2025 u25_q43 — metadata-review; candidates: Odd-one-out
+- 2025 u25_q44 — metadata-review; candidates: Number patterns and sequences, Spatial patterns and sequences
+- 2025 u25_q46 — metadata-review; candidates: Human impact on environment; has diagram
+- 2025 u25_q47 — metadata-review; candidates: Human impact on environment; has diagram
+- 2025 u25_q48 — metadata-review; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2025 u25_q49 — metadata-review; candidates: Materials and their properties
+- 2025 u25_q50 — stem-evidence; candidates: Visual communication
+- 2025 u25_q51 — stem-evidence; candidates: Mirror images and water images; has diagram
+- 2025 u25_q53 — metadata-review; candidates: Logical conditions and statements
+- 2025 u25_q54 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2025 u25_q55 — stem-evidence; candidates: Mirror images and water images; has diagram
+- 2025 u25_q57 — stem-evidence; candidates: Paths, grids and mazes; has diagram
+- 2026 q01 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2026 q06 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2026 q08 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2026 q09 — stem-evidence; candidates: Usability, Human-object interaction; has diagram
+- 2026 q10 — metadata-review; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2026 q11 — metadata-review; candidates: Paper folding, cutting and punching; has diagram
+- 2026 q12 — stem-evidence; candidates: Arithmetic
+- 2026 q13 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2026 q15 — stem-evidence; candidates: Top, front and side views; has diagram
+- 2026 q16 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2026 q18 — stem-evidence; candidates: Symmetry — reflection and rotational; has diagram
+- 2026 q20 — stem-evidence; candidates: Traditional crafts and objects
+- 2026 q22 — metadata-review; candidates: Signs and symbols, Symbol interpretation, Visual communication
+- 2026 q23 — metadata-review; candidates: Traditional crafts and objects
+- 2026 q24 — metadata-review; candidates: Signs and symbols, Symbol interpretation; has diagram
+- 2026 q25 — metadata-review; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2026 q26 — metadata-review; candidates: Visual communication; has diagram
+- 2026 q27 — metadata-review; candidates: Visual communication; has diagram
+- 2026 q28 — metadata-review; candidates: Spatial patterns and sequences; has diagram
+- 2026 q30 — stem-evidence; candidates: Signs and symbols, Symbol interpretation
+- 2026 q31 — metadata-review; candidates: Visual analogies; has diagram
+- 2026 q32 — stem-evidence; candidates: Light, reflection and refraction, Shadows
+- 2026 q33 — stem-evidence; candidates: Number patterns and sequences, Spatial patterns and sequences; has diagram
+- 2026 q35 — metadata-review; candidates: Traditional crafts and objects
+- 2026 q36 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2026 q37 — metadata-review; candidates: Human impact on environment; has diagram
+- 2026 q38 — stem-evidence; candidates: Paper folding, cutting and punching; has diagram
+- 2026 q39 — stem-evidence; candidates: Symbol interpretation; has diagram
+- 2026 q41 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2026 q42 — stem-evidence; candidates: Visual observation and attention to detail; has diagram
+- 2026 q43 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2026 q45 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2026 q46 — metadata-review; candidates: Pattern decoding
+- 2026 q47 — stem-evidence; candidates: 2D and 3D visualization, Figure completion; has diagram
+- 2026 q48 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2026 q50 — stem-evidence; candidates: Light, reflection and refraction, Shadows; has diagram
+- 2026 q51 — stem-evidence; candidates: Everyday objects and mechanisms; has diagram
+- 2026 q52 — metadata-review; candidates: Visual observation and attention to detail; has diagram
+- 2026 q53 — stem-evidence; candidates: Symbol interpretation; has diagram
+- 2026 q54 — stem-evidence; candidates: Sequence of operation, Prediction from visual information; has diagram
+- 2026 q55 — metadata-review; candidates: Traditional crafts and objects; has diagram
+- 2026 q57 — metadata-review; candidates: Usability, Human-object interaction
+
+## Next verification
+
+Independently inspect source PDF pages and diagrams for the uncertain question IDs, correct erroneous existing labels, then rerun this audit. Source and verify Part-B drawing/design questions before claiming any Part-B coverage.

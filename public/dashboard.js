@@ -878,9 +878,11 @@ async function practiceView() {
           value: state.practiceExamFilter || 'all',
           onchange: (e) => { state.practiceExamFilter = e.target.value; updateMatchingCount(); render(); }
         }, [
-          el('option', { value: 'all' }, ['All Papers & Diagnostic']),
+          el('option', { value: 'all' }, ['All Papers & Worksheets']),
+          el('option', { value: 'uceed' }, ['All UCEED Papers (2015–2026)']),
           el('option', { value: 'uceed-2026' }, ['UCEED 2026']),
           el('option', { value: 'uceed-2025' }, ['UCEED 2025']),
+          el('option', { value: 'ceed' }, ['CEED Papers (2021–2026)']),
           el('option', { value: 'uceed-2024' }, ['UCEED 2024']),
           el('option', { value: 'spatial' }, ['Spatial Reasoning Diagnostic'])
         ])

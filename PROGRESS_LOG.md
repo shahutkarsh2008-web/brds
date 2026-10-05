@@ -1362,8 +1362,7 @@ STATUS: DONE
 FILES: reports/uceed-2015-2016-visual-topic-review.md, PROGRESS_LOG.md; UCEED2015/2016 papers, fixtures and media read-only
 WHAT: Rendered 73 source-paper pages and reviewed contact sheets for all 118 fixture-referenced diagram crops. Every referenced media file exists and visually matches source question content at overview scale; one unreferenced asset, uceed-2015-q51.png, was left untouched. No topic label changed without source-confirmed evidence.
 WHY: Closes the outstanding visual overview review for UCEED 2015–2016 within P1.
-EVIDENCE: Focused answer-key/import tests 5/5 passed and full 
-pm test 94/94 passed. Detailed evidence is in reports/uceed-2015-2016-visual-topic-review.md.
+EVIDENCE: Focused answer-key/import tests passed 5/5; the full npm test suite passed 94/94. Detailed evidence is in reports/uceed-2015-2016-visual-topic-review.md.
 NEXT: Finish remaining keyed CEED import work and continue question-to-subtopic source verification. The 609-question review queue and Part-B content gaps remain open.
 
 ### [2026-10-05 20:52 UTC] Codex — P1: verify remaining CEED 2020 source and mark rules

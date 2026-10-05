@@ -1,16 +1,18 @@
 import { HttpError } from './auth.js';
 import { createPracticeEngine } from './practice.js';
+import { createStudentFeatures } from './student-features.js';
 
 async function readStudentJson(req, limit) {
   if (!(req.headers['content-type'] || '').startsWith('application/json')) throw new HttpError(415, 'Use application/json.');
-  let text = '', length = 0;
+  const chunks = [];
+  let length = 0;
   for await (const chunk of req) {
     length += chunk.length;
     if (length > limit) throw new HttpError(413, 'Request too large.');
-    text += chunk;
+    chunks.push(chunk);
   }
   try {
-    const value = JSON.parse(text || '{}');
+    const value = JSON.parse(Buffer.concat(chunks).toString('utf8') || '{}');
     if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error();
     return value;
   } catch { throw new HttpError(400, 'Invalid JSON.'); }
@@ -18,6 +20,7 @@ async function readStudentJson(req, limit) {
 
 export function createExamApi(auth, engine, roster, database) {
   const practiceEngine = database ? createPracticeEngine(database) : null;
+  const studentFeatures = database ? createStudentFeatures(database) : null;
 
   return async (req, res, path) => {
     const json = (status, value) => {
@@ -42,6 +45,35 @@ export function createExamApi(auth, engine, roster, database) {
           return json(200, { ...(await engine.getStudentOverview(user.id)), user: { id: user.id, name: user.name, loginId: user.login_id || user.loginId, targetExam: user.target_exam || 'UCEED 2026' } });
         }
         if (path === '/api/student/analytics' && req.method === 'GET') return json(200, await engine.getStudentOverview(user.id));
+
+        if (path === '/api/student/preferences' && req.method === 'GET') return json(200, { preferences: await studentFeatures.getPreferences(user.id) });
+        if (path === '/api/student/preferences' && req.method === 'POST') {
+          const input = await readStudentJson(req, 8192);
+          return json(200, { preferences: await studentFeatures.savePreferences(user.id, input) });
+        }
+        if (path === '/api/student/features/gk/cards' && req.method === 'GET') return json(200, await studentFeatures.getGkCards(user.id));
+        if (path === '/api/student/features/gk/review' && req.method === 'POST') {
+          const input = await readStudentJson(req, 8192);
+          return json(200, { progress: await studentFeatures.reviewGkCard(user.id, input.cardId, input.rating) });
+        }
+        if (path === '/api/student/features/sketches' && req.method === 'GET') return json(200, await studentFeatures.listSketches(user.id));
+        if (path === '/api/student/features/sketches' && req.method === 'POST') {
+          const input = await readStudentJson(req, 3 * 1024 * 1024);
+          return json(201, { sketch: await studentFeatures.createSketch(user.id, input) });
+        }
+        const sketchDelete = path.match(/^\/api\/student\/features\/sketches\/([a-zA-Z0-9_-]+)\/delete$/);
+        if (sketchDelete && req.method === 'POST') {
+          const removed = await studentFeatures.deleteSketch(user.id, sketchDelete[1]);
+          if (!removed) throw new HttpError(404, 'Sketch not found.');
+          return json(200, { deleted: true });
+        }
+        if (path === '/api/student/features/guides' && req.method === 'GET') return json(200, studentFeatures.listGuides());
+        if (path === '/api/student/features/guides/progress' && req.method === 'GET') return json(200, await studentFeatures.guideProgress(user.id));
+        const guideQuiz = path.match(/^\/api\/student\/features\/guides\/([a-zA-Z0-9_-]+)\/quiz$/);
+        if (guideQuiz && req.method === 'POST') {
+          const input = await readStudentJson(req, 8192);
+          return json(200, { result: await studentFeatures.submitGuideQuiz(user.id, guideQuiz[1], input.answers) });
+        }
 
         if (path === '/api/student/practice/topics' && req.method === 'GET') {
           const filters = Object.fromEntries(new URL(req.url, 'http://localhost').searchParams.entries());
@@ -76,6 +108,18 @@ export function createExamApi(auth, engine, roster, database) {
           const result = await practiceEngine.setBookmark(user.id, input.examId, input.questionId, input.bookmarked);
           if (result === false) throw new HttpError(404, 'Question was not found in that exam.');
           return json(200, result);
+        }
+        if (path === '/api/student/features/revision' && req.method === 'GET') {
+          const [questions, reviewed] = await Promise.all([practiceEngine.listRevision(user.id), studentFeatures.reviewedRevisionKeys(user.id)]);
+          return json(200, { questions: questions.map(question => ({ ...question, reviewed: reviewed.has(`${question.examId}:${question.originalQuestionId || question.questionId || question.id}`) })) });
+        }
+        if (path === '/api/student/features/revision/review' && req.method === 'POST') {
+          const input = await readStudentJson(req, 8192);
+          if (typeof input.examId !== 'string' || typeof input.questionId !== 'string' || typeof input.reviewed !== 'boolean') throw new HttpError(400, 'Paper, question and review status are required.');
+          const questions = await practiceEngine.listRevision(user.id);
+          const exists = questions.some(question => question.examId === input.examId && (question.originalQuestionId || question.questionId || question.id) === input.questionId);
+          if (!exists) throw new HttpError(404, 'Question is not in your revision queue.');
+          return json(200, { review: await studentFeatures.setRevisionReviewed(user.id, input.examId, input.questionId, input.reviewed) });
         }
         if (path === '/api/student/practice/revision' && req.method === 'GET') return json(200, { questions: await practiceEngine.listRevision(user.id) });
 

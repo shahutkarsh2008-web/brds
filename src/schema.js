@@ -17,12 +17,19 @@ export async function migrate(database) {
       `CREATE TABLE IF NOT EXISTS practice_answers (set_id TEXT NOT NULL REFERENCES practice_sets(id) ON DELETE CASCADE,question_id TEXT NOT NULL,answer_json TEXT NOT NULL,answered_at BIGINT NOT NULL,PRIMARY KEY(set_id,question_id))`,
       `CREATE TABLE IF NOT EXISTS practice_outcomes (set_id TEXT NOT NULL REFERENCES practice_sets(id) ON DELETE CASCADE,question_id TEXT NOT NULL,exam_id TEXT NOT NULL,outcome TEXT NOT NULL,marks REAL NOT NULL,updated_at BIGINT NOT NULL,PRIMARY KEY(set_id,question_id))`,
       `CREATE TABLE IF NOT EXISTS practice_bookmarks (user_id TEXT NOT NULL REFERENCES users(id),question_id TEXT NOT NULL,exam_id TEXT NOT NULL,created_at BIGINT NOT NULL,PRIMARY KEY(user_id,question_id,exam_id))`,
+      `CREATE TABLE IF NOT EXISTS student_preferences (user_id TEXT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,preferences_json TEXT NOT NULL,updated_at BIGINT NOT NULL)`,
+      `CREATE TABLE IF NOT EXISTS gk_card_progress (user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,card_id TEXT NOT NULL,box INTEGER NOT NULL DEFAULT 0,seen_count INTEGER NOT NULL DEFAULT 0,last_reviewed_at BIGINT NOT NULL,PRIMARY KEY(user_id,card_id))`,
+      `CREATE TABLE IF NOT EXISTS student_sketches (id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,title TEXT NOT NULL,prompt TEXT NOT NULL,image_data_url TEXT NOT NULL,created_at BIGINT NOT NULL)`,
+      `CREATE TABLE IF NOT EXISTS guide_quiz_attempts (id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,guide_id TEXT NOT NULL,correct INTEGER NOT NULL,total INTEGER NOT NULL,submitted_at BIGINT NOT NULL)`,
+      `CREATE TABLE IF NOT EXISTS student_revision_reviews (user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,exam_id TEXT NOT NULL,question_id TEXT NOT NULL,reviewed_at BIGINT NOT NULL,PRIMARY KEY(user_id,exam_id,question_id))`,
       'CREATE INDEX IF NOT EXISTS sessions_user ON sessions(user_id)',
       'CREATE INDEX IF NOT EXISTS challenges_user ON auth_challenges(user_id)',
       'CREATE INDEX IF NOT EXISTS attempts_deadline ON attempts(status,deadline)',
       'CREATE INDEX IF NOT EXISTS flags_attempt ON activity_flags(attempt_id,type,created_at)',
       'CREATE INDEX IF NOT EXISTS practice_sets_user ON practice_sets(user_id)',
-      "UPDATE system_metadata SET value = '5' WHERE key = 'schema_version'",
+      'CREATE INDEX IF NOT EXISTS student_sketches_user ON student_sketches(user_id,created_at)',
+      'CREATE INDEX IF NOT EXISTS guide_quiz_user ON guide_quiz_attempts(user_id,submitted_at)',
+      "UPDATE system_metadata SET value = '6' WHERE key = 'schema_version'",
     ]) await query(sql);
   });
 }

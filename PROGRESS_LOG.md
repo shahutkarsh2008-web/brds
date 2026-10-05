@@ -1044,3 +1044,69 @@ WHAT: Restored the dashboard entry document after finding it replaced by truncat
 WHY: Closes the Phase 1 shell/responsive gaps and supplies actual browser evidence for Phases 1–3; removes the repository defect preventing the declared full-suite command from running.
 EVIDENCE: `npm test` passes 81/81; `node --check public/dashboard.js`, `node --check scratch/verify-chrome-browser.js`, and targeted `git diff --check` pass. `node scratch/verify-chrome-browser.js` passes 20/20 live Edge/Chromium scenarios (Overview, Library, Practice, Mocks, Analytics at 1440, 1024, 768, and 360 CSS px), with each route rendered and `scrollWidth <= clientWidth`; screenshots and exact metrics are in the listed report files. The prior Antigravity CDP report did not represent rendered app pages, so this run supersedes it. Phases 1–3 local code acceptance is complete; hosted credentials/integration remain deferred per project instructions.
 NEXT: No Phase 1–3 implementation remains from this audit. Continue Phase 4/5 only when directed; keep live hosted acceptance for Phase 8.
+
+### [2026-10-05 13:25 UTC] Codex — Phase 4: Student study features, API ownership and UI handoff
+STATUS: IN PROGRESS
+FILES: src/schema.js, src/exam-api.js, src/student-features.js, public/dashboard.js, public/workspace-dark.css, public/dashboard.html, test/student-features.test.js, test/workspace-v2-phase4.test.js, PROGRESS_LOG.md
+WHAT: User explicitly directed Codex to complete both Codex and Antigravity Phase 4 work without waiting for Antigravity. Claiming student-only persistent feature contracts and tests, plus the visual tab handoff for GK Sprint, Sketches, Bookmarks, Guides, and Settings; prior UI ownership is DONE/released and the prior shared-file edits are committed.
+WHY: Phase 4 requires every sidebar feature to have a complete flow, persistent settings, error/empty behavior, and usable student feature surfaces rather than generic placeholder cards.
+NEXT: Add per-user persistence and validated APIs for preferences, flashcard review, sketch gallery, guides and quiz results; replace generic feature tabs with interactive surfaces, then exercise API isolation, persistence, validation and browser interactions.
+
+### [2026-10-05 13:32 UTC] Codex — Phase 4: Permit stored sketch image previews
+STATUS: IN PROGRESS
+FILES: src/app.js, PROGRESS_LOG.md
+WHAT: The Phase 4 sketch gallery returns authenticated, size-limited image data for the student's own saved artwork. Claiming the static security header change to allow only same-origin and data URL image sources needed to render these previews.
+WHY: A CSP `default-src 'self'` blocks embedded image previews unless `img-src data:` is explicitly allowed; sketches must remain viewable after reload.
+NEXT: Restrict the CSP image source directive to `'self' data:` and verify no other resource types gain data URL access.
+
+### [2026-10-05 13:38 UTC] Codex — Phase 4: Browser verification handoff for every student tab
+STATUS: IN PROGRESS
+FILES: scratch/verify-chrome-browser.js, PROGRESS_LOG.md
+WHAT: Extending the repaired CDP verifier to the five newly functional Phase 4 tabs (GK Sprint, Sketches, Bookmarks, Guides, Settings), in addition to the Phase 1–3 routes. This browser-check file was previously released by the final Phase 1–3 verification commit.
+WHY: Phase 4 needs all sidebar flows checked at desktop, tablet and narrow mobile widths rather than only source-level assertions.
+NEXT: Assert each new route heading and rendered card in real Chromium across the four configured viewports, record screenshots and re-run all tests.
+
+### [2026-10-05 13:42 UTC] Codex — Phase 4: Per-student feature APIs and persistence
+STATUS: DONE
+FILES: src/schema.js, src/exam-api.js, src/student-features.js, src/app.js, test/student-features.test.js
+WHAT: Added SQLite/Postgres-compatible storage and authenticated student APIs for target/theme/reminder preferences, private GK flashcard review boxes, a size/type-validated private sketch gallery, static syllabus study notes, and server-scored five-question quizzes with saved progress. Sketch writes are transactionally capped at 20 per user, preference updates and card reviews are atomic, and the CSP permits embedded previews only as images.
+WHY: Provides the Phase 4 backend contracts and persistence needed for preferences-after-reload, study progress, sketch gallery records and quiz history without exposing answer keys or another student's data.
+EVIDENCE: `node --test test/student-features.test.js` passes 3/3. Coverage verifies preference persistence and validation, per-account isolation, GK review progress, malformed sketch image rejection and private CRUD, quiz answer-key privacy, server score calculation and progress history.
+NEXT: Continue the Phase 4 visual tab integration; backend files are released for additional phases after this DONE handoff.
+
+### [2026-10-05 13:43 UTC] Codex — Phase 4: Feature tab browser and interaction handoff
+STATUS: IN PROGRESS
+FILES: public/dashboard.js, public/workspace-dark.css, public/dashboard.html, scratch/verify-chrome-browser.js, test/workspace-v2-phase4.test.js, reports/phase14-browser-evidence.json, PROGRESS_LOG.md
+WHAT: Building interactive feature-specific tabs and responsive visual states over the completed API: GK review, sketch prompt/upload/gallery, actual saved and missed questions, guide notes/quizzes, and persistent settings. Browser verification now covers every sidebar tab and includes a real file-picker upload/save roundtrip.
+WHY: Satisfies Antigravity Phase 4 visual acceptance and Codex Phase 4 UI integration while preserving honest messaging where reminder delivery and scheduled mock data are not configured.
+NEXT: Finish interaction/error-state checks, run the full regression suite and real-browser matrix, then commit only these Phase 4 UI files and evidence.
+
+### [2026-10-05 13:45 UTC] Codex — Phase 4: Atomic preference and flashcard updates
+STATUS: IN PROGRESS
+FILES: src/student-features.js, test/student-features.test.js, PROGRESS_LOG.md
+WHAT: Claiming a focused concurrency hardening increment for the Phase 4 APIs just handed off: serialize preference merges with a row lock on PostgreSQL and make repeated flashcard ratings increment from database state rather than a stale read.
+WHY: Multiple tabs or rapid reviews must not silently lose a saved preference or retention-box count.
+NEXT: Add concurrent-request assertions and rerun focused and full database/API tests.
+
+### [2026-10-05 13:50 UTC] Codex — Phase 4: Persistent revision completion handoff
+STATUS: IN PROGRESS
+FILES: src/schema.js, src/student-features.js, src/exam-api.js, public/dashboard.js, test/student-features.test.js, test/workspace-v2-phase23-backend.test.js, PROGRESS_LOG.md
+WHAT: Claiming the Phase 4 revision queue completion state and its UI filter refinement. Current API lists missed/bookmarked questions but cannot persist that a student has reviewed a missed item; adding user-scoped completion so the Bookmarks tab can filter pending and reviewed items across reloads.
+WHY: Antigravity Phase 4 asks for revision filters, source-paper labels and completion state, and Codex Phase 4 requires complete persisted feature flows.
+NEXT: Add validated mark-reviewed/undo API, per-student storage, topic/paper/type/search filters and tests proving review state persists without leaking across users.
+
+### [2026-10-05 13:50 UTC] Codex — Phase 4: Revision completion and concurrency checks completed
+STATUS: DONE
+FILES: src/schema.js, src/student-features.js, src/exam-api.js, test/student-features.test.js, test/workspace-v2-phase23-backend.test.js
+WHAT: Added student-specific completion state for missed and partial questions, with validation that only items currently in the student's own revision queue can be marked or reopened. Preferences merge under a transaction/row lock on PostgreSQL, flashcard ratings use atomic upserts, and the sketch gallery cap is enforced inside the same write transaction.
+WHY: Makes Phase 4 review completion and progress reliable across reloads, users and concurrent requests.
+EVIDENCE: Focused feature/API checks pass; cases cover concurrent partial preference updates, repeated flashcard reviews, review mark/undo persistence, unrelated-student isolation, and rejection of items outside the queue.
+NEXT: Backend feature increment released; complete the final all-tab browser and full-suite checkpoint.
+
+### [2026-10-05 13:50 UTC] Codex — Phase 4: Student study tabs completed
+STATUS: DONE
+FILES: public/dashboard.js, public/workspace-dark.css, public/dashboard.html, scratch/verify-chrome-browser.js, test/workspace-v2-phase4.test.js, reports/phase14-browser-evidence.json, reports/phase14-browser-verification/*.png, PROGRESS_LOG.md
+WHAT: Replaced generic feature placeholders with GK flashcard rounds and review boxes, a timed Sketch Studio with image preview/upload/private gallery/delete, searchable Guides with worked examples and scored quizzes, filtered Bookmarks & Revision with persistent reviewed state, and saved target/theme/reminder preferences. Added retry, empty, validation, save feedback and loading states; navigation away pauses the sketch timer. Mocks truthfully says schedule and access pricing are unconfigured instead of inventing dates or a free/paid boundary.
+WHY: Completes the Antigravity Phase 4 visible feature surfaces and Codex Phase 4 API integration without fabricating unavailable schedule, pricing or notification-delivery data.
+EVIDENCE: Full `npm test` passes 86/86. Syntax checks for the changed JS files, focused Phase 4 tests and `git diff --check` pass. Real Edge/Chromium verified all 10 sidebar tabs at 1440, 1024, 768 and 360 CSS pixels (40/40 rendered with no horizontal overflow); the browser also uploaded a PNG, previewed it, saved it through the authenticated API and saw it in the gallery. JSDOM interaction coverage exercises flashcard reveal/review, timer start/pause, revision mark-reviewed, quiz submission and settings persistence. See `reports/phase14-browser-evidence.json` and screenshots.
+NEXT: Phase 4 local code/UI work is complete. Real reminder delivery and schedule/pricing configuration remain unavailable/unconfigured and must use verified product configuration when supplied. Continue to Phase 5/8 only when requested.

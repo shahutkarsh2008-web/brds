@@ -95,6 +95,22 @@ test('Phase 2: skip-done excludes questions used in prior sets; bookmarks are pr
   assert.equal((await f.api('/api/student/bookmarks')).body.bookmarks.length, 0);
 });
 
+test('Phase 4: revision completion persists per student and only applies to missed practice questions', async t => {
+  const f = await setup(t);
+  const created = await f.api('/api/student/practice/create', { exam: 'phase23', topics: ['Spatial Reasoning'], skipDone: false, setSize: 1 });
+  await f.api('/api/student/practice/answer', { setId: created.body.set.id, questionId: 'spatial-1', value: 'b' });
+  const initial = await f.api('/api/student/features/revision');
+  assert.equal(initial.status, 200);
+  assert.equal(initial.body.questions[0].reviewed, false);
+  assert.equal((await f.api('/api/student/features/revision/review', { examId: f.exam.id, questionId: 'spatial-1', reviewed: true })).status, 200);
+  assert.equal((await f.api('/api/student/features/revision')).body.questions[0].reviewed, true);
+  assert.equal((await f.api('/api/student/features/revision', undefined, 'practice_b')).body.questions.length, 0);
+  assert.equal((await f.api('/api/student/features/revision/review', { examId: f.exam.id, questionId: 'spatial-1', reviewed: true }, 'practice_b')).status, 404);
+  assert.equal((await f.api('/api/student/features/revision/review', { examId: f.exam.id, questionId: 'missing', reviewed: true })).status, 404);
+  await f.api('/api/student/features/revision/review', { examId: f.exam.id, questionId: 'spatial-1', reviewed: false });
+  assert.equal((await f.api('/api/student/features/revision')).body.questions[0].reviewed, false);
+});
+
 test('Phase 3: overview has honest empty state and completed attempt KPIs, trends, and partial attempt status', async t => {
   const f = await setup(t);
   const empty = await f.api('/api/student/analytics');

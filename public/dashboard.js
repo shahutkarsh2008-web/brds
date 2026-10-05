@@ -31,7 +31,39 @@ const state = {
   mockFilter: 'all',
   analyticsDate: 'all',
   analyticsExam: 'all',
-  analyticsError: null
+  analyticsError: null,
+  preferences: null,
+  preferencesError: null,
+  preferencesMessage: null,
+  gkData: null,
+  gkIndex: 0,
+  gkRevealed: false,
+  gkCategory: 'all',
+  gkError: null,
+  sketchData: null,
+  sketchError: null,
+  sketchMessage: null,
+  sketchTitle: '',
+  sketchPrompt: '',
+  sketchImageDataUrl: '',
+  sketchSaving: false,
+  sketchSecondsLeft: 20 * 60,
+  sketchTimerRunning: false,
+  sketchTimerHandle: null,
+  guideData: null,
+  guideProgress: null,
+  guideSearch: '',
+  selectedGuide: null,
+  guideAnswers: {},
+  guideResult: null,
+  guideError: null,
+  featureBookmarks: null,
+  featureRevision: null,
+  featureBookmarkFilter: 'all',
+  featureBookmarkSource: 'all',
+  featureBookmarkTopic: 'all',
+  featureBookmarkType: 'all',
+  featureBookmarkSearch: ''
 };
 
 const app = document.querySelector('#app');
@@ -39,7 +71,7 @@ const app = document.querySelector('#app');
 const el = (tag, props = {}, children = []) => {
   const n = document.createElement(tag);
   Object.assign(n, props);
-  children.forEach(c => n.append(c?.nodeType ? c : document.createTextNode(String(c))));
+  children.filter(c => c !== null && c !== undefined && c !== false).forEach(c => n.append(c?.nodeType ? c : document.createTextNode(String(c))));
   return n;
 };
 
@@ -109,6 +141,11 @@ function sidebar() {
     navEl.append(el('button', {
       className: `nav-icon-btn ${state.tab === id ? 'active' : ''}`,
       onclick: () => {
+        if (state.tab === 'sketches' && id !== 'sketches' && state.sketchTimerHandle) {
+          clearInterval(state.sketchTimerHandle);
+          state.sketchTimerHandle = null;
+          state.sketchTimerRunning = false;
+        }
         state.tab = id;
         render();
       }
@@ -124,7 +161,7 @@ function sidebar() {
 
 function header(title, sub) {
   const user = state.overviewData?.user || {};
-  const target = user.targetExam || 'UCEED 2026';
+  const target = state.preferences?.targetExam || user.targetExam || 'UCEED 2026';
   const name = user.name || 'Student';
 
   return el('header', { className: 'top-header-bar' }, [
@@ -141,8 +178,12 @@ function header(title, sub) {
       ]),
       el('button', {
         className: 'btn btn-outline',
-        onclick: () => {
-          document.body.classList.toggle('light-mode');
+        onclick: async () => {
+          const theme = document.body.classList.contains('light-mode') ? 'dark' : 'light';
+          document.body.classList.toggle('light-mode', theme === 'light');
+          state.preferences = { ...(state.preferences || { targetExam: target, reminders: false }), theme };
+          try { await apiFetch('/api/student/preferences', { method: 'POST', body: JSON.stringify({ theme }) }); }
+          catch (error) { state.preferencesError = `Theme could not be saved: ${error.message}`; }
         }
       }, ['☀ Light/Dark'])
     ])
@@ -1059,6 +1100,7 @@ async function mocksView() {
       el('p', { className: 'card-stat-desc', style: 'margin-bottom: 12px; font-size: 0.9rem;' }, [
         'No scheduled mock exams are currently configured for your account. All available papers can be attempted on-demand from the Papers Library.'
       ]),
+      el('p', { className: 'card-stat-desc' }, ['Registration dates and free/paid access plans are not configured, so this calendar does not show invented sessions or pricing.']),
       el('button', {
         className: 'btn btn-outline',
         style: 'font-size:0.82rem;',
@@ -1445,58 +1487,228 @@ async function analyticsView() {
   return [wrap];
 }
 
-function generic(name, desc) {
-  const isGk = name === 'GK Sprint';
-  const isSketch = name === 'Sketches';
-  const isBookmarks = name === 'Bookmarks';
-  const isGuides = name === 'Guides';
-  const isSettings = name === 'Settings';
+function featurePage(title, subtitle, children) {
+  return [header(title, subtitle), el('div', { className: 'feature-page' }, children)];
+}
 
-  const cards = isGk ? [
-    card('GK Sprint', [
-      el('p', { className: 'card-stat-desc' }, ['Short flashcard rounds for Indian art, architecture, craft history, and current affairs.'])
-    ]),
-    card('Retention Box', [
-      el('p', { className: 'card-stat-desc' }, ['Missed cards return to the revision box until mastered.'])
-    ])
-  ] : isSketch ? [
-    card('Sketch Studio', [
-      el('p', { className: 'card-stat-desc' }, ['Open a drawing prompt, set your timer, and upload your artwork response.'])
-    ]),
-    card('Gallery', [
-      el('p', { className: 'card-stat-desc' }, ['Saved sketch attempts and feedback will appear here.'])
-    ])
-  ] : isBookmarks ? [
-    card('Revision Queue', [
-      el('p', { className: 'card-stat-desc' }, ['Bookmarked and previously missed questions appear here.'])
-    ]),
-    card('Filters', [
-      el('p', { className: 'card-stat-desc' }, ['Filter by syllabus topic, paper, and question type.'])
-    ])
-  ] : isGuides ? [
-    card('Guides & Notes', [
-      el('p', { className: 'card-stat-desc' }, ['Topic guides, worked solutions, and visual formula references from UCEED syllabus.'])
-    ]),
-    card('Quick Quizzes', [
-      el('p', { className: 'card-stat-desc' }, ['Short 5-question checkpoints keep revision sharp.'])
-    ])
-  ] : isSettings ? [
-    card('Profile Preferences', [
-      el('p', { className: 'card-stat-desc' }, ['Target exam selection and notification preferences.'])
-    ]),
-    card('Appearance', [
-      el('p', { className: 'card-stat-desc' }, ['Dark/Light workspace preferences saved locally.'])
-    ])
-  ] : [
-    card('Study Workspace', [
-      el('p', { className: 'card-stat-desc' }, ['Select a feature tab from the sidebar navigation.'])
-    ])
-  ];
+async function gkView() {
+  if (!state.gkData && !state.gkError) {
+    try { state.gkData = await apiFetch('/api/student/features/gk/cards'); }
+    catch (error) { state.gkError = error.message; }
+  }
+  if (state.gkError) return featurePage('GK Sprint', 'Short active-recall rounds from the starter deck.', [card('Cards unavailable', [el('p', { className: 'feature-error' }, [state.gkError]), el('button', { className: 'btn btn-primary', onclick: () => { state.gkError = null; render(); } }, ['Retry'])])]);
+  const all = state.gkData.cards;
+  const categories = [...new Set(all.map(item => item.category))];
+  const visible = state.gkCategory === 'all' ? all : all.filter(item => item.category === state.gkCategory);
+  state.gkIndex = Math.min(state.gkIndex, Math.max(0, visible.length - 1));
+  const current = visible[state.gkIndex];
+  const chooseCategory = el('select', { className: 'feature-select', 'aria-label': 'Flashcard category', onchange: event => { state.gkCategory = event.target.value; state.gkIndex = 0; state.gkRevealed = false; render(); } }, [
+    el('option', { value: 'all', selected: state.gkCategory === 'all' }, [`All categories (${all.length})`]),
+    ...categories.map(category => el('option', { value: category, selected: state.gkCategory === category }, [category]))
+  ]);
+  const cardBody = current ? [
+    el('div', { className: 'feature-row feature-between' }, [el('span', { className: 'feature-tag' }, [current.category]), el('span', { className: 'card-stat-desc' }, [`Card ${state.gkIndex + 1} of ${visible.length} · Box ${current.box}/5`])]),
+    el('div', { className: 'flashcard-face' }, [el('span', { className: 'card-stat-desc' }, [state.gkRevealed ? 'Answer' : 'Prompt']), el('p', { className: 'flashcard-copy' }, [state.gkRevealed ? current.back : current.front])]),
+    state.gkRevealed ? el('div', { className: 'feature-row' }, [
+      el('button', { className: 'btn btn-outline', onclick: async () => { try { await apiFetch('/api/student/features/gk/review', { method: 'POST', body: JSON.stringify({ cardId: current.id, rating: 'again' }) }); state.gkData = null; state.gkError = null; state.gkIndex = (state.gkIndex + 1) % visible.length; state.gkRevealed = false; } catch (error) { state.gkError = error.message; } render(); } }, ['Again · return to Box 0']),
+      el('button', { className: 'btn btn-primary', onclick: async () => { try { await apiFetch('/api/student/features/gk/review', { method: 'POST', body: JSON.stringify({ cardId: current.id, rating: 'remembered' }) }); state.gkData = null; state.gkError = null; state.gkIndex = (state.gkIndex + 1) % visible.length; state.gkRevealed = false; } catch (error) { state.gkError = error.message; } render(); } }, ['Remembered · move forward'])
+    ]) : el('button', { className: 'btn btn-primary', onclick: () => { state.gkRevealed = true; render(); } }, ['Reveal answer'])
+  ] : [el('p', { className: 'feature-empty' }, ['No cards are available in this category.'])];
+  const counts = categories.map(category => {
+    const cards = all.filter(item => item.category === category);
+    return el('div', { className: 'feature-stat' }, [el('strong', {}, [cards.length]), el('span', {}, [category])]);
+  });
+  return featurePage('GK Sprint', 'Active recall deck · Progress is private to your account.', [
+    el('div', { className: 'feature-stat-grid' }, [el('div', { className: 'feature-stat' }, [el('strong', {}, [all.length]), el('span', {}, ['Starter cards'])]), el('div', { className: 'feature-stat' }, [el('strong', {}, [state.gkData.dueCount]), el('span', {}, ['Cards below mastery box'])]), el('div', { className: 'feature-stat' }, [el('strong', {}, [all.reduce((sum, item) => sum + item.seenCount, 0)]), el('span', {}, ['Reviews recorded'])])]),
+    card('Choose a category', [chooseCategory, el('div', { className: 'feature-stat-grid category-stat-grid' }, counts)]),
+    card('Flashcard round', cardBody, 'card flashcard-card')
+  ]);
+}
 
-  return [
-    header(name, desc),
-    el('div', { className: 'card-grid feature-placeholder-grid' }, cards)
-  ];
+const sketchPrompts = [
+  'Design a clear wayfinding sign for a crowded railway station.',
+  'Sketch a reusable water bottle for a student who cycles to class.',
+  'Create a public bench that offers shade and is easy to maintain.',
+  'Visualise a low-cost package that protects a fragile local craft object.'
+];
+
+async function sketchesView() {
+  if (!state.sketchData && !state.sketchError) {
+    try { state.sketchData = await apiFetch('/api/student/features/sketches'); }
+    catch (error) { state.sketchError = error.message; }
+  }
+  const timerText = `${String(Math.floor(state.sketchSecondsLeft / 60)).padStart(2, '0')}:${String(state.sketchSecondsLeft % 60).padStart(2, '0')}`;
+  const timer = card('Optional 20-minute timebox', [
+    el('p', { id: 'sketch-timer', className: 'sketch-timer-readout', role: 'timer', 'aria-live': 'off' }, [timerText]),
+    el('div', { className: 'feature-row' }, [
+      el('button', { id: 'sketch-timer-toggle', className: 'btn btn-outline', disabled: state.sketchSecondsLeft === 0, onclick: () => {
+        if (state.sketchTimerRunning) {
+          clearInterval(state.sketchTimerHandle); state.sketchTimerHandle = null; state.sketchTimerRunning = false;
+        } else {
+          if (state.sketchSecondsLeft <= 0) state.sketchSecondsLeft = 20 * 60;
+          state.sketchTimerRunning = true;
+          state.sketchTimerHandle = setInterval(() => {
+            state.sketchSecondsLeft = Math.max(0, state.sketchSecondsLeft - 1);
+            const readout = document.querySelector('#sketch-timer');
+            if (readout) readout.textContent = `${String(Math.floor(state.sketchSecondsLeft / 60)).padStart(2, '0')}:${String(state.sketchSecondsLeft % 60).padStart(2, '0')}`;
+            if (state.sketchSecondsLeft === 0) {
+              clearInterval(state.sketchTimerHandle); state.sketchTimerHandle = null; state.sketchTimerRunning = false;
+              const control = document.querySelector('#sketch-timer-toggle'); if (control) { control.textContent = 'Timebox complete'; control.disabled = true; }
+              const status = document.querySelector('#sketch-timer-status'); if (status) status.textContent = 'Timebox complete · you can still save your sketch.';
+            }
+          }, 1000);
+        }
+        const control = document.querySelector('#sketch-timer-toggle'); if (control) control.textContent = state.sketchTimerRunning ? 'Pause timer' : state.sketchSecondsLeft === 0 ? 'Timebox complete' : 'Start timer';
+        const status = document.querySelector('#sketch-timer-status'); if (status) status.textContent = state.sketchTimerRunning ? 'Timer running · save whenever you are ready.' : 'Timer paused · your artwork remains available.';
+      } }, [state.sketchTimerRunning ? 'Pause timer' : state.sketchSecondsLeft === 0 ? 'Timebox complete' : 'Start timer']),
+      el('button', { className: 'btn btn-outline', onclick: () => {
+        if (state.sketchTimerHandle) clearInterval(state.sketchTimerHandle);
+        state.sketchTimerHandle = null; state.sketchTimerRunning = false; state.sketchSecondsLeft = 20 * 60;
+        const readout = document.querySelector('#sketch-timer'); if (readout) readout.textContent = '20:00';
+        const control = document.querySelector('#sketch-timer-toggle'); if (control) { control.textContent = 'Start timer'; control.disabled = false; }
+        const status = document.querySelector('#sketch-timer-status'); if (status) status.textContent = 'Timer reset · start when ready.';
+      } }, ['Reset']),
+      el('span', { id: 'sketch-timer-status', className: 'card-stat-desc' }, [state.sketchTimerRunning ? 'Timer running · save whenever you are ready.' : 'Optional practice timebox; it never blocks saving your work.'])
+    ])
+  ]);
+  const form = card('New sketch attempt', [
+    timer,
+    el('p', { className: 'card-stat-desc' }, ['Choose a prompt, upload a photo or scan (PNG, JPEG or WebP, up to 2 MB), and save it to your private gallery.']),
+    el('label', { className: 'feature-field' }, ['Title', el('input', { id: 'sketch-title', className: 'feature-input', maxlength: '100', value: state.sketchTitle, placeholder: 'e.g. Station wayfinding concept', oninput: event => { state.sketchTitle = event.target.value; const button = document.querySelector('#sketch-submit'); if (button) button.disabled = state.sketchSaving || !state.sketchTitle.trim() || !state.sketchImageDataUrl; const feedback = document.querySelector('.sketch-save-feedback'); if (feedback) feedback.remove(); state.sketchMessage = null; } })]),
+    el('label', { className: 'feature-field' }, ['Prompt', el('select', { id: 'sketch-prompt', className: 'feature-select', value: state.sketchPrompt || sketchPrompts[0], onchange: event => { state.sketchPrompt = event.target.value; } }, sketchPrompts.map(prompt => el('option', { value: prompt, selected: prompt === (state.sketchPrompt || sketchPrompts[0]) }, [prompt])))]),
+    el('label', { className: 'feature-upload' }, ['Choose artwork image', el('input', { id: 'sketch-file', type: 'file', accept: 'image/png,image/jpeg,image/webp', onchange: event => {
+      const file = event.target.files?.[0]; state.sketchImageDataUrl = ''; state.sketchMessage = null;
+      if (!file) return;
+      if (!['image/png', 'image/jpeg', 'image/webp'].includes(file.type) || file.size > 2 * 1024 * 1024) { state.sketchMessage = 'Choose a PNG, JPEG or WebP under 2 MB.'; render(); return; }
+      const reader = new FileReader();
+      reader.onload = () => { state.sketchImageDataUrl = String(reader.result || ''); state.sketchMessage = `Ready to save · ${file.name}`; render(); };
+      reader.onerror = () => { state.sketchMessage = 'Could not read that image. Try another file.'; render(); };
+      reader.readAsDataURL(file);
+    } })]),
+    state.sketchImageDataUrl ? el('img', { className: 'sketch-upload-preview', src: state.sketchImageDataUrl, alt: 'Selected sketch preview' }) : el('p', { className: 'feature-empty' }, ['Your selected image preview will appear here.']),
+    state.sketchMessage ? el('p', { className: `sketch-save-feedback ${state.sketchMessage.startsWith('Choose') || state.sketchMessage.startsWith('Could not') ? 'feature-error' : 'feature-success'}` }, [state.sketchMessage]) : null,
+    el('button', { id: 'sketch-submit', className: 'btn btn-primary', disabled: state.sketchSaving || !state.sketchTitle.trim() || !state.sketchImageDataUrl, onclick: async () => {
+      const title = document.querySelector('#sketch-title')?.value.trim();
+      const prompt = document.querySelector('#sketch-prompt')?.value;
+      if (!title || !state.sketchImageDataUrl) { state.sketchMessage = 'Add a title and choose an image before saving.'; render(); return; }
+      state.sketchSaving = true; state.sketchMessage = 'Saving your sketch…'; render();
+      try { await apiFetch('/api/student/features/sketches', { method: 'POST', body: JSON.stringify({ title, prompt, imageDataUrl: state.sketchImageDataUrl }) }); state.sketchData = null; state.sketchError = null; state.sketchImageDataUrl = ''; state.sketchTitle = ''; state.sketchMessage = 'Sketch saved to your private gallery.'; }
+      catch (error) { state.sketchMessage = `Could not save sketch: ${error.message}`; }
+      finally { state.sketchSaving = false; render(); }
+    } }, [state.sketchSaving ? 'Saving…' : 'Save to my gallery'])
+  ]);
+  const gallery = state.sketchError ? card('Gallery unavailable', [el('p', { className: 'feature-error' }, [state.sketchError]), el('button', { className: 'btn btn-primary', onclick: () => { state.sketchError = null; render(); } }, ['Retry'])])
+    : card(`My gallery · ${state.sketchData.sketches.length}`, state.sketchData.sketches.length ? el('div', { className: 'sketch-gallery' }, state.sketchData.sketches.map(sketch => card(sketch.title, [
+      el('img', { className: 'sketch-gallery-image', src: sketch.imageDataUrl, alt: sketch.title }),
+      el('span', { className: 'feature-tag' }, ['Prompt']), el('p', { className: 'card-stat-desc' }, [sketch.prompt]),
+      el('time', { className: 'card-stat-desc' }, [new Date(sketch.createdAt).toLocaleString()]),
+      el('button', { className: 'btn btn-outline btn-sm', onclick: async () => { try { await apiFetch(`/api/student/features/sketches/${sketch.id}/delete`, { method: 'POST', body: '{}' }); state.sketchData = null; state.sketchError = null; render(); } catch (error) { state.sketchError = error.message; render(); } } }, ['Delete'])
+    ], 'card sketch-gallery-item'))) : [el('p', { className: 'feature-empty' }, ['No sketches saved yet. Upload a first study attempt to start your gallery.'])]);
+  return featurePage('Sketch Studio', 'Timed design prompts and a private, persistent study gallery.', [form, gallery]);
+}
+
+async function bookmarksFeatureView() {
+  if (!state.featureBookmarks || !state.featureRevision) {
+    try {
+      const [bookmarks, revision] = await Promise.all([apiFetch('/api/student/bookmarks'), apiFetch('/api/student/features/revision')]);
+      state.featureBookmarks = bookmarks.bookmarks; state.featureRevision = revision.questions;
+    } catch (error) {
+      return featurePage('Bookmarks & Revision', 'Your saved and missed practice questions.', [card('Could not load revision items', [el('p', { className: 'feature-error' }, [error.message]), el('button', { className: 'btn btn-primary', onclick: () => { state.featureBookmarks = null; state.featureRevision = null; render(); } }, ['Retry'])])]);
+    }
+  }
+  const bySource = new Map();
+  for (const item of state.featureBookmarks) bySource.set(`${item.examId}:${item.questionId || item.id}`, { ...item, bookmarked: true, revision: false, reviewed: false });
+  for (const item of state.featureRevision) {
+    const key = `${item.examId}:${item.originalQuestionId || item.questionId || item.id}`;
+    bySource.set(key, { ...bySource.get(key), ...item, bookmarked: Boolean(bySource.get(key)?.bookmarked), revision: true, reviewed: Boolean(item.reviewed) });
+  }
+  const rows = [...bySource.values()];
+  const sourceOptions = [...new Set(rows.map(item => item.examTitle).filter(Boolean))].sort();
+  const topicOptions = [...new Set(rows.map(item => item.topic).filter(Boolean))].sort();
+  const typeOptions = [...new Set(rows.map(item => item.type).filter(Boolean))].sort();
+  const filtered = rows.filter(item => {
+    const kindMatches = state.featureBookmarkFilter === 'all' || (state.featureBookmarkFilter === 'bookmarked' && item.bookmarked) || (state.featureBookmarkFilter === 'revision' && item.revision && !item.reviewed) || (state.featureBookmarkFilter === 'reviewed' && item.revision && item.reviewed);
+    return kindMatches && (state.featureBookmarkSource === 'all' || item.examTitle === state.featureBookmarkSource) && (state.featureBookmarkTopic === 'all' || item.topic === state.featureBookmarkTopic) && (state.featureBookmarkType === 'all' || item.type === state.featureBookmarkType) && `${item.prompt} ${item.topic} ${item.examTitle} ${item.type}`.toLowerCase().includes(state.featureBookmarkSearch.toLowerCase());
+  });
+  const filters = el('div', { className: 'feature-filter-row' }, [
+    el('select', { className: 'feature-select', value: state.featureBookmarkFilter, onchange: event => { state.featureBookmarkFilter = event.target.value; render(); } }, [el('option', { value: 'all' }, ['All saved & missed']), el('option', { value: 'bookmarked' }, ['Bookmarks']), el('option', { value: 'revision' }, ['Needs review']), el('option', { value: 'reviewed' }, ['Reviewed'])]),
+    el('select', { className: 'feature-select', value: state.featureBookmarkSource, onchange: event => { state.featureBookmarkSource = event.target.value; render(); } }, [el('option', { value: 'all' }, ['All papers']), ...sourceOptions.map(source => el('option', { value: source, selected: source === state.featureBookmarkSource }, [source]))]),
+    el('select', { className: 'feature-select', value: state.featureBookmarkTopic, onchange: event => { state.featureBookmarkTopic = event.target.value; render(); } }, [el('option', { value: 'all' }, ['All topics']), ...topicOptions.map(topic => el('option', { value: topic, selected: topic === state.featureBookmarkTopic }, [topic]))]),
+    el('select', { className: 'feature-select', value: state.featureBookmarkType, onchange: event => { state.featureBookmarkType = event.target.value; render(); } }, [el('option', { value: 'all' }, ['All question types']), ...typeOptions.map(type => el('option', { value: type, selected: type === state.featureBookmarkType }, [type]))]),
+    el('input', { className: 'feature-input', type: 'search', value: state.featureBookmarkSearch, placeholder: 'Search topic, paper or question', onchange: event => { state.featureBookmarkSearch = event.target.value; render(); } })
+  ]);
+  const list = filtered.length ? el('div', { className: 'feature-question-list' }, filtered.map(item => card(item.topic || 'Revision question', [
+    el('div', { className: 'feature-row feature-between' }, [el('span', { className: 'feature-tag' }, [item.examTitle || 'Source paper']), el('span', { className: `feature-tag ${item.revision && !item.reviewed ? 'feature-tag-warn' : ''}` }, [item.reviewed ? 'Reviewed' : item.revision ? 'Needs review' : item.type || 'Bookmarked'])]),
+    el('p', { className: 'feature-question-prompt' }, [item.prompt]),
+    item.image ? el('img', { className: 'feature-question-image', src: item.image, alt: item.imageAlt || 'Question diagram' }) : null,
+    el('div', { className: 'feature-row' }, [
+      el('button', { className: 'btn btn-outline btn-sm', onclick: () => { state.tab = 'practice'; state.selectedTopics = new Set(item.topic ? [item.topic] : []); render(); } }, ['Practice this topic']),
+      item.revision ? el('button', { className: 'btn btn-outline btn-sm', onclick: async () => { try { await apiFetch('/api/student/features/revision/review', { method: 'POST', body: JSON.stringify({ examId: item.examId, questionId: item.originalQuestionId || item.questionId || item.id, reviewed: !item.reviewed }) }); state.featureBookmarks = null; state.featureRevision = null; state.bookmarkError = null; render(); } catch (error) { state.bookmarkError = error.message; render(); } } }, [item.reviewed ? 'Move back to needs review' : 'Mark reviewed']) : null,
+      !item.revision ? el('button', { className: 'btn btn-outline btn-sm', onclick: async () => { try { await apiFetch('/api/student/bookmarks', { method: 'POST', body: JSON.stringify({ examId: item.examId, questionId: item.questionId || item.id, bookmarked: false }) }); state.featureBookmarks = null; state.featureRevision = null; render(); } catch (error) { state.bookmarkError = error.message; render(); } } }, ['Remove bookmark']) : null
+    ])
+  ], 'card feature-question-card'))) : card('No revision items', [el('p', { className: 'feature-empty' }, ['Nothing matches these filters. Bookmark a question in Practice or answer some questions to build your revision queue.'])]);
+  return featurePage('Bookmarks & Revision', `${state.featureBookmarks.length} bookmarks · ${state.featureRevision.length} missed or partial answers`, [filters, state.bookmarkError ? el('p', { className: 'feature-error' }, [state.bookmarkError]) : null, list]);
+}
+
+async function guidesView() {
+  if ((!state.guideData || !state.guideProgress) && !state.guideError) {
+    try {
+      const [catalog, progress] = await Promise.all([apiFetch('/api/student/features/guides'), apiFetch('/api/student/features/guides/progress')]);
+      state.guideData = catalog.guides; state.guideProgress = progress.progress;
+    } catch (error) { state.guideError = error.message; }
+  }
+  if (state.guideError) return featurePage('Guides & Quick Quizzes', 'Short notes, worked examples and five-question checkpoints.', [card('Guides unavailable', [el('p', { className: 'feature-error' }, [state.guideError]), el('button', { className: 'btn btn-primary', onclick: () => { state.guideError = null; render(); } }, ['Retry'])])]);
+  const guide = state.guideData.find(item => item.id === state.selectedGuide);
+  if (!guide) {
+    const guides = state.guideData.filter(item => `${item.title} ${item.topic} ${item.summary}`.toLowerCase().includes(state.guideSearch.toLowerCase()));
+    return featurePage('Guides & Quick Quizzes', 'Short notes, worked examples and five-question checkpoints.', [
+    el('input', { className: 'feature-input', type: 'search', value: state.guideSearch, placeholder: 'Search guide topics', onchange: event => { state.guideSearch = event.target.value; render(); } }),
+    guides.length ? el('div', { className: 'guide-grid' }, guides.map(item => {
+      const progress = state.guideProgress.find(entry => entry.guideId === item.id);
+      return card(item.title, [el('span', { className: 'feature-tag' }, [item.topic]), el('p', { className: 'card-stat-desc' }, [item.summary]), el('p', { className: 'guide-example' }, [el('strong', {}, ['Worked example: ']), item.workedExample]), el('p', { className: 'card-stat-desc' }, [progress ? `Last quiz: ${progress.lastCorrect}/${progress.lastTotal} · ${progress.attempts} attempt${progress.attempts === 1 ? '' : 's'}` : 'Quiz not attempted yet']), el('button', { className: 'btn btn-primary', onclick: () => { state.selectedGuide = item.id; state.guideAnswers = {}; state.guideResult = null; render(); } }, ['Start 5-question quiz'])], 'card guide-card');
+    })) : card('No guides match', [el('p', { className: 'feature-empty' }, ['Try a different search term.'])])
+  ]);
+  }
+  const quiz = card(`${guide.title} · Quick quiz`, [
+    ...guide.quiz.map((question, index) => el('fieldset', { className: 'quiz-question' }, [el('legend', {}, [`${index + 1}. ${question.prompt}`]), el('div', { className: 'quiz-options' }, question.options.map((option, optionIndex) => el('button', { type: 'button', className: `quiz-option ${state.guideAnswers[question.id] === optionIndex ? 'selected' : ''}`, 'aria-pressed': String(state.guideAnswers[question.id] === optionIndex), onclick: () => { state.guideAnswers[question.id] = optionIndex; render(); } }, [option])))])),
+    state.guideResult ? el('div', { className: 'feature-success' }, [`Result saved: ${state.guideResult.correct}/${state.guideResult.total} correct (${state.guideResult.percentage}%).`]) : null,
+    state.guideError ? el('p', { className: 'feature-error' }, [state.guideError]) : null,
+    el('div', { className: 'feature-row' }, [
+      el('button', { className: 'btn btn-outline', onclick: () => { state.selectedGuide = null; state.guideError = null; render(); } }, ['All guides']),
+      el('button', { className: 'btn btn-primary', disabled: !!state.guideResult, onclick: async () => {
+        if (Object.keys(state.guideAnswers).length !== guide.quiz.length) { state.guideError = 'Answer all five questions before submitting.'; render(); return; }
+        try { const result = await apiFetch(`/api/student/features/guides/${guide.id}/quiz`, { method: 'POST', body: JSON.stringify({ answers: state.guideAnswers }) }); state.guideResult = result.result; state.guideProgress = null; state.guideError = null; }
+        catch (error) { state.guideError = error.message; }
+        render();
+      } }, [state.guideResult ? 'Submitted' : 'Submit answers'])
+    ])
+  ]);
+  return featurePage('Guides & Quick Quizzes', guide.summary, [quiz]);
+}
+
+async function settingsView() {
+  if (!state.preferences) {
+    try { state.preferences = (await apiFetch('/api/student/preferences')).preferences; }
+    catch (error) { state.preferencesError = error.message; state.preferences = { targetExam: 'UCEED 2026', theme: document.body.classList.contains('light-mode') ? 'light' : 'dark', reminders: false }; }
+  }
+  return featurePage('Settings', 'Your target and appearance preferences sync to your account.', [
+    card('Profile preferences', [
+      el('label', { className: 'feature-field' }, ['Target exam', el('select', { id: 'settings-target-exam', className: 'feature-select', value: state.preferences.targetExam }, [...new Set([state.preferences.targetExam, 'UCEED 2026', 'UCEED 2027', 'CEED 2026', 'CEED 2027', 'NIFT 2026', 'NIFT 2027'])].map(value => el('option', { value, selected: state.preferences.targetExam === value }, [value])))]),
+      el('label', { className: 'feature-field' }, ['Appearance', el('select', { id: 'settings-theme', className: 'feature-select', value: state.preferences.theme }, [el('option', { value: 'dark', selected: state.preferences.theme === 'dark' }, ['Dark']), el('option', { value: 'light', selected: state.preferences.theme === 'light' }, ['Light'])])]),
+      el('label', { className: 'feature-checkbox' }, [el('input', { id: 'settings-reminders', type: 'checkbox', checked: state.preferences.reminders }), el('span', {}, ['Study reminder preference'])]),
+      el('p', { className: 'card-stat-desc' }, ['This preference is saved to your account. Reminder delivery is not configured yet.']),
+      state.preferencesError ? el('p', { className: 'feature-error' }, [state.preferencesError]) : null,
+      state.preferencesMessage ? el('p', { className: 'feature-success' }, [state.preferencesMessage]) : null,
+      el('button', { className: 'btn btn-primary', onclick: async () => {
+        const next = { targetExam: document.querySelector('#settings-target-exam').value, theme: document.querySelector('#settings-theme').value, reminders: document.querySelector('#settings-reminders').checked };
+        state.preferencesError = null; state.preferencesMessage = null;
+        try { state.preferences = (await apiFetch('/api/student/preferences', { method: 'POST', body: JSON.stringify(next) })).preferences; document.body.classList.toggle('light-mode', state.preferences.theme === 'light'); state.preferencesMessage = 'Preferences saved to your account.'; }
+        catch (error) { state.preferencesError = `Could not save preferences: ${error.message}`; }
+        render();
+      } }, ['Save preferences'])
+    ]),
+    card('Your workspace', [el('p', { className: 'card-stat-desc' }, ['Preferences are private to your account. Theme and target exam will be used the next time you sign in.'])])
+  ]);
 }
 
 async function render() {
@@ -1505,21 +1717,33 @@ async function render() {
   
   const main = el('main', { className: `app-main ${state.open ? 'main-sidebar-open' : 'main-sidebar-closed'}` });
   app.append(main);
+  const featureTabs = new Set(['gk', 'sketches', 'bookmarks', 'guides', 'settings']);
+  if (featureTabs.has(state.tab)) main.append(el('p', { className: 'feature-loading', role: 'status' }, [`Loading ${nav.find(item => item[0] === state.tab)?.[1] || 'workspace'}…`]));
 
   let nodes = state.tab === 'overview' ? await overview()
     : state.tab === 'papers' ? await library()
     : state.tab === 'practice' ? await practiceView()
     : state.tab === 'mocks' ? await mocksView()
     : state.tab === 'analytics' ? await analyticsView()
-    : generic(nav.find(x => x[0] === state.tab)?.[1] || 'Workspace', 'Your study workspace.');
+    : state.tab === 'gk' ? await gkView()
+    : state.tab === 'sketches' ? await sketchesView()
+    : state.tab === 'bookmarks' ? await bookmarksFeatureView()
+    : state.tab === 'guides' ? await guidesView()
+    : state.tab === 'settings' ? await settingsView()
+    : featurePage('Study Workspace', 'Select a feature tab from the sidebar navigation.', []);
 
-  main.append(...nodes);
+  main.replaceChildren(...nodes);
 }
 
-render().catch(e => {
-  app.replaceChildren(el('main', { className: 'app-main' }, [
-    card('Workspace Error', [
-      el('p', { style: 'color:#ef4444;' }, [e.message])
-    ])
-  ]));
+apiFetch('/api/student/preferences').then(result => {
+  state.preferences = result.preferences;
+  document.body.classList.toggle('light-mode', state.preferences.theme === 'light');
+}).catch(() => { /* Dashboard remains usable if preference storage is unavailable. */ }).finally(() => {
+  render().catch(e => {
+    app.replaceChildren(el('main', { className: 'app-main' }, [
+      card('Workspace Error', [
+        el('p', { style: 'color:#ef4444;' }, [e.message])
+      ])
+    ]));
+  });
 });

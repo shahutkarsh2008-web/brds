@@ -9,6 +9,7 @@ import { writeFile, mkdir, mkdtemp, rm } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import WebSocket from 'ws';
 
 import { existsSync } from 'node:fs';
@@ -72,14 +73,22 @@ async function setupTestApp() {
 }
 
 async function runChromeVerification() {
-  const { app, db, port, token } = await setupTestApp();
+  let app = null;
+  let chromeProcess = null;
+  let ws = null;
+  let targetWs = null;
+  let profileDir = null;
+  const profileRoot = resolve(tmpdir());
+  try {
+  const setup = await setupTestApp();
+  app = setup.app;
+  const { port, token } = setup;
   const base = `http://127.0.0.1:${port}`;
   console.log(`Test App Server listening on ${base}`);
 
   const debugPort = 9222 + Math.floor(Math.random() * 1000);
-  const profileRoot = resolve(tmpdir());
-  const profileDir = await mkdtemp(join(profileRoot, 'brds-phase13-cdp-'));
-  const chromeProcess = spawn(CHROME_PATH, [
+  profileDir = await mkdtemp(join(profileRoot, 'brds-phase14-cdp-'));
+  chromeProcess = spawn(CHROME_PATH, [
     '--headless=new',
     `--remote-debugging-port=${debugPort}`,
     `--user-data-dir=${profileDir}`,
@@ -104,15 +113,12 @@ async function runChromeVerification() {
   }
 
   if (!versionInfo || !versionInfo.webSocketDebuggerUrl) {
-    await stopBrowser(chromeProcess);
-    await app.close();
-    await rm(profileDir, { recursive: true, force: true });
     throw new Error(`Failed to connect to Chrome DevTools Protocol on port ${debugPort}`);
   }
 
   console.log('Connected to Real Chrome via DevTools Protocol:', versionInfo.Browser);
 
-  const ws = new WebSocket(versionInfo.webSocketDebuggerUrl);
+  ws = new WebSocket(versionInfo.webSocketDebuggerUrl);
   await once(ws, 'open');
 
   let msgId = 1;
@@ -136,7 +142,7 @@ async function runChromeVerification() {
   const targetInfo = targetList.find(item => item.id === targetId);
   if (!targetInfo?.webSocketDebuggerUrl) throw new Error(`No CDP page target found for ${targetId}`);
   const targetWsUrl = targetInfo.webSocketDebuggerUrl;
-  const targetWs = new WebSocket(targetWsUrl);
+  targetWs = new WebSocket(targetWsUrl);
   await once(targetWs, 'open');
 
   let targetMsgId = 1;
@@ -156,6 +162,7 @@ async function runChromeVerification() {
 
   await sendTargetCDP('Page.enable');
   await sendTargetCDP('Network.enable');
+  await sendTargetCDP('DOM.enable');
 
   // Set session cookie for authenticated dashboard rendering
   const cookieResult = await sendTargetCDP('Network.setCookie', {
@@ -167,7 +174,7 @@ async function runChromeVerification() {
   });
   if (!cookieResult.success) throw new Error('CDP rejected the isolated dashboard session cookie.');
 
-  const screenshotDir = new URL('../reports/phase13-browser-verification/', import.meta.url);
+  const screenshotDir = new URL('../reports/phase14-browser-verification/', import.meta.url);
   await mkdir(screenshotDir, { recursive: true });
 
   const viewports = [
@@ -182,7 +189,12 @@ async function runChromeVerification() {
     { id: 'library', nav: 'Library', title: 'Papers Library' },
     { id: 'practice', nav: 'Practice', title: 'Practice Set Builder' },
     { id: 'mocks', nav: 'Mocks', title: 'Mock Exams & Practice Papers' },
-    { id: 'analytics', nav: 'Analytics', title: 'Performance Analytics & Marks Leakage' }
+    { id: 'analytics', nav: 'Analytics', title: 'Performance Analytics & Marks Leakage' },
+    { id: 'gk', nav: 'GK Sprint', title: 'GK Sprint' },
+    { id: 'sketches', nav: 'Sketches', title: 'Sketch Studio' },
+    { id: 'bookmarks', nav: 'Bookmarks', title: 'Bookmarks & Revision' },
+    { id: 'guides', nav: 'Guides', title: 'Guides & Quick Quizzes' },
+    { id: 'settings', nav: 'Settings', title: 'Settings' }
   ];
 
   const verificationEvidence = [];
@@ -198,6 +210,7 @@ async function runChromeVerification() {
     });
 
     for (const route of routes) {
+      const interactionChecks = [];
       if (route.id === 'overview') {
         await sendTargetCDP('Page.navigate', { url: `${base}/dashboard.html` });
       } else {
@@ -222,6 +235,30 @@ async function runChromeVerification() {
       }
       if (renderState.title !== route.title) {
         throw new Error(`Navigation to ${route.id} rendered '${renderState.title}', expected '${route.title}'`);
+      }
+
+      if (route.id === 'sketches' && vp.width === 1440) {
+        await sendTargetCDP('Runtime.evaluate', { expression: `(() => { const title = document.querySelector('#sketch-title'); title.value = 'CDP saved sketch'; title.dispatchEvent(new Event('input', { bubbles: true })); return true; })()`, returnByValue: true });
+        const documentNode = await sendTargetCDP('DOM.getDocument', { depth: -1 });
+        const fileInput = await sendTargetCDP('DOM.querySelector', { nodeId: documentNode.root.nodeId, selector: '#sketch-file' });
+        const sampleImage = fileURLToPath(new URL('../reports/phase13-browser-verification/overview-desktop-1440.png', import.meta.url));
+        await sendTargetCDP('DOM.setFileInputFiles', { nodeId: fileInput.nodeId, files: [sampleImage] });
+        let previewReady = false;
+        for (let attempt = 0; attempt < 40; attempt++) {
+          await new Promise(resolve => setTimeout(resolve, 50));
+          const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('.sketch-upload-preview')?.getAttribute('src')?.startsWith('data:image/png;base64,') === true`, returnByValue: true });
+          if (result.result.value) { previewReady = true; break; }
+        }
+        if (!previewReady) throw new Error('Sketch upload did not produce a browser preview.');
+        await sendTargetCDP('Runtime.evaluate', { expression: `([...document.querySelectorAll('button')].find(button => button.textContent.includes('Save to my gallery'))).click()`, returnByValue: true });
+        let sketchSaved = false;
+        for (let attempt = 0; attempt < 40; attempt++) {
+          await new Promise(resolve => setTimeout(resolve, 50));
+          const result = await sendTargetCDP('Runtime.evaluate', { expression: `document.querySelector('.sketch-gallery-item')?.textContent.includes('CDP saved sketch') === true`, returnByValue: true });
+          if (result.result.value) { sketchSaved = true; break; }
+        }
+        if (!sketchSaved) throw new Error('Sketch save did not appear in the authenticated gallery after the API roundtrip.');
+        interactionChecks.push('PNG upload, preview, authenticated save, and gallery reload');
       }
 
       const evaluation = await sendTargetCDP('Runtime.evaluate', {
@@ -267,7 +304,7 @@ async function runChromeVerification() {
       }
 
       const screenshot = await sendTargetCDP('Page.captureScreenshot', { format: 'png' });
-      const screenshotPath = new URL(`../reports/phase13-browser-verification/${route.id}-${vp.name}.png`, import.meta.url);
+      const screenshotPath = new URL(`../reports/phase14-browser-verification/${route.id}-${vp.name}.png`, import.meta.url);
       await writeFile(screenshotPath, Buffer.from(screenshot.data, 'base64'));
 
       verificationEvidence.push({
@@ -276,20 +313,12 @@ async function runChromeVerification() {
         route: route.id,
         routeTitle: route.title,
         metrics,
-        screenshotSaved: `reports/phase13-browser-verification/${route.id}-${vp.name}.png`
+        interactions: interactionChecks,
+        screenshotSaved: `reports/phase14-browser-verification/${route.id}-${vp.name}.png`
       });
 
       console.log(`  ✓ Route '${route.id}' at ${vp.width}px: scrollWidth=${metrics.scrollWidth}px, clientWidth=${metrics.clientWidth}px, overflow=${metrics.hasHorizontalOverflow}`);
     }
-  }
-
-  // Cleanup
-  targetWs.close();
-  ws.close();
-  await stopBrowser(chromeProcess);
-  await app.close();
-  if (profileDir.startsWith(profileRoot) && profileDir.includes('brds-phase13-cdp-')) {
-    await rm(profileDir, { recursive: true, force: true });
   }
 
   console.log('\n==================================================');
@@ -298,11 +327,21 @@ async function runChromeVerification() {
   console.log('==================================================\n');
 
   await writeFile(
-    new URL('../reports/phase13-browser-evidence.json', import.meta.url),
+    new URL('../reports/phase14-browser-evidence.json', import.meta.url),
     JSON.stringify(verificationEvidence, null, 2)
   );
 
-  process.exit(0);
+  } finally {
+    targetWs?.close();
+    ws?.close();
+    await stopBrowser(chromeProcess);
+    if (app) {
+      try { await app.close(); } catch {}
+    }
+    if (profileDir && profileDir.startsWith(profileRoot) && profileDir.includes('brds-phase14-cdp-')) {
+      await rm(profileDir, { recursive: true, force: true });
+    }
+  }
 }
 
 runChromeVerification().catch(err => {

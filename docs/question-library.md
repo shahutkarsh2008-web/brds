@@ -13,6 +13,39 @@ sets, and two demo papers): 1,095 questions, each with a topic and category and
 zero review items. Classification is based on source question text and diagrams;
 it is a local editorial taxonomy, not an official IIT question-by-question list.
 
+## User-supplied UCEED subtopic coverage target
+
+Use the supplied `media_1790718535711.pdf` checklist as the target hierarchy for
+UCEED question coverage. It groups preparation subtopics under these syllabus
+areas:
+
+- Part A: Visualization & Spatial Reasoning; Practical & Scientific Knowledge;
+  Observation & Design Sensitivity; Environment & Society; Analytical & Logical
+  Reasoning; Language; Creativity.
+- Part B: Drawing; Design Aptitude.
+
+The full checklist in the PDF is user-supplied preparation guidance. Its final
+page explicitly says it is not an official IIT Bombay chapter-by-chapter list;
+do not describe it as one. A future coverage audit should count real questions
+for each listed subtopic and report zero-coverage items separately for Part A
+and Part B. A question should be mapped from its paper, stem and diagram. Keep
+the source paper/year and question ID attached; do not infer a subtopic only
+from the question format, fabricate coverage, or rewrite an uncertain item as
+an official syllabus classification. Overlapping syllabus concepts may be
+represented with secondary tags where the question actually tests them.
+
+The accompanying topic-breakdown image is a historical UCEED 2015–2026 view,
+not a question quota. Its 15 displayed topic totals add up to more than the
+year totals, so topic rows overlap and must not be treated as mutually
+exclusive shares or targets. Use it to prioritize historically common topics;
+use the PDF checklist to identify the subtopic coverage gaps.
+
+The existing 1,095-question audit only establishes that every current fixture
+has a label in the present editorial taxonomy. It does not yet prove that every
+subtopic in this supplied checklist has a question. The next content step is a
+separate parent-area/subtopic coverage matrix, followed by sourcing and
+reviewing content for real gaps (especially Part B and underrepresented areas).
+
 The 2015–2017 import builders now skip the cover and numbered instruction page.
 Their first six records had incorrectly been populated with paper instructions
 instead of actual question stems. Those stems were restored from the official

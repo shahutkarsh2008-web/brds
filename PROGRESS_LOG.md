@@ -1240,6 +1240,13 @@ WHY: Topic practice must expose every actual question under its concept and avoi
 EVIDENCE: Audit: 18 fixtures / 1,095 questions, zero missing topics/categories and zero review items; local development DB: 10 exams / 456 questions, zero review items. Isolated rebuilds of all three official PDFs yielded 100/80/85 questions and real Q1–6 stems; UCEED 2015 Q52 no longer falls back to “Question 52”. Topic coverage and import regressions pass; `npm test` passes 91/91; `git diff --check` passes. Official source pages for 2015–2017 were read and representative 2015 Q52 diagram inspected.
 NEXT: Next content pass: complete an independent visual/source answer-key check of 2015–2017 (including diagrams/options), then prioritize verified CEED/NIFT/NID imports and the unlabelled PDF; afterward expand GK and Part B/community content. Live hosted acceptance remains a separate operational gate.
 
+### [2026-10-05 19:35 UTC] Codex — UCEED syllabus checklist as question-coverage target
+STATUS: IN PROGRESS
+FILES: docs/question-library.md, PROGRESS_LOG.md
+WHAT: Recording the user's supplied UCEED Part-A/Part-B checklist as the subtopic coverage target and defining how to interpret the historical topic-count chart alongside it. No UI, fixture, or import files are claimed.
+WHY: All current questions having a local topic label does not demonstrate coverage of every listed syllabus subtopic; content planning must measure the supplied checklist explicitly and preserve source-backed classifications.
+NEXT: Add the coverage rules and checklist hierarchy to the question-library documentation, then append evidence and leave the next action as a per-subtopic coverage audit. Historical chart counts are descriptive and not quotas.
+
 ### [2026-10-05 19:02 UTC] Antigravity — Phase 6: UCEED 2015–2026 Complete Marking Scheme Alignment & 2015/2016 Import
 STATUS: DONE
 FILES: fixtures/uceed-*.json, scripts/update-marking-schemes.py, scripts/build-uceed-2016-paper.py, scripts/build-uceed-2015-paper.py, scripts/seed-exams.js, test/uceed-*.test.js
@@ -1252,3 +1259,11 @@ WHAT: Audited and updated all UCEED exam fixtures (2015 through 2026) to align 1
 WHY: Direct user directive with quantitative marking scheme table for all UCEED exam years 2015–2026.
 EVIDENCE: All 89 automated test suites (`npm test`) passing 100% green (`pass 89, fail 0`), and 18 library exams seeded cleanly.
 NEXT: None. All UCEED papers 2015–2026 fully imported, verified, and aligned. No active implementation file claims retained.
+
+### [2026-10-05 19:37 UTC] Codex — UCEED syllabus checklist as question-coverage target
+STATUS: DONE
+FILES: docs/question-library.md, PROGRESS_LOG.md
+WHAT: Recorded the user-supplied Part-A/Part-B parent areas and rules for measuring subtopic coverage. Distinguished the supplied checklist from an official IIT chapter-by-chapter taxonomy and the historical topic chart from a quota.
+WHY: A zero-review label audit of the existing 1,095 questions does not establish that every supplied syllabus subtopic is covered; future content work must track real questions at the subtopic level.
+EVIDENCE: Read and visually reviewed all seven PDF pages. The PDF identifies seven Part-A and two Part-B areas and states the checklist is preparation guidance, not an official IIT chapter-by-chapter list. The attached chart's displayed topic totals sum to 958 against 888 yearly questions, confirming that rows overlap and should not be treated as exclusive allocations. Documentation diff check passed; no code, fixtures, or UI changed.
+NEXT: Build a parent-area/subtopic coverage matrix from source-backed existing questions, mark zero-coverage subtopics, and then source/verify material for genuine gaps, especially Part B. Do not treat the current all-labeled audit as complete subtopic coverage.

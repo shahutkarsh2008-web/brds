@@ -1335,3 +1335,49 @@ WHAT: Compared all 180 imported answers and score rules to the supplied final an
 WHY: Completes the imported UCEED 2015–16 answer-key and scoring correction within P1 content parity.
 EVIDENCE: Source-key tests compare all 180 answers. Focused tests pass 5/5; full `npm test` passes 93/93. 2015: 100 questions, 72 media references; 2016: 80 questions, 46 media references; zero missing media files or generic prompts. Evidence: `reports/uceed-2015-2016-source-verification.md` and `.json`. The full 118-diagram page-by-page visual comparison is still open and is not claimed complete.
 NEXT: Continue P1 by inventorying and verifying eligible keyed CEED papers for import, then complete the visual comparison of every UCEED 2015–16 diagram before declaring the content parity work closed.
+
+### [2026-10-05 20:24 UTC] Codex — P1: CEED source and key inventory
+STATUS: IN PROGRESS
+FILES: CEED*Question*Paper*.pdf, CEED*Answer*Key*.pdf, CEED*qp*.pdf, CEED*ans*.pdf, CEED*_Test_Bank.zip (read-only); reports/ceed-import-source-inventory.md, reports/ceed-import-source-inventory.json, PROGRESS_LOG.md
+WHAT: Claiming a read-only source inventory to identify CEED papers with matching keys, determine question-bank/archive contents, and separate objective items that can be keyed from unkeyed/descriptive items requiring review.
+WHY: The readiness deck's P1 calls for verifying and importing available CEED papers; filenames alone are not evidence that a paper has a usable answer key or clean import source.
+NEXT: Record PDF page counts, years, key presence and archive contents, then propose an evidence-backed import batch before claiming any new fixtures or media files.
+
+### [2026-10-05 20:30 UTC] Codex — P1: CEED import ownership boundary
+STATUS: IN PROGRESS
+FILES: CEED 2022–2026 papers, keys and test-bank archives (read-only); reports/ceed-import-source-inventory.md, reports/ceed-import-source-inventory.json, PROGRESS_LOG.md
+WHAT: User directed that Antigravity is importing CEED through 2021. This narrows the earlier read-only inventory claim: no CEED 2021-or-earlier import files, fixtures, tests or media will be changed; Codex continues with CEED 2022–2026 and remaining P1 work only.
+WHY: Respect the user's explicit split of import ownership while continuing the P1 content-parity work.
+NEXT: Verify the 2022–2026 official paper/key pairs and prebuilt bank contents, identify any unsupported score cases, then import only source-verified content with evidence and regression coverage.
+
+### [2026-10-05 20:38 UTC] Codex — P1: CEED 2022–2026 scored-bank imports
+STATUS: IN PROGRESS
+FILES: CEED_2022–2026_Test_Bank.zip and matching official PDFs (read-only); fixtures/ceed-2023-part-a.json, fixtures/ceed-2024-part-a.json, fixtures/ceed-2025-part-a.json, fixtures/ceed-2026-part-a.json; scripts/import-ceed-test-banks.ps1; scripts/seed-exams.js; test/ceed-import.test.js; reports/ceed-import-source-inventory.md; PROGRESS_LOG.md
+WHAT: Claiming only the CEED 2022–2026 inventory and conversion of source-verified scorable Part A content for 2023–2026; no 2021-or-earlier CEED files, fixtures, media or tests are claimed.
+WHY: Continue P1 content parity under the user's ownership split; keep 2022 out of scored imports until authoritative marking rules can be verified.
+NEXT: Audit archive schemas/answer keys/scoring/media, convert eligible Part A items, seed and regression-test them, and document source limitations and any UI handoff needed for dropped-question feedback.
+
+### [2026-10-05 20:40 UTC] Codex — P1: revise CEED ownership and resume UCEED topic coverage
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md; reports/ceed-import-source-inventory.md (not created); no CEED import files edited
+WHAT: User clarified Antigravity is handling CEED 2021–2026 imports. Codex's tentative CEED 2022–2026 import claim is withdrawn before any import edits; resume remaining P1 work by mapping existing UCEED questions to the supplied syllabus/topic breakdown and auditing uncovered subtopics.
+WHY: Follow the user's latest ownership split and the previously agreed next P1 lineup.
+NEXT: Locate the syllabus source and imported UCEED fixtures, audit existing topic/subtopic assignments and missing coverage, then repair only Codex-claimed fixtures/scripts/tests with evidence.
+
+
+### [2026-10-05 20:44 UTC] Codex — P1: UCEED 2015–16 visual and topic review
+STATUS: IN PROGRESS
+FILES: fixtures/uceed-2015.json, fixtures/uceed-2016.json, public/media/uceed-2015-q*.png, public/media/uceed-2016-q*.png, src/question-topic-map.json (only source-verified corrections), reports/uceed-2015-2016-visual-topic-review.md, reports/uceed-syllabus-subtopic-coverage.json, reports/uceed-syllabus-subtopic-coverage.md, PROGRESS_LOG.md; official UCEED 2015/2016 PDFs read-only
+WHAT: Claiming the next P1 increment to visually review all 2015–2016 diagram references against their official paper pages and verify question-level syllabus classifications only where source evidence is clear.
+WHY: The previous P1 audit left 118 diagram references and source-page review open, while the 191-subtopic report still has image-dependent and topic-conflict candidates.
+NEXT: Render source pages, compare the media crops and question prompts, correct only confirmed label/import errors, record per-question evidence and unresolved ambiguity, then rerun targeted and full tests.
+
+
+### [2026-10-05 20:48 UTC] Codex — P1: UCEED 2015–2016 visual overview review
+STATUS: DONE
+FILES: reports/uceed-2015-2016-visual-topic-review.md, PROGRESS_LOG.md; UCEED2015_Question_Paper.pdf and UCEED2016_Question_Paper.pdf read-only; 2015/2016 fixtures and media read-only
+WHAT: Rendered all 73 source-paper pages and reviewed contact sheets for all 118 fixture-referenced diagram crops. All referenced media files exist and visually correspond to the source question content; found one unreferenced legacy asset, uceed-2015-q51.png, and left it untouched. No topic change was made without source-confirmed classification evidence.
+WHY: Closes the outstanding 2015–2016 media overview check inside P1, with remaining classification and Part-B source gaps explicitly kept open.
+EVIDENCE: Focused answer-key/import regressions pass 5/5 (
+ode --test test/uceed-2015.test.js test/uceed-2016.test.js); git diff --check reports only the newly appended trailing blank line in PROGRESS_LOG.md, which will be trimmed before commit. Full suite not yet run.
+NEXT: Run full npm test, then continue P1 by verifying uncertain question-to-subtopic assignments against sources and sourcing actual Part-B question content; do not claim overall P1 complete while those gaps remain.

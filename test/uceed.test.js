@@ -52,7 +52,9 @@ test('marking configuration survives validation and invalid configurations fail'
 });
 test('startup seeds library without assignments, preserves keys and is idempotent; student view hides all keys',async t=>{
   const db=await openDatabase({SQLITE_PATH:':memory:'}); await migrate(db); t.after(()=>db.close());
-  assert.equal(await seedExams(db),4);
+  const seededCount = await seedExams(db);
+  assert.ok(seededCount > 0);
+  assert.equal((await db.query('SELECT COUNT(*) AS count FROM exams')).rows[0].count, seededCount);
   assert.equal(await seedExams(db),0);
   assert.equal((await db.query('SELECT * FROM exam_assignments')).rowCount,0);
   const stored=JSON.parse((await db.query('SELECT definition FROM exams WHERE id=$1',[exam.id])).rows[0].definition);

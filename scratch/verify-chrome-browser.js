@@ -5,8 +5,10 @@ import { createApp } from '../src/app.js';
 import { createUser, digest } from '../src/auth.js';
 import { importExam } from '../src/exams.js';
 import { once } from 'node:events';
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir, mkdtemp, rm } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
+import { tmpdir } from 'node:os';
+import { join, resolve } from 'node:path';
 import WebSocket from 'ws';
 
 import { existsSync } from 'node:fs';
@@ -19,6 +21,13 @@ const BROWSER_PATHS = [
 ];
 
 const CHROME_PATH = BROWSER_PATHS.find(p => existsSync(p)) || 'msedge';
+
+async function stopBrowser(processHandle) {
+  if (!processHandle || processHandle.exitCode !== null || processHandle.signalCode !== null) return;
+  const exited = once(processHandle, 'exit');
+  processHandle.kill();
+  await exited;
+}
 
 
 async function setupTestApp() {
@@ -68,12 +77,16 @@ async function runChromeVerification() {
   console.log(`Test App Server listening on ${base}`);
 
   const debugPort = 9222 + Math.floor(Math.random() * 1000);
+  const profileRoot = resolve(tmpdir());
+  const profileDir = await mkdtemp(join(profileRoot, 'brds-phase13-cdp-'));
   const chromeProcess = spawn(CHROME_PATH, [
     '--headless=new',
     `--remote-debugging-port=${debugPort}`,
+    `--user-data-dir=${profileDir}`,
     '--disable-gpu',
     '--no-first-run',
-    '--no-default-browser-check'
+    '--no-default-browser-check',
+    '--disable-extensions'
   ]);
 
   await new Promise(resolve => setTimeout(resolve, 1500));
@@ -91,9 +104,9 @@ async function runChromeVerification() {
   }
 
   if (!versionInfo || !versionInfo.webSocketDebuggerUrl) {
-    chromeProcess.kill();
-    app.close();
-    await db.close();
+    await stopBrowser(chromeProcess);
+    await app.close();
+    await rm(profileDir, { recursive: true, force: true });
     throw new Error(`Failed to connect to Chrome DevTools Protocol on port ${debugPort}`);
   }
 
@@ -118,7 +131,11 @@ async function runChromeVerification() {
   });
 
   const { targetId } = await sendCDP('Target.createTarget', { url: 'about:blank' });
-  const targetWsUrl = `ws://127.0.0.1:${debugPort}/devtools/page/${targetId}`;
+  const targetListResponse = await fetch(`http://127.0.0.1:${debugPort}/json/list`);
+  const targetList = await targetListResponse.json();
+  const targetInfo = targetList.find(item => item.id === targetId);
+  if (!targetInfo?.webSocketDebuggerUrl) throw new Error(`No CDP page target found for ${targetId}`);
+  const targetWsUrl = targetInfo.webSocketDebuggerUrl;
   const targetWs = new WebSocket(targetWsUrl);
   await once(targetWs, 'open');
 
@@ -141,15 +158,17 @@ async function runChromeVerification() {
   await sendTargetCDP('Network.enable');
 
   // Set session cookie for authenticated dashboard rendering
-  await sendTargetCDP('Network.setCookie', {
+  const cookieResult = await sendTargetCDP('Network.setCookie', {
     name: 'brds_session',
     value: token,
-    domain: '127.0.0.1',
+    url: base,
     path: '/',
     httpOnly: true
   });
+  if (!cookieResult.success) throw new Error('CDP rejected the isolated dashboard session cookie.');
 
-  await mkdir(new URL('../reports/screenshots/', import.meta.url), { recursive: true });
+  const screenshotDir = new URL('../reports/phase13-browser-verification/', import.meta.url);
+  await mkdir(screenshotDir, { recursive: true });
 
   const viewports = [
     { name: 'desktop-1440', width: 1440, height: 900, label: 'Desktop (1440px)' },
@@ -159,11 +178,11 @@ async function runChromeVerification() {
   ];
 
   const routes = [
-    { id: 'overview', url: `${base}/dashboard.html#overview`, title: 'Overview Dashboard' },
-    { id: 'library', url: `${base}/dashboard.html#papers`, title: 'Papers Library' },
-    { id: 'practice', url: `${base}/dashboard.html#practice`, title: 'Practice Builder' },
-    { id: 'mocks', url: `${base}/dashboard.html#mocks`, title: 'Mocks Workspace' },
-    { id: 'analytics', url: `${base}/dashboard.html#analytics`, title: 'Analytics View' }
+    { id: 'overview', nav: 'Overview', title: 'Overview Dashboard' },
+    { id: 'library', nav: 'Library', title: 'Papers Library' },
+    { id: 'practice', nav: 'Practice', title: 'Practice Set Builder' },
+    { id: 'mocks', nav: 'Mocks', title: 'Mock Exams & Practice Papers' },
+    { id: 'analytics', nav: 'Analytics', title: 'Performance Analytics & Marks Leakage' }
   ];
 
   const verificationEvidence = [];
@@ -179,8 +198,31 @@ async function runChromeVerification() {
     });
 
     for (const route of routes) {
-      await sendTargetCDP('Page.navigate', { url: route.url });
-      await new Promise(resolve => setTimeout(resolve, 600));
+      if (route.id === 'overview') {
+        await sendTargetCDP('Page.navigate', { url: `${base}/dashboard.html` });
+      } else {
+        await sendTargetCDP('Runtime.evaluate', {
+          expression: `(() => { const button = [...document.querySelectorAll('.nav-icon-btn')].find(item => item.querySelector('.tooltip')?.textContent.trim() === ${JSON.stringify(route.nav)}); if (!button) throw new Error('Missing navigation control: ${route.nav}'); button.click(); return true; })()`,
+          returnByValue: true
+        });
+      }
+
+      let renderState;
+      for (let attempt = 0; attempt < 40; attempt++) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+        const result = await sendTargetCDP('Runtime.evaluate', {
+          expression: `({ ready: document.readyState, href: location.href, title: document.querySelector('.header-title-text')?.textContent.trim() || '', documentTitle: document.title, bodyText: document.body.innerText.slice(0, 200), hasMain: !!document.querySelector('.app-main'), hasSidebar: !!document.querySelector('.app-sidebar'), cardCount: document.querySelectorAll('.card, .mock-card, .leakage-card, .swot-card').length })`,
+          returnByValue: true
+        });
+        renderState = result.result.value;
+        if (renderState.ready === 'complete' && renderState.title && renderState.hasMain && renderState.hasSidebar) break;
+      }
+      if (!renderState?.title || !renderState.hasMain || !renderState.hasSidebar) {
+        throw new Error(`Dashboard failed to render ${route.id}: ${JSON.stringify(renderState)}`);
+      }
+      if (renderState.title !== route.title) {
+        throw new Error(`Navigation to ${route.id} rendered '${renderState.title}', expected '${route.title}'`);
+      }
 
       const evaluation = await sendTargetCDP('Runtime.evaluate', {
         expression: `
@@ -190,7 +232,7 @@ async function runChromeVerification() {
             const viewportWidth = window.innerWidth;
             const scrollWidth = Math.max(body.scrollWidth, doc.scrollWidth);
             const clientWidth = doc.clientWidth;
-            const hasHorizontalOverflow = scrollWidth > (viewportWidth + 1);
+            const hasHorizontalOverflow = scrollWidth > (clientWidth + 1);
             
             const header = document.querySelector('.top-header-bar');
             const sidebar = document.querySelector('.app-sidebar');
@@ -214,9 +256,18 @@ async function runChromeVerification() {
       });
 
       const metrics = evaluation.result.value;
+      if (metrics.viewportWidth !== vp.width) {
+        throw new Error(`Requested ${vp.width}px viewport but browser reports ${metrics.viewportWidth}px CSS viewport width (client width ${metrics.clientWidth}px).`);
+      }
+      if (!metrics.headerRendered || !metrics.sidebarRendered || !metrics.mainRendered || metrics.cardCount < 1) {
+        throw new Error(`Incomplete ${route.id} render at ${vp.width}px: ${JSON.stringify(metrics)}`);
+      }
+      if (metrics.hasHorizontalOverflow) {
+        throw new Error(`Horizontal overflow on ${route.id} at ${vp.width}px: ${JSON.stringify(metrics)}`);
+      }
 
       const screenshot = await sendTargetCDP('Page.captureScreenshot', { format: 'png' });
-      const screenshotPath = new URL(`../reports/screenshots/${route.id}-${vp.name}.png`, import.meta.url);
+      const screenshotPath = new URL(`../reports/phase13-browser-verification/${route.id}-${vp.name}.png`, import.meta.url);
       await writeFile(screenshotPath, Buffer.from(screenshot.data, 'base64'));
 
       verificationEvidence.push({
@@ -225,7 +276,7 @@ async function runChromeVerification() {
         route: route.id,
         routeTitle: route.title,
         metrics,
-        screenshotSaved: `reports/screenshots/${route.id}-${vp.name}.png`
+        screenshotSaved: `reports/phase13-browser-verification/${route.id}-${vp.name}.png`
       });
 
       console.log(`  ✓ Route '${route.id}' at ${vp.width}px: scrollWidth=${metrics.scrollWidth}px, clientWidth=${metrics.clientWidth}px, overflow=${metrics.hasHorizontalOverflow}`);
@@ -235,8 +286,11 @@ async function runChromeVerification() {
   // Cleanup
   targetWs.close();
   ws.close();
-  chromeProcess.kill();
-  app.close();
+  await stopBrowser(chromeProcess);
+  await app.close();
+  if (profileDir.startsWith(profileRoot) && profileDir.includes('brds-phase13-cdp-')) {
+    await rm(profileDir, { recursive: true, force: true });
+  }
 
   console.log('\n==================================================');
   console.log('REAL BROWSER (CHROME DEVTOOLS PROTOCOL) VERIFICATION COMPLETED');
@@ -244,7 +298,7 @@ async function runChromeVerification() {
   console.log('==================================================\n');
 
   await writeFile(
-    new URL('../reports/real-browser-evidence.json', import.meta.url),
+    new URL('../reports/phase13-browser-evidence.json', import.meta.url),
     JSON.stringify(verificationEvidence, null, 2)
   );
 

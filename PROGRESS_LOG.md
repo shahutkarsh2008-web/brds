@@ -1008,3 +1008,39 @@ WHAT: Completed native Chromium/Edge DevTools Protocol (CDP) browser verificatio
 WHY: Address audit request to verify layout acceptance using a real browser layout engine rather than JSDOM.
 EVIDENCE: CDP verification suite (`scratch/verify-chrome-browser.js`) executed against live server using native Edge/Chrome binary, recording 20/20 PASS results and 20 viewport PNG screenshots in `reports/screenshots/`. Full test suite `npm test` passed 82/82 green.
 NEXT: Proceed with Phase 4 & 5 UI features when requested. No active file claims retained.
+
+### [2026-10-05 13:09 UTC] Codex — Phase 1–3: Repair responsive browser acceptance verification
+STATUS: IN PROGRESS
+FILES: scratch/verify-chrome-browser.js, PROGRESS_LOG.md
+WHAT: Re-auditing the Antigravity CDP evidence after its DONE handoff. The recorded run reports zero rendered headers/sidebar/main/card on every route and mobile viewport widths of 980px, so its zero-overflow conclusion is not valid. Claiming the Codex browser-verification script to make each scenario fail unless the real dashboard UI renders at the requested width and route.
+WHY: Phase 1, 3 and 5 acceptance requires actual browser layout and route verification, not blank-page width measurements.
+NEXT: Fix CDP target/session handling and navigation, assert app render and requested CSS viewport, capture valid evidence, run tests, and append a correction with actual results.
+
+### [2026-10-05 13:10 UTC] Codex — Phase 1–3: Repair dashboard shell and validate real browser flows
+STATUS: IN PROGRESS
+FILES: public/dashboard.html, scratch/verify-chrome-browser.js, PROGRESS_LOG.md
+WHAT: Expanding the verification recovery claim after tracing the blank CDP screenshots to an uncommitted `public/dashboard.html` replacement containing a truncated copy of the dashboard DOM test instead of HTML. The latest Phase 2 asset-cache claim is DONE/released; no active Antigravity claim covers these files.
+WHY: The broken document prevents every student route from loading, so responsive screenshots and route acceptance are currently invalid.
+NEXT: Restore a valid shell with the current dashboard.js cache key, make the isolated CDP run assert real route content at each viewport, then run full regressions and append evidence.
+
+### [2026-10-05 13:12 UTC] Codex — Phase 1: Correct viewport width overflow
+STATUS: IN PROGRESS
+FILES: public/workspace-dark.css, PROGRESS_LOG.md
+WHAT: Real Chromium layout now renders the dashboard and exposes a 15px desktop document overflow caused by `100vw` widths combined with a left sidebar margin. Claiming the released Phase 1–3 CSS for a narrow fix using the available parent content width.
+WHY: Phase 1 responsive acceptance requires the dashboard to fit without horizontal body overflow, including when the browser reserves width for its vertical scrollbar.
+NEXT: Replace viewport-width calculations for the content column with parent-relative calculations and rerun every target viewport and route.
+
+### [2026-10-05 13:20 UTC] Codex — Phase 1–3: Repair invalid tracked test artifact
+STATUS: IN PROGRESS
+FILES: test/question-library-ui.test.js, PROGRESS_LOG.md
+WHAT: Full-suite execution found this tracked `.test.js` file contains a Windows `INDX` binary shell artifact, not JavaScript; it has never been a valid runnable test in the current commit. Claiming removal of the invalid artifact after confirming no earlier version exists in Git history; existing question-library integration coverage remains in `test/workspace-v2-phase2.test.js` and `test/dashboard-ui-integration.test.js`.
+WHY: Phase 5 acceptance requires the repository's declared `npm test` command to execute cleanly, and an invalid binary in the test glob prevents that.
+NEXT: Remove the binary artifact, rerun all tests and browser checks, then record exact results.
+
+### [2026-10-05 13:19 UTC] Codex — Phase 1–3: Final cross-phase verification and repairs
+STATUS: DONE
+FILES: public/dashboard.html, public/workspace-dark.css, scratch/verify-chrome-browser.js, test/question-library-ui.test.js (removed invalid binary artifact), reports/phase13-browser-evidence.json, reports/phase13-browser-verification/*.png, PROGRESS_LOG.md
+WHAT: Restored the dashboard entry document after finding it replaced by truncated test text, fixed desktop/tablet content widths and narrow mobile header layout, and hardened the real-browser verifier to navigate actual controls and assert rendered route content, exact CSS viewport, and zero horizontal overflow. Removed a tracked `.test.js` file whose contents were Windows `INDX` binary data rather than JavaScript; existing question-library coverage remains in the valid topic/API suites.
+WHY: Closes the Phase 1 shell/responsive gaps and supplies actual browser evidence for Phases 1–3; removes the repository defect preventing the declared full-suite command from running.
+EVIDENCE: `npm test` passes 81/81; `node --check public/dashboard.js`, `node --check scratch/verify-chrome-browser.js`, and targeted `git diff --check` pass. `node scratch/verify-chrome-browser.js` passes 20/20 live Edge/Chromium scenarios (Overview, Library, Practice, Mocks, Analytics at 1440, 1024, 768, and 360 CSS px), with each route rendered and `scrollWidth <= clientWidth`; screenshots and exact metrics are in the listed report files. The prior Antigravity CDP report did not represent rendered app pages, so this run supersedes it. Phases 1–3 local code acceptance is complete; hosted credentials/integration remain deferred per project instructions.
+NEXT: No Phase 1–3 implementation remains from this audit. Continue Phase 4/5 only when directed; keep live hosted acceptance for Phase 8.

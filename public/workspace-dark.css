@@ -713,7 +713,7 @@ body.light-mode .app-sidebar { background:#111a35; }
   .nav-icon-btn { width: 48px; padding: 0; justify-content: center; }
   .nav-icon-btn .tooltip { position: absolute; left: 60px; opacity: 0; padding: 6px 12px; background: #1e293b; }
   .nav-icon-btn:hover .tooltip { opacity: 1; }
-  .app-main { margin-left: 72px; width: calc(100vw - 72px); max-width: none; min-width: 0; padding: 20px 16px 36px; overflow-x: hidden; }
+  .app-main { margin-left: 72px; width: calc(100% - 72px); max-width: none; min-width: 0; padding: 20px 16px 36px; overflow-x: hidden; }
   .card-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 }
 
@@ -753,7 +753,7 @@ body:not(.light-mode) .overview-flow > .card {
 /* Keep labeled rail and content inside the viewport at desktop widths. */
 .app-sidebar, .app-sidebar *, .app-main, .app-main * { box-sizing: border-box; }
 @media (min-width: 1101px) {
-  .app-main { width: calc(100vw - 224px); max-width: none; min-width: 0; overflow-x: hidden; }
+  .app-main { width: calc(100% - 224px); max-width: none; min-width: 0; overflow-x: hidden; }
 }
 .nav-icon-btn { min-width: 0; overflow: hidden; }
 .nav-icon-btn .tooltip { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -772,9 +772,9 @@ body:not(.light-mode) .overview-flow > .card {
 .sidebar-closed .nav-icon-btn { width:48px; padding:0; justify-content:center; }
 .sidebar-closed .nav-icon-btn .tooltip { position:absolute; left:60px; opacity:0; padding:6px 12px; background:#1e293b; }
 .sidebar-closed .nav-icon-btn:hover .tooltip { opacity:1; }
-.main-sidebar-open { margin-left:224px; width:calc(100vw - 224px); }
-.main-sidebar-closed { margin-left:72px; width:calc(100vw - 72px); }
-@media (max-width:1100px) { .sidebar-open.app-sidebar { width:224px; } .main-sidebar-open { margin-left:224px; width:calc(100vw - 224px); } }
+.main-sidebar-open { margin-left:224px; width:calc(100% - 224px); }
+.main-sidebar-closed { margin-left:72px; width:calc(100% - 72px); }
+@media (max-width:1100px) { .sidebar-open.app-sidebar { width:224px; } .main-sidebar-open { margin-left:224px; width:calc(100% - 224px); } }
 
 /* Phase 2 & 3 UI — Responsive Analytics, Practice, Mocks & SWOT Components */
 .filter-bar-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 14px 18px; border-radius: 16px; margin-bottom: 20px; }
@@ -890,9 +890,14 @@ body:not(.light-mode) .overview-flow > .card {
 
 @media (max-width: 768px) {
   .app-main { padding: 16px 12px; overflow-x: hidden; }
-  .header-left h1 { font-size: 1.3rem; }
+  .header-left { width: 100%; min-width: 0; flex-direction: column; align-items: flex-start; gap: 4px; }
+  .header-left h1, body:not(.light-mode) .header-title-text { font-size: 1.3rem; }
+  .header-subtitle-text { max-width: 100%; font-size: .8rem; }
   .top-header-bar { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .header-right { width: 100%; justify-content: space-between; }
+  .header-right { width: 100%; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "target theme" "sparks theme"; justify-content: start; gap: 8px; }
+  .exam-target-pill { grid-area: target; justify-self: start; max-width: 100%; }
+  .sparks-widget { grid-area: sparks; justify-self: start; }
+  .header-right > button { grid-area: theme; white-space: nowrap; }
   .mock-card-grid { grid-template-columns: 1fr; }
   .swot-grid { grid-template-columns: 1fr; }
   .leakage-grid { grid-template-columns: 1fr; }

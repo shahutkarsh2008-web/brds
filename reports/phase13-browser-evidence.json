@@ -1,0 +1,362 @@
+[
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 11,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/overview-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/library-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "practice",
+    "routeTitle": "Practice Set Builder",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/practice-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "mocks",
+    "routeTitle": "Mock Exams & Practice Papers",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/mocks-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "analytics",
+    "routeTitle": "Performance Analytics & Marks Leakage",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/analytics-desktop-1440.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1009,
+      "scrollWidth": 1009,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 11,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/overview-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/library-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "practice",
+    "routeTitle": "Practice Set Builder",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1009,
+      "scrollWidth": 1009,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/practice-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "mocks",
+    "routeTitle": "Mock Exams & Practice Papers",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/mocks-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "analytics",
+    "routeTitle": "Performance Analytics & Marks Leakage",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/analytics-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 11,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/overview-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/library-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "practice",
+    "routeTitle": "Practice Set Builder",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/practice-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "mocks",
+    "routeTitle": "Mock Exams & Practice Papers",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/mocks-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "analytics",
+    "routeTitle": "Performance Analytics & Marks Leakage",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/analytics-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 11,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/overview-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/library-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "practice",
+    "routeTitle": "Practice Set Builder",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/practice-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "mocks",
+    "routeTitle": "Mock Exams & Practice Papers",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 3,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/mocks-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "analytics",
+    "routeTitle": "Performance Analytics & Marks Leakage",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/analytics-mobile-narrow-360.png"
+  }
+]

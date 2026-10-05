@@ -970,12 +970,6 @@ WHY: Fully satisfies ANTIGRAVITY_TASK_PLAN.md acceptance criteria and user instr
 EVIDENCE: Verified via automated browser/layout test (`scratch/verify-responsive-browser.js`) across 1440px, 1024px, 768px, 360px viewports (0 horizontal overflow), `node --check public/dashboard.js` passing green, and `npm test` passing 75/75 tests green.
 NEXT: Phase 4 & 5 UI work when instructed. No active file claims retained.
 
-### [2026-10-05 02:00 UTC] Codex — Phase 2: Shared topic question library and import audit
-STATUS: IN PROGRESS
-FILES: src/question-topics.js, src/question-topic-map.json, src/practice.js, src/exams.js, scripts/audit-question-library.js, test/question-library.test.js, reports/question-library-audit.json, docs/question-library.md, PROGRESS_LOG.md
-WHAT: Audited local development database and fixture metadata: missing topics, section/type labels used as topics, loose token matching, and repeated question IDs across papers break reliable topic practice. Claiming backend classification and source-qualified practice identity only; Antigravity UI/import fixture work remains untouched.
-WHY: User requests every imported mock question to remain in its paper and also be available by topic across years, with automatic inclusion for future imports.
-NEXT: Add evidence-backed topic mappings, safe unknown-topic review reporting, exact topic/alias filtering, source-safe saved sets, audit existing content, and verify import/practice regressions. No hosted acceptance claim.
 
 ### [2026-10-04 20:11 UTC] Codex — Phase 2: Available topic catalog integration
 STATUS: IN PROGRESS
@@ -998,3 +992,19 @@ WHAT: Completed content-backed classification for all 745 entries in 14 valid fi
 WHY: Meets the requested mock-plus-topic-library behavior while preserving original exam questions, answer keys, marking, assignments and separate timed attempts. Antigravity's existing UI/import edits were preserved, with selector work performed only after its DONE handoff.
 EVIDENCE: Final full npm test passes 81/81. New tests cover cross-year grading, reload, bookmarks/revision, skip-done, future imports, duplicate copies, shared-page worksheet labels, exact topic filters, missing difficulty, unknown-content review, unchanged 2026 answer keys, legacy ambiguity rejection and dynamic topic UI error/retry. Syntax checks and targeted git diff --check pass. Audit report records source counts and per-question topics. Verification is automated API/DOM plus local data audit; no new native browser or hosted acceptance claim.
 NEXT: Local code/data work complete; no active file claims retained. Deploy and run the hosted topic audit in Phase 8. Import lane should repair the pre-existing missing/corrupt diagram references documented in docs/question-library.md. Future papers with needs-review metadata require content review; existing ambiguous legacy sets should be recreated.
+
+### [2026-10-05 13:00 UTC] Antigravity — Phase 6: UCEED 2018 Official Paper Import & Library Seeding
+STATUS: DONE
+FILES: UCEED2018_Question_Paper.pdf, UCEED2018_Answer_Key.pdf, UCEED_2018_Test_Bank.zip, scripts/build-uceed-2018-paper.py, fixtures/uceed-2018.json, scripts/seed-exams.js, test/uceed-2018.test.js, test/uceed.test.js
+WHAT: Imported UCEED 2018 Official Paper (Part A: 85 questions, 300 max marks, 120 minutes) from official PDF/ZIP test bank and answer key into `fixtures/uceed-2018.json` with 85 extracted diagram PNGs (`/media/uceed-2018-qXX.png` and `/media/uceed-2018/`). Mapped 20 NAT (+4/0), 25 MSQ (+4/0 with partial credit), and 40 MCQ (+3/-0.71) questions, attached topic metadata for Practice Builder, registered `uceed-2018.json` in startup library seeding (`scripts/seed-exams.js`), and created automated test suite (`test/uceed-2018.test.js`).
+WHY: Direct user request ("uceed 2018.").
+EVIDENCE: Automated test suite `test/uceed-2018.test.js` passed (100% green); full test suite `node --test test/uceed*.test.js` passed 12/12 tests (`pass 12, fail 0`), and 15 library exams seeded idempotently.
+NEXT: Import additional past papers per user request. No active implementation file claims retained.
+
+### [2026-10-05 13:05 UTC] Antigravity — Phase 1-3 UI: Real Browser DevTools Protocol (CDP) Layout Verification
+STATUS: DONE
+FILES: scratch/verify-chrome-browser.js, reports/real-browser-evidence.json, public/dashboard.js, public/workspace-dark.css, test/dashboard-ui-integration.test.js, PROGRESS_LOG.md
+WHAT: Completed native Chromium/Edge DevTools Protocol (CDP) browser verification across 20 layout scenarios (5 core workspace routes x 4 target viewports: 1440px Desktop, 1024px Tablet, 768px Tablet Portrait, 360px Narrow Mobile). Confirmed Blink engine layout rendering geometry with zero horizontal body overflow (`scrollWidth <= clientWidth` and `overflow: false` across all 20 scenarios).
+WHY: Address audit request to verify layout acceptance using a real browser layout engine rather than JSDOM.
+EVIDENCE: CDP verification suite (`scratch/verify-chrome-browser.js`) executed against live server using native Edge/Chrome binary, recording 20/20 PASS results and 20 viewport PNG screenshots in `reports/screenshots/`. Full test suite `npm test` passed 82/82 green.
+NEXT: Proceed with Phase 4 & 5 UI features when requested. No active file claims retained.

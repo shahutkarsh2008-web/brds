@@ -1381,3 +1381,13 @@ WHY: Closes the outstanding 2015–2016 media overview check inside P1, with rem
 EVIDENCE: Focused answer-key/import regressions pass 5/5 (
 ode --test test/uceed-2015.test.js test/uceed-2016.test.js); git diff --check reports only the newly appended trailing blank line in PROGRESS_LOG.md, which will be trimmed before commit. Full suite not yet run.
 NEXT: Run full npm test, then continue P1 by verifying uncertain question-to-subtopic assignments against sources and sourcing actual Part-B question content; do not claim overall P1 complete while those gaps remain.
+
+### [2026-10-05 20:52 UTC] Codex — P1: close UCEED 2015–2016 and verify remaining CEED 2020 source
+STATUS: IN PROGRESS
+FILES: reports/uceed-2015-2016-visual-topic-review.md, reports/ceed-2020-p1-readiness.md, PROGRESS_LOG.md; CEED2020qp.pdf and CEED2020ans.pdf read-only; UCEED2015/2016 sources and fixtures read-only
+WHAT: Completed the UCEED 2015–16 diagram overview review and source/key presence plus marking-scheme review for CEED 2020. Confirmed CEED 2020's 41 Part-A questions/100 marks and Q20 full-credit-for-all key, which the current engine cannot represent honestly; no CEED fixture was created. Antigravity owns CEED 2021–26 imports per user's correction.
+WHY: Finishes the UCEED content audit component of P1 and identifies the remaining eligible keyed CEED import with its exact scoring contract before implementation.
+EVIDENCE: UCEED focused tests 5/5 and full 
+pm test 94/94 pass. CEED 2020 paper 25 pages and final key 1 page; paper instructions and first question page plus full key rendered and inspected. Details in eports/ceed-2020-p1-readiness.md. No UI, source fixtures, or answer keys edited.
+NEXT: P1 as a whole remains open: implement and test dropped/full-credit-for-all scoring with a result-view handoff, then transcribe/import CEED 2020 Part A and run source-key, diagram and scoring regressions. Do not touch CEED 2021–26 imports.
+

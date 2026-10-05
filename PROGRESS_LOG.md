@@ -1283,3 +1283,55 @@ WHY: Makes syllabus coverage inspectable by actual question references and ident
 EVIDENCE: Audit ran over 12 source-paper fixtures with 878 questions; all 12 mapped source PDFs exist and all year/question IDs are unique. Checklist contains 122 Part-A and 69 Part-B subtopics. Stem-cue coverage: Visualization 16/19, Practical & Scientific 16/17, Observation & Design Sensitivity 10/18, Environment & Society 7/19, Analytical & Logical Reasoning 26/26, Language 7/10, Creativity 7/13; 27 Part-A items had neither direct stem cues nor metadata candidates, six were metadata-only candidates, and all 69 Part-B subtopics lack a Part-B paper in this inventory. 619 questions have at least one text-cue candidate; 609 questions remain in the follow-up review queue, including 350 possible topic/category conflicts. `node --check scripts/audit-uceed-syllabus-coverage.js`, the audit's internal reference/taxonomy checks, and `git diff --check` pass. This is a text-rule first pass, not independent visual/page verification for every question; the report labels these candidates and provides source-PDF filenames for manual review. No application code, UI, fixtures, answer keys or test suite were changed.
 CORRECTION: The prior 19:37 UTC entry mis-added the chart's yearly total as 888. Rechecked values sum to 878, matching the current 2015–2026 fixture inventory; displayed topic rows sum to 958 because they overlap.
 NEXT: Manually source/diagram-review the 609 question IDs listed in the report, correct only verified topic mismatches, then source verified Part-B questions to address the 69 absent checklist subtopics.
+
+### [2026-10-05 20:06 UTC] Codex — Phase 5 follow-up: Save supplied test-bank archives
+STATUS: IN PROGRESS
+FILES: CEED_2024_Test_Bank.zip, CEED_2025_Test_Bank.zip, CEED_2026_Test_Bank.zip, UCEED_Original_Spatial_Worksheet_260_RD.zip, UCEED_Spatial_Quantitative_300_test_bank.zip, PROGRESS_LOG.md
+WHAT: Copying the five user-supplied archives to the project root, with test_bank.zip saved as UCEED_Original_Spatial_Worksheet_260_RD.zip.
+WHY: Direct user request to save these resources in our folder and rename the generic archive.
+NEXT: Verify every copied archive against its source using SHA-256.
+
+### [2026-10-05 20:06 UTC] Codex — Phase 5 follow-up: Save supplied test-bank archives
+STATUS: DONE
+FILES: CEED_2024_Test_Bank.zip, CEED_2025_Test_Bank.zip, CEED_2026_Test_Bank.zip, UCEED_Original_Spatial_Worksheet_260_RD.zip, UCEED_Spatial_Quantitative_300_test_bank.zip, PROGRESS_LOG.md
+WHAT: Saved all five ZIP archives in the project root; the generic archive is named UCEED_Original_Spatial_Worksheet_260_RD.zip. Original downloads remain intact.
+WHY: Completes the requested file storage and rename.
+EVIDENCE: All five destination SHA-256 hashes match their source archives. Archive contents were not extracted or executed.
+NEXT: Archives are ready for future content review/import when requested.
+
+### [2026-10-05 20:09 UTC] Codex — P1: UCEED 2015–16 source verification
+STATUS: IN PROGRESS
+FILES: UCEED2015_Question_Paper.pdf, UCEED2015_Answer_Key.pdf, UCEED2016_Question_Paper.pdf, UCEED2016_Answer_Key.pdf (read-only); fixtures/uceed-2015.json, fixtures/uceed-2016.json (read-only); reports/uceed-2015-2016-source-verification.md, reports/uceed-2015-2016-source-verification.json, PROGRESS_LOG.md
+WHAT: Claiming a source-grounded audit of all imported UCEED 2015–2016 prompts, question types, answers, marking and referenced diagrams against the supplied papers and answer-key PDFs. This is verification only until concrete discrepancies are confirmed; existing application, UI and shared media files are not claimed.
+WHY: The current readiness deck's P1 asks for the 180-paper-question content gap to be closed with answer-key, diagram and independent source verification before progressing to other exam banks.
+NEXT: Extract the official papers and keys, compare fixture counts/types/answers/marks and media references to source pages, record verified coverage and unresolved items, then fix only source-confirmed defects in separately claimed fixture/test files.
+
+### [2026-10-05 20:15 UTC] Codex — P1: Preserve official alternate MCQ keys
+STATUS: IN PROGRESS
+FILES: src/exams.js, fixtures/uceed-2015.json, fixtures/uceed-2016.json, test/uceed-2015.test.js, test/uceed-2016.test.js, PROGRESS_LOG.md
+WHAT: Claiming a narrow exam-engine contract correction for source-authorized alternate MCQ keys (including dropped questions), plus the affected imported answers and regression tests. This does not claim shared UI files or unrelated uncommitted resources.
+WHY: Independent visual comparison of the official answer-key PDFs found alternates for UCEED 2015 Q67/Q78 and 2016 Q79; current validation rejects MCQ answerAlternatives although both paper builders already emit them, leaving fixtures and scoring incorrect.
+NEXT: Allow option-ID alternatives for MCQ while preserving set-of-option alternatives for MSQ, serialize the corrected source keys into the two fixtures, test each accepted/rejected response and answer-key privacy, then rerun the UCEED tests and full suite.
+
+### [2026-10-05 20:25 UTC] Codex — Phase 5 follow-up: Save CEED 2021–2023 archives
+STATUS: IN PROGRESS
+FILES: CEED_2021_Test_Bank.zip, CEED_2022_Test_Bank.zip, CEED_2023_Test_Bank.zip, PROGRESS_LOG.md
+WHAT: Copying the three supplied CEED archives into the project root with their existing filenames.
+WHY: Direct user follow-up to save these files in the same folder.
+NEXT: Verify source and destination SHA-256 hashes.
+
+### [2026-10-05 20:25 UTC] Codex — Phase 5 follow-up: Save CEED 2021–2023 archives
+STATUS: DONE
+FILES: CEED_2021_Test_Bank.zip, CEED_2022_Test_Bank.zip, CEED_2023_Test_Bank.zip, PROGRESS_LOG.md
+WHAT: Saved all three CEED ZIP archives in the project root, preserving original names and source downloads.
+WHY: Completes the requested file storage.
+EVIDENCE: All three destination SHA-256 hashes match their sources.
+NEXT: Archives are available for content review/import when requested.
+
+### [2026-10-05 20:22 UTC] Codex — P1: UCEED 2015–16 source verification and scoring correction
+STATUS: DONE
+FILES: src/exams.js, fixtures/uceed-2015.json, fixtures/uceed-2016.json, test/uceed-2015.test.js, test/uceed-2016.test.js, reports/uceed-2015-2016-source-verification.md, reports/uceed-2015-2016-source-verification.json, PROGRESS_LOG.md
+WHAT: Compared all 180 imported answers and score rules to the supplied final answer keys; fixed support for alternate MCQ answer IDs and preserved the official keys for 2015 Q67/Q78 and 2016 Q79. Verified fixture counts, question types, local media paths/alt text, non-generic stems, and tested key privacy through import, save and submission. Visually checked the full answer-key sheets and selected source question pages; every fixture image path exists.
+WHY: Completes the imported UCEED 2015–16 answer-key and scoring correction within P1 content parity.
+EVIDENCE: Source-key tests compare all 180 answers. Focused tests pass 5/5; full `npm test` passes 93/93. 2015: 100 questions, 72 media references; 2016: 80 questions, 46 media references; zero missing media files or generic prompts. Evidence: `reports/uceed-2015-2016-source-verification.md` and `.json`. The full 118-diagram page-by-page visual comparison is still open and is not claimed complete.
+NEXT: Continue P1 by inventorying and verifying eligible keyed CEED papers for import, then complete the visual comparison of every UCEED 2015–16 diagram before declaring the content parity work closed.

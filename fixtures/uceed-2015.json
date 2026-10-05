@@ -2391,7 +2391,12 @@
         }
       ],
       "answer": "a",
-      "category": "Creativity"
+      "category": "Creativity",
+      "answerAlternatives": [
+        "b",
+        "c",
+        "d"
+      ]
     },
     {
       "id": "q68",
@@ -2810,7 +2815,10 @@
         }
       ],
       "answer": "b",
-      "category": "Analytical & Logical Reasoning"
+      "category": "Analytical & Logical Reasoning",
+      "answerAlternatives": [
+        "c"
+      ]
     },
     {
       "id": "q79",

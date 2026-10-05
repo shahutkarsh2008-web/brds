@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-05",
+  "status": "verified_with_visual_review_followup_open",
+  "sources": [
+    "UCEED2015_Question_Paper.pdf",
+    "UCEED2015_Answer_Key.pdf",
+    "UCEED2016_Question_Paper.pdf",
+    "UCEED2016_Answer_Key.pdf"
+  ],
+  "papers": [
+    {
+      "year": 2015,
+      "questions": 100,
+      "types": { "NAT": 20, "MSQ": 30, "MCQ": 50 },
+      "maxMarks": 300,
+      "questionsWithLocalMedia": 72,
+      "missingMedia": 0,
+      "genericPrompts": 0,
+      "keyVerifiedQuestions": 100,
+      "sourcePagesVisuallyChecked": [22, 27, 32],
+      "corrections": [
+        { "questionId": "q67", "accepted": ["a", "b", "c", "d"], "reason": "Official final key says dropped; +3 marks to all." },
+        { "questionId": "q78", "accepted": ["b", "c"], "reason": "Official final key lists B or C." }
+      ],
+      "promptTextAudit": "Q52 is image-led; its prompt and diagram were visually checked on source page 22. Q53 was checked as a separate item on that page."
+    },
+    {
+      "year": 2016,
+      "questions": 80,
+      "types": { "NAT": 20, "MSQ": 20, "MCQ": 40 },
+      "maxMarks": 300,
+      "questionsWithLocalMedia": 46,
+      "missingMedia": 0,
+      "genericPrompts": 0,
+      "keyVerifiedQuestions": 80,
+      "sourcePagesVisuallyChecked": [30],
+      "corrections": [
+        { "questionId": "q79", "accepted": ["a", "b"], "reason": "Official final key says A or B." }
+      ],
+      "promptTextAudit": "Source text segments matched all 80 fixture question prompts."
+    }
+  ],
+  "implementation": {
+    "supportsAlternativeMcqOptionIds": true,
+    "preservesMsqAlternativeOptionSets": true,
+    "activeAttemptKeyPrivacyTested": true
+  },
+  "verification": {
+    "focusedTests": "5/5 passed",
+    "fullSuite": "93/93 passed",
+    "allDiagramCropsVisuallyCompared": false,
+    "remainingP1Work": [
+      "Page-by-page visual comparison of all imported diagram crops",
+      "Verify and import eligible CEED papers from available sources"
+    ]
+  }
+}

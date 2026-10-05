@@ -24,12 +24,13 @@ export function validateExam(value) {
     if (!['MCQ','MSQ','NAT'].includes(q.type) || typeof q.prompt !== 'string' || !q.prompt.trim() || q.prompt.length > 10000) fail(400, 'Question type and prompt are required.');
     if (q.image !== undefined && (!/^\/media\/[a-zA-Z0-9_./-]+\.(svg|png|jpg|jpeg|webp)$/.test(q.image) || typeof q.imageAlt !== 'string' || !q.imageAlt.trim())) fail(400, 'Images require a local /media/ filename and alt text.');
     if (!q.marks || !finite(q.marks.correct) || q.marks.correct < 0 || !finite(q.marks.incorrect) || q.marks.incorrect > 0 || !finite(q.marks.unanswered) || q.marks.unanswered > 0) fail(400, 'Explicit correct, incorrect and unanswered marks are required.');
-    if (q.type !== 'MSQ' && (q.partialCredit !== undefined || q.answerAlternatives !== undefined)) fail(400, 'Alternative answers and partial credit require MSQ.');
+    if (q.type !== 'MSQ' && q.partialCredit !== undefined) fail(400, 'Partial credit requires MSQ.');
     if (q.type === 'MSQ') {
       const validKey = key => Array.isArray(key) && key.length > 0 && new Set(key).size === key.length && key.every(id => q.options?.some(o => o.id === id));
       if (q.answerAlternatives !== undefined && (!Array.isArray(q.answerAlternatives) || q.answerAlternatives.length > 20 || !q.answerAlternatives.every(validKey))) fail(400, 'Invalid alternative MSQ answers.');
       if (q.partialCredit !== undefined && (!q.partialCredit || typeof q.partialCredit !== 'object' || Array.isArray(q.partialCredit) || !Object.entries(q.partialCredit).every(([count, marks]) => /^[1-9]$/.test(count) && Number(count) < (q.options?.length || 0) && finite(marks) && marks > 0 && marks < q.marks.correct))) fail(400, 'Invalid MSQ partial credit.');
     }
+    if (q.type === 'MCQ' && q.answerAlternatives !== undefined && (!Array.isArray(q.answerAlternatives) || q.answerAlternatives.length > 9 || new Set(q.answerAlternatives).size !== q.answerAlternatives.length || q.answerAlternatives.some(id => typeof id !== 'string' || id === q.answer || !q.options?.some(o => o.id === id)))) fail(400, 'Invalid alternative MCQ answers.');
     if (q.type === 'NAT') {
       if (!q.answer || !finite(q.answer.min) || !finite(q.answer.max) || q.answer.min > q.answer.max) fail(400, 'NAT questions require an inclusive numeric answer range.');
       if (q.answer.values !== undefined && (!Array.isArray(q.answer.values) || !q.answer.values.length || q.answer.values.length > 100 || new Set(q.answer.values).size !== q.answer.values.length || !q.answer.values.every(v => finite(v) && v >= q.answer.min && v <= q.answer.max))) fail(400, 'NAT accepted values must be distinct finite numbers within the bounds.');
@@ -59,7 +60,7 @@ export function validateExam(value) {
       ...(q.image ? {image:q.image,imageAlt:q.imageAlt} : {}),
       ...(q.type !== 'NAT' ? {options:q.options.map(o=>({id:o.id,text:o.text}))} : {}),
       ...(q.partialCredit ? {partialCredit:{...q.partialCredit}} : {}),
-      ...(q.answerAlternatives ? {answerAlternatives:q.answerAlternatives.map(key=>[...key])} : {}),
+      ...(q.answerAlternatives ? {answerAlternatives:q.answerAlternatives.map(key=>Array.isArray(key)?[...key]:key)} : {}),
       marks:{correct:q.marks.correct,incorrect:q.marks.incorrect,unanswered:q.marks.unanswered},answer:q.answer })) });
 }
 export async function importExam(database, input, userIds) {
@@ -102,9 +103,9 @@ export function score(exam, answers) {
   const questions = [];
   for (const q of exam.questions) {
     const value = answers[q.id]?.value;
-    const keys = q.type === 'MSQ' ? [q.answer,...(q.answerAlternatives || [])] : [];
+    const keys = q.type === 'MSQ' ? [q.answer,...(q.answerAlternatives || [])] : q.type === 'MCQ' ? [q.answer,...(q.answerAlternatives || [])] : [];
     const correct = q.type === 'NAT' ? (q.answer.values ? q.answer.values.includes(Number(value)) : Number(value) >= q.answer.min && Number(value) <= q.answer.max) :
-      q.type === 'MSQ' ? keys.some(key => Array.isArray(value) && value.length === key.length && key.every(id => value.includes(id))) : value === q.answer;
+      q.type === 'MSQ' ? keys.some(key => Array.isArray(value) && value.length === key.length && key.every(id => value.includes(id))) : q.type === 'MCQ' ? keys.includes(value) : false;
     const partial = !correct && q.type === 'MSQ' && Array.isArray(value) && value.length > 0 && keys.some(key => value.length < key.length && value.every(id => key.includes(id))) ? q.partialCredit?.[value.length] || 0 : 0;
     const outcome = !hasAnswer(value) ? 'unanswered' : correct ? 'correct' : partial ? 'partial' : 'incorrect';
     const marks = partial || q.marks[outcome];

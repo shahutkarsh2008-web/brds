@@ -1372,3 +1372,25 @@ WHAT: Verified CEED 2020 paper/key availability, Part A counts and scoring, and 
 WHY: Identifies the single keyed CEED year outside Antigravity's assigned range that remains in the P1 source-parity backlog.
 EVIDENCE: Full test suite 94/94 passed. The 25-page paper's instruction page and initial question page and the 1-page final key were rendered and inspected. Details: reports/ceed-2020-p1-readiness.md.
 NEXT: Implement and test accurate dropped/full-credit-for-all scoring with a result-view handoff, then transcribe/import CEED 2020 Part A and verify every answer, image and score. Keep CEED 2021–2026 files untouched.
+
+### [2026-10-05 21:06 UTC] Codex — Launch readiness: complete application data export
+STATUS: IN PROGRESS
+FILES: src/app.js, src/backup.js, test/backup.test.js, PROGRESS_LOG.md
+WHAT: Extending the existing admin-only JSON export to include durable exam controls, assignments, practice progress, bookmarks, preferences, GK/sketch/quiz progress and login history while excluding credentials and transient authentication state. No UI files or question-bank imports are claimed.
+WHY: A manual data export that omits persisted student learning records is insufficient for a useful pre-launch recovery/archive workflow; question-bank expansion is ongoing content work, not a deploy gate.
+NEXT: Add regression coverage for authorization and exported persistent records, run the focused and full test suites, then document that provider snapshots and a tested restore remain required for disaster recovery.
+
+### [2026-10-05 21:10 UTC] Codex — Launch readiness: separate release gates from ongoing content
+STATUS: IN PROGRESS
+FILES: docs/launch-gates.md, PROGRESS_LOG.md
+WHAT: Writing a short go-live gate that separates the configuration, recovery and hosted acceptance needed for safe deployment from indefinite question-bank and competitive feature expansion.
+WHY: Prevent unbounded content production from holding deployment hostage while keeping security, data recovery and real-host checks mandatory.
+NEXT: Base the checklist only on implemented configuration checks and actual unverified provider/host tasks; record the full-suite import-count mismatch separately from this documentation claim.
+
+### [2026-10-05 21:10 UTC] Codex — Launch readiness: data export coverage and minimum go-live gates
+STATUS: DONE
+FILES: src/app.js, src/backup.js, test/backup.test.js, docs/launch-gates.md, PROGRESS_LOG.md
+WHAT: Routed the existing admin-only JSON export through a consistent snapshot and added persisted assignments, attempt controls/audit, practice sets/answers/outcomes/bookmarks, student preferences, GK progress, sketches, guide quizzes, revision reviews and login history. Added an explicit limitation that this export omits authentication secrets and cannot replace a provider restore. Documented minimum hosted gates separately from ongoing content expansion.
+WHY: A useful application-data export and a tested provider restore path protect student/exam records; unbounded paper-bank expansion should not hold deployment readiness hostage.
+EVIDENCE: `node --check src/app.js` and `node --check src/backup.js` passed; focused backup/telemetry tests passed 4/4; `git diff --check` passed. Full `npm test` ran 95 tests: 94 passed, 1 failed because the current uncommitted `scripts/seed-exams.js` registers 26 entries while `test/uceed.test.js` still expects 18. Those files contain the ongoing paper-bank expansion and were not edited by this change. Hosted PostgreSQL snapshot/restore, live OTP and target-cohort acceptance have not been performed.
+NEXT: Before live launch, set production provider values, perform a hosted deployment check plus fresh OTP acceptance, and complete a PostgreSQL restore drill. Reconcile the seed-count assertion with the owner of the in-progress import change. Continue bank expansion independently.

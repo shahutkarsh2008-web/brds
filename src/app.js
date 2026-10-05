@@ -6,6 +6,7 @@ import { createOtpProvider } from './otp.js';
 import { createExamEngine } from './exams.js';
 import { createExamApi } from './exam-api.js';
 import { createLiveHub } from './live.js';
+import { createBackupApi } from './backup.js';
 
 const assets = new Map([
   ['/', ['login.html', 'text/html; charset=utf-8']],
@@ -48,6 +49,7 @@ export function createApp(database, options = {}) {
   const auth = createAuth(database, { ...options, onChange: () => live?.changed(), otp: options.otp || createOtpProvider(options.env), onLogout(hash) {
     for (const ws of sockets.clients) if (ws.sessionHash === hash) ws.close(4001, 'Signed out');
   } });
+  const backupApi = createBackupApi({ auth, database, now: options.now });
   live = createLiveHub(engine, auth, { now: options.now });
   const examApi = createExamApi(auth, engine, live.snapshot, database);
   const server = createServer(async (req, res) => {
@@ -58,6 +60,7 @@ export function createApp(database, options = {}) {
     let path;
     try { path = new URL(req.url, 'http://localhost').pathname; }
     catch { res.writeHead(400); return res.end('Invalid request target'); }
+    if (path === '/api/admin/backup') return backupApi(req, res);
     if (path === '/api/development' && req.method === 'GET') { res.writeHead(200, { 'Content-Type':'application/json' }); return res.end(JSON.stringify({ enabled: options.development === true })); }
     if (path === '/api/exams' || path.startsWith('/api/exams/') || path.startsWith('/api/attempts/') || path.startsWith('/api/author/') || path.startsWith('/api/analytics/') || path.startsWith('/api/student/') || path === '/api/monitor') return examApi(req, res, path);
 

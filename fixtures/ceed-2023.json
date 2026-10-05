@@ -1,0 +1,1467 @@
+{
+  "id": "ceed-2023",
+  "title": "Common Entrance Examination for Design CEED 2023",
+  "durationSeconds": 3600,
+  "totalQuestions": 41,
+  "maxMarks": 100.0,
+  "instructions": "CEED 2023 Part A Official Examination Paper.",
+  "sections": [
+    {
+      "id": "sec_nat_2023",
+      "title": "Section I: Numerical Answer Type (NAT)"
+    },
+    {
+      "id": "sec_msq_2023",
+      "title": "Section II: Multiple Select Questions (MSQ)"
+    },
+    {
+      "id": "sec_mcq_2023",
+      "title": "Section III: Multiple Choice Questions (MCQ)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ceed-2023-q01",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "Imagine a pentagon shaped building. The walls of the building are sides of the pentagon, and there is a watchtower at each vertex. Each watchtower can have guards who can watch two walls connected to the watchtower. What is the minimum number of guards required if each wall needs to be watched by at least 3 guards?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Guard allocation",
+      "originalQuestionId": "Q.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ceed-2023-q02",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "Shown below is a number puzzle. Only one piece can be slided horizontally or vertically in one move. What is the least number of moves required to bring the piece with number 10 to the empty position x?",
+      "topic": "Logical conditions and statements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Sliding number puzzle",
+      "originalQuestionId": "Q.02",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 13.0,
+        "max": 13.0
+      },
+      "image": "/media/ceed-2023/T2-01.png",
+      "imageAlt": "CEED 2023 Q2 diagram"
+    },
+    {
+      "id": "ceed-2023-q03",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "Count the number of triangles in the image below.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Triangle counting",
+      "originalQuestionId": "Q.03",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/ceed-2023/T3-01.png",
+      "imageAlt": "CEED 2023 Q3 diagram"
+    },
+    {
+      "id": "ceed-2023-q04",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "A cube is dissected by one plane at 1/6 side length and one plane at 1/2 side length in each of the three dimensions of xy, yz and xz. How many cubes will be formed after dissecting the large cube?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube dissection",
+      "originalQuestionId": "Q.04",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ceed-2023-q05",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "Robert loves fruits. With his monthly allowance, he can buy either 50 apples or 40 bananas. One month, he decides to save 10% of his allowance. After buying 20 bananas, how many apples can he buy?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Allowance and fruit purchases",
+      "originalQuestionId": "Q.05",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ceed-2023-q06",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "How many surfaces are there in the letters of the word sign ‘DESIGN’? Two views of the sign are shown below.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Surfaces of letter solids",
+      "originalQuestionId": "Q.06",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 42.0,
+        "max": 42.0
+      },
+      "image": "/media/ceed-2023/T6-01.png",
+      "imageAlt": "CEED 2023 Q6 diagram"
+    },
+    {
+      "id": "ceed-2023-q07",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "How many fonts have been used to write the letter Q in the image shown below?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Font counting",
+      "originalQuestionId": "Q.07",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 13.0,
+        "max": 13.0
+      },
+      "image": "/media/ceed-2023/T7-01.png",
+      "imageAlt": "CEED 2023 Q7 diagram"
+    },
+    {
+      "id": "ceed-2023-q08",
+      "sectionId": "sec_nat_2023",
+      "type": "NAT",
+      "prompt": "A pin is connected perpendicular to the centre of a circular disk as shown. A little push will make it roll over a grey circle. How many turns does it take to come back to its original position?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rolling disc",
+      "originalQuestionId": "Q.08",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/ceed-2023/T8-01.png",
+      "imageAlt": "CEED 2023 Q8 diagram"
+    },
+    {
+      "id": "ceed-2023-q09",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "The figure shows a square pyramid that will be cut into multiple solids by extending the purple and red shapes. Select the solids that will result from the cuts.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Pyramid cut-outs",
+      "originalQuestionId": "Q.9",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2023/T9-01.png",
+      "imageAlt": "CEED 2023 Q9 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q10",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "The options show schematics of four different versions of a foot operated hand sanitizer dispenser. Which schematic(s) will work as intended?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Foot-operated dispenser mechanisms",
+      "originalQuestionId": "Q.10",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "image": "/media/ceed-2023/T10-01.png",
+      "imageAlt": "CEED 2023 Q10 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q11",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "Consider the highlighted phrases in the following sentences. Highways have milestones stretched in a continuous series. A healthy adult’s heart beats at 72 beats per minute. The minute hand of a clock rotates at 6 degrees per minute. A building is constructed with an underlying concrete structure consisting of a series of beams and nodes. Choose the option(s) which is/are true:",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Repetition and measurement scales",
+      "originalQuestionId": "Q.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "c"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The phrases represent a structure of a specific element arranged in a non-repetitive manner."
+        },
+        {
+          "id": "b",
+          "text": "The scales are indicative of either space or time."
+        },
+        {
+          "id": "c",
+          "text": "The phrases represent a structure of a specific element arranged in a repetitive manner."
+        },
+        {
+          "id": "d",
+          "text": "The scales are indicative of both volume and time."
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q12",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "Which of the straw(s) will draw the liquid?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Straw fluid mechanics",
+      "originalQuestionId": "Q.12",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2023/T12-01.png",
+      "imageAlt": "CEED 2023 Q12 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q13",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "The motif on the left is duplicated in the same position. The duplicated motif was rotated about its central axis on the top of original motif at different angles as shown in options A, B, C, D. Which is/are the correct option(s)?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Motif overlap and rotation",
+      "originalQuestionId": "Q.13",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2023/T13-01.png",
+      "imageAlt": "CEED 2023 Q13 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "45 degree clockwise about central axis"
+        },
+        {
+          "id": "b",
+          "text": "135 degree anti-clockwise about central axis"
+        },
+        {
+          "id": "c",
+          "text": "90 degree clockwise about central axis"
+        },
+        {
+          "id": "d",
+          "text": "90 degree anti-clockwise about central axis"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q14",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "A food delivery company wishes to re-design its app ecosystem. A designer has been asked to conduct research interviews for this activity. Which of the following people should the designer interview?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "User research participants",
+      "originalQuestionId": "Q.14",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "People who deliver the food ordered through the app"
+        },
+        {
+          "id": "b",
+          "text": "Employees of restaurant who offer food through the app"
+        },
+        {
+          "id": "c",
+          "text": "Customer support employees of the food delivery company"
+        },
+        {
+          "id": "d",
+          "text": "Existing users of the app"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q15",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "Find out the correct option(s) which can be used to create the image on the left. You can duplicate, rotate and reflect these options to achieve the same.",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Pattern construction",
+      "originalQuestionId": "Q.15",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "image": "/media/ceed-2023/T15-01.png",
+      "imageAlt": "CEED 2023 Q15 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q16",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "Which option(s) will result in linear motion (shown by straight arrows) of the plunger when the wheel is rotated?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Rotary-to-linear mechanisms",
+      "originalQuestionId": "Q.16",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b"
+      ],
+      "image": "/media/ceed-2023/T16-01.png",
+      "imageAlt": "CEED 2023 Q16 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "answerAlternatives": [
+        [
+          "b",
+          "d"
+        ]
+      ]
+    },
+    {
+      "id": "ceed-2023-q17",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "The toy shown in the figure is pushed in the direction of the green arrow as the pencil makes a mark on a wall beside it. Which of the mark(s) in the options can NEVER be made by the pencil?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rolling-toy tracing",
+      "originalQuestionId": "Q.17",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2023/T17-01.png",
+      "imageAlt": "CEED 2023 Q17 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q18",
+      "sectionId": "sec_msq_2023",
+      "type": "MSQ",
+      "prompt": "Which of the option(s) is/are the rotated view(s) of the object shown on the left?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Three-dimensional views",
+      "originalQuestionId": "Q.18",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "d"
+      ],
+      "image": "/media/ceed-2023/T18-01.png",
+      "imageAlt": "CEED 2023 Q18 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q19",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Shown below is a keyboard designed for smartphones. It has two sizes of keys which are arranged one after the other. What will be the difficulty of independently typing a single coloured key from the origin (key O), arranged from least difficult to most difficult i.e. easiest to type first, most difficult to type last. Assume, the mobile is held vertically in the left hand, and a right-handed user presses the keys using only the index finger of the right hand.",
+      "topic": "Usability",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Touchscreen ergonomics",
+      "originalQuestionId": "Q.19",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2023/T19-01.png",
+      "imageAlt": "CEED 2023 Q19 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Orange, Green, Red, Blue"
+        },
+        {
+          "id": "b",
+          "text": "Red, Blue, Orange, Green"
+        },
+        {
+          "id": "c",
+          "text": "Red, Orange, Green, Blue"
+        },
+        {
+          "id": "d",
+          "text": "Orange, Red, Green, Blue"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q20",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Which option represents the front view of the object shown below?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Front views",
+      "originalQuestionId": "Q.20",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2023/T20-01.png",
+      "imageAlt": "CEED 2023 Q20 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q21",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Which one of these materials would make a furniture lightest for the same design?",
+      "topic": "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Furniture materials",
+      "originalQuestionId": "Q.21",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2023/T21-01.png",
+      "imageAlt": "CEED 2023 Q21 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Particle board"
+        },
+        {
+          "id": "b",
+          "text": "Medium Density Fiber"
+        },
+        {
+          "id": "c",
+          "text": "Teak Wood"
+        },
+        {
+          "id": "d",
+          "text": "Plywood"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q22",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "A zookeeper had x baboons and y monkeys in an enclosure. One day, the zookeeper was told that seven of the animals have escaped. From only this information, he was able to deduce that at least one baboon has escaped. Which of the following does not represent a possible (x,y) pair?",
+      "topic": "Logical conditions and statements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Logical deduction",
+      "originalQuestionId": "Q 22",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "options": [
+        {
+          "id": "a",
+          "text": "(10,8)"
+        },
+        {
+          "id": "b",
+          "text": "(7,2)"
+        },
+        {
+          "id": "c",
+          "text": "(25,6)"
+        },
+        {
+          "id": "d",
+          "text": "(12,4)"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q23",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "In the paintings from Pablo Picasso’s blue period, colours are chosen from one part of the colour-wheel. They yield tonality of blue, in spite of the presence of yellowish green, bluish green, bluish purple and so on. Therefore, it can be said that tonality is an outcome of",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Colour harmony",
+      "originalQuestionId": "Q.23",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "options": [
+        {
+          "id": "a",
+          "text": "Split complementary combination."
+        },
+        {
+          "id": "b",
+          "text": "Double complementary combination."
+        },
+        {
+          "id": "c",
+          "text": "Simple analogous combination."
+        },
+        {
+          "id": "d",
+          "text": "Triadic colour combination."
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q24",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "A sheet of paper is folded as shown. Then the word ‘MAKER’ is written on the folded paper. Which option correctly represents the unfolded paper?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Paper unfolding",
+      "originalQuestionId": "Q.24",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2023/T24-01.png",
+      "imageAlt": "CEED 2023 Q24 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q25",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "In kitchen we have three important activities to perform, namely, (Task 1) washing utensils, (Task 2) rolling chapati and (Task 3) chopping vegetables. To design an ergonomically correct kitchen which of the following is most beneficial depending on the need in an ideal situation. Assume that only one person will use the kitchen.",
+      "topic": "Usability",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Kitchen ergonomics",
+      "originalQuestionId": "Q.25",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "options": [
+        {
+          "id": "a",
+          "text": "All the three tasks at same height."
+        },
+        {
+          "id": "b",
+          "text": "Tasks 1 and 2 at same height."
+        },
+        {
+          "id": "c",
+          "text": "Tasks 2 and 3 at same height."
+        },
+        {
+          "id": "d",
+          "text": "All three tasks at different heights."
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q26",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Identify the correct mechanism that enlarges the blue fish to red when traced with the blue dot.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Scaling linkage",
+      "originalQuestionId": "Q.26",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T26-01.png",
+      "imageAlt": "CEED 2023 Q26 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q27",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "P and Q are two layered dials of a watch. Dial Q is placed on the top of dial P. The white areas in dial Q are cut portions through which parts of dial P are visible from the top. The pattern shown in image R is taken at 12:00 hrs. Dial Q rotates by 90 degrees after every 15 minutes in clockwise direction about its central axis. Dial P rotates by 45 degrees anti-clockwise after every 30 minutes about its central axis. Find out the right pattern at 13:30 hrs.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotating layered dials",
+      "originalQuestionId": "Q.27",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T27-01.png",
+      "imageAlt": "CEED 2023 Q27 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q28",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "From the given options, which chair can be compactly stacked?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Chair stackability",
+      "originalQuestionId": "Q.28",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T28-01.png",
+      "imageAlt": "CEED 2023 Q28 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q29",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Which one of the diagrams DOES NOT represent any of the relationships given below? • Egg : Sugar : Cake • Seed : Fruit : Tree • Rock : Paper : Scissors",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Relationship diagrams",
+      "originalQuestionId": "Q.29",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2023/T29-01.png",
+      "imageAlt": "CEED 2023 Q29 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q30",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Three girls went to a square garden with their dogs. The garden was built around a banyan tree at the centre. The area around the tree was bound by a beautiful picket fence. Usha the eldest, sat on the platform under the banyan tree while Fluffy lay at her feet sleeping peacefully in the shade. Reena and Tommy walked around the fence looking at the beautiful flowers. Madhu, the youngest of the three, was always running around shouting at Gullu who loved the challenge of chasing squirrels. Which of the diagrams correctly represents the above scenario?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Spatial scenario interpretation",
+      "originalQuestionId": "Q.30",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2023/T30-01.png",
+      "imageAlt": "CEED 2023 Q30 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q31",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Portrait pattern matching (See diagram)",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Portrait pattern matching",
+      "originalQuestionId": "Q.31",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T31-01.png",
+      "imageAlt": "CEED 2023 Q31 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q32",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Image below shows four configurations for designing a nut cracker. Which option would require least amount of pressure to break the nut?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Nutcracker leverage",
+      "originalQuestionId": "Q.32",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T32-01.png",
+      "imageAlt": "CEED 2023 Q32 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q33",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "A camel is resting under the shade of a tree. Camel needs to stand-up to walk. Trace the trajectory of point P shown on the body of the camel, as it stands up, assuming 1 as the starting point.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Motion trajectory",
+      "originalQuestionId": "Q.33",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2023/T33-01.png",
+      "imageAlt": "CEED 2023 Q33 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q34",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Shape-grid patterns (See diagram)",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Shape-grid patterns",
+      "originalQuestionId": "Q.34",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T34-01.png",
+      "imageAlt": "CEED 2023 Q34 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q35",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "A cylinder P is cut by a cylinder Q as shown. Choose the option which shows the shape obtained after unrolling cylinder P.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cylinder development",
+      "originalQuestionId": "Q.35",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2023/T35-01.png",
+      "imageAlt": "CEED 2023 Q35 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q36",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Aru bought a new cushion cover from the market. Though the material is cotton, she was not happy with the plain cushion cover and planned to dye it with a colour. She followed the process as shown in the diagram. Find out the pattern she got after dying the cover.",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Dyeing patterns",
+      "originalQuestionId": "Q.36",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T36-01.png",
+      "imageAlt": "CEED 2023 Q36 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q37",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Towards sustainable future people are recycling materials. Shown below are products or architecture (top row) that are made from recycling materials (bottom row). Which of the options listed below correctly identifies products or architecture with the material that they are recycled from?",
+      "topic": "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Recycled materials",
+      "originalQuestionId": "Q.37",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T37-01.png",
+      "imageAlt": "CEED 2023 Q37 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P-4, Q-2, R-1, S-3"
+        },
+        {
+          "id": "b",
+          "text": "P-2, Q-1, R-3, S-1"
+        },
+        {
+          "id": "c",
+          "text": "P-2, Q-4, R-1, S-3"
+        },
+        {
+          "id": "d",
+          "text": "P-4, Q-3, R-1, S-2"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q38",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "A solid cone is revolving inside the circle as shown. Parallel sunlight at 45 degrees to ground is creating the shadow of the cone. Which option represents the total region covered by the shadow for one complete revolution when seen from the top?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows of revolving solids",
+      "originalQuestionId": "Q.38",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2023/T38-01.png",
+      "imageAlt": "CEED 2023 Q38 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q39",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Which of the options shows the correct reflection of the chess piece?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflections",
+      "originalQuestionId": "Q.39",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2023/T39-01.png",
+      "imageAlt": "CEED 2023 Q39 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q40",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "Find out the right pair for the shoe shown on the left from the given options.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Matching footwear",
+      "originalQuestionId": "Q.40",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2023/T40-01.png",
+      "imageAlt": "CEED 2023 Q40 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2023-q41",
+      "sectionId": "sec_mcq_2023",
+      "type": "MCQ",
+      "prompt": "The figure on the left was made using white and black ribbons. If all black ribbons in vertical direction are replaced by white and all white ribbons in horizontal direction are replaced by black, then find out the resulting figure.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Ribbon weaving",
+      "originalQuestionId": "Q.41",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2023/T41-01.png",
+      "imageAlt": "CEED 2023 Q41 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    }
+  ],
+  "partBQuestions": [
+    {
+      "id": "ceed-2023-pb-q01",
+      "originalQuestionId": "Part B Q.1",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Mr. Singh (5 Feet, 11 inches tall) is smiling and capturing a selfie of his entire family with his mobile phone held vertically. He is with his wife (5 feet tall), standing towards his left with her two mischievous kids. Pinky (girl) and Bablu (boy) are making funny expressions looking into the mobile. They all are standing facing a digital camera installed in the top corner of room. The size of the room is 12 x 12 x 12 feet. Draw the picture of the above description from the point of the view of a digital camera capturing this moment.\nAdditional Instructions:\n• Use only pencils.\n• Do not illustrate the surroundings. Only draw the family.\nEvaluation criteria:\n• Imagination\n• Overall composition of the picture\n• Quality of lines\n• Attention to details\n• Anatomy and perspective",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2023_Question_Paper.pdf",
+      "sourcePage": 25
+    },
+    {
+      "id": "ceed-2023-pb-q02",
+      "originalQuestionId": "Part B Q.2",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Each of the boxes in the answer script shows some visual elements and the FIRST word for a title of the image. Draw recognizable images by interpreting the visual elements and give a title to the images using the given first word. Use only BLACK pencil/pen. Draw only within the boundaries of the boxes.\nEvaluation criteria:\n• Uniqueness: Ability to create unusual images\n• Diversity: Variation between the created images\n• Clarity: Effective use of the visual elements and title\n• Fun: Ability to use humor and surprise in the images and title",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2023/T43-01.png",
+      "imageAlt": "CEED 2023 Part B Q2 diagram",
+      "sourceFile": "CEED_2023_Question_Paper.pdf",
+      "sourcePage": 26
+    },
+    {
+      "id": "ceed-2023-pb-q03",
+      "originalQuestionId": "Part B Q.3",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Create a new visual identity for Indian Women’s Hockey Association. The identity has to be original and should have the abbreviations ‘IWHA’ as part of the visual design. DO NOT draw from any existing designs.\nEvaluation criteria:\n• Creative visual representation\n• Effective communication of the concept\n• Visual Aesthetics\n• Composition",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2023_Question_Paper.pdf",
+      "sourcePage": 27
+    },
+    {
+      "id": "ceed-2023-pb-q04",
+      "originalQuestionId": "Part B Q.4",
+      "type": "DRAWING_DESIGN",
+      "prompt": "An abstract three-dimensional form is shown below. Visualise the form of a cutlery set (fork, bowl and glass) for 3-6 Yrs. children based on the image of the given form. It should match the design language with relevant details. Sketch and render the form of the cutlery set.\nEvaluation Criteria:\n• Consistency with the visual language of the form\n• Form should complement function\n• Relevant details of the product\n• Surface shading\n• Quality of lines/strokes",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2023/T45-01.png",
+      "imageAlt": "CEED 2023 Part B Q4 diagram",
+      "sourceFile": "CEED_2023_Question_Paper.pdf",
+      "sourcePage": 28
+    },
+    {
+      "id": "ceed-2023-pb-q05",
+      "originalQuestionId": "Part B Q.5",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Shown in the image above is an example of a bus-stop during the busy hours. Draw and annotate FIVE distinct design problems in this context.\n• Use only one visual for each problem.\n• Answer in the given space only.\nEvaluation Criteria:\n• Severity of the identified problem\n• Ability to make distinct observations\n• Ability to communicate through visuals",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2023/T46-01.png",
+      "imageAlt": "CEED 2023 Part B Q5 diagram",
+      "sourceFile": "CEED_2023_Question_Paper.pdf",
+      "sourcePage": 29
+    }
+  ]
+}

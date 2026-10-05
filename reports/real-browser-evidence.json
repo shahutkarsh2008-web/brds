@@ -1,0 +1,362 @@
+[
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/overview-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/library-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "practice",
+    "routeTitle": "Practice Builder",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/practice-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "mocks",
+    "routeTitle": "Mocks Workspace",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/mocks-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "analytics",
+    "routeTitle": "Analytics View",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/analytics-desktop-1440.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/overview-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/library-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "practice",
+    "routeTitle": "Practice Builder",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/practice-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "mocks",
+    "routeTitle": "Mocks Workspace",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/mocks-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "analytics",
+    "routeTitle": "Analytics View",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/analytics-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/overview-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/library-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "practice",
+    "routeTitle": "Practice Builder",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/practice-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "mocks",
+    "routeTitle": "Mocks Workspace",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/mocks-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "analytics",
+    "routeTitle": "Analytics View",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/analytics-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "overview",
+    "routeTitle": "Overview Dashboard",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/overview-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "library",
+    "routeTitle": "Papers Library",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/library-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "practice",
+    "routeTitle": "Practice Builder",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/practice-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "mocks",
+    "routeTitle": "Mocks Workspace",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/mocks-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "analytics",
+    "routeTitle": "Analytics View",
+    "metrics": {
+      "viewportWidth": 980,
+      "clientWidth": 980,
+      "scrollWidth": 980,
+      "hasHorizontalOverflow": false,
+      "headerRendered": false,
+      "sidebarRendered": false,
+      "mainRendered": false,
+      "cardCount": 0,
+      "pageTitle": "BRDS CBT"
+    },
+    "screenshotSaved": "reports/screenshots/analytics-mobile-narrow-360.png"
+  }
+]

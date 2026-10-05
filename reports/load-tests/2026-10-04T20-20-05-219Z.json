@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-10-04T20:20:05.220Z",
+  "status": "passed",
+  "scope": "isolated localhost Node child server + file-backed SQLite; not hosted PostgreSQL",
+  "config": {
+    "students": 5,
+    "seconds": 5,
+    "interval": 500,
+    "injectDrop": false
+  },
+  "elapsedSeconds": 5,
+  "rounds": 10,
+  "successfulWrites": 50,
+  "readbacks": 50,
+  "liveReads": 60,
+  "teacherSnapshots": 12,
+  "unexpectedDrops": 0,
+  "errors": [],
+  "errorCount": 0,
+  "missedCadences": 0,
+  "peakServerRssMB": 65,
+  "peakServerHeapMB": 11,
+  "peakServerCpuPercent": 7,
+  "peakServerEventLoopDelayMs": 193,
+  "maxTeacherCatchupMs": 26,
+  "latency": {
+    "write": {
+      "count": 60,
+      "p50Ms": 91.5,
+      "p95Ms": 169.28,
+      "p99Ms": 211.07,
+      "maxMs": 211.07
+    },
+    "read": {
+      "count": 110,
+      "p50Ms": 9.57,
+      "p95Ms": 132.92,
+      "p99Ms": 145.62,
+      "maxMs": 180.73
+    }
+  },
+  "database": "F:\\desktop\\New folder\\tmp\\load-tests\\run-WgQNRi\\load.sqlite",
+  "persistedMutations": 50,
+  "verifiedAttempts": 5,
+  "acceptanceDurationMet": false,
+  "finishedAt": "2026-10-04T20:20:12.001Z"
+}

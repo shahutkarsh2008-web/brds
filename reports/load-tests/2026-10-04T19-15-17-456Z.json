@@ -1,0 +1,49 @@
+{
+  "startedAt": "2026-10-04T19:15:17.457Z",
+  "status": "failed",
+  "scope": "isolated localhost Node child server + file-backed SQLite; not hosted PostgreSQL",
+  "config": {
+    "students": 5,
+    "seconds": 5,
+    "interval": 500,
+    "injectDrop": false
+  },
+  "elapsedSeconds": 10,
+  "rounds": 5,
+  "successfulWrites": 25,
+  "readbacks": 24,
+  "liveReads": 35,
+  "teacherSnapshots": 7,
+  "unexpectedDrops": 0,
+  "errors": [
+    "student 0: fetch failed [ECONNRESET]"
+  ],
+  "errorCount": 1,
+  "missedCadences": 1,
+  "peakServerRssMB": 71,
+  "peakServerHeapMB": 13,
+  "peakServerCpuPercent": 2,
+  "peakServerEventLoopDelayMs": 2328,
+  "maxTeacherCatchupMs": 49,
+  "latency": {
+    "write": {
+      "count": 35,
+      "p50Ms": 94.23,
+      "p95Ms": 7433.66,
+      "p99Ms": 7493.33,
+      "maxMs": 7493.33
+    },
+    "read": {
+      "count": 59,
+      "p50Ms": 13.43,
+      "p95Ms": 129.83,
+      "p99Ms": 2612.85,
+      "maxMs": 2612.85
+    }
+  },
+  "database": "F:\\desktop\\New folder\\tmp\\load-tests\\run-OuxCMW\\load.sqlite",
+  "persistedMutations": 25,
+  "verifiedAttempts": 5,
+  "acceptanceDurationMet": false,
+  "finishedAt": "2026-10-04T19:15:31.538Z"
+}

@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-10-05T16:08:30.968Z",
+  "status": "passed",
+  "scope": "isolated localhost Node child server + file-backed SQLite; not hosted PostgreSQL",
+  "config": {
+    "students": 5,
+    "seconds": 5,
+    "interval": 500,
+    "injectDrop": false
+  },
+  "elapsedSeconds": 5,
+  "rounds": 10,
+  "successfulWrites": 50,
+  "readbacks": 50,
+  "liveReads": 60,
+  "teacherSnapshots": 13,
+  "unexpectedDrops": 0,
+  "errors": [],
+  "errorCount": 0,
+  "missedCadences": 0,
+  "peakServerRssMB": 72,
+  "peakServerHeapMB": 11,
+  "peakServerCpuPercent": 6,
+  "peakServerEventLoopDelayMs": 224,
+  "maxTeacherCatchupMs": 28,
+  "latency": {
+    "write": {
+      "count": 60,
+      "p50Ms": 104.07,
+      "p95Ms": 207.46,
+      "p99Ms": 257.84,
+      "maxMs": 257.84
+    },
+    "read": {
+      "count": 110,
+      "p50Ms": 13.73,
+      "p95Ms": 158.65,
+      "p99Ms": 191.27,
+      "maxMs": 213.57
+    }
+  },
+  "database": "F:\\desktop\\New folder\\tmp\\load-tests\\run-ehaGcN\\load.sqlite",
+  "persistedMutations": 50,
+  "verifiedAttempts": 5,
+  "acceptanceDurationMet": false,
+  "finishedAt": "2026-10-05T16:08:38.236Z"
+}

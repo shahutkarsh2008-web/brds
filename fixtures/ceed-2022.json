@@ -1,0 +1,1468 @@
+{
+  "id": "ceed-2022",
+  "title": "Common Entrance Examination for Design CEED 2022",
+  "durationSeconds": 3600,
+  "totalQuestions": 41,
+  "maxMarks": 100.0,
+  "instructions": "CEED 2022 Part A Official Examination Paper.",
+  "sections": [
+    {
+      "id": "sec_nat_2022",
+      "title": "Section I: Numerical Answer Type (NAT)"
+    },
+    {
+      "id": "sec_msq_2022",
+      "title": "Section II: Multiple Select Questions (MSQ)"
+    },
+    {
+      "id": "sec_mcq_2022",
+      "title": "Section III: Multiple Choice Questions (MCQ)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ceed-2022-q01",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "Solid 1, Solid 2 and Solid 3 are joined together to form a cuboid as shown in Figure 1. The cuboid is then painted from all the sides. How many surfaces are there without the paint when you separate all the three solids?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Unpainted surfaces",
+      "originalQuestionId": "Q.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 27.0,
+        "max": 27.0
+      },
+      "image": "/media/ceed-2022/T1-01.png",
+      "imageAlt": "CEED 2022 Q1 diagram"
+    },
+    {
+      "id": "ceed-2022-q02",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "An irregular solid is cut into seven pieces as shown. The pieces are neither rotated nor scaled, but are kept in a random sequence. Find the correct sequence to get the smooth form. The sequence should be written from left to right.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Solid-piece sequencing",
+      "originalQuestionId": "Q.02",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3214765.0,
+        "max": 3214765.0
+      },
+      "image": "/media/ceed-2022/T2-01.png",
+      "imageAlt": "CEED 2022 Q2 diagram"
+    },
+    {
+      "id": "ceed-2022-q03",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "What are the least number of lines required to generate a 3D form such that it creates shadows similar to the figure shown below?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Three-dimensional shadow construction",
+      "originalQuestionId": "Q.03",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/ceed-2022/T3-01.png",
+      "imageAlt": "CEED 2022 Q3 diagram"
+    },
+    {
+      "id": "ceed-2022-q04",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "In the square ABCD, line XY is drawn parallel to the base as shown in the figure below. P and Q are any two arbitrary points on XY, forming triangles ABQ and CDP. What fraction of the area of the square is the total green shaded area?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Area fractions",
+      "originalQuestionId": "Q.04",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.5,
+        "max": 0.5
+      },
+      "image": "/media/ceed-2022/T4-01.png",
+      "imageAlt": "CEED 2022 Q4 diagram"
+    },
+    {
+      "id": "ceed-2022-q05",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "Five square pyramids are stacked as shown in the figure below with the bottom layer consisting of four pyramids in a 2 x 2 grid. If the bottom layer consists of pyramids in 6 x 7 grid, and they are stacked in a similar manner to its maximum height, how many pyramids will the formation contain?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Stacked pyramids",
+      "originalQuestionId": "Q.05",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 112.0,
+        "max": 112.0
+      },
+      "image": "/media/ceed-2022/T5-01.png",
+      "imageAlt": "CEED 2022 Q5 diagram"
+    },
+    {
+      "id": "ceed-2022-q06",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "A bank needs to upgrade its ATM kiosks to be wheel-chair accessible. An ATM kiosk entrance has four steps rising up to reach the floor level of the kiosk. Each step is 1000 mm in length, 300 mm in breadth, and 150 mm in height. The bank proposes to create a wheel-chair accessible ramp with a slope of 1:12, adjacent to the steps. What is the minimum horizontal length of the ramp in metre?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Accessible ramp slope",
+      "originalQuestionId": "Q.06",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.2,
+        "max": 7.2
+      }
+    },
+    {
+      "id": "ceed-2022-q07",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "A system of frictionless and massless pulleys is being used to pull up a load of 2520 N. What is the minimum force (in Newtons) required at the end of the rope (shown in dashed lines)?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Pulley forces",
+      "originalQuestionId": "Q.07",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 420.0,
+        "max": 420.0
+      },
+      "image": "/media/ceed-2022/T7-01.png",
+      "imageAlt": "CEED 2022 Q7 diagram"
+    },
+    {
+      "id": "ceed-2022-q08",
+      "sectionId": "sec_nat_2022",
+      "type": "NAT",
+      "prompt": "Shown below are three views of the same solid. Count the number of edges.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Solid edges",
+      "originalQuestionId": "Q.08",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 14.0,
+        "max": 14.0
+      },
+      "image": "/media/ceed-2022/T8-01.png",
+      "imageAlt": "CEED 2022 Q8 diagram"
+    },
+    {
+      "id": "ceed-2022-q09",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "A virus has two variants P and Q. Two treatments L and M were developed against variant P and Q and tested through four independent trials. The table shows the results. Assuming that both variants are equally prevalent, and both treatments cost about the same, but a given patient can be treated with only one treatment, which of the options is/are true? Against variant P Against variant Q Total Treatment L 44 successes / 50 81 successes / 100 125 successes / 150 Treatment M 94 successes / 100 31 successes / 50 125 successes / 150",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Treatment success rates",
+      "originalQuestionId": "Q.09",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "d"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "If the patient is known to be infected by variant P, both the treatments will be equally effective"
+        },
+        {
+          "id": "b",
+          "text": "If we can determine that the patient is infected by variant Q, treatment L has a higher chance of success"
+        },
+        {
+          "id": "c",
+          "text": "If the variant that the patient is infected by is not known, then both the treatments can be equally effective"
+        },
+        {
+          "id": "d",
+          "text": "If a hospital can stock only one of the two treatments, they should stock treatment L"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q10",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Figure shows the plan of a one-way road passing next to a primary school. Which of the options can be the location(s) to set up a bus stop for the school bus in Indian context?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "School bus-stop placement",
+      "originalQuestionId": "Q.10",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "d"
+      ],
+      "image": "/media/ceed-2022/T10-01.png",
+      "imageAlt": "CEED 2022 Q10 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q11",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Mobile sculptures are created by tying fish-shaped cut-outs of different colours using blue strings on brown sticks of negligible weight, as shown below. All the fish cut-outs are of the same size and weight. Which of the options will remain balanced after suspending from a ceiling?",
+      "topic": "Balance and stability",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Suspended balance",
+      "originalQuestionId": "Q.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "d"
+      ],
+      "image": "/media/ceed-2022/T11-01.png",
+      "imageAlt": "CEED 2022 Q11 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q12",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Which of the graphs shown below represent(s) the equation XY = 25?",
+      "topic": "Tables, charts and graphs",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Equation graphs",
+      "originalQuestionId": "Q.12",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2022/T12-01.png",
+      "imageAlt": "CEED 2022 Q12 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q13",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Which of the following rocking chairs will NOT topple while rocking 15 degree?",
+      "topic": "Balance and stability",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Rocking-chair stability",
+      "originalQuestionId": "Q.13",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2022/T13-01.png",
+      "imageAlt": "CEED 2022 Q13 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q14",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Shown on the left are the front and top views of a 3D object. Which option(s) can be the side view?",
+      "topic": "Tables, charts and graphs",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Orthographic views",
+      "originalQuestionId": "Q.14",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b"
+      ],
+      "image": "/media/ceed-2022/T14-01.png",
+      "imageAlt": "CEED 2022 Q14 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q15",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Figure P can be divided into four identical pieces. Assuming that the pieces can be rotated and flipped, which of the options will fit?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Identical shape partitioning",
+      "originalQuestionId": "Q.15",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2022/T15-01.png",
+      "imageAlt": "CEED 2022 Q15 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q16",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "[This question contains an animated GIF image.] An animation of shapes morphing from one to another is shown in the GIF below. Which of the shapes shown in the options can be found in this animation sequence in its exact orientation and size?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Animated shape morphing",
+      "originalQuestionId": "Q.16",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2022/T16-01.png",
+      "imageAlt": "CEED 2022 Q16 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q17",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Tile X was used to create a pattern which is seamless (without gaps) when arranged as shown in Y. Which tile(s) from the options will create a seamless pattern?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Seamless tiling",
+      "originalQuestionId": "Q.17",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2022/T17-01.png",
+      "imageAlt": "CEED 2022 Q17 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q18",
+      "sectionId": "sec_msq_2022",
+      "type": "MSQ",
+      "prompt": "Some configurations for the pair of scissors are shown below. If concentric circles represent hinges, which of the options will work?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Scissor mechanisms",
+      "originalQuestionId": "Q.18",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.2,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2022/T18-01.png",
+      "imageAlt": "CEED 2022 Q18 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q19",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Shown in the box are the orthographic views of a 3D object. Which option represents that object?",
+      "topic": "Tables, charts and graphs",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Orthographic views",
+      "originalQuestionId": "Q.19",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2022/T14-02.png",
+      "imageAlt": "CEED 2022 Q19 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q20",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "A washbasin is to be installed in a college canteen in India. Which of the options can help derive the appropriate height of the washbasin from the floor?",
+      "topic": "Usability",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Washbasin ergonomics",
+      "originalQuestionId": "Q.20",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average height of the adult Indian male and female population"
+        },
+        {
+          "id": "b",
+          "text": "Average height of the tallest 50% adult Indian female population"
+        },
+        {
+          "id": "c",
+          "text": "Average height of the shortest 5% adult Indian female population"
+        },
+        {
+          "id": "d",
+          "text": "Average height of the shortest 5% adult Indian male population"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q21",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Image X represents the six faces of a cube. Image Y shows a composition using five such cubes. What could be the rear view of the shown composition?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube rear views",
+      "originalQuestionId": "Q.21",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2022/T20-01.png",
+      "imageAlt": "CEED 2022 Q21 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q22",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Shown below are two parts of a mould. Mould is closed and material is poured into the cavity. What would be the resultant moulded part?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Moulded solids",
+      "originalQuestionId": "Q 22",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T21-01.png",
+      "imageAlt": "CEED 2022 Q22 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q23",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Three leaves are falling from a tree. Figure 1 shows the way a leaf falls. Figure 2 illustrates the starting orientation of the three leaves. If the blue colour leaf is at 200 cm, the red colour leaf is at 425 cm and the yellow colour leaf is at 375 cm from the ground, then what would be the orientation of all the leaves when they reach the ground?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Falling-leaf orientation",
+      "originalQuestionId": "Q.23",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T22-01.png",
+      "imageAlt": "CEED 2022 Q23 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q24",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Which option resembles an angry person when flipped vertically?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Upside-down faces",
+      "originalQuestionId": "Q.24",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T23-01.png",
+      "imageAlt": "CEED 2022 Q24 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q25",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Eleven identical circles are linked together by line segments that connect the centres of adjoining circles as shown in the figure below. Which of the statements is TRUE?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Circle-area comparison",
+      "originalQuestionId": "Q.25",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T24-01.png",
+      "imageAlt": "CEED 2022 Q25 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Purple area is equal to the green area"
+        },
+        {
+          "id": "b",
+          "text": "Purple area is greater than green area by one circle"
+        },
+        {
+          "id": "c",
+          "text": "Purple area is greater than green area by two circles"
+        },
+        {
+          "id": "d",
+          "text": "Purple area is greater than green area by three circles"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q26",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Identify the odd one.",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Pattern odd one out",
+      "originalQuestionId": "Q.26",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2022/T25-01.png",
+      "imageAlt": "CEED 2022 Q26 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q27",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Shown on the left is a woven mat using threads of two colours. The mat is flipped at the edge Q to reveal the back side. Identify the back side of the mat from the given options.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Woven-mat reversal",
+      "originalQuestionId": "Q.27",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2022/T26-01.png",
+      "imageAlt": "CEED 2022 Q27 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q28",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Question T27-01 (See diagram)",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Visual equations",
+      "originalQuestionId": "Q.28",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T27-01.png",
+      "imageAlt": "CEED 2022 Q28 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q29",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "A folding fan shown in the image is made of bamboo and paper painted on one side. Which option is the closest representation of the same fan in the folded position? (dotted lines indicate the folds)",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding fan",
+      "originalQuestionId": "Q.29",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2022/T28-01.png",
+      "imageAlt": "CEED 2022 Q29 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q30",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Roads are generally made with an angle on the curvatures to counter the centrifugal force on vehicles moving with speed. This is called ‘Banking of Road’. Figure shows two one-way roads P and Q from top view. If the maximum safe speed limit is same for both the roads, which option shows the schematic cross section of P and Q at the position SS?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Road banking",
+      "originalQuestionId": "Q.30",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T29-01.png",
+      "imageAlt": "CEED 2022 Q30 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q31",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Which option will fold into the pack shown in the image below?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Packaging nets",
+      "originalQuestionId": "Q.31",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T30-01.png",
+      "imageAlt": "CEED 2022 Q31 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q32",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "A closed loop is made of a metal pipe and is rolling between two fixed pulleys as shown in the image on the left. What would be the path traced by point P when the loop completes one turn?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rolling-loop tracing",
+      "originalQuestionId": "Q.32",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2022/T31-01.png",
+      "imageAlt": "CEED 2022 Q32 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q33",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Biomimicry is the practice of looking to nature for inspiration to solve design problems. Shown below are plants and animals (top row) that have inspired the design of products (bottom row). Which of the options listed below correctly identifies the plant and/or animal with the product that it inspired?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Biomimicry",
+      "originalQuestionId": "Q.33",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T32-01.png",
+      "imageAlt": "CEED 2022 Q33 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P – 3, Q – 1, R – 4, S – 2"
+        },
+        {
+          "id": "b",
+          "text": "P – 4, Q – 2, R – 1, S – 3"
+        },
+        {
+          "id": "c",
+          "text": "P – 3, Q – 4, R – 1, S – 2"
+        },
+        {
+          "id": "d",
+          "text": "P – 1, Q – 3, R – 2, S – 4"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q34",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Image below shows configurations of jars filled with water. Which option will work as an air filter?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Air-filter mechanisms",
+      "originalQuestionId": "Q.34",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2022/T33-01.png",
+      "imageAlt": "CEED 2022 Q34 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q35",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Which of the options, when combined with block shown on top, will result in perfect 4x4x4 cube?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube completion",
+      "originalQuestionId": "Q.35",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2022/T34-01.png",
+      "imageAlt": "CEED 2022 Q35 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q36",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Which of the options will result in the form shown on the left, when revolved around x-x’ axis?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Solids of revolution",
+      "originalQuestionId": "Q.36",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2022/T35-01.png",
+      "imageAlt": "CEED 2022 Q36 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q37",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Figure 1 shows the skeleton of a T-rex dinosaur. Identify the correct distorted silhouette from the given options.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Distorted silhouettes",
+      "originalQuestionId": "Q.37",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T36-01.png",
+      "imageAlt": "CEED 2022 Q37 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q38",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Circles of how many different radii are needed to construct the following figure?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Circle radii counting",
+      "originalQuestionId": "Q.38",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2022/T37-01.png",
+      "imageAlt": "CEED 2022 Q38 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q39",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "A printed transparent sticker (as shown on the left) is applied onto a glass cylinder such that the vertical edges meet. Which option is the correct representation?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cylinder wrapping",
+      "originalQuestionId": "Q.39",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2022/T38-01.png",
+      "imageAlt": "CEED 2022 Q39 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q40",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Image on the left shows a cylinder kept on the top of a cube. Height of the cylinder and side of the cube are equal. Parallel rays of light are falling on them at an angle of 45 degree. Which option shows the correct shadow?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "Q.40",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T39-01.png",
+      "imageAlt": "CEED 2022 Q40 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2022-q41",
+      "sectionId": "sec_mcq_2022",
+      "type": "MCQ",
+      "prompt": "Shown on the left is a futon that becomes a mattress when opened and folds into a seat. Which option CANNOT be folded as a seat?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Futon folding",
+      "originalQuestionId": "Q.41",
+      "marks": {
+        "correct": 2.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2022/T40-01.png",
+      "imageAlt": "CEED 2022 Q41 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    }
+  ],
+  "partBQuestions": [
+    {
+      "id": "ceed-2022-pb-q01",
+      "originalQuestionId": "Part B Q.1",
+      "type": "DRAWING_DESIGN",
+      "prompt": "A sample is being collected for an RT-PCR swab test for COVID-19. The man collecting the sample is standing in a PPE (protective) suit. The lady who is being tested is sitting on a chair in front of him. She shows uneasiness through her facial expression when a swab is inserted in her nose. Draw a free-hand sketch of the moment described above. Drawing of surroundings is not necessary.\nEvaluation criteria:\n• Quality of composition\n• Observation and drawing skills\n• Expression of the person being tested\n• Scale and relative proportions\n• Use of light and shade",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2022_Qestion_Paper.pdf",
+      "sourcePage": 24
+    },
+    {
+      "id": "ceed-2022-pb-q02",
+      "originalQuestionId": "Part B Q.2",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Building upon the visual elements given in the five boxes, create recognizable images and give a title to each one. Use only BLACK pencil/pen. Draw only within the boundaries of the boxes.\nEvaluation criteria:\n• Originality – ability to produce unusual response\n• Emotional expressiveness – ability to communicate feelings and emotions non-verbally through figures\n• Humour / surprise – ability to depict conceptual and perceptual absurdity and amusing combinations\n• Richness – ability to create strong, sharp and distinct images",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2022_Qestion_Paper.pdf",
+      "sourcePage": 25
+    },
+    {
+      "id": "ceed-2022-pb-q03",
+      "originalQuestionId": "Part B Q.3",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Create visual icons in the boxes given, for the following in an Indian mela (fair/exhibition)\n1. Information Desk\n2. Craft zone\n3. Children zone\n4. Game zone\nEvaluation criteria:\n• Aesthetics of 2D form\n• Effectiveness to convey meaning\n• Consistency of visual language (style)\n• Composition",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2022_Qestion_Paper.pdf",
+      "sourcePage": 26
+    },
+    {
+      "id": "ceed-2022-pb-q04",
+      "originalQuestionId": "Part B Q.4",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Three views of a building are shown below. Visualise the form of an electric iron (for ironing clothes) based on the image(s) of the given building. It should match the design language with relevant details. Sketch and render the form of the electric iron.\nEvaluation Criteria:\n• Sensitivity towards form\n• Consistency with the visual language of the form\n• Relevant details of the iron\n• Surface shading\n• Quality of lines/strokes",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2022/T44-01-1.png",
+      "imageAlt": "CEED 2022 Part B Q4 diagram",
+      "sourceFile": "CEED_2022_Qestion_Paper.pdf",
+      "sourcePage": 27
+    },
+    {
+      "id": "ceed-2022-pb-q05",
+      "originalQuestionId": "Part B Q.5",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Image source: thehindu.com Getting into the general compartment of a long-distance train is not a pleasant experience, especially for women, children, elderly and the disabled. The photo depicts one such scene. In the space provided in the answer booklet, list TEN unique design problems or opportunities in this situation. Each problem or opportunity could be based on either what you can observe in the photo or your experiences as a passenger. Each problem or opportunity should have potential for a design solution. For example, large crowds or less availability of seats are not design problems. (10 marks) Within the space provided clearly illustrate TWO design problems or opportunities that you consider to be the most important. (2x5 marks) Focus on depicting problems and opportunities. DO NOT provide solutions.\nEvaluation criteria:\n1. Severity of the identified problems\n2. Diversity of observations\n3. Analytical skills\n4. Communication",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2022/T45-01.png",
+      "imageAlt": "CEED 2022 Part B Q5 diagram",
+      "sourceFile": "CEED_2022_Qestion_Paper.pdf",
+      "sourcePage": 28
+    }
+  ]
+}

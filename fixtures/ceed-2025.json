@@ -1,0 +1,1628 @@
+{
+  "id": "ceed-2025",
+  "title": "Common Entrance Examination for Design CEED 2025",
+  "durationSeconds": 3600,
+  "totalQuestions": 44,
+  "maxMarks": 150.0,
+  "instructions": "CEED 2025 Part A Official Examination Paper.",
+  "sections": [
+    {
+      "id": "sec_nat_2025",
+      "title": "Section I: Numerical Answer Type (NAT)"
+    },
+    {
+      "id": "sec_msq_2025",
+      "title": "Section II: Multiple Select Questions (MSQ)"
+    },
+    {
+      "id": "sec_mcq_2025",
+      "title": "Section III: Multiple Choice Questions (MCQ)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ceed-2025-q01",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "The words given below are written using a particular font. Identify the digit that does not belong to the same font?",
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity",
+      "sourceTopic": "Font recognition",
+      "originalQuestionId": "Q.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/ceed-2025/T1-01.png",
+      "imageAlt": "CEED 2025 Q1 diagram"
+    },
+    {
+      "id": "ceed-2025-q02",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "Shown below is a cross-section which is revolved 270 degrees around the P-Q axis, to create a solid. How many surfaces will the resultant solid have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Surfaces of solids",
+      "originalQuestionId": "Q.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "image": "/media/ceed-2025/T2-01.png",
+      "imageAlt": "CEED 2025 Q2 diagram"
+    },
+    {
+      "id": "ceed-2025-q03",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "Shown below is a strip of paper which is folded multiple times. How many red pawns are placed on the same side of the paper as the blue pawn?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Paper folding",
+      "originalQuestionId": "Q.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/ceed-2025/T3-01.png",
+      "imageAlt": "CEED 2025 Q3 diagram"
+    },
+    {
+      "id": "ceed-2025-q04",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "Shown below is an image of multiple footwear items. How many complete pairs are there?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Visual counting",
+      "originalQuestionId": "Q.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 11.0,
+        "max": 11.0
+      },
+      "image": "/media/ceed-2025/T4-01.png",
+      "imageAlt": "CEED 2025 Q4 diagram"
+    },
+    {
+      "id": "ceed-2025-q05",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "Shown below is a configuration of an isosceles triangle sliced into eight parts, each of the same height. While the first and last parts of the triangle remain fixed, the remaining parts have been displaced horizontally, by multiples of 0.5 cm. What is the area of the grey portion?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Area geometry",
+      "originalQuestionId": "Q.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 48.0,
+        "max": 48.0
+      },
+      "image": "/media/ceed-2025/T5-01.png",
+      "imageAlt": "CEED 2025 Q5 diagram"
+    },
+    {
+      "id": "ceed-2025-q06",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "Shown below is an arrangement of closely stacked spheres. Assume each one to be in contact with its immediate neighbour. What is the total number of points where the spheres touch each other?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Sphere contacts",
+      "originalQuestionId": "Q.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 96.0,
+        "max": 96.0
+      },
+      "image": "/media/ceed-2025/T6-01.png",
+      "imageAlt": "CEED 2025 Q6 diagram"
+    },
+    {
+      "id": "ceed-2025-q07",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "Shown below are three perspective views of a solid object. How many surfaces does the object have? Assume hidden surfaces to be flat.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Surfaces of solids",
+      "originalQuestionId": "Q.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 30.0,
+        "max": 30.0
+      },
+      "image": "/media/ceed-2025/T2-02.png",
+      "imageAlt": "CEED 2025 Q7 diagram"
+    },
+    {
+      "id": "ceed-2025-q08",
+      "sectionId": "sec_nat_2025",
+      "type": "NAT",
+      "prompt": "A monospaced font is a font in which all characters are exactly of same width. A document uses a monospaced font for typesetting where each character is exactly 0.6 cm wide. A text line in this document contains only 10 words, where each word contains 6 characters. What is the length of the line in cm?",
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity",
+      "sourceTopic": "Typography measurements",
+      "originalQuestionId": "Q.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 41.4,
+        "max": 41.4
+      }
+    },
+    {
+      "id": "ceed-2025-q09",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown below are perspective views of a hexagonal prism, a cube and a cylinder, all having height 10 cm. If the objects are cut by straight planes to generate various cross sections, which of the statements is/are TRUE?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "Q.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2025/T8-01.png",
+      "imageAlt": "CEED 2025 Q9 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "R can reveal curvilinear cross section; P and R can reveal a square cross section"
+        },
+        {
+          "id": "b",
+          "text": "P, Q and R can reveal rectangular cross sections; P and Q can reveal isosceles triangle"
+        },
+        {
+          "id": "c",
+          "text": "P and Q can reveal regular hexagonal cross sections; R can reveal a square"
+        },
+        {
+          "id": "d",
+          "text": "P and Q can reveal triangular cross sections; R can reveal a triangular cross section"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q10",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown below is the front and top views of an object. Which of the options can be the CORRECT object?",
+      "topic": "Tables, charts and graphs",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Orthographic views",
+      "originalQuestionId": "Q.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "d"
+      ],
+      "image": "/media/ceed-2025/T9-01.png",
+      "imageAlt": "CEED 2025 Q10 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q11",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown below is a graph showing the journey of a hero in a 60-minute movie. This graph represents the relationship between time and events in the hero’s journey in the film. Which of the statements is/are TRUE?",
+      "topic": "Tables, charts and graphs",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Graph interpretation",
+      "originalQuestionId": "Q.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "d"
+      ],
+      "image": "/media/ceed-2025/T10-01.png",
+      "imageAlt": "CEED 2025 Q11 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "The hero might have defeated the villain in the end."
+        },
+        {
+          "id": "b",
+          "text": "The hero might have encountered the death of a close friend at the 30th minute."
+        },
+        {
+          "id": "c",
+          "text": "The hero might have faced more struggles around the 40th minute as compared to the 18th minute."
+        },
+        {
+          "id": "d",
+          "text": "The hero might have met with an accident between 12th to 18th minute."
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q12",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown on the left is the image of an unfolded cube. Which of the options represent(s) the folded cube?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube nets",
+      "originalQuestionId": "Q.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b"
+      ],
+      "image": "/media/ceed-2025/T11-01.png",
+      "imageAlt": "CEED 2025 Q12 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q13",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "The figures shown below depict four mechanisms made using links and hinges, where the small circles represent hinges. Which of the options will allow relative motions between the links?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Link mechanisms",
+      "originalQuestionId": "Q.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2025/T12-01.png",
+      "imageAlt": "CEED 2025 Q13 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q14",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown below are images of chairs produced using typical manufacturing processes. Which of the following statements is/are TRUE?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Product manufacturing",
+      "originalQuestionId": "Q.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "c"
+      ],
+      "image": "/media/ceed-2025/T13-01.png",
+      "imageAlt": "CEED 2025 Q14 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P is designed for stackability; R requires many operations to manufacture."
+        },
+        {
+          "id": "b",
+          "text": "S is not designed for stackability; Q has more than five number of parts."
+        },
+        {
+          "id": "c",
+          "text": "Q is designed for stackability; S requires many operations to manufacture."
+        },
+        {
+          "id": "d",
+          "text": "R is not designed for stackability; P has less than five number of parts."
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q15",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown below are four different types of scissors. Which of the following statements is/are TRUE?",
+      "topic": "Usability",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Scissor ergonomics",
+      "originalQuestionId": "Q.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2025/T14-01.png",
+      "imageAlt": "CEED 2025 Q15 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P is designed for right-handed use; R is designed only for left-handed use."
+        },
+        {
+          "id": "b",
+          "text": "R is designed for right and left-handed use; Q is spring loaded."
+        },
+        {
+          "id": "c",
+          "text": "S is designed for right-handed use; P is designed for left-handed use."
+        },
+        {
+          "id": "d",
+          "text": "Q requires least effort in use; R is designed only for right-handed use."
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q16",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown on the left are three tiles. Which option(s) can be made using only these tiles? Rotations of tiles are allowed.",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Tile assembly",
+      "originalQuestionId": "Q.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "d"
+      ],
+      "image": "/media/ceed-2025/T15-01.png",
+      "imageAlt": "CEED 2025 Q16 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q17",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown below are images of four different models of dispensers. Which of the statements is/are TRUE?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Dispenser mechanisms",
+      "originalQuestionId": "Q.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "d"
+      ],
+      "image": "/media/ceed-2025/T16-01.png",
+      "imageAlt": "CEED 2025 Q17 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least 2 models are based on valves; at least 2 models have hinges."
+        },
+        {
+          "id": "b",
+          "text": "2 models are based on valves; all 4 models can be used without lifting them when 1/8 filled."
+        },
+        {
+          "id": "c",
+          "text": "At least 1 model uses lever; all 4 models can be used without lifting them when 1/8 filled."
+        },
+        {
+          "id": "d",
+          "text": "At least 1 model uses pressure for dispensing liquid; at least 1 model uses lever principle."
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q18",
+      "sectionId": "sec_msq_2025",
+      "type": "MSQ",
+      "prompt": "Shown below is an empty triangle which is to be filled using five tiles. Which option(s) will exactly fill this triangle when all tiles are used? Scaling, Repeating, and Flipping of tiles is not allowed; while rotation is allowed.",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Tile assembly",
+      "originalQuestionId": "Q.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2025/T15-02.png",
+      "imageAlt": "CEED 2025 Q18 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2025-q19",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below are words in a particular font. Which option belongs to the same font?",
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity",
+      "sourceTopic": "Font recognition",
+      "originalQuestionId": "Q.19",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T1-02.png",
+      "imageAlt": "CEED 2025 Q19 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q20",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown on the left is an animation loop of a mouse moving. Which option shows the CORRECT path of the mouse? [This question contains an animated GIF image.]",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Animated motion paths",
+      "originalQuestionId": "Q.20",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T17-01.png",
+      "imageAlt": "CEED 2025 Q20 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q21",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Which option is a simple rotation of the image given below?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Image rotation",
+      "originalQuestionId": "Q.21",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T18-01.png",
+      "imageAlt": "CEED 2025 Q21 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q22",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?\n\nNOTEBOOK\nBECOMING\n?\nLEVERAGE\nRESEARCH\nAERATING",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Word patterns",
+      "originalQuestionId": "Q.22",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "options": [
+        {
+          "id": "a",
+          "text": "MODELING"
+        },
+        {
+          "id": "b",
+          "text": "RECOVERY"
+        },
+        {
+          "id": "c",
+          "text": "ABSOLUTE"
+        },
+        {
+          "id": "d",
+          "text": "SENTENCE"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q23",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below is a wooden artifact made using traditional materials and processes. Which option shows the relevant operations involved in its making, not necessarily in the production sequence?",
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society",
+      "sourceTopic": "Traditional craft processes",
+      "originalQuestionId": "Q.23",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T20-01.png",
+      "imageAlt": "CEED 2025 Q23 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chiselling, Drilling, Turning, Centering"
+        },
+        {
+          "id": "b",
+          "text": "Sizing, Turning, Drilling, Lacquering"
+        },
+        {
+          "id": "c",
+          "text": "Turning, Facing, Balling, Circling"
+        },
+        {
+          "id": "d",
+          "text": "Turning, Lacquering, Drilling, Chiselling"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q24",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below is the perspective view of an object when viewed from the direction of the arrow. The object is first rotated by 90 degrees clockwise about the y-axis, then 180 degrees anti-clockwise about the x-axis, followed by 90 degrees anti-clockwise about the y-axis. All rotations are as viewed from a point on the positive axis towards the origin of the respective axes. Which option shows the CORRECT resultant view?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Three-dimensional rotations",
+      "originalQuestionId": "Q.24",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2025/T21-01.png",
+      "imageAlt": "CEED 2025 Q24 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q25",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below is an image that shows the step-by-step process of folding a white colour fabric. The folded fabric is dipped into colour at three corners P, Q and R as indicated in the image. What will be the resultant fabric after unfolding?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Fabric folding and dyeing",
+      "originalQuestionId": "Q.25",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T22-01.png",
+      "imageAlt": "CEED 2025 Q25 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q26",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Which arrangement of tiles will create the image shown on the left? Tiles can be rotated but not flipped.",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Tile assembly",
+      "originalQuestionId": "Q.26",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2025/T15-03.png",
+      "imageAlt": "CEED 2025 Q26 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q27",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Visual sequences",
+      "originalQuestionId": "Q.27",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T23-01.png",
+      "imageAlt": "CEED 2025 Q27 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q28",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Visual sequences",
+      "originalQuestionId": "Q.28",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T23-02.png",
+      "imageAlt": "CEED 2025 Q28 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q29",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "A circular disc and a sphere of the same diameter are floating above the ground. The circular disc is parallel to the ground. Which option shows the CORRECT set of shadows on the ground when seen from the top?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "Q.29",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2025/T24-01.png",
+      "imageAlt": "CEED 2025 Q29 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q30",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown on the left is an image. Which option is the correct profile of the image?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Silhouettes",
+      "originalQuestionId": "Q.30",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T25-01.png",
+      "imageAlt": "CEED 2025 Q30 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q31",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Which option is the mirror image of the sentence shown on the left?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror images",
+      "originalQuestionId": "Q.31",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T26-01.png",
+      "imageAlt": "CEED 2025 Q31 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q32",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below is an artistic representation of various dance forms of India. Which option shows the correct sequence of the dance forms?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Indian dance forms",
+      "originalQuestionId": "Q.32",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2025/T27-01.png",
+      "imageAlt": "CEED 2025 Q32 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kathakali, Bharatanatyam, Chhau, Mohiniyattam"
+        },
+        {
+          "id": "b",
+          "text": "Manipuri, Chhau, Kathak, Kathakali"
+        },
+        {
+          "id": "c",
+          "text": "Mohiniyattam, Chhau, Bharatanatyam, Kathakali"
+        },
+        {
+          "id": "d",
+          "text": "Manipuri, Chhau, Bharatanatyam, Kathakali"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q33",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown on the left is an image printed on a transparent sheet. If this sheet is folded along the dotted line, then which option will be the resultant view?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Transparent-sheet folding",
+      "originalQuestionId": "Q.33",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2025/T28-01.png",
+      "imageAlt": "CEED 2025 Q33 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q34",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below are the key frames of a character lifting a sack. Which option will replace the question mark?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Animation keyframes",
+      "originalQuestionId": "Q.34",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2025/T29-01.png",
+      "imageAlt": "CEED 2025 Q34 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q35",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below is an animation of a bird flying. Which frame is NOT present in the animation? [This question contains an animated GIF image.]",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Animation frames",
+      "originalQuestionId": "Q.35",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2025/T30-01.png",
+      "imageAlt": "CEED 2025 Q35 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q36",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "A colour image is shown on the left. If the blue sky is painted black and the leaves are painted white, which is the CORRECT black and white image among the scaled options shown on the right?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Colour transformations",
+      "originalQuestionId": "Q.36",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2025/T31-01.png",
+      "imageAlt": "CEED 2025 Q36 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q37",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below are frames from a film sequence that follow the 180-degree rule in cinematography. Which option will replace the question mark?",
+      "topic": "Tables, charts and graphs",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Cinematography",
+      "originalQuestionId": "Q.37",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2025/T32-01.png",
+      "imageAlt": "CEED 2025 Q37 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q38",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below on the left are two views of a bent wire. Which option is the top view of the wire?",
+      "topic": "Tables, charts and graphs",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Orthographic views",
+      "originalQuestionId": "Q.38",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2025/T9-02.png",
+      "imageAlt": "CEED 2025 Q38 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q39",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown on the left is a set of equations. Which option belongs to the same set?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symbol equations",
+      "originalQuestionId": "Q.39",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2025/T33-01.png",
+      "imageAlt": "CEED 2025 Q39 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q40",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "A sheet of paper is folded along the white dotted lines and then cut along black dotted lines as depicted below. Out of the four scaled down options, which is the CORRECT resultant unfolded paper?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Paper folding and cutting",
+      "originalQuestionId": "Q.40",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2025/T34-01.png",
+      "imageAlt": "CEED 2025 Q40 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q41",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "A square pyramid sequentially passes through three cut-outs, namely, 1, 2 and 3, without changing its orientation. Each cut-out has a circle with notches as shown. The cut-outs scrape off parts of the pyramid as it passes through them. Which option shows the CORRECT Side View of the remaining part of the pyramid at the end of the sequence?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Solid cut-outs",
+      "originalQuestionId": "Q.41",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2025/T35-01.png",
+      "imageAlt": "CEED 2025 Q41 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q42",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Shown below is a configuration of a circle and a rigid rod. The length of the rod PQ is equal to the circumference of the green circle. The rod tangentially revolves around the circle till point Q reaches point P. Which option represents the CORRECT tracing of point Q?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Geometric tracing",
+      "originalQuestionId": "Q.42",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2025/T36-01.png",
+      "imageAlt": "CEED 2025 Q42 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q43",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "When “See you Bye” is spoken, which option shows the correct sequence of lip movement?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Speech and lip movement",
+      "originalQuestionId": "Q.43",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2025/T37-01.png",
+      "imageAlt": "CEED 2025 Q43 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2025-q44",
+      "sectionId": "sec_mcq_2025",
+      "type": "MCQ",
+      "prompt": "Which option has all four parts, that belong to the disc shown on the left?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Visual part matching",
+      "originalQuestionId": "Q.44",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2025/T38-01.png",
+      "imageAlt": "CEED 2025 Q44 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    }
+  ],
+  "partBQuestions": [
+    {
+      "id": "ceed-2025-pb-q01",
+      "originalQuestionId": "Part B Q.1",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Two kids, Kaa and Kii, are on an adventure trip in a forest. While exploring, suddenly a bear emerges and starts chasing them. The kids start running in panic through the forest. A fox is watching the whole scene. Sketch this scene from the fox’s point of view. The sketch should be clear and visible.\nAdditional Instructions:\n• Use only black/HB-series pencils\n• Do not use other colours\n• Draw only in the given space\nEvaluation Criteria:\n• Character and expressions\n• Proportion and composition\n• Quality of sketching\n• Environment and props",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2025_Question_Paper.pdf",
+      "sourcePage": 27
+    },
+    {
+      "id": "ceed-2025-pb-q02",
+      "originalQuestionId": "Part B Q.2",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Shown below is a canvas with four frames containing certain elements. Create a meaningful sequence of visuals using the elements in the frames. Ensure that continuity is maintained across the frames by using additional prop(s) and/or character(s) as needed. You may choose to create the sequence either from left to right or right to left, but indicate the direction using an arrow. Give an appropriate title in the space provided.\nEvaluation criteria:\n1. Imagination and Creative ideas\n2. Composition\n3. Drawing quality and clarity\n4. Continuity in the sequence",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2025/T40-01.png",
+      "imageAlt": "CEED 2025 Part B Q2 diagram",
+      "sourceFile": "CEED_2025_Question_Paper.pdf",
+      "sourcePage": 28
+    },
+    {
+      "id": "ceed-2025-pb-q03",
+      "originalQuestionId": "Part B Q.3",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Shown below are new animals that have been acquired by an Indian Zoo.\nA. Indian Grey Mongoose\nB. Honey Badger\nC. Indian Bison\nD. Indian Pangolin\nThe Zoo wishes to create a signage to guide visitors around the enclosures of these animals. Create four icons using only BLACK colour to indicate the animal in the enclosure. All icons should be clear and visible, and have a consistent visual language. Draw the icons in the FOUR squares provided in the answer booklet.\nEvaluation criteria:\n1. Consistency in the visual language\n2. Representation of the animals\n3. Visual composition\n4. Clarity and neatness",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2025/T41-01.png",
+      "imageAlt": "CEED 2025 Part B Q3 diagram",
+      "sourceFile": "CEED_2025_Question_Paper.pdf",
+      "sourcePage": 29
+    },
+    {
+      "id": "ceed-2025-pb-q04",
+      "originalQuestionId": "Part B Q.4",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Shown on the left is a character-based design of a product. Inspired from this product, re-imagine, conceptualise, and render the tea flask given on the right. Make it clear and visible.\nEvaluation Criteria:\n• Characterization of the product\n• Relevant details and usability\n• Quality of sketching\n• Surface shading/rendering",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2025/T42-01.png",
+      "imageAlt": "CEED 2025 Part B Q4 diagram",
+      "sourceFile": "CEED_2025_Question_Paper.pdf",
+      "sourcePage": 30
+    },
+    {
+      "id": "ceed-2025-pb-q05",
+      "originalQuestionId": "Part B Q.5",
+      "type": "DRAWING_DESIGN",
+      "prompt": "A typical vegetable cart, as seen in India, is shown below.\nA. Identify and list FIVE distinct problems from a buyer’s point of view and FIVE distinct problems from a seller’s point of view in this context. List the problems only in the given space. (5 + 5 marks)\nB. From the above-listed problems, draw and visually explain any ONE problem of the buyers, and any ONE problem of the sellers in the given boxes. (5 + 5 marks)\nAdditional Instructions:\n1. Do not limit yourself to the buyer and seller in the given image.\n2. Write the identified problems only on the dotted lines.\n3. Draw and visually explain the listed problems only in the given boxes.\nEvaluation Criteria:\n1. Ability to identify unique and relevant problems in the given context\n2. Severity of the problems identified\n3. Ability to communicate problems through visuals\nPresentation, clarity and neatness",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2025/T43-01.png",
+      "imageAlt": "CEED 2025 Part B Q5 diagram",
+      "sourceFile": "CEED_2025_Question_Paper.pdf",
+      "sourcePage": 31
+    }
+  ]
+}

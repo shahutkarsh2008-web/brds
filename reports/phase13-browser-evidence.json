@@ -90,6 +90,96 @@
     "screenshotSaved": "reports/phase13-browser-verification/analytics-desktop-1440.png"
   },
   {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "gk",
+    "routeTitle": "GK Sprint",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/gk-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "sketches",
+    "routeTitle": "Sketch Studio",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/sketches-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "bookmarks",
+    "routeTitle": "Bookmarks & Revision",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/bookmarks-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "guides",
+    "routeTitle": "Guides & Quick Quizzes",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 4,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/guides-desktop-1440.png"
+  },
+  {
+    "viewport": "Desktop (1440px)",
+    "width": 1440,
+    "route": "settings",
+    "routeTitle": "Settings",
+    "metrics": {
+      "viewportWidth": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/settings-desktop-1440.png"
+  },
+  {
     "viewport": "Tablet (1024px)",
     "width": 1024,
     "route": "overview",
@@ -178,6 +268,96 @@
       "pageTitle": "BRDS CBT — Student Workspace Command Center"
     },
     "screenshotSaved": "reports/phase13-browser-verification/analytics-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "gk",
+    "routeTitle": "GK Sprint",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1009,
+      "scrollWidth": 1009,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/gk-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "sketches",
+    "routeTitle": "Sketch Studio",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1009,
+      "scrollWidth": 1009,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/sketches-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "bookmarks",
+    "routeTitle": "Bookmarks & Revision",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/bookmarks-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "guides",
+    "routeTitle": "Guides & Quick Quizzes",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1009,
+      "scrollWidth": 1009,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 4,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/guides-tablet-1024.png"
+  },
+  {
+    "viewport": "Tablet (1024px)",
+    "width": 1024,
+    "route": "settings",
+    "routeTitle": "Settings",
+    "metrics": {
+      "viewportWidth": 1024,
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/settings-tablet-1024.png"
   },
   {
     "viewport": "Tablet Portrait (768px)",
@@ -270,6 +450,96 @@
     "screenshotSaved": "reports/phase13-browser-verification/analytics-tablet-portrait-768.png"
   },
   {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "gk",
+    "routeTitle": "GK Sprint",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/gk-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "sketches",
+    "routeTitle": "Sketch Studio",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/sketches-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "bookmarks",
+    "routeTitle": "Bookmarks & Revision",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/bookmarks-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "guides",
+    "routeTitle": "Guides & Quick Quizzes",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 4,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/guides-tablet-portrait-768.png"
+  },
+  {
+    "viewport": "Tablet Portrait (768px)",
+    "width": 768,
+    "route": "settings",
+    "routeTitle": "Settings",
+    "metrics": {
+      "viewportWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/settings-tablet-portrait-768.png"
+  },
+  {
     "viewport": "Narrow Mobile (360px)",
     "width": 360,
     "route": "overview",
@@ -358,5 +628,95 @@
       "pageTitle": "BRDS CBT — Student Workspace Command Center"
     },
     "screenshotSaved": "reports/phase13-browser-verification/analytics-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "gk",
+    "routeTitle": "GK Sprint",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/gk-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "sketches",
+    "routeTitle": "Sketch Studio",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/sketches-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "bookmarks",
+    "routeTitle": "Bookmarks & Revision",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 1,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/bookmarks-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "guides",
+    "routeTitle": "Guides & Quick Quizzes",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 4,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/guides-mobile-narrow-360.png"
+  },
+  {
+    "viewport": "Narrow Mobile (360px)",
+    "width": 360,
+    "route": "settings",
+    "routeTitle": "Settings",
+    "metrics": {
+      "viewportWidth": 360,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasHorizontalOverflow": false,
+      "headerRendered": true,
+      "sidebarRendered": true,
+      "mainRendered": true,
+      "cardCount": 2,
+      "pageTitle": "BRDS CBT — Student Workspace Command Center"
+    },
+    "screenshotSaved": "reports/phase13-browser-verification/settings-mobile-narrow-360.png"
   }
 ]

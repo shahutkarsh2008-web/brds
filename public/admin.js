@@ -163,7 +163,7 @@
     }
 
     let imgHtml = '';
-    if (/^\/media\/[a-zA-Z0-9_-]+\.(svg|png|jpg|jpeg|webp)$/.test(imgUrl)) {
+    if (imgUrl.startsWith('data:image/') || /^\/media\/[a-zA-Z0-9_-]+\.(svg|png|jpg|jpeg|webp)$/.test(imgUrl)) {
       imgHtml = `<div style="margin:10px 0;"><img src="${imgUrl}" alt="${escapeText(imgAlt || 'Preview image')}" style="max-width:200px; border:1px solid #ccc; border-radius:4px;"></div>`;
     }
 
@@ -181,6 +181,24 @@
   function setupEventListeners() {
     ['q-prompt', 'q-image-url', 'q-image-alt', 'nat-min', 'nat-max'].forEach(id => {
       el(id).addEventListener('input', updatePreview);
+    });
+
+    el('q-prompt').addEventListener('paste', e => {
+      const items = e.clipboardData?.items;
+      if (!items) return;
+      for (const item of items) {
+        if (item.type.indexOf('image') !== -1) {
+          const blob = item.getAsFile();
+          const reader = new FileReader();
+          reader.onload = event => {
+            el('q-image-url').value = event.target.result;
+            if (!el('q-image-alt').value) el('q-image-alt').value = 'Pasted diagram image';
+            updatePreview();
+          };
+          reader.readAsDataURL(blob);
+          break;
+        }
+      }
     });
 
     el('btn-save-question').addEventListener('click', () => {

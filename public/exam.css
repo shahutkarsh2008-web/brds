@@ -1,4 +1,4 @@
-/* BRDS CBT Exam System - Premium Exam Workspace Styles (exam.css) */
+/* Northstar identity — exam workspace */
 :root {
   --brds-red: #E31E24;
   --brds-red-hover: #C4181D;
@@ -17,6 +17,8 @@
   --shadow-lg: 0 20px 40px -15px rgba(15, 23, 42, 0.12);
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+
+:root { --brds-red:#5b5ce2; --brds-red-hover:#4748c4; --brds-dark:#111a35; --brds-yellow:#e0a11a; --bg-main:#f4f6fb; --border-color:#e1e5f0; }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 [hidden] { display: none !important; }

@@ -19,7 +19,19 @@ async function post(path, data) {
     signal: AbortSignal.timeout(45000)
   });
   const result = await response.json();
-  if (!response.ok) throw new Error(result.error || 'Unable to sign in.');
+  if (!response.ok) {
+    if (result.redirectSignup) {
+      const loginId = document.querySelector('#login-id')?.value?.trim() || '';
+      message.textContent = 'Account not found. Redirecting to self-registration…';
+      setTimeout(() => {
+        location.assign(`/signup.html?loginId=${encodeURIComponent(loginId)}`);
+      }, 1000);
+      const err = new Error(result.error || 'Account not registered.');
+      err.redirectSignup = true;
+      throw err;
+    }
+    throw new Error(result.error || 'Unable to sign in.');
+  }
   return result;
 }
 
@@ -62,17 +74,26 @@ otpForm.addEventListener('submit', event => {
   event.preventDefault();
   run(otpForm, async () => {
     const result = await post('/api/verify-otp', { code: document.querySelector('#code').value.trim() });
-    const target = (result.user && result.user.role === 'admin') ? '/admin' : (result.redirect || '/');
+    const target = (result.user && ['admin', 'teacher'].includes(result.user.role)) ? '/admin.html' : '/dashboard.html';
     location.assign(target);
   });
 });
 
-document.querySelector('#restart').addEventListener('click', () => location.assign('/login'));
+document.querySelector('#restart').addEventListener('click', () => location.assign('/login.html'));
 
 fetch('/api/me').then(response => response.json()).then(result => {
   if (result && result.user) {
-    const target = result.user.role === 'admin' ? '/admin' : `/${result.user.role}`;
-    location.replace(target);
+    const target = ['admin', 'teacher'].includes(result.user.role) ? '/admin.html' : '/dashboard.html';
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('redirect') === 'true') {
+      location.replace(target);
+      return;
+    }
+    const msgEl = document.querySelector('#message');
+    if (msgEl) {
+      msgEl.className = 'message info';
+      msgEl.innerHTML = `Signed in as <strong>${result.user.name}</strong> (${result.user.role}). <a href="${target}" style="color: #e31e24; font-weight: 700; text-decoration: underline;">Go to Workspace ↗</a>`;
+    }
   }
 }).catch(() => {});
 
@@ -82,7 +103,7 @@ if (togglePassBtn) {
     const passInput = document.querySelector('#password');
     const isPass = passInput.type === 'password';
     passInput.type = isPass ? 'text' : 'password';
-    togglePassBtn.textContent = isPass ? '🙈' : '👁️';
+    togglePassBtn.textContent = isPass ? 'Hide' : 'Show';
   });
 }
 

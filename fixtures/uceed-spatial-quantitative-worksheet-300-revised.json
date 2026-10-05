@@ -1,0 +1,6089 @@
+{
+  "id": "uceed-spatial-quantitative-worksheet-300-revised",
+  "title": "BRDS / ORIGINAL UCEED PRACTICE / REVISED - 300 questions / 15 topics / revised diversity edition",
+  "durationSeconds": 9000,
+  "totalQuestions": 300,
+  "maxMarks": 1198.0,
+  "instructions": "BRDS Original Practice Worksheet (300 questions).",
+  "sections": [
+    {
+      "id": "sec_ws_01",
+      "title": "Perspective / depth"
+    },
+    {
+      "id": "sec_ws_02",
+      "title": "Viewpoint / orientation"
+    },
+    {
+      "id": "sec_ws_03",
+      "title": "Cross-sections"
+    },
+    {
+      "id": "sec_ws_04",
+      "title": "Shadows"
+    },
+    {
+      "id": "sec_ws_05",
+      "title": "Spatial patterns"
+    },
+    {
+      "id": "sec_ws_06",
+      "title": "Percentages"
+    },
+    {
+      "id": "sec_ws_07",
+      "title": "Ratios"
+    },
+    {
+      "id": "sec_ws_08",
+      "title": "Proportions"
+    },
+    {
+      "id": "sec_ws_09",
+      "title": "Averages"
+    },
+    {
+      "id": "sec_ws_10",
+      "title": "Time / clocks"
+    },
+    {
+      "id": "sec_ws_11",
+      "title": "Speed / distance"
+    },
+    {
+      "id": "sec_ws_12",
+      "title": "Counting"
+    },
+    {
+      "id": "sec_ws_13",
+      "title": "Probability"
+    },
+    {
+      "id": "sec_ws_14",
+      "title": "Basic algebra"
+    },
+    {
+      "id": "sec_ws_15",
+      "title": "Geometry"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ws-uceed-spat-q001",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A pinhole image of a 3 m tower is 20 mm high when focal length is 40 mm. What is the camera-to-tower distance in metres?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.01.png",
+      "imageAlt": "Practice Q1 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q002",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "In an ideal perspective view, parallel railway tracks approach the horizon. Do they intersect in physical 3D space? Write YES or NO.",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.02.png",
+      "imageAlt": "Practice Q2 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q003",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A 3 m object at depth 6 m and a 2 m object at depth 4 m are photographed with the same focal length. What is first image height divided by second?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.03.png",
+      "imageAlt": "Practice Q3 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q004",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A camera moves 3 m straight towards a fixed object. Its image height becomes 2 times the original. What was the original depth?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q005",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Three opaque cards on one viewing ray have depths 3, 5, 7. Each covers the same image region. What is the depth of the visible card?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.05.png",
+      "imageAlt": "Practice Q5 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q006",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Under orthographic projection, equal-height posts at depths 3 m and 15 m are viewed front-on. What is first image height divided by second?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.06.png",
+      "imageAlt": "Practice Q6 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q007",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Equal-size objects have image heights 8 mm and 4 mm in one pinhole photo. The first is 6 m away. What is the second depth?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.07.png",
+      "imageAlt": "Practice Q7 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q008",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "An observer looks horizontally from height 3 m above a level ground plane. What is the world height of the horizon plane?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.08.png",
+      "imageAlt": "Practice Q8 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q009",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Focal length doubles while object depth triples, with object height unchanged. If original image height was 18 mm, what is new height?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q010",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A model assumed an object depth of 12, but the true depth is 15. Predicted image height is 10 mm. What is the correct image height?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q011",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A pinhole image of a 4 m tower is 20 mm high when focal length is 40 mm. What is the camera-to-tower distance in metres?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.11.png",
+      "imageAlt": "Practice Q11 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q012",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "In one-point perspective, a box has vertical edges parallel to the picture plane. Do those vertical edges converge to the same finite vanishing point as the depth edges? YES or NO.",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.12.png",
+      "imageAlt": "Practice Q12 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q013",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A 4 m object at depth 6 m and a 2 m object at depth 4 m are photographed with the same focal length. What is first image height divided by second?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.33,
+        "max": 1.3333,
+        "values": [
+          1.33,
+          1.3333,
+          1.333
+        ]
+      },
+      "image": "/media/uceed-spatial-quant-300/01.13.png",
+      "imageAlt": "Practice Q13 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q014",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A camera moves 3 m straight towards a fixed object. Its image height becomes 3 times the original. What was the original depth?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.5,
+        "max": 4.5
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q015",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Three opaque cards on one viewing ray have depths 4, 6, 8. Each covers the same image region. What is the depth of the visible card?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.15.png",
+      "imageAlt": "Practice Q15 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q016",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Under orthographic projection, equal-height posts at depths 4 m and 20 m are viewed front-on. What is first image height divided by second?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.16.png",
+      "imageAlt": "Practice Q16 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q017",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Equal-size objects have image heights 8 mm and 2 mm in one pinhole photo. The first is 6 m away. What is the second depth?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.17.png",
+      "imageAlt": "Practice Q17 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q018",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "An observer looks horizontally from height 4 m above a level ground plane. What is the world height of the horizon plane?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/01.18.png",
+      "imageAlt": "Practice Q18 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q019",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Focal length doubles while object depth triples, with object height unchanged. If original image height was 24 mm, what is new height?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q020",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A model assumed an object depth of 16, but the true depth is 20. Predicted image height is 10 mm. What is the correct image height?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective / depth",
+      "originalQuestionId": "01.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q021",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "You face north, turn right, then turn left 3 quarter-turns. What compass direction do you face?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.01.png",
+      "imageAlt": "Practice Q21 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q022",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A north-facing observer sees a red ball east of them and a blue ball west. Which colour appears on their right?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.02.png",
+      "imageAlt": "Practice Q22 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q023",
+      "sectionId": "sec_ws_02",
+      "type": "MCQ",
+      "prompt": "Objects A, B, C stand west to east in a row. A camera moves from the south side to the north side, still facing the row. What is the middle object in the new view?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.03",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/uceed-spatial-quant-300/02.03.png",
+      "imageAlt": "Practice Q23 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q024",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "For the map shown, look from FRONT. How many unit squares are in the visible orthographic silhouette?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.04.png",
+      "imageAlt": "Practice Q24 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q025",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A labelled row uses x=0 through x=3. A viewer from FRONT sees increasing x left to right. From BACK, what x coordinate appears at the left end?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.05.png",
+      "imageAlt": "Practice Q25 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q026",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A stationary camera is rolled 180 degrees about its viewing axis. A fixed upright arrow originally points up in the image. Which way does it point now?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.06.png",
+      "imageAlt": "Practice Q26 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q027",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "An opaque cube has east face red, west blue, north green, south yellow, top white. A camera directly east of its centre looks horizontally inward. Which labelled face faces the camera?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.07.png",
+      "imageAlt": "Practice Q27 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q028",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A camera is at (3,0,0) and a target at (0,3,0). What is the square of their distance?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.08.png",
+      "imageAlt": "Practice Q28 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q029",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A square map initially has north up. Rotate the map 90 degrees clockwise on the page. Which world direction is now at the top?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.09.png",
+      "imageAlt": "Practice Q29 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q030",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A box has front view width 3 and height 5. Its top view has width 3 and depth 7. What is the hidden depth in its front view?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.10.png",
+      "imageAlt": "Practice Q30 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q031",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "You face north, turn right, then turn left 4 quarter-turns. What compass direction do you face?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.11.png",
+      "imageAlt": "Practice Q31 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q032",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "You face west. A lamp is to the north. Does it appear on your left or right? Write LEFT or RIGHT.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.12.png",
+      "imageAlt": "Practice Q32 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q033",
+      "sectionId": "sec_ws_02",
+      "type": "MCQ",
+      "prompt": "Cards A,B,C stand west to east. From the south looking north, which appears at the left end?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.13",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/uceed-spatial-quant-300/02.13.png",
+      "imageAlt": "Practice Q33 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q034",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "For the map shown, look from FRONT. How many unit squares are in the visible orthographic silhouette?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 11.0,
+        "max": 11.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.14.png",
+      "imageAlt": "Practice Q34 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q035",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A labelled row uses x=0 through x=4. A viewer from FRONT sees increasing x left to right. From BACK, what x coordinate appears at the left end?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.15.png",
+      "imageAlt": "Practice Q35 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q036",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A camera rolls 90 degrees clockwise around its sightline while an arrow stays vertically up in the world. Which direction does that arrow appear to point in the new image?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.16.png",
+      "imageAlt": "Practice Q36 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q037",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A cube has east red, north green, top white. An orthographic camera is diagonally northeast and above the cube. How many of these three faces have positive visible area?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.17.png",
+      "imageAlt": "Practice Q37 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q038",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A camera is at (4,0,0) and a target at (0,4,0). What is the square of their distance?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 32.0,
+        "max": 32.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.18.png",
+      "imageAlt": "Practice Q38 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q039",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A map shows north up. Turn the map 180 degrees, then the viewer turns their head 180 degrees about the sightline. Which direction appears up relative to their eyes?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.19.png",
+      "imageAlt": "Practice Q39 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q040",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A box has front view width 4 and height 5. Its top view has width 4 and depth 7. What is the hidden depth in its front view?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Viewpoint / orientation",
+      "originalQuestionId": "02.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-quant-300/02.20.png",
+      "imageAlt": "Practice Q40 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q041",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A sphere radius is 5. A slicing plane is 3 from its centre. What is the squared section radius?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.01.png",
+      "imageAlt": "Practice Q41 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q042",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A cone height is 9, radius 6. A parallel slice is 3 from the apex. What is its section radius?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.02.png",
+      "imageAlt": "Practice Q42 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q043",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A cube occupies 0<=x,y,z<=3. Slice by x+y=3. What is the section area divided by sqrt(2)?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.03.png",
+      "imageAlt": "Practice Q43 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q044",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A hollow pipe has outer radius 5 and inner radius 3. A plane perpendicular to its axis cuts it. What is section area divided by pi?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.04.png",
+      "imageAlt": "Practice Q44 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q045",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A two-column no-gap solid has heights 3 and 5. A horizontal plane at height 3.5 cuts how many unit-cell columns?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.05.png",
+      "imageAlt": "Practice Q45 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q046",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A plane cuts a tetrahedron without passing through a vertex. What is the largest possible number of sides of its section?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q047",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A plane is exactly 3 units from the centre of a sphere of radius 3. What is the section area?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.07.png",
+      "imageAlt": "Practice Q47 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q048",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A right circular cylinder of radius 3 is cut obliquely through the curved wall without reaching its caps. Is the section a circle or an ellipse?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.08.png",
+      "imageAlt": "Practice Q48 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q049",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A prism has cross-section area 24. Two planes perpendicular to its extrusion direction cut its interior at different distances from an end. What is the difference in their section areas?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.09.png",
+      "imageAlt": "Practice Q49 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q050",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A stepped solid has horizontal section area 3 for its bottom 2 units and 6 for the next 3 units. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.10.png",
+      "imageAlt": "Practice Q50 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q051",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A sphere radius is 6. A slicing plane is 4 from its centre. What is the squared section radius?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.11.png",
+      "imageAlt": "Practice Q51 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q052",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A cone height is 12, radius 6. A parallel slice is 4 from the apex. What is its section radius?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.12.png",
+      "imageAlt": "Practice Q52 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q053",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A cube occupies 0<=x,y,z<=4. Slice by x+y=4. What is the section area divided by sqrt(2)?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.13.png",
+      "imageAlt": "Practice Q53 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q054",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A hollow pipe has outer radius 6 and inner radius 4. A plane perpendicular to its axis cuts it. What is section area divided by pi?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.14.png",
+      "imageAlt": "Practice Q54 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q055",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A two-column no-gap solid has heights 4 and 6. A horizontal plane at height 4.5 cuts how many unit-cell columns?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.15.png",
+      "imageAlt": "Practice Q55 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q056",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A cube is cut by a plane through the midpoints of six edges, perpendicular to a body diagonal. What is the section side count?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q057",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A plane is exactly 4 units from the centre of a sphere of radius 4. What is the section area?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.17.png",
+      "imageAlt": "Practice Q57 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q058",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A right circular cylinder of radius 4 is cut obliquely through the curved wall without reaching its caps. Is the section a circle or an ellipse?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.18.png",
+      "imageAlt": "Practice Q58 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q059",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A prism has cross-section area 32. Two planes perpendicular to its extrusion direction cut its interior at different distances from an end. What is the difference in their section areas?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.19.png",
+      "imageAlt": "Practice Q59 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q060",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A stepped solid has horizontal section area 4 for its bottom 2 units and 7 for the next 3 units. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections",
+      "originalQuestionId": "03.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 29.0,
+        "max": 29.0
+      },
+      "image": "/media/uceed-spatial-quant-300/03.20.png",
+      "imageAlt": "Practice Q60 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q061",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A 3 m pole casts a 6 m shadow. A 12 m pole under the same sun casts how long a shadow?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.01.png",
+      "imageAlt": "Practice Q61 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q062",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A lamp is 6 m above ground. A 2 m pole is 3 m from the lamp base. What is its shadow length beyond its base?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.5,
+        "max": 1.5
+      },
+      "image": "/media/uceed-spatial-quant-300/04.02.png",
+      "imageAlt": "Practice Q62 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q063",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "Two projected rectangular shadows each have area 30; their overlap area is 9. What is their union area?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 51.0,
+        "max": 51.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.03.png",
+      "imageAlt": "Practice Q63 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q064",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "Sunlight arrives from the east. A vertical pole casts a shadow on level ground. In what compass direction does it extend?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.04.png",
+      "imageAlt": "Practice Q64 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q065",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A vertical beam shines down on 3 disjoint unit-cube columns of arbitrary heights. What is the floor-shadow area?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.05.png",
+      "imageAlt": "Practice Q65 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q066",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A pole is 3 m high. Sun elevation is 45 degrees. How long is its level-ground shadow?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.06.png",
+      "imageAlt": "Practice Q66 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q067",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A 2 m pole is 3 m from a lamp base. Its shadow beyond the base is 3 m. What is lamp height?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.07.png",
+      "imageAlt": "Practice Q67 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q068",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A sphere and a cylinder both cast the same circular shadow under vertical parallel light. Does that alone prove their volumes are equal? YES or NO.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q069",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A point light is 3 m before an object plane and 9 m before a parallel screen. A 2 m silhouette on the object plane makes how high a screen shadow?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q070",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "On a grid, one shadow covers cells (0,0),(1,0),(2,0); another covers (1,0),(1,1),(1,2),(1,3). How many distinct cells are shadowed?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.10.png",
+      "imageAlt": "Practice Q70 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q071",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A 4 m pole casts a 6 m shadow. A 12 m pole under the same sun casts how long a shadow?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.11.png",
+      "imageAlt": "Practice Q71 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q072",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A lamp is 6 m above ground. A 2 m pole is 4 m from the lamp base. What is its shadow length beyond its base?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.12.png",
+      "imageAlt": "Practice Q72 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q073",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "Two projected rectangular shadows each have area 40; their overlap area is 12. What is their union area?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 68.0,
+        "max": 68.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.13.png",
+      "imageAlt": "Practice Q73 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q074",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A light source moves from east to north while its elevation remains fixed. What direction is the pole shadow now?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.14.png",
+      "imageAlt": "Practice Q74 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q075",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A vertical beam shines down on 4 disjoint unit-cube columns of arbitrary heights. What is the floor-shadow area?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.15.png",
+      "imageAlt": "Practice Q75 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q076",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A pole is 4 m high. Sun elevation is 45 degrees. How long is its level-ground shadow?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.16.png",
+      "imageAlt": "Practice Q76 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q077",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A 2 m pole is 4 m from a lamp base. Its shadow beyond the base is 4 m. What is lamp height?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.17.png",
+      "imageAlt": "Practice Q77 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q078",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A cylinder radius 2 and a sphere radius 2 both cast radius-2 circles under vertical light. The cylinder height is 4. What is cylinder volume divided by sphere volume?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.5,
+        "max": 1.5
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q079",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A point light is 4 m before an object plane and 12 m before a parallel screen. A 2 m silhouette on the object plane makes how high a screen shadow?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q080",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "On a grid, one shadow covers cells (0,0),(1,0),(2,0); another covers (1,0),(1,1),(1,2),(1,4). How many distinct cells are shadowed?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shadows",
+      "originalQuestionId": "04.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-quant-300/04.20.png",
+      "imageAlt": "Practice Q80 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q081",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A marker starts at (3,1). Each step alternates swapping coordinates and negating both, beginning with swap. What is x after three steps?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -3.0,
+        "max": -3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q082",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A dot pattern grows as filled squares of sides 1,2,3,... . How many new dots are added when side grows from 3 to 4?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.02.png",
+      "imageAlt": "Practice Q82 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q083",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "Rows in a triangular pattern contain 1,2,...,6 dots. What is total dots?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.03.png",
+      "imageAlt": "Practice Q83 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q084",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "Cells repeat red, blue, green, yellow from position 1. What colour is position 13?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.04.png",
+      "imageAlt": "Practice Q84 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q085",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A 3 x 3 checkerboard has a black top-left cell. How many black cells?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.05.png",
+      "imageAlt": "Practice Q85 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q086",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A path starts facing east. At each corner it turns left 90 degrees. After 5 corners, what direction is it facing?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q087",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A stage replaces each blue triangle by three half-side triangles, deleting the middle. Starting with one, how many blue triangles exist at stage 3?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 27.0,
+        "max": 27.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q088",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A filled 3 x 3 square gains one complete ring of cells around it. How many cells are added?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.08.png",
+      "imageAlt": "Practice Q88 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q089",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A dot has successive x positions 0,1,3,6,10. Each displacement is one unit larger than the previous. What is its next x position?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q090",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A row of 10 distinct tiles shifts 4 places right with wraparound per step. How many steps first restore the row?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.10.png",
+      "imageAlt": "Practice Q90 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q091",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A marker starts at (4,1). Each step alternates swapping coordinates and negating both, beginning with swap. What is x after three steps?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -4.0,
+        "max": -4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q092",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A dot pattern grows as filled squares of sides 1,2,3,... . How many new dots are added when side grows from 4 to 5?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.12.png",
+      "imageAlt": "Practice Q92 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q093",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "Rows in a triangular pattern contain 1,2,...,7 dots. What is total dots?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 28.0,
+        "max": 28.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.13.png",
+      "imageAlt": "Practice Q93 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q094",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "Cells repeat red, blue, green, yellow from position 1. What colour is position 14?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.14.png",
+      "imageAlt": "Practice Q94 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q095",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A 4 x 4 checkerboard has a black top-left cell. How many black cells?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.15.png",
+      "imageAlt": "Practice Q95 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q096",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A path starts facing east. At each corner it turns left 90 degrees. After 6 corners, what direction is it facing?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q097",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A stage replaces each blue triangle by three half-side triangles, deleting the middle. Starting with one, how many blue triangles exist at stage 4?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 81.0,
+        "max": 81.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q098",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A filled 4 x 4 square gains one complete ring of cells around it. How many cells are added?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.18.png",
+      "imageAlt": "Practice Q98 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q099",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A dot starts at x=3. Its successive rightward displacements are 2,4,6,8. What is x after all four moves?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 23.0,
+        "max": 23.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q100",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A row of 12 distinct tiles shifts 8 places right with wraparound per step. How many steps first restore the row?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Spatial patterns",
+      "originalQuestionId": "05.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-quant-300/05.20.png",
+      "imageAlt": "Practice Q100 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q101",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "After a 20% discount a bag costs Rs 240. What was its marked price?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 300.0,
+        "max": 300.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q102",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A price rises 25% then falls 20%. Original price is Rs 300. What is final price?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 300.0,
+        "max": 300.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q103",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A square side increases by 30%. What is percentage increase in area?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 69.0,
+        "max": 69.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q104",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Mix 3 litres of 20% solution with 3 litres of 60% solution. What is final percentage?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 40.0,
+        "max": 40.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q105",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Conversion rises from 15% to 30%. What is relative percentage increase?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 100.0,
+        "max": 100.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q106",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "An item costs Rs 240 and sells at Rs 300. What is profit percent on cost?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 25.0,
+        "max": 25.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q107",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "In a group of 120, 25% wear glasses. Half the glasses wearers are students. What percentage of the whole group are students wearing glasses?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.5,
+        "max": 12.5
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q108",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A price increases 25%. With the same budget, by what percentage must purchased quantity fall?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q109",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A tank loses 10% of its remaining water each hour. It starts with 3000 ml. How much remains after two hours?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2430.0,
+        "max": 2430.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q110",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Of 300 people, 60% like drawing, 50% like music, and 20% like neither. How many like both?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 90.0,
+        "max": 90.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q111",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "After a 20% discount a bag costs Rs 320. What was its marked price?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 400.0,
+        "max": 400.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q112",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A price rises 25% then falls 20%. Original price is Rs 400. What is final price?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 400.0,
+        "max": 400.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q113",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A square side increases by 40%. What is percentage increase in area?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 96.0,
+        "max": 96.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q114",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Mix 4 litres of 20% solution with 4 litres of 60% solution. What is final percentage?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 40.0,
+        "max": 40.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q115",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Conversion rises from 20% to 40%. What is relative percentage increase?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 100.0,
+        "max": 100.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q116",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "An item costs Rs 320 and sells at Rs 400. What is profit percent on cost?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 25.0,
+        "max": 25.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q117",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "In a group of 160, 25% wear glasses. Half the glasses wearers are students. What percentage of the whole group are students wearing glasses?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.5,
+        "max": 12.5
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q118",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A buyer reduces quantity by 25% while keeping spending unchanged. By what exact percentage did unit price rise?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 33.33,
+        "max": 33.3333,
+        "values": [
+          33.33,
+          33.3333,
+          33.333
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q119",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A tank loses 10% of its remaining water each hour. It starts with 4000 ml. How much remains after two hours?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3240.0,
+        "max": 3240.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q120",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Of 400 people, 60% like drawing, 50% like music, and 20% like neither. How many like both?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Percentages",
+      "originalQuestionId": "06.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 120.0,
+        "max": 120.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q121",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A:B=2:3 and B:C=4:3. What is A/C?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.8889,
+        "max": 0.89,
+        "values": [
+          0.8889,
+          0.89,
+          0.889
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q122",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Red:blue beads=2:3. Add 3 red beads and the counts become equal. How many blue beads were originally present?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q123",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Divide Rs 180 among A,B,C in ratio 1:2:3. What does B receive?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 60.0,
+        "max": 60.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q124",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Two lengths have ratio 3:5 and difference 6. What is their sum?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q125",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Similar solids have length ratio 2:3. What is their volume ratio first divided by second?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.296,
+        "max": 0.3,
+        "values": [
+          0.296,
+          0.3,
+          0.2963
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q126",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Tea A costs Rs 60/kg and tea B Rs 120/kg. Mix to price Rs 90/kg. What is A mass divided by B mass?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q127",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A and B take 3 and 5 hours for equal tasks. What is their speed ratio A/B?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.6667,
+        "max": 1.67,
+        "values": [
+          1.6667,
+          1.67,
+          1.667
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q128",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A mix has water:juice=3:2, total 15 litres. Remove 3 litres of pure water only. What is new water/juice ratio?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q129",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A/B=2, B/C=3. If C=3, what is A+B+C?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 30.0,
+        "max": 30.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q130",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Two similar figures have area ratio 9:9. What is corresponding perimeter ratio?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q131",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A:B=2:3 and B:C=4:4. What is A/C?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.6667,
+        "max": 0.67,
+        "values": [
+          0.6667,
+          0.67,
+          0.667
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q132",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Red:blue beads=2:3. Add 4 red beads and the counts become equal. How many blue beads were originally present?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q133",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Divide Rs 240 among A,B,C in ratio 1:2:3. What does B receive?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 80.0,
+        "max": 80.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q134",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Two lengths have ratio 3:5 and difference 8. What is their sum?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 32.0,
+        "max": 32.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q135",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Similar solids have length ratio 2:4. What is their volume ratio first divided by second?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.125,
+        "max": 0.125
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q136",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Tea A costs Rs 80/kg and tea B Rs 160/kg. Mix to price Rs 120/kg. What is A mass divided by B mass?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q137",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A and B take 4 and 6 hours for equal tasks. What is their speed ratio A/B?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.5,
+        "max": 1.5
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q138",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A mix has water:juice=3:2, total 20 litres. Remove 4 litres of pure water only. What is new water/juice ratio?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q139",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A/B=2, B/C=3. If C=4, what is A+B+C?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 40.0,
+        "max": 40.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q140",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Two similar figures have area ratio 9:16. What is corresponding perimeter ratio?",
+      "topic": "Arithmetic",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Ratios",
+      "originalQuestionId": "07.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.75,
+        "max": 0.75
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q141",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "3 workers take 12 days. Six equal-rate workers take how many days for the same work?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q142",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A map linear scale is 1:300. A region measures 2 square cm on it. What is its real area in square cm?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 180000.0,
+        "max": 180000.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q143",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "Output is proportional to workers times hours. 3 workers in 4 hours make 24 pieces. How many do 6 workers in 3 hours make?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 36.0,
+        "max": 36.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q144",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "Illumination is inversely proportional to squared distance. It is 27 units at 2 m. What is it at 6 m?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q145",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A recipe uses 300 g flour for 3 servings. How many grams for 7 servings?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 700.0,
+        "max": 700.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q146",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "1 inch=25 mm, 1 inch=6 pica, 1 pica=12 points. How many points are in 75 mm?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 216.0,
+        "max": 216.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q147",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A print shop charges Rs 40 setup plus Rs 3 per page. What is the bill for 10 pages?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 70.0,
+        "max": 70.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q148",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A model-to-real length scale is 1:3. Model volume is 5 cubic cm. What is real volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 135.0,
+        "max": 135.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q149",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "3 machines make 120 items in 2 hours. At equal rates, how many hours do 6 machines need for 360 items?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q150",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "An image is 12 cm wide and 9 cm high. Resize without distortion to width 20 cm. What is its new height?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q151",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "4 workers take 12 days. Six equal-rate workers take how many days for the same work?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q152",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A map linear scale is 1:400. A region measures 2 square cm on it. What is its real area in square cm?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 320000.0,
+        "max": 320000.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q153",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "Output is proportional to workers times hours. 4 workers in 4 hours make 32 pieces. How many do 6 workers in 3 hours make?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 36.0,
+        "max": 36.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q154",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "Illumination is inversely proportional to squared distance. It is 36 units at 2 m. What is it at 6 m?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q155",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A recipe uses 300 g flour for 4 servings. How many grams for 9 servings?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 675.0,
+        "max": 675.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q156",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "1 inch=25 mm, 1 inch=6 pica, 1 pica=12 points. How many points are in 100 mm?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 288.0,
+        "max": 288.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q157",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A print shop charges Rs 40 setup plus Rs 4 per page. What is the bill for 10 pages?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 80.0,
+        "max": 80.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q158",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A model-to-real length scale is 1:4. Model volume is 5 cubic cm. What is real volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 320.0,
+        "max": 320.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q159",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "4 machines make 120 items in 2 hours. At equal rates, how many hours do 8 machines need for 360 items?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q160",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "An image is 16 cm wide and 12 cm high. Resize without distortion to width 20 cm. What is its new height?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Proportions",
+      "originalQuestionId": "08.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q161",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "3 students average 20 and 6 students average 26. What is their combined mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q162",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "The mean of 3 readings is 12. One reading was written as 2 instead of 11. What is corrected mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q163",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "5 numbers average 10. Remove a number equal to 18. What is the remaining average?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q164",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "Four test scores average 30. Three are 24, 27, 33. What is the fourth?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 36.0,
+        "max": 36.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q165",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A rider covers equal distances at 18 and 36 km/h. What is the journey average speed?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q166",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "One class has 1 student scoring 100; another has 3 students each scoring 0. What is the overall mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 25.0,
+        "max": 25.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q167",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "After 3 quizzes your average is 8. To average 9 after the next quiz, what must your next score be?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q168",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "The average of 7 consecutive integers is 20. What is the largest?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 23.0,
+        "max": 23.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q169",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A data set has mean 8. Each value is multiplied by 3 and then reduced by 2. What is new mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 22.0,
+        "max": 22.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q170",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "Group A has 3 members, mean 10. Group B has 3 members, mean 20. A member scoring 10 moves from A to B. What is new B mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 17.5,
+        "max": 17.5
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q171",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "4 students average 20 and 8 students average 26. What is their combined mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q172",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "The mean of 4 readings is 12. One reading was written as 2 instead of 14. What is corrected mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q173",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "6 numbers average 10. Remove a number equal to 20. What is the remaining average?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q174",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "Four test scores average 40. Three are 32, 36, 44. What is the fourth?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 48.0,
+        "max": 48.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q175",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A rider covers equal distances at 24 and 48 km/h. What is the journey average speed?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 32.0,
+        "max": 32.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q176",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "One class has 1 student scoring 100; another has 4 students each scoring 0. What is the overall mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q177",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "After 4 quizzes your average is 8. To average 9 after the next quiz, what must your next score be?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 13.0,
+        "max": 13.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q178",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "The average of 9 consecutive integers is 20. What is the largest?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q179",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A data set has mean 9. Each value is multiplied by 3 and then reduced by 2. What is new mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 25.0,
+        "max": 25.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q180",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "Group A has 4 members, mean 10. Group B has 4 members, mean 20. A member scoring 10 moves from A to B. What is new B mean?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Averages",
+      "originalQuestionId": "09.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q181",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "What is the smaller hand angle at 3:20?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "image": "/media/uceed-spatial-quant-300/10.01.png",
+      "imageAlt": "Practice Q181 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q182",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "How many minutes after 3:00 do the hands first coincide?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.36,
+        "max": 16.364,
+        "values": [
+          16.36,
+          16.364,
+          16.3636
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q183",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A clock gains 3 minutes per actual hour. It is set right at noon. How far ahead is it after 5 actual hours?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q184",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A timer starts at 23:50 and runs 63 minutes. How many minutes after midnight does it stop?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 53.0,
+        "max": 53.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q185",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "Today is Monday. What day is it after 30 days?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q186",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A flight departs at 09:00 in zone UTC+2 and lands after 3 hours in UTC+5. What is local arrival hour on a 24-hour clock?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q187",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "Two bells ring every 3 and 4 minutes and ring together now. How many minutes until their next simultaneous ring?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q188",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "An ordinary clock reads 3:15. What apparent hour-and-minute time is obtained from its vertical-mirror hand positions on an unmirrored dial?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/10.08.png",
+      "imageAlt": "Practice Q188 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q189",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "One workshop runs 09:20-11:05, another 11:40-13:10. What is total workshop time in minutes, excluding the break?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 195.0,
+        "max": 195.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q190",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "How many degrees does the hour hand move in 60 minutes?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 30.0,
+        "max": 30.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q191",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "What is the smaller hand angle at 4:20?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "image": "/media/uceed-spatial-quant-300/10.11.png",
+      "imageAlt": "Practice Q191 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q192",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "How many minutes after 4:00 do the hands first coincide?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 21.818,
+        "max": 21.82,
+        "values": [
+          21.818,
+          21.82,
+          21.8182
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q193",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A clock gains 4 minutes per actual hour. It is set right at noon. How far ahead is it after 5 actual hours?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q194",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A timer starts at 23:50 and runs 64 minutes. How many minutes after midnight does it stop?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 54.0,
+        "max": 54.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q195",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "Today is Monday. What day is it after 40 days?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q196",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A flight departs at 09:00 in zone UTC+2 and lands after 4 hours in UTC+5. What is local arrival hour on a 24-hour clock?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q197",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "Two bells ring every 4 and 5 minutes and ring together now. How many minutes until their next simultaneous ring?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q198",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "An ordinary clock reads 4:15. What apparent hour-and-minute time is obtained from its vertical-mirror hand positions on an unmirrored dial?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-quant-300/10.18.png",
+      "imageAlt": "Practice Q198 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q199",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A timed task takes 1 h 45 min including a 15 min interruption. Another takes 2 h including a 20 min interruption. What is total active time in minutes?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 190.0,
+        "max": 190.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q200",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "How many degrees does the hour hand move in 80 minutes?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Time / clocks",
+      "originalQuestionId": "10.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 40.0,
+        "max": 40.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q201",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A walker at 3 km/h starts 2 hours before a cyclist at 9 km/h. How many hours after the cyclist starts do they meet?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q202",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Two walkers start 30 km apart and approach at 6 and 9 km/h. When do they meet in hours?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q203",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A 60 m train passes a 90 m platform at 10 m/s. How many seconds to clear it?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q204",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A boat speed in still water is 8, current speed 2, both km/h. How long in hours to go 12 km upstream?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q205",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A car travels equal distances at 30 and 60. What is mean speed?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 40.0,
+        "max": 40.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q206",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A speed is 54 km/h. What is it in m/s?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q207",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A rider goes 12 km in 1 hour, rests 3 hours, then goes 12 km in 1 hour. What is average speed over the whole elapsed journey?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.8,
+        "max": 4.8
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q208",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Two runners move in the same direction on a 300 m track, at 5 and 3 m/s, starting together. How many seconds until the faster laps the slower?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 150.0,
+        "max": 150.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q209",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Position is 0 m at t=0, 12 m at t=2 s and 3 m at t=5 s. What total distance was travelled if motion is monotonic on each interval?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "image": "/media/uceed-spatial-quant-300/11.09.png",
+      "imageAlt": "Practice Q209 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q210",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A trip is 30 km and must take 2 hours. First hour covers 12 km. What speed is needed for the second hour?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q211",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A walker at 4 km/h starts 2 hours before a cyclist at 12 km/h. How many hours after the cyclist starts do they meet?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q212",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Two walkers start 40 km apart and approach at 8 and 12 km/h. When do they meet in hours?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q213",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A 80 m train passes a 120 m platform at 10 m/s. How many seconds to clear it?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q214",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A boat speed in still water is 9, current speed 2, both km/h. How long in hours to go 14 km upstream?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q215",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A car travels equal distances at 40 and 80. What is mean speed?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 53.33,
+        "max": 53.3333,
+        "values": [
+          53.33,
+          53.3333,
+          53.333
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q216",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A speed is 72 km/h. What is it in m/s?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q217",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A rider goes 12 km in 1 hour, rests 4 hours, then goes 12 km in 1 hour. What is average speed over the whole elapsed journey?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q218",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Two runners move in the same direction on a 400 m track, at 5 and 3 m/s, starting together. How many seconds until the faster laps the slower?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 200.0,
+        "max": 200.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q219",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Position is 0 m at t=0, 16 m at t=2 s and 4 m at t=5 s. What total distance was travelled if motion is monotonic on each interval?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 28.0,
+        "max": 28.0
+      },
+      "image": "/media/uceed-spatial-quant-300/11.19.png",
+      "imageAlt": "Practice Q219 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q220",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A trip is 40 km and must take 2 hours. First hour covers 16 km. What speed is needed for the second hour?",
+      "topic": "Distance and speed",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Speed / distance",
+      "originalQuestionId": "11.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q221",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A grid has 3 rows and 4 columns. Count all axis-aligned rectangles, including squares.",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 60.0,
+        "max": 60.0
+      },
+      "image": "/media/uceed-spatial-quant-300/12.01.png",
+      "imageAlt": "Practice Q221 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q222",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many three-digit numbers use digits 1 through 5 without repetitions?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 60.0,
+        "max": 60.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q223",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Move right/up from (0,0) to (3,2). How many shortest paths avoid (1,1)?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q224",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Choose 2 different posters from 6, with order irrelevant. How many selections?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q225",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "5 distinct people sit around a circular table. Rotations count as the same arrangement, reflections as different. How many arrangements?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q226",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Among integers 1 through 90, how many are divisible by 2 or 3?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 60.0,
+        "max": 60.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q227",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many distinct arrangements of letters AABB exist?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q228",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A bag has 3 sock colours with many of each. Without looking, how many socks guarantee a same-colour pair?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q229",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "5 straight cuts lie in general position inside a sheet. What is the maximum number of pieces?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q230",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "6 switches can each be ON or OFF. How many configurations have exactly one switch ON?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q231",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A grid has 4 rows and 4 columns. Count all axis-aligned rectangles, including squares.",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 100.0,
+        "max": 100.0
+      },
+      "image": "/media/uceed-spatial-quant-300/12.11.png",
+      "imageAlt": "Practice Q231 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q232",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many three-digit numbers use digits 1 through 6 without repetitions?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 120.0,
+        "max": 120.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q233",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Move right/up from (0,0) to (4,2). How many shortest paths avoid (1,1)?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q234",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Choose 2 different posters from 7, with order irrelevant. How many selections?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 21.0,
+        "max": 21.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q235",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "6 distinct people sit around a circular table. Rotations count as the same arrangement, reflections as different. How many arrangements?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 120.0,
+        "max": 120.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q236",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Among integers 1 through 120, how many are divisible by 2 or 3?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 80.0,
+        "max": 80.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q237",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many distinct arrangements of letters AABC exist?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q238",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A bag has 4 sock colours with many of each. Without looking, how many socks guarantee a same-colour pair?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q239",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "6 straight cuts lie in general position inside a sheet. What is the maximum number of pieces?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 22.0,
+        "max": 22.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q240",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "7 switches can each be ON or OFF. How many configurations have exactly one switch ON?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Counting",
+      "originalQuestionId": "12.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q241",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A bag has 3 red and 2 blue beads. Draw two without replacement. What is probability both are red?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.3,
+        "max": 0.3
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q242",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Flip 3 independent fair coins. What is probability of at least one head?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.875,
+        "max": 0.875
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q243",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A fair die result is known to be greater than 3. What is probability that it is 6?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.33,
+        "max": 0.3333,
+        "values": [
+          0.33,
+          0.3333,
+          0.333
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q244",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Two fair dice are rolled. What is probability of sum 6?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.1389,
+        "max": 0.14,
+        "values": [
+          0.1389,
+          0.14,
+          0.139
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q245",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Two independent machines work with probabilities 1/2 and 3/4. What is probability both work?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.375,
+        "max": 0.375
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q246",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "12 independent fair coin flips are made. What is expected number of heads?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q247",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Pick a cell uniformly from a 5 x 5 square grid. What is probability it is on the outer border?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.64,
+        "max": 0.64
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q248",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A bag has 3 red and 3 blue beads. Draw two without replacement. What is probability of one of each?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.6,
+        "max": 0.6
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q249",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Choose bag A or B with equal probability. A has only red beads; B has one red and 3 blue. Draw one bead. What is probability it is red?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.625,
+        "max": 0.625
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q250",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "For a fair die, A=even result and B=result at least 3. What is probability A or B?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.83,
+        "max": 0.8333,
+        "values": [
+          0.83,
+          0.8333,
+          0.833
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q251",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A bag has 4 red and 2 blue beads. Draw two without replacement. What is probability both are red?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.4,
+        "max": 0.4
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q252",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Flip 4 independent fair coins. What is probability of at least one head?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.9375,
+        "max": 0.9375
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q253",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A fair die result is known to be greater than 4. What is probability that it is 6?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.5,
+        "max": 0.5
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q254",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Two fair dice are rolled. What is probability of sum 7?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.1667,
+        "max": 0.17,
+        "values": [
+          0.1667,
+          0.17,
+          0.167
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q255",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Two independent machines work with probabilities 1/2 and 4/5. What is probability both work?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.4,
+        "max": 0.4
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q256",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "16 independent fair coin flips are made. What is expected number of heads?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q257",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Pick a cell uniformly from a 6 x 6 square grid. What is probability it is on the outer border?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.5556,
+        "max": 0.56,
+        "values": [
+          0.5556,
+          0.56,
+          0.556
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q258",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A bag has 4 red and 4 blue beads. Draw two without replacement. What is probability of one of each?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.57,
+        "max": 0.5714,
+        "values": [
+          0.57,
+          0.5714,
+          0.571
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q259",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Choose bag A or B with equal probability. A has only red beads; B has one red and 4 blue. Draw one bead. What is probability it is red?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.6,
+        "max": 0.6
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q260",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "For a fair die, A=even result and B=result at least 4. What is probability A or B?",
+      "topic": "Counting and arrangements",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Probability",
+      "originalQuestionId": "13.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.6667,
+        "max": 0.67,
+        "values": [
+          0.6667,
+          0.67,
+          0.667
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q261",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "Adult tickets cost Rs 30, child tickets Rs 10. A group buys 7 tickets for Rs 130. How many adults?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q262",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "A rectangle has sides x and x+2. Its area is 15. Find the positive x.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q263",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "Find the greatest integer x satisfying 3x+2 < 12.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q264",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "On a number line, |x-3|=2. What is the sum of both solutions?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q265",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "f(x)=2x+1 and g(x)=x^2. What is g(f(3))?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 49.0,
+        "max": 49.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q266",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "A sequence begins 3 and adds 3 each step. What is its seventh term?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 21.0,
+        "max": 21.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q267",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "xy=18. If x=3, what is y?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q268",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "A parent is three times a child's age. After 3 years the parent will be twice the child's age. How old is the child now?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q269",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "What is the remainder when 37 is divided by 5?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q270",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "Plan A costs Rs 30 fixed plus Rs2/use. Plan B costs Rs5/use with no fixed fee. At how many uses are costs equal?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q271",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "Adult tickets cost Rs 30, child tickets Rs 10. A group buys 8 tickets for Rs 140. How many adults?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q272",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "A rectangle has sides x and x+2. Its area is 24. Find the positive x.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q273",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "Find the greatest integer x satisfying 3x+2 < 15.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q274",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "On a number line, |x-4|=2. What is the sum of both solutions?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q275",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "f(x)=2x+1 and g(x)=x^2. What is g(f(4))?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 81.0,
+        "max": 81.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q276",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "A sequence begins 3 and adds 4 each step. What is its seventh term?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 27.0,
+        "max": 27.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q277",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "xy=24. If x=3, what is y?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q278",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "A parent is three times a child's age. After 4 years the parent will be twice the child's age. How old is the child now?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q279",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "What is the remainder when 47 is divided by 5?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q280",
+      "sectionId": "sec_ws_14",
+      "type": "NAT",
+      "prompt": "Plan A costs Rs 40 fixed plus Rs2/use. Plan B costs Rs5/use with no fixed fee. At how many uses are costs equal?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Basic algebra",
+      "originalQuestionId": "14.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 13.33,
+        "max": 13.3333,
+        "values": [
+          13.33,
+          13.3333,
+          13.333
+        ]
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q281",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "Two similar triangles have area ratio 4:9. A corresponding small side is 6. What is the larger side?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q282",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A circle has radius 3. A 90-degree sector is cut. What is sector area divided by pi?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.25,
+        "max": 2.25
+      },
+      "image": "/media/uceed-spatial-quant-300/15.02.png",
+      "imageAlt": "Practice Q282 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q283",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A triangle has vertices (0,0),(6,0),(1,4). What is its area?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.03.png",
+      "imageAlt": "Practice Q283 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q284",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A 7 by 9 sheet loses 1x1 squares at all corners and folds into an open box. What is volume?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 35.0,
+        "max": 35.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.04.png",
+      "imageAlt": "Practice Q284 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q285",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "What is the sum of interior angles of an 6-gon?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 720.0,
+        "max": 720.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.05.png",
+      "imageAlt": "Practice Q285 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q286",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A rectangle has sides 9 and 12. What is its diagonal length?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.06.png",
+      "imageAlt": "Practice Q286 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q287",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "An annulus has outer radius 4, inner radius 2. What is its area divided by pi?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.07.png",
+      "imageAlt": "Practice Q287 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q288",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A tangent touches a circle at P. What angle does the tangent make with the radius to P?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 90.0,
+        "max": 90.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.08.png",
+      "imageAlt": "Practice Q288 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q289",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "Two rectangles have areas 18 and 15, overlap area 6. What is their union area?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 27.0,
+        "max": 27.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q290",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A floor is 7 by 10. Lay axis-aligned 2x3 tiles in a fixed orientation with no cutting, in complete rows and columns. What is the maximum number?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q291",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "Two similar triangles have area ratio 4:9. A corresponding small side is 8. What is the larger side?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q292",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A circle has radius 4. A 90-degree sector is cut. What is sector area divided by pi?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.12.png",
+      "imageAlt": "Practice Q292 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q293",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A triangle has vertices (0,0),(8,0),(1,4). What is its area?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.13.png",
+      "imageAlt": "Practice Q293 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q294",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A 8 by 10 sheet loses 1x1 squares at all corners and folds into an open box. What is volume?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 48.0,
+        "max": 48.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.14.png",
+      "imageAlt": "Practice Q294 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q295",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "What is the sum of interior angles of an 7-gon?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 900.0,
+        "max": 900.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.15.png",
+      "imageAlt": "Practice Q295 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q296",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A rectangle has sides 12 and 16. What is its diagonal length?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.16.png",
+      "imageAlt": "Practice Q296 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q297",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "An annulus has outer radius 5, inner radius 3. What is its area divided by pi?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-quant-300/15.17.png",
+      "imageAlt": "Practice Q297 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q298",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "From an outside point two tangents touch a circle at A and B. The angle between tangents is 50 degrees. What is the smaller central angle AOB?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 130.0,
+        "max": 130.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q299",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "Two rectangles have areas 24 and 20, overlap area 8. What is their union area?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 36.0,
+        "max": 36.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q300",
+      "sectionId": "sec_ws_15",
+      "type": "NAT",
+      "prompt": "A floor is 9 by 13. Lay axis-aligned 2x3 tiles in a fixed orientation with no cutting, in complete rows and columns. What is the maximum number?",
+      "topic": "Area, perimeter, volume and surface area",
+      "category": "Analytical & Logical Reasoning",
+      "sourceTopic": "Geometry",
+      "originalQuestionId": "15.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      }
+    }
+  ]
+}

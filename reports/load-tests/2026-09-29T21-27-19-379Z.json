@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-09-29T21:27:19.380Z",
+  "status": "passed",
+  "scope": "isolated localhost Node child server + file-backed SQLite; not hosted PostgreSQL",
+  "config": {
+    "students": 5,
+    "seconds": 5,
+    "interval": 500,
+    "injectDrop": false
+  },
+  "elapsedSeconds": 5,
+  "rounds": 10,
+  "successfulWrites": 50,
+  "readbacks": 50,
+  "liveReads": 60,
+  "teacherSnapshots": 12,
+  "unexpectedDrops": 0,
+  "errors": [],
+  "errorCount": 0,
+  "missedCadences": 0,
+  "peakServerRssMB": 65,
+  "peakServerHeapMB": 12,
+  "peakServerCpuPercent": 3,
+  "peakServerEventLoopDelayMs": 165,
+  "maxTeacherCatchupMs": 23,
+  "latency": {
+    "write": {
+      "count": 60,
+      "p50Ms": 95.14,
+      "p95Ms": 175.65,
+      "p99Ms": 209.76,
+      "maxMs": 209.76
+    },
+    "read": {
+      "count": 110,
+      "p50Ms": 10.31,
+      "p95Ms": 122.15,
+      "p99Ms": 158.22,
+      "maxMs": 165.62
+    }
+  },
+  "database": "F:\\desktop\\New folder\\tmp\\load-tests\\run-FJkXJt\\load.sqlite",
+  "persistedMutations": 50,
+  "verifiedAttempts": 5,
+  "acceptanceDurationMet": false,
+  "finishedAt": "2026-09-29T21:27:26.193Z"
+}

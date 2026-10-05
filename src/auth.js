@@ -104,6 +104,12 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
         });
         return json(res, 200, { logged: true });
       }
+      if (path === '/api/auth/register' && req.method === 'POST') {
+        const input = await body(req);
+        await limit(`register:ip:${req.socket.remoteAddress}`, 20);
+        const newUser = await createUser(database, { ...input, role: 'student' });
+        return json(res, 201, { user: newUser, message: 'Registration successful.' });
+      }
       if (path === '/api/login' && req.method === 'POST') {
         const input = await body(req);
         const loginId = typeof input.loginId === 'string' ? input.loginId.trim().toLowerCase() : '';
@@ -111,8 +117,13 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
         await limit(`login:ip:${req.socket.remoteAddress}`, 300);
         await limit(`login:user:${loginId}`, 10);
         const user = (await database.query('SELECT * FROM users WHERE login_id=$1', [loginId])).rows[0];
-        const valid = await verifyPassword(input.password, user?.password_hash || await dummyHash);
-        if (!user || !valid || user.active !== 1) throw new HttpError(401, 'Incorrect login ID or password.');
+        if (!user) {
+          const err = new HttpError(404, 'Account not registered. Redirecting to self-registration…');
+          err.redirectSignup = true;
+          throw err;
+        }
+        const valid = await verifyPassword(input.password, user.password_hash);
+        if (!valid || user.active !== 1) throw new HttpError(401, 'Incorrect login ID or password.');
         await limit(`sms:${user.id}`, 1, MINUTE);
         const providerSession = await otp.send(user.phone);
         const token = randomBytes(32).toString('hex');
@@ -204,7 +215,7 @@ export function createAuth(database, { otp, env = process.env, now = Date.now, o
       } else {
         console.warn('[AUTH REJECTED]', { path, status: statusCode, message: error.message });
       }
-      json(res, statusCode, { ...(error.retryAfter ? {retryAfterSeconds:error.retryAfter} : {}), error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP service could not complete this request. Start again to request a fresh code. If this continues, contact your BRDS administrator.' : 'Request failed. Please try again.' });
+      json(res, statusCode, { ...(error.retryAfter ? {retryAfterSeconds:error.retryAfter} : {}), ...(error.redirectSignup ? {redirectSignup:true} : {}), error: error.status ? error.message : error instanceof OtpUnavailable ? 'OTP service could not complete this request. Start again to request a fresh code. If this continues, contact your BRDS administrator.' : 'Request failed. Please try again.' });
     }
   }
   return { handle, session, requireRole, checkOrigin, async cleanup() {

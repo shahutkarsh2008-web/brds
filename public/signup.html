@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BRDS | Create Student Account</title>
+  <link rel="stylesheet" href="/auth.css">
+  <script src="/signup.js" defer></script>
+  <link rel="icon" type="image/png" href="/media/brds-logo-enhanced.png">
+</head>
+<body class="login-page">
+  <header>
+    <a class="brand" href="/">
+      <img class="brand-logo" src="/media/brds-logo-enhanced.png" alt="BRDS" width="60" height="60">
+      <span>Bhanwar Rathore<br>Design Studio</span>
+    </a>
+    <span class="campus">RAIPUR / EXAM PORTAL</span>
+  </header>
+  <main class="login-layout">
+    <section class="welcome">
+      <p class="eyebrow">BRDS RAIPUR · EXAM PORTAL</p>
+      <h1>Create Student Account</h1>
+      <p class="lede">Register to access UCEED, NID, NIFT and CEED timed mock exams, practice sets and performance analytics.</p>
+      <ol class="portal-guide">
+        <li>
+          <span class="guide-number">01</span>
+          <div>
+            <strong>Enter your registration details</strong>
+            <p>Fill in your full name, 10-digit mobile number and preferred username.</p>
+          </div>
+        </li>
+        <li>
+          <span class="guide-number">02</span>
+          <div>
+            <strong>Choose your target exam</strong>
+            <p>Select UCEED 2026, UCEED 2027, NID or NIFT.</p>
+          </div>
+        </li>
+        <li>
+          <span class="guide-number">03</span>
+          <div>
+            <strong>Instant workspace entry</strong>
+            <p>Sign in immediately after account registration.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="footnote">BRDS Raipur · Computer-based testing</p>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-top">
+        <span class="pill">STUDENT REGISTRATION</span>
+        <a href="/login.html">Sign in ↗</a>
+      </div>
+      <div class="form-content">
+        <p class="eyebrow">01 / SIGN UP</p>
+        <h2>Join BRDS CBT.</h2>
+        <p>Fill out the form below to create your student account.</p>
+
+        <form id="signup-form">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" autocomplete="name" placeholder="e.g. Rahul Sharma" required maxlength="100">
+
+          <label for="loginId">Login ID / Username</label>
+          <input id="loginId" name="loginId" autocomplete="username" placeholder="e.g. rahul_design26" required minlength="3" maxlength="40">
+          <p class="field-hint">3–40 characters (letters, numbers, dots, hyphens, underscores)</p>
+
+          <label for="phone">Mobile Number (10 Digits)</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. 9876543210" required>
+          <p class="field-hint">Enter your 10-digit mobile number (numbers only)</p>
+
+          <label for="targetExam">Target Exam</label>
+          <select id="targetExam" name="targetExam" autocomplete="off" required>
+            <option value="UCEED 2026" selected>UCEED 2026</option>
+            <option value="UCEED 2027">UCEED 2027</option>
+            <option value="NID DAT 2026">NID DAT</option>
+            <option value="NIFT 2026">NIFT / CEED</option>
+          </select>
+
+          <label for="password">Password (min 12 characters)</label>
+          <div class="password-field-wrapper">
+            <input id="password" name="password" type="password" autocomplete="new-password" placeholder="••••••••••••" required minlength="12" maxlength="128">
+            <button type="button" id="toggle-password" class="btn-toggle-pass" title="Show/Hide Password" aria-label="Toggle password visibility">Show</button>
+          </div>
+          <p class="field-hint">Minimum 12 characters (e.g. BRDS-student-2026!)</p>
+
+          <div id="alert-banner" class="alert-banner"></div>
+
+          <button type="submit" id="btn-submit">Create Account & Enter Workspace <span>→</span></button>
+          <p class="field-note text-center">Already registered? <a href="/login.html" class="link-bold">Sign in here ↗</a></p>
+        </form>
+
+        <form id="otp-form" hidden>
+          <label for="code">One-Time Password (OTP)</label>
+          <input id="code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{4,8}" minlength="4" maxlength="8" required placeholder="Enter 6-digit OTP code">
+          <p class="field-hint">Enter the code sent to your mobile. (Demo OTP: 123456)</p>
+          <div id="otp-alert-banner" class="alert-banner"></div>
+          <button type="submit" id="btn-otp-submit">Verify & Enter Workspace <span>→</span></button>
+          <button class="secondary" id="restart-signup" type="button" style="margin-top: 12px; width: 100%; padding: 10px; background: transparent; border: 1px solid #1e283d; color: #a0aec0; border-radius: 6px; cursor: pointer;">Start again</button>
+        </form>
+
+        <div class="help">
+          <strong>Already have an account?</strong>
+          <p>Sign in with your BRDS login ID at <a href="/login.html" class="link-semi">/login.html</a>.</p>
+        </div>
+      </div>
+      <p class="security-note">Your account credentials will allow immediate sign in on BRDS CBT.</p>
+    </section>
+  </main>
+</body>
+</html>

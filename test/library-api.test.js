@@ -16,7 +16,7 @@ test('Phase 1 Library: assigned metadata, secure start/resume, submitted status,
   for (const [value, user] of [[token, student], [outsiderToken, outsider]]) await db.query('INSERT INTO sessions(token_hash,user_id,created_at,expires_at) VALUES($1,$2,$3,$4)', [digest(value), user.id, Date.now(), Date.now() + 86400000]);
   const exam = { id: 'library-phase1-test', title: 'Library Phase 1 Test Paper', durationSeconds: 600, totalQuestions: 1, maxMarks: 2, instructions: ['Choose one answer.'], sections: [{ id: 'part-a', title: 'Part A' }], questions: [{ id: 'q1', sectionId: 'part-a', type: 'MCQ', prompt: 'What is the answer?', options: [{ id: 'a', text: 'A' }, { id: 'b', text: 'B' }], answer: 'a', marks: { correct: 2, incorrect: -1, unanswered: 0 } }] };
   await importExam(db, exam, [student.id]);
-  const app = createApp(db, { otp: { send: async () => 'fixture', verify: async () => true } });
+  const app = createApp(db, { otp: { send: async () => 'fixture', verify: async () => true }, env: { NODE_ENV: 'development' } });
   app.server.listen(0, '127.0.0.1'); await once(app.server, 'listening');
   t.after(async () => { await new Promise(resolve => app.server.close(resolve)); await db.close(); });
   const base = `http://127.0.0.1:${app.server.address().port}`;

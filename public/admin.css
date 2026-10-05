@@ -1,4 +1,4 @@
-/* BRDS CBT Admin Workspace Styles */
+/* Northstar identity — author workspace */
 
 :root {
   --brds-red: #E31E24;
@@ -12,6 +12,8 @@
   --border-color: #dddddd;
   --success-green: #28a745;
 }
+
+:root { --brds-red:#5b5ce2; --brds-red-hover:#4748c4; --brds-dark:#111a35; --brds-yellow:#e0a11a; --bg-color:#f4f6fb; --border-color:#e1e5f0; }
 
 body {
   margin: 0;
@@ -439,4 +441,3 @@ input:focus, select:focus, textarea:focus {
     border: 1px solid #666666 !important;
   }
 }
-

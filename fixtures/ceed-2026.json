@@ -1,0 +1,1633 @@
+{
+  "id": "ceed-2026",
+  "title": "Common Entrance Examination for Design CEED 2026",
+  "durationSeconds": 3600,
+  "totalQuestions": 44,
+  "maxMarks": 150.0,
+  "instructions": "CEED 2026 Part A Official Examination Paper.",
+  "sections": [
+    {
+      "id": "sec_nat_2026",
+      "title": "Section I: Numerical Answer Type (NAT)"
+    },
+    {
+      "id": "sec_msq_2026",
+      "title": "Section II: Multiple Select Questions (MSQ)"
+    },
+    {
+      "id": "sec_mcq_2026",
+      "title": "Section III: Multiple Choice Questions (MCQ)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ceed-2026-q01",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "Five geometric blocks with their dimensions are given below. Calculate the length of the path as shown in the image below, between points A and B.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Path length on solids",
+      "originalQuestionId": "Q.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.5
+      },
+      "image": "/media/ceed-2026/T1-01.png",
+      "imageAlt": "CEED 2026 Q1 diagram"
+    },
+    {
+      "id": "ceed-2026-q02",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "Shown below is an ice-cream cone completely filled with ice-cream. Assume the top portion (visible portion of ice-cream) is a perfect hemisphere. What is the total mass of the ice-cream in grams? The density of ice-cream = 0.9 grams/cubic centimeter. Consider the value of π = 3.14.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Volume and mass",
+      "originalQuestionId": "Q.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 126.0,
+        "max": 128.0
+      },
+      "image": "/media/ceed-2026/T2-01.png",
+      "imageAlt": "CEED 2026 Q2 diagram"
+    },
+    {
+      "id": "ceed-2026-q03",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "A square paper of side 10 cm is folded sequentially and a circular cut of radius 1 cm is made at the corners as shown below. After unfolding the sheet completely, what will be the total area of all the pieces which have been cut-out from the original square sheet? Assume the value of π = 3.14.",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Paper folding and cutting",
+      "originalQuestionId": "Q.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 25.5
+      },
+      "image": "/media/ceed-2026/T3-01.png",
+      "imageAlt": "CEED 2026 Q3 diagram"
+    },
+    {
+      "id": "ceed-2026-q04",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "How many unique patterns are there in the image?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Visual pattern counting",
+      "originalQuestionId": "Q.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "image": "/media/ceed-2026/T4-01.png",
+      "imageAlt": "CEED 2026 Q4 diagram"
+    },
+    {
+      "id": "ceed-2026-q05",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "How many spheres are rotating in the space shown below? [This question contains an animated GIF image.]",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Animated sphere counting",
+      "originalQuestionId": "Q.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 19.0,
+        "max": 19.0
+      },
+      "image": "/media/ceed-2026/T5-01.png",
+      "imageAlt": "CEED 2026 Q5 diagram"
+    },
+    {
+      "id": "ceed-2026-q06",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "Nine tiles containing parts of English letters in different Text Fonts, are shown below. What is the maximum number of COMPLETE letters that can be formed, by rearranging the tiles in a 3x3 grid?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Letter tile assembly",
+      "originalQuestionId": "Q.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/ceed-2026/T6-01.png",
+      "imageAlt": "CEED 2026 Q6 diagram"
+    },
+    {
+      "id": "ceed-2026-q07",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "A plane passes through three vertices of a cube and divides the cube into two parts, a green part and a blue part, and they remain together, as shown below. Eight such cubes are assembled to create a larger cube, where blue portion is on the inside as shown on the right. Calculate the volume of blue part in the larger cube, if the edge of the original cube is 1 cm.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Volume of assembled solids",
+      "originalQuestionId": "Q.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/ceed-2026/T7-01.png",
+      "imageAlt": "CEED 2026 Q7 diagram"
+    },
+    {
+      "id": "ceed-2026-q08",
+      "sectionId": "sec_nat_2026",
+      "type": "NAT",
+      "prompt": "A board game, and two views of a unique dice are shown below. This unique dice has only three faces with numbers one, two and three. Consider all the ladders are advantages that allow the player to jump from initial to final point. What is the minimum number of dice throws that is required to move from Point A to Point B using all given advantages on the board?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Board-game path planning",
+      "originalQuestionId": "Q.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      },
+      "image": "/media/ceed-2026/T8-01.png",
+      "imageAlt": "CEED 2026 Q8 diagram"
+    },
+    {
+      "id": "ceed-2026-q09",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "A coloured sheet is folded into an octahedron as shown on the left. Which of the options show(s) the CORRECT rotated views of the octahedron?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Octahedron nets and rotation",
+      "originalQuestionId": "Q.9",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2026/T9-01.png",
+      "imageAlt": "CEED 2026 Q9 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q10",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "Which option(s) is/are NOT a part of the image on the left?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Visual part matching",
+      "originalQuestionId": "Q.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "c",
+        "d"
+      ],
+      "image": "/media/ceed-2026/T10-01.png",
+      "imageAlt": "CEED 2026 Q10 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q11",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "Four objects that are symmetrical along vertical planes are placed in four containers in the orientation shown below. Molten wax is poured in each of these containers up to the level indicated on the objects. Assuming that wax does not stick to the objects, which of the objects will leave its exact negative impression on the set wax when they are vertically lifted?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mould extraction",
+      "originalQuestionId": "Q.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "d"
+      ],
+      "image": "/media/ceed-2026/T11-01.png",
+      "imageAlt": "CEED 2026 Q11 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q12",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "Coloured strips are printed on a transparent sheet as shown below. The bottom half of this sheet is folded backwards along the PQ axis to form a semi-circle. Which of the option(s) will be a part of the resultant semi-circle?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Transparent-sheet folding",
+      "originalQuestionId": "Q.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "d"
+      ],
+      "image": "/media/ceed-2026/T12-01.png",
+      "imageAlt": "CEED 2026 Q12 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q13",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "A table made out of cardboard is shown on left. If dotted lines indicate folding, which of the option(s) is/are the unfolded view(s) of the table?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cardboard furniture nets",
+      "originalQuestionId": "Q.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "c"
+      ],
+      "image": "/media/ceed-2026/T13-01.png",
+      "imageAlt": "CEED 2026 Q13 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q14",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "A plant pruner (cutter) with two studs P and Q are shown on the left in open and closed positions. Which options(s) will allow the pruner to return to its open position?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Spring mechanisms",
+      "originalQuestionId": "Q.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2026/T14-01.png",
+      "imageAlt": "CEED 2026 Q14 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q15",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "A solid object with triangular groove is shown on the left. Which option(s) along with this object can form the combination shown on the right?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Solid assembly",
+      "originalQuestionId": "Q.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2026/T15-01.png",
+      "imageAlt": "CEED 2026 Q15 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q16",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "An animation of four planets orbiting around the sun is shown below. Based on this animation, which of the following statement(s) is/are TRUE? [This question contains an animated GIF image.]",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Orbital animation",
+      "originalQuestionId": "Q.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "image": "/media/ceed-2026/T16-01.png",
+      "imageAlt": "CEED 2026 Q16 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "When Planet Blue completes 2 orbits, Planet Green will complete 1 orbit."
+        },
+        {
+          "id": "b",
+          "text": "When Planet Blue completes 3 orbits, Planet Brown will complete 2 orbits."
+        },
+        {
+          "id": "c",
+          "text": "When Planet Green completes 1 orbit, Planet Red will complete 2 orbits."
+        },
+        {
+          "id": "d",
+          "text": "When Planet Red completes 4 orbits, Planet Brown will complete 2 orbits."
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q17",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "Two views of a 3D object are shown on the left. Which of the option(s) is/are the same object?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Three-dimensional views",
+      "originalQuestionId": "Q.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "d"
+      ],
+      "image": "/media/ceed-2026/T17-01.png",
+      "imageAlt": "CEED 2026 Q17 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q18",
+      "sectionId": "sec_msq_2026",
+      "type": "MSQ",
+      "prompt": "Six different shapes are cut from a square as shown on the left. Which option(s) is/are made using only the cut pieces? Pieces can be rotated and not all pieces need to be used.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Shape assembly",
+      "originalQuestionId": "Q.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "d"
+      ],
+      "image": "/media/ceed-2026/T18-01.png",
+      "imageAlt": "CEED 2026 Q18 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ceed-2026-q19",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Three views of a stack of sugar cubes are shown below. What is the MINIMUM number of cubes that are required to produce this stack?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube counting",
+      "originalQuestionId": "Q.19",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2026/T19-01.png",
+      "imageAlt": "CEED 2026 Q19 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "28"
+        },
+        {
+          "id": "c",
+          "text": "31"
+        },
+        {
+          "id": "d",
+          "text": "35"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q20",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A hard rubber roller is cut with a ‘V-shaped’ profile at three locations as shown in the Top View in the image on the left. The roller is then dipped in blue colour and rolled over a white plane. Which option shows the correct impression on the plane?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Roller impressions",
+      "originalQuestionId": "Q.20",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T20-01.png",
+      "imageAlt": "CEED 2026 Q20 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q21",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "P and Q are printed patterns where the white portion of both the patterns is transparent. If Q is overlapped on P, what will be the resultant image?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Pattern overlap",
+      "originalQuestionId": "Q.21",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2026/T21-01.png",
+      "imageAlt": "CEED 2026 Q21 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q22",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Four words written in a particular font are given below. Which of the options belong to the same font?",
+      "topic": "Typography & Fonts",
+      "category": "Language & Creativity",
+      "sourceTopic": "Font recognition",
+      "originalQuestionId": "Q 22",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T22-01.png",
+      "imageAlt": "CEED 2026 Q22 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q23",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Which spanner from the options will fit the maximum number of nuts shown on the left?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Tools and fasteners",
+      "originalQuestionId": "Q.23",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2026/T23-01.png",
+      "imageAlt": "CEED 2026 Q23 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q24",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Which option shows the correct perspective drawing of the object when it is viewed from the direction as shown on the left?",
+      "topic": "Perspective and depth",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective views",
+      "originalQuestionId": "Q.24",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T24-01.png",
+      "imageAlt": "CEED 2026 Q24 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q25",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A red dot is connected with two non-elastic strings P and Q of equal length. The strings are fixed at points 1 and 2, as shown below. Consider both the strings, points 1, 2, and the red dot are all on the same plane throughout the operations. If one of the strings is fully stretched (taut) at all times, what will be the shape of the path traced by the dot?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Geometric tracing",
+      "originalQuestionId": "Q.25",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T25-01.png",
+      "imageAlt": "CEED 2026 Q25 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q26",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Visual sequences",
+      "originalQuestionId": "Q.26",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2026/T26-01.png",
+      "imageAlt": "CEED 2026 Q26 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q27",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A grid PQRS is distorted such that its edges get stretched or compressed UNIFORMLY to form P’Q’R’S’ as shown on the left. Identify the correct distorted grid from the options.",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Grid distortion",
+      "originalQuestionId": "Q.27",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T27-01.png",
+      "imageAlt": "CEED 2026 Q27 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q28",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Sets of Toys and Furniture are shown below. Which option correctly matches the furniture and toys, based on similar product features?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Product feature matching",
+      "originalQuestionId": "Q.28",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T28-01.png",
+      "imageAlt": "CEED 2026 Q28 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "P-I, Q-II, R-IV, S-III"
+        },
+        {
+          "id": "b",
+          "text": "P-II, Q-I, R-III, S-IV"
+        },
+        {
+          "id": "c",
+          "text": "P-III, Q-II, R-IV, S-I"
+        },
+        {
+          "id": "d",
+          "text": "P-III, Q-I, R-IV, S-II"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q29",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Select the CORRECT option that names the art movements sequentially from left to right.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Art movements",
+      "originalQuestionId": "Q.29",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T29-01.png",
+      "imageAlt": "CEED 2026 Q29 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "De Stijl, Impressionism, Pop Art, Art Nouveau, Baroque"
+        },
+        {
+          "id": "b",
+          "text": "De Stijl, Impressionism, Pop Art, Baroque, Art Nouveau"
+        },
+        {
+          "id": "c",
+          "text": "Pop Art , Baroque, De Stijl, Impressionism, Art Nouveau"
+        },
+        {
+          "id": "d",
+          "text": "De Stijl, Art Nouveau, Pop Art, Impressionism, Baroque"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q30",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Choose the CORRECT option that combines with the image on the left to form a word from the English language.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Visual word completion",
+      "originalQuestionId": "Q.30",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T30-01.png",
+      "imageAlt": "CEED 2026 Q30 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q31",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "“OPEN HEART” is printed on a folded paper as shown below. Identify the CORRECT option when the paper is unfolded and seen from the other side.",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Paper unfolding",
+      "originalQuestionId": "Q.31",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2026/T31-01.png",
+      "imageAlt": "CEED 2026 Q31 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q32",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Several magnetic and non-magnetic bars of equal dimensions are glued together as shown on the left. If blue denotes magnetic north, red denotes magnetic south and grey denotes non-magnetic material, what will be the configuration of the faces on the other end?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Magnetism",
+      "originalQuestionId": "Q.32",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T32-01.png",
+      "imageAlt": "CEED 2026 Q32 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q33",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Which option will replace the question mark?",
+      "topic": "Texture & Pattern Matching",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Visual sequences",
+      "originalQuestionId": "Q.33",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T26-02.png",
+      "imageAlt": "CEED 2026 Q33 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q34",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A toy is shown on the left. When the wheels of this toy rotate, the fan is also required to spin. If one pair of gears is to be used exclusively, which option will make this possible?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Gear mechanisms",
+      "originalQuestionId": "Q.34",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T33-01.png",
+      "imageAlt": "CEED 2026 Q34 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q35",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A toy with reciprocating movement is shown. As the wheels of the toy rotate, the head is required to reciprocate. If given options are indicative of conversion of rotary to linear motion using a disc located at the centre of the wheel shaft, which option will result in the required movement when the toy is pushed forward? Assume a working spring loaded cam mechanism in the relevant option/s. [This question contains an animated GIF image.]",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Rotary-to-linear mechanisms",
+      "originalQuestionId": "Q.35",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T34-01.png",
+      "imageAlt": "CEED 2026 Q35 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q36",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Select the correct order of the monuments in India from North to South, as shown below.",
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society",
+      "sourceTopic": "Indian monument locations",
+      "originalQuestionId": "Q.36",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T35-01.png",
+      "imageAlt": "CEED 2026 Q36 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "S, R, P, U, T, Q"
+        },
+        {
+          "id": "b",
+          "text": "R, S, U, Q, P, T"
+        },
+        {
+          "id": "c",
+          "text": "S, R, Q, U, P, T"
+        },
+        {
+          "id": "d",
+          "text": "R, S, Q, T, U, P"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q37",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Various designs of an application screen are shown below. Identify the screen that INCORRECTLY depicts functions of standard interface components.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Interface components",
+      "originalQuestionId": "Q.37",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T36-01.png",
+      "imageAlt": "CEED 2026 Q37 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q38",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A wooden artifact made using traditional tools and processes is shown below. Which option shows the relevant operations involved in its making, not necessarily in the actual production sequence?",
+      "topic": "Traditional crafts and objects",
+      "category": "Environment & Society",
+      "sourceTopic": "Traditional craft processes",
+      "originalQuestionId": "Q.38",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/ceed-2026/T37-01.png",
+      "imageAlt": "CEED 2026 Q38 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Drilling, Chiselling, Forming, Cutting"
+        },
+        {
+          "id": "b",
+          "text": "Chiselling, Milling, Punching, Forming"
+        },
+        {
+          "id": "c",
+          "text": "Drilling, Powder Coating, Chiselling, Cutting"
+        },
+        {
+          "id": "d",
+          "text": "Finishing, Sanding, Drilling, Chiselling"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q39",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A seat is to be designed for a public bus for adult Indian population. While designing, which option needs to be considered so that MOST of the relevant category population can sit on it comfortably?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Anthropometry",
+      "originalQuestionId": "Q.39",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T38-01.png",
+      "imageAlt": "CEED 2026 Q39 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seat height is 95th percentile of sitting height and seat breadth is 5th percentile of hip breadth of adult population."
+        },
+        {
+          "id": "b",
+          "text": "Seat height is 50th percentile of sitting height and seat breadth is 95th percentile of hip breadth of adult population."
+        },
+        {
+          "id": "c",
+          "text": "Seat height is 5th percentile of sitting height and seat breadth is 5th percentile of hip breadth of adult population."
+        },
+        {
+          "id": "d",
+          "text": "Seat height is 50th percentile of sitting height and seat breadth is 5th percentile of hip breadth of adult population."
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q40",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Perspective view of two identical hollow cylinders is shown below. Assume the outer diameter and length of each cylinder are equal. The two cylinders intersect each other at 90 degrees to form a union, such that their centroids (centre of axis) coincide. How many visible surfaces will the resultant union have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Surfaces of intersecting solids",
+      "originalQuestionId": "Q.40",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/ceed-2026/T39-01.png",
+      "imageAlt": "CEED 2026 Q40 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "32"
+        },
+        {
+          "id": "c",
+          "text": "28"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q41",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Isometric view of a solid copper object is shown below. If a constant heat source of 100 degrees C is applied at the point P continuously, which point on the solid will reach the temperature of the heat source the earliest? Neglect heat losses and assume point P lies on an equilateral triangle.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Heat conduction",
+      "originalQuestionId": "Q.41",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/ceed-2026/T40-01.png",
+      "imageAlt": "CEED 2026 Q41 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q42",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "A hollow cylinder is lit by sunlight at 45 degrees as shown on the left. If seen from a fixed point, which option is the closest representation of the lit area inside the cylinder?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Lighting of hollow solids",
+      "originalQuestionId": "Q.42",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T41-01.png",
+      "imageAlt": "CEED 2026 Q42 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q43",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Two objects created using a toy set are shown below. Choose the set of features that CANNOT be attributed to the toy set.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Construction toy features",
+      "originalQuestionId": "Q.43",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T42-01.png",
+      "imageAlt": "CEED 2026 Q43 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use of slotted plates, sheets and brackets; Use of Standardized components."
+        },
+        {
+          "id": "b",
+          "text": "Possibility of multiple combinations; Appropriate for pre-school kids."
+        },
+        {
+          "id": "c",
+          "text": "Suitable for Creativity and Spatial development; Suitable for prototyping."
+        },
+        {
+          "id": "d",
+          "text": "Appropriate for learning through play; Suitable for making study models."
+        }
+      ]
+    },
+    {
+      "id": "ceed-2026-q44",
+      "sectionId": "sec_mcq_2026",
+      "type": "MCQ",
+      "prompt": "Select the option that shows the CORRECT sequence of gestalt principles associated with the image, as seen from the left to right.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Gestalt principles",
+      "originalQuestionId": "Q.44",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.5,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/ceed-2026/T43-01.png",
+      "imageAlt": "CEED 2026 Q44 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Closure, Proximity, Continuity, Similarity"
+        },
+        {
+          "id": "b",
+          "text": "Similarity, Continuity, Proximity, Closure"
+        },
+        {
+          "id": "c",
+          "text": "Continuity, Similarity, Closure, Proximity"
+        },
+        {
+          "id": "d",
+          "text": "Proximity, Closure, Similarity, Continuity"
+        }
+      ]
+    }
+  ],
+  "partBQuestions": [
+    {
+      "id": "ceed-2026-pb-q01",
+      "originalQuestionId": "Part B Q.1",
+      "type": "DRAWING_DESIGN",
+      "prompt": "One afternoon, seven years old Chinu and her pet dog are enjoying snacks in their kitchen. Chinu’s father suddenly enters the kitchen and sees this pleasant moment with a smile. Sketch the whole scene from the point of view of a chair kept nearby.\nAdditional Instructions:\n• Use only black/HB-series pencils\n• Do not use other colours\n• Draw only in the given space\nEvaluation Criteria:\n• Character and Expressions\n• Proportion and Composition\n• Quality of Sketching\n• Environment and Props",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2026_Question_Paper.pdf",
+      "sourcePage": 25
+    },
+    {
+      "id": "ceed-2026-pb-q02",
+      "originalQuestionId": "Part B Q.2",
+      "type": "DRAWING_DESIGN",
+      "prompt": "In the given frames, sketch a story by incorporating the symbols shown below. Follow these instructions:\n• Give an appropriate title to the story.\n• Use ANY TWO symbols in each frame; Use each symbol ONLY ONCE in the whole story.\n• The symbols cannot be modified, but can be rotated, flipped or scaled proportionately.\n• You are free to sketch additional elements (backgrounds, characters, props etc.) to make the story meaningful.\n• Label the frames in the bottom left corners with the number 1,2,3, and 4 to indicate the sequence of your story.\nEvaluation criteria:\n• Originality\n• Graphical Narrative (Story Communication)\n• Humour and Surprise\n• Clarity and Neatness of Sketches",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": "/media/ceed-2026/T45-01.png",
+      "imageAlt": "CEED 2026 Part B Q2 diagram",
+      "sourceFile": "CEED_2026_Question_Paper.pdf",
+      "sourcePage": 26
+    },
+    {
+      "id": "ceed-2026-pb-q03",
+      "originalQuestionId": "Part B Q.3",
+      "type": "DRAWING_DESIGN",
+      "prompt": "A new museum with the theme “Indian Museum of Science” is being set up, which will cater primarily to Indian visitors. Create four icons based on the museum theme, to communicate the following sections to visitors:\n• Robotics\n• Energy Science\n• Ocean Science\n• Food Technology\nAll icons should be clear and visible, and have a consistent visual language. Draw the icons in the FOUR squares provided in the answer booklet. Icons should only have visuals. DO NOT use text. Only BLACK & WHITE colours should be used for the icons.\nEvaluation Criteria:\n• Consistency of visual language\n• Thematic appropriateness\n• Effective communication\n• Composition, Clarity and Neatness",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2026_Question_Paper.pdf",
+      "sourcePage": 27
+    },
+    {
+      "id": "ceed-2026-pb-q04",
+      "originalQuestionId": "Part B Q.4",
+      "type": "DRAWING_DESIGN",
+      "prompt": "Conceptualise and render a usable single seat furniture that is inspired by a sphere, for a living room. The sphere may be modified by cutting, adding, subtracting, deforming and repeating. However, the essence of the sphere should be retained.\nEvaluation Criteria:\n• Uniqueness of the form\n• Form-Function relevance and relationship\n• Detailing\n• Rendering quality",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2026_Question_Paper.pdf",
+      "sourcePage": 28
+    },
+    {
+      "id": "ceed-2026-pb-q05",
+      "originalQuestionId": "Part B Q.5",
+      "type": "DRAWING_DESIGN",
+      "prompt": "An elderly couple from Srinagar is travelling to Chennai for medical treatment. They will travel by train for most of their journey and plan to take a bus and auto rickshaws for all local commutes. Imagine their journey and identify FOUR distinct problems that they might face, which may need design solutions. Write the FOUR problems statements starting with the words “How can we…” for the given context, in the space provided on the answer booklet. (2 x 4 = 8 marks) For your reference, an example of \"How can we ...\" from another context: How can we - make science learning enjoyable for primary school children? Select any ONE of the four identified problems statements. Draw TWO potential design solutions for the selected problem statement in the boxes provided on the answer booklet. Write a short title for each solution in the space provided inside the box. (6 x 2 = 12 marks)\nEvaluation Criteria:\n• Variety and uniqueness of the problems\n• Relevance of the problems\n• Practical feasibility of the design solutions\n• Clarity in communication",
+      "marks": 20,
+      "evaluationCriteria": "Visual composition, line quality, proportion and detail.",
+      "image": null,
+      "imageAlt": null,
+      "sourceFile": "CEED_2026_Question_Paper.pdf",
+      "sourcePage": 29
+    }
+  ]
+}

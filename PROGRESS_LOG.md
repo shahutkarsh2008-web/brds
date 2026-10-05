@@ -1409,3 +1409,38 @@ WHAT: Replaced the fixed expected exam count with checks that the database row c
 WHY: Test catalog idempotency and key privacy without making continuous approved bank additions fail the suite.
 EVIDENCE: Focused `node --test test/uceed.test.js` passed 5/5. Full `npm test` now passes 95/95. The earlier single failure was only the stale 18-entry assertion against the current 26-entry seed configuration.
 NEXT: Launch still requires configured hosted PostgreSQL backups with a restore drill, live SMS OTP acceptance and hosted target-cohort checks; question-bank expansion continues independently.
+
+### [2026-10-06 03:25 UTC] Antigravity — 8 ZIP Test Banks Complete Import, Scoring, Topic Mapping & Test Integration
+STATUS: DONE
+FILES: scripts/audit-8-zip-archives.py, scripts/build-8-zip-fixtures.py, scripts/seed-exams.js, fixtures/ceed-2021.json, fixtures/ceed-2022.json, fixtures/ceed-2023.json, fixtures/ceed-2024.json, fixtures/ceed-2025.json, fixtures/ceed-2026.json, fixtures/uceed-spatial-worksheet-260-revised.json, fixtures/uceed-spatial-quantitative-worksheet-300-revised.json, public/media/ceed-2021/*, public/media/ceed-2022/*, public/media/ceed-2023/*, public/media/ceed-2024/*, public/media/ceed-2025/*, public/media/ceed-2026/*, public/media/uceed-spatial-260/*, public/media/uceed-spatial-quant-300/*, test/ceed-2021-2026.test.js, test/uceed-worksheets-260-300.test.js, reports/8-zip-archives-audit.json
+WHAT: Completed full import and system integration for all 8 requested ZIP test bank archives:
+  1. CEED 2021: 41 Part A objective questions (100 marks) + 5 Part B drawing questions (20 marks each).
+  2. CEED 2022: 41 Part A objective questions (100 marks) + 5 Part B drawing questions (20 marks each).
+  3. CEED 2023: 41 Part A objective questions (100 marks) + 5 Part B drawing questions (20 marks each). Restored fallback prompt text for Q31 and Q34.
+  4. CEED 2024: 44 Part A objective questions (150 marks, MSQ partial marking +1/+2/+3) + 5 Part B drawing questions.
+  5. CEED 2025: 44 Part A objective questions (150 marks, MSQ partial marking +1/+2/+3) + 5 Part B drawing questions.
+  6. CEED 2026: 44 Part A objective questions (150 marks, MSQ partial marking +1/+2/+3) + 5 Part B drawing questions.
+  7. UCEED Spatial Worksheet 260: 260 questions across 13 topic sections (1,019 marks).
+  8. UCEED Spatial Quantitative Worksheet 300: 300 questions across 15 topic sections (1,198 marks).
+  - Extracted 565 media images into target directories `public/media/ceed-2021/` through `ceed-2026/`, `uceed-spatial-260/`, and `uceed-spatial-quant-300/`.
+  - Resolved fraction NAT answers (e.g. `7/2` -> `3.5`, `180/11` -> inclusive bounds with numeric value ranges).
+  - Preserved CEED Part B drawing questions in `partBQuestions` fixture arrays for manual review and descriptive practice flow.
+  - Mapped all 845 questions into canonical taxonomy categories with zero unclassified items.
+  - Registered all 8 fixture sets in `scripts/seed-exams.js` (total 26 seeded library exams).
+  - Added test suites `test/ceed-2021-2026.test.js` and `test/uceed-worksheets-260-300.test.js`.
+WHY: Direct user directive to import all 8 ZIP test bank resources into the exam library and topic practice engine while preserving answer accuracy, scoring rules, media assets, and Part B content.
+EVIDENCE:
+  - Audit report saved to `reports/8-zip-archives-audit.json`.
+  - All 8 generated fixtures validated cleanly against `validateExam` schema rules.
+  - Startup seeding verified via `node scripts/seed-exams.js` (26 exams seeded successfully).
+  - Full automated test suite passing 97/97 tests 100% green (`npm test`).
+  - Zero unclassified or orphaned questions across all imported fixtures.
+NEXT: Continue remaining P1/P2/P3 tasks, UI enhancements, or Phase 8 hosted acceptance as directed by user.
+
+### [2026-10-05 22:05 UTC] Codex — Render deployment snapshot
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md; deployment payload from public/, src/auth.js, scripts/seed-exams.js, fixtures/, scripts/, test/, reports/, and project documentation; raw source PDFs/ZIPs, scratch artifacts and .codex-build excluded
+WHAT: Preparing a tested application snapshot for the configured Render service, including imported fixture banks and their served media. Local credentials and source-only working files are not part of the deploy payload.
+WHY: User explicitly requested deploying the completed application to Render and clarified that no completed application work should be omitted.
+EVIDENCE: Local npm test passes 97/97. Existing hosted https://brds-cbt.onrender.com passes public health/PostgreSQL, secure WebSocket echo and anonymous teacher-route rejection.
+NEXT: Stage the reviewed deployable application files, verify staged names/secrets and size, commit with [Codex], push main to trigger Render auto-deploy if configured, then poll the hosted acceptance check.

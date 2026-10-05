@@ -1,0 +1,5919 @@
+{
+  "id": "uceed-spatial-worksheet-260-revised",
+  "title": "BRDS / ORIGINAL UCEED PRACTICE / REVISED - 260 questions / 13 topics / revised diversity edition",
+  "durationSeconds": 7800,
+  "totalQuestions": 260,
+  "maxMarks": 1019.0,
+  "instructions": "BRDS Original Practice Worksheet (260 questions).",
+  "sections": [
+    {
+      "id": "sec_ws_01",
+      "title": "2D to 3D visualization"
+    },
+    {
+      "id": "sec_ws_02",
+      "title": "Rotation"
+    },
+    {
+      "id": "sec_ws_03",
+      "title": "Reflection"
+    },
+    {
+      "id": "sec_ws_04",
+      "title": "Mirror / water images"
+    },
+    {
+      "id": "sec_ws_05",
+      "title": "Symmetry"
+    },
+    {
+      "id": "sec_ws_06",
+      "title": "Top / front / side views"
+    },
+    {
+      "id": "sec_ws_07",
+      "title": "Cube / cuboid nets"
+    },
+    {
+      "id": "sec_ws_08",
+      "title": "Folding / unfolding"
+    },
+    {
+      "id": "sec_ws_09",
+      "title": "Faces / edges / vertices"
+    },
+    {
+      "id": "sec_ws_10",
+      "title": "Object rotation"
+    },
+    {
+      "id": "sec_ws_11",
+      "title": "Surface counting"
+    },
+    {
+      "id": "sec_ws_12",
+      "title": "Block arrangements"
+    },
+    {
+      "id": "sec_ws_13",
+      "title": "Hidden figures"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ws-uceed-spat-q001",
+      "sectionId": "sec_ws_01",
+      "type": "MCQ",
+      "prompt": "The numbered top-view map gives the height of each stack. Which 3D arrangement matches it? Keep the labelled FRONT at y=0; x increases towards RIGHT. Every column is filled from the floor.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/uceed-spatial-260/01.01.png",
+      "imageAlt": "Practice Q1 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q002",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "The yellow profile has the labelled coordinates in centimetres. Extrude it straight through 2 cm without changing the cross-section. What is the volume in cubic centimetres?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "image": "/media/uceed-spatial-260/01.02.png",
+      "imageAlt": "Practice Q2 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q003",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Reconstruct the solid from the numbered map. Remove every entire column outlined in red, including its hidden bottom cubes. How many unit cubes remain?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "image": "/media/uceed-spatial-260/01.03.png",
+      "imageAlt": "Practice Q3 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q004",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A solid is reconstructed from horizontal layer masks. From bottom upwards, layer counts are 12, 9, 3. Each layer is one unit thick. What is the volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      },
+      "image": "/media/uceed-spatial-260/01.04.png",
+      "imageAlt": "Practice Q4 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q005",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A 3 cm by 6 cm rectangle rotates fully about its 6 cm side. What is volume divided by pi, in cubic cm?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 54.0,
+        "max": 54.0
+      },
+      "image": "/media/uceed-spatial-260/01.05.png",
+      "imageAlt": "Practice Q5 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q006",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Two no-gap solids on a 2 x 2 floor have the same full top view and every front/side elevation reaches height 3. What is the smallest possible volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/01.06.png",
+      "imageAlt": "Practice Q6 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q007",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A 3 by 2 rectangular cross-section is extruded along a straight perpendicular path of length 7. What is the resulting solid volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 42.0,
+        "max": 42.0
+      },
+      "image": "/media/uceed-spatial-260/01.07.png",
+      "imageAlt": "Practice Q7 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q008",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "The height map gives a connected no-gap solid. Which is its largest occupied z coordinate if cube centres at floor level have z=0.5?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.5,
+        "max": 3.5
+      },
+      "image": "/media/uceed-spatial-260/01.08.png",
+      "imageAlt": "Practice Q8 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q009",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A box has outer dimensions 6 x 5 x 4. A rectangular tunnel of cross-section 2 x 1 passes completely along its 6 dimension. What volume of material remains?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 108.0,
+        "max": 108.0
+      },
+      "image": "/media/uceed-spatial-260/01.09.png",
+      "imageAlt": "Practice Q9 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q010",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A solid contains 18 unit cubes in 3 identical fully occupied horizontal layers. How many unit cells are in its footprint?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/01.10.png",
+      "imageAlt": "Practice Q10 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q011",
+      "sectionId": "sec_ws_01",
+      "type": "MCQ",
+      "prompt": "The numbered top-view map gives the height of each stack. Which 3D arrangement matches it? Keep the labelled FRONT at y=0; x increases towards RIGHT. Every column is filled from the floor.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/uceed-spatial-260/01.11.png",
+      "imageAlt": "Practice Q11 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q012",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "The yellow profile has the labelled coordinates in centimetres. Extrude it straight through 3 cm without changing the cross-section. What is the volume in cubic centimetres?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      },
+      "image": "/media/uceed-spatial-260/01.12.png",
+      "imageAlt": "Practice Q12 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q013",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Reconstruct the solid from the numbered map. Remove every entire column outlined in red, including its hidden bottom cubes. How many unit cubes remain?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 14.0,
+        "max": 14.0
+      },
+      "image": "/media/uceed-spatial-260/01.13.png",
+      "imageAlt": "Practice Q13 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q014",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A solid is reconstructed from horizontal layer masks. From bottom upwards, layer counts are 16, 12, 4. Each layer is one unit thick. What is the volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 32.0,
+        "max": 32.0
+      },
+      "image": "/media/uceed-spatial-260/01.14.png",
+      "imageAlt": "Practice Q14 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q015",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A 4 cm by 8 cm rectangle rotates fully about its 8 cm side. What is volume divided by pi, in cubic cm?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 128.0,
+        "max": 128.0
+      },
+      "image": "/media/uceed-spatial-260/01.15.png",
+      "imageAlt": "Practice Q15 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q016",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "Two no-gap solids on a 2 x 2 floor have the same full top view and every front/side elevation reaches height 4. What is the smallest possible volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "image": "/media/uceed-spatial-260/01.16.png",
+      "imageAlt": "Practice Q16 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q017",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A solid has footprint area 12. Its horizontal sections shrink linearly in area from 12 at z=0 to 0 at z=6. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 36.0,
+        "max": 36.0
+      },
+      "image": "/media/uceed-spatial-260/01.17.png",
+      "imageAlt": "Practice Q17 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q018",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "The height map gives a connected no-gap solid. Which is its largest occupied z coordinate if cube centres at floor level have z=0.5?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.5,
+        "max": 4.5
+      },
+      "image": "/media/uceed-spatial-260/01.18.png",
+      "imageAlt": "Practice Q18 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q019",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A box has outer dimensions 7 x 6 x 4. A rectangular tunnel of cross-section 2 x 1 passes completely along its 7 dimension. What volume of material remains?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 154.0,
+        "max": 154.0
+      },
+      "image": "/media/uceed-spatial-260/01.19.png",
+      "imageAlt": "Practice Q19 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q020",
+      "sectionId": "sec_ws_01",
+      "type": "NAT",
+      "prompt": "A solid contains 24 unit cubes in 4 identical fully occupied horizontal layers. How many unit cells are in its footprint?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D to 3D visualization",
+      "originalQuestionId": "01.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/01.20.png",
+      "imageAlt": "Practice Q20 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q021",
+      "sectionId": "sec_ws_02",
+      "type": "MCQ",
+      "prompt": "Rotate the complete coloured tile about its centre: 90 degrees clockwise. Which option is the final tile? Do not flip the tile.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/uceed-spatial-260/02.01.png",
+      "imageAlt": "Practice Q21 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q022",
+      "sectionId": "sec_ws_02",
+      "type": "MSQ",
+      "prompt": "Which options can be obtained by rotating the source tile in its own plane? Any angle is permitted, but reflection is not. The square grid must still align.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b"
+      ],
+      "image": "/media/uceed-spatial-260/02.02.png",
+      "imageAlt": "Practice Q22 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q023",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A disc is numbered 0-11 clockwise. At time 0 a narrow red window reveals 0. Each second the numbered disc turns 3 positions anticlockwise and the window turns 2 positions clockwise. What number is revealed after 3 seconds?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/02.03.png",
+      "imageAlt": "Practice Q23 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q024",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "Point P=(3,2) rotates 90 degrees anticlockwise around C=(1,1). What is the x coordinate of its image?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/02.04.png",
+      "imageAlt": "Practice Q24 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q025",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A pointer starts at 90 degrees clockwise from north. After an unknown clockwise turn it is at 20 degrees. What is the least nonnegative turn in degrees?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 290.0,
+        "max": 290.0
+      },
+      "image": "/media/uceed-spatial-260/02.05.png",
+      "imageAlt": "Practice Q25 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q026",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A 36-tooth gear meshes externally with a 24-tooth gear. The first turns 4 complete revolutions clockwise. How many revolutions does the second make?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/02.06.png",
+      "imageAlt": "Practice Q26 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q027",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A machine turns a marked disc by 72 degrees each step. How many steps first restore its initial orientation?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-260/02.07.png",
+      "imageAlt": "Practice Q27 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q028",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A point is 3 cm from a pivot. It rotates through 180 degrees. What is the straight-line distance between its old and new positions?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/02.08.png",
+      "imageAlt": "Practice Q28 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q029",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "P=(3,1). First translate by (2,0), then rotate 90 degrees anticlockwise around the origin. What is the final y coordinate?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-260/02.09.png",
+      "imageAlt": "Practice Q29 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q030",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A square arrow undergoes 3 clockwise quarter-turns and 5 anticlockwise half-turns. What is the least clockwise angle equivalent to the sequence?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 90.0,
+        "max": 90.0
+      },
+      "image": "/media/uceed-spatial-260/02.10.png",
+      "imageAlt": "Practice Q30 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q031",
+      "sectionId": "sec_ws_02",
+      "type": "MCQ",
+      "prompt": "Rotate the complete coloured tile about its centre: 180 degrees clockwise. Which option is the final tile? Do not flip the tile.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/uceed-spatial-260/02.11.png",
+      "imageAlt": "Practice Q31 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q032",
+      "sectionId": "sec_ws_02",
+      "type": "MSQ",
+      "prompt": "Which options can be obtained by rotating the source tile in its own plane? Any angle is permitted, but reflection is not. The square grid must still align.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a"
+      ],
+      "image": "/media/uceed-spatial-260/02.12.png",
+      "imageAlt": "Practice Q32 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q033",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A disc is numbered 0-11 clockwise. At time 0 a narrow red window reveals 7. Each second the numbered disc turns 1 positions anticlockwise and the window turns 1 positions clockwise. What number is revealed after 4 seconds?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/02.13.png",
+      "imageAlt": "Practice Q33 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q034",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "Point P=(4,2) rotates 90 degrees anticlockwise around C=(1,1). What is the x coordinate of its image?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/02.14.png",
+      "imageAlt": "Practice Q34 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q035",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A pointer starts at 120 degrees clockwise from north. After an unknown clockwise turn it is at 20 degrees. What is the least nonnegative turn in degrees?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 260.0,
+        "max": 260.0
+      },
+      "image": "/media/uceed-spatial-260/02.15.png",
+      "imageAlt": "Practice Q35 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q036",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A 48-tooth gear meshes externally with a 32-tooth gear. The first turns 4 complete revolutions clockwise. How many revolutions does the second make?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/02.16.png",
+      "imageAlt": "Practice Q36 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q037",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A machine turns a marked disc by 135 degrees each step. How many steps first restore its initial orientation?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/02.17.png",
+      "imageAlt": "Practice Q37 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q038",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A point is 4 cm from a pivot. It rotates through 180 degrees. What is the straight-line distance between its old and new positions?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/02.18.png",
+      "imageAlt": "Practice Q38 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q039",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "P=(4,1). First translate by (2,0), then rotate 90 degrees anticlockwise around the origin. What is the final y coordinate?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/02.19.png",
+      "imageAlt": "Practice Q39 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q040",
+      "sectionId": "sec_ws_02",
+      "type": "NAT",
+      "prompt": "A square arrow undergoes 4 clockwise quarter-turns and 6 anticlockwise half-turns. What is the least clockwise angle equivalent to the sequence?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation",
+      "originalQuestionId": "02.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/02.20.png",
+      "imageAlt": "Practice Q40 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q041",
+      "sectionId": "sec_ws_03",
+      "type": "MCQ",
+      "prompt": "Reflect the coloured tile across the vertical centre line (dashed). Which option results? All later axes belong to the page.",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/uceed-spatial-260/03.01.png",
+      "imageAlt": "Practice Q41 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q042",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "Reflect P=(7,2) across x=3. What is the reflected x coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -1.0,
+        "max": -1.0
+      },
+      "image": "/media/uceed-spatial-260/03.02.png",
+      "imageAlt": "Practice Q42 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q043",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "Reflect P=(3,1) across y=x+2. What is the image x coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -1.0,
+        "max": -1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q044",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A point at x=3 is reflected across x=0 and then x=5. What is its final x coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 13.0,
+        "max": 13.0
+      },
+      "image": "/media/uceed-spatial-260/03.04.png",
+      "imageAlt": "Practice Q44 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q045",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "Two reflection axes intersect at 30 degrees. What is the smaller nonzero rotation angle equivalent to their successive reflections?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 60.0,
+        "max": 60.0
+      },
+      "image": "/media/uceed-spatial-260/03.05.png",
+      "imageAlt": "Practice Q45 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q046",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A=(3,2), B=(9,2). A path must touch y=0 once. What is the square of its minimum total length?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 52.0,
+        "max": 52.0
+      },
+      "image": "/media/uceed-spatial-260/03.06.png",
+      "imageAlt": "Practice Q46 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q047",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A point is unchanged by reflection across x=3 and also across y=4. What is the sum of its coordinates?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q048",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A directed segment has displacement (3,-2). Reflect the whole segment across the y-axis. What is its new horizontal displacement?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -3.0,
+        "max": -3.0
+      },
+      "image": "/media/uceed-spatial-260/03.08.png",
+      "imageAlt": "Practice Q48 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q049",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A triangle has signed area +7 under anticlockwise-positive convention. It undergoes one reflection and two rotations. What is its final signed area?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -7.0,
+        "max": -7.0
+      },
+      "image": "/media/uceed-spatial-260/03.09.png",
+      "imageAlt": "Practice Q49 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q050",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "After reflection across y=3, point P becomes (2,8). What was the original y coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -2.0,
+        "max": -2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q051",
+      "sectionId": "sec_ws_03",
+      "type": "MCQ",
+      "prompt": "Reflect the coloured tile across the horizontal centre line (dashed). Which option results? All later axes belong to the page.",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/uceed-spatial-260/03.11.png",
+      "imageAlt": "Practice Q51 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q052",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "Reflect P=(8,2) across x=4. What is the reflected x coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/03.12.png",
+      "imageAlt": "Practice Q52 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q053",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "Reflect P=(4,1) across y=x+2. What is the image x coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -1.0,
+        "max": -1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q054",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A point at x=4 is reflected across x=0 and then x=5. What is its final x coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 14.0,
+        "max": 14.0
+      },
+      "image": "/media/uceed-spatial-260/03.14.png",
+      "imageAlt": "Practice Q54 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q055",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "Two reflection axes intersect at 45 degrees. What is the smaller nonzero rotation angle equivalent to their successive reflections?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 90.0,
+        "max": 90.0
+      },
+      "image": "/media/uceed-spatial-260/03.15.png",
+      "imageAlt": "Practice Q55 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q056",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A=(4,2), B=(10,2). A path must touch y=0 once. What is the square of its minimum total length?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 52.0,
+        "max": 52.0
+      },
+      "image": "/media/uceed-spatial-260/03.16.png",
+      "imageAlt": "Practice Q56 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q057",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A point is unchanged by reflection across x=4 and also across y=4. What is the sum of its coordinates?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q058",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A directed segment has displacement (4,-2). Reflect the whole segment across the y-axis. What is its new horizontal displacement?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -4.0,
+        "max": -4.0
+      },
+      "image": "/media/uceed-spatial-260/03.18.png",
+      "imageAlt": "Practice Q58 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q059",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "A triangle has signed area +8 under anticlockwise-positive convention. It undergoes one reflection and two rotations. What is its final signed area?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -8.0,
+        "max": -8.0
+      },
+      "image": "/media/uceed-spatial-260/03.19.png",
+      "imageAlt": "Practice Q59 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q060",
+      "sectionId": "sec_ws_03",
+      "type": "NAT",
+      "prompt": "After reflection across y=4, point P becomes (2,9). What was the original y coordinate?",
+      "topic": "Light, reflection and refraction",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Reflection",
+      "originalQuestionId": "03.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -1.0,
+        "max": -1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q061",
+      "sectionId": "sec_ws_04",
+      "type": "MCQ",
+      "prompt": "Find the final image after this sequence: mirror. Mirror means a left-right flip; water means a top-bottom flip. Each operation acts on the current image about its centre.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/uceed-spatial-260/04.01.png",
+      "imageAlt": "Practice Q61 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q062",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "The analogue clock reads 7:05. A vertical plane mirror is placed on its right. Read the reflected hand positions using an ordinary, unmirrored 12-hour dial. Enter the apparent time as h:mm.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/04.02.png",
+      "imageAlt": "Practice Q62 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q063",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "An ordinary seven-segment display shows 25. Viewed in a vertical mirror, read the reflected digits as valid ordinary seven-segment numerals. What two-digit number results?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "image": "/media/uceed-spatial-260/04.03.png",
+      "imageAlt": "Practice Q63 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q064",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A minute hand points to the 3 mark. Reflect its direction across a horizontal line through the dial centre. Which ordinary dial mark does it point to?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/04.04.png",
+      "imageAlt": "Practice Q64 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q065",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "An asymmetric row of 5 symbols is viewed successively through two parallel vertical mirrors. How many left-right reversals remain, modulo two?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/04.05.png",
+      "imageAlt": "Practice Q65 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q066",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A person stands 3 m from a plane mirror and moves 1 m directly towards it. What is the new distance to their virtual image?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/04.06.png",
+      "imageAlt": "Practice Q66 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q067",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "On a screen, x increases rightwards and y upwards. A coloured mark is at (3,3); the water-image axis is y=-1. What is its image y coordinate?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -5.0,
+        "max": -5.0
+      },
+      "image": "/media/uceed-spatial-260/04.07.png",
+      "imageAlt": "Practice Q67 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q068",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "Three cards in front of a mirror are numbered 3, 4, 5, left to right. Ignore reversal inside digits. What is the middle reflected card number?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/04.08.png",
+      "imageAlt": "Practice Q68 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q069",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A fixed point is at x=0. A vertical mirror moves from x=3 to x=5. How far does the virtual image move?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/04.09.png",
+      "imageAlt": "Practice Q69 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q070",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A full-height flat mirror is used to see a person 6 m tall. What is the minimum mirror height in metres required to see their whole body?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/04.10.png",
+      "imageAlt": "Practice Q70 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q071",
+      "sectionId": "sec_ws_04",
+      "type": "MCQ",
+      "prompt": "Find the final image after this sequence: mirror. Mirror means a left-right flip; water means a top-bottom flip. Each operation acts on the current image about its centre.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/uceed-spatial-260/04.11.png",
+      "imageAlt": "Practice Q71 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q072",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "The analogue clock reads 8:15. A vertical plane mirror is placed on its right. Read the reflected hand positions using an ordinary, unmirrored 12-hour dial. Enter the apparent time as h:mm.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/04.12.png",
+      "imageAlt": "Practice Q72 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q073",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "An ordinary seven-segment display shows 52. Viewed in a vertical mirror, read the reflected digits as valid ordinary seven-segment numerals. What two-digit number results?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 52.0,
+        "max": 52.0
+      },
+      "image": "/media/uceed-spatial-260/04.13.png",
+      "imageAlt": "Practice Q73 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q074",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A minute hand points to the 4 mark. Reflect its direction across a horizontal line through the dial centre. Which ordinary dial mark does it point to?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-260/04.14.png",
+      "imageAlt": "Practice Q74 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q075",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "An asymmetric row of 6 symbols is viewed successively through two parallel vertical mirrors. How many left-right reversals remain, modulo two?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/04.15.png",
+      "imageAlt": "Practice Q75 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q076",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A person stands 4 m from a plane mirror and moves 1 m directly towards it. What is the new distance to their virtual image?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/04.16.png",
+      "imageAlt": "Practice Q76 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q077",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "On a screen, x increases rightwards and y upwards. A coloured mark is at (4,3); the water-image axis is y=-1. What is its image y coordinate?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -5.0,
+        "max": -5.0
+      },
+      "image": "/media/uceed-spatial-260/04.17.png",
+      "imageAlt": "Practice Q77 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q078",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "Three cards in front of a mirror are numbered 4, 5, 6, left to right. Ignore reversal inside digits. What is the middle reflected card number?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-260/04.18.png",
+      "imageAlt": "Practice Q78 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q079",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A fixed point is at x=0. A vertical mirror moves from x=4 to x=6. How far does the virtual image move?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/04.19.png",
+      "imageAlt": "Practice Q79 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q080",
+      "sectionId": "sec_ws_04",
+      "type": "NAT",
+      "prompt": "A full-height flat mirror is used to see a person 8 m tall. What is the minimum mirror height in metres required to see their whole body?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror / water images",
+      "originalQuestionId": "04.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/04.20.png",
+      "imageAlt": "Practice Q80 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q081",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "How many reflection axes does the complete coloured square tile have? Consider the two centre lines and both diagonals. Colours must match exactly.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/05.01.png",
+      "imageAlt": "Practice Q81 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q082",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "The rosette has 6 identical, equally spaced spokes. Its colour sequence repeats every 2 spokes, as drawn. What is the smallest positive rotation angle (in degrees) that leaves the complete rosette unchanged?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 120.0,
+        "max": 120.0
+      },
+      "image": "/media/uceed-spatial-260/05.02.png",
+      "imageAlt": "Practice Q82 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q083",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A plain regular 6-gon has no marks. How many reflection axes does it have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/05.03.png",
+      "imageAlt": "Practice Q83 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q084",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A regular 6-gon and a concentric regular 9-gon share a vertex direction. Ignoring crossings, what is the rotational symmetry order of their union?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/05.04.png",
+      "imageAlt": "Practice Q84 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q085",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A regular 6-gon has exactly one vertex painted red, with all others blue. What is the rotational symmetry order of the marked polygon?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-260/05.05.png",
+      "imageAlt": "Practice Q85 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q086",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A row of cells has colours A B C A B. How many cells must be recoloured at minimum to make the row palindromic?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-260/05.06.png",
+      "imageAlt": "Practice Q86 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q087",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A 3 x 3 tile must have 90-degree rotational symmetry. How many independent cell colour choices can be made before all remaining cells are forced?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/05.07.png",
+      "imageAlt": "Practice Q87 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q088",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A necklace of 12 equally spaced beads repeats ABC around the ring. What is its rotational order if each colour is distinct?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/05.08.png",
+      "imageAlt": "Practice Q88 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q089",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A plane shape is symmetric about x=0. Its area strictly to the right of x=0 is 21. What is its total area? The line itself has zero area.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 42.0,
+        "max": 42.0
+      },
+      "image": "/media/uceed-spatial-260/05.09.png",
+      "imageAlt": "Practice Q89 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q090",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A figure has reflection symmetry across two perpendicular lines. What rotation must also leave it unchanged? Give the least guaranteed positive angle.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 180.0,
+        "max": 180.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q091",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "How many reflection axes does the complete coloured square tile have? Consider the two centre lines and both diagonals. Colours must match exactly.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-260/05.11.png",
+      "imageAlt": "Practice Q91 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q092",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "The rosette has 8 identical, equally spaced spokes. Its colour sequence repeats every 4 spokes, as drawn. What is the smallest positive rotation angle (in degrees) that leaves the complete rosette unchanged?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 180.0,
+        "max": 180.0
+      },
+      "image": "/media/uceed-spatial-260/05.12.png",
+      "imageAlt": "Practice Q92 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q093",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A plain regular 7-gon has no marks. How many reflection axes does it have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-260/05.13.png",
+      "imageAlt": "Practice Q93 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q094",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A regular 8-gon and a concentric regular 12-gon share a vertex direction. Ignoring crossings, what is the rotational symmetry order of their union?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/05.14.png",
+      "imageAlt": "Practice Q94 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q095",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A regular 7-gon has exactly one vertex painted red, with all others blue. What is the rotational symmetry order of the marked polygon?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-260/05.15.png",
+      "imageAlt": "Practice Q95 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q096",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A row of cells has colours A B C C B A. How many cells must be recoloured at minimum to make the row palindromic?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/05.16.png",
+      "imageAlt": "Practice Q96 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q097",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A 5 x 5 tile must have 90-degree rotational symmetry. How many independent cell colour choices can be made before all remaining cells are forced?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-260/05.17.png",
+      "imageAlt": "Practice Q97 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q098",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A non-square rectangle is unmarked. What is its rotational symmetry order?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-260/05.18.png",
+      "imageAlt": "Practice Q98 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q099",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A plane shape is symmetric about x=0. Its area strictly to the right of x=0 is 28. What is its total area? The line itself has zero area.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 56.0,
+        "max": 56.0
+      },
+      "image": "/media/uceed-spatial-260/05.19.png",
+      "imageAlt": "Practice Q99 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q100",
+      "sectionId": "sec_ws_05",
+      "type": "NAT",
+      "prompt": "A coloured design has reflection symmetry about axes at 30 degrees to one another. What is the smallest rotation forced by composing those reflections?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry",
+      "originalQuestionId": "05.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 60.0,
+        "max": 60.0
+      },
+      "image": "/media/uceed-spatial-260/05.20.png",
+      "imageAlt": "Practice Q100 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q101",
+      "sectionId": "sec_ws_06",
+      "type": "MCQ",
+      "prompt": "Which is the front orthographic silhouette of the solid? Use the height map as exact data. Front looks along +y from y<0; right looks along -x from x>0. In right view, the back appears on the left. Ignore colour shading.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/uceed-spatial-260/06.01.png",
+      "imageAlt": "Practice Q101 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q102",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A solid uses a 4 x 4 grid and complete vertical stacks of unit cubes. Only the two elevation height lists are known; empty columns are allowed. What is the minimum possible total number of cubes?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "image": "/media/uceed-spatial-260/06.02.png",
+      "imageAlt": "Practice Q102 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q103",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "In the height map, view from FRONT along depth. How many unit squares appear in the front silhouette?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "image": "/media/uceed-spatial-260/06.03.png",
+      "imageAlt": "Practice Q103 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q104",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A no-gap solid has front column heights [2,3,1] and three depth rows. What is the greatest possible volume if no other constraints apply?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q105",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A 2 x 2 solid has heights [[2,x],[1,3]], listed back row then front row. Its right-view row maxima are [4,3]. What is x?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/06.05.png",
+      "imageAlt": "Practice Q105 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q106",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Top view occupies 6 cells. Every column has height at least 1 and at most 4. What is the minimum volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q107",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A solid 3 x 3 x 3 cube loses its central unit cube; all boundary cubes remain. How many of its six external orthographic silhouettes change?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/06.07.png",
+      "imageAlt": "Practice Q107 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q108",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A cuboid front view is 3 by 5; its right-side view is 7 by 5. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 105.0,
+        "max": 105.0
+      },
+      "image": "/media/uceed-spatial-260/06.08.png",
+      "imageAlt": "Practice Q108 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q109",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A cuboid has x,y,z lengths 3, 5, 7. It turns 90 degrees about z. What is the new front-view width times height?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 35.0,
+        "max": 35.0
+      },
+      "image": "/media/uceed-spatial-260/06.09.png",
+      "imageAlt": "Practice Q109 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q110",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A uniform prism has full rectangular front elevation 3 by 4 and rectangular top footprint 3 by 6, with no cavities. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 72.0,
+        "max": 72.0
+      },
+      "image": "/media/uceed-spatial-260/06.10.png",
+      "imageAlt": "Practice Q110 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q111",
+      "sectionId": "sec_ws_06",
+      "type": "MCQ",
+      "prompt": "Which is the right side orthographic silhouette of the solid? Use the height map as exact data. Front looks along +y from y<0; right looks along -x from x>0. In right view, the back appears on the left. Ignore colour shading.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/uceed-spatial-260/06.11.png",
+      "imageAlt": "Practice Q111 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q112",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A solid uses a 4 x 4 grid and complete vertical stacks of unit cubes. Only the two elevation height lists are known; empty columns are allowed. What is the maximum possible total number of cubes?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 50.0,
+        "max": 50.0
+      },
+      "image": "/media/uceed-spatial-260/06.12.png",
+      "imageAlt": "Practice Q112 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q113",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "In the height map, view from FRONT along depth. How many unit squares appear in the front silhouette?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      },
+      "image": "/media/uceed-spatial-260/06.13.png",
+      "imageAlt": "Practice Q113 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q114",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A no-gap solid has front column heights [2,4,1] and three depth rows. What is the greatest possible volume if no other constraints apply?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 21.0,
+        "max": 21.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q115",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A 2 x 2 solid has heights [[2,x],[1,4]], listed back row then front row. Its right-view row maxima are [5,4]. What is x?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-260/06.15.png",
+      "imageAlt": "Practice Q115 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q116",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "Top view occupies 7 cells. Every column has height at least 1 and at most 4. What is the minimum volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q117",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A solid 4 x 4 x 4 cube loses its central unit cube; all boundary cubes remain. How many of its six external orthographic silhouettes change?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/06.17.png",
+      "imageAlt": "Practice Q117 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q118",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A cuboid front view is 4 by 6; its right-side view is 8 by 6. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 192.0,
+        "max": 192.0
+      },
+      "image": "/media/uceed-spatial-260/06.18.png",
+      "imageAlt": "Practice Q118 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q119",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A cuboid has x,y,z lengths 4, 6, 8. It turns 90 degrees about z. What is the new front-view width times height?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 48.0,
+        "max": 48.0
+      },
+      "image": "/media/uceed-spatial-260/06.19.png",
+      "imageAlt": "Practice Q119 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q120",
+      "sectionId": "sec_ws_06",
+      "type": "NAT",
+      "prompt": "A uniform prism has full rectangular front elevation 4 by 4 and rectangular top footprint 4 by 6, with no cavities. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top / front / side views",
+      "originalQuestionId": "06.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 96.0,
+        "max": 96.0
+      },
+      "image": "/media/uceed-spatial-260/06.20.png",
+      "imageAlt": "Practice Q120 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q121",
+      "sectionId": "sec_ws_07",
+      "type": "MCQ",
+      "prompt": "Fold this net outward into a closed cube. Which labelled face is opposite face D? Choose from C, A, E, F, B. (Write the face label.)",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/uceed-spatial-260/07.01.png",
+      "imageAlt": "Practice Q121 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q122",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Fold the rectangular net into a closed cuboid. Belt widths below A-D and the common belt height are in cm; each cap has the indicated depth. What is the area, in square centimetres, of the face opposite A?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 28.0,
+        "max": 28.0
+      },
+      "image": "/media/uceed-spatial-260/07.02.png",
+      "imageAlt": "Practice Q122 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q123",
+      "sectionId": "sec_ws_07",
+      "type": "MSQ",
+      "prompt": "Which arrangements of six equal squares can fold into a closed cube without overlap? Fold only along shared square edges. Numbers merely identify panels.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "b",
+        "d"
+      ],
+      "image": "/media/uceed-spatial-260/07.03.png",
+      "imageAlt": "Practice Q123 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q124",
+      "sectionId": "sec_ws_07",
+      "type": "MSQ",
+      "prompt": "After folding this net into a cube, which listed groups of three faces can meet at one vertex? Face order within a group is irrelevant.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a",
+        "d"
+      ],
+      "image": "/media/uceed-spatial-260/07.04.png",
+      "imageAlt": "Practice Q124 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q125",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A carton net has six 3 x 3 square panels and four glue tabs of area 2 each. What is its total cardboard area?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 62.0,
+        "max": 62.0
+      },
+      "image": "/media/uceed-spatial-260/07.05.png",
+      "imageAlt": "Practice Q125 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q126",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Six panels form a connected cube net whose adjacency graph is a tree. How many shared edges act as hinges?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-260/07.06.png",
+      "imageAlt": "Practice Q126 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q127",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A cuboid net has face areas 6, 9, 6, each repeated twice. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "image": "/media/uceed-spatial-260/07.07.png",
+      "imageAlt": "Practice Q127 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q128",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Six squares of side 3 form a valid cube net with five shared full edges. What is the outer perimeter?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 42.0,
+        "max": 42.0
+      },
+      "image": "/media/uceed-spatial-260/07.08.png",
+      "imageAlt": "Practice Q128 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q129",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A cube folded from a net has edge 3. What is the distance between the centres of two opposite faces?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/07.09.png",
+      "imageAlt": "Practice Q129 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q130",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A cube net has total panel area 54 square cm. What is the folded cube volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 27.0,
+        "max": 27.0
+      },
+      "image": "/media/uceed-spatial-260/07.10.png",
+      "imageAlt": "Practice Q130 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q131",
+      "sectionId": "sec_ws_07",
+      "type": "MCQ",
+      "prompt": "Fold this net outward into a closed cube. Which labelled face is opposite face A? Choose from C, E, B, D, F. (Write the face label.)",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/uceed-spatial-260/07.11.png",
+      "imageAlt": "Practice Q131 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q132",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Fold the rectangular net into a closed cuboid. Belt widths below A-D and the common belt height are in cm; each cap has the indicated depth. What is the area, in square centimetres, of the face opposite B?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "image": "/media/uceed-spatial-260/07.12.png",
+      "imageAlt": "Practice Q132 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q133",
+      "sectionId": "sec_ws_07",
+      "type": "MSQ",
+      "prompt": "Which arrangements of six equal squares can fold into a closed cube without overlap? Fold only along shared square edges. Numbers merely identify panels.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "c",
+        "d"
+      ],
+      "image": "/media/uceed-spatial-260/07.13.png",
+      "imageAlt": "Practice Q133 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q134",
+      "sectionId": "sec_ws_07",
+      "type": "MSQ",
+      "prompt": "After folding this net into a cube, which listed groups of three faces can meet at one vertex? Face order within a group is irrelevant.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "c",
+        "d"
+      ],
+      "image": "/media/uceed-spatial-260/07.14.png",
+      "imageAlt": "Practice Q134 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q135",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A carton net has six 4 x 4 square panels and four glue tabs of area 2 each. What is its total cardboard area?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 104.0,
+        "max": 104.0
+      },
+      "image": "/media/uceed-spatial-260/07.15.png",
+      "imageAlt": "Practice Q135 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q136",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A flat carton net has six square panels and five hinges. One hinge is cut. The remaining hinge graph is a forest. How many separate panel groups result?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-260/07.16.png",
+      "imageAlt": "Practice Q136 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q137",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A cuboid net has face areas 8, 12, 6, each repeated twice. What is its volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      },
+      "image": "/media/uceed-spatial-260/07.17.png",
+      "imageAlt": "Practice Q137 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q138",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "Six squares of side 4 form a valid cube net with five shared full edges. What is the outer perimeter?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 56.0,
+        "max": 56.0
+      },
+      "image": "/media/uceed-spatial-260/07.18.png",
+      "imageAlt": "Practice Q138 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q139",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A cube folded from a net has edge 4. What is the distance between the centres of two opposite faces?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/07.19.png",
+      "imageAlt": "Practice Q139 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q140",
+      "sectionId": "sec_ws_07",
+      "type": "NAT",
+      "prompt": "A cube net has total panel area 96 square cm. What is the folded cube volume?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube / cuboid nets",
+      "originalQuestionId": "07.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 64.0,
+        "max": 64.0
+      },
+      "image": "/media/uceed-spatial-260/07.20.png",
+      "imageAlt": "Practice Q140 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q141",
+      "sectionId": "sec_ws_08",
+      "type": "MCQ",
+      "prompt": "Fold an 8 x 8 sheet in half at each step: left onto right. Each fold acts on the current packet. Punch every red cell through all layers. Which pattern appears on full unfolding? Blue cells are holes; yellow shows the final packet.",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/uceed-spatial-260/08.01.png",
+      "imageAlt": "Practice Q141 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q142",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet is folded in half 3 times, each new fold doubling the full packet layers. How many layers are there?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/08.02.png",
+      "imageAlt": "Practice Q142 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q143",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A strip is folded end to end in half 3 times in the same direction. After fully unfolding, how many distinct interior crease positions lie along its length?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-260/08.03.png",
+      "imageAlt": "Practice Q143 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q144",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet is 24 cm wide and 12 cm tall. Fold left onto right twice, then bottom onto top once. What is its packet area in square cm?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 36.0,
+        "max": 36.0
+      },
+      "image": "/media/uceed-spatial-260/08.04.png",
+      "imageAlt": "Practice Q144 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q145",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A square is folded in half once. A small semicircle of radius 3 is cut with its diameter lying on the crease, away from every edge. After unfolding, what is removed area divided by pi?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/uceed-spatial-260/08.05.png",
+      "imageAlt": "Practice Q145 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q146",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet is folded vertically once. A hole centred strictly inside the packet and away from the crease is punched through both layers. How many disconnected holes appear on unfolding?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-260/08.06.png",
+      "imageAlt": "Practice Q146 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q147",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A strip occupies x from 0 to 12. Fold its left half onto the right about x=6. A punch at x=9 corresponds to what original x on the moved half?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/08.07.png",
+      "imageAlt": "Practice Q147 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q148",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A rectangular flap cut on three edges remains attached on its fourth edge. It rotates out of the sheet by 90 degrees. How many hinge edges constrain that flap?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-260/08.08.png",
+      "imageAlt": "Practice Q148 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q149",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A strip of length 36 is accordion-folded along equally spaced creases into 3 equal panels. What is the projected strip length when all panels lie exactly on top of one another?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      },
+      "image": "/media/uceed-spatial-260/08.09.png",
+      "imageAlt": "Practice Q149 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q150",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet has area 60. Fold it three times, with no cutting or stretching. What is total material area, counting every layer separately?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 60.0,
+        "max": 60.0
+      },
+      "image": "/media/uceed-spatial-260/08.10.png",
+      "imageAlt": "Practice Q150 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q151",
+      "sectionId": "sec_ws_08",
+      "type": "MCQ",
+      "prompt": "Fold an 8 x 8 sheet in half at each step: left onto right. Each fold acts on the current packet. Punch every red cell through all layers. Which pattern appears on full unfolding? Blue cells are holes; yellow shows the final packet.",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/uceed-spatial-260/08.11.png",
+      "imageAlt": "Practice Q151 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q152",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet is folded in half 4 times, each new fold doubling the full packet layers. How many layers are there?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-260/08.12.png",
+      "imageAlt": "Practice Q152 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q153",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A strip is folded end to end in half 4 times in the same direction. After fully unfolding, how many distinct interior crease positions lie along its length?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      },
+      "image": "/media/uceed-spatial-260/08.13.png",
+      "imageAlt": "Practice Q153 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q154",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet is 32 cm wide and 12 cm tall. Fold left onto right twice, then bottom onto top once. What is its packet area in square cm?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 48.0,
+        "max": 48.0
+      },
+      "image": "/media/uceed-spatial-260/08.14.png",
+      "imageAlt": "Practice Q154 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q155",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A square is folded in half once. A small semicircle of radius 4 is cut with its diameter lying on the crease, away from every edge. After unfolding, what is removed area divided by pi?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-260/08.15.png",
+      "imageAlt": "Practice Q155 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q156",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet is folded vertically once. A circular punch is centred exactly on the crease. After unfolding, does it create one connected hole or two disconnected holes? Write ONE or TWO.",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/08.16.png",
+      "imageAlt": "Practice Q156 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q157",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A strip occupies x from 0 to 16. Fold its left half onto the right about x=8. A punch at x=12 corresponds to what original x on the moved half?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/08.17.png",
+      "imageAlt": "Practice Q157 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q158",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A rectangular flap is cut free on all four edges. It is lifted without deformation. How many fold hinges still attach it to the sheet?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/08.18.png",
+      "imageAlt": "Practice Q158 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q159",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A strip of length 48 is accordion-folded along equally spaced creases into 4 equal panels. What is the projected strip length when all panels lie exactly on top of one another?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      },
+      "image": "/media/uceed-spatial-260/08.19.png",
+      "imageAlt": "Practice Q159 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q160",
+      "sectionId": "sec_ws_08",
+      "type": "NAT",
+      "prompt": "A sheet has area 80. Fold it three times, with no cutting or stretching. What is total material area, counting every layer separately?",
+      "topic": "Paper folding, cutting and punching",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Folding / unfolding",
+      "originalQuestionId": "08.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 80.0,
+        "max": 80.0
+      },
+      "image": "/media/uceed-spatial-260/08.20.png",
+      "imageAlt": "Practice Q160 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q161",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "The solid is a 3-sided prism. The base polygon has 3 vertices, and no two neighbouring sides are collinear. How many edges does the whole solid have, including hidden ones?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/uceed-spatial-260/09.01.png",
+      "imageAlt": "Practice Q161 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q162",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A cube has 2 distinct corners sliced off by small planes. Every cut stays close to its corner; the cuts do not meet and no original face disappears. What is the final number of faces? Count each new triangular cut face.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/09.02.png",
+      "imageAlt": "Practice Q162 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q163",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron has 9 vertices and 14 edges. How many faces does it have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q164",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron has 12 triangular faces. Every edge belongs to exactly two faces. How many edges?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q165",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A polyhedral graph has 6 vertices of degree 3 and 4 vertices of degree 4. How many edges?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 17.0,
+        "max": 17.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q166",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "Two identical 5-gonal pyramids are joined base to base. What is the number of vertices of the resulting bipyramid?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-260/09.06.png",
+      "imageAlt": "Practice Q166 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q167",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron face is an 6-gon. Add noncrossing diagonals from one vertex to triangulate it without changing shape. How many new graph edges are introduced?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/09.07.png",
+      "imageAlt": "Practice Q167 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q168",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "One cube edge is narrowly bevelled by a plane, stopping exactly at the two endpoint corners and leaving the other faces. The resulting convex solid has 7 faces and 10 vertices. How many edges?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q169",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron has 8 faces, 13 edges, and 7 vertices. How many vertices does its dual have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q170",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A 5-gonal prism has all base sides 2 cm and lateral edges 3 cm. What is its total wireframe edge length?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 35.0,
+        "max": 35.0
+      },
+      "image": "/media/uceed-spatial-260/09.10.png",
+      "imageAlt": "Practice Q170 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q171",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "The solid is a 4-sided pyramid. The base polygon has 4 vertices, and no two neighbouring sides are collinear. How many vertices does the whole solid have, including hidden ones?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-260/09.11.png",
+      "imageAlt": "Practice Q171 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q172",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A cube has 3 distinct corners sliced off by small planes. Every cut stays close to its corner; the cuts do not meet and no original face disappears. What is the final number of faces? Count each new triangular cut face.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/uceed-spatial-260/09.12.png",
+      "imageAlt": "Practice Q172 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q173",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron has 10 vertices and 16 edges. How many faces does it have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q174",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron has 16 triangular faces. Every edge belongs to exactly two faces. How many edges?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q175",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A polyhedral graph has 8 vertices of degree 3 and 4 vertices of degree 4. How many edges?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 20.0,
+        "max": 20.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q176",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "Two identical 6-gonal pyramids are joined base to base. What is the number of vertices of the resulting bipyramid?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/09.16.png",
+      "imageAlt": "Practice Q176 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q177",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron face is an 7-gon. Add noncrossing diagonals from one vertex to triangulate it without changing shape. How many new graph edges are introduced?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/09.17.png",
+      "imageAlt": "Practice Q177 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q178",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A cube undergoes narrow bevels on two separated parallel edges. Each bevel adds one face, two vertices and three edges. What is the final edge count?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q179",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A convex polyhedron has 9 faces, 15 edges, and 8 vertices. How many vertices does its dual have?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q180",
+      "sectionId": "sec_ws_09",
+      "type": "NAT",
+      "prompt": "A 6-gonal prism has all base sides 2 cm and lateral edges 3 cm. What is its total wireframe edge length?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces / edges / vertices",
+      "originalQuestionId": "09.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 42.0,
+        "max": 42.0
+      },
+      "image": "/media/uceed-spatial-260/09.20.png",
+      "imageAlt": "Practice Q180 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q181",
+      "sectionId": "sec_ws_10",
+      "type": "MCQ",
+      "prompt": "Rigidly turn the cube: 90 degrees about +z. Every positive turn is anticlockwise when viewed from the positive axis end towards the origin. Axes remain fixed. In every cube sketch, right face is +x, left face is +y, top is +z. Which option gives the final visible +x, +y and +z faces?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.01",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "b",
+      "image": "/media/uceed-spatial-260/10.01.png",
+      "imageAlt": "Practice Q181 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q182",
+      "sectionId": "sec_ws_10",
+      "type": "MCQ",
+      "prompt": "A cube starts with top A, bottom F, east B, west E, north C, south D. Roll it east 4 times. Which face is on top?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.02",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/uceed-spatial-260/10.02.png",
+      "imageAlt": "Practice Q182 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q183",
+      "sectionId": "sec_ws_10",
+      "type": "MCQ",
+      "prompt": "A cube starts top A, bottom F, east B, west E, north C, south D. Roll east once, then north once. Which face is on top?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.03",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/uceed-spatial-260/10.03.png",
+      "imageAlt": "Practice Q183 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q184",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube has six differently coloured faces. How many distinct rigid orientations exist? Mirror states are excluded.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q185",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube has one face fixed on top. All six faces have distinct labels. How many rigid orientations remain possible?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q186",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A labelled cube rolls east once, north once, south once, then west once. Is its final orientation identical to the start? Write YES or NO.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/10.06.png",
+      "imageAlt": "Practice Q186 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q187",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A rod points along vector (3,2,1). Rotate 90 degrees positively about +y under the right-hand rule. What is its final z component?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -3.0,
+        "max": -3.0
+      },
+      "image": "/media/uceed-spatial-260/10.07.png",
+      "imageAlt": "Practice Q187 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q188",
+      "sectionId": "sec_ws_10",
+      "type": "MCQ",
+      "prompt": "A cube has opposite pairs A/F, B/E, C/D. After any rigid rotation, which face is opposite C?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.08",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "d",
+      "image": "/media/uceed-spatial-260/10.08.png",
+      "imageAlt": "Practice Q188 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q189",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube is centred at the origin. A 180-degree turn about the line in direction (1,1,0) sends the +z face to which signed axis?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/10.09.png",
+      "imageAlt": "Practice Q189 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q190",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube has distinct face labels. Fix face A on top and an adjacent face B at front. How many rigid orientations satisfy both?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q191",
+      "sectionId": "sec_ws_10",
+      "type": "MCQ",
+      "prompt": "Rigidly turn the cube: 180 degrees about +z. Every positive turn is anticlockwise when viewed from the positive axis end towards the origin. Axes remain fixed. In every cube sketch, right face is +x, left face is +y, top is +z. Which option gives the final visible +x, +y and +z faces?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/uceed-spatial-260/10.11.png",
+      "imageAlt": "Practice Q191 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q192",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube starts with top A, bottom F, east B, west E, north C, south D. Roll it east 5 times. Which face is on top?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/10.12.png",
+      "imageAlt": "Practice Q192 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q193",
+      "sectionId": "sec_ws_10",
+      "type": "MCQ",
+      "prompt": "A cube starts top A, bottom F, east B, west E, north C, south D. Roll north, east, then south. Which face is on top?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.13",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "a",
+      "image": "/media/uceed-spatial-260/10.13.png",
+      "imageAlt": "Practice Q193 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q194",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube has opposite faces red/red, blue/blue, green/green. Faces of a pair are indistinguishable. How many visually distinct rigid orientations exist?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q195",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A fully labelled cube must keep A on top. How many different front-face labels can occur under permitted rigid rotations?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q196",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube initially has top A, bottom F, east B, west E, north C, south D. It rolls east, north, west, then south. Is its final orientation the same as the start? YES or NO.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/10.16.png",
+      "imageAlt": "Practice Q196 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q197",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A rod points along vector (4,2,1). Rotate 90 degrees positively about +y under the right-hand rule. What is its final z component?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": -4.0,
+        "max": -4.0
+      },
+      "image": "/media/uceed-spatial-260/10.17.png",
+      "imageAlt": "Practice Q197 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q198",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube has opposite pairs A/F, B/E, C/D. Can faces A, F and C meet at one vertex after any rotation? YES or NO.",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/10.18.png",
+      "imageAlt": "Practice Q198 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q199",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A rigid object vector is (2,3,4). Turn it 180 degrees about the axis in direction (1,1,0). What is its new x component?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/10.19.png",
+      "imageAlt": "Practice Q199 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q200",
+      "sectionId": "sec_ws_10",
+      "type": "NAT",
+      "prompt": "A cube has distinct labels and opposite pair A/F. How many orientations can have A on top and F at front simultaneously?",
+      "topic": "Rotation and reflection",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Object rotation",
+      "originalQuestionId": "10.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q201",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "How many exposed unit-square faces does this block arrangement have? Include bottom faces. Every contact between cubes hides two unit faces.",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 42.0,
+        "max": 42.0
+      },
+      "image": "/media/uceed-spatial-260/11.01.png",
+      "imageAlt": "Practice Q201 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q202",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Fuse every face-sharing group of unit cubes. Across the whole arrangement, count connected flat surface patches, including the bottom. Adjacent coplanar unit faces form ONE patch; patches meeting only at a point remain separate. How many patches are there?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "image": "/media/uceed-spatial-260/11.02.png",
+      "imageAlt": "Practice Q202 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q203",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A solid 5 x 5 x 5 cube consists of unit cubes. Remove the top cube from each lowered column in this AFTER-removal map. All other columns keep full height. Count all exposed unit-square faces, including the bottom.",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 154.0,
+        "max": 154.0
+      },
+      "image": "/media/uceed-spatial-260/11.03.png",
+      "imageAlt": "Practice Q203 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q204",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A solid 3 x 3 x 3 cube is painted on all six sides then separated. How many small cubes have exactly two painted faces?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 12.0,
+        "max": 12.0
+      },
+      "image": "/media/uceed-spatial-260/11.04.png",
+      "imageAlt": "Practice Q204 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q205",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A hollow cube has outer edge 5 and a concentric cubical closed cavity of edge 3. What is the total boundary area, including inner walls?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 204.0,
+        "max": 204.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q206",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A square 1 x 1 tunnel runs through the centre of a solid cube of edge 3, perpendicular to two opposite faces. What is its total boundary area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 64.0,
+        "max": 64.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q207",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Two cubes of edge 3 are glued on one complete face. What is the outside surface area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 90.0,
+        "max": 90.0
+      },
+      "image": "/media/uceed-spatial-260/11.07.png",
+      "imageAlt": "Practice Q207 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q208",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A model has surface area 15. Enlarge every length by factor 3. What is its new surface area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 135.0,
+        "max": 135.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q209",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Remove one corner unit cube from a large solid cube. By how many unit squares does exposed area change? Include all new recess faces.",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q210",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A prism has depth 3 and an L-shaped cross-section with area 3 and perimeter 8. What is its boundary area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 30.0,
+        "max": 30.0
+      },
+      "image": "/media/uceed-spatial-260/11.10.png",
+      "imageAlt": "Practice Q210 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q211",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "How many exposed unit-square faces does this block arrangement have? Include bottom faces. Every contact between cubes hides two unit faces.",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 42.0,
+        "max": 42.0
+      },
+      "image": "/media/uceed-spatial-260/11.11.png",
+      "imageAlt": "Practice Q211 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q212",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Fuse every face-sharing group of unit cubes. Across the whole arrangement, count connected flat surface patches, including the bottom. Adjacent coplanar unit faces form ONE patch; patches meeting only at a point remain separate. How many patches are there?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "image": "/media/uceed-spatial-260/11.12.png",
+      "imageAlt": "Practice Q212 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q213",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A solid 3 x 3 x 3 cube consists of unit cubes. Remove the top cube from each lowered column in this AFTER-removal map. All other columns keep full height. Count all exposed unit-square faces, including the bottom.",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 58.0,
+        "max": 58.0
+      },
+      "image": "/media/uceed-spatial-260/11.13.png",
+      "imageAlt": "Practice Q213 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q214",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A solid 4 x 4 x 4 cube is painted on all six sides then separated. How many small cubes have exactly two painted faces?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      },
+      "image": "/media/uceed-spatial-260/11.14.png",
+      "imageAlt": "Practice Q214 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q215",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A hollow cube has outer edge 6 and a concentric cubical closed cavity of edge 4. What is the total boundary area, including inner walls?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 312.0,
+        "max": 312.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q216",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A square 1 x 1 tunnel runs through the centre of a solid cube of edge 4, perpendicular to two opposite faces. What is its total boundary area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 110.0,
+        "max": 110.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q217",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Two cubes of edge 4 are glued on one complete face. What is the outside surface area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 160.0,
+        "max": 160.0
+      },
+      "image": "/media/uceed-spatial-260/11.17.png",
+      "imageAlt": "Practice Q217 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q218",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A model has surface area 20. Enlarge every length by factor 3. What is its new surface area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 180.0,
+        "max": 180.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q219",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "Remove a unit cube from the middle of a large solid cube edge, away from its corners. How much does total exposed area increase?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q220",
+      "sectionId": "sec_ws_11",
+      "type": "NAT",
+      "prompt": "A prism has depth 4 and an L-shaped cross-section with area 3 and perimeter 8. What is its boundary area?",
+      "topic": "Pattern Counting",
+      "category": "Observation & Design Sensitivity",
+      "sourceTopic": "Surface counting",
+      "originalQuestionId": "11.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 38.0,
+        "max": 38.0
+      },
+      "image": "/media/uceed-spatial-260/11.20.png",
+      "imageAlt": "Practice Q220 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q221",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many unit cubes are in the complete arrangement? The height map includes all hidden cubes; each numbered column is filled continuously from the floor.",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 11.0,
+        "max": 11.0
+      },
+      "image": "/media/uceed-spatial-260/12.01.png",
+      "imageAlt": "Practice Q221 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q222",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Add unit cubes, without moving any existing cube, to make a completely solid 3 x 3 x 3 cuboid on the same footprint. How many cubes must be added?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 11.0,
+        "max": 11.0
+      },
+      "image": "/media/uceed-spatial-260/12.02.png",
+      "imageAlt": "Practice Q222 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q223",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many distinct pairs of cubes touch face-to-face? Count each pair once. Edge and corner contacts do not count; include pairs within hidden portions of the stacks.",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "image": "/media/uceed-spatial-260/12.03.png",
+      "imageAlt": "Practice Q223 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q224",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Paint all exposed surfaces from every direction, except faces against the floor. Then separate every cube. How many cubes have exactly 3 painted faces? The complete column map controls hidden geometry.",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/12.04.png",
+      "imageAlt": "Practice Q224 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q225",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A vertical stack of 6 cubes stands on a table. Remove its bottom cube while holding the others in place. How many cubes have no face contact with the table?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 5.0,
+        "max": 5.0
+      },
+      "image": "/media/uceed-spatial-260/12.05.png",
+      "imageAlt": "Practice Q225 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q226",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A solid slab has 3 rows, 4 columns and one layer. How many distinct face-sharing contacts are there?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "image": "/media/uceed-spatial-260/12.06.png",
+      "imageAlt": "Practice Q226 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q227",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "3 separate cubes are arranged along x at positions 0,2,4,... with unit edge length. How many face-connected components are there?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/12.07.png",
+      "imageAlt": "Practice Q227 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q228",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A stack arrangement spans x positions 0 through 2, y positions 0 through 1, and z positions 0 through 2. What is its enclosing grid-box capacity in cubes?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "image": "/media/uceed-spatial-260/12.08.png",
+      "imageAlt": "Practice Q228 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q229",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A pile has layers of square arrays 3x3, then 2x2, down to 1x1. How many cubes?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 14.0,
+        "max": 14.0
+      },
+      "image": "/media/uceed-spatial-260/12.09.png",
+      "imageAlt": "Practice Q229 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q230",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A new cube is inserted into an empty cell having 3 occupied face-neighbours. How many new distinct face-contact pairs are created?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q231",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many unit cubes are in the complete arrangement? The height map includes all hidden cubes; each numbered column is filled continuously from the floor.",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.11",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 7.0,
+        "max": 7.0
+      },
+      "image": "/media/uceed-spatial-260/12.11.png",
+      "imageAlt": "Practice Q231 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q232",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Add unit cubes, without moving any existing cube, to make a completely solid 3 x 3 x 3 cuboid on the same footprint. How many cubes must be added?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "image": "/media/uceed-spatial-260/12.12.png",
+      "imageAlt": "Practice Q232 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q233",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "How many distinct pairs of cubes touch face-to-face? Count each pair once. Edge and corner contacts do not count; include pairs within hidden portions of the stacks.",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 11.0,
+        "max": 11.0
+      },
+      "image": "/media/uceed-spatial-260/12.13.png",
+      "imageAlt": "Practice Q233 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q234",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "Paint all exposed surfaces from every direction, except faces against the floor. Then separate every cube. How many cubes have exactly 1 painted faces? The complete column map controls hidden geometry.",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 9.0,
+        "max": 9.0
+      },
+      "image": "/media/uceed-spatial-260/12.14.png",
+      "imageAlt": "Practice Q234 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q235",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A vertical stack of 7 cubes stands on a table. Remove its bottom cube while holding the others in place. How many cubes have no face contact with the table?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/12.15.png",
+      "imageAlt": "Practice Q235 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q236",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A solid slab has 4 rows, 5 columns and one layer. How many distinct face-sharing contacts are there?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 31.0,
+        "max": 31.0
+      },
+      "image": "/media/uceed-spatial-260/12.16.png",
+      "imageAlt": "Practice Q236 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q237",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "4 separate cubes are arranged along x at positions 0,2,4,... with unit edge length. How many face-connected components are there?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/12.17.png",
+      "imageAlt": "Practice Q237 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q238",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A stack arrangement spans x positions 0 through 3, y positions 0 through 1, and z positions 0 through 2. What is its enclosing grid-box capacity in cubes?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 24.0,
+        "max": 24.0
+      },
+      "image": "/media/uceed-spatial-260/12.18.png",
+      "imageAlt": "Practice Q238 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q239",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A pile has layers of square arrays 4x4, then 3x3, down to 1x1. How many cubes?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 30.0,
+        "max": 30.0
+      },
+      "image": "/media/uceed-spatial-260/12.19.png",
+      "imageAlt": "Practice Q239 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q240",
+      "sectionId": "sec_ws_12",
+      "type": "NAT",
+      "prompt": "A new cube is inserted into an empty cell having 4 occupied face-neighbours. How many new distinct face-contact pairs are created?",
+      "topic": "Everyday objects and mechanisms",
+      "category": "Practical & Scientific Knowledge",
+      "sourceTopic": "Block arrangements",
+      "originalQuestionId": "12.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q241",
+      "sectionId": "sec_ws_13",
+      "type": "MSQ",
+      "prompt": "Which options are embedded in the line network? Every polygon vertex must match a marked source vertex; every boundary edge must lie fully on drawn lines. Ignore extra crossing lines. Translation and 90-degree rotations are allowed, but reflection is forbidden. Use the same lattice-unit size; straight collinear segments may combine.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.01",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": -1.0,
+        "unanswered": 0.0
+      },
+      "answer": [
+        "a"
+      ],
+      "image": "/media/uceed-spatial-260/13.01.png",
+      "imageAlt": "Practice Q241 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ],
+      "partialCredit": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q242",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "In this 3 x 3 grid, count all axis-aligned squares whose boundaries follow drawn lines.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.02",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 14.0,
+        "max": 14.0
+      },
+      "image": "/media/uceed-spatial-260/13.02.png",
+      "imageAlt": "Practice Q242 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q243",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "From a single apex, 5 rays reach distinct points on one baseline. All ray segments and the baseline are drawn. How many triangles are present?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.03",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "image": "/media/uceed-spatial-260/13.03.png",
+      "imageAlt": "Practice Q243 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q244",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A square contains both diagonals, crossing at the centre. How many triangles of all sizes are formed by its drawn segments?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.04",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 8.0,
+        "max": 8.0
+      },
+      "image": "/media/uceed-spatial-260/13.04.png",
+      "imageAlt": "Practice Q244 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q245",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A triangular outline has one entire side missing. Several unrelated lines cross its interior but none lies along the missing side. How many complete copies of that triangle exist using the stated vertices?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.05",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/13.05.png",
+      "imageAlt": "Practice Q245 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q246",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "3 concentric squares of distinct sizes are drawn without connectors. How many complete square outlines are present?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.06",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/13.06.png",
+      "imageAlt": "Practice Q246 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q247",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A square boundary has each side divided into two collinear segments. The midpoint dots are not gaps. How many complete outer squares are present?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.07",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 1.0,
+        "max": 1.0
+      },
+      "image": "/media/uceed-spatial-260/13.07.png",
+      "imageAlt": "Practice Q247 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q248",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Two perpendicular full segments cross at their midpoints. Count the number of 90-degree sectors at the crossing.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.08",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/13.08.png",
+      "imageAlt": "Practice Q248 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q249",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A ladder diagram has two parallel rails and 4 full perpendicular rungs, including both ends. How many rectangles does it contain?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.09",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q250",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "6 distinct marked points lie on one straight line. How many triangles can be made using only these as vertices?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.10",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/13.10.png",
+      "imageAlt": "Practice Q250 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q251",
+      "sectionId": "sec_ws_13",
+      "type": "MCQ",
+      "prompt": "Which option is embedded in the line network? Every polygon vertex must match a marked source vertex; every boundary edge must lie fully on drawn lines. Ignore extra crossing lines. Translation and 90-degree rotations are allowed, but reflection is forbidden. Use the same lattice-unit size; straight collinear segments may combine.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.11",
+      "marks": {
+        "correct": 3.0,
+        "incorrect": -0.71,
+        "unanswered": 0.0
+      },
+      "answer": "c",
+      "image": "/media/uceed-spatial-260/13.11.png",
+      "imageAlt": "Practice Q251 diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option A"
+        },
+        {
+          "id": "b",
+          "text": "Option B"
+        },
+        {
+          "id": "c",
+          "text": "Option C"
+        },
+        {
+          "id": "d",
+          "text": "Option D"
+        }
+      ]
+    },
+    {
+      "id": "ws-uceed-spat-q252",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "In this 4 x 4 grid, count all axis-aligned squares whose boundaries follow drawn lines.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.12",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 30.0,
+        "max": 30.0
+      },
+      "image": "/media/uceed-spatial-260/13.12.png",
+      "imageAlt": "Practice Q252 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q253",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "From a single apex, 6 rays reach distinct points on one baseline. All ray segments and the baseline are drawn. How many triangles are present?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.13",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 15.0,
+        "max": 15.0
+      },
+      "image": "/media/uceed-spatial-260/13.13.png",
+      "imageAlt": "Practice Q253 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q254",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A square has only ONE diagonal drawn. How many complete triangles are formed?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.14",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 2.0,
+        "max": 2.0
+      },
+      "image": "/media/uceed-spatial-260/13.14.png",
+      "imageAlt": "Practice Q254 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q255",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A triangular boundary has one side represented by two collinear pieces meeting without a gap. Does a complete triangle exist? YES or NO.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.15",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/13.15.png",
+      "imageAlt": "Practice Q255 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q256",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "4 concentric squares of distinct sizes are drawn without connectors. How many complete square outlines are present?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.16",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 4.0,
+        "max": 4.0
+      },
+      "image": "/media/uceed-spatial-260/13.16.png",
+      "imageAlt": "Practice Q256 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q257",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Two unit squares share an entire side. Their outer border and common side are drawn. Count all axis-aligned rectangles, including squares.",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.17",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 3.0,
+        "max": 3.0
+      },
+      "image": "/media/uceed-spatial-260/13.17.png",
+      "imageAlt": "Practice Q257 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q258",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "Three full lines through one point have orientations 0, 60 and 120 degrees. How many 60-degree sectors lie around the crossing?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.18",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 6.0,
+        "max": 6.0
+      },
+      "image": "/media/uceed-spatial-260/13.18.png",
+      "imageAlt": "Practice Q258 diagram"
+    },
+    {
+      "id": "ws-uceed-spat-q259",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "A ladder diagram has two parallel rails and 5 full perpendicular rungs, including both ends. How many rectangles does it contain?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.19",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 10.0,
+        "max": 10.0
+      }
+    },
+    {
+      "id": "ws-uceed-spat-q260",
+      "sectionId": "sec_ws_13",
+      "type": "NAT",
+      "prompt": "7 distinct marked points lie on one straight line. How many triangles can be made using only these as vertices?",
+      "topic": "2D and 3D visualization",
+      "category": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Hidden figures",
+      "originalQuestionId": "13.20",
+      "marks": {
+        "correct": 4.0,
+        "incorrect": 0.0,
+        "unanswered": 0.0
+      },
+      "answer": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "image": "/media/uceed-spatial-260/13.20.png",
+      "imageAlt": "Practice Q260 diagram"
+    }
+  ]
+}

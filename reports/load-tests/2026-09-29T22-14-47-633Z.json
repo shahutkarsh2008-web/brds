@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-09-29T22:14:47.634Z",
+  "status": "passed",
+  "scope": "isolated localhost Node child server + file-backed SQLite; not hosted PostgreSQL",
+  "config": {
+    "students": 5,
+    "seconds": 5,
+    "interval": 500,
+    "injectDrop": false
+  },
+  "elapsedSeconds": 8,
+  "rounds": 7,
+  "successfulWrites": 35,
+  "readbacks": 35,
+  "liveReads": 45,
+  "teacherSnapshots": 9,
+  "unexpectedDrops": 0,
+  "errors": [],
+  "errorCount": 0,
+  "missedCadences": 1,
+  "peakServerRssMB": 65,
+  "peakServerHeapMB": 11,
+  "peakServerCpuPercent": 3,
+  "peakServerEventLoopDelayMs": 2665,
+  "maxTeacherCatchupMs": 34,
+  "latency": {
+    "write": {
+      "count": 45,
+      "p50Ms": 116.6,
+      "p95Ms": 2731.17,
+      "p99Ms": 5338.3,
+      "maxMs": 5338.3
+    },
+    "read": {
+      "count": 80,
+      "p50Ms": 11.49,
+      "p95Ms": 168.72,
+      "p99Ms": 2680.1,
+      "maxMs": 2680.1
+    }
+  },
+  "database": "F:\\desktop\\New folder\\tmp\\load-tests\\run-thCAxi\\load.sqlite",
+  "persistedMutations": 35,
+  "verifiedAttempts": 5,
+  "acceptanceDurationMet": false,
+  "finishedAt": "2026-09-29T22:14:58.359Z"
+}

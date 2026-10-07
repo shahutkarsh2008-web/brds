@@ -46,7 +46,14 @@
 
     setupEventListeners();
     updatePreview();
-    loadUsers();
+    if (currentUser.role === 'admin') {
+      loadUsers();
+    } else {
+      document.querySelector('[data-tab=users]')?.remove();
+      el('tab-users')?.remove();
+      el('btn-export-backup')?.remove();
+      loadStudentCheckboxes();
+    }
     loadAuthoredExams();
   }
 
@@ -508,8 +515,15 @@
     URL.revokeObjectURL(url);
   }
 
-  function loadStudentCheckboxes() {
-    loadUsers();
+  async function loadStudentCheckboxes() {
+    try {
+      const data = await api(currentUser.role === 'admin' ? '/api/admin/users' : '/api/author/students');
+      const students = currentUser.role === 'admin' ? data.users.filter(u => u.role === 'student' && u.active) : data.students;
+      loadStudentCheckboxesWithUsers(students);
+    } catch (e) {
+      const container = el('student-checkboxes');
+      container.textContent = 'Unable to load active students: ' + e.message;
+    }
   }
 
   function loadStudentCheckboxesWithUsers(students) {

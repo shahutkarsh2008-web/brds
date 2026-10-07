@@ -1472,3 +1472,10 @@ WHAT: Library and Mocks now invalidate the cached exam catalog whenever the user
 WHY: The SPA kept the old two-item catalog for the lifetime of an open tab, making the post-deploy Library/M mocks state look incomplete.
 EVIDENCE: Targeted source check passed; previous full suite 97/97 and hosted deployment check passed on b1630c7.
 NEXT: Deploy this refresh and complete the safe published-catalog migration before exposing authored private exams globally.
+### [2026-10-08 05:40 UTC] Codex — Teacher roster access
+STATUS: IN PROGRESS
+FILES: src/exam-api.js, public/admin.js, PROGRESS_LOG.md
+WHAT: Added a teacher/admin-safe active-student roster endpoint and updated the teacher operations console to use it for assignment selection. Teacher sessions no longer depend on admin-only user-management API calls; admin-only user and backup controls are hidden for teachers.
+WHY: Teachers need to manage assignments and batches without receiving admin account-management privileges or a misleading empty student list.
+EVIDENCE: `npm test` passed 97/97; `node --check public/admin.js` and `node --check src/exam-api.js` passed.
+NEXT: Deploy and verify teacher roster/assignment flow, then implement published catalog membership and cohort analytics corrections.

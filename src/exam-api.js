@@ -145,8 +145,13 @@ export function createExamApi(auth, engine, roster, database) {
 
       // Authoring routes for Teachers & Admins
       if (path.startsWith('/api/author/')) {
-        await auth.requireRole(req, ['teacher', 'admin']);
-        
+        const authorUser = await auth.requireRole(req, ['teacher', 'admin']);
+
+        if (path === '/api/author/students' && req.method === 'GET') {
+          const students = (await database.query("SELECT id, login_id, name FROM users WHERE role='student' AND active=1 ORDER BY login_id")).rows;
+          return json(200, { students: students.map(student => ({ id: student.id, loginId: student.login_id, name: student.name })) });
+        }
+
         if (path === '/api/author/exams' && req.method === 'GET') {
           let list = await engine.listAuthored();
           if (!list.length && database) {

@@ -143,12 +143,12 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
   }
   async function list(userId) {
     await sweep();
-    const rows=(await database.query('SELECT e.id,e.definition,a.id AS attempt_id,a.status,a.result_json FROM exams e JOIN exam_assignments x ON x.exam_id=e.id LEFT JOIN attempts a ON a.exam_id=e.id AND a.user_id=x.user_id WHERE x.user_id=$1 ORDER BY e.created_at DESC',[userId])).rows;
+    const rows=(await database.query('SELECT e.id,e.definition,a.id AS attempt_id,a.status,a.result_json FROM exams e LEFT JOIN exam_assignments x ON x.exam_id=e.id AND x.user_id=$1 LEFT JOIN library_exams l ON l.exam_id=e.id AND l.published=1 LEFT JOIN attempts a ON a.exam_id=e.id AND a.user_id=$1 WHERE l.exam_id IS NOT NULL OR x.user_id IS NOT NULL ORDER BY e.created_at DESC',[userId])).rows;
     return rows.map(row=>{const exam=JSON.parse(row.definition);return {id:row.id,title:exam.title,durationSeconds:exam.durationSeconds,totalQuestions:exam.totalQuestions,maxMarks:exam.maxMarks,hasImages:exam.questions.some(question=>Boolean(question.image)),instructions:exam.instructions,attemptId:row.attempt_id,status:row.status||'available',result:row.result_json?JSON.parse(row.result_json):null};});
   }
   async function start(examId,userId) {
     const view=await database.transaction(async query=>{
-      const exam=(await query('SELECT e.definition FROM exams e JOIN exam_assignments x ON x.exam_id=e.id WHERE e.id=$1 AND x.user_id=$2',[examId,userId])).rows[0];
+      const exam=(await query('SELECT e.definition FROM exams e LEFT JOIN exam_assignments x ON x.exam_id=e.id AND x.user_id=$2 LEFT JOIN library_exams l ON l.exam_id=e.id AND l.published=1 WHERE e.id=$1 AND (l.exam_id IS NOT NULL OR x.user_id IS NOT NULL)',[examId,userId])).rows[0];
       if(!exam) fail(404,'Assigned exam not found.');
       const definition=JSON.parse(exam.definition), time=now();
       await query("INSERT INTO attempts(id,exam_id,user_id,exam_json,answers_json,status,started_at,deadline,version) VALUES($1,$2,$3,$4,'{}','active',$5,$6,0) ON CONFLICT(exam_id,user_id) DO NOTHING",
@@ -161,7 +161,7 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
   }
   async function reattempt(examId,userId) {
     const view=await database.transaction(async query=>{
-      const exam=(await query('SELECT e.definition FROM exams e JOIN exam_assignments x ON x.exam_id=e.id WHERE e.id=$1 AND x.user_id=$2',[examId,userId])).rows[0];
+      const exam=(await query('SELECT e.definition FROM exams e LEFT JOIN exam_assignments x ON x.exam_id=e.id AND x.user_id=$2 LEFT JOIN library_exams l ON l.exam_id=e.id AND l.published=1 WHERE e.id=$1 AND (l.exam_id IS NOT NULL OR x.user_id IS NOT NULL)',[examId,userId])).rows[0];
       if(!exam) fail(404,'Assigned exam not found.');
       const existing=(await query('SELECT * FROM attempts WHERE exam_id=$1 AND user_id=$2',[examId,userId])).rows[0];
       const time=now();
@@ -298,6 +298,8 @@ export function createExamEngine(database, { now=Date.now, changed=()=>{} }={}) 
   }
   async function saveExam(input) {
     const exam = validateExam(input);
+    const catalog = await database.query('SELECT exam_id FROM library_exams WHERE exam_id=$1',[exam.id]);
+    if (catalog.rows[0]) fail(409,'Published catalog papers are read-only. Use a new exam ID for authored versions.');
     await database.query(
       'INSERT INTO exams(id,title,definition,created_at) VALUES($1,$2,$3,$4) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title, definition=EXCLUDED.definition',
       [exam.id, exam.title, JSON.stringify(exam), Date.now()]

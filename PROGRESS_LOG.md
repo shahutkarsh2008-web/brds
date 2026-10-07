@@ -1479,3 +1479,11 @@ WHAT: Added a teacher/admin-safe active-student roster endpoint and updated the 
 WHY: Teachers need to manage assignments and batches without receiving admin account-management privileges or a misleading empty student list.
 EVIDENCE: `npm test` passed 97/97; `node --check public/admin.js` and `node --check src/exam-api.js` passed.
 NEXT: Deploy and verify teacher roster/assignment flow, then implement published catalog membership and cohort analytics corrections.
+
+### [2026-10-08 06:15 UTC] Codex — Published/private catalog migration
+STATUS: DONE
+FILES: src/schema.js, scripts/seed-exams.js, src/exams.js, src/practice.js, src/exam-api.js, test/uceed.test.js, PROGRESS_LOG.md
+WHAT: Added library_exams membership metadata and idempotent fixture upserts. Published catalog papers are visible to every student without assignment rows and remain answer-key private; teacher-authored papers stay assignment-only. Practice topics/count/create now use the authenticated student scope. Seed backfill assigns only published catalog papers, and authoring cannot overwrite a published catalog paper.
+WHY: Deployed students were seeing incomplete Library data, while the previous seed assignment behavior could expose authored papers and Practice did not have a reliable per-user catalog boundary.
+EVIDENCE: `npm test` passed 97/97; all changed backend/test files passed `node --check`; `git diff --check` passed.
+NEXT: Commit and push this migration, then run the hosted deployment check and verify Render serves the updated catalog/API assets.

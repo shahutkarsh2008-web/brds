@@ -50,7 +50,7 @@ test('marking configuration survives validation and invalid configurations fail'
     e=>e.questions[14].partialCredit={'1':-1},
   ]) {const value=structuredClone(raw); mutate(value); assert.throws(()=>validateExam(value));}
 });
-test('startup seeds library without assignments, preserves keys and is idempotent; student view hides all keys',async t=>{
+test('startup publishes library without assignments, preserves keys and is idempotent; student view hides all keys',async t=>{
   const db=await openDatabase({SQLITE_PATH:':memory:'}); await migrate(db); t.after(()=>db.close());
   const seededCount = await seedExams(db);
   assert.ok(seededCount > 0);
@@ -61,8 +61,6 @@ test('startup seeds library without assignments, preserves keys and is idempoten
   assert.deepEqual(stored.questions[17].answerAlternatives,[['b','c','d']]);
   const user=await createUser(db,{loginId:'uceed-fixture',name:'Fixture',role:'student',phone:'919999999999',password:'Test-password-123!'});
   const engine=createExamEngine(db);
-  await assert.rejects(engine.start(exam.id,user.id));
-  await engine.assignExam(exam.id,[user.id]);
   const view=await engine.start(exam.id,user.id);
   assert.ok(view.exam.questions.every(q=>!('answer' in q)&&!('answerAlternatives' in q)));
 });

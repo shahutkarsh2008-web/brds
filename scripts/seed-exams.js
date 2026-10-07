@@ -12,11 +12,16 @@ export async function seedExams(database) {
       const raw = await readFile(filePath, 'utf8');
       const examObj = validateExam(JSON.parse(raw));
       const exists = (await database.query('SELECT id FROM exams WHERE id=$1', [examObj.id])).rows[0];
-      if (!exists) {
-        await importExam(database, examObj, []);
-        console.log(`✅ Seeded library exam: ${examObj.title} (${examObj.id})`);
-        seededCount++;
-      }
+      if (!exists) seededCount++;
+      await database.query(
+        'INSERT INTO exams(id,title,definition,created_at) VALUES($1,$2,$3,$4) ON CONFLICT(id) DO UPDATE SET title=EXCLUDED.title, definition=EXCLUDED.definition',
+        [examObj.id, examObj.title, JSON.stringify(examObj), Date.now()]
+      );
+      await database.query(
+        "INSERT INTO library_exams(exam_id,source_file,published,practice_eligible,kind) VALUES($1,$2,1,1,$3) ON CONFLICT(exam_id) DO UPDATE SET source_file=EXCLUDED.source_file,published=1,practice_eligible=1,kind=EXCLUDED.kind",
+        [examObj.id, filename, filename.includes('worksheet') || filename.includes('spatial') ? 'diagnostic' : filename.includes('mock') ? 'mock' : 'official-paper']
+      );
+      if (!exists) console.log(`✅ Seeded library exam: ${examObj.title} (${examObj.id})`);
     } catch (err) {
       console.error(`Failed to seed fixture exam ${filename}:`, err.message || err);
     }
@@ -26,9 +31,9 @@ export async function seedExams(database) {
   try {
     await database.query(`
       INSERT INTO exam_assignments (exam_id, user_id)
-      SELECT e.id, u.id FROM exams e
+      SELECT l.exam_id, u.id FROM library_exams l
       CROSS JOIN users u
-      WHERE u.role='student' AND u.active=1
+      WHERE l.published=1 AND u.role='student' AND u.active=1
       ON CONFLICT (exam_id, user_id) DO NOTHING
     `);
   } catch (err) {

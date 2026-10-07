@@ -77,6 +77,7 @@ export function createExamApi(auth, engine, roster, database) {
 
         if (path === '/api/student/practice/topics' && req.method === 'GET') {
           const filters = Object.fromEntries(new URL(req.url, 'http://localhost').searchParams.entries());
+          filters.userId = user.id;
           return json(200, await practiceEngine.topicCatalog(filters));
         }
 
@@ -125,6 +126,7 @@ export function createExamApi(auth, engine, roster, database) {
 
         if (path === '/api/student/practice/count' && (req.method === 'GET' || req.method === 'POST')) {
           const filters = req.method === 'GET' ? Object.fromEntries(new URL(req.url, 'http://localhost').searchParams.entries()) : await readStudentJson(req, 8192);
+          filters.userId = user.id;
           if (filters.topics && typeof filters.topics === 'string') filters.topics = filters.topics.split(',').filter(Boolean);
           const countRes = practiceEngine ? await practiceEngine.countMatching(filters) : { count: 0 };
           return json(200, countRes);
@@ -133,6 +135,7 @@ export function createExamApi(auth, engine, roster, database) {
         if (path === '/api/student/practice/create' && req.method === 'POST') {
           if (!(req.headers['content-type'] || '').startsWith('application/json')) throw new HttpError(415, 'Use application/json.');
           const input = await readStudentJson(req, 65536);
+          input.userId = user.id;
           const created = practiceEngine ? await practiceEngine.createSet(user.id, input) : null;
           if (!created) throw new HttpError(503, 'Practice storage is unavailable.');
           return json(200, { set: created });

@@ -7,6 +7,7 @@ export async function migrate(database) {
       `CREATE TABLE IF NOT EXISTS login_history (id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id),logged_in_at BIGINT NOT NULL)`,
       `CREATE TABLE IF NOT EXISTS auth_limits (bucket TEXT PRIMARY KEY,count INTEGER NOT NULL,expires_at BIGINT NOT NULL)`,
       `CREATE TABLE IF NOT EXISTS exams (id TEXT PRIMARY KEY,title TEXT NOT NULL,definition TEXT NOT NULL,created_at BIGINT NOT NULL)`,
+      `CREATE TABLE IF NOT EXISTS library_exams (exam_id TEXT PRIMARY KEY REFERENCES exams(id),source_file TEXT NOT NULL UNIQUE,published INTEGER NOT NULL DEFAULT 1,practice_eligible INTEGER NOT NULL DEFAULT 1,kind TEXT NOT NULL DEFAULT 'official-paper')`,
       `CREATE TABLE IF NOT EXISTS exam_assignments (exam_id TEXT NOT NULL REFERENCES exams(id),user_id TEXT NOT NULL REFERENCES users(id),PRIMARY KEY(exam_id,user_id))`,
       `CREATE TABLE IF NOT EXISTS attempts (id TEXT PRIMARY KEY,exam_id TEXT NOT NULL REFERENCES exams(id),user_id TEXT NOT NULL REFERENCES users(id),exam_json TEXT NOT NULL,answers_json TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('active','submitted')),started_at BIGINT NOT NULL,deadline BIGINT NOT NULL,version INTEGER NOT NULL,submitted_at BIGINT,result_json TEXT,UNIQUE(exam_id,user_id))`,
       `CREATE TABLE IF NOT EXISTS answer_mutations (attempt_id TEXT NOT NULL REFERENCES attempts(id),id TEXT NOT NULL,PRIMARY KEY(attempt_id,id))`,
@@ -30,7 +31,7 @@ export async function migrate(database) {
       'CREATE INDEX IF NOT EXISTS practice_sets_user ON practice_sets(user_id)',
       'CREATE INDEX IF NOT EXISTS student_sketches_user ON student_sketches(user_id,created_at)',
       'CREATE INDEX IF NOT EXISTS guide_quiz_user ON guide_quiz_attempts(user_id,submitted_at)',
-      "UPDATE system_metadata SET value = '6' WHERE key = 'schema_version'",
+      "UPDATE system_metadata SET value = '7' WHERE key = 'schema_version'",
     ]) await query(sql);
   });
 }

@@ -31,7 +31,7 @@ function resolveQuestion(rows, filters, id) {
 
 export function createPracticeEngine(database, { now = Date.now } = {}) {
   async function matchingQuestions(filters = {}) {
-    const { rows = [] } = await database.query('SELECT id, definition FROM exams ORDER BY id');
+    const { rows = [] } = await database.query('SELECT e.id, e.definition FROM exams e LEFT JOIN library_exams l ON l.exam_id=e.id AND l.published=1 AND l.practice_eligible=1 LEFT JOIN exam_assignments a ON a.exam_id=e.id AND a.user_id=$1 WHERE l.exam_id IS NOT NULL OR a.user_id IS NOT NULL OR NOT EXISTS (SELECT 1 FROM library_exams) ORDER BY e.id', [filters.userId || null]);
     const selected = [];
     const idCounts = new Map();
     for (const row of rows) for (const q of parseDefinition(row)?.questions || []) idCounts.set(q.id, (idCounts.get(q.id) || 0) + 1);
@@ -102,7 +102,7 @@ export function createPracticeEngine(database, { now = Date.now } = {}) {
     const difficulty = options.difficulty || 'ALL';
     const skipDone = options.skipDone !== false;
     const setSize = Number.isInteger(Number(options.setSize)) ? Math.max(1, Math.min(100, Number(options.setSize))) : 10;
-    let questions = await matchingQuestions({ exam, topics, types, difficulty });
+    let questions = await matchingQuestions({ exam, topics, types, difficulty, userId });
 
     if (skipDone && questions.length) {
       const { rows = [] } = await database.query('SELECT o.question_id,o.exam_id,e.definition FROM practice_outcomes o JOIN practice_sets p ON p.id=o.set_id JOIN exams e ON e.id=o.exam_id WHERE p.user_id=$1', [userId]);

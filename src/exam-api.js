@@ -39,7 +39,7 @@ export function createExamApi(auth, engine, roster, database) {
 
       // Student Practice & Dashboard routes
       if (path.startsWith('/api/student/')) {
-        const user = await auth.requireRole(req, ['student', 'teacher', 'admin']);
+        const user = await auth.requireRole(req, ['student']);
 
         if (path === '/api/student/dashboard' && req.method === 'GET') {
           return json(200, { ...(await engine.getStudentOverview(user.id)), user: { id: user.id, name: user.name, loginId: user.login_id || user.loginId, targetExam: user.target_exam || 'UCEED 2026' } });

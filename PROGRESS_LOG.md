@@ -1457,3 +1457,11 @@ WHY: User requested direct Re-attempt capability for submitted exams and automat
 EVIDENCE: 97/97 automated unit, API, authoring, and workspace test suites passing green (`npm test` 97/97 PASS).
 NEXT: Redeploy code to Render for live student acceptance.
 
+
+### [2026-10-08 04:30 UTC] Codex — Production interaction blockers fixed
+STATUS: IN PROGRESS
+FILES: public/dashboard.js, public/exam.js, src/app.js, src/exam-api.js, PROGRESS_LOG.md
+WHAT: Fixed the Practice blank-screen transition by rendering a visible loading state during async catalog requests and by applying element properties after children exist. Fixed the mock answer save race by serializing expected versions from the acknowledged server state and deferring WebSocket/visibility refreshes while edits are queued. Teacher routing now serves the operations console, and student-only APIs reject teacher/admin identities.
+WHY: Hosted use exposed black Practice screens, answer controls becoming permanently locked after a save notification, and teacher sessions receiving the student dashboard/API surface.
+EVIDENCE: npm test passed 97/97; all four changed JavaScript files pass node --check.
+NEXT: Commit and deploy this blocker-fix batch, then run hosted role/Practice/mock smoke checks. Library catalog upsert/global published access and the full teacher cohort console remain the next data/product batch.

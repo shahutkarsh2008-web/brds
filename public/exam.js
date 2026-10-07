@@ -25,7 +25,7 @@ function acceptView(next){const before=state?.pausedAt;takeState(next);controlNo
 function enqueue(value,review){
   if(conflict||state.pausedAt!==null||state.status!=='active')return;
   const q=state.exam.questions[index];
-  queue.push({mutationId:crypto.randomUUID(),questionId:q.id,value,review,expectedVersion:state.version+queue.length});
+  queue.push({mutationId:crypto.randomUUID(),questionId:q.id,value,review});
   persist();merged();renderPalette();saveStatus();flush();
 }
 async function flush(){
@@ -34,7 +34,7 @@ async function flush(){
   try{
     while(queue.length&&state.status==='active'&&state.pausedAt===null){
       const update=queue[0];
-      const next=await request('/api/attempts/'+id+'/answers',update);
+      const next=await request('/api/attempts/'+id+'/answers',{...update,expectedVersion:state.version});
       queue.shift();persist();acceptView(next);
     }
     while(flags.length){await request('/api/attempts/'+id+'/flags',flags[0],true);flags.shift();persist();}
@@ -46,10 +46,11 @@ async function flush(){
       await refresh(false);
     }else{text('#error','Connection interrupted. Pending edits remain on this device; keep this page open or return to this attempt to retry.');}
     saveStatus();
-  }finally{saving=false;if(!conflict&&(queue.length||flags.length)&&!closed){clearTimeout(retry);retry=setTimeout(flush,2500);}}
+  }finally{saving=false;if(!conflict&&(queue.length||flags.length)&&!closed){clearTimeout(retry);retry=setTimeout(flush,2500);}else if(!conflict&&refreshAgain&&!closed){refreshAgain=false;refresh(false);}}
 }
 let refreshAgain=false;
 async function refresh(render=true){
+  if(queue.length||saving){refreshAgain=true;return;}
   if(refreshing){refreshAgain=true;return;}refreshing=true;
   try{const next=await request('/api/attempts/'+id);acceptView(next);if(render&&state.status==='active'&&!queue.length&&!invalidNumeric)renderQuestion(false);}
   catch(error){text('#error',error.message);}
@@ -183,7 +184,7 @@ function connect(){
   if(closed)return;
   socket=new WebSocket((location.protocol==='https:'?'wss:':'ws:')+'//'+location.host+'/session-ws');
   socket.onopen=()=>{saveStatus();flush();if(!queue.length)refresh();};
-  socket.onmessage=event=>{try{const message=JSON.parse(event.data);if(message.type==='attempt_changed')refresh();}catch{}};
+  socket.onmessage=event=>{try{const message=JSON.parse(event.data);if(message.type==='attempt_changed'){if(queue.length||saving)refreshAgain=true;else refresh();}}catch{}};
   socket.onclose=event=>{saveStatus();if(closed)return;if(event.code===4001){location.replace('/login');return;}setTimeout(connect,2500);};
   socket.onerror=()=>saveStatus();
 }
@@ -193,7 +194,7 @@ function recordFlag(type){
   const time=performance.now();if(flagTimes[type]&&time-flagTimes[type]<1500)return;flagTimes[type]=time;
   flags.push({eventId:crypto.randomUUID(),type});persist();flush();
 }
-document.addEventListener('visibilitychange',()=>{if(document.hidden)recordFlag('tab_hidden');else{flush();refresh();}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)recordFlag('tab_hidden');else{flush();if(queue.length||saving)refreshAgain=true;else refresh();}});
 window.addEventListener('blur',()=>recordFlag('window_blur'));
 let wasFullscreen=false;
 document.addEventListener('fullscreenchange',()=>{if(wasFullscreen&&!document.fullscreenElement)recordFlag('fullscreen_exit');wasFullscreen=!!document.fullscreenElement;text('#fullscreen',wasFullscreen?'Exit fullscreen':'Enter fullscreen');});

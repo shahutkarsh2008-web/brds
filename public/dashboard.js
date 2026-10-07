@@ -70,8 +70,8 @@ const app = document.querySelector('#app');
 
 const el = (tag, props = {}, children = []) => {
   const n = document.createElement(tag);
-  Object.assign(n, props);
   children.filter(c => c !== null && c !== undefined && c !== false).forEach(c => n.append(c?.nodeType ? c : document.createTextNode(String(c))));
+  Object.assign(n, props);
   return n;
 };
 
@@ -1733,7 +1733,7 @@ async function render() {
   
   const main = el('main', { className: `app-main ${state.open ? 'main-sidebar-open' : 'main-sidebar-closed'}` });
   app.append(main);
-  const featureTabs = new Set(['gk', 'sketches', 'bookmarks', 'guides', 'settings']);
+  const featureTabs = new Set(['papers', 'practice', 'mocks', 'analytics', 'gk', 'sketches', 'bookmarks', 'guides', 'settings']);
   if (featureTabs.has(state.tab)) main.append(el('p', { className: 'feature-loading', role: 'status' }, [`Loading ${nav.find(item => item[0] === state.tab)?.[1] || 'workspace'}…`]));
 
   let nodes = state.tab === 'overview' ? await overview()

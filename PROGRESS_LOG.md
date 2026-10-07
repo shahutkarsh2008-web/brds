@@ -1465,3 +1465,10 @@ WHAT: Fixed the Practice blank-screen transition by rendering a visible loading 
 WHY: Hosted use exposed black Practice screens, answer controls becoming permanently locked after a save notification, and teacher sessions receiving the student dashboard/API surface.
 EVIDENCE: npm test passed 97/97; all four changed JavaScript files pass node --check.
 NEXT: Commit and deploy this blocker-fix batch, then run hosted role/Practice/mock smoke checks. Library catalog upsert/global published access and the full teacher cohort console remain the next data/product batch.
+### [2026-10-08 05:05 UTC] Codex — Catalog refresh follow-up
+STATUS: IN PROGRESS
+FILES: public/dashboard.js, PROGRESS_LOG.md
+WHAT: Library and Mocks now invalidate the cached exam catalog whenever the user re-enters either tab, so a deployed seed/backfill is visible without a full page reload.
+WHY: The SPA kept the old two-item catalog for the lifetime of an open tab, making the post-deploy Library/M mocks state look incomplete.
+EVIDENCE: Targeted source check passed; previous full suite 97/97 and hosted deployment check passed on b1630c7.
+NEXT: Deploy this refresh and complete the safe published-catalog migration before exposing authored private exams globally.

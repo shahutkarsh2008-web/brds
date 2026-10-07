@@ -147,6 +147,7 @@ function sidebar() {
           state.sketchTimerRunning = false;
         }
         state.tab = id;
+        if (id === 'papers' || id === 'mocks') state.exams = null;
         render();
       }
     }, [

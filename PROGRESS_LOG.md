@@ -2730,3 +2730,12 @@ WHAT: Resolved browser-side Content hash mismatch caused by stale ServiceWorker/
 WHY: Fixes user-reported Content hash mismatch error when attempting to start Spatial and Visual Test 02 on Ownpace.
 EVIDENCE: Successfully rebuilt client and deployed to Firebase Hosting (Deploy complete: https://ownpace-prep.web.app).
 NEXT: User verifies test startup in browser.
+
+### [2026-10-26 14:35 UTC] Antigravity — Phase 6: Import and Deploy Spatial and Visual Test 01
+STATUS: DONE
+FILES: fixtures/spatial-visual-test-01.json, public/media/spatial-visual-test-01/*, client-v3/public/content/uceed-v3.0.0/papers/spatial-visual-test-01.json, client-v3/public/content/uceed-v3.0.0/questions/spatial-visual-test-01.json, client-v3/public/content/uceed-v3.0.0/media/spatial-visual-test-01/*, client-v3/public/content/uceed-v3.0.0/manifest.json, scripts/build-spatial-visual-01.js, scripts/build-v3-spatial-visual-01.js, scripts/import-spatial-visual-01.js, test/spatial-visual-test-01.test.js, PROGRESS_LOG.md
+WHAT: Imported newly uploaded archive J:\downloads\UCEED_Test_02_JSON_and_Images.zip as 'Spatial and Visual Test 01' (id: spatial-visual-test-01, 40 questions: 33 MCQ, 1 MSQ, 6 NAT, 127 marks). Extracted and verified all 40 diagram PNGs, created CBT fixture, seeded into SQLite and live PostgreSQL databases (assigned to students), compiled V3 content bundle (paper, question shard with valid {src, alt} media and taxonomy mappings, manifest sha256 records), verified offline preloading integrity, and deployed client-v3 to Firebase Hosting.
+WHY: User requested importing the newly uploaded zip archive with name 'Spatial and Visual Test 01' into the exam platform and deploying to Ownpace.
+EVIDENCE: Unit test test/spatial-visual-test-01.test.js passed 1/1 (validation, 40 diagram media accesses, 127/127 scoring). All 111 client-v3 vitest tests passed. Preload check passed 40/40 questions and media references. Database import verified for SQLite (11 students) and PostgreSQL (17 students). Production build succeeded and deployed to Firebase Hosting (https://ownpace-prep.web.app).
+NEXT: Both Spatial and Visual Test 01 and 02 are live in the exam library, practice builder, and Ownpace platform.
+

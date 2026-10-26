@@ -1,0 +1,1409 @@
+{
+  "id": "spatial-visual-test-01",
+  "title": "Spatial and Visual Test 01",
+  "durationSeconds": 3600,
+  "totalQuestions": 40,
+  "maxMarks": 127,
+  "instructions": "Spatial and Visual Test 01. Total 40 questions (MCQ, MSQ, NAT). NAT: +4, 0; MSQ: +4, -1; MCQ: +3, -0.71. Time: 60 minutes.",
+  "sections": [
+    {
+      "id": "spatial-visual",
+      "title": "Spatial and Visual Reasoning"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "A solid 4 x 3 x 3 cuboid is made of unit cubes. A 2 x 1 rectangular vertical tunnel passes completely through its centre, as shown. How many unit-square faces are exposed, including tunnel walls?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Surface Area & Cube Counting",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "surface-area-and-cube-counting"
+      ],
+      "image": "/media/spatial-visual-test-01/Q01.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 1 Diagram",
+      "answer": {
+        "min": 80,
+        "max": 80
+      }
+    },
+    {
+      "id": "q02",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Six differently marked square faces form the cube net below. Which set of THREE marked faces can meet at a single vertex when the net is folded into a cube?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q02.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 2 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Triangle, diamond, square"
+        },
+        {
+          "id": "b",
+          "text": "Circle, square, X"
+        },
+        {
+          "id": "c",
+          "text": "Striped, X, triangle"
+        },
+        {
+          "id": "d",
+          "text": "Triangle, circle, X"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q03",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Six differently marked squares form the cube net shown below. Which option lists three faces that can meet at one corner of the folded cube? The symbols must stay on their original faces; no cutting or rearrangement is allowed.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q03.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 3 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A + C + E"
+        },
+        {
+          "id": "b",
+          "text": "B + D + F"
+        },
+        {
+          "id": "c",
+          "text": "A + B + E"
+        },
+        {
+          "id": "d",
+          "text": "C + E + F"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q04",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The coloured 5 x 5 tile is reflected in a vertical mirror and then rotated 90° clockwise (viewed from above). Which option shows the final tile?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q04.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 4 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q05",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "A 6 x 6 mosaic consists of blue and white squares. A designer wants the mosaic to have BOTH vertical reflection symmetry and 180° rotational symmetry. What is the minimum number of individual squares that must change colour?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Symmetry",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "symmetry"
+      ],
+      "image": "/media/spatial-visual-test-01/Q05.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 5 Diagram",
+      "answer": {
+        "min": 18,
+        "max": 18
+      }
+    },
+    {
+      "id": "q06",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Front and right views of a stack of unit cubes are shown. Each cell in a top-view height plan gives the number of cubes in that vertical column (0 = empty). Which of the four plans produces BOTH shown views?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views & 3D Projections",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-3d-projections"
+      ],
+      "image": "/media/spatial-visual-test-01/Q06.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 6 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q07",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube net contains six different symbols. Which option lists three faces that can meet at one vertex after the net is folded?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q07.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 7 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "C, X, T"
+        },
+        {
+          "id": "b",
+          "text": "L, R, B"
+        },
+        {
+          "id": "c",
+          "text": "C, L, T"
+        },
+        {
+          "id": "d",
+          "text": "T, B, X"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q08",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The pattern is reflected in a vertical mirror (left-right) and then rotated 90° clockwise in the plane. Which option shows the final pattern?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q08.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 8 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q09",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A net of a tetrahedron is shown. Six exposed edges are labelled 1 to 6. When folded without stretching, which option correctly identifies ALL three pairs of edges that join?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q09.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 9 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "1-6, 2-3, 4-5"
+        },
+        {
+          "id": "b",
+          "text": "1-2, 3-4, 5-6"
+        },
+        {
+          "id": "c",
+          "text": "1-5, 2-4, 3-6"
+        },
+        {
+          "id": "d",
+          "text": "1-3, 2-6, 4-5"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q10",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The 4 x 4 symbol grid is reflected in a HORIZONTAL mirror (water image), then rotated 90° clockwise as a whole. Which grid shows the exact final arrangement?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q10.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 10 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q11",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "An object is built from identical unit cubes as shown. What is the total number of exposed square faces of the solid?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Surface Area & Cube Counting",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "surface-area-and-cube-counting"
+      ],
+      "image": "/media/spatial-visual-test-01/Q11.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 11 Diagram",
+      "answer": {
+        "min": 28,
+        "max": 28
+      }
+    },
+    {
+      "id": "q12",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A pattern is reflected in a vertical mirror placed on its right. Which option shows the correct mirror image?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q12.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 12 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q13",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The figure is first rotated 90° clockwise and then reflected in a vertical mirror. Which option matches the final figure?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q13.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 13 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q14",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The figure is above a horizontal water line. Which option shows the correct water image (reflection in the horizontal mirror)?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q14.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 14 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q15",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Which shape has exactly two lines of reflection symmetry and rotational symmetry of order 2, but not order 4?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Symmetry",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "symmetry"
+      ],
+      "image": "/media/spatial-visual-test-01/Q15.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 15 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q16",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Which option shows a shape that is embedded exactly in the figure below? The shape may be in any orientation and size. Lines in the figure are all straight or circular arcs.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Hidden Figures",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "hidden-figures"
+      ],
+      "image": "/media/spatial-visual-test-01/Q16.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 16 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q17",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube is shown with three visible face symbols: a black triangle on the top face, a hollow circle on the left face and a striped square on the right face. Which net can fold to form the given cube?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q17.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 17 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q18",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "Four identical unit cubes are joined to form the solid shown below: three cubes in a straight row and one cube stacked on the middle cube. How many faces of the solid are exposed?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Surface Area & Cube Counting",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "surface-area-and-cube-counting"
+      ],
+      "image": "/media/spatial-visual-test-01/Q18.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 18 Diagram",
+      "answer": {
+        "min": 18,
+        "max": 18
+      }
+    },
+    {
+      "id": "q19",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A square sheet is folded twice in the directions shown below. A circular hole and a narrow rectangular slit are then punched through all layers, as shown. Which option shows the pattern of holes and slits when the sheet is fully unfolded?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Paper Folding & Punching",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paper-folding-and-punching"
+      ],
+      "image": "/media/spatial-visual-test-01/Q19.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 19 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q20",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A stack of solid shapes is placed on a circular turntable. The camera moves from position A to position B without changing height, always looking towards the centre of the turntable. Which option shows the view from position B?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Viewpoint / Camera Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "viewpoint-camera-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q20.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 20 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q21",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The front view and right-side view of a solid are shown below. Which top view could belong to the same solid?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views & 3D Projections",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-3d-projections"
+      ],
+      "image": "/media/spatial-visual-test-01/Q21.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 21 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q22",
+      "sectionId": "spatial-visual",
+      "type": "MSQ",
+      "prompt": "Which of the following options can be obtained from the given figure by rotation only, without any reflection? The figure is a flat 2D shape. You may rotate it by 90°, 180° or 270°. No reflection (mirror image) is allowed.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q22.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 22 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "id": "q23",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The arrangement of shapes is reflected in a vertical mirror (left-right). Which option shows the correct mirror image?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q23.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 23 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q24",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "The figure shows a pinwheel divided into 8 equal sectors with a repeated shading pattern. What is the order of rotational symmetry of the figure?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Symmetry",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "symmetry"
+      ],
+      "image": "/media/spatial-visual-test-01/Q24.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 24 Diagram",
+      "answer": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "id": "q25",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "One of the options is exactly hidden in the figure below (at the same size and orientation). Which option is hidden?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Hidden Figures",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "hidden-figures"
+      ],
+      "image": "/media/spatial-visual-test-01/Q25.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 25 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q26",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube is shown with three visible faces, each marked with a different symbol. Which net can fold to form the cube?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q26.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 26 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q27",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The net of a cube with symbols and shading is shown below. Which option shows a possible cube after the net is folded?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q27.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 27 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q28",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube is painted on all six faces and then cut into 64 identical smaller cubes. How many of the smaller cubes have exactly two faces painted?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Surface Area & Cube Counting",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "surface-area-and-cube-counting"
+      ],
+      "image": "/media/spatial-visual-test-01/Q28.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 28 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "32"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q29",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "Top, front and right views of a stack of identical unit cubes are shown. What is the minimum number of cubes consistent with all three views?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views & 3D Projections",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-3d-projections"
+      ],
+      "image": "/media/spatial-visual-test-01/Q29.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 29 Diagram",
+      "answer": {
+        "min": 17,
+        "max": 17
+      }
+    },
+    {
+      "id": "q30",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The figure is reflected in a vertical mirror (left-right) and then rotated 180°. Which option shows the final result?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q30.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q31",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The 4 x 4 coloured mosaic must have both vertical and horizontal reflection symmetry. What is the MINIMUM number of cells that must change colour?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Symmetry",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "symmetry"
+      ],
+      "image": "/media/spatial-visual-test-01/Q31.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 changes"
+        },
+        {
+          "id": "b",
+          "text": "6 changes"
+        },
+        {
+          "id": "c",
+          "text": "8 changes"
+        },
+        {
+          "id": "d",
+          "text": "2 changes"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q32",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A solid has the top-view height plan shown (0 means empty). What is the total number of unit cubes in this exact arrangement?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Surface Area & Cube Counting",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "surface-area-and-cube-counting"
+      ],
+      "image": "/media/spatial-visual-test-01/Q32.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 32 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "19"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q33",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube net has six marked faces. Which THREE faces can meet at a single corner after folding?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q33.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 33 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "C, X, T"
+        },
+        {
+          "id": "b",
+          "text": "L, R, B"
+        },
+        {
+          "id": "c",
+          "text": "C, L, T"
+        },
+        {
+          "id": "d",
+          "text": "T, B, X"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q34",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A 4 x 4 pattern is reflected in a vertical mirror. Which option is the exact result? Coloured positions must also be mirrored.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q34.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 34 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q35",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The solid is made from the unit-cube stacks in the 3 x 3 top-view height plan. How many unit cubes does the structure contain?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Surface Area & Cube Counting",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "surface-area-and-cube-counting"
+      ],
+      "image": "/media/spatial-visual-test-01/Q35.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 35 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q36",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Which figure has EXACTLY two lines of reflection symmetry and rotational symmetry of order 2, but NOT order 4?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Symmetry",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "symmetry"
+      ],
+      "image": "/media/spatial-visual-test-01/Q36.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q37",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A tetrahedron net has a central triangular face and three attached triangles. Which pairs of numbered OUTER edges meet when folded?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets & Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-01/Q37.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 37 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q38",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "An arrow points right and contains a square hole above its horizontal centreline. Reflect it left-to-right, then rotate the result 180 degrees. Which option is correct?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q38.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 38 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q39",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Eight unit cubes form a single-layer 3 x 3 square frame with the central cube removed. Count ALL exposed unit-square faces, including the internal faces of the hole.",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Surface Area & Cube Counting",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "surface-area-and-cube-counting"
+      ],
+      "image": "/media/spatial-visual-test-01/Q39.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 39 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "28"
+        },
+        {
+          "id": "b",
+          "text": "30"
+        },
+        {
+          "id": "c",
+          "text": "32"
+        },
+        {
+          "id": "d",
+          "text": "34"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q40",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "In the 3 x 3 grid, a BLUE cell is at the upper-left, an AMBER cell at the middle-right and a GREEN cell at the bottom-centre. The grid is rotated 90 degrees clockwise. Which option shows the result?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Reflection & Rotation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "reflection-and-rotation"
+      ],
+      "image": "/media/spatial-visual-test-01/Q40.png",
+      "imageAlt": "Spatial and Visual Test 01 Question 40 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    }
+  ]
+}

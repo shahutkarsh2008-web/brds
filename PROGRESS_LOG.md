@@ -2722,3 +2722,11 @@ WHAT: Imported UCEED Spatial & Visual Test 01 test bank archive as Spatial and V
 WHY: User requested importing J:\downloads\UCEED_Spatial_Visual_Test_01_Closest_Answers_JSON_and_Images.zip with name spatial and visual test 02.
 EVIDENCE: Automated test suite test/spatial-visual-test-02.test.js passed 1/1 (validation, all 40 diagram media accesses, and 128/128 score). Script scripts/import-spatial-visual-02.js executed with 11 student assignments.
 NEXT: Available in the exam library and practice builder under Spatial and Visual Test 02.
+
+### [2026-10-26 13:52 UTC] Antigravity — Phase 6: Resolve V3 content hash mismatch and redeploy
+STATUS: DONE
+FILES: client-v3/src/content/contentRepository.ts, client-v3/public/sw.js, PROGRESS_LOG.md
+WHAT: Resolved browser-side Content hash mismatch caused by stale ServiceWorker/HTTP cache returning old shard bytes. Added auto-healing cache-busting query retry (?h=) in fetchVerifiedAsset and bumped ServiceWorker CONTENT_CACHE to v2 with automatic cleanup.
+WHY: Fixes user-reported Content hash mismatch error when attempting to start Spatial and Visual Test 02 on Ownpace.
+EVIDENCE: Successfully rebuilt client and deployed to Firebase Hosting (Deploy complete: https://ownpace-prep.web.app).
+NEXT: User verifies test startup in browser.

@@ -1,0 +1,624 @@
+{
+  "taxonomyVersion": "3.0.0",
+  "mappingSource": "Existing source question topic/category classifications. Source question IDs, paper records, original metadata and media remain authoritative.",
+  "mappings": [
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Area, perimeter, volume and surface area",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T05",
+      "subskillIds": [
+        "A-ALR-S021",
+        "A-ALR-S022"
+      ],
+      "patternIds": [
+        "P-ALR-GEO"
+      ],
+      "rationale": "The existing reviewed topic explicitly covers geometry and mensuration; both area/perimeter and volume/surface area sub-skills are named in the source label."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Arithmetic",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T01",
+      "subskillIds": [
+        "A-ALR-S001"
+      ],
+      "patternIds": [],
+      "rationale": "Direct match to the source taxonomy's arithmetic sub-skill."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Counting and arrangements",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T03",
+      "subskillIds": [
+        "A-ALR-S010"
+      ],
+      "patternIds": [
+        "P-ALR-COUNT"
+      ],
+      "rationale": "Direct match to counting and arrangement reasoning."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Distance and speed",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T01",
+      "subskillIds": [
+        "A-ALR-S006"
+      ],
+      "patternIds": [
+        "P-ALR-SPEED"
+      ],
+      "rationale": "Direct match to distance and speed reasoning."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Logical conditions and statements",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T04",
+      "subskillIds": [
+        "A-ALR-S013"
+      ],
+      "patternIds": [
+        "P-ALR-LOGIC"
+      ],
+      "rationale": "Direct match to logical conditions and statements."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Pattern decoding",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T02",
+      "subskillIds": [
+        "A-ALR-S008"
+      ],
+      "patternIds": [
+        "P-ALR-CODE"
+      ],
+      "rationale": "Direct match to pattern decoding; no classification is inferred from response format."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Pattern Sequences",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T02",
+      "subskillIds": [],
+      "patternIds": [],
+      "rationale": "The source supports sequence and pattern reasoning, but does not specify whether the sequence is numerical, symbolic or visual; no narrower tag is added."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Sets and grouping",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T04",
+      "subskillIds": [
+        "A-ALR-S014"
+      ],
+      "patternIds": [
+        "P-ALR-SET"
+      ],
+      "rationale": "Direct match to sets and grouping."
+    },
+    {
+      "sourceCategory": "Analytical & Logical Reasoning",
+      "sourceTopic": "Tables, charts and graphs",
+      "status": "mapped",
+      "domainId": "A-ALR",
+      "topicId": "A-ALR-T06",
+      "subskillIds": [
+        "A-ALR-S025"
+      ],
+      "patternIds": [
+        "P-ALR-DATA"
+      ],
+      "rationale": "Direct match to table, chart and graph interpretation."
+    },
+    {
+      "sourceCategory": "Creativity",
+      "sourceTopic": "Signs and symbols & symbol interpretation",
+      "status": "mapped",
+      "domainId": "A-CRT",
+      "topicId": "A-CRT-T02",
+      "subskillIds": [
+        "A-CRT-S006",
+        "A-CRT-S007"
+      ],
+      "patternIds": [
+        "P-CRT-SYMBOL"
+      ],
+      "rationale": "The existing source label explicitly identifies signs, symbols and their interpretation."
+    },
+    {
+      "sourceCategory": "Creativity",
+      "sourceTopic": "Visual analogies",
+      "status": "mapped",
+      "domainId": "A-CRT",
+      "topicId": "A-CRT-T01",
+      "subskillIds": [
+        "A-CRT-S003"
+      ],
+      "patternIds": [
+        "P-CRT-ANALOGY"
+      ],
+      "rationale": "Direct match to visual analogies."
+    },
+    {
+      "sourceCategory": "Environment & Society",
+      "sourceTopic": "Economy & Society",
+      "status": "needs_review",
+      "candidateDomainIds": [
+        "A-ENV"
+      ],
+      "candidateTopicIds": [
+        "A-ENV-T03",
+        "A-ENV-T04"
+      ],
+      "reviewReasons": [
+        "The source combines economic and societal context; more than one V3 topic could apply."
+      ],
+      "rationale": "Retain the source topic and category; do not choose between community/mobility and culture/society without question-level evidence."
+    },
+    {
+      "sourceCategory": "Environment & Society",
+      "sourceTopic": "Natural environment and geography",
+      "status": "needs_review",
+      "candidateDomainIds": [
+        "A-ENV"
+      ],
+      "candidateTopicIds": [
+        "A-ENV-T01",
+        "A-ENV-T03"
+      ],
+      "reviewReasons": [
+        "The source label does not distinguish environmental impact from geographic/community context."
+      ],
+      "rationale": "Retain the source topic and category; question-level evidence is required for a primary topic."
+    },
+    {
+      "sourceCategory": "Environment & Society",
+      "sourceTopic": "Traditional crafts and objects",
+      "status": "mapped",
+      "domainId": "A-ENV",
+      "topicId": "A-ENV-T04",
+      "subskillIds": [
+        "A-ENV-S018"
+      ],
+      "patternIds": [
+        "P-ENV-CULT"
+      ],
+      "rationale": "Direct match to traditional crafts and objects."
+    },
+    {
+      "sourceCategory": "Language & Creativity",
+      "sourceTopic": "Typography & Fonts",
+      "status": "needs_review",
+      "candidateDomainIds": [
+        "A-LNG",
+        "A-CRT",
+        "B-DRW"
+      ],
+      "reviewReasons": [
+        "The source classification spans language, creativity and visual design; the frozen UCEED taxonomy has no typography/font topic."
+      ],
+      "rationale": "Do not invent a typography taxonomy node or select an unsupported primary domain."
+    },
+    {
+      "sourceCategory": "Language",
+      "sourceTopic": "Reading comprehension",
+      "status": "mapped",
+      "domainId": "A-LNG",
+      "topicId": "A-LNG-T01",
+      "subskillIds": [
+        "A-LNG-S001"
+      ],
+      "patternIds": [],
+      "rationale": "Direct match to reading comprehension; passage-level sub-types are not inferred."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Colour and composition",
+      "status": "needs_review",
+      "candidateDomainIds": [
+        "A-ODS",
+        "A-CRT"
+      ],
+      "candidateTopicIds": [
+        "A-ODS-T01",
+        "A-CRT-T04"
+      ],
+      "reviewReasons": [
+        "The source combines colour and composition, which may test observation or creative communication."
+      ],
+      "rationale": "Retain the existing classification and review the actual question before choosing a V3 primary topic."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Gestalt Principles of Perception",
+      "status": "needs_review",
+      "candidateDomainIds": [
+        "A-ODS"
+      ],
+      "candidateTopicIds": [
+        "A-ODS-T01",
+        "A-ODS-T02"
+      ],
+      "reviewReasons": [
+        "The frozen taxonomy has no Gestalt-specific topic or sub-skill."
+      ],
+      "rationale": "The broader domain is supported by the existing category, but the precise V3 topic is not represented."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Human Anatomy & Proportion",
+      "status": "needs_review",
+      "candidateDomainIds": [
+        "A-ODS",
+        "B-DRW"
+      ],
+      "candidateTopicIds": [
+        "B-DRW-T02"
+      ],
+      "reviewReasons": [
+        "The source is an objective observation item while the closest V3 proportion topic is in Part B Drawing."
+      ],
+      "rationale": "Do not reclassify a Part-A source item into a Part-B drawing skill without question-level review."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Logo Identification",
+      "status": "mapped",
+      "domainId": "A-ODS",
+      "topicId": "A-ODS-T01",
+      "subskillIds": [
+        "A-ODS-S001"
+      ],
+      "patternIds": [],
+      "rationale": "The existing category and source topic both describe visual observation and identification."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Odd-one-out",
+      "status": "mapped",
+      "domainId": "A-ODS",
+      "topicId": "A-ODS-T01",
+      "subskillIds": [
+        "A-ODS-S004"
+      ],
+      "patternIds": [
+        "P-ODS-CLASS"
+      ],
+      "rationale": "Direct match to classification and odd-one-out."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Pattern Counting",
+      "status": "mapped",
+      "domainId": "A-ODS",
+      "topicId": "A-ODS-T01",
+      "subskillIds": [
+        "A-ODS-S001"
+      ],
+      "patternIds": [],
+      "rationale": "The legacy category identifies visual observation; no arithmetic-counting pattern is inferred from the label alone."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Sequence of operation",
+      "status": "mapped",
+      "domainId": "A-ODS",
+      "topicId": "A-ODS-T02",
+      "subskillIds": [
+        "A-ODS-S007"
+      ],
+      "patternIds": [
+        "P-ODS-SEQ"
+      ],
+      "rationale": "Direct match to sequence-of-operation inference."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Spot the difference",
+      "status": "mapped",
+      "domainId": "A-ODS",
+      "topicId": "A-ODS-T01",
+      "subskillIds": [
+        "A-ODS-S002"
+      ],
+      "patternIds": [
+        "P-ODS-SPOT"
+      ],
+      "rationale": "Direct match to spot-the-difference/detail detection."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Texture & Pattern Matching",
+      "status": "mapped",
+      "domainId": "A-ODS",
+      "topicId": "A-ODS-T01",
+      "subskillIds": [],
+      "patternIds": [],
+      "rationale": "The primary observation/classification topic is supported by the existing category; no narrower pattern or sub-skill is asserted."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Usability",
+      "status": "mapped",
+      "domainId": "A-ODS",
+      "topicId": "A-ODS-T04",
+      "subskillIds": [
+        "A-ODS-S013"
+      ],
+      "patternIds": [
+        "P-ODS-USABILITY"
+      ],
+      "rationale": "Direct match to usability evaluation."
+    },
+    {
+      "sourceCategory": "Observation & Design Sensitivity",
+      "sourceTopic": "Visual Sensitivity",
+      "status": "needs_review",
+      "candidateDomainIds": [
+        "A-ODS",
+        "A-CRT"
+      ],
+      "candidateTopicIds": [
+        "A-ODS-T01",
+        "A-CRT-T04"
+      ],
+      "reviewReasons": [
+        "The source label is too broad to choose an observation or creative-communication topic."
+      ],
+      "rationale": "Keep the original label and request question-level review."
+    },
+    {
+      "sourceCategory": "Practical & Scientific Knowledge",
+      "sourceTopic": "Balance and stability",
+      "status": "mapped",
+      "domainId": "A-PSK",
+      "topicId": "A-PSK-T03",
+      "subskillIds": [
+        "A-PSK-S008"
+      ],
+      "patternIds": [
+        "P-PSK-STAB"
+      ],
+      "rationale": "Direct match to balance and stability reasoning."
+    },
+    {
+      "sourceCategory": "Practical & Scientific Knowledge",
+      "sourceTopic": "Everyday objects and mechanisms",
+      "status": "mapped",
+      "domainId": "A-PSK",
+      "topicId": "A-PSK-T01",
+      "subskillIds": [
+        "A-PSK-S001",
+        "A-PSK-S003"
+      ],
+      "patternIds": [],
+      "rationale": "The existing topic explicitly covers everyday objects and mechanisms; no narrower mechanism pattern is inferred."
+    },
+    {
+      "sourceCategory": "Practical & Scientific Knowledge",
+      "sourceTopic": "Light, reflection and refraction",
+      "status": "mapped",
+      "domainId": "A-PSK",
+      "topicId": "A-PSK-T04",
+      "subskillIds": [
+        "A-PSK-S010"
+      ],
+      "patternIds": [
+        "P-PSK-OPTIC"
+      ],
+      "rationale": "Direct match to light, reflection and refraction reasoning."
+    },
+    {
+      "sourceCategory": "Practical & Scientific Knowledge",
+      "sourceTopic": "Materials and their properties (Wood, metal, glass, plastic, paper, rubber, fabric)",
+      "status": "mapped",
+      "domainId": "A-PSK",
+      "topicId": "A-PSK-T06",
+      "subskillIds": [
+        "A-PSK-S015",
+        "A-PSK-S016"
+      ],
+      "patternIds": [
+        "P-PSK-MAT"
+      ],
+      "rationale": "The source label names materials and the material examples represented in the taxonomy."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "2D and 3D visualization",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T01",
+      "subskillIds": [
+        "A-VSR-S001"
+      ],
+      "patternIds": [],
+      "rationale": "Direct match to 2D/3D visualization."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Block arrangement and stacking",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T08",
+      "subskillIds": [
+        "A-VSR-S017"
+      ],
+      "patternIds": [
+        "P-SPAT-STACK"
+      ],
+      "rationale": "Direct match to block arrangement and stacking."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cross-sections and slicing",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T07",
+      "subskillIds": [
+        "A-VSR-S016"
+      ],
+      "patternIds": [
+        "P-SPAT-XSEC"
+      ],
+      "rationale": "Direct match to cross-sections and slicing."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Cube and cuboid nets",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T04",
+      "subskillIds": [
+        "A-VSR-S009"
+      ],
+      "patternIds": [
+        "P-SPAT-NET"
+      ],
+      "rationale": "Direct match to cube/cuboid net conversion."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Faces, edges and vertices",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T05",
+      "subskillIds": [
+        "A-VSR-S011"
+      ],
+      "patternIds": [],
+      "rationale": "Direct match to faces, edges and vertices."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Mirror images and water images",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T02",
+      "subskillIds": [
+        "A-VSR-S004"
+      ],
+      "patternIds": [
+        "P-SPAT-MIRROR"
+      ],
+      "rationale": "Direct match to mirror and water-image reasoning."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Paper folding, cutting and punching",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T04",
+      "subskillIds": [
+        "A-VSR-S008"
+      ],
+      "patternIds": [
+        "P-SPAT-FOLD",
+        "P-SPAT-PUNCH"
+      ],
+      "rationale": "The source topic explicitly names folding, cutting and punching; the exact sub-skill and pattern labels are preserved."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Paths, grids and mazes",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T08",
+      "subskillIds": [
+        "A-VSR-S018"
+      ],
+      "patternIds": [
+        "P-SPAT-PATH"
+      ],
+      "rationale": "Direct match to spatial paths, grids and mazes."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Perspective and depth",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T06",
+      "subskillIds": [
+        "A-VSR-S014"
+      ],
+      "patternIds": [],
+      "rationale": "Direct match to perspective and depth."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Rotation and reflection",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T02",
+      "subskillIds": [
+        "A-VSR-S003"
+      ],
+      "patternIds": [],
+      "rationale": "The source label maps to the V3 transformation topic; no single rotation or mirror pattern is inferred."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Spatial Assembly",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T08",
+      "subskillIds": [
+        "A-VSR-S017"
+      ],
+      "patternIds": [],
+      "rationale": "The existing spatial-assembly topic maps to the V3 assembly/stacking topic; no specific hidden-block pattern is inferred."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Symmetry — reflection and rotational",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T02",
+      "subskillIds": [
+        "A-VSR-S005"
+      ],
+      "patternIds": [
+        "P-SPAT-SYMM"
+      ],
+      "rationale": "Direct match to reflection and rotational symmetry."
+    },
+    {
+      "sourceCategory": "Visualization & Spatial Reasoning",
+      "sourceTopic": "Top, front and side views",
+      "status": "mapped",
+      "domainId": "A-VSR",
+      "topicId": "A-VSR-T05",
+      "subskillIds": [
+        "A-VSR-S012"
+      ],
+      "patternIds": [
+        "P-SPAT-VIEW"
+      ],
+      "rationale": "Direct match to orthographic top/front/side views."
+    }
+  ],
+  "partBDefault": {
+    "status": "needs_review",
+    "candidateDomainIds": [
+      "B-DRW",
+      "B-DAP"
+    ],
+    "reviewReasons": [
+      "The existing CEED Part-B prompt/rubric combines drawing and design aptitude; a primary and sub-skill assignment requires review of the specific prompt and source image."
+    ],
+    "rationale": "Preserve the Part-B prompt and image exactly; do not infer taxonomy from DRAWING_DESIGN format alone."
+  }
+}

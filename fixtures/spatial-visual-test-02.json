@@ -1,0 +1,1412 @@
+{
+  "id": "spatial-visual-test-02",
+  "title": "Spatial and Visual Test 02",
+  "durationSeconds": 3600,
+  "totalQuestions": 40,
+  "maxMarks": 128,
+  "instructions": "Spatial and Visual Test 02. Total 40 questions (MCQ, MSQ, NAT). NAT: +4, 0; MSQ: +4, -1; MCQ: +3, -0.71. Time: 60 minutes.",
+  "sections": [
+    {
+      "id": "spatial-visual",
+      "title": "Spatial and Visual Reasoning"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "An asymmetric solid made from unit cubes and one triangular prism is shown in isometric view. The solid is rotated 90° clockwise about the vertical axis. Which option shows the new front view?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Object Rotation and Spatial Orientation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "object-rotation-and-spatial-orientation"
+      ],
+      "image": "/media/spatial-visual-test-02/Q01.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 1 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q02",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "The top, front and right views of a stack built from identical unit cubes are shown. What is the minimum number of cubes consistent with all three views?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views and Viewpoint",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-viewpoint"
+      ],
+      "image": "/media/spatial-visual-test-02/Q02.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 2 Diagram",
+      "answer": {
+        "min": 17,
+        "max": 17
+      }
+    },
+    {
+      "id": "q03",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A stepped solid formed by joining rectangular prisms is sliced by the vertical plane P shown. Which option gives the exact shape of the section?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cross-Sections and Slicing",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cross-sections-and-slicing"
+      ],
+      "image": "/media/spatial-visual-test-02/Q03.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 3 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q04",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A patterned circular disc is missing one wedge. Which option completes all line continuations, colour regions and shading logic correctly?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Spatial Patterns and Figure Completion",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "spatial-patterns-and-figure-completion"
+      ],
+      "image": "/media/spatial-visual-test-02/Q04.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 4 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q05",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "Move from S to T on the grid using only rightward or upward steps. Blocked cells cannot be used. Exactly one bridge cell and exactly one tunnel cell must be visited. How many valid shortest routes exist?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Paths, Grids and Mazes",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paths-grids-and-mazes"
+      ],
+      "image": "/media/spatial-visual-test-02/Q05.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 5 Diagram",
+      "answer": {
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "id": "q06",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Parallel sunlight falls in the direction shown. Which option shows the correct ground shadow of the bent sheet-metal form?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Shadows and Light Direction",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "shadows-and-light-direction"
+      ],
+      "image": "/media/spatial-visual-test-02/Q06.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 6 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q07",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "In the sequence, three simultaneous rules operate: the black triangle moves one position clockwise on the outer ring, the striped square flips orientation every alternate frame, and the center symbol rotates 90° each step. Which option is frame 5?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Spatial Patterns and Figure Completion",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "spatial-patterns-and-figure-completion"
+      ],
+      "image": "/media/spatial-visual-test-02/Q07.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 7 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q08",
+      "sectionId": "spatial-visual",
+      "type": "MSQ",
+      "prompt": "Two views of the same solid are shown. Which of the following top views could belong to that solid? Select all correct options.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views and Viewpoint",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-viewpoint"
+      ],
+      "image": "/media/spatial-visual-test-02/Q08.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 8 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "q09",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A square sheet is folded successively along the shown lines. Two cuts and one circular punch are then made on the folded packet. Which unfolded pattern is correct?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Paper Folding, Cutting and Punching",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paper-folding-cutting-and-punching"
+      ],
+      "image": "/media/spatial-visual-test-02/Q09.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 9 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q10",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A camera moves from position A to position B around the same object without changing its height. Which option matches the view seen from B?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views and Viewpoint",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-viewpoint"
+      ],
+      "image": "/media/spatial-visual-test-02/Q10.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 10 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q11",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "In the perspective staircase scene, identical cubes P and Q are placed on different steps. If cube P stands one unit above the floor, how many cube-heights above the floor is cube Q?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Perspective, Depth and Occlusion",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "perspective-depth-and-occlusion"
+      ],
+      "image": "/media/spatial-visual-test-02/Q11.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 11 Diagram",
+      "answer": {
+        "min": 8,
+        "max": 8
+      }
+    },
+    {
+      "id": "q12",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The scene contains three partially overlapping vertical panels in perspective. Using the visible interruptions of outlines, which panel is furthest behind?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Perspective, Depth and Occlusion",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "perspective-depth-and-occlusion"
+      ],
+      "image": "/media/spatial-visual-test-02/Q12.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 12 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yellow panel (A)"
+        },
+        {
+          "id": "b",
+          "text": "Blue panel (B)"
+        },
+        {
+          "id": "c",
+          "text": "Red panel (C)"
+        },
+        {
+          "id": "d",
+          "text": "Cannot be determined"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q13",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A right hexagonal prism is sliced by a plane that is parallel to one pair of opposite side faces but not parallel to the base. Which option best matches the section?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cross-Sections and Slicing",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cross-sections-and-slicing"
+      ],
+      "image": "/media/spatial-visual-test-02/Q13.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 13 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q14",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "An isometric shell of a cube-stack is shown. Some cubes are hidden inside. What is the minimum number of unit cubes required so that all visible faces remain exactly as shown?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Block Arrangements and Hidden Structure",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "block-arrangements-and-hidden-structure"
+      ],
+      "image": "/media/spatial-visual-test-02/Q14.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 14 Diagram",
+      "answer": {
+        "min": 24,
+        "max": 24
+      }
+    },
+    {
+      "id": "q15",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "Three tile types may be rotated and repeated to connect A to B. The final path must pass through checkpoints P and Q, all path joins must connect cleanly, and the same tile type in the same orientation cannot appear consecutively. What is the minimum number of tiles required?",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Paths, Grids and Mazes",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paths-grids-and-mazes"
+      ],
+      "image": "/media/spatial-visual-test-02/Q15.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 15 Diagram",
+      "answer": {
+        "min": 15,
+        "max": 15
+      }
+    },
+    {
+      "id": "q16",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Three vertical pegs P, Q and R cast the shadows shown on the ground. From which labelled direction is the light coming?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Shadows and Light Direction",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "shadows-and-light-direction"
+      ],
+      "image": "/media/spatial-visual-test-02/Q16.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 16 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q17",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "In the 3×3 matrix, the number of filled segments and the orientation rule together determine the missing cell. Which option completes the matrix?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Spatial Patterns and Figure Completion",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "spatial-patterns-and-figure-completion"
+      ],
+      "image": "/media/spatial-visual-test-02/Q17.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 17 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q18",
+      "sectionId": "spatial-visual",
+      "type": "MSQ",
+      "prompt": "A cube with symbols on three visible faces is rotated successively about the shown axes. Which statements about the final visible faces are correct? Select all correct options.",
+      "marks": {
+        "correct": 4,
+        "incorrect": -1,
+        "unanswered": 0
+      },
+      "topic": "Object Rotation and Spatial Orientation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "object-rotation-and-spatial-orientation"
+      ],
+      "image": "/media/spatial-visual-test-02/Q18.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 18 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "The top face shows the circle symbol in the final view."
+        },
+        {
+          "id": "b",
+          "text": "The left face shows the square symbol in the final view."
+        },
+        {
+          "id": "c",
+          "text": "The right face shows the triangle symbol in the final view."
+        },
+        {
+          "id": "d",
+          "text": "The bottom face shows the circle symbol in the final view."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "q19",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "An isometric wireframe object is missing one corner component. Which option completes all visible and hidden edge continuities correctly?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Block Arrangements and Hidden Structure",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "block-arrangements-and-hidden-structure"
+      ],
+      "image": "/media/spatial-visual-test-02/Q19.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 19 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q20",
+      "sectionId": "spatial-visual",
+      "type": "NAT",
+      "prompt": "A circular sheet is folded into eighths as shown. Two circular punches and one V-cut are made on the folded wedge. After full unfolding, how many enclosed holes are present? Count only closed holes, not boundary notches.",
+      "marks": {
+        "correct": 4,
+        "incorrect": 0,
+        "unanswered": 0
+      },
+      "topic": "Paper Folding, Cutting and Punching",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paper-folding-cutting-and-punching"
+      ],
+      "image": "/media/spatial-visual-test-02/Q20.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 20 Diagram",
+      "answer": {
+        "min": 16,
+        "max": 16
+      }
+    },
+    {
+      "id": "q21",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The figure shows a structure made of identical unit cubes. A few cubes have been removed to create voids. Which of the following is the top view of the structure?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views and Viewpoint",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-viewpoint"
+      ],
+      "image": "/media/spatial-visual-test-02/Q21.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 21 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q22",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A transparent cubical box contains a solid object as shown. The object is made by joining a vertical cylinder and a cuboid, and is placed at the bottom corner of the box. A light is directed from the top-front-right. Which of the following best matches the shadow cast on the bottom face of the box?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Shadows and Light Direction",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "shadows-and-light-direction"
+      ],
+      "image": "/media/spatial-visual-test-02/Q22.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 22 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q23",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A block is kept on a horizontal surface and cut by a vertical plane as shown. Which of the following is the correct cross-section?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cross-Sections and Slicing",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cross-sections-and-slicing"
+      ],
+      "image": "/media/spatial-visual-test-02/Q23.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 23 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q24",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A square sheet is folded twice as shown and a pattern is cut on it at the final folded stage. When the sheet is completely unfolded, which of the following will be obtained?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Paper Folding, Cutting and Punching",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paper-folding-cutting-and-punching"
+      ],
+      "image": "/media/spatial-visual-test-02/Q24.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 24 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q25",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "An arrangement of mirrors is placed at 90° to each other as shown. An object is kept in front of the mirrors. Which of the following best represents the number and arrangement of images seen by an observer from the direction shown?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Mirror Images",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "mirror-images"
+      ],
+      "image": "/media/spatial-visual-test-02/Q25.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 25 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q26",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A path is drawn on the surface of a cube starting from the point marked with a black circle and ending at the point marked with a star. The path moves only along edges and never revisits an edge. Which of the following can be the path when the cube is unfolded into a net?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets and Surface Mapping",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-surface-mapping"
+      ],
+      "image": "/media/spatial-visual-test-02/Q26.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 26 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q27",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The figure shows a frame made of identical square rods joined at right angles. Which of the following is the view from the direction indicated by the arrow?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views and Viewpoint",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-viewpoint"
+      ],
+      "image": "/media/spatial-visual-test-02/Q27.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 27 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q28",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube is painted on all six faces with different colours. It is cut into 27 smaller unit cubes. How many of the small cubes have exactly two faces painted?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Surface and Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-surface-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-02/Q28.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 28 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q29",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A solid object is shown in three different orientations. The number on each visible face indicates a unique face of the object. Which number will be on the face opposite the face with the number 6?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Surface and Face Relations",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-surface-and-face-relations"
+      ],
+      "image": "/media/spatial-visual-test-02/Q29.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 29 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q30",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The figure shows a maze drawn on the faces of a cube. A beetle starts at the point S and moves along the lines on the surface of the cube to reach the point T. The beetle always moves to an adjacent intersection and never retraces the same edge. What is the minimum number of moves required?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Paths, Grids and Mazes",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paths-grids-and-mazes"
+      ],
+      "image": "/media/spatial-visual-test-02/Q30.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 30 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q31",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "The figure shows a sequence of solids. Each solid is obtained from the previous one by the same operation. Which of the following will be the next solid in the sequence?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Spatial Patterns and Figure Completion",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "spatial-patterns-and-figure-completion"
+      ],
+      "image": "/media/spatial-visual-test-02/Q31.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 31 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q32",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A square sheet has been folded and punched as shown. The sheet is then unfolded. Which of the following shows the correct result?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Paper Folding, Cutting and Punching",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "paper-folding-cutting-and-punching"
+      ],
+      "image": "/media/spatial-visual-test-02/Q32.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 32 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q33",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A person is standing at position P and looking at the object shown. Which of the following could be the view seen by the person?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views and Viewpoint",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-viewpoint"
+      ],
+      "image": "/media/spatial-visual-test-02/Q33.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 33 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q34",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube with circular holes on some faces is cut by a plane as shown. Which of the following is the correct cross-section?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cross-Sections and Slicing",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cross-sections-and-slicing"
+      ],
+      "image": "/media/spatial-visual-test-02/Q34.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 34 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q35",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A network of tunnels is carved inside a cube. The figure shows the openings on the faces. Which of the following could be the internal tunnel structure?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Internal 3D Structures",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "internal-3d-structures"
+      ],
+      "image": "/media/spatial-visual-test-02/Q35.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 35 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q36",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Four identical blocks are arranged to form a larger structure. Each block has a cut-out as shown. Which of the following can be the resulting structure?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Block Arrangements and Hidden Structure",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "block-arrangements-and-hidden-structure"
+      ],
+      "image": "/media/spatial-visual-test-02/Q36.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 36 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q37",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A cube is shown with symbols on its faces. Which of the following nets can fold to form the given cube?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Cube Nets and Surface Mapping",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "cube-nets-and-surface-mapping"
+      ],
+      "image": "/media/spatial-visual-test-02/Q37.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 37 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q38",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "Which of the following shapes is embedded in the complex figure?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Hidden Figures",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "hidden-figures"
+      ],
+      "image": "/media/spatial-visual-test-02/Q38.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 38 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "d"
+    },
+    {
+      "id": "q39",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A rectangular block is kept inside a transparent box. Spheres are kept at different positions as shown. Which of the following is the correct top view?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Orthographic Views and Viewpoint",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "orthographic-views-and-viewpoint"
+      ],
+      "image": "/media/spatial-visual-test-02/Q39.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 39 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q40",
+      "sectionId": "spatial-visual",
+      "type": "MCQ",
+      "prompt": "A series of frames shows a moving solid inside a square tube. Which of the following is the correct final position of the solid?",
+      "marks": {
+        "correct": 3,
+        "incorrect": -0.71,
+        "unanswered": 0
+      },
+      "topic": "Object Rotation and Spatial Orientation",
+      "category": "Visualization & Spatial Reasoning",
+      "tags": [
+        "object-rotation-and-spatial-orientation"
+      ],
+      "image": "/media/spatial-visual-test-02/Q40.png",
+      "imageAlt": "Spatial and Visual Test 02 Question 40 Diagram",
+      "options": [
+        {
+          "id": "a",
+          "text": "A — see diagram"
+        },
+        {
+          "id": "b",
+          "text": "B — see diagram"
+        },
+        {
+          "id": "c",
+          "text": "C — see diagram"
+        },
+        {
+          "id": "d",
+          "text": "D — see diagram"
+        }
+      ],
+      "answer": "c"
+    }
+  ]
+}

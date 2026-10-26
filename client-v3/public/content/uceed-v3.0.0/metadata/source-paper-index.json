@@ -1,0 +1,135 @@
+{
+  "contentVersion": "uceed-v3.0.0",
+  "sourcePapers": [
+    {
+      "sourceFile": "ceed-2021.json",
+      "paperId": "ceed-2021",
+      "sha256": "e3fee008963c84945ef043fe4f6d93e9c717e60ee811acd2befe4b95b57d2f9d"
+    },
+    {
+      "sourceFile": "ceed-2022.json",
+      "paperId": "ceed-2022",
+      "sha256": "ad7e9af42e2317b8b07a3661b70cdfb4e5f5d758b8246dbef716addf44e49884"
+    },
+    {
+      "sourceFile": "ceed-2023.json",
+      "paperId": "ceed-2023",
+      "sha256": "7437658d29a9f26d9c6873f88acc335fe7f2e42c4b3f5cd0f7011c87521da0a5"
+    },
+    {
+      "sourceFile": "ceed-2024.json",
+      "paperId": "ceed-2024",
+      "sha256": "64033ec637cb2eaf12d349291204559a87bf24dcbd3fa2616f35bd140a729f97"
+    },
+    {
+      "sourceFile": "ceed-2025.json",
+      "paperId": "ceed-2025",
+      "sha256": "0131cbe367f840d7150f27e1fa70566e0f9d38220dc295bef55d393349fc34d7"
+    },
+    {
+      "sourceFile": "ceed-2026.json",
+      "paperId": "ceed-2026",
+      "sha256": "45d87d8082b43952bf0e322d44a8605a5bc2ff35041d68721411abe1b9b02037"
+    },
+    {
+      "sourceFile": "uceed-spatial-worksheet-260-revised.json",
+      "paperId": "uceed-spatial-worksheet-260-revised",
+      "sha256": "c6d7b2dac7e265b20276d2acd984693ae681da7966c4375eb1f3a1e6637ae1a9"
+    },
+    {
+      "sourceFile": "uceed-spatial-quantitative-worksheet-300-revised.json",
+      "paperId": "uceed-spatial-quantitative-worksheet-300-revised",
+      "sha256": "f05f5abde11a3547150d62de6e9e343412d12737bcd356ea841eb4afa945f96c"
+    },
+    {
+      "sourceFile": "uceed-2026.json",
+      "paperId": "uceed-2026",
+      "sha256": "fce446b7228d6ef15f2af144dace2866e8cd97ff3c7ce2c9b9b7bdebcbd81cb0"
+    },
+    {
+      "sourceFile": "uceed-2026-mini-mock-01.json",
+      "paperId": "uceed-2026-mini-mock-01",
+      "sha256": "552f157e9efb95bdf47d23aff6fe0a1b71bad4062aa0ac616615dfc72df6a096"
+    },
+    {
+      "sourceFile": "uceed-2025-official-part-a.json",
+      "paperId": "uceed-2025-official-part-a",
+      "sha256": "81f435dbc128e8532f7727864caf67a7e5b8f6dad02713b778fe109a48aaa406"
+    },
+    {
+      "sourceFile": "uceed-2024.json",
+      "paperId": "uceed-2024",
+      "sha256": "e81d9ba52be8ef6d5ea91937690414f662041dc95e12d3df3a2582ff49f5fc81"
+    },
+    {
+      "sourceFile": "uceed-2023.json",
+      "paperId": "uceed-2023",
+      "sha256": "3577a1809b4d81cf647c03cef5abb30b15366cd08d855a33b990c8ad6618affa"
+    },
+    {
+      "sourceFile": "uceed-2022.json",
+      "paperId": "uceed-2022",
+      "sha256": "f1c083b6a9d0570a51a41271674ffadeca20533e7f2351e0862957c575367051"
+    },
+    {
+      "sourceFile": "uceed-2021.json",
+      "paperId": "uceed-2021",
+      "sha256": "dffe8a18751bbffccf5912b86b55c8e24131ef9bafae922ced0613b72cd78ce6"
+    },
+    {
+      "sourceFile": "uceed-2020.json",
+      "paperId": "uceed-2020",
+      "sha256": "dc2a2f3db61baa68503f54dd82f113db15f0f34830577908374a0d5dadb6b134"
+    },
+    {
+      "sourceFile": "uceed-2019.json",
+      "paperId": "uceed-2019",
+      "sha256": "19019816f4379975e0fead70005019bb173c8de9eba0a7b0c1b0ebe4ae2b3386"
+    },
+    {
+      "sourceFile": "uceed-2018.json",
+      "paperId": "uceed-2018",
+      "sha256": "3e83e1ef1927d3d73ca03a1302e006edb731bebff4cc67a0edb4b21f98850f2a"
+    },
+    {
+      "sourceFile": "uceed-2017.json",
+      "paperId": "uceed-2017",
+      "sha256": "86dbec717b2148f0955194b0aa6c801d7e788ddd253d68e1c8b80c6534dd0938"
+    },
+    {
+      "sourceFile": "uceed-2016.json",
+      "paperId": "uceed-2016",
+      "sha256": "24547fde54c77186a8da4f73b131489d1c37e590a0f80c0c289ed8212d20a250"
+    },
+    {
+      "sourceFile": "uceed-2015.json",
+      "paperId": "uceed-2015",
+      "sha256": "e42e7087d1a5d865beaade56036fd24609dec6b4c3407dac9074d4b8862444d9"
+    },
+    {
+      "sourceFile": "design-foundations.json",
+      "paperId": "design-foundations-01",
+      "sha256": "dfda7bf35d16c77756cc4460ae704f56f328cb5c86902583b5c1487a2314f478"
+    },
+    {
+      "sourceFile": "timed-sections.json",
+      "paperId": "timed-sections-01",
+      "sha256": "db4aee2bd1de4cb227c8575fa41b30b66e67a989e6e37e7daa79b2a8844313a1"
+    },
+    {
+      "sourceFile": "uceed-spatial-reasoning-diagnostic.json",
+      "paperId": "uceed-spatial-reasoning-diagnostic",
+      "sha256": "e32268c8ee3c687ce2d47229008a77666e3925d0f9d11b28a5a5e37aebca7a4b"
+    },
+    {
+      "sourceFile": "uceed-spatial-reasoning-practice-48.json",
+      "paperId": "uceed-spatial-reasoning-practice-48",
+      "sha256": "97bd4709ca6e18d4ec7c3a01495c57f520adbb332341882355c5a6073f4c6c4d"
+    },
+    {
+      "sourceFile": "uceed-spatial-reasoning-complete-120.json",
+      "paperId": "uceed-spatial-reasoning-complete-120",
+      "sha256": "46b576e5346652f39b50422bbecd266090abaae79dec4bb7eeebc8c9573ed45f"
+    }
+  ]
+}

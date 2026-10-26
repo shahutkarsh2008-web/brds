@@ -1487,3 +1487,1238 @@ WHAT: Added library_exams membership metadata and idempotent fixture upserts. Pu
 WHY: Deployed students were seeing incomplete Library data, while the previous seed assignment behavior could expose authored papers and Practice did not have a reliable per-user catalog boundary.
 EVIDENCE: `npm test` passed 97/97; all changed backend/test files passed `node --check`; `git diff --check` passed.
 NEXT: Commit and push this migration, then run the hosted deployment check and verify Render serves the updated catalog/API assets.
+
+### [2026-10-07 23:35 UTC] Codex — Phase 0: BRDS V3 readiness and implementation plan
+STATUS: DONE
+FILES: BRDS_V3_IMPLEMENTATION_PLAN.md, docs/BRDS_V3_PHASE_0_READINESS.md, data/backups/v3-readiness-20261007T2334Z/*.sqlite, PROGRESS_LOG.md
+WHAT: Saved the approved five-phase V3 plan and recorded Phase 0 repository, architecture, content, taxonomy, migration, and test readiness. Created consistent local SQLite backups for the primary, development, and isolated review databases; all passed SQLite integrity checks.
+WHY: Establishes the approved React/Vite + Firebase + Cloudflare target, preserves local state, maps legacy domains into V3, and assigns every PRD area and TRD technical requirement to phases and acceptance evidence.
+EVIDENCE: Fresh `npm test` passed 97/97. Three SQLite online-backup snapshots returned `PRAGMA integrity_check = ok`; SHA-256 values and table counts are in `docs/BRDS_V3_PHASE_0_READINESS.md`. The unrelated untracked `rough works sitemap.xml` remains untouched. No hosted PostgreSQL access or production deployment was attempted.
+NEXT: Begin Phase 1 with isolated fixtures/placeholders. Keep the final team-approved taxonomy, hosted PostgreSQL backup/restore, real credentials, OTP delivery, and hosted acceptance explicitly tracked; live acceptance remains deferred to Phase 8.
+
+### [2026-10-07 23:36 UTC] Codex — Phase 1: V3 application foundation
+STATUS: IN PROGRESS
+FILES: client-v3/*, api-worker/*, firebase.v3.json, firestore.rules, firestore.indexes.json, PROGRESS_LOG.md
+WHAT: Starting the V3 React/Vite client and Cloudflare Worker foundation in isolated paths. The legacy Node application, root deployment configuration, data, and source content remain intact.
+WHY: Phase 1 requires the new app shell, typed repository boundaries, authentication foundation, security rules, Worker API contract, and local/preview-ready target configuration before migrating product workflows.
+NEXT: Add the client shell/design tokens and route foundation, modular Firebase config/auth, restrictive Firestore rules/indexes, and Worker health contract; then build and test without production credentials.
+
+### [2026-10-08 00:17 UTC] Codex — Phase 1: auth, content and migration foundation
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/auth/*, client-v3/src/auth/*, client-v3/src/security/firestore.rules.test.ts, client-v3/src/content/*, client-v3/src/migration/*, api-worker/src/*, api-worker/migrations/0001_operational_state.sql, firebase.v3.json, firestore.rules, firestore.indexes.json, PROGRESS_LOG.md
+WHAT: Added Google and email/password auth actions, provider linking, phone OTP request/verification through the Worker, custom-token exchange, D1 rate limits/idempotent OTP send, hashed phone identity binding/collision rejection, profile rules, content bundle compiler/cache, and non-destructive legacy user/attempt adapters. Auth/Firestore emulator tests and focused client/Worker/content tests are in place.
+WHY: This increment covers Phase 1 identity, isolation, content bundle and migration foundations while keeping production source data, secrets and legacy runtime isolated.
+EVIDENCE: V3 client production build passed (TypeScript + Vite); local Auth/Firestore emulator suite passed 4/4 tests; client UI/content suite passed 3/3 before the latest migration/Worker additions; content compiler tests passed 2/2; Worker TypeScript check passed before the latest OTP mapping additions and is queued for rerun. The built JS entry chunk is 739.26 kB (225.56 kB gzip), which exceeds Vite's 500 kB warning threshold and remains a Phase 5 optimization item.
+NEXT: Rerun all client, emulator, Worker and compiler suites; smoke the local Worker/D1 migration; then record remaining input-dependent scope (approved taxonomy/content source) and complete the Phase 1 checklist report.
+
+### [2026-10-08 00:30 UTC] Codex — Phase 1: completion verification and report
+STATUS: DONE
+FILES: client-v3/src/features/auth/TurnstileWidget.tsx, client-v3/src/features/auth/TurnstileWidget.test.tsx, client-v3/src/styles.css, .gitignore, docs/BRDS_V3_PHASE_1_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Completed the Turnstile widget’s stable callback and TypeScript typing, added the Phase 1 phone-auth form styling and a safe missing-site-key test, and ignored generated V3 build/emulator artifacts. Recorded a workstream-by-workstream Phase 1 report and exit checklist aligned to the approved plan. No legacy user records or source content were imported or changed.
+WHY: Closes the Phase 1 foundation checklist with repeatable local evidence while distinguishing verified adapter/framework code from source-dependent content publishing and real-user migration.
+EVIDENCE: `client-v3 npm run build` passed; client tests 10/10; Firebase Auth/Firestore emulator tests 5/5; Worker TypeScript check passed and Worker tests 3/3; content compiler tests 2/2; root legacy `npm test` 99/99; local D1 migration reports no unapplied migrations; production bundle secret-marker scan found no provider-secret names; `git diff --check` passed. Main JS bundle is 739.90 kB minified (225.84 kB gzip), above the 500 kB warning. See `docs/BRDS_V3_PHASE_1_COMPLETION.md` for per-requirement evidence and open conditions.
+NEXT: Phase 2 may begin when directed. Before any old-user import, obtain the complete authorized source inventory and verified Firebase UID mapping. Before V3 content freeze, obtain the approved master taxonomy/source set. Phase 5 retains bundle/performance optimization and migration rehearsal; live credentials/SMS/hosted acceptance remain deferred as approved.
+
+### [2026-10-08 14:07 UTC] Codex — Phase 2: onboarding, Home, Exams, and daily practice foundation
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/home/*, client-v3/src/features/exams/*, client-v3/src/features/practice/*, client-v3/src/features/planner/*, client-v3/src/app/App.tsx, client-v3/src/app/routes.tsx, client-v3/src/app/AuthSessionProvider.tsx, client-v3/src/stores/appStore.ts, client-v3/src/content/*, client-v3/src/styles.css, PROGRESS_LOG.md
+WHAT: Continuing Phase 2 implementation from the in-progress Home/onboarding/focus/settings foundation. Next increments add the approved Exams and Practice entry flows, a useful Planner baseline, settings preference persistence, user-scoped state handling, and integration evidence; no source exam or question content will be fabricated.
+WHY: Implements the approved Phase 2 scope against the PRD UI and TRD behavior, while keeping unpublished or missing content visibly unavailable instead of presenting invented questions or results.
+NEXT: Finish Home/Focus/Settings correctness, implement Exams and Custom/GK Practice flows against the versioned content manifest, then add the Planner baseline and run focused plus full V3 checks. Record source-dependent gaps explicitly.
+
+### [2026-10-08 15:05 UTC] Codex — Phase 2: onboarding, Home, Exams, and daily practice foundation
+STATUS: BLOCKED
+FILES: client-v3/src/domain/userStateRepository.ts, client-v3/src/features/home/*, client-v3/src/features/exams/ExamsPage.tsx, client-v3/src/features/planner/*, client-v3/src/app/AuthSessionProvider.tsx, client-v3/src/content/contentCache.ts, docs/BRDS_V3_PHASE_2_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Implemented the Phase 2 onboarding, Home, Focus, Routine/Streak, Exams, Practice custom/GK entry, exam attempt runner, Settings, and Planner baseline; added account-scoped Firestore/offline persistence for saved papers, preferences, planner/routine/activity state and Focus/attempt records. Focus completion now records meaningful activity and finishes linked Planner/Routine work. Added a requirement-by-requirement Phase 2 report aligned to the approved plan.
+WHY: Implements the approved Phase 2 scope while respecting the PRD as exact UI/product authority and the TRD as exact technical authority; legacy features are reused only through V3-compatible flows, and missing approved content is not fabricated.
+EVIDENCE: V3 production build passed; V3 client suite passed 30/30 across 15 files; root legacy suite passed 99/99; `git diff --check` passed. Firebase Auth/Firestore emulator tests could not run because the Firebase CLI reports no emulators initialized and Auth/Firestore emulator endpoints are unavailable. Current V3 config remains `contentVersion: unpublished`; Phase 0 records the final approved master taxonomy as unavailable, so actual paper/question content acceptance is blocked. Main V3 bundle is ~1,005.56 kB minified (~308.32 kB gzip), above the Vite 500 kB warning threshold.
+NEXT: Publish and validate the approved V3 taxonomy/content bundle; initialize the configured Auth/Firestore emulators and rerun the emulator suite; then update the Phase 2 checklist with evidence and only mark DONE if every exit criterion passes. Do not migrate old users until the complete source inventory and verified Firebase UID mapping are available. Keep the unrelated `rough works sitemap.xml` untouched.
+
+### [2026-10-08 15:03 UTC] Codex — Phase 2: PRD/TRD checklist audit
+STATUS: BLOCKED
+FILES: docs/BRDS_V3_PHASE_2_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Re-audited the Phase 2 report against the full approved five-phase plan and the supplied PRD/TRD. Expanded traceability to include later-phase PRD/TRD obligations and corrected overbroad completion claims by naming the missing Custom question-format filter, compact Official Papers layout, mock duration/score state, full Past Attempts sorting, placeholder Home evidence, and unverified visual/accessibility checks.
+WHY: The report/checklist must cover every approved Phase 2 line item while preserving requirements assigned to Phases 3–5 and must not mark unimplemented or unverified behavior complete.
+EVIDENCE: Read the full relevant PRD/TRD text and all current Phase 2 code paths. Confirmed the report's stated V3 build/client suite/root suite evidence and emulator/content blockers from the preceding Phase 2 entry. `git diff --check` is being rerun after this audit edit.
+NEXT: Close the identified Phase 2 UI gaps in Exams/Practice, then rerun client build and tests; separately resolve published taxonomy/content and emulator prerequisites before changing Phase 2 status from BLOCKED.
+
+### [2026-10-08 15:04 UTC] Codex — Phase 3: evidence, progress, and adaptive learning loop
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/attempts/*, client-v3/src/features/progress/*, client-v3/src/features/practice/*, client-v3/src/domain/*, client-v3/src/app/routes.tsx, client-v3/src/styles.css, client-v3/src/content/contentCache.ts, PROGRESS_LOG.md
+WHAT: Starting Phase 3 work for evidence capture, deterministic student modeling, Attempt Review, Progress/Skill Map, adaptive queues, review scheduling, mastery and readiness. Preserve Phase 2's BLOCKED state and its audited UI gaps; do not represent those as resolved.
+WHY: Phase 3 implements every Phase 3 section of the approved five-phase plan and the corresponding PRD/TRD requirements. The supplied content taxonomy is unavailable, so code must be data-driven and must not fabricate approved topics or question mappings.
+NEXT: Inspect existing attempt persistence and routes, then add versioned evidence/scoring/skill/review/mastery models and tests before wiring attempt capture and learner-facing screens. Mark content-dependent end-to-end acceptance blocked until approved bundles are available.
+
+### [2026-10-08 15:29 UTC] Codex — Phase 3: evidence, progress, and adaptive learning loop
+STATUS: BLOCKED
+FILES: client-v3/src/features/attempts/attemptModel.ts, client-v3/src/features/attempts/attemptRepository.ts, client-v3/src/features/attempts/AttemptPage.tsx, client-v3/src/features/attempts/AttemptReviewPage.tsx, client-v3/src/features/attempts/AttemptPage.test.tsx, client-v3/src/features/progress/learningModel.ts, client-v3/src/features/progress/learningModel.test.ts, client-v3/src/features/progress/learningRepository.ts, client-v3/src/features/progress/ProgressPage.tsx, client-v3/src/features/practice/PracticePage.tsx, client-v3/src/app/App.tsx, client-v3/src/app/routes.tsx, client-v3/src/styles.css, docs/BRDS_V3_PHASE_3_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Added per-question evidence capture and TRD-aligned Firestore attempt item paths; deterministic review, skill/profile, adaptive selector, mastery and readiness models; Attempt Review and Progress/Skill Map screens; and Practice modes. The detailed Phase 3 checklist records implemented code separately from blocked acceptance.
+WHY: Covers the approved Phase 3 requirements while refusing to infer missing approved taxonomy, paper scoring, recency, mastery thresholds, review configuration, or readiness formulas.
+EVIDENCE: V3 production build passed (main JS ~1,007.60 kB minified/~309.04 kB gzip; Vite still warns over 500 kB). Full client suite passed 36/36 across 16 files; `git diff --check` passed. Mastery progression/regression, review scheduling, evidence grading, adaptive selection, and readiness behavior have focused tests. Firebase emulator/security/persistence acceptance was unavailable; V3 manifest remains unpublished; responsive screenshots/accessibility were not audited.
+NEXT: Keep Phase 3 BLOCKED until approved content/taxonomy and algorithm configuration exist and Auth/Firestore emulator verification passes. Keep Phase 2 BLOCKED with its outstanding Official Papers, mock-state, Past Attempts sorting, and visual gaps. Do not import old users without the complete authorized source inventory and UID mapping; do not alter source exam materials.
+
+### [2026-10-08 15:31 UTC] Codex — Phase 4: Planner, Mentor, Studio, and Faculty Review
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/planner/*, client-v3/src/features/mentor/*, client-v3/src/features/studio/*, client-v3/src/features/faculty/*, client-v3/src/app/*, client-v3/src/styles.css, api-worker/src/*, api-worker/migrations/*, firestore.rules, firestore.indexes.json, PROGRESS_LOG.md
+WHAT: Starting Phase 4 against the approved plan. Phase 3 remains blocked for content/config/emulator acceptance; Phase 4 must use only available Phase 3 evidence and show a safe empty/unavailable state when that evidence or configuration is missing.
+WHY: Phase 4 covers weekly Planner targets/review, grounded Mentor, Worker AI-provider boundary/fallback, Studio drawing lifecycle, and contextual Faculty Review.
+NEXT: Inspect existing Planner/repository schemas and Worker security/data interfaces; add Phase 4 models/routes and safe deterministic local behaviors before AI/provider or faculty persistence wiring.
+
+### [2026-10-08 16:02 UTC] Codex — Phase 4: weekly planning and grounded learning actions
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/planner/weeklyReviewModel.ts, client-v3/src/features/planner/weeklyReviewModel.test.ts, client-v3/src/features/planner/WeeklyReviewPage.tsx, client-v3/src/features/planner/PlannerPage.tsx, client-v3/src/features/planner/plannerModel.ts, client-v3/src/features/mentor/mentorModel.ts, client-v3/src/features/mentor/MentorPage.tsx, client-v3/src/features/planner/PlannerPage.test.tsx, client-v3/src/styles.css, PROGRESS_LOG.md
+WHAT: Added weekly evidence/target review with configurable Planner priorities, persisted target editing and a Mentor context built from available learning evidence. Mentor responses validate references and executable actions, store conversation history, redact contact details from cloud conversation records, and fall back to deterministic low-confidence guidance. Added route context to the Planner test after Weekly Review navigation introduced a Link.
+WHY: Implements the approved Phase 4 Planner, Weekly Review, and contextual Mentor checklist while leaving absent content/algorithm decisions explicit and preserving Phase 2/3 blocked statuses.
+EVIDENCE: Weekly Review model test passed; full V3 suite passed 40/40 after adding MemoryRouter to the existing Planner test. Worker typecheck/tests passed 6/6; root legacy suite passed 99/99. V3 build and emulator results are being recorded in the final Phase 4 evidence.
+NEXT: Finish Studio/faculty lifecycle checks, close request authorization and AI-fallback edge cases, run final build/tests, then write the requirement-by-requirement Phase 4 report. Keep Phase 4 blocked if emulator, content, or visual acceptance is unavailable.
+
+### [2026-10-08 16:28 UTC] Codex — Phase 4: completion checklist and acceptance decision
+STATUS: BLOCKED
+FILES: client-v3/src/features/planner/PlannerPage.tsx, client-v3/src/features/planner/PlannerPage.test.tsx, client-v3/src/features/planner/plannerModel.ts, client-v3/src/features/planner/WeeklyReviewPage.tsx, client-v3/src/features/planner/weeklyReviewModel.ts, client-v3/src/features/planner/weeklyReviewModel.test.ts, client-v3/src/features/mentor/mentorModel.ts, client-v3/src/features/mentor/MentorPage.tsx, client-v3/src/features/studio/StudioPage.tsx, client-v3/src/features/studio/studioRepository.ts, client-v3/src/features/faculty/FacultyReviewPage.tsx, client-v3/src/styles.css, client-v3/src/app/routes.tsx, api-worker/src/index.ts, api-worker/src/index.test.mjs, api-worker/wrangler.jsonc, firestore.rules, docs/BRDS_V3_PHASE_4_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Completed the Phase 4 implementation checklist for Planner/Weekly Review, contextual Mentor, Worker Gemini boundary, Studio drawing/review lifecycle, and Faculty Review. Added validated weekly targets, evidence-grounded action execution, AI-unavailable drawing review persistence and faculty fallback, before/after drawing comparison, Focus Drill navigation, student request idempotence, and faculty assignment ownership constraints. Saved the requirement-by-requirement report with a blocked exit decision.
+WHY: Covers every Phase 4 bullet in the approved five-phase plan while keeping unverified persistence, source-dependent grounding, and exact PRD visual acceptance visible rather than claiming completion without evidence.
+EVIDENCE: V3 client production build passed; V3 client suite passed 40/40 across 18 files; Worker typecheck passed and Worker tests passed 8/8; legacy root suite passed 99/99; generated bundle secret-marker search found no provider secret markers; `git diff --check` passed. Auth emulator requests failed with `auth/network-request-failed`; Firestore emulator at 127.0.0.1:8080 refused the connection. No live Gemini credentials/provider, emulator-backed rules/persistence, approved V3 content bundle, or responsive/PRD-reference visual audit was available.
+NEXT: Keep Phase 4 BLOCKED until emulator-backed cross-user/faculty rules and persistence pass, the approved V3 taxonomy/content/learning config is available for Mentor grounding acceptance, and the PRD reference plus responsive/accessibility checks are completed. Then rerun the full suites and update this report. Phase 2 and Phase 3 remain BLOCKED; preserve `rough works sitemap.xml` and source exam materials.
+
+### [2026-10-08 16:20 UTC] Codex — Phase 1–2: close remaining V3 code gaps
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/home/*, client-v3/src/features/exams/*, client-v3/src/app/AppShell.tsx, client-v3/src/content/*, client-v3/src/config/*, client-v3/src/features/attempts/*, client-v3/src/features/progress/*, client-v3/src/styles.css, docs/BRDS_V3_PHASE_1_COMPLETION.md, docs/BRDS_V3_PHASE_2_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Taking ownership of the remaining Phase 1/2 V3 work after a repo-wide audit. The current Phase 2 checklist incorrectly marks the Custom question-format filter missing although it exists; remaining implementation work includes Home data binding, Exams presentation/sort/review entry, global Mentor entry, and verified offline-manifest behavior.
+WHY: User explicitly requested completing Phases 1 and 2 against the approved PRD/TRD; code and reports must match the approved five-phase plan, and missing approved content or identity data must remain an explicit dependency rather than being fabricated.
+NEXT: Inspect current paper/content schemas and app-shell interfaces; implement the Home learning snapshot and remaining Exams/Practice/navigation behaviors in focused increments, then verify and update both V3 phase reports with evidence and unresolved source/emulator gates.
+
+### [2026-10-08 16:38 UTC] Codex — Phase 2: close Home, Exams, and content availability gaps
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/home/HomePage.tsx, client-v3/src/features/home/homeSnapshotModel.ts, client-v3/src/features/exams/ExamsPage.tsx, client-v3/src/features/practice/PracticePage.tsx, client-v3/src/features/attempts/attemptRepository.ts, client-v3/src/config/appConfig.ts, client-v3/src/config/appConfigRepository.ts, client-v3/src/content/contentCache.ts, client-v3/src/content/contentRepository.ts, client-v3/src/features/progress/ProgressPage.tsx, client-v3/src/features/attempts/AttemptReviewPage.tsx, client-v3/src/styles.css, docs/BRDS_V3_PHASE_2_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Bound Home metrics to selected-exam evidence and a bounded 100-attempt read, added the official-paper Save control and aligned Exams labels/sorting with available scores, loaded the public runtime content version, and cached validated manifests for offline reopening. Updated the Phase 2 checklist to remove stale filter/layout claims while preserving content/emulator/visual blockers.
+WHY: Closes audited Phase 2 UI/data-flow gaps without fabricating content, paper scores, or taxonomy; runtime config and manifest cache serve the versioned-content and offline-ready foundations.
+EVIDENCE: No build or test has been run after this increment; prior Phase 2 test counts do not verify these edits.
+NEXT: Finish Phase 3 exam-scoped evidence/config wiring, then review all modified files and reports; keep Phase 2 BLOCKED until fresh code checks, approved content, emulator, and visual/accessibility acceptance are available.
+
+### [2026-10-08 16:38 UTC] Codex — Phase 3: runtime learning configuration and exam-scoped queues
+STATUS: IN PROGRESS
+FILES: client-v3/src/config/appConfig.ts, client-v3/src/config/appConfigRepository.ts, client-v3/src/features/progress/learningModel.ts, client-v3/src/features/progress/learningRepository.ts, client-v3/src/features/progress/ProgressPage.tsx, client-v3/src/features/practice/PracticePage.tsx, client-v3/src/features/home/homeSnapshotModel.ts, client-v3/src/features/attempts/AttemptReviewPage.tsx, client-v3/src/features/home/HomePage.tsx, docs/BRDS_V3_PHASE_2_COMPLETION.md, docs/BRDS_V3_PHASE_3_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Added validated optional runtime scoring/review/mastery configuration from public `appConfig/current`, retained a local validated cache, tagged review rows with exam keys, scoped readiness/reviews/Practice/Progress/Home computations to the selected exam, carried prior mastery state into configured transitions, and corrected the “mock completed” activity classification. Applied the user’s decision to show all six Readiness components including Review Health.
+WHY: Makes Phase 3 model parameters deploy-configurable while leaving absent approved values unset, prevents cross-exam review/readiness leakage, and preserves evidence-based low-confidence behavior.
+EVIDENCE: No build or test has been run after this increment; latest implementation changes remain unverified.
+NEXT: Perform a file-by-file static review, reconcile all six-component wording in both reports, then request/perform acceptance checks only where authorized. Keep Phase 3 BLOCKED until approved learning values, content, emulator persistence/security evidence, and fresh build/test results are available.
+
+### [2026-10-08 16:43 UTC] Codex — Phase 3: stabilize review and readiness state
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/progress/learningModel.ts, client-v3/src/features/progress/learningRepository.ts, client-v3/src/features/practice/PracticePage.tsx, client-v3/src/features/attempts/AttemptReviewPage.tsx, client-v3/src/features/home/HomePage.tsx, client-v3/src/features/progress/ProgressPage.tsx, docs/BRDS_V3_PHASE_2_COMPLETION.md, docs/BRDS_V3_PHASE_3_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Added six-component Readiness presentation/defaults after the user's clarification; normalized Firestore readiness timestamps; persisted the mastery `since` value; deduplicated per-question review writes to avoid same-document completion/reschedule races; refreshed due reviews while Practice remains open; and stopped unscored-only attempts from displaying 0% accuracy. Reconciled Phase 2/3 checklists with current code and the user decision.
+WHY: Preserves truthful evidence, delayed mastery and review state across reloads, aligns the V3 Readiness UI with the user's decision, and prevents cross-exam score/review leakage or misleading result displays.
+EVIDENCE: No build or tests have been run for this increment; all Phase 2/3 reports continue to mark the phases BLOCKED pending fresh checks and external acceptance inputs.
+NEXT: Finish static review of changed code/docs and user-data/source boundaries. Keep Phase 2 and 3 BLOCKED until their report-listed content, learning config, emulator, visual/accessibility, and fresh build/test gates are cleared.
+
+### [2026-10-08 16:44 UTC] Codex — Phase 2: implementation status and acceptance blockers
+STATUS: BLOCKED
+FILES: docs/BRDS_V3_PHASE_2_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Finished the code-focused Phase 2 gap pass and reconciled its checklist with the current Home, Exams, Practice, runtime content configuration, and offline manifest paths. Kept the approved-content and old-user migration boundaries explicit; no historical users or source content were imported.
+WHY: The phase report must separate completed code paths from accepted V3 content, persistence, and exact UI evidence; missing source files cannot be replaced by legacy guesses.
+EVIDENCE: Prior V3/root test evidence is recorded in the report but does not cover the latest increment. Fresh checks were not run. Approved taxonomy/content is unpublished, Firebase emulator acceptance is unavailable, and responsive/reference review remains outstanding.
+NEXT: Publish the approved V3 bundle; provide the complete authorized legacy-user and Firebase UID exports before migration; initialize emulators; then run the planned build, suites, visual and accessibility acceptance and update this report.
+
+### [2026-10-08 16:44 UTC] Codex — Phase 3: implementation status and acceptance blockers
+STATUS: BLOCKED
+FILES: docs/BRDS_V3_PHASE_3_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Finished the code-focused Phase 3 gap pass for validated runtime learning parameters, exam-scoped evidence/reviews/readiness, persistence-safe mastery state, and six-component Readiness UI. Recorded the user's explicit decision to show Review Health as the sixth component.
+WHY: The learning pipeline can consume approved runtime values but must not invent thresholds, readiness formulas, or taxonomy. Completion status remains separate from code-path presence.
+EVIDENCE: Earlier focused tests/build are documented, but no fresh build or tests cover the latest changes. Approved content and learning values, emulator-backed persistence/security checks, and visual/accessibility acceptance remain unavailable.
+NEXT: Load approved content and learning values into `appConfig/current`; confirm the six Readiness evaluators/weights; initialize emulators and run the full planned checks before changing Phase 3 status.
+
+### [2026-10-08 16:45 UTC] Codex — Phase 3: finalize display refresh and honest review states
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/progress/ProgressPage.tsx, client-v3/src/features/attempts/attemptRepository.ts, client-v3/src/styles.css, PROGRESS_LOG.md
+WHAT: Refresh Progress recency and weekly analytics on a bounded one-minute interval, clamp the recent-attempt limit input to 1–500, and align the compact Official Papers action controls.
+WHY: Keeps evidence confidence and due-window displays current while preserving bounded reads and the compact responsive paper table.
+EVIDENCE: Static inspection only; no build or tests were run for this increment.
+NEXT: Complete final static review and leave Phase 2/3 acceptance blocked pending approved source/config, emulator checks, and fresh build/test/visual evidence.
+
+### [2026-10-08 16:46 UTC] Codex — Phase 2–3: handoff after code gap review
+STATUS: BLOCKED
+FILES: docs/BRDS_V3_PHASE_2_COMPLETION.md, docs/BRDS_V3_PHASE_3_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Finished the static gap review and updated both phase reports to distinguish implemented paths from unverified acceptance. Confirmed the user's six-component Readiness decision is reflected in the UI/checklists; retained missing V3 content, runtime parameter values, legacy-user mapping, emulator evidence, and visual acceptance as explicit gates.
+WHY: A phase cannot be declared complete from code presence alone; the requirement-to-acceptance checklist must remain accurate and every material open input visible.
+EVIDENCE: Latest changes have not been built or tested. Existing emulator unavailability, unpublished approved taxonomy/content, absent approved algorithm values and UID map, and missing responsive/accessibility review are recorded in the reports.
+NEXT: Resume after approved taxonomy/content and learning config are supplied and the configured emulators are available; then run fresh phase acceptance checks and revise the two reports with evidence.
+### [2026-10-08 17:22 UTC] Codex — Phase 1–3: integrate supplied UCEED master taxonomy
+STATUS: IN PROGRESS
+FILES: content-source-v3/taxonomy-source/BRDS_UCEED_V3_Master_Taxonomy.json, content-source-v3/taxonomy-source/BRDS_UCEED_V3_Taxonomy_README.md, content-source-v3/taxonomy-source/BRDS_UCEED_V3_Master_Taxonomy.csv, scripts/v3/import-master-taxonomy.js, client-v3/src/content/model.ts, scripts/v3/compile-content.js, client-v3/src/features/progress/ProgressPage.tsx, client-v3/src/content/* tests, docs/BRDS_V3_PHASE_1_COMPLETION.md, docs/BRDS_V3_PHASE_2_COMPLETION.md, docs/BRDS_V3_PHASE_3_COMPLETION.md, docs/BRDS_V3_PHASE_4_COMPLETION.md, PROGRESS_LOG.md
+WHAT: User supplied the UCEED V3 taxonomy JSON, CSV, and README. Source metadata says `candidate_for_freeze`; initial JSON/CSV comparison reports matching 2 parts, 9 domains, 51 topics, 191 sub-skills, and 62 patterns. Integrating source without changing the originals or inventing pattern-to-subskill links.
+WHY: The previously missing taxonomy input is now present; V3 schema and content compiler must represent domain-scoped pattern applicability without flattening or fabricating mappings.
+NEXT: Preserve the three originals in the repository, add a faithful importer/validator for the current content model, then update phase reports to reflect that question/paper bundles, content freeze, learning parameters, migration, emulator, and UI acceptance are separate remaining gates.
+
+### [2026-10-08 17:23 UTC] Codex — Phase 2: align Home evidence assertion with repeated profile rows
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/home/HomePage.test.tsx, PROGRESS_LOG.md
+WHAT: V3 client suite exposed a Home test using a uniqueness-only text query for “Insufficient evidence,” although the intended no-evidence state appears once in the confidence label and once for each of the nine profile abilities.
+WHY: Keep the assertion aligned with the current PRD-backed UI, which reports evidence confidence per ability rather than only once.
+NEXT: Change the test to assert at least one matching status, then rerun the client suite; do not alter the Home product UI for this query mismatch.
+
+### [2026-10-08 18:03 UTC] Codex — Phase 1–3: import supplied UCEED taxonomy candidate
+STATUS: DONE
+FILES: content-source-v3/taxonomy-source/BRDS_UCEED_V3_Master_Taxonomy.json, content-source-v3/taxonomy-source/BRDS_UCEED_V3_Taxonomy_README.md, content-source-v3/taxonomy-source/BRDS_UCEED_V3_Master_Taxonomy.csv, content-source-v3/taxonomy.json, scripts/v3/import-master-taxonomy.js, scripts/v3/compile-content.js, client-v3/src/content/model.ts, client-v3/src/features/progress/ProgressPage.tsx, client-v3/src/features/home/HomePage.test.tsx, test/v3-content-compiler.test.js, test/v3-master-taxonomy.test.js, package.json, docs/BRDS_V3_TAXONOMY_IMPORT.md, docs/BRDS_V3_PHASE_0_READINESS.md, docs/BRDS_V3_PHASE_1_COMPLETION.md, docs/BRDS_V3_PHASE_2_COMPLETION.md, docs/BRDS_V3_PHASE_3_COMPLETION.md, docs/BRDS_V3_PHASE_4_COMPLETION.md, PROGRESS_LOG.md
+WHAT: Preserved the three user files unchanged, added a repeatable importer that compares the CSV with every JSON sub-skill row and emits the normalized candidate taxonomy, and updated the schema/compiler/UI to preserve Part A/Part B and domain-scoped pattern applicability. Updated phase reports to separate the supplied candidate from an approved freeze and a complete published question/paper bundle.
+WHY: Removes the missing-taxonomy-source blocker without inventing pattern-to-sub-skill links, question mappings, scoring, or content coverage.
+EVIDENCE: Import command reports 2 parts, 9 domains, 51 topics, 191 sub-skills, 62 patterns, and 191 matching CSV rows. Client production build passed; client tests 40/40 across 18 files; root tests 105/105; Worker tests 8/8; `git diff --check` passed. The content version remains unpublished because no V3 question/paper source folders exist. No emulator, responsive/accessibility, or visual-reference audit was performed.
+NEXT: Keep Phase 1–4 exit status blocked where their reports identify open gates. Finish V3 question/paper mapping and learning configuration from approved sources; reconcile the taxonomy's fresh-UID note with the user's prior concern about covering old users before any migration; rerun emulator and visual acceptance when available.
+
+### [2026-10-08 18:37 UTC] Codex — Phase 1: freeze taxonomy and close acceptance gaps
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md; content-source-v3/taxonomy-source/BRDS_UCEED_V3_Master_Taxonomy.json; content-source-v3/taxonomy-source/BRDS_UCEED_V3_Taxonomy_README.md; content-source-v3/taxonomy.json; V3 content mapping/publishing metadata, compiler, tests, indexes, auth/security checks, visual QA, and Phase 1 report (existing question-bank and paper sources are read-only)
+WHAT: Starting the user-approved Phase 1 closure. The supplied UCEED taxonomy is authorized as frozen at version 3.0.0; existing approved banks/papers may be audited and mapped through additive V3 metadata while their original records and behavior remain unchanged. No legacy-user migration, credentials, SMS, or hosted access is in scope.
+WHY: The approved Phase 1 exit requires a working versioned content bundle, current security/version evidence, PRD-aligned foundation UI, and fresh acceptance results; user has resolved taxonomy and legacy-content authorization inputs.
+NEXT: Inventory all approved legacy question/paper source files and current claims in this log; produce a non-destructive V3 mapping/coverage layer with explicit needs_review for uncertain items before publishing.
+
+### [2026-10-08 18:45 UTC] Codex — Phase 1: approved source inventory
+STATUS: DONE
+FILES: PROGRESS_LOG.md; fixtures/*.json and public/media/* (read-only); scripts/seed-exams.js (read-only)
+WHAT: Audited the repository's published seed catalog and all fixture JSON files without changing source content. The seed list approves 26 papers/sets containing 1,910 Part-A/practice questions and 30 Part-B prompts; two spatial-reasoning fixture banks are not seeded and remain excluded as unpublished sources. The 26 approved sets reference 1,377 media paths, all present. Every approved source question has an existing ID; source hashes and question/category coverage are captured for the upcoming audit report.
+WHY: Establishes a non-destructive scope boundary from the existing published catalog so no draft content or source identity is silently promoted or overwritten.
+NEXT: Add the versioned V3 mapping layer and audit report, preserving source fixture bytes, paper/question order, answer and marking payloads, topic/category metadata, and media references.
+
+### [2026-10-08 18:46 UTC] Codex — Phase 1: claim content, auth, design and version acceptance files
+STATUS: IN PROGRESS
+FILES: content-source-v3/taxonomy-source/BRDS_UCEED_V3_Master_Taxonomy.json; content-source-v3/taxonomy-source/BRDS_UCEED_V3_Taxonomy_README.md; content-source-v3/taxonomy.json; content-source-v3/approved-legacy-sources.json; content-source-v3/mappings/legacy-topic-crosswalk.json; scripts/v3/import-master-taxonomy.js; scripts/v3/build-legacy-content-source.js; scripts/v3/compile-content.js; client-v3/src/content/model.ts; client-v3/src/config/appConfig.ts; client-v3/src/migration/legacyAdapters.ts; client-v3/src/features/auth/authRepository.ts; client-v3/src/features/auth/AuthStatus.tsx; client-v3/src/features/progress/learningModel.ts; client-v3/src/features/practice/PracticePage.tsx; client-v3/src/styles.css; test/v3-master-taxonomy.test.js; test/v3-content-compiler.test.js; test/v3-legacy-content.test.js; client-v3/src/features/auth/AuthStatus.test.tsx; docs/BRDS_V3_CONTENT_MAPPING_AUDIT.md; docs/BRDS_V3_PHASE_1_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Claiming the V3-only implementation, generated mapping layer, acceptance checks, and reports for this authorized Phase 1 closure. Legacy fixture JSON, public/media assets, SQLite backups, unrelated files, and existing phase reports for Phases 2–4 remain read-only unless separately logged.
+WHY: The requested changes are additive to the legacy content and are tied to approved Phase 1 content, auth, migration-version, design-foundation, and exit-test requirements.
+NEXT: Freeze taxonomy metadata at 3.0.0, create the explicit source/crosswalk inputs, then build a deterministic importer that checks source hashes and retains complete original records.
+
+### [2026-10-08 18:52 UTC] Codex — Phase 1: freeze taxonomy 3.0.0
+STATUS: DONE
+FILES: content-source-v3/taxonomy-source/BRDS_UCEED_V3_Master_Taxonomy.json; content-source-v3/taxonomy-source/BRDS_UCEED_V3_Taxonomy_README.md; content-source-v3/taxonomy.json; scripts/v3/import-master-taxonomy.js; PROGRESS_LOG.md
+WHAT: Applied the user's final/frozen decision to the source taxonomy and README, then regenerated the normalized taxonomy bundle input at content version brds-v3.0.0.
+WHY: Phase 1 content mapping and publication must use the confirmed UCEED taxonomy version 3.0.0 and must not leave candidate_for_freeze metadata in the implementation source.
+EVIDENCE: `npm run v3:taxonomy:import` passed; sourceStatus is frozen, sourceTaxonomyVersion is 3.0.0, and JSON/CSV validation matched 2 parts, 9 domains, 51 topics, 191 subskills, 62 patterns, and all 191 CSV subskill rows.
+NEXT: Build the additive question/paper mapping layer and verify it against every item in the approved seed catalog.
+
+### [2026-10-08 19:11 UTC] Codex — Phase 1: map and audit approved source content
+STATUS: DONE
+FILES: content-source-v3/approved-legacy-sources.json; content-source-v3/mappings/legacy-topic-crosswalk.json; content-source-v3/generated-v3.0.0/**; scripts/v3/build-legacy-content-source.js; test/v3-legacy-content.test.js; PROGRESS_LOG.md; fixtures/*.json and public/media/* (read-only)
+WHAT: Generated an additive taxonomyMapping layer for every seeded Part-A question and CEED Part-B prompt. Exact source fixture bytes are copied to a separate generated source-papers directory; question/paper identities, sequence, source records, answer/marks fields and legacy topic/category labels are retained. Ambiguous topic rows and all Part-B prompts use needs_review; unseeded source banks remain explicitly excluded.
+WHY: The user approved the frozen taxonomy and authorized mapping of the existing published catalog while requiring all originals and current source metadata to remain authoritative and unchanged.
+EVIDENCE: `node scripts/v3/build-legacy-content-source.js` reports 26 approved sets, 1,910 Part-A questions, 30 Part-B prompts, 1,940 total records, 1,834 mapped, 106 needs_review, 1,377 media references, 44 observed source category/topic pairs, zero missing crosswalk pairs, and zero unused crosswalk rows. Output is `content-source-v3/generated-v3.0.0/`; the two non-seeded files remain listed as excluded.
+NEXT: Complete compiler publication and record hash-preservation/coverage acceptance tests.
+
+### [2026-10-08 19:11 UTC] Codex — Phase 1: versioned content publication and compatibility
+STATUS: IN PROGRESS
+FILES: scripts/v3/compile-content.js; client-v3/src/content/model.ts; client-v3/src/config/appConfig.ts; client-v3/src/migration/legacyAdapters.ts; client-v3/src/features/progress/learningModel.ts; client-v3/src/features/practice/PracticePage.tsx; client-v3/src/features/attempts/AttemptReviewPage.tsx; test/v3-content-compiler.test.js; client-v3/src/features/progress/learningModel.test.ts; client-v3/src/migration/legacyAdapters.test.ts; package.json; PROGRESS_LOG.md
+WHAT: Extending the versioned compiler and runtime schema to support source-scoped repeated question IDs, immutable source-paper/metadata sidecars, needs_review without guessed taxonomy, and missing difficulty/representation/time estimates. Updated the fallback content/algorithm version to the approved 3.0.0 bundle. Initial publish attempt found and fixed a compiler taxonomy-version propagation defect; first successful static bundle has not yet passed independent source/hash verification.
+WHY: Published content must be versioned and verifiable without forcing unknown source metadata into adaptive-learning fields or treating repeated question IDs from different papers as duplicates.
+NEXT: Run the exact-source, needs_review, offline loading, full build/tests, and static output hash/manifest checks; then perform security, visual and end-to-end acceptance.
+
+### [2026-10-08 19:50 UTC] Codex — Phase 1: claim runtime cache, visual refinement and final evidence
+STATUS: IN PROGRESS
+FILES: client-v3/src/config/appConfigRepository.ts; client-v3/src/config/appConfigRepository.test.ts; client-v3/src/styles.css; scripts/v3/build-legacy-content-source.js; content-source-v3/generated-v3.0.0/**; client-v3/public/content/brds-v3.0.0/**; docs/BRDS_V3_CONTENT_MAPPING_AUDIT.md; docs/BRDS_V3_TAXONOMY_IMPORT.md; docs/BRDS_V3_PHASE_1_COMPLETION.md; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Claiming the stale unpublished-runtime diagnosis/fix, subtle key-surface glass styling requested by the user, final regenerated content evidence, and Phase 1 report reconciliation. Legacy fixtures and media remain read-only.
+WHY: The published content is present and hash-verified, but visual acceptance cannot pass while stale runtime configuration hides it; final Phase 1 evidence also needs current mapping, security, responsive, and test results.
+NEXT: Add a regression test for cached `unpublished` configuration falling back to the compiled `brds-v3.0.0` content version, then add restrained blur/transparency to the topbar and selected hero surfaces.
+
+### [2026-10-08 19:51 UTC] Codex — Phase 1: recover published bundle from stale config
+STATUS: IN PROGRESS
+FILES: client-v3/src/config/appConfigRepository.ts; client-v3/src/config/appConfigRepository.test.ts; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: Runtime config now replaces the obsolete `unpublished` sentinel with the compiled bundle version when a published fallback exists; regression coverage checks stale and valid cached values. Added restrained translucent blur to the topbar, Home hero, and Practice evidence panel.
+WHY: Prevents stale configuration from hiding an already-published immutable content bundle, while applying the user-requested subtle glass treatment to selected PRD surfaces.
+EVIDENCE: Regression test and visual capture are pending.
+NEXT: Run the config regression test, restart the dev server, and confirm Practice renders from `brds-v3.0.0` before taking responsive captures.
+
+### [2026-10-08 20:00 UTC] Codex — Phase 1: refine responsive practice preview
+STATUS: IN PROGRESS
+FILES: client-v3/src/styles.css; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Added a responsive evidence preview and constrained adaptive exam/size selectors. The first content-loaded browser pass found small-screen controls enforcing their intrinsic option-list width; tablet preview text also lacked wrapping and the side panel crowded the question builder.
+WHY: Phase 1 visual QA requires a usable published practice view at the PRD's desktop, tablet, and phone widths without overflow or overlapping panels.
+EVIDENCE: Browser inspection confirmed `brds-v3.0.0` content was loaded after the stale-cache recovery; the 390 px emulated viewport measured 471 px of document scroll width before this correction.
+NEXT: Recapture 1440/1024/768/390 widths with exact viewport metrics; require zero horizontal overflow, distinct panel bounds, and visible V3 content at every width.
+
+### [2026-10-08 20:08 UTC] Codex — Phase 1: pass content, responsive, and fresh acceptance checks
+STATUS: IN PROGRESS
+FILES: content-source-v3/generated-v3.0.0/**; client-v3/public/content/brds-v3.0.0/**; client-v3/src/config/appConfigRepository.test.ts; client-v3/src/styles.css; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Regenerated and independently verified the frozen 3.0.0 bundle, recovered published content when stale local config says unpublished, and captured four exact-width browser views after fixing intrinsic select overflow and tablet preview wrapping.
+WHY: Satisfies Phase 1 content audit/publishing, version integrity, selected-shard loading, and PRD responsive visual acceptance while leaving uncertain classifications explicit.
+EVIDENCE: Publisher: 26 papers/shards, 1,910 Part-A questions, 30 Part-B prompts, 1,377 media; verifier: 1,834 mapped, 106 needs_review, 26 source-paper byte copies identical, 1,377 media and 3 metadata hashes verified. Browser at 1440/1024/768/390 px loaded `brds-v3.0.0`, with zero horizontal overflow and no builder/evidence panel overlap. Root suite 107/107, client suite 44/44 across 19 files, Worker suite 8/8, Auth+Firestore emulator 7/7, and Vite production build passed (975.76 kB main chunk warning). `git diff --check` was clean before the final CSS patch; repeat it during closeout.
+NEXT: Finish screenshot review on Home/Exams, run final diff/secret/version/index checks, write the detailed mapping audit and Phase 1 completion report, then append final acceptance status.
+
+### [2026-10-08 20:20 UTC] Codex — Phase 1: final local acceptance and handoff
+STATUS: DONE
+FILES: content-source-v3/taxonomy-source/**; content-source-v3/taxonomy.json; content-source-v3/approved-legacy-sources.json; content-source-v3/mappings/legacy-topic-crosswalk.json; content-source-v3/generated-v3.0.0/**; client-v3/public/content/brds-v3.0.0/**; client-v3/src/config/appConfigRepository.ts; client-v3/src/config/appConfigRepository.test.ts; client-v3/src/styles.css; client-v3/src/features/exams/ExamsPage.tsx; client-v3/src/features/exams/ExamsPage.test.tsx; docs/BRDS_V3_CONTENT_MAPPING_AUDIT.md; docs/BRDS_V3_TAXONOMY_IMPORT.md; docs/BRDS_V3_PHASE_1_COMPLETION.md; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Closed the approved local Phase 1 scope: frozen taxonomy 3.0.0, audited additive mappings for every approved catalog source, locally published and hash-verified content, recovered stale unpublished client config, added modest glass styling, corrected adaptive/official-paper labels, and documented the checklist/audit with visual evidence.
+WHY: All approved Phase 1 workstreams and local exit checks are now verifiable against the user's explicit taxonomy, content-preservation, and fresh-UID decisions; uncertain mappings remain reviewable rather than guessed.
+EVIDENCE: Taxonomy import matched 2/9/51/191/62 hierarchy counts and 191 CSV rows. Bundle verifier: 26 papers/shards, 1,910 Part A, 30 Part B, 1,834 mapped, 106 needs_review, 26 byte-identical source papers, 1,377 media hashes, 3 metadata hashes. Root suite 107/107; client suite 44/44 in 19 files; Worker 8/8; Auth+Firestore emulators 7/7; TypeScript/Vite production build passed (main chunk 975.76 kB minified, 299.02 kB gzip). Production preview loaded the published bundle and official-paper catalog at 1440 and 390 px without horizontal overflow. Dev browser QA captured Home/Exams at 1440/390 and Practice at 1440/1024/768/390 with no horizontal overflow or Practice panel overlap. Client dist credential-marker scan found 0; `git diff --check` passed with only line-ending advisories. **Process note:** an ignored local `.env` was inadvertently printed in a diagnostic tool output; it was not modified or used for an external request. User has been told to rotate any active credential-like values.
+NEXT: Phase 1 local implementation is closed. Continue from the approved phase plan when directed; real credentials, live OTP, deployment, and hosted acceptance remain at Phase 8.
+
+### [2026-10-08 20:09 UTC] Codex — Phase 1: fix official paper label found in visual QA
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/exams/ExamsPage.tsx; client-v3/src/features/exams/ExamsPage.test.tsx; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Home and Exams route review found that source paper metadata correctly classified official papers, but the Exams card rendered them as “PAPER TYPE UNSPECIFIED.” Claiming the Exams card label and regression assertion for this visual acceptance correction.
+WHY: The published V3 catalog must visibly distinguish official papers, practice papers, and mocks using its preserved, approved source classification.
+EVIDENCE: Browser source inspection shows the versioned `ceed-2026` paper has `paperType: official`; the existing card renderer omitted an official label. Home and Exams screenshots at 1440 and 390 px have no horizontal overflow.
+NEXT: Render `OFFICIAL PAPER` for official entries, assert it in the published-manifest page test, then refresh Exams captures and rerun the client suite/build.
+
+### [2026-10-08 20:27 UTC] Codex — Phase 1: re-audit against the user's 16 closure gates
+STATUS: IN PROGRESS
+FILES: docs/BRDS_V3_PHASE_1_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Rechecking the prior Phase 1 completion claim against the newly explicit content version, mapping-field, taxonomy-coverage, auth recovery, responsive, and E2E gates. Source fixtures and existing data remain read-only.
+WHY: The user's latest closure checklist controls the final status; prior local acceptance does not prove every newly specified gate.
+NEXT: Record fresh test results and the exact open gates in the Phase 1 report, then keep Phase 1 open until all 16 gates have evidence.
+
+### [2026-10-08 20:28 UTC] Codex — Phase 1: closure decision after fresh audit
+STATUS: BLOCKED
+FILES: docs/BRDS_V3_PHASE_1_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Added a 16-item reassessment to the Phase 1 report and superseded its earlier COMPLETE claim. The report now records PHASE 1 = OPEN without changing source exams, question IDs, media, database records, or runtime code.
+WHY: The latest user gate requires exact `uceed-v3.0.0`, explicit mapping fields and zero-coverage audit, approved-source/database reconciliation, complete Google/OTP recovery evidence, and route-wide responsive/E2E evidence before DONE.
+EVIDENCE: Fresh root tests 107/107, client 44/44, Worker 8/8, Firebase Auth/Firestore Emulator 7/7, Vite build PASS, current `brds-v3.0.0` content verifier PASS. Generated shards have 1,940 records; 106 needs_review; 154/191 subskills and 36/62 patterns have zero mapped-question coverage. No Playwright E2E files were found. `git diff --check` reported no whitespace errors.
+NEXT: Implement the missing metadata/version/coverage work without touching originals; reconcile approved source/database scope and no-duplicate publication; complete auth recovery tests and full PRD responsive/E2E checks. Keep Phase 1 OPEN until every gate passes. Real credentials, live SMS, and hosted acceptance remain deferred to Phase 8.
+
+### [2026-10-09 05:51 UTC] Codex — Phase 1: close audited local code and acceptance gaps
+STATUS: IN PROGRESS
+FILES: scripts/v3/*; content-source-v3/approved-legacy-sources.json; content-source-v3/taxonomy.json; content-source-v3/generated-v3.0.0/**; client-v3/src/content/*; client-v3/src/config/*; client-v3/src/features/auth/*; client-v3/src/migration/*; client-v3/public/content/**; test/v3-*.test.js; docs/BRDS_V3_CONTENT_MAPPING_AUDIT.md; docs/BRDS_V3_PHASE_1_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Implementing the user's exact content version, explicit additive mapping fields, complete coverage report, source-preserving publication, auth recovery, and fresh acceptance evidence in this repository.
+WHY: The latest 16-point Phase 1 checklist supersedes the previous completion claim; the source fixtures, database, paper IDs, answers, scoring, and media remain authoritative and unchanged.
+NEXT: First update the content pipeline and verifier, publish `uceed-v3.0.0`, then close auth/security and responsive/E2E gaps. Record each passing increment immediately.
+
+### [2026-10-09 05:59 UTC] Codex — Phase 1: frozen content and database scoring overlay
+STATUS: DONE
+FILES: scripts/v3/import-master-taxonomy.js; scripts/v3/build-legacy-content-source.js; scripts/v3/compile-content.js; scripts/v3/verify-published-content.js; scripts/v3/export-scoring-overrides.py; content-source-v3/approved-legacy-sources.json; content-source-v3/taxonomy.json; content-source-v3/mappings/database-scoring-overrides.json; content-source-v3/generated-v3.0.0/**; client-v3/public/content/uceed-v3.0.0/**; client-v3/src/content/model.ts; package.json; test/v3-legacy-content.test.js; test/v3-content-compiler.test.js; test/v3-master-taxonomy.test.js; PROGRESS_LOG.md
+WHAT: Published the required `uceed-v3.0.0` bundle with explicit mapping/version/legacy fields, complete zero-coverage IDs, source-hash index instead of published source-paper copies, and 41 user-approved legacy-database NAT scoring overrides. Original fixture records, answer keys, media, paper IDs/order, and database were not changed.
+WHY: Satisfies Phase 1 content/version/preservation gates and the user's decision that current database grading controls the 41 conflicts while original fixture answers remain inspectable.
+EVIDENCE: Taxonomy import matched frozen 3.0.0 with 2/9/51/191/62 nodes. Fresh content verifier passed: 26 source hashes, 1,940 records, 1,834 mapped, 106 needs_review, 41 scoring overrides, 1,377 media hashes, 154 zero-coverage subskills and 36 zero-coverage patterns; 0 full source-paper copies in the new published manifest. Focused legacy-content test passed.
+NEXT: Finish V3 scoring parity tests/build, then account recovery/emulator and responsive/E2E acceptance. Keep final Phase 1 status OPEN until all gates pass.
+
+### [2026-10-09 06:02 UTC] Codex — Phase 1: restore V3 exam scoring behavior
+STATUS: DONE
+FILES: client-v3/src/features/progress/learningModel.ts; client-v3/src/features/attempts/scorePaper.ts; client-v3/src/features/attempts/scorePaper.test.ts; client-v3/src/features/attempts/AttemptPage.tsx; client-v3/src/features/attempts/AttemptPage.test.tsx; client-v3/src/features/attempts/AttemptReviewPage.tsx; client-v3/src/features/attempts/attemptModel.ts; PROGRESS_LOG.md
+WHAT: V3 now grades raw source MCQ/MSQ/NAT answer formats, database-backed NAT accepted values, alternatives, partial MSQ credit, and paper marks; submitted attempts persist real score and max marks for review.
+WHY: Earlier V3 evidence treated raw MCQ/MSQ keys as unscored and left the score panel blank, violating scoring and review compatibility.
+EVIDENCE: Focused V3 scoring/attempt/learning tests passed 11/11; Vite/TypeScript production build passed after scoring changes. The 41-rule database overlay and published bundle verifier passed before this increment.
+NEXT: Finish Google collision recovery unit tests, Firebase Auth/rules emulator scenarios, and full route responsive/E2E evidence. Rerun the build after auth changes.
+
+### [2026-10-09 06:05 UTC] Codex — Phase 1: close Firestore profile rule bypass
+STATUS: IN PROGRESS
+FILES: firestore.rules; client-v3/src/security/firestore.rules.test.ts; PROGRESS_LOG.md
+WHAT: Fresh Emulator test exposed that the nested recursive wildcard also matched the parent user document and bypassed immutable UID/createdAt update rules. Scoped the owner catch-all to actual subcollection documents.
+WHY: Phase 1 requires default-deny ownership and protected identity fields.
+NEXT: Rerun Auth and Firestore emulator tests, then record the result.
+
+
+### [2026-10-09 06:09 UTC] Codex — Phase 1: verify current catalog and correct tablet layout
+STATUS: IN PROGRESS
+FILES: scripts/v3/audit-current-database.py; client-v3/src/styles.css; scripts/v3/e2e-local.mjs; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Added read-only current-database parity audit and fresh browser E2E script. Audit passed for 26 papers, 1,910 Part A questions, order/type/marks, and 41 user-selected database grading overrides; the first responsive run exposed a 1024 px Home overflow, so the support cards now use two columns through 1199 px.
+WHY: Phase 1 requires preserving current approved content/scoring and four-width route acceptance.
+EVIDENCE: Current SQLite integrity ok; 13 users, 26 exams, 286 exam assignments, 0 attempts. First browser run halted on a 2 px Home overflow at 1024, before claiming visual PASS.
+NEXT: Rebuild and rerun full four-width route E2E; finish Emulator rerun and report all results.
+
+
+### [2026-10-09 06:09 UTC] Codex — Phase 1: pass fresh Auth and Firestore emulators
+STATUS: DONE
+FILES: firestore.rules; client-v3/src/auth/emulator.test.ts; client-v3/src/security/firestore.rules.test.ts; client-v3/src/features/auth/googleCollisionRecovery.ts; PROGRESS_LOG.md
+WHAT: Scoped the Firestore owner catch-all to subcollection documents so it cannot bypass user-profile immutability. Tested password accounts, Worker-format custom-token identity, Google collision/link recovery, owner isolation, role elevation denial, and assigned faculty access.
+WHY: Phase 1 security and account-linking code must pass current emulator rules, not just unit mocks.
+EVIDENCE: Fresh Firebase Auth/Firestore Emulator run passed 11/11 tests across two files after the rule correction.
+NEXT: Complete route-wide production-preview E2E, content audit/report reconciliation, and final suite.
+
+
+### [2026-10-09 06:12 UTC] Codex — Phase 1: pass production-preview route E2E
+STATUS: DONE
+FILES: scripts/v3/e2e-local.mjs; client-v3/src/styles.css; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Fresh production preview completed onboarding, opened all eight core routes at 1440/1024/768/390 px, captured each layout, and checked headings, navigation, browser exceptions, and horizontal overflow. Added locally hosted PRD-allowed Inter and Space Grotesk fallback fonts with their OFL licenses; final font-loaded capture remains to run.
+WHY: Phase 1 requires full four-width visual and route acceptance, with actual typography rather than undeclared local font availability.
+EVIDENCE: 32/32 route-width checks passed, zero browser exceptions. CSS/font final build and rerun pending.
+NEXT: Rebuild with fonts, rerun E2E, run all suites, then reconcile the Phase 1 audit/report.
+
+
+### [2026-10-09 06:15 UTC] Codex — Phase 1: approve taxonomy semantics and host PRD fallback fonts
+STATUS: DONE
+FILES: docs/BRDS_V3_TAXONOMY_IMPORT.md; docs/BRDS_V3_CONTENT_MAPPING_AUDIT.md; client-v3/src/styles.css; client-v3/public/fonts/**; PROGRESS_LOG.md
+WHAT: Recorded the user's approval to follow the frozen JSON's domain-scoped reusable patterns with only evidence-backed question/prompt links. Added locally hosted Inter and Space Grotesk PRD fallback fonts plus OFL license text and updated the current content audit to uceed-v3.0.0, 41 database grading overrides, and zero-coverage IDs.
+WHY: Closes the package's README/JSON relationship ambiguity and makes PRD typography available without runtime font CDN dependence.
+EVIDENCE: Production TypeScript/Vite build passed with local fonts; fresh root 107/107, client 49/49, Worker 8/8, content verifier PASS, Emulator 11/11. Final font-loaded E2E still running.
+NEXT: Finish final E2E, complete the 16-gate report, and run final consistency checks.
+
+
+### [2026-10-09 06:21 UTC] Codex — Phase 1: protect faculty review authorship
+STATUS: IN PROGRESS
+FILES: firestore.rules; client-v3/src/security/firestore.rules.test.ts; PROGRESS_LOG.md
+WHAT: Restricted the generic owner subcollection rule so drawing-specific rules control, and disallowed students from creating completed faculty reviews or editing faculty feedback fields. Added an Emulator regression test for forged faculty feedback.
+WHY: Phase 1 default-deny ownership and protected role boundaries must prevent student-side faculty impersonation.
+NEXT: Rerun fresh Auth/Firestore Emulator suite and update the closure report with its exact result.
+
+### [2026-10-09 06:24 UTC] Codex — Phase 1: final local closure and handoff
+STATUS: DONE
+FILES: scripts/v3/**; content-source-v3/**; client-v3/src/content/**; client-v3/src/config/**; client-v3/src/features/auth/**; client-v3/src/features/attempts/**; client-v3/src/features/progress/learningModel.ts; client-v3/src/styles.css; client-v3/public/fonts/**; client-v3/public/content/uceed-v3.0.0/**; firestore.rules; client-v3/src/security/firestore.rules.test.ts; docs/BRDS_V3_CONTENT_MAPPING_AUDIT.md; docs/BRDS_V3_TAXONOMY_IMPORT.md; docs/BRDS_V3_PHASE_1_COMPLETION.md; reports/v3-phase1-visual/**; PROGRESS_LOG.md
+WHAT: Closed the 16-item user Phase 1 gate in the current repository with frozen taxonomy/content versions, additive approved-content mappings, current-database grading overlay, source preservation, Google/OTP recovery, tightened Firestore role boundaries, locally hosted PRD fallback fonts, and full four-width visual and functional E2E evidence. The user approved domain-scoped reusable pattern semantics from the frozen JSON.
+WHY: The approved Phase 1 plan requires a working V3 foundation and independently verifiable content/auth/security acceptance before Phase 2-5 work continues.
+EVIDENCE: Current SQLite parity PASS (26 papers, 1,910 Part A questions, 41 grading overrides, 286 untouched assignments); published content verifier PASS (1,940 records, 1,834 mapped, 106 needs_review, 1,377 media hashes, zero copied source papers, 154/36 zero-coverage lists); root 107/107, client 49/49, Worker 8/8, Auth/Firestore Emulator 13/13; final TypeScript/Vite build PASS; final production-preview E2E PASS (32 route-width checks, mock and custom practice submission/review, saved/Past Attempts, local font loading, zero browser exceptions); dist secret-marker scan 0.
+NEXT: Continue the approved plan from Phase 2/3/4 remaining work and Phase 5 integration when directed. Phase 8 retains real credentials, SMS delivery, and hosted acceptance; no legacy-user migration is planned.
+
+### [2026-10-09 08:34 UTC] Codex — Phase 1: remove superseded status from completion report
+STATUS: IN PROGRESS
+FILES: docs/BRDS_V3_PHASE_1_COMPLETION.md; PROGRESS_LOG.md
+WHAT: The completion report still embeds an earlier OPEN audit after its final DONE checklist, confusing the current status. Cleaning the report so it presents only the final 16-gate decision; append-only history stays in this log.
+WHY: The user needs one unambiguous Phase 1 completion report.
+NEXT: Remove the superseded report section, inspect all remaining Phase 1 status labels, and confirm the report contains no stale OPEN or PARTIAL gates.
+
+### [2026-10-09 08:35 UTC] Codex — Phase 1: report status is unambiguous
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_1_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Removed the superseded OPEN/PARTIAL audit from the Phase 1 completion report while retaining the final 16/16 PASS checklist and all current evidence. Prior audit history remains in append-only PROGRESS_LOG.md.
+WHY: Prevents the old audit from appearing to contradict the verified current Phase 1 DONE decision.
+EVIDENCE: Search of the current report, content audit, taxonomy record, and implementation plan finds only PHASE 1 = DONE as a Phase 1 status; report is 37 lines and git diff --check passes.
+NEXT: Use the final completion checklist for current Phase 1 status; the historical status remains available in this log.
+
+### [2026-10-09 09:00 UTC] Codex — Phase 2/3: source-backed closure audit
+STATUS: IN PROGRESS
+FILES: firestore.rules; client-v3/src/security/firestore.rules.test.ts; client-v3/src/features/progress/**; client-v3/src/features/practice/**; client-v3/src/features/home/**; client-v3/src/features/exams/**; docs/BRDS_V3_PHASE_2_COMPLETION.md; docs/BRDS_V3_PHASE_3_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Rechecking approved Phase 2/3 exit criteria against the frozen content, live app code, and current Firebase rules. Implementing uncovered gaps and replacing outdated BLOCKED reports with fresh measured evidence only after the gates pass.
+WHY: The user's current request requires complete Phase 2/3 closure under the PRD/TRD; old report blockers for content and emulators were resolved in Phase 1, while learning parameters need an explicit user decision.
+NEXT: Verify nested attempt-item ownership, persistence and adaptive loop; audit Home/Exams/Practice against product criteria; run fresh build, tests, emulator and browser checks.
+
+### [2026-10-09 08:41 UTC] Codex — Phase 2/3: log timestamp correction
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md
+WHAT: The preceding Phase 2/3 claim was appended at 08:41 UTC; its 09:00 UTC heading was a timestamp entry error. This append records the actual claim time without altering the prior entry.
+WHY: File ownership and handoff timestamps must be accurate and append-only.
+NEXT: Continue the claimed Phase 2/3 closure audit and fixes.
+
+### [2026-10-09 08:49 UTC] Codex — Phase 2/3: owner evidence writes, meaningful activity, and GK
+STATUS: IN PROGRESS
+FILES: firestore.rules; client-v3/src/security/firestore.rules.test.ts; client-v3/src/features/home/{FocusTimer.tsx,HomePage.tsx,homeModel.ts,homeModel.test.ts}; client-v3/src/features/progress/learningRepository.ts; client-v3/src/features/practice/{PracticePage.tsx,GkStarterDeck.tsx,GkStarterDeck.test.tsx,gkStarterCards.generated.json}; scripts/v3/export-legacy-gk.mjs; test/v3-gk-source.test.js; client-v3/src/styles.css; package.json; PROGRESS_LOG.md
+WHAT: Added owner-only nested attempt evidence rules; corrected account-scoped timer restoration and meaningful streak/routine behavior; exposed the existing 12-card GK starter deck in Practice with per-account progress and exact source parity.
+WHY: Phase 2/3 requires persistent answer evidence, meaningful rather than login/checkmark streaks, linked routine completion, and a working GK entry without inventing missing taxonomy classifications.
+EVIDENCE: Fresh Auth/Firestore Emulator suite passed 14/14 including nested item ownership. Earlier build passed before the GK UI increment; final build/tests are pending.
+NEXT: Verify GK source parity and UI tests; complete adaptive profile/readiness wiring after the user decides configurable parameters and domain-to-ability mapping; then run full Phase 2/3 acceptance.
+
+### [2026-10-09 12:47 UTC] Codex — Phase 2/3: adaptive identity and bounded Home summary
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/progress/{learningModel.ts,learningModel.test.ts,learningRepository.ts,learningRepository.test.ts}; client-v3/src/features/home/{HomePage.tsx,homeSnapshotModel.ts}; client-v3/src/features/practice/PracticePage.tsx; client-v3/src/config/appConfig.ts; scripts/v3/e2e-phase2-3.mjs; PROGRESS_LOG.md
+WHAT: Scoped review/seen identity by paper plus local question ID, retained patternless but skill-mapped questions in Recommended, and added a bounded Home snapshot loader without remote attempt-item scans. Added explicit answer evidence, conservative mastery transfer/regression rules, and a configurable review-stage transition path with visible wrong/skipped/slow/unsure/guessed counts.
+WHY: Phase 3 must preserve per-paper question identity, update a genuine adaptive queue, avoid false pattern novelty/Applied mastery, and meet the TRD's bounded Home read rule.
+EVIDENCE: Root suite 108/108; focused client model/Home/GK tests passed 17/17 and summary/Home/model tests passed 14/14; TypeScript check passed before the latest review-stage increment. Auth/Firestore Emulator 14/14 for the earlier nested evidence rule.
+NEXT: Rerun TypeScript/full suites after review-stage changes, run Phase 2/3 browser journey, wire versioned learning/readiness baselines only after explicit user answers, then update completion reports from actual evidence.
+
+### [2026-10-09 12:57 UTC] Codex — Phase 2/3: fresh integration and responsive acceptance
+STATUS: DONE
+FILES: scripts/v3/e2e-phase2-3.mjs; reports/v3-phase2-3/**; client-v3/src/features/progress/learningModel.ts; client-v3/src/features/progress/learningModel.test.ts; PROGRESS_LOG.md
+WHAT: Completed onboarding, Focus restore, linked Routine, source-backed GK, scored practice, Attempt Review, Progress and four-width browser checks. Corrected a script heading selector and treated untagged pattern novelty as unknown in the weighted model.
+WHY: Phase 2/3 exits require a working daily practice journey, responsive pages, evidence transfer and honest uncertainty when source pattern metadata is absent.
+EVIDENCE: TypeScript/Vite build PASS; root 108/108, client 57/57, Worker 8/8, fresh Auth/Firestore Emulator 14/14, content verifier PASS (1,940 records), production-preview browser flow 22/22 with zero page errors and no horizontal overflow at 1440/1024/768/390 px; git diff --check PASS. The final patternless-weight unit test was added after the full client suite and needs a focused rerun.
+NEXT: Run focused learning-model test after the last change; reconcile Phase 2/3 reports against current evidence. Phase 3 automatic mastery, ability profile and readiness remain pending the user's requested learning-baseline and domain-to-ability mapping decisions.
+
+### [2026-10-09 13:00 UTC] Codex — Phase 2: close planned daily workflow
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_2_COMPLETION.md; reports/v3-phase2-3/**; PROGRESS_LOG.md
+WHAT: Replaced the stale Phase 2 BLOCKED report with the current eleven-row requirement checklist and explicit Phase 2 exit decision. The report separates presentational Home snapshots from Phase 3 model calibration and Phase 5 offline/release acceptance.
+WHY: The approved Phase 2 gate requires onboarding, one next session, persistent Focus/Routine/Streak and usable Exams/Practice flows with honest states.
+EVIDENCE: Production-preview 22/22 checks, client 57/57 plus focused model 12/12, root 108/108, Worker 8/8, fresh Emulator 14/14, content verifier PASS and TypeScript/Vite build PASS.
+NEXT: Finish the Phase 3 report and implement its pending configurable student-model values once the user answers the two source-gap questions.
+
+### [2026-10-09 13:03 UTC] Codex — Phase 3: reconcile checklist against source and runtime
+STATUS: IN PROGRESS
+FILES: docs/BRDS_V3_PHASE_3_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Replaced the stale Phase 3 report with a ten-row current checklist: evidence/review/Skill Map/adaptive selection pass, while ability mapping, complete review schedule, mastery thresholds and six-component Readiness remain open. Removed resolved content and Firebase-emulator blockers from the current decision.
+WHY: Phase 3 cannot be called DONE while the PRD/TRD require an evidence-based profile and configured adaptive/readiness loop and no authorized coefficients or ability map exist.
+EVIDENCE: Fresh suites and browser audit from the preceding entry; the published 1,940 records carry empty ability lists, and appConfig currently has no published mastery/readiness baseline.
+NEXT: Await the user's pending answers for the baseline and mapping, then implement/configure the deterministic six-part Readiness and automatic review/mastery transitions, rerun all acceptance and update status.
+
+### [2026-10-09 13:07 UTC] Codex — Phase 3: audit missing analytical source fields
+STATUS: BLOCKED
+FILES: docs/BRDS_V3_PHASE_3_COMPLETION.md; PROGRESS_LOG.md
+WHAT: Audited all 1,940 published question records: zero ability tags, zero representation values and zero per-question expected times. Corrected the Phase 3 checklist so real slow/time-loss diagnostics and transfer pathways are not claimed complete without source or an approved analytical timing rule.
+WHY: Phase 3 review, Design Profile and readiness must be evidence-based and cannot silently manufacture source metadata.
+EVIDENCE: Read-only published-shard count returned total=1940, tagged=0, repr=0, estimated=0; content verifier and full suites remain passing. User input has been requested for learning thresholds, ability mapping, timing estimation and six-component Readiness formula.
+NEXT: Keep source papers untouched. Once decisions arrive, implement a separately versioned evidence/analytics layer, wire configuration into the repository, run all relevant tests and E2E, and change Phase 3 to DONE only when each open row passes.
+
+### [2026-10-09 17:56 UTC] Codex — Phase 3: versioned student-model closure
+STATUS: IN PROGRESS
+FILES: client-v3/src/config/**; client-v3/src/features/progress/**; client-v3/src/features/attempts/**; client-v3/src/features/home/homeSnapshotModel.ts; client-v3/src/features/practice/PracticePage.tsx; docs/BRDS_V3_PHASE_3_COMPLETION.md; reports/v3-phase2-3/**; PROGRESS_LOG.md
+WHAT: The user directed Phase 3 completion after reviewing the outstanding source gaps. Implementing explicit versioned analytical defaults for learning, evidence-derived broad abilities, source-preserving paper-average timing and six-part UCEED readiness while leaving unsupported source fields blank.
+WHY: The Phase 3 exit requires the student model and adaptive loop to operate on current approved content without modifying question or paper source records.
+NEXT: Add versioned policy/config and tests, wire attempt evidence and repository snapshots, verify every adaptive mode, then rerun build, suites, emulator and browser acceptance before updating the completion decision.
+
+### [2026-10-09 18:05 UTC] Codex — Phase 3: activate deterministic learning policy
+STATUS: IN PROGRESS
+FILES: client-v3/src/config/{appConfig.ts,appConfigRepository.ts}; client-v3/src/features/progress/{learningPolicy.ts,learningPolicy.test.ts,learningModel.ts,learningModel.test.ts,learningRepository.ts,learningRepository.test.ts,ProgressPage.tsx}; client-v3/src/features/attempts/{AttemptPage.tsx,AttemptReviewPage.tsx}; client-v3/src/features/home/{HomePage.tsx,homeSnapshotModel.ts}; client-v3/src/features/practice/PracticePage.tsx; PROGRESS_LOG.md
+WHAT: Added versioned, replaceable TRD-style learning defaults, domain-derived broad ability proxies, paper-average analytical timing with source labels, constrained review advancement, and six-part UCEED Readiness with unsupported Part B blank and a partial-composite label. A submitted eight-question attempt now updates abilities, Learned, reviews and Readiness in an integration test.
+WHY: Phase 3 needs working evidence-to-adaptation behavior using the approved frozen content while preserving every original question and avoiding false certainty from missing source fields.
+EVIDENCE: Focused policy/model/repository tests passed 18/18; TypeScript check passed before the final UI/test increment. Full build/suites/content verifier are running.
+NEXT: Finish full checks, run Firebase emulators and browser acceptance after the build, inspect real scored attempt behavior, then update Phase 3 completion report only if all gates pass.
+
+### [2026-10-09 18:11 UTC] Codex — Phase 3: real source browser learning journey
+STATUS: IN PROGRESS
+FILES: scripts/v3/e2e-phase2-3.mjs; reports/v3-phase2-3/**; client-v3/src/features/progress/{ProgressPage.tsx,learningPolicy.ts}; client-v3/src/features/attempts/AttemptPage.tsx; client-v3/src/styles.css; docs/BRDS_V3_PHASE_3_POLICY.md; PROGRESS_LOG.md
+WHAT: A production-preview browser journey answered 15 authored diagnostic-paper MCQs through the real UI, produced a numerical medium-confidence Spatial/Visualisation profile and a labelled partial six-component Readiness score, then opened all adaptive modes. Added a collapsible keyboard-focusable Skill Map and evidence/mistake/guide status in skill detail; documented every initial policy value separately from PRD/TRD requirements.
+WHY: Phase 3 requires source-backed end-to-end evidence, readable Progress navigation and a transparent adaptive model, not only unit-level functions.
+EVIDENCE: First expanded browser audit passed 29/29 checks with zero browser errors at 1440/1024/768/390 px; root 108/108, Worker 8/8, Emulator 14/14 and published-content verifier PASS. A concurrent full client run had one Planner test timeout under build load (61/62); final sequential rerun and final build/E2E are pending after the latest UI increment.
+NEXT: Finish final production build, rerun full client suite without concurrent build load, run extended browser audit including Skill Map detail, and reconcile Phase 3 report from the final evidence.
+
+### [2026-10-09 18:28 UTC] Codex — Phase 3: final code and acceptance closure
+STATUS: DONE
+FILES: client-v3/src/features/progress/{learningRepository.ts,learningRepository.test.ts,learningPolicy.ts,learningModel.ts,ProgressPage.tsx}; scripts/v3/e2e-phase2-3.mjs; docs/{BRDS_V3_PHASE_3_COMPLETION.md,BRDS_V3_PHASE_2_COMPLETION.md,BRDS_V3_PHASE_3_POLICY.md}; reports/v3-phase2-3/**; PROGRESS_LOG.md
+WHAT: Finished the versioned learning loop, due-review/readiness refresh, honest profile and mastery presentation, source-backed browser journey, and the ten-row Phase 3 requirement checklist. Updated the stale Phase 2 boundary statement without altering its earlier completion decision.
+WHY: The approved Phase 3 exit requires answer evidence to update the student model and adaptive queue, with confidence/unsupported components made explicit and familiar-pattern success unable to claim Applied mastery.
+EVIDENCE: Client 63/63, root 108/108, Worker 8/8, fresh Auth/Firestore Emulator 14/14, TypeScript/Vite build PASS, published-content verifier PASS for all 1,940 records and 1,377 media hashes, production-preview browser journey 32/32 with zero page errors and responsive captures at 1440/1024/768/390 px, git diff --check PASS. Initial analytical coefficients and source limitations are documented in the policy and completion report.
+NEXT: Phase 4 and Phase 5 owners should consume the versioned Phase 3 learning policy and completion report; Phase 5 retains full release/performance/offline acceptance, and live service setup remains deferred to Phase 8.
+
+### [2026-10-09 18:31 UTC] Codex — Phase 4: close Planner, Mentor, Studio and Faculty Review
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/{planner,mentor,studio,faculty}/**; client-v3/src/security/firestore.rules.test.ts; firestore.rules; scripts/v3/e2e-phase4.mjs; docs/BRDS_V3_PHASE_4_COMPLETION.md; reports/v3-phase4/**; PROGRESS_LOG.md
+WHAT: Re-auditing the previously blocked Phase 4 code against the approved plan and original PRD/TRD after Phase 1–3 content, emulator and student-model gates were resolved. Closing any remaining integration/security/UI gaps and collecting fresh acceptance evidence.
+WHY: Phase 4 may be marked DONE only when Planner actions, evidence-grounded Mentor, saved drawing fallback and authorized faculty review work together under the current published content and security rules.
+NEXT: Verify faculty feedback persistence and student visibility, Studio save/fallback and weekly Mentor/Planner interactions, then run fresh emulator, browser, build and suite acceptance before rewriting the completion report.
+
+### [2026-10-09 18:35 UTC] Codex — Phase 4: exact weekly target categories
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/planner/{weeklyReviewModel.ts,weeklyReviewModel.test.ts,WeeklyReviewPage.tsx}; api-worker/src/index.ts; PROGRESS_LOG.md
+WHAT: Replaced the four visible weekly target choices with the PRD's five explicit count categories: mocks, Part B attempts, drills, reviews and topic practice. Actuals now count submitted attempts, Studio drawings and completed reviews; older target fields remain preserved in stored records.
+WHY: The prior weekly targets used practice minutes and generic Studio attempts, missing two named PRD categories and counting all exam attempts as mocks.
+EVIDENCE: Focused weekly model test passed before the additional actual-count assertion; Worker typecheck passed. Final client build and suite remain pending.
+NEXT: Verify the added five-category count test, then fix faculty feedback persistence and perform emulator-backed student/faculty roundtrip acceptance.
+
+### [2026-10-09 18:36 UTC] Codex — Phase 4: assigned faculty feedback roundtrip
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/{studio/studioRepository.ts,studio/StudioPage.tsx,faculty/FacultyReviewPage.tsx}; client-v3/src/security/firestore.rules.test.ts; firestore.rules; PROGRESS_LOG.md
+WHAT: Replaced the faculty page's silent cross-user write with one atomic, permission-checked request/review commit and displayed completed faculty feedback to the student in Studio. Added bounded drawing-asset rule checks and prevented a student from rewriting completed faculty feedback.
+WHY: The prior faculty UI could appear to succeed while `saveUserRecord` queued a denied cross-user write; Phase 4 requires a working human-review fallback with preserved drawing context.
+EVIDENCE: Fresh Auth/Firestore Emulator 15/15, including asset size rejection, assigned-faculty-only media access, atomic completion and student-visible canonical review data; TypeScript/Vite production build PASS.
+NEXT: Verify Planner/Mentor/Studio interaction paths in a browser, fix any remaining PRD/TRD functional gaps, and rerun all suites before Phase 4 closure.
+
+### [2026-10-09 18:40 UTC] Codex — Phase 4: tablet-capable Studio artwork workspace
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/studio/StudioPage.tsx; client-v3/src/styles.css; client-v3/src/features/planner/weeklyReviewModel.test.ts; PROGRESS_LOG.md
+WHAT: Added a large pointer-operated drawing canvas with mouse, pen and touch input, undo/clear controls and the existing upload alternative. Canvas drawings feed the same compressed, versioned, save-before-AI review path; the phone layout retains upload/review guidance.
+WHY: The PRD requires artwork to dominate Studio and tablet drawing/annotation support; the prior implementation only offered a small image-upload control.
+EVIDENCE: TypeScript no-emit check PASS; focused Planner/Weekly Review tests 3/3 including all five PRD target categories. Browser canvas save and responsive acceptance remain pending.
+NEXT: Exercise a real signed-in Studio drawing under local Firebase emulators and capture Phase 4 route layouts; then review Planner ranking and Worker idempotency requirements before final acceptance.
+
+### [2026-10-09 18:45 UTC] Codex — Phase 4: evidence-ranked Planner and scoped Mentor actions
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/planner/{plannerModel.ts,plannerModel.test.ts,PlannerPage.tsx,PlannerPage.test.tsx}; client-v3/src/features/mentor/{mentorModel.ts,mentorModel.test.ts,MentorPage.tsx}; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: Added the TRD's weighted priority factors, daily-minute constraint, Change/Start session controls and a drill task type. Mentor planner cards now open a prefilled actionable task; Mentor context excludes evidence from other exam families. Manual Planner checkbox completion no longer fabricates a meaningful study event.
+WHY: Phase 4 exit requires Planner actions to connect with learning work and Mentor to be grounded in the selected exam's actual student model; the PRD calls for realistic sessions and nonpunitive rescheduling.
+EVIDENCE: Focused Planner/Mentor tests 8/8; client TypeScript no-emit PASS after fixing routine type inference. Browser workflow and full suites remain pending.
+NEXT: Test signed-in Studio, Planner and Mentor routes in the browser with local emulators; resolve Worker concurrent idempotency and any UI failures before final report.
+
+### [2026-10-09 18:47 UTC] Codex — Phase 4: atomic Worker AI replay protection
+STATUS: IN PROGRESS
+FILES: api-worker/src/{index.ts,index.test.mjs}; PROGRESS_LOG.md
+WHAT: Added an atomic D1 pending reservation before AI provider/quota work, so simultaneous retries with the same idempotency key cannot each invoke the provider. Input failures and quota exhaustion release reservations, successful results become cached replay responses, and drawing payload limits are checked without truncation.
+WHY: The TRD requires idempotent AI operations and daily quota protection; the old read-then-replace sequence protected sequential replays only.
+EVIDENCE: Worker test suite 9/9, including a held concurrent Mentor request with exactly one provider call; Worker TypeScript check PASS.
+NEXT: Run signed-in Studio/Faculty browser flow and responsive PRD audit; rerun full client/root/content/emulator checks after final UI changes.
+### [2026-10-09 19:03 UTC] Codex — Phase 4: signed-in Planner to Faculty browser journey
+STATUS: IN PROGRESS
+FILES: scripts/v3/e2e-phase4.mjs; client-v3/src/styles.css; reports/v3-phase4/**; PROGRESS_LOG.md
+WHAT: Fixed overlapping email/phone authentication panels and completed a real emulator-backed student onboarding, Planner, five-category Weekly Review, evidence-honest Mentor fallback, pointer canvas drawing, saved AI-unavailable review, Faculty assignment/completion, and student feedback roundtrip. Captured Planner, Weekly Review, Mentor and Studio at 1440/1024/768/390 px plus Faculty at 390 px.
+WHY: The Phase 4 acceptance journey must prove that linked actions and the human review fallback actually persist and remain usable across routes and screen sizes.
+EVIDENCE: scripts/v3/e2e-phase4.mjs passed 24/24 checks, zero page errors, no horizontal overflow; reports/v3-phase4/phase4-audit.json and 17 route screenshots are saved.
+NEXT: Close exact PRD Prompt Analysis and Drawing Review rubric gaps, rerun all build/suite/emulator/browser checks, then rewrite Phase 4 completion report.
+### [2026-10-09 19:10 UTC] Codex — Phase 4: PRD Studio analysis and TRD drawing transport
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/studio/{StudioPage.tsx,studioRepository.ts}; client-v3/src/styles.css; api-worker/src/{index.ts,index.test.mjs}; PROGRESS_LOG.md
+WHAT: Structured Prompt Analysis into the PRD's five named fields, required all seven Drawing Review criteria with explicit null for unsupported scores, and prompted location-specific feedback. Switched the drawing-review endpoint/client to the TRD's bounded multipart image payload while retaining JSON for the other AI routes.
+WHY: The previous raw JSON analysis, arbitrary score keys and JSON image transport diverged from explicit PRD/TRD contracts.
+EVIDENCE: Worker typecheck and 9/9 tests pass, including multipart drawing review and invalid media rejection; client TypeScript no-emit passes. Full build/browser suite remains pending after these changes.
+NEXT: Add schema-negative tests, rerun final full suites/content/emulator/browser checks, reconcile Phase 4 report and only mark DONE on verified gates.
+### [2026-10-14 00:53 UTC] Codex — Phase 4: final acceptance and closure
+STATUS: DONE
+FILES: api-worker/src/{index.ts,index.test.mjs}; client-v3/src/features/{auth/AuthStatus.tsx,studio/StudioPage.tsx,studio/studioRepository.ts}; client-v3/src/styles.css; scripts/v3/e2e-phase4.mjs; docs/BRDS_V3_PHASE_4_COMPLETION.md; reports/v3-phase4/**; PROGRESS_LOG.md
+WHAT: Closed the approved Phase 4 Planner, Mentor, Studio and Faculty Review scope. Added the exact PRD Studio fields and seven drawing criteria, TRD multipart drawing upload, a usable optional sign-in panel and responsive overflow fixes; replaced the stale blocked report with an evidence-backed DONE checklist.
+WHY: Phase 4 exit requires actionable Planner/Mentor work, saved artwork when AI is unavailable, and authorized faculty fallback with enough drawing context.
+EVIDENCE: Client 66/66, root 108/108, Worker 10/10, Auth/Firestore Emulator 15/15, content verifier passed all 1,940 records and 1,377 media hashes, client TypeScript/build passed, browser audit 24/24 with zero page errors and no overflow at 1440/1024/768/390, git diff --check passed. Build still flags a 977.56 kB main JS chunk; Phase 5 owns performance/code-splitting acceptance. Live credentials/provider/hosted/SMS remain deferred to Phase 8.
+NEXT: Phase 5 should use the closure report and preserve the deferred release/performance and hosting acceptance boundaries.
+
+### [2026-10-13 20:49 UTC] Codex — Phase 1: ingest supplied NID source banks
+STATUS: IN PROGRESS
+FILES: content-source-v3/nid-import/** (new source-preserving package); docs/BRDS_V3_NID_IMPORT_AUDIT.md; PROGRESS_LOG.md
+WHAT: Ingesting the user's 11 NID JSON test-bank ZIPs as a separate V3 source package, retaining source JSON, referenced images and source validation metadata. This work does not overwrite the frozen UCEED bundle or legacy fixtures.
+WHY: Add the supplied NID question/paper sources to the current repository while preserving source identity and making uncertainty visible before any student-facing publication.
+NEXT: Extract and hash all archive entries, reconcile record/media counts and source status, then document what is imported versus what still requires verification or NID taxonomy approval.
+
+### [2026-10-13 20:50 UTC] Codex — Phase 1: NID source-bank intake audit
+STATUS: DONE
+FILES: content-source-v3/nid-import/**; scripts/v3/audit-nid-import.mjs; docs/BRDS_V3_NID_IMPORT_AUDIT.md; PROGRESS_LOG.md
+WHAT: Extracted all 11 supplied NID ZIPs into an additive source package, preserving JSON banks, source PDFs, image references and embedded validation/source metadata. Added a repeatable audit manifest and report; the package remains staged and is not active in the V3 app.
+WHY: Bring the supplied NID question sources into the existing repository without altering legacy fixtures or the frozen UCEED/CEED bundle, and keep source uncertainty visible.
+EVIDENCE: `node scripts/v3/audit-nid-import.mjs` reports 11 packages, 329 question/prompt records, 114 extracted files (85 images and 6 PDFs), and zero missing question-referenced media. Original archive SHA-256 values and hashes for extracted files are in `content-source-v3/nid-import/import-audit.json`.
+NEXT: Before student-facing publication, complete NID source verification (including pending/unofficial answer states and the dropped 2019 record), approve an NID taxonomy or a taxonomy-neutral exam-only policy, then build a new versioned V3 bundle while keeping all uncertain records excluded from scoring/adaptive claims.
+
+### [2026-10-13 21:02 UTC] Codex — Phase 1: reconcile supplied NID taxonomy and marking sources
+STATUS: IN PROGRESS
+FILES: content-source-v3/nid-taxonomy-source/** (new additive source package); scripts/v3/audit-nid-taxonomy.mjs; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; PROGRESS_LOG.md
+WHAT: Reconciling the supplied NID taxonomy JSON, implementation notes and 2016–2026 workbook against the already staged NID banks. Original bank files remain untouched; the taxonomy package currently declares candidate_for_freeze, so it will remain a staging authority until explicitly approved.
+WHY: Phase 1 NID intake needs traceable mappings and per-year marking metadata without inventing categories/marks or changing existing source records.
+NEXT: Preserve/hash the three supplied source files, verify JSON/workbook taxonomy and marking agreement, summarize bank coverage and source quality, and report the freeze decision needed before student-facing publication.
+
+### [2026-10-13 21:05 UTC] Codex — Phase 1: NID taxonomy and marking source reconciliation audit
+STATUS: DONE
+FILES: content-source-v3/nid-taxonomy-source/**; scripts/v3/audit_nid_taxonomy.py; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; PROGRESS_LOG.md
+WHAT: Copied the supplied NID taxonomy JSON, notes and workbook unchanged; extracted the workbook's year-by-year marking profiles and produced a repeatable source audit with file hashes and staged-bank coverage. Confirmed JSON and workbook agree on all 14 domains, 43 topics, 173 sub-skills and all 11 marking years.
+WHY: This establishes a traceable NID content foundation while preserving original banks and refusing to infer taxonomy classifications or overwrite source scoring evidence.
+EVIDENCE: Bundled Python/openpyxl read-only audit completed: 11 banks and 329 records; taxonomy status remains candidate_for_freeze; all 329 records are explicitly reported unmapped; no original question bank was changed. JSON/workbook ID and year agreement are all true.
+NEXT: Ask whether the user approves freezing NID taxonomy version 1.0.0. Until then, keep it unpublished and keep NID records out of taxonomy-driven practice/scoring. Once approved, map evidence-supported records, mark uncertain ones needs_review, and build a separate versioned bundle with a NID selection path.
+
+### [2026-10-13 21:12 UTC] Codex — Phase 1: approved NID taxonomy mapping and bundle integration
+STATUS: IN PROGRESS
+FILES: content-source-v3/nid-v1.0.0/**; scripts/v3/build_nid_content.py; client-v3/src/content/model.ts; scripts/v3/compile-content.js; client-v3/src/features/{practice/PracticePage.tsx,progress/ProgressPage.tsx,exams/ExamsPage.tsx}; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; PROGRESS_LOG.md
+WHAT: User approved NID taxonomy version 1.0.0 after its supplied package declared candidate_for_freeze. Building an additive NID content version, deriving only evidence-supported question mappings, retaining source-level answer/mark metadata, and connecting the existing NID exam option to its own bundle.
+WHY: The NID request is to import the supplied 2016–2026 papers without changing the existing UCEED bundle or turning unverified source answers into trusted scores.
+NEXT: Generate canonical source records/papers/media with mappingStatus per item, compile the separate bundle, then wire exam-aware version selection and verify manifests/content integrity.
+### [2026-10-13 21:20:38] Codex — Phase 1: NID prompt integrity and review audit
+STATUS: DONE
+FILES: scripts/v3/build_nid_content.py; scripts/v3/audit_nid_taxonomy.py; scripts/v3/verify-nid-bundle.mjs; content-source-v3/nid-v1.0.0/**; client-v3/public/content/nid-v1.0.0/**; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; docs/BRDS_V3_NID_IMPORT_AUDIT.md; PROGRESS_LOG.md
+WHAT: Excluded “Text Solution” answer explanations from question text and taxonomy evidence, marked all records without a usable source prompt inactive, and recorded prompt/review counts by year. Source records remain preserved verbatim in the additive bundle.
+WHY: Prevent answer explanations or absent transcriptions from appearing as questions or creating unsupported taxonomy classifications while retaining the user’s original bank data.
+EVIDENCE: NID bundle verifier PASS (329 records, 11 papers, 38 media, 66 hashed assets; 209 mapped / 120 needs_review); intake audit PASS (11 packages, 0 missing referenced media); production TypeScript/Vite build PASS; `git diff --check` PASS. 94 records lack prompts and 65 prompt fields contain solution text; 159 are inactive pending source-prompt verification. UCEED bundle audit: 1,940 records, 106 needs_review, with per-reason counts in the audit report.
+NEXT: Review the NID source prompt gaps and UCEED taxonomy-gap items from the audit reports before changing any mappings. This entry closes only the NID prompt integrity/build increment, not overall Phase 1 visual QA or every outstanding V3 acceptance gate.
+### [2026-10-13 21:32:55] Codex — Phase 1: recover NID prompt text from local PDFs
+STATUS: IN PROGRESS
+FILES: scripts/v3/recover_nid_prompts.py; scripts/v3/build_nid_content.py; scripts/v3/verify-nid-bundle.mjs; scripts/v3/audit_nid_taxonomy.py; content-source-v3/nid-taxonomy-source/prompt-recovery.json; content-source-v3/nid-v1.0.0/**; client-v3/public/content/nid-v1.0.0/**; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; docs/BRDS_V3_NID_IMPORT_AUDIT.md; PROGRESS_LOG.md
+WHAT: Recovering question stems only from searchable text in user-supplied local reference PDFs and excluding one-letter answer keys from prompt evidence. Original JSON banks remain unchanged.
+WHY: Provide source-grounded prompts for mapping and prevent answer keys from being treated as question text.
+NEXT: Finish the production build and verify source hashes, recovery references, and updated per-year mapping counts.
+
+### [2026-10-13 21:43 UTC] Codex — Phase 1: recover NID prompts from supplied 2017/2018 references
+STATUS: DONE
+FILES: scripts/v3/recover_nid_prompts.py; scripts/v3/build_nid_content.py; scripts/v3/audit_nid_taxonomy.py; scripts/v3/verify-nid-bundle.mjs; content-source-v3/nid-taxonomy-source/reference-pdfs/**; content-source-v3/nid-taxonomy-source/prompt-recovery.json; content-source-v3/nid-v1.0.0/**; client-v3/public/content/nid-v1.0.0/**; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; docs/BRDS_V3_NID_IMPORT_AUDIT.md; PROGRESS_LOG.md
+WHAT: Added the four user-supplied 2017–2018 PDFs as hash-recorded additive references and recovered 70 NID 2017 and 62 NID 2018 prompts, plus 3 NID 2016 Part B prompts from an existing local reference. Normalized PDF ligatures in recovered stems, clarified the audit count for records without usable prompt text, and rebuilt the canonical and published NID bundle; original banks and PDFs remain unchanged.
+WHY: Use source-backed question text to reduce false `needs_review` caused by missing stems without inventing prompt or taxonomy content.
+EVIDENCE: NID bundle verifier PASS: 329 questions, 11 papers, 38 media, 66 verified bundle assets; mapping 240 mapped / 89 needs_review. 2017/2018 bank prompts that were empty, solutions, or answer letters all have a recovery reference (independent check: no unrecovered invalid prompts). Intake audit PASS: 11 packages, 329 records, 114 extracted files, zero missing referenced media. Taxonomy/workbook ID and marking-year agreement PASS. Production TypeScript/Vite build PASS (existing 977.60 kB main chunk warning); `git diff --check` PASS. Raw source banks unchanged. The remaining 88 prompt-source gaps are NID 2016 Part A records; UCEED taxonomy review items are separate and unchanged.
+NEXT: Continue the V3 acceptance checklist. To reduce the remaining 88 NID 2016 prompt gaps, transcribe the already-preserved scanned Part A page images or obtain a searchable 2016 Part A reference; do not infer question wording from answers or taxonomy labels.
+
+### [2026-10-15 10:29 UTC] Codex — Phase 1: NID recovery identity and scan completion
+STATUS: IN PROGRESS
+FILES: scripts/v3/recover_nid_prompts.py; scripts/v3/build_nid_content.py; scripts/v3/verify-nid-bundle.mjs; content-source-v3/nid-taxonomy-source/**; content-source-v3/nid-v1.0.0/**; client-v3/public/content/nid-v1.0.0/**; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; PROGRESS_LOG.md
+WHAT: Reviewing missing 2016 scanned prompts and correcting recovery lookup collisions between repeated Part A/Part B question numbers.
+WHY: Content recovery must preserve the exact source question identity and existing valid prompts.
+NEXT: Key overlays by year and actual question ID, add preservation verification, recover readable scans, rebuild and audit before proceeding with Phase 5.
+
+### [2026-10-15 10:32 UTC] Codex — Phase 1: recover NID 2016 Part A prompts and preserve question identity
+STATUS: DONE
+FILES: scripts/v3/recover_nid_prompts.py; scripts/v3/build_nid_content.py; scripts/v3/verify-nid-bundle.mjs; scripts/v3/audit_nid_taxonomy.py; content-source-v3/nid-taxonomy-source/nid-2016-part-a-transcriptions.json; content-source-v3/nid-taxonomy-source/prompt-recovery.json; content-source-v3/nid-v1.0.0/**; client-v3/public/content/nid-v1.0.0/**; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; PROGRESS_LOG.md
+WHAT: Transcribed all 88 NID 2016 Part A stems from preserved scan pages with image/page provenance. Changed recovery lookup to use the original question ID and only apply overlays when the bank prompt is unusable, preventing valid Part B prompts with repeated question numbers from being replaced.
+WHY: Complete source-backed prompt coverage while preserving paper identity and every usable original prompt.
+EVIDENCE: Recovery overlay has 223 unique year/question-ID references (91 in 2016 including 3 existing Part B, 70 in 2017, 62 in 2018); content build PASS (329 records, 258 mapped, 71 needs_review); bundle verifier PASS (329 records, 11 papers, 66 hashed assets, 38 media); taxonomy/workbook IDs and marking years agree. Raw bank sources are preserved; remaining needs_review requires item-level taxonomy review, not missing prompts.
+NEXT: Inspect the 71 remaining NID mappings against the frozen taxonomy, then start the approved Phase 5 PRD/TRD acceptance gates.
+
+### [2026-10-15 10:39 UTC] Codex — Phase 5: repair versioned exam catalog test fixture
+STATUS: DONE
+FILES: client-v3/src/features/exams/ExamsPage.test.tsx; PROGRESS_LOG.md
+WHAT: Fixing the test manifest mock so its UCEED and NID versions return distinct catalogs, matching the actual versioned bundle layout.
+WHY: Fresh client acceptance exposed duplicated exam cards because the test returned UCEED papers for both the UCEED and NID manifest requests.
+EVIDENCE: Focused `ExamsPage.test.tsx` PASS (1/1); UCEED fixture papers now load only from the UCEED manifest and the NID manifest is represented separately.
+NEXT: Rerun the complete client suite and continue remaining Phase 5 verification gates.
+
+### [2026-10-15 10:43 UTC] Codex — Phase 5: record fresh V3 acceptance status
+STATUS: IN PROGRESS
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Preparing a gate-by-gate Phase 5 status report from fresh tests, content verification, security emulator results, and direct inspection of remaining runtime requirements.
+WHY: The approved plan requires evidence for every exit criterion and distinguishes code completion from deferred hosted acceptance; missing or ambiguous items need to remain explicitly on hold.
+NEXT: Publish the report with pass/partial/hold states, rerun the final whitespace/source checks, and keep Phase 5 open while release gates are unverified.
+
+### [2026-10-15 10:44 UTC] Codex — Phase 1: finish clear NID mappings and hold ambiguity
+STATUS: DONE
+FILES: scripts/v3/build_nid_content.py; content-source-v3/nid-v1.0.0/**; client-v3/public/content/nid-v1.0.0/**; docs/BRDS_V3_NID_TAXONOMY_AUDIT.md; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Added only direct-evidence NID mappings and left the 9 ambiguous items in `needs_review`; rebuilt the NID bundle and refreshed its coverage audit.
+WHY: Follow the user’s instruction to map what is supported, preserve content, and stop spending time forcing uncertain classifications.
+EVIDENCE: NID content verifier PASS (329 questions, 11 papers, 320 mapped, 9 needs_review, 66 hashed assets); import audit PASS (11 packages, 329 records, 114 extracted files, zero missing referenced media); UCEED verifier PASS (1,940 records, 1,834 mapped, 106 needs_review, 1,377 media hashes).
+NEXT: Treat the 9 NID and 106 UCEED uncertain mappings as held for item-level review; no source prompts remain missing.
+
+### [2026-10-15 10:44 UTC] Codex — Phase 5: fresh acceptance status report
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Recorded the fresh local checks and the remaining Phase 5 gates as PASS, PARTIAL, or HOLD; kept Phase 5 open because the plan exit criteria do not yet have evidence for every gate.
+WHY: The release checklist must not claim readiness while export/deletion, operator health, privacy-safe analytics, full responsive/accessibility/offline/E2E evidence, performance targets or backup/rollback acceptance remain outstanding.
+EVIDENCE: Root 108/108; client 66/66; Worker 10/10; Auth/Firestore Emulator 15/15; Vite build PASS (977.60 kB entry chunk warning); UCEED content verifier PASS; NID import and bundle verifiers PASS; client production bundle scan found no provider-secret patterns; `git diff --check` PASS.
+NEXT: Phase 5 remains IN PROGRESS. Do not report final V3 code release-ready until held gates have implementation and evidence.
+
+### [2026-10-15 10:45 UTC] Codex — Phase 5: align held checklist to exact TRD items
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Checking the held Phase 5 items against the source TRD wording for analytics events, System Health fields, and performance targets.
+WHY: The acceptance status must identify the exact missing implementation and measurements without inventing a new product requirement.
+EVIDENCE: Compared with the supplied TRD: recorded its seven named analytics events, four System Health fields, and LCP <2.5 s target plus lean initial shell/code-splitting requirements.
+NEXT: Hold Phase 5 until implementation and evidence for the listed items are complete; ask the user only if a product decision not already stated by PRD/TRD blocks a specific item.
+
+### [2026-10-15 10:47 UTC] Codex — Phase 1: itemize held NID mappings
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Adding the exact nine NID question IDs to the hold list and clarifying the 2024 image-based record that has no transcribed textual stem.
+WHY: The user asked for a concrete list of held items; reports must not describe an image-dependent placeholder as recovered question text.
+EVIDENCE: Checked all nine IDs against the compiled NID question JSON; every listed record is `needs_review` and `active: false`. The 2024 Q14 entry is documented as image-dependent with no invented text stem.
+NEXT: Wait for item-level source evidence before changing any held mapping; no review is necessary to continue unrelated Phase 5 work.
+
+### [2026-10-15 10:49 UTC] Codex — Phase 5: correct analytics event status
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Checking V3 event instrumentation against the TRD event list and correcting the status report to reflect the existing Mentor action event.
+WHY: The Phase 5 acceptance report must distinguish per-user Firestore event records from Firebase Analytics and identify only the events actually missing.
+EVIDENCE: `rg` confirms `mentor_action_clicked` alone is currently written to a per-user Firestore `analyticsEvents` subcollection; there is no Firebase Analytics integration for it or the seven other TRD events.
+NEXT: Continue implementing feasible Phase 5 gates; preserve the hold list for decisions/evidence that cannot be completed locally.
+
+### [2026-10-15 13:26 UTC] Codex — Phase 5: wire privacy-safe product events
+STATUS: DONE
+FILES: client-v3/src/analytics/**; client-v3/src/features/{home/OnboardingPage.tsx,home/FocusTimer.tsx,practice/PracticePage.tsx,attempts/AttemptPage.tsx,studio/StudioPage.tsx,mentor/MentorPage.tsx}; client-v3/src/features/analytics.test.ts; PROGRESS_LOG.md
+WHAT: Wiring the TRD's approved product event names through Firebase Analytics with no question-answer, personal-profile, or event-specific payload parameters.
+WHY: Phase 5 requires privacy-safe events for onboarding, practice, review, mocks, focus, Studio and Mentor actions.
+EVIDENCE: Client event helper test PASS (1/1); complete client suite PASS (67/67 tests across 25 files); TypeScript/Vite production build PASS. All eight TRD event names are wired after successful product actions. Helper checks browser support and sends no custom parameters; analytics failures do not interrupt study flows.
+NEXT: Update the Phase 5 status report. Hosted Firebase Analytics delivery remains unverified until a configured project is available.
+
+### [2026-10-15 13:28 UTC] Codex — Phase 5: refresh analytics acceptance evidence
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Updating the gate report to reflect the new event wiring and fresh 67-test client result, while preserving the hosted-delivery limitation.
+WHY: Phase 5 acceptance status should reflect the current repository rather than the pre-analytics snapshot.
+EVIDENCE: Acceptance report records 67/67 client tests, 984.46 kB minified entry chunk, code-complete event wiring with local tests, and configured-Firebase delivery as a separate hosted check. `git diff --check` passed and production bundle secret scan returned no matches.
+NEXT: Continue only local Phase 5 gates that can be implemented without inventing product policy; keep hosted/live delivery, performance measurement, and destructive data workflows clearly held until their required conditions are met.
+
+### [2026-10-15 13:31 UTC] Codex — Phase 5: run isolated responsive route audit
+STATUS: IN PROGRESS
+FILES: scripts/v3/e2e-phase5.mjs; reports/v3-phase5-visual/**; PROGRESS_LOG.md
+WHAT: Preparing a fresh copy of the existing V3 all-route browser audit that writes to a Phase 5 evidence directory instead of replacing prior Phase 1 screenshots.
+WHY: Phase 5 requires fresh responsive checks at 1440/1024/768/390 and cross-route interaction evidence while preserving earlier screenshots.
+NEXT: Run against the current production preview, retain exact browser results, and mark visual/E2E gates from observed evidence only.
+### [2026-10-15 13:35 UTC] Codex — Phase 5: accept source-confirmed unknown paper durations
+STATUS: IN PROGRESS
+FILES: client-v3/src/content/model.ts; client-v3/src/content/contentRepository.test.ts; reports/v3-phase5-visual/**; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Fixing the production catalog validation failure caused by imported NID papers whose `durationSeconds` is explicitly null, while preserving source records unchanged.
+WHY: Current approved content must load from its versioned bundle; an unknown duration is valid source data and must not prevent every paper from loading.
+NEXT: Run the focused content repository test, production build, and fresh responsive plus mock/practice browser flows; update Phase 5 status only from those results.
+
+### [2026-10-15 13:43 UTC] Codex — Phase 5: complete fresh responsive and paper-flow acceptance
+STATUS: DONE
+FILES: client-v3/src/content/model.ts; client-v3/src/content/contentRepository.test.ts; reports/v3-phase5-visual/**; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; PROGRESS_LOG.md
+WHAT: Updated the paper validator to accept an explicitly unknown nullable duration without changing source records. Refreshed the Phase 5 report with fresh responsive and end-to-end evidence.
+WHY: Imported NID paper data must load intact; acceptance must test the production catalog and paper flows across the approved responsive widths.
+EVIDENCE: Focused content repository suite PASS (6/6); full client suite PASS (68/68 across 25 files); Vite production build PASS (984.46 kB minified entry chunk, performance warning remains); UCEED bundle verifier PASS (1,940 records, 1,834 mapped, 106 needs_review; 1,377 media hashes); browser audit PASS (8 routes × 4 widths = 32, no overflow, visible headings/navigation); mock save/start/resume/submit/review/past-attempt flow PASS; Custom practice submit/review PASS; fonts loaded; zero page errors.
+NEXT: Phase 5 remains OPEN. Continue with local gates that can be completed safely; keep unmeasured performance, offline-disconnected acceptance, PRD visual/accessibility review, admin System Health, export/deletion policy, pagination, and hosted backup/rollback items on the explicit hold list.
+### [2026-10-15 13:43 UTC] Codex — Phase 5: prepare final implementation handoff
+STATUS: IN PROGRESS
+FILES: docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Consolidating Phase 1–5 status, verified local evidence, and all held work into a final handoff note without overriding prior phase reports.
+WHY: The user asked to finalize the work and keep incomplete or evidence-dependent items clearly held rather than overstate release readiness.
+NEXT: Cross-check phase statuses and current acceptance report, write the final handoff with concrete hold reasons, then validate links and whitespace.
+
+### [2026-10-15 13:43 UTC] Codex — Phase 5: finalize phase-status and hold handoff
+STATUS: DONE
+FILES: docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Published a consolidated Phase 0–5 handoff with local evidence, preservation boundaries, and a concrete list of held items and why each remains open.
+WHY: The user asked for a final disposition without falsely declaring Phase 5 complete while acceptance gates remain unfinished.
+EVIDENCE: Cross-checked the current Phase 0–4 reports, Phase 5 acceptance report, fresh 68/68 client suite, successful production build/content verification, and 32/32 browser route checks.
+NEXT: Phase 5 stays OPEN; use the hold register to resume only selected unfinished work.
+
+### [2026-10-15 13:46 UTC] Codex — Phase 5: implement authenticated System Health operations
+STATUS: IN PROGRESS
+FILES: api-worker/src/index.ts; api-worker/src/index.test.mjs; api-worker/migrations/0003_system_health.sql; api-worker/wrangler.jsonc; client-v3/src/features/admin/**; client-v3/src/app/routes.tsx; client-v3/src/app/AppShell.tsx; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: Adding an admin-only System Health API and screen with safe recent API error summaries, available AI/quota status, content version, and manually entered free-tier usage checkpoints.
+WHY: The TRD explicitly requires an admin-only operational health view, and the existing public health endpoint intentionally exposes only build status.
+NEXT: Gate the Worker route by verified Firebase identity plus active owner role; persist only bounded non-sensitive metrics and error codes; test unauthorized and authorized paths.
+
+### [2026-10-15 14:00 UTC] Codex — Phase 5: add admin-verified System Health API
+STATUS: DONE
+FILES: api-worker/src/index.ts; api-worker/src/index.test.mjs; api-worker/migrations/0003_system_health.sql; PROGRESS_LOG.md
+WHAT: Added an admin-verified Worker endpoint with content version, AI configured status and daily usage/caps, safe recent error metadata, and bounded manual Firestore/Hosting usage checkpoints.
+WHY: The TRD requires the System Health screen to expose operational state only to active admins and to avoid logging sensitive learner context.
+EVIDENCE: Worker suite PASS (12/12); Worker TypeScript check PASS. Tests confirm student denial, admin read/write, validated checkpoints, and safe error logging.
+NEXT: Build the client admin screen and verify route behavior with an active Admin Emulator identity; production Firebase role/API acceptance remains hosted.
+
+### [2026-10-15 14:00 UTC] Codex — Phase 5: wire admin-only System Health screen
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/admin/SystemHealthPage.tsx; client-v3/src/app/routes.tsx; client-v3/src/features/home/SettingsPage.tsx; client-v3/src/styles.css; client-v3/src/features/admin/SystemHealthPage.test.tsx; PROGRESS_LOG.md
+WHAT: Adding an admin-only route and Settings entry for content version, AI/free-tier checkpoints, recent API errors, and manual usage updates.
+WHY: The TRD requires an operator-facing System Health screen; the API is already role-verified on the Worker.
+NEXT: Verify active-role gating, API error/loading states, manual checkpoint submission, and responsive layout in tests and the browser.
+
+### [2026-10-15 18:35 UTC] Codex — Phase 5: add account data export and history pagination
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/home/accountDataRepository.ts; client-v3/src/features/home/AccountDataPage.tsx; client-v3/src/features/home/AccountDataPage.test.tsx; client-v3/src/app/routes.tsx; client-v3/src/app/App.tsx; client-v3/src/styles.css; client-v3/src/features/attempts/attemptRepository.ts; client-v3/src/features/attempts/attemptRepository.test.ts; client-v3/src/features/exams/ExamsPage.tsx; PROGRESS_LOG.md
+WHAT: Adding a signed-in account data export that pages through the allowlisted user records and includes nested attempt evidence, Mentor messages, device records, and pending sync data. Adding cursor-paged Past Attempts history and wiring the previously linked Data & Privacy screen.
+WHY: Phase 5 calls for bounded history reads and a user-facing data export workflow; account deletion still requires a safely verified deletion path and remains explicitly unavailable.
+NEXT: Run focused tests and a fresh TypeScript/Vite build; record any export/deletion limitation and refresh Phase 5 evidence from actual results.
+
+### [2026-10-15 18:45 UTC] Codex — Phase 5: complete feasible local operations and offline increments
+STATUS: DONE
+FILES: api-worker/src/index.ts; api-worker/src/index.test.mjs; api-worker/migrations/0003_system_health.sql; api-worker/wrangler.jsonc; client-v3/src/features/admin/**; client-v3/src/features/attempts/attemptRepository.ts; client-v3/src/features/attempts/attemptRepository.test.ts; client-v3/src/features/exams/ExamsPage.tsx; client-v3/src/features/exams/ExamsPage.test.tsx; client-v3/src/content/contentRepository.ts; client-v3/src/content/contentRepository.test.ts; client-v3/src/features/home/AccountDataPage.tsx; client-v3/src/features/home/AccountDataPage.test.tsx; client-v3/src/features/home/accountDataRepository.ts; client-v3/src/app/App.tsx; client-v3/src/app/routes.tsx; client-v3/src/main.tsx; client-v3/src/styles.css; client-v3/index.html; client-v3/public/sw.js; client-v3/public/manifest.webmanifest; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Completed the local System Health API/screen, cursor-based Past Attempts pages, bounded full account export, versioned paper-and-media offline preparation, and PWA shell registration. Refreshed both Phase 5 status documents and kept deletion and unverified release gates explicitly open.
+WHY: These increments cover the Phase 5 operational health, pagination, export, offline content and final acceptance requirements without changing source question material or asserting hosted acceptance.
+EVIDENCE: Root suite PASS 108/108; V3 client suite PASS 76/76 across 28 files; Worker suite PASS 12/12; Worker TypeScript check PASS; client TypeScript check PASS; production build PASS with 985.61 kB minified entry chunk warning; focused final suite PASS 10/10; UCEED bundle verifier PASS (1,940 records, 1,834 mapped, 106 needs_review, 1,377 media hashes, 3 metadata hashes); service worker syntax and manifest validation PASS; bundle secret scan clean; git diff --check PASS. Earlier Auth/Firestore Emulator evidence remains 15/15; the attempted repeat was cancelled while downloading a different emulator version, and no rules changed in this increment.
+NEXT: Phase 5 remains OPEN. Remaining gates: account deletion cascade/recent-auth processing; fresh offline disconnected browser journey with authenticated sync; fresh responsive/keyboard/contrast and PRD visual audit for new screens; controlled CDN/4G LCP and initial-bundle reduction; hosted admin/operations and backup/restore/cutover/rollback evidence; final release package and consolidated PRD/TRD traceability sign-off.
+
+### [2026-10-19 20:58 UTC] Codex — Phase 5: implement confirmed account deletion
+STATUS: IN PROGRESS
+FILES: firestore.rules; client-v3/src/security/firestore.rules.test.ts; client-v3/src/features/home/accountDataRepository.ts; client-v3/src/features/home/AccountDataPage.tsx; client-v3/src/features/home/AccountDataPage.test.tsx; client-v3/src/features/auth/accountDeletion.ts; PROGRESS_LOG.md
+WHAT: Replacing the unavailable account-deletion placeholder with an explicit, recent-authenticated self-service cascade across the user's known Firestore collections, nested attempt/Mentor records, linked review requests, local user state and pending sync queue.
+WHY: The Phase 5 PRD/TRD checklist requires an account export/deletion workflow with owner isolation and safe confirmation; only the signed-in owner may delete their own account data.
+NEXT: Implement batch-bounded child-first Firestore deletion, provider reauthentication, user-ownership-only rules, and Emulator/UI tests; never run deletion against a real account.
+
+### [2026-10-19 21:11 UTC] Codex — Phase 5: complete owner-scoped account deletion cascade
+STATUS: DONE
+FILES: firestore.rules; client-v3/src/security/firestore.rules.test.ts; client-v3/src/features/home/accountDataRepository.ts; client-v3/src/features/home/AccountDataPage.tsx; client-v3/src/features/home/AccountDataPage.test.tsx; client-v3/src/features/auth/accountDeletion.ts; client-v3/src/features/auth/accountDeletion.test.ts; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: Replaced the account-deletion placeholder with typed-confirmation and recent-auth deletion, paged child-first removal of known user data and linked Faculty Review records, plus local sync/profile state cleanup. Added owner-only deletion rules and the missing owner-scoped Mentor message rule needed for deletion and existing message access.
+WHY: Closes the Phase 5 account export/deletion requirement while preserving shared content and preventing cross-user deletion.
+EVIDENCE: Account deletion and page tests PASS (6/6); fresh Firebase Auth/Firestore Emulator suite PASS (17/17, including full attempt/Mentor/Studio/role/request/profile cascade and cross-user denial); client TypeScript check PASS; production build PASS (entry chunk still 1,055.32 kB minified); git diff --check PASS. No real account was deleted.
+NEXT: Refresh the Phase 5 acceptance and final handoff documents; keep Phase 5 OPEN until remaining offline browser, accessibility/visual, performance and hosted release gates have evidence or remain explicitly held.
+
+### [2026-10-19 21:19 UTC] Codex — Phase 5: refresh acceptance evidence and remaining holds
+STATUS: DONE
+FILES: client-v3/src/features/home/AccountDataPage.tsx; client-v3/src/features/home/AccountDataPage.test.tsx; client-v3/src/features/auth/accountDeletion.test.ts; client-v3/src/security/firestore.rules.test.ts; reports/v3-phase5-visual/phase5-new-route-audit.json; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Verified the local signed-out Account Data and System Health states at 1440/1024/768/390 px, kept the deletion success message visible after auth sign-out, refreshed the Phase 5 report/handoff, and documented the Worker-only Gemini secret/deferred Phase 8 setup.
+WHY: Keeps Phase 5 status tied to actual implementation and evidence without presenting unauthenticated preview checks as full admin or deletion UI acceptance.
+EVIDENCE: Root suite PASS (108/108); V3 client suite PASS (80/80 across 29 files); Worker suite PASS (12/12); Auth/Firestore Emulator suite PASS (17/17); account deletion/client focused tests PASS (6/6); fresh client TypeScript/Vite build PASS (1,055.32 kB minified main chunk, 321.72 kB gzip, size warning remains); signed-out viewport audit PASS (8/8); client bundle secret scan found no matches; `git diff --check` PASS. No real account deletion or hosted action was performed.
+NEXT: Phase 5 remains OPEN. Remaining work: authenticated offline browser attempt/reconnect sync, authenticated states for the new screens, comprehensive accessibility and PRD visual comparison, reduce/measure initial bundle and CDN/4G LCP, and hosted backup/restore/cutover/rollback/release acceptance. Keep unavailable hosted items in the hold register until Phase 8.
+
+### [2026-10-20 13:42 UTC] Codex — Phase 5: harden offline account restore and attempt sync
+STATUS: DONE
+FILES: client-v3/src/app/AuthSessionProvider.tsx; client-v3/src/app/AppShell.tsx; client-v3/src/app/AppShell.test.tsx; client-v3/src/features/auth/offlineSession.ts; client-v3/src/features/auth/offlineSession.test.ts; client-v3/src/features/attempts/offlineAttemptSync.test.ts; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: Preserved an already authenticated UID-scoped local profile across transient Firestore connectivity failures, exposed offline and pending-sync status in the app shell, and added integration coverage proving a submitted mock remains local offline and replays its same answers when connection returns.
+WHY: Phase 5 requires offline attempt preservation and queued answer sync; the prior profile bootstrap could sign a valid Firebase session out during a temporary network failure, and the UI did not update or display connectivity state.
+EVIDENCE: Focused client suite PASS (4/4 tests across 3 files: offline profile recovery, offline/reconnect mock replay, and app-shell connection status). Fresh production build is running and will be recorded in the next evidence entry. Fallback applies only when the stored app profile UID matches the Firebase UID and the error code is a transient connectivity failure; permission errors do not use offline fallback.
+NEXT: Record the fresh TypeScript/Vite build result, refresh the Phase 5 acceptance report and final handoff with the actual code-level offline evidence, then run final diff/status checks. Browser acceptance with a real/emulated signed-in offline session remains distinct and must not be claimed from these tests.
+
+### [2026-10-20 13:44 UTC] Codex — Phase 5: refresh offline acceptance evidence
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Updated the Phase 5 checklist and handoff to record the UID-scoped offline profile recovery, visible connectivity/pending-sync status, offline submitted-mock answer replay test, current client suite totals, and fresh production bundle size.
+WHY: The phase report must distinguish code-level offline guarantees from the still-unverified signed-in disconnected-browser journey and the hosted 4G/LCP release gate.
+EVIDENCE: Fresh full V3 client suite PASS (84/84 tests across 32 files); focused offline checks PASS (4/4 across 3 files); fresh TypeScript/Vite production build PASS, main chunk 1,055.83 kB minified / 321.86 kB gzip with existing >500 kB warning. Hosted LCP, browser-authenticated offline journey, visual comparison, accessibility audit, and release rehearsals remain open.
+NEXT: Review `git diff --check` and final worktree status; Phase 5 remains OPEN until remaining acceptance evidence is recorded or the user re-scopes it.
+
+### [2026-10-20 17:39 UTC] Codex — Phase 5: refresh fresh local acceptance evidence
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Re-ran the full root, V3 client, Worker, Auth/Firestore Emulator, build, Worker typecheck, and UCEED published-content verification gates; updated the acceptance report and final handoff with the actual fresh totals and remaining performance warnings.
+WHY: Phase 5 status must reflect the current checkout and distinguish passing local code checks from visual, accessibility, browser, performance, and hosted release requirements that have not passed.
+EVIDENCE: `npm test` PASS (108/108); `npm --prefix client-v3 run test` PASS (84/84 across 32 files); `npm run v3:test:worker` PASS (12/12); `npm --prefix api-worker run typecheck` PASS; Firebase Auth/Firestore Emulator PASS (17/17); `npm run v3:content:verify` PASS (1,940 UCEED records, 1,834 mapped, 106 `needs_review`); `npm run v3:build` PASS with 1,055.83 kB minified main chunk and Vite mixed-import/size warnings.
+NEXT: Phase 5 remains OPEN. The remaining code/evidence work is PRD visual/accessibility review, signed-in browser offline/admin flows, performance budget/LCP, and consolidated PRD/TRD traceability; real hosted backup/restore/cutover/rollback and provider/SMS acceptance remain Phase 8 inputs.
+
+### [2026-10-20 17:41 UTC] Codex — Phase 5: verify onboarding and Home preview states
+STATUS: DONE
+FILES: reports/v3-phase5-visual/phase5-onboarding-home-audit-20261020.json; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Ran the local signed-out onboarding → Home flow, captured Home readiness showing all six components, and checked both routes at 1440/1024/768/390 px. Recorded no horizontal overflow, visible headings, Home landmark presence, a visible keyboard focus outline, and accessible names for all 30 inspected Home controls.
+WHY: Phase 5 requires responsive and accessibility evidence tied to observed UI states; this extends prior screenshot-only checks without claiming a complete WCAG or PRD visual audit.
+EVIDENCE: Browser preview passed exam selection, baseline validation and onboarding completion; Home rendered at all four viewport sizes with no horizontal overflow; 30/30 inspected interactive controls had accessible names; focus outline was visible at 2px. Audit JSON records the signed-out/config-limited scope.
+NEXT: Phase 5 remains OPEN. Complete a route-wide contrast/keyboard/reduced-motion audit, authenticated browser checks, PRD component visual comparison, performance target evidence, and consolidated traceability. Hosted backup/cutover/rollback and live provider/SMS remain Phase 8.
+
+### [2026-10-20 17:44 UTC] Codex — Phase 5: preserve names in compact desktop navigation
+STATUS: IN PROGRESS
+FILES: client-v3/src/app/AppShell.tsx; client-v3/src/app/AppShell.test.tsx; PROGRESS_LOG.md
+WHAT: The fresh 1024/768 px preview audit found that CSS hides desktop navigation labels while links retain icon-only DOM content, leaving eight compact-sidebar links without accessible names. Adding explicit accessible names and a regression assertion.
+WHY: Phase 5 requires accessible keyboard navigation and color-independent, responsive UI; compacting the sidebar must not remove its link names from assistive technology.
+NEXT: Add `aria-label` to each compactable desktop navigation link and the Settings link; assert the names in AppShell tests, then rerun the focused suite, full client suite/build, and browser audit.
+
+### [2026-10-20 17:47 UTC] Codex — Phase 5: retain accessible names in compact navigation
+STATUS: DONE
+FILES: client-v3/src/app/AppShell.tsx; client-v3/src/app/AppShell.test.tsx; reports/v3-phase5-visual/phase5-route-audit-20261020.json; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Added explicit accessible labels to every compactable desktop sidebar link and its Settings link. Added a regression test, then rechecked all ten signed-out routes at the four required widths and refreshed Phase 5 evidence.
+WHY: Responsive icon-only navigation must remain identifiable to screen-reader users and preserve accessible names when visible text is hidden.
+EVIDENCE: Focused AppShell test PASS (2/2); full client suite PASS (85/85 across 32 files); TypeScript/Vite build PASS (main chunk 1,055.87 kB minified / 321.87 kB gzip, warning remains); browser audit PASS (40/40 route/viewport pairs, no horizontal overflow, visible headings, zero unlabeled compact sidebar links); `git diff --check` pending final run.
+NEXT: Run final whitespace/status check. Phase 5 remains OPEN for comprehensive accessibility and PRD visual sign-off, authenticated/offline browser acceptance, performance targets, consolidated traceability, and Phase 8 hosted operations.
+
+### [2026-10-20 17:48 UTC] Codex — Phase 5: verify local navigation increment handoff
+STATUS: DONE
+FILES: PROGRESS_LOG.md; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; reports/v3-phase5-visual/phase5-route-audit-20261020.json; reports/v3-phase5-visual/phase5-onboarding-home-audit-20261020.json
+WHAT: Validated both fresh browser-audit JSON files, ran `git diff --check`, confirmed no browser console errors, and stopped the local preview servers after acceptance checks.
+WHY: Keep the Phase 5 handoff tied to clean local evidence and avoid leaving test preview processes running.
+EVIDENCE: `git diff --check` PASS (only existing CRLF conversion warnings for pre-existing modified files); both audit JSON files parse; browser console error list empty; local preview servers stopped.
+NEXT: Phase 5 remains OPEN as the report and final handoff specify. Do not describe local checks as hosted release acceptance.
+
+### [2026-10-20 17:50 UTC] Codex — Phase 5: reduce signed-out initial bundle dependencies
+STATUS: IN PROGRESS
+FILES: client-v3/src/firebase/{config.ts,appClient.ts,authClient.ts,client.ts}; client-v3/src/app/AuthSessionProvider.tsx; client-v3/src/features/auth/AuthStatus.tsx; client-v3/src/features/home/{FocusTimer.tsx,homeModel.ts}; client-v3/src/features/planner/plannerModel.ts; client-v3/src/app/AppShell.test.tsx; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Vite's latest production build still puts Firebase Firestore and cloud repositories in the initial shell via AppShell/auth/timer imports. Splitting Firebase app/auth/Firestore clients and deferring user-state, timer persistence, analytics, and auth-repository imports to the actions or signed-in session that require them.
+WHY: The TRD calls for a lean initial route shell and lazy-loading heavier modules; the current 1,055.87 kB initial chunk exceeds Vite's warning threshold and lacks LCP evidence.
+NEXT: Keep signed-out local workflows unchanged, retain signed-in profile/queued sync behavior, then run Auth/Firestore Emulator tests, all client tests, TypeScript build, and a production-preview smoke check; compare actual initial chunk size.
+
+### [2026-10-20 18:04 UTC] Codex — Phase 5: lazy-load signed-out shell and align Practice default
+STATUS: DONE
+FILES: client-v3/src/firebase/{config.ts,appClient.ts,authClient.ts,client.ts}; client-v3/src/app/AuthSessionProvider.tsx; client-v3/src/features/auth/{AuthStatus.tsx,googleRedirect.ts}; client-v3/src/features/home/{FocusTimer.tsx,homeModel.ts}; client-v3/src/features/planner/plannerModel.ts; client-v3/src/content/{contentVersions.ts,contentVersions.test.ts}; client-v3/src/features/practice/PracticePage.tsx; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Split Firebase app, Auth, Firestore, analytics, and user-state work behind the route/action/session that needs it, reducing the initial JavaScript entry from 1,055.87 kB to 426.94 kB minified. Fixed direct Practice entry with no onboarding target to select the approved UCEED shard, matching Home's default, and added regression cases for target selection and empty/unavailable bundles.
+WHY: Phase 5 requires a lean shell, lazy heavy dependencies, cross-route consistency, and evidence that versioned content can load from the current repository without rewriting source material.
+EVIDENCE: Root suite PASS 108/108; V3 client PASS 88/88 across 33 files; Worker PASS 12/12; Worker TypeScript check PASS; fresh Auth/Firestore Emulator PASS 17/17; UCEED content verifier PASS (1,940 records; 1,834 mapped; 106 needs_review; 41 database scoring overrides; 1,377 media hashes); production TypeScript/Vite build PASS (initial entry 426.94 kB minified / 137.16 kB gzip; separate lazy Firebase/shared chunk 527.48 kB / 155.93 kB gzip and still warned); responsive route audit PASS 40/40 at 1440/1024/768/390 px; fresh production preview loaded UCEED 2015 for direct Practice entry and rendered version uceed-v3.0.0; git diff --check PASS with existing line-ending warnings only.
+NEXT: Phase 5 remains OPEN. The outstanding PRD visual comparison, comprehensive accessibility audit, authenticated/offline browser acceptance, controlled CDN/4G LCP measurement, consolidated PRD/TRD acceptance traceability, and hosted Phase 8 rehearsals are listed as holds in the report; do not mark the phase complete without those acceptance decisions/evidence.
+
+### [2026-10-20 18:06 UTC] Codex — Phase 5: keep Firebase SDK off anonymous route dependency graph
+STATUS: IN PROGRESS
+FILES: client-v3/src/config/appConfigRepository.ts; client-v3/src/features/home/homeRepository.ts; client-v3/src/domain/userStateRepository.ts; client-v3/src/features/attempts/attemptRepository.ts; client-v3/src/features/progress/learningRepository.ts; PROGRESS_LOG.md
+WHAT: Requirement and bundle review shows the Firebase shared chunk is a separate lazy asset but may be pulled immediately by Home/Practice's static repository dependency graph. Checking and removing unnecessary anonymous-route imports while preserving signed-in Firestore operations.
+WHY: The TRD calls for a lean authenticated shell, bounded Home reads and a responsive app even when network or Firebase is unavailable; a nominally split chunk that loads on every startup would not meet that intent.
+NEXT: Inspect repository entry points and tests; gate dynamic Firebase SDK imports on a configured Firestore client and signed-in UID, then rerun repository/Auth Emulator tests and measure production preview request behavior.
+
+### [2026-10-20 18:14 UTC] Codex — Phase 5: gate Firestore SDK behind configured data access
+STATUS: DONE
+FILES: client-v3/src/firebase/firestoreRuntime.ts; client-v3/src/config/appConfigRepository.ts; client-v3/src/domain/userStateRepository.ts; client-v3/src/features/home/homeRepository.ts; client-v3/src/features/attempts/attemptRepository.ts; client-v3/src/features/attempts/offlineAttemptSync.test.ts; docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Removed static Firestore SDK imports from Home/config/user-state/attempt repositories. They now load the SDK only after configured Firestore access is requested; anonymous/no-config use stays on local state and static content. Updated the offline-sync test to inject the new runtime boundary. Added NIFT to the hold register after the PRD/TRD coverage audit found no NIFT source bank, taxonomy, keys or scoring rules in the repository.
+WHY: The TRD requires a lean app shell, local/offline-safe behavior, and source-backed content. Static imports had pulled Firebase through Home/Practice even when the app was running without Firebase configuration; the NIFT catalog cannot be fabricated without approved source content.
+EVIDENCE: Root suite PASS 108/108; full V3 client PASS 88/88 across 33 files; Worker PASS 12/12 and TypeScript check PASS; fresh Firebase Auth/Firestore Emulator PASS 17/17; content verifier PASS (1,940 UCEED records, 1,834 mapped, 106 needs_review, 41 database scoring overrides, 1,377 media hashes); TypeScript/Vite build PASS (entry 427.03 kB minified / 137.17 kB gzip; separate Firebase/shared chunk 527.34 kB / 155.90 kB gzip, Vite warning remains); production-preview onboarding render and direct Practice UCEED content load PASS; provider-secret scan returned no matches.
+NEXT: Phase 5 remains OPEN. NIFT source content, comprehensive PRD visual/WCAG review, authenticated/offline browser journey, measured browser network waterfall and CDN/4G LCP, consolidated item-level PRD/TRD acceptance evidence, and hosted Phase 8 service/backup/cutover/rollback acceptance remain held. Do not mark final V3 release complete.
+
+### [2026-10-20 18:16 UTC] Codex — Phase 5: compare available PRD visual north star
+STATUS: DONE
+FILES: docs/BRDS_V3_PHASE_5_ACCEPTANCE_STATUS.md; docs/BRDS_V3_FINAL_HANDOFF.md; PROGRESS_LOG.md
+WHAT: Compared the current 1440 px Home, Practice, Progress and Studio captures against the composite concept embedded in the supplied PRD. Recorded that the implemented dark surfaces, restrained purple, compact navigation and page hierarchy align, while keeping pixel-level mismatch expectations limited because the PRD itself calls the concept a non-pixel-locked visual north star.
+WHY: Phase 5 requires final visual review against the approved PRD without converting concept art into invented layout constraints.
+EVIDENCE: Viewed the source PRD concept and current 1440 px screenshots for all four pictured product panels. The existing 40/40 signed-out route/viewport audit remains the responsive evidence; it is not a complete visual or WCAG 2.2 AA audit.
+NEXT: Phase 5 remains OPEN. Finish screen/state-specific design and accessibility review if desired; authenticated/offline browser acceptance, browser waterfall and CDN/4G LCP, requirement-level traceability, NIFT source content, and hosted Phase 8 operations remain held.
+
+### [2026-10-20 20:35 UTC] Codex — Phase 7: apply Ownpace brand identity
+STATUS: DONE
+FILES: client-v3/src/app/BrandMark.tsx; client-v3/src/app/AppShell.tsx; client-v3/src/features/home/OnboardingPage.tsx; client-v3/src/features/home/HomePage.tsx; client-v3/src/features/home/SettingsPage.tsx; client-v3/src/features/home/AccountDataPage.tsx; client-v3/src/features/home/homeSnapshotModel.ts; client-v3/src/features/auth/{AuthStatus.tsx,authRepository.ts,googleRedirect.ts}; client-v3/src/features/mentor/mentorModel.ts; client-v3/src/features/practice/GkStarterDeck.tsx; client-v3/src/features/studio/StudioPage.tsx; client-v3/src/features/home/FoundationPage.tsx; client-v3/src/app/App.tsx; client-v3/src/styles.css; client-v3/index.html; client-v3/public/{ownpace-mark.svg,ownpace-app-icon.svg,manifest.webmanifest}; docs/OWNPACE_BRAND_GUIDELINES.md; PROGRESS_LOG.md
+WHAT: Applied the user-approved Ownpace open-loop mark, coral/warm-off-white palette, visible Ownpace naming, app icon/favicon, and install metadata. Preserved PRD dark surfaces, semantic status colors, existing layouts/features, and legacy storage/event identifiers; corrected auth recovery wording and the Studio export filename.
+WHY: Completes the user-authorized brand identity pass while keeping the V3 PRD product hierarchy and TRD compatibility behavior intact before Firebase project/domain setup.
+EVIDENCE: `npm run build` PASS (TypeScript + Vite; initial entry 427.35 kB minified / 137.37 kB gzip; existing Firebase/shared chunk warning at 527.34 kB); built output contains Ownpace metadata and both SVG brand assets; visible-source audit found only legacy/internal `brds-*` identifiers; `git diff --check` PASS with existing line-ending warnings. No test suites run and no Firebase project configured.
+NEXT: User-directed next step is Firebase project/domain configuration; current sign-in paths still need dedicated-project identifiers and live provider setup, which are not configured in this brand increment.
+
+### [2026-10-20 21:05 UTC] Codex — Phase 8: configure Ownpace Firebase project
+STATUS: IN PROGRESS
+FILES: client-v3/.env.local (git-ignored local config); PROGRESS_LOG.md
+WHAT: Connected the local client configuration to Firebase project ownpace-prep using the registered Ownpace Web app values; confirmed in the user's console screenshots that Firebase Hosting site ownpace-prep.web.app exists, Google and Email/Password providers are enabled, localhost and both Firebase domains are authorized, and the default Firestore database is created in production mode after the user selected Mumbai (asia-south1). The database remains empty.
+WHY: Phase 8 requires a dedicated V3 Firebase project and working Auth/Firestore configuration while preserving the approved Firebase architecture and keeping client config out of version control.
+EVIDENCE: Required VITE_FIREBASE_API_KEY, AUTH_DOMAIN, PROJECT_ID, APP_ID and emulator-mode values are present in the ignored local .env.local file. The CLI is installed, but invoking it in this sandbox fails with EPERM while reading the existing Firebase CLI config under the user's profile; no cloud Firestore rules/indexes or Hosting release have been deployed. No user data has been created.
+NEXT: Review and prepare deployment of the repository's default-deny Firestore rules and index config for project ownpace-prep; resolve CLI authentication in the user's local environment, then keep any production deployment as the final user-approved action.
+### [2026-10-20 21:18 UTC] Codex — Phase 8: repair local Firebase config and show study baseline in hours
+STATUS: IN PROGRESS
+FILES: client-v3/.env.local (git-ignored local config); client-v3/src/features/home/{OnboardingPage.tsx,HomePage.tsx,homeModel.ts,homeModel.test.ts}; client-v3/src/features/planner/PlannerPage.tsx; client-v3/src/styles.css; client-v3/src/features/home/OnboardingPage.test.tsx; PROGRESS_LOG.md
+WHAT: Compared the local Firebase Web API key with the registered Ownpace Web SDK config and corrected the mismatch without printing the key. Changed onboarding to collect hours per day and convert them to the existing integer-minute baseline; Home and Planner now display that baseline in hours while session durations remain in minutes.
+WHY: Fixes the observed Firebase invalid-API-key sign-in failure and makes the daily capacity input easier to understand without changing stored profile schema or planner behavior. The PRD requires a daily baseline but does not specify its display unit.
+EVIDENCE: Firebase CLI read-only SDK config check confirmed exact key match after update and confirmed project ID ownpace-prep; Vite development server restarted at http://127.0.0.1:5173/; production TypeScript/Vite build PASS (entry 434.81 kB minified; existing 562.03 kB shared chunk warning). No live sign-in was completed after the correction; no tests were run.
+NEXT: User should refresh /onboarding and retry Google sign-in; verify profile creation in the user's own Firestore console after successful onboarding. Keep Phase 8 in progress until real login and Firestore persistence are confirmed.
+
+### [2026-10-20 21:32 UTC] Codex — Phase 8: show only unlinked Google action
+STATUS: DONE
+FILES: client-v3/src/features/auth/AuthStatus.tsx; PROGRESS_LOG.md
+WHAT: The signed-in header now checks Firebase `providerData` and hides “Link Google” when Google is already linked to the active account. The email/phone linking menu remains available for users who want additional sign-in methods.
+WHY: Prevents a redundant Google-link action from appearing after Google sign-in and avoids presenting account-linking as a required step.
+EVIDENCE: Confirmed the prior component rendered “Link Google” unconditionally; no test suite or build run for this UI-only condition change.
+NEXT: Refresh the local app. If “Link Google” remains visible after Google sign-in, inspect Settings → Account provider IDs to confirm whether the active Firebase UID is the Google-linked account.
+
+### [2026-10-20 21:38 UTC] Codex — Phase 8: load official entrance exam dates
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/home/examSchedule.ts; client-v3/src/features/home/{HomePage.tsx,homeRepository.ts}; client-v3/src/features/planner/PlannerPage.tsx; PROGRESS_LOG.md
+WHAT: Adding the published 2027-cycle UCEED, NID DAT Prelims, NIFTEE, and CEED exam dates as sourced defaults for Home countdowns, Planner dates, and date-dependent planning context. Existing future user-selected dates remain overrides; stale/past selections fall forward to this cycle's official date.
+WHY: Users should see current official exam countdowns and plan dates without manually entering already-published schedules.
+NEXT: Implement the shared schedule source metadata and wire its defaults through the Home and Planner repository paths, then rebuild before Hosting review.
+
+### [2026-10-20 21:40 UTC] Codex — Phase 8: publish official exam-date defaults in V3
+STATUS: DONE
+FILES: client-v3/src/features/home/examSchedule.ts; client-v3/src/features/home/{HomePage.tsx,homeRepository.ts}; client-v3/src/features/planner/PlannerPage.tsx; PROGRESS_LOG.md
+WHAT: Added sourced 2027-cycle date defaults for UCEED (2027-01-17), NID DAT Prelims (2026-12-20), NIFTEE Stage 1 (2027-01-10), and CEED (2027-01-17). Home countdown, Planner date rows, and existing date-dependent callers now receive the official date when no future user override exists; stale dates fall forward to the current official schedule. Planner shows cycle/stage and the official notice link.
+WHY: Ensures all four active exam targets use the newly published cycle schedule without asking each learner to enter dates manually.
+EVIDENCE: Official UCEED, NID, NIFT/NTA and CEED schedules checked; TypeScript/Vite production build PASS (entry 434.89 kB; Firebase/shared chunk 562.03 kB retains the existing >500 kB warning); production preview root and `/planner` both HTTP 200; `git diff --check` PASS with existing line-ending warnings. No tests run.
+NEXT: If user approves, deploy this production build to Firebase Hosting site ownpace-prep.web.app; then verify the hosted app and its Home, Planner, Auth and Firestore profile flows. Phase 8 hosted acceptance remains open.
+
+### [2026-10-20 21:48 UTC] Codex — Phase 8: deploy Ownpace V3 to Firebase Hosting
+STATUS: DONE
+FILES: client-v3/dist/** (deployed build); PROGRESS_LOG.md
+WHAT: Deployed the reviewed V3 production build to the user's approved Firebase project/site, ownpace-prep.web.app. The first CLI attempt stopped during upload with an unexpected error; the authenticated retry completed and Firebase finalized the live release.
+WHY: Publishes the configured Ownpace app at the dedicated Firebase URL for hosted acceptance.
+EVIDENCE: Firebase CLI reported “Deploy complete”; HTTPS root and `/planner` each returned HTTP 200; deployed `homeRepository` schedule bundle returned HTTP 200 and contains the UCEED (2027-01-17), NID (2026-12-20), and NIFT (2027-01-10) official date defaults (CEED shares the UCEED date). No test suite run; hosted interactive Auth/Firestore flows remain to be accepted by the user.
+NEXT: User should open https://ownpace-prep.web.app, sign in, and check Home/Planner schedule display. Keep Phase 8 open until hosted sign-in, Firestore persistence, and user acceptance are confirmed.
+### [2026-10-20 22:20 UTC] Codex — Phase 8: configure Ownpace AI Worker
+STATUS: IN PROGRESS
+FILES: api-worker/wrangler.jsonc; PROGRESS_LOG.md
+WHAT: Matched the Worker name to the newly created `ownpace-api` service, allowed the Ownpace Firebase Hosting origins, configured the Firebase project ID, enabled the Gemini provider with `gemini-3.1-flash-lite`, and set per-user daily caps of 12 Mentor and 6 vision calls. The Gemini key remains a Cloudflare secret and is not in source or browser config.
+WHY: Prepares the Phase 8 backend deployment to accept authenticated requests from the hosted Ownpace app while keeping AI usage bounded and the provider credential server-side.
+NEXT: Create the Cloudflare D1 database for `OPS_DB`, bind it to `ownpace-api`, obtain its database ID for this config, apply the three checked-in migrations, then deploy the Worker source and wire the hosted client API base URL. Do not treat the Hello World deployment as the Ownpace API.
+### [2026-10-20 22:22 UTC] Codex — Phase 8: name Ownpace operational database
+STATUS: IN PROGRESS
+FILES: api-worker/wrangler.jsonc; api-worker/package.json; PROGRESS_LOG.md
+WHAT: Renamed the planned D1 database to `ownpace-ops` and updated the local migration command to use the same name, matching the new `ownpace-api` service without changing table schemas or data.
+WHY: The live Worker and its operational quota/idempotency database need consistent project-specific names before Cloudflare binding and migration setup.
+NEXT: Create the D1 database as `ownpace-ops` in Cloudflare, bind it to the Worker under `OPS_DB`, then provide the database ID (not a secret) so the local deployment config can be completed.
+
+### [2026-10-20 22:30 UTC] Codex — Phase 8: configure Ownpace D1 binding
+STATUS: IN PROGRESS
+FILES: api-worker/wrangler.jsonc; PROGRESS_LOG.md
+WHAT: Set the `OPS_DB` binding to the user-created D1 database `ownpace-ops` (ID `9e5f0d93-c227-411c-b5d4-34e26239733e`). Inspected all three migrations; they create tables and indexes only, with no DROP/ALTER/data deletion statements.
+WHY: Connects the authenticated AI quota/idempotency code to the correct live operational database.
+EVIDENCE: Cloudflare dashboard screenshot shows database `ownpace-ops` and its ID; `rg` migration inspection confirms only CREATE TABLE/INDEX statements. `wrangler whoami` reports not authenticated in this workspace context (and a Wrangler log-file EPERM in the user roaming profile), so remote migration/deploy has not run.
+NEXT: Complete Wrangler login for this workspace context, then apply migrations to the remote `ownpace-ops` database and deploy the Ownpace Worker. Do not treat the current Hello World Worker as deployed application code.
+
+### [2026-10-22 13:05 UTC] Codex — Phase 8: apply Ownpace operational migrations
+STATUS: DONE
+FILES: api-worker/wrangler.jsonc; api-worker/migrations/0001_operational_state.sql; api-worker/migrations/0002_otp_challenges.sql; api-worker/migrations/0003_system_health.sql; PROGRESS_LOG.md
+WHAT: Applied all three migrations to the remote Cloudflare D1 database `ownpace-ops`, creating operational state, OTP challenge, system health and API error tables/indexes. Reviewed Worker config and AI routes; Gemini configuration, database quota binding, CORS origins, and health/AI endpoints are present.
+WHY: Enables the production Worker to persist AI quota/idempotency and health state against the intended D1 database.
+EVIDENCE: User-provided Wrangler output confirms all three migrations finished with ✅ on remote DB ID `9e5f0d93-c227-411c-b5d4-34e26239733e`. Source inspection confirms `/v1/health` and AI routes are implemented. Live Worker deployment is still pending.
+NEXT: Deploy source to the existing `ownpace-api` Worker, then check its health and wire/build/publish the client API base URL. Phone OTP remains unavailable until its separate Phase 8 provider credentials are configured.
+
+### [2026-10-21 20:33 UTC] Codex — Phase 8: correct migration log timestamp
+STATUS: DONE
+FILES: PROGRESS_LOG.md
+WHAT: Clarifies that the preceding migration completion entry was written during the current user turn; its displayed 2026-10-22 13:05 UTC timestamp was incorrect. The verified completion time is approximately 2026-10-21 20:33 UTC.
+WHY: Keeps the append-only project timeline accurate without editing an existing progress entry.
+EVIDENCE: Current UTC clock reading at log correction: 2026-10-21 20:33:41 UTC. Migration completion remains supported by the user-provided successful Wrangler output.
+NEXT: Deploy the Ownpace Worker source and continue hosted AI integration.
+
+### [2026-10-21 20:51 UTC] Codex — Phase 8: connect hosted client to Ownpace API
+STATUS: IN PROGRESS
+FILES: client-v3/.env.local; client-v3/dist/**; PROGRESS_LOG.md
+WHAT: Set `VITE_API_BASE_URL` to the deployed `ownpace-api` Worker and produced a fresh V3 production build. User separately confirmed adding the replacement Gemini credential through Cloudflare's Secret form and deploying it. The Worker itself was deployed successfully earlier; remote D1 migrations are applied.
+WHY: Enables Mentor and other AI client flows to call the production Worker while keeping the Gemini credential server-side.
+EVIDENCE: Client `npm run build` succeeded (1822 modules; existing >500 kB chunk warning). Local worker health probe was blocked by this execution sandbox's network permissions. Firebase Hosting deploy command was blocked because the sandbox cannot read the user's Firebase CLI credential file under `C:\Users\user\.config\configstore`; the production Hosting release has not yet been updated with the new API base URL.
+NEXT: From the user's authenticated CMD, run `firebase deploy --config firebase.v3.json --only hosting --project ownpace-prep` from the project root; then open the deployed Mentor page and make an authenticated request to confirm AI response. Do not share credential values or raw secret-bearing terminal output.
+
+### [2026-10-21 20:55 UTC] Codex — Phase 8: publish Worker-connected V3 client
+STATUS: DONE
+FILES: client-v3/.env.local; client-v3/dist/** (deployed build); PROGRESS_LOG.md
+WHAT: Published the production V3 build with `VITE_API_BASE_URL` set to `https://ownpace-api.shah-utkarsh2008.workers.dev` to Firebase Hosting project `ownpace-prep`.
+WHY: Makes the deployed app's Mentor and other AI flows call the production Worker.
+EVIDENCE: User-provided Firebase CLI output confirms all hosting files uploaded, version finalized, release complete, and deployment completed at `https://ownpace-prep.web.app`. Production build succeeded; bundle search confirms the Worker URL is present in Mentor, Studio, Weekly Review, auth, and health chunks. Direct public health check was unavailable in this tool environment; no live AI response has yet been confirmed.
+NEXT: User should sign in at the hosted app, open Mentor, send a short question, and report whether a response appears. Keep live Phase 8 AI acceptance open until confirmed.
+
+### [2026-10-21 20:59 UTC] Codex — Phase 8: repair Mentor authentication and conversation UX
+STATUS: IN PROGRESS
+FILES: api-worker/wrangler.jsonc; client-v3/src/features/mentor/MentorPage.tsx; client-v3/src/app/AppShell.tsx; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: Investigating the production Mentor fallback and the reported keyboard, conversation-history, and visual issues. Found that the Worker verifies Firebase ID tokens using `FIREBASE_WEB_API_KEY`, but Wrangler vars currently omit this required Firebase Web API key; also found the first student-message write can precede creation of the parent thread required by Firestore rules.
+WHY: Phase 8 needs a working authenticated AI integration; the user also reported Enter-to-send, saved doubt history, removal of the preview label, and a cleaner Mentor conversation UI.
+NEXT: Add the public Firebase Web API key to Worker runtime config without exposing any Gemini credential; fix thread write ordering and resilient persistence; implement Enter/Shift+Enter, readable history, better suggestion styling/status, and remove the preview label; build and redeploy Worker/client, then verify with user.
+
+### [2026-10-21 21:08 UTC] Codex — Phase 8: repair Mentor, history, and missing question visuals
+STATUS: IN PROGRESS
+FILES: api-worker/wrangler.jsonc; client-v3/src/features/mentor/MentorPage.tsx; client-v3/src/features/attempts/AttemptPage.tsx; client-v3/src/app/AppShell.tsx; client-v3/src/styles.css; client-v3/dist/**; PROGRESS_LOG.md
+WHAT: Configured the Worker with the Firebase project's public Web API key for ID-token lookup; fixed the Firestore thread parent-before-message write order and added a saved “My doubts” list, Enter-to-send, cleaner Mentor layout, explicit offline/error guidance, and Ownpace branding in place of “V3 PREVIEW”. Fixed question media lookup to normalize content-version URL prefixes before manifest matching, surfaced missing-media errors, clarified diagram-dependent option labels, and increased topic select readability.
+WHY: Addresses the reported Mentor fallback, unsaved history, awkward composer/suggestion layout, misleading preview label, absent practice diagrams, placeholder answer labels, and hard-to-read topic selector.
+EVIDENCE: `npm run build` in client-v3 PASS (TypeScript and Vite, 1822 modules); `git diff --check` PASS (pre-existing line-ending warnings only). Wrangler config parses; Firebase Web API key is configured and no Gemini key is stored in Wrangler vars. No tests run. Live AI requires a Worker redeploy; Firebase Hosting also needs the rebuilt client release before these UI/image fixes are visible at the hosted URL.
+NEXT: From the authenticated CMD, run `cd /d "F:\desktop\New folder - V2 backup\api-worker"` then `npx wrangler deploy`; after success, run `cd /d "F:\desktop\New folder - V2 backup"` then `firebase deploy --config firebase.v3.json --only hosting --project ownpace-prep`. Verify a Mentor reply and diagram questions on the hosted app; live AI acceptance remains open until confirmed.
+
+### [2026-10-21 21:31 UTC] Codex — Phase 5: audit complete requirements and restore hierarchical Custom builder
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/practice/PracticePage.tsx; client-v3/src/features/practice/practiceBuilder.ts; client-v3/src/features/practice/practiceBuilder.test.ts; client-v3/src/features/practice/PracticePage.test.tsx; docs/OWNPACE_REQUIREMENTS_AUDIT.md; tmp/requirements-audit/**; PROGRESS_LOG.md
+WHAT: Starting the user's repository-wide comparison of Phases 1–5 and Phase 8 against the original PRD/TRD, legacy feature paths, current source, and fresh acceptance checks. Restoring Custom practice selection through Domain → Topic → Subtopic with source-backed coverage and correct hierarchical filtering.
+WHY: Phase completion claims must match actual implementation and evidence; the current Custom builder flattens taxonomy and only exposes topics found in one selected paper, hiding the approved hierarchy and wider content coverage.
+NEXT: Extract the authoritative Word requirements without changing them; inventory source features and current phase claims, run existing local checks, implement and verify hierarchical practice, then repair confirmed defects and record remaining source/hosted acceptance dependencies explicitly.
+
+### [2026-10-21 21:40 UTC] Codex — Phase 2: restore session timing and study time accounting
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/attempts/{AttemptPage.tsx,attemptModel.ts,attemptTimer.ts,attemptTimer.test.ts,attemptContent.ts,AttemptReviewPage.tsx}; client-v3/src/features/practice/{PracticePage.tsx,practiceBuilder.ts,practiceBuilder.test.ts,PracticePage.test.tsx}; client-v3/src/features/home/{homeModel.ts,FocusTimer.tsx,studyTime.ts,studyTime.test.ts}; client-v3/src/features/progress/learningRepository.ts; client-v3/src/content/{contentRepository.ts,contentRepository.test.ts}; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: User additionally requires visible timers in every exam/practice session, optional Custom time limits, and automatic inclusion in total study time. Source inspection confirms V3 currently shows only per-question elapsed time and does not enforce source-paper durations; cross-paper Custom selection also needs source-qualified IDs because 1,069 question IDs repeat across UCEED-bundle shards.
+WHY: Restore usable exam simulation and legacy Custom builder functionality while retaining source identity, safe offline restoration, and correct study duration without overlapping Focus time being counted twice.
+NEXT: Implement persisted countdown/stopwatch timing, mixed-source attempt loading, hierarchical coverage selectors and timed activity accounting; verify timeout/resume, filtering, ID collisions, and overlap cases before updating the phase audit.
+
+### [2026-10-21 21:47 UTC] Codex — Phase 4: redesign Mentor and diagnose actual live AI failures
+STATUS: IN PROGRESS
+FILES: api-worker/src/index.ts; api-worker/src/index.test.mjs; client-v3/src/features/mentor/{MentorPage.tsx,mentorModel.ts,mentorModel.test.ts,MentorPage.test.tsx}; client-v3/vite.config.ts; client-v3/src/features/practice/GkStarterDeck.test.tsx; client-v3/src/styles.css; docs/OWNPACE_REQUIREMENTS_AUDIT.md; PROGRESS_LOG.md
+WHAT: User requests an AI Guru-inspired Mentor UI and useful responses. Read-only production checks confirm the Worker is reachable, GEMINI_API_KEY is configured as a secret, and recent Mentor requests recorded AI_SCHEMA_INVALID followed by AI_UNAVAILABLE; earlier auth failures precede the deployed auth fix. Existing client tests also accidentally inherit production .env.local Firebase settings, causing network-dependent failures; isolating tests from live configuration.
+WHY: Mentor must give relevant, readable, grounded help and actionable status instead of raw taxonomy IDs or the same weakest-skill paragraph for every prompt. The audit must not treat a passing build as hosted AI acceptance or allow ordinary unit tests to access real project services.
+NEXT: Enforce provider structured response schemas and classify safe failure codes; redesign conversation/history/composer, resolve taxonomy IDs to labels, add greeting-aware/relevant fallback and request cancellation; isolate unit tests and complete builder/timer fixes with fresh checks.
+
+### [2026-10-21 22:21 UTC] Codex — Phase 2: hierarchical practice, persisted session clocks and study accounting implemented
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/practice/{PracticePage.tsx,practiceBuilder.ts,practiceBuilder.test.ts,PracticePage.test.tsx}; client-v3/src/features/attempts/{AttemptPage.tsx,attemptModel.ts,attemptContent.ts,attemptContent.test.ts,attemptTimer.ts,attemptTimer.test.ts,QuestionMedia.tsx,QuestionMedia.test.tsx,AttemptQuestionReview.tsx,AttemptReviewPage.tsx,AttemptPage.test.tsx}; client-v3/src/features/home/{homeModel.ts,HomePage.tsx,FocusTimer.tsx,focusRepository.ts,studyTime.ts,studyTime.test.ts}; client-v3/src/features/progress/learningRepository.ts; client-v3/src/domain/userStateRepository.ts; client-v3/src/content/{contentRepository.ts,contentRepository.test.ts}; client-v3/vite.config.ts; client-v3/src/styles.css; PROGRESS_LOG.md
+WHAT: Added full Domain → Topic → Subtopic selectors with honest zero-coverage counts, opt-in mixed-source practice with explicit question-source identities, skip-attempted filtering, and optional practice countdowns. Exam clocks now restore from timestamps, use source durations, auto-submit at zero, and show study time; interval-based daily accounting excludes pauses, overlaps and repeat completion. Focus finalization now also works from the global mini timer; per-question review and shared diagram loading were added, while version switching retains downloaded content and immutable cached bytes avoid repeated fetches.
+WHY: Restores missing legacy practice/exam functionality and addresses the user's explicit timer, hierarchy, study-total and missing-visual requirements without changing source questions, answers or grading rules.
+EVIDENCE: Initial root suite PASS 108/108. Changed-area run passed 24/25 checks, exposing and fixing a real loading-state race in Practice; the repaired Practice suite then PASS 2/2. Timer tests cover expiration/refresh/pause, study tests cover overlap/midnight, and mixed-source/image tests cover duplicate IDs and absolute-versus-relative media paths. Worker suite PASS 14/14 and typecheck PASS after structured output/error classification updates. Full final suites/build/browser acceptance remain next.
+NEXT: Finish full PRD/TRD traceability audit and remaining source-confirmed repairs; run complete client, isolated Auth/Firestore Emulator and published-content checks, then build and review current UI at the required viewports. Live provider acceptance remains unconfirmed; production error history is documented separately from local code correctness.
+
+### [2026-10-21 22:38 UTC] Codex — Phase 5: follow-up audit repairs and browser evidence
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/home/{HomePage.tsx,FocusTimer.tsx,focusRepository.ts,homeSnapshotModel.ts}; client-v3/src/features/progress/{ProgressPage.tsx,learningRepository.ts}; client-v3/src/features/auth/{accountDeletion.ts,accountDeletion.test.ts}; client-v3/src/features/home/accountDataRepository.ts; client-v3/src/features/studio/{StudioPage.tsx,studioRepository.ts}; client-v3/src/features/mentor/MentorPage.test.tsx; client-v3/src/domain/userStateRepository.test.ts; client-v3/vite.emulator.config.mjs; docs/OWNPACE_REQUIREMENTS_AUDIT.md; reports/requirements-audit/**; PROGRESS_LOG.md
+WHAT: Fresh client suite passed 101/101 and production build passed; UCEED content verifier passed all source/media hashes. Browser review confirmed Enter-to-send and saved doubts, and no horizontal overflow at 1440/1024/768/390. It also caught the six mobile navigation controls being placed into five columns, causing a second row and composer overlap; corrected the grid. Continuing source-confirmed repairs for Studio elapsed time, exact local UID boundaries, and selected-exam fallback consistency.
+WHY: A no-overflow screenshot alone misses obstructed controls; source-confirmed timing, privacy and profile consistency risks must be repaired before claiming final integration acceptance. Unit and emulator configuration now exclude real .env.local service configuration.
+NEXT: Finish targeted fixes and tests, capture refreshed browser evidence, complete the requirement/legacy parity matrix and identify unresolved source-content, performance and live-service gates without reclassifying them as complete.
+
+### [2026-10-22 00:26 UTC] Codex — Phase 5: saved questions and offline shell update repair
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/attempts/{savedQuestions.ts,savedQuestions.test.ts,QuestionBookmark.tsx,AttemptPage.tsx,AttemptQuestionReview.tsx}; client-v3/src/features/exams/{SavedQuestions.tsx,ExamsPage.tsx}; client-v3/src/features/home/accountDataRepository.ts; client-v3/public/sw.js; client-v3/src/security/serviceWorker.test.ts; client-v3/src/features/mentor/MentorPage.test.tsx; docs/OWNPACE_REQUIREMENTS_AUDIT.md; PROGRESS_LOG.md
+WHAT: Restored per-question bookmarks with source-qualified IDs, account export/deletion coverage and a Saved-question practice entry. Final review found the service worker kept an initial cached index indefinitely, so repairing successful online navigation to refresh the offline shell while preserving immutable versioned content and downloaded assets.
+WHY: Preserves usable original saved-question behavior and avoids old offline shell references after a new release. A new Mentor history test currently has an incorrect accessible-name matcher and unsupported test option; these are verification defects being corrected before final acceptance.
+NEXT: Verify shell update/fallback, bookmarks, Mentor Enter/history, complete the production build and responsive browser flow, then publish the evidence and requirement matrix. Whole Phase 5 and hosted Phase 8 remain open until their recorded gates pass.
+
+### [2026-10-22 00:40 UTC] Codex — Phase 4: fresh Mentor entry on every navigation
+STATUS: IN PROGRESS
+FILES: client-v3/src/app/routes.tsx; client-v3/src/features/mentor/MentorPage.test.tsx; docs/OWNPACE_REQUIREMENTS_AUDIT.md; PROGRESS_LOG.md
+WHAT: User clarified that each Mentor visit should start a fresh chat and old doubts should open only when explicitly selected from My doubts. Initial page mounts already do this; adding a location-keyed Mentor entry so clicking Ask Mentor while already on Mentor also opens a fresh chat.
+WHY: Keeps the requested AI Guru-inspired flow without automatically continuing the last conversation or copying another product's visual assets.
+NEXT: Verify repeated navigation resets the visible chat while saved history remains available, then include this behavior in the audit and screenshots.
+
+### [2026-10-22 00:50 UTC] Codex — Phase 3: scheduled mastery and canonical adaptive identity
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/progress/{learningModel.ts,learningModel.test.ts,learningRepository.ts}; client-v3/src/features/practice/PracticePage.tsx; client-v3/src/app/App.test.tsx; PROGRESS_LOG.md
+WHAT: Audit found persisted mastery nextCheckAt was always null and Mastery Check could offer Learned skills before the configured retention delay. Also correcting adaptive seen-question matching to use the canonical source ID after mixed-source Custom practice; the browser now verifies pause/refresh preserves the countdown and original diagrams render.
+WHY: PRD mastery scheduling must wait for delayed evidence, and mixed-source identity must remain consistent with later adaptive sessions. Increasing only the lazy onboarding test's wait budget after a loaded local machine exceeded its previous one-second assertion deadline.
+NEXT: Verify due-only mastery selection, canonical seen identity and the final full client suite; finish audit and browser evidence with all remaining acceptance gates stated explicitly.
+
+### [2026-10-22 00:56 UTC] Codex — Phase 5: recover failed route chunks
+STATUS: IN PROGRESS
+FILES: client-v3/src/main.tsx; client-v3/src/app/{AppErrorBoundary.tsx,AppErrorBoundary.test.tsx}; docs/OWNPACE_REQUIREMENTS_AUDIT.md; PROGRESS_LOG.md
+WHAT: Browser testing crossed a local production rebuild and reproduced a missing lazy route chunk, which previously left the entire page blank. Adding a root recovery screen with a reload action while retaining device-saved attempts and timers.
+WHY: Deployments can replace hashed route files while an older shell is open; PRD error states must provide an understandable recovery action and preserve saved work.
+NEXT: Verify the recovery screen and refreshed Attempt Review, then freeze source changes for the final build/test and requirement report.
+
+### [2026-10-22 10:17 UTC] Codex — Phase 5: verification and timestamp correction
+STATUS: IN PROGRESS
+FILES: PROGRESS_LOG.md; docs/OWNPACE_REQUIREMENTS_AUDIT.md; reports/requirements-audit/**
+WHAT: Corrects the displayed UTC timestamps of this continuation's entries labelled 00:26 through 00:56: those were written from a stale clock assumption during the current work sequence and are not reliable event times. Fresh clock now reads 2026-10-22 10:16:27 UTC; their implementation descriptions remain valid. Full client suite passed 109/109 before adding the route-error recovery test; Worker suite freshly passed 14/14 and typecheck.
+WHY: Keeps the append-only record truthful and distinguishes implemented changes, fresh checks, historical evidence and live acceptance.
+NEXT: Finish the final 110-test client run/build, capture updated browser evidence and append the audit/phase-status handoff. Current changes are local and have not been published to Firebase Hosting or the Worker.
+
+### [2026-10-22 18:42 UTC] Codex — Phase 5: requirements audit and repaired-flow acceptance
+STATUS: DONE
+FILES: docs/OWNPACE_REQUIREMENTS_AUDIT.md; reports/requirements-audit/**; client-v3/src/features/{attempts,practice,mentor,progress,home,studio}/**; client-v3/src/{app,domain,content}/**; client-v3/public/sw.js; client-v3/{vite.config.ts,vite.emulator.config.mjs}; api-worker/src/{index.ts,index.test.mjs}; PROGRESS_LOG.md
+WHAT: Completed the requirement/legacy comparison and the reported-flow repair increment. The report records all PRD section 13 and TRD section 23 acceptance items, phase-number differences, root causes/fixes, preserved original features and explicit open code/source/live gates. Fresh browser verification confirms new Mentor entry, retained history, four widths without composer overlap, restored detailed review/diagram/source answer, 5m38s study time, and the 32-minute mock countdown restoring at 31:44 after refresh.
+WHY: User asked for a repo-wide comparison plus fixes for timing, hierarchy, diagrams and Mentor. This DONE applies only to this audit/repair increment; whole Phase 5 and Phase 8 remain OPEN as documented, including runtime rollout controls, long history, unsaved canvas, source completeness, performance and real hosted acceptance.
+EVIDENCE: Full client 110/110 across 43 files; final focused mastery rerun 13/13; Worker 14/14 and typecheck; root 108/108; Auth/Firestore Emulator 17/17; UCEED and NID verifiers pass; final production build PASS (entry437.07kB, Firebase chunk562.03kB with existing warning); provider secret scan PASS excluding the exact known public Firebase Web config; git diff --check PASS. No real account deletion or credential disclosure. Browser evidence saved under reports/requirements-audit.
+NEXT: Publish this reviewed incremental repair to the existing Ownpace Worker/Hosting under the user's standing deployment authorization, then confirm health/static delivery. Do not claim live AI or complete Phase 5 acceptance without the remaining checks. Source control packaging remains uncommitted because the V3 tree includes extensive pre-existing untracked work.
+
+### [2026-10-22 18:47 UTC] Codex — Phase 8: publish and verify the reported-flow repairs
+STATUS: DONE
+FILES: api-worker/src/index.ts (deployed); client-v3/dist/** (deployed); docs/OWNPACE_REQUIREMENTS_AUDIT.md; reports/requirements-audit/{verification.json,hosted-delivery.json,mentor-live.png}; PROGRESS_LOG.md
+WHAT: Published the reviewed Worker with keep-vars and the production client to the existing Ownpace services under standing deployment authorization. Worker version0fc5b43c-278b-458a-8729-c273caccfc28 is live; Firebase Hosting finalized and released all3027files (50newuploads). Updated the audit to distinguish published repairs from remaining release acceptance.
+WHY: Makes the verified timer, hierarchy, image/review, saved-question and fresh Mentor/history fixes available at the user's actual site.
+EVIDENCE: Wrangler reports deployed triggers; public Worker health returns statusok/serverVersion3.0.0-dev.0. Firebase reports Deploy complete. HTTPS /mentor and its entry asset return200 and hosted index-B4XvYSnK.js matches the tested local build. Live in-app browser shows the new Ownpace Mentor fresh welcome, My doubts and composer; screenshot saved as mentor-live.png. No authenticated provider call, real SMS, account deletion or production-data migration was performed.
+NEXT: Full Phase5/8 remain OPEN per docs/OWNPACE_REQUIREMENTS_AUDIT.md. Next acceptance: signed-in concept Mentor request and Studio review to observe classified provider response, real mobile Google flow, authenticated disconnected attempt/reconnect, performance/accessibility and the explicit remaining code/source items. Do not re-request an API key merely because the provider needs acceptance; the secret is already configured.
+
+### [2026-10-22 19:14 UTC] Codex — Phase 4: Mentor layout concept previews
+STATUS: IN PROGRESS
+FILES: output/mentor-ui-concepts/**; PROGRESS_LOG.md
+WHAT: User reports excessive page/nested scrolling and unused space, and explicitly requests four or five new UI image concepts with no deployment. Preparing five original Ownpace concept screenshots around a viewport-filling conversation, compact composer and controlled history.
+WHY: Resolve the visible small transcript/tall input and overflowing history before choosing an implementation; use AI Guru only as a workflow reference, without copying its visuals.
+NEXT: Generate five preview images with built-in image generation, retain prompts and outputs, present the layouts for comparison. Do not deploy or modify application code during this concept selection increment.
+
+### [2026-10-22 19:20 UTC] Codex — Phase 4: five Mentor layout concepts ready
+STATUS: DONE
+FILES: output/mentor-ui-concepts/{01-focus-chat.png,02-history-drawer.png,03-study-workbench.png,04-top-tabs.png,05-light-reading.png,prompts.json}; PROGRESS_LOG.md
+WHAT: Generated and visually inspected five original Ownpace Mentor UI image concepts using the built-in image generator, with compact inputs and viewport-filling active conversations. Saved every preview and its exact prompt; displayed all five images inline. The drawer concept rendered with a light conversation surface; palette remains a selectable design detail rather than implemented behavior.
+WHY: User asked for four or five alternatives to the small transcript, excess negative space and nested scrollbars, explicitly forbidding deployment. These are design previews, with illustrative reply/diagram content, not claims of new implemented AI capabilities.
+EVIDENCE: Five PNG files exist in output/mentor-ui-concepts; each generated result was viewed inline for layout, typography and compact conversation/composer placement. No app source edits, tests, builds or deployments were performed in this concept increment.
+NEXT: User can select a concept or combination; implement the chosen Mentor layout locally with full available height, compact expanding composer and truncated history rows, retain fresh-chat/history behavior, and keep deployment prohibited unless the user later authorizes it.
+
+
+### [2026-10-22 19:26 UTC] Codex — Phase 8: diagnose Mentor timeout and prepare local fix
+STATUS: IN PROGRESS
+FILES: api-worker/src/{index.ts,index.test.mjs}; client-v3/src/features/mentor/{MentorPage.tsx,mentorModel.ts}; reports/requirements-audit/ai-timeout-diagnosis.json; PROGRESS_LOG.md
+WHAT: User reports another failed concept reply. Read-only live D1 records show AI_TIMEOUT at2026-10-22 19:19:49 and19:20:22UTC; source currently aborts each provider attempt after10seconds and client after30seconds. Preparing a45-second total provider budget, a longer client envelope, no retry after budget expiry, and persistent safe failure reasons in saved doubt history.
+WHY: A reachable Worker and configured key do not guarantee a completed model response. The current short timeout discards slow responses, while saved history loses the exact failure reason and shows only generic fallback text.
+NEXT: Verify the total retry budget and compile the changed client/Worker, then report the diagnosed cause and local-only fix. User explicitly prohibited deployment; do not publish these changes or change live service settings.
+
+### [2026-10-22 19:29 UTC] Codex — Phase 8: local timeout repair verified, deployment prohibited
+STATUS: DONE
+FILES: api-worker/src/{index.ts,index.test.mjs}; client-v3/src/features/mentor/{MentorPage.tsx,mentorModel.ts,MentorPage.test.tsx}; reports/requirements-audit/ai-timeout-diagnosis.json; PROGRESS_LOG.md
+WHAT: Raised the local provider envelope from10seconds per attempt to one45-second total budget shared by retries; no retry starts after budget expiry. Mentor client now allows65seconds, distinguishes a timed-out request from user Stop, and saves/displays a safe failure reason when a doubt is reopened. Live read-only records show the latest two failures are AI_TIMEOUT.
+WHY: Prevent avoidably cancelling slow replies and losing their actual failure reason in generic saved fallback text. The longer envelope improves tolerance; it does not establish a successful real provider call or a global provider outage.
+EVIDENCE: Worker16/16 PASS including a12-second valid response and a503→retry sharing45seconds; MentorPage3/3 PASS including saved timeout reason; Worker tsc--noEmit PASS; client tsc-b PASS. Only isolated fixtures were used. No real credentials read, no production data mutated, no service configuration changed, no deployment performed.
+NEXT: Keep this patch local under the user's explicit no-deploy instruction. UI concept selection is still pending. A live authenticated concept reply can only accept the timeout fix after a later user-authorized release; existing production still has the10-second cutoff. Whole Phase8 acceptance remains OPEN.
+### [2026-10-22 19:36 UTC] Codex — Phase 4: implement selected Focus chat and builder overflow repair
+STATUS: IN PROGRESS
+FILES: client-v3/src/app/AppShell.tsx; client-v3/src/features/mentor/{MentorPage.tsx,MentorReply.tsx}; client-v3/src/styles.css; reports/mentor-focus-chat/**; PROGRESS_LOG.md
+WHAT: User selected concept01 Focus chat and explicitly authorized deployment, superseding the earlier no-deploy restriction. Implementing a viewport-filling Mentor route with compact navigation rail, useful-width history, compact composer, readable replies and mobile history drawer. The additional Custom Builder screenshot shows intrinsic select widths overflowing grid tracks; correcting control sizing in the same release.
+WHY: The old fixed minimum workspace height, page padding/header, tall composer and nested details history forced page/nested scrolling and left too little transcript space. Preserve fresh entry, saved doubts, keyboard sending and the prepared45-second provider/65-second client timeout fix.
+NEXT: Build, inspect local desktop/tablet/mobile layouts and interactions, then deploy this reviewed UI and pending timeout patch to the existing Worker and Firebase Hosting. Keep actual authenticated provider acceptance separate from static/UI delivery.
+
+### [2026-10-22 19:46 UTC] Codex — Phase 4: selected Focus chat and builder sizing ready for release
+STATUS: DONE
+FILES: client-v3/src/app/AppShell.tsx; client-v3/src/features/mentor/{MentorPage.tsx,MentorReply.tsx}; client-v3/src/styles.css; reports/mentor-focus-chat/{responsive-measurements.json,mentor-local-*.png,builder-local-*.png}; PROGRESS_LOG.md
+WHAT: Implemented the selected dark Focus chat with compact app rail, independent history/transcript scrolling, a 58px expanding composer, mobile history drawer, readable safe Markdown and preserved fresh-chat/history/keyboard behavior. Builder labels and native selects now shrink within grid columns, fixing the screenshot's overlapping controls without removing long taxonomy choices.
+WHY: Replace the previous fixed minimum heights, oversized composer and page padding that compressed the conversation and introduced page/nested scrollbars. Preserve Domain-to-Topic-to-Subtopic filtering and visible complete approved taxonomy.
+EVIDENCE: Production build and TypeScript compile PASS (entry index-Cb0OUOh2.js; existing Firebase chunk size warning). Browser at 1440x900 has 682px transcript and 58px composer with page exactly viewport-sized; 1024x768, 768x900 and 390x844 show no page overflow. Enter sent and saved a greeting; Shift+Enter retained two input lines without sending; New doubt returned to fresh welcome; mobile history opened/closed. All-source domain selection enabled its topics and subtopics. At 1366, 1024, 768 and 390 widths every builder select remains inside its label/column. Evidence files retain exact measurements and screenshots. No new test suite was run for this layout increment; earlier timeout-focused verification remains recorded separately.
+NEXT: Publish the reviewed client and pending 45-second Worker timeout fix under the user's explicit deployment request, verify public static delivery/health and actual hosted layout. Real authenticated provider success and whole Phase 5/8 acceptance remain separate open gates.
+
+### [2026-10-22 19:50 UTC] Codex — Phase 8: selected Focus chat and timeout fix published
+STATUS: DONE
+FILES: api-worker/src/index.ts (deployed); client-v3/dist/** (deployed); reports/mentor-focus-chat/**; reports/requirements-audit/ai-timeout-diagnosis.json; docs/OWNPACE_REQUIREMENTS_AUDIT.md; PROGRESS_LOG.md
+WHAT: Published the selected Focus chat and Custom Builder column-sizing fix to existing Firebase Hosting, plus the prepared shared 45-second provider/65-second client timeout fix to the existing Worker. Updated the diagnosis record to preserve the original 10-second live cutoff at diagnosis and identify the now-published fix.
+WHY: User explicitly requested deployment of concept01 and then supplied the overflowing Builder screenshot. This completes that release increment; whole Phase 5/8 and authenticated real provider acceptance remain OPEN.
+EVIDENCE: Wrangler deployed Worker9c311e02-bf92-4318-883c-e077c3d25b68 with keep-vars. Firebase finalized/released3026files,45newuploads. Public health, /mentor HTML and entry asset return200; hosted index-Cb0OUOh2.js matches the successful production build. In-app browser visibly shows the selected live Mentor layout and Builder selects constrained to columns, with actual screenshots mentor-live.png and builder-live.png. Desktop/mobile/keyboard/history measurements are in the release evidence README. No real credentials, production account contents or authenticated AI conversation were accessed.
+NEXT: User can use the published page. Observe a signed-in concept reply to accept the longer provider budget; retain the documented Phase5/8 source, code, performance, long-history and release-packaging gates. Do not report a successful Gemini reply from the unauthenticated greeting/UI checks. No unrelated pre-existing untracked sources were staged or committed.
+
+### [2026-10-22 20:46 UTC] Codex — Phase 8: authenticated Mentor reply acceptance
+STATUS: IN PROGRESS
+FILES: reports/mentor-focus-chat/{ai-live-acceptance.json,signed-in-mentor-*.png}; PROGRESS_LOG.md
+WHAT: User explicitly requested signing in and checking actual AI replies. Initiated the existing Google sign-in UI; after authentication settled, the browser visibly shows the expected existing Utkarsh Shah account and UCEED context. Preparing a non-sensitive concept prompt and follow-up through the real hosted Mentor UI.
+WHY: Public health and deterministic greeting checks do not establish successful authenticated provider completion. This increment must confirm actual content, latency, conversation follow-up and saved-history behavior.
+NEXT: Send the concept doubt, observe classified success/failure within the deployed 45-second provider envelope, then check one follow-up and reopened saved doubt. If failure occurs, inspect safe error metadata and repair the demonstrated cause without exposing tokens or secret values.
+
+### [2026-10-22 20:48 UTC] Codex — Phase 8: repair demonstrated spatial explanation quality
+STATUS: IN PROGRESS
+FILES: api-worker/src/{index.ts,index.test.mjs}; reports/mentor-focus-chat/{ai-live-acceptance.json,signed-in-mentor-*.png}; PROGRESS_LOG.md
+WHAT: Both authenticated concept and follow-up returned real AI content with the visible AI connected state and no timeout, but the model falsely compared a rotated F to L and then to a sideways T. Correcting the tutor instruction to trace every segment, state axes/direction, check examples and reject unsupported letter analogies; separating trusted tutor instructions from question/context data using Gemini's documented systemInstruction field.
+WHY: Transport success alone is not proper tutoring. The deployed generic prompt did not enforce checking spatial examples, and the model improvised an incorrect analogy even when challenged. This is a model-content error; a prompt repair can improve the demonstrated case but cannot guarantee all future answers.
+EVIDENCE: First real reply observed within13.9seconds and follow-up within14.9seconds of initiating each UI interaction. The follow-up explicitly referred to its previous F/L example, proving current-thread context. Both failed the spatial accuracy check; no overall content-quality pass is recorded yet. Gemini API primary reference confirms the separate systemInstruction Content field: https://ai.google.dev/api/generate-content.
+NEXT: Verify prompt/data separation and existing schema/timeout protections with isolated Worker tests/typecheck, publish the targeted existing-Worker repair under standing release authorization, then repeat the real concept/follow-up and saved-history checks.
+
+### [2026-10-22 20:50 UTC] Codex — Phase 8: tutor instruction repair verified locally
+STATUS: DONE
+FILES: api-worker/src/{index.ts,index.test.mjs}; tmp/requirements-audit/mentor-quality-worker-tests.log; PROGRESS_LOG.md
+WHAT: Mentor now sends trusted tutor rules separately in systemInstruction, with question and sanitized recent conversation as JSON data. Added general spatial invariants, explicit direction/axis, checked worked examples, correction of earlier assistant errors and avoidance of invented letter equivalences; general explanations now avoid irrelevant personal evidence/actions.
+WHY: Addresses the actual inaccurate F-to-L/T explanations observed during the requested signed-in check. This is instruction/transport regression coverage, not a proof that all model content is correct.
+EVIDENCE: Worker17/17 PASS including a new request-separation/geometry-instruction regression; Worker TypeScript PASS. Existing structured output, safe error, grounding, quota, idempotency and shared timeout tests remain passing. All fixtures isolated; no real provider request in the unit run.
+NEXT: Deploy only this existing Worker change, repeat the original prompt and follow-up in the authenticated hosted UI, then verify refresh/history restoration. Keep all broader Phase5/8 gates open.
+
+### [2026-10-22 20:52 UTC] Codex — Phase 8: correct Gemini 3 reasoning configuration after retest
+STATUS: IN PROGRESS
+FILES: api-worker/src/{index.ts,index.test.mjs}; reports/mentor-focus-chat/ai-live-acceptance.json; PROGRESS_LOG.md
+WHAT: Published the instruction-only repair as Worker735964ea-4056-4fe6-9f02-1f7d6de6828e; fresh authenticated retest completed within10.3seconds but still confused facing direction with handedness and emitted inline headings. Source inspection shows an explicit temperature0.2 and no thinking setting; Google documents Flash-Lite's minimal default and recommends temperature1 for Gemini3 reasoning.
+WHY: The first prompt-only change is insufficient for content-quality acceptance. Configure supported Gemini3 Mentor calls for medium reasoning with the documented temperature, retain the2300-token/45-second caps, separate visible response from thought parts, clarify geometric terminology and request actual paragraph breaks in the schema. Keep other model families compatible.
+EVIDENCE: Actual retest preserved all strokes but falsely said left/right direction remains unchanged after180degree rotation. Official model/configuration references: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite.md and https://ai.google.dev/gemini-api/docs/generate-content/gemini-3. This remains a model-quality failure until the next real answer is checked.
+NEXT: Update the bounded generation configuration and regression assertions, run Worker tests/typecheck, deploy only the targeted existing Worker change, then repeat concept plus a precise coordinate follow-up and verify saved doubt persistence.
+
+### [2026-10-22 20:57 UTC] Codex — Phase 8: reasoning configuration published and real replies received
+STATUS: DONE
+FILES: api-worker/src/{index.ts,index.test.mjs}; reports/mentor-focus-chat/{ai-live-acceptance.json,signed-in-mentor-reply.png}; tmp/requirements-audit/mentor-{quality,reasoning}-worker-deploy.log; PROGRESS_LOG.md
+WHAT: Published bounded medium reasoning and temperature1 for supported Gemini3 Mentor calls as Workeraba9b7fa-cf1e-44cb-bd65-35bd2f8fe2e6, retaining existing model, quotas,2300output-token and45-second provider caps. Response parsing excludes thought parts; answer schema requests real paragraph breaks. Other configured model families keep their compatible request settings.
+WHY: The actual first instruction-only retest still produced a misleading statement. The verified generation settings address the model's minimal default and the prior low-temperature configuration; the checked real concept response now preserves all F strokes and correctly explains facing direction versus handedness.
+EVIDENCE: Worker17/17 and TypeScript PASS before deploy, including supported-model reasoning configuration, prompt/data separation, private-thought exclusion, safe schema and total timeout assertions. Signed-in fresh concept reply observed within17.1seconds; real follow-up correctly calculated clockwise(2,1)->(1,-2) and y-axis reflection->(-2,1). A further clarification returned the same correct coordinates in Hinglish with fixed axes. All show AI connected and no fallback/error. Some generated wording/length remains looser than requested; this is sample acceptance, not a universal accuracy guarantee. Browser locator wait returned early during pending responses; subsequent visible DOM confirmed successful completion, so no precise follow-up latency claim is made.
+NEXT: Finish the just-triggered page-refresh/fresh-welcome and explicit saved-doubt reopen checks, then write the final acceptance record/screenshot and update the audit's authenticated-Mentor gate. Other Phase5/8 gates remain open.
+
+### [2026-10-22 21:00 UTC] Codex — Phase 4: repair long-title transcript clipping found in signed-in acceptance
+STATUS: IN PROGRESS
+FILES: client-v3/src/styles.css; reports/mentor-focus-chat/{ai-live-acceptance.json,signed-in-mentor-*.png,long-title-layout.json}; PROGRESS_LOG.md
+WHAT: The real210-character concept title exposed a CSS grid minimum that guest greeting checks did not exercise: chat itself was952px wide, but its implicit auto column expanded header/transcript/composer to1579px, clipping the right controls behind the overflow-hidden workspace. Adding an explicit shrinkable single chat column and constraining the header/title flex item.
+WHY: A page-level scrollWidth check can miss clipped child tracks when an ancestor hides overflow. Full signed-in acceptance must keep the send button and answer inside the actual viewport for long real doubts, with history both open and closed.
+EVIDENCE: Live DOM at1280x720: workspace1200px but scrollWidth1827; chat952px, implicit grid column1578.98px; header/composer right edge1906.98/1886.98 beyond1280viewport. AI concept/math replies and six-message history restore succeeded, but this layout defect needs repair before the final screenshot/acceptance.
+NEXT: Build the CSS change, verify descendant rectangles with the same long title at desktop/tablet/mobile and both history states, publish Hosting only, then retain a refreshed live screenshot. No additional real AI request is needed for this layout check.
+
+### [2026-10-22 21:03 UTC] Codex — Phase 4: long-title clipping verified locally
+STATUS: DONE
+FILES: client-v3/src/styles.css; reports/mentor-focus-chat/{long-title-layout.json,long-title-mobile-local.png}; tmp/requirements-audit/mentor-long-title-build.log; PROGRESS_LOG.md
+WHAT: Chat now has an explicit minmax(0,1fr) column, a shrinkable header and a flexing title, so a long title truncates within the real available width rather than expanding all child tracks. The send button remains within the composer in both history states.
+WHY: Fixes a real defect exposed by the signed-in210-character doubt and protects the transcript/composer from the same implicit grid minimum. Body overflow checks alone had hidden the problem during earlier short greeting checks.
+EVIDENCE: Production TypeScript/build PASS, new entry index-Jwn69Y0_.js (existing Firebase chunk warning). An isolated1100-character greeting fixture exercised real DOM rendering without any provider call. Exact child rectangles passed at1440,1024,768,390 widths with history open and closed: header/transcript/composer right edges within their chat/viewport, scrollWidth equals clientWidth, send control fully on screen. All eight cases retained in long-title-layout.json.
+NEXT: Publish Hosting only, reopen the already-saved real six-message AI check (no additional quota use), verify live long-title rectangles and screenshot, and finish authenticated Mentor acceptance documentation. Other Phase5/8 gates stay open.
+
+### [2026-10-22 21:12 UTC] Codex — Phase 8: real signed-in Mentor check completed with published repairs
+STATUS: DONE
+FILES: api-worker/src/{index.ts,index.test.mjs} (deployed); client-v3/src/styles.css and dist/** (deployed); reports/mentor-focus-chat/{README.md,ai-live-acceptance.json,hosted-delivery.json,long-title-layout.json,signed-in-mentor-*.png}; reports/requirements-audit/ai-timeout-diagnosis.json; docs/OWNPACE_REQUIREMENTS_AUDIT.md; PROGRESS_LOG.md
+WHAT: Completed the user's actual signed-in AI check, corrected demonstrated tutor/configuration defects, and repaired the long-title clipping exposed by the real doubt. Current Workeraba9b7fa-cf1e-44cb-bd65-35bd2f8fe2e6 and client index-Jwn69Y0_.js are live. The expected existing Google account remains signed in, with the saved test conversation available.
+WHY: Accepts real provider completion plus independently checked core concept/math answers and same-browser history. The earlier ungrounded letter examples and instruction-only failure are explicitly preserved as failures; whole Phase5/8 and broader answer-quality/mobile/Studio/action/cross-device gates remain OPEN.
+EVIDENCE: Six real requests total; three on the final Worker completed with no fallback/error and checked F-stroke preservation, clockwise(2,1)->(1,-2), y-axis reflection->(-2,1), and a Hinglish clarification. Refresh starts fresh and explicit My doubts selection restores all six final-thread messages exactly after the final UI release. Worker17/17 and TypeScript; client production TypeScript/build; eight long-title width/history cases PASS. Final live504x524 measurements show no clipped header/transcript/composer/send, no request error or history warning. Actual final screenshot saved. Public HTML/entry/health200 and current live script confirm publication. Firebase CLI reported release complete then exited2 unexpectedly; independent live delivery, rather than CLI exit alone, establishes that the release is published. No credentials/tokens read, no account deleted, no quota cap changed, and no extra real request used for final layout verification.
+NEXT: User can inspect the latest saved test doubt and use the live Mentor. Remaining gates: broader factual/format adherence evaluation, generated-action execution, Studio AI, real mobile/linking, cross-device/offline acceptance and the source/code/performance/release-packaging items already tracked. Do not treat this DONE increment as full Phase5/8 closure or claim universal AI accuracy. No unrelated pre-existing untracked work was staged/committed.
+
+### [2026-10-22 21:18 UTC] Codex — Phase 5/8: signed-in product feature acceptance
+STATUS: IN PROGRESS
+FILES: reports/signed-in-feature-acceptance/**; tmp/signed-in-feature-acceptance/**; docs/OWNPACE_REQUIREMENTS_AUDIT.md; PROGRESS_LOG.md
+WHAT: User explicitly requested actual signed-in Custom Builder testing and all other product features. Starting with hierarchical source/domain/topic/subtopic filtering, a short real timed attempt, save/resume/grade/review, then adaptive modes, Exams, Progress, Home/Focus, Planner/Routine/Weekly Review, Studio and Settings/role boundaries. Running isolated regression suites alongside real browser journeys.
+WHY: Existing unit/guest/UI checks and the now-accepted Mentor samples do not establish complete authenticated product integration. Record actual state changes and screenshots rather than treating route render or HTTP health as a feature pass.
+NEXT: Complete Custom Builder first, log each working increment and defect, repair demonstrated issues with ownership checks, then continue through the feature matrix. Clearly label new authored QA tasks/drawings. Avoid deleting/resetting existing account data, provider linking/credential changes, actual OTP or faculty communications; verify protected/deferred paths using isolated fixtures where necessary. Do not mark every feature or Phase5/8 accepted from partial coverage.
+
+### [2026-10-22 21:24 UTC] Codex — Phase 5: repair Mentor regression assertions after Focus chat previews
+STATUS: IN PROGRESS
+FILES: client-v3/src/features/mentor/MentorPage.test.tsx; reports/signed-in-feature-acceptance/**; tmp/signed-in-feature-acceptance/**; PROGRESS_LOG.md
+WHAT: Fresh full-client run has109passes and2failures in MentorPage tests. Both are ambiguous screen-wide greeting queries because the new history preview and active transcript intentionally contain the same reply. Scoping transcript assertions to the named conversation log, retaining independent saved-history checks, rather than suppressing the duplicate preview.
+WHY: The tests must prove actual Enter reply/fresh transcript behavior, not accidentally match a history preview. Legacy108/108 and Worker17/17 with TypeScript freshly pass; the full111-test client run must be rerun after this verification repair.
+EVIDENCE: Actual signed-in Builder validates source/domain/topic/subtopic counts, skip-seen160vs162, positive MSQ20, empty-topic Start-disabled and parent resets; custom time clamps1..360. A real five-question/two-minute session is in progress; pause at01:44 survived refresh exactly. Original UCEED2016/2020 and worksheet images decode at582/1012/745px; MCQ/NAT/MSQ answers, confidence, answer change, review mark and bookmark were entered through UI. Waiting for real countdown auto-submit before grading acceptance.
+NEXT: Run focused/full client regressions, inspect timed submission and review filters/progress effects, then continue all requested signed-in feature journeys. This unit-only change does not require a Hosting deployment.
+
+### [2026-10-26 09:40 UTC] Codex — Phase 8: repeated Mentor failure diagnosis
+STATUS: IN PROGRESS
+FILES: api-worker/src/{index.ts,index.test.mjs}; reports/mentor-reliability/**; tmp/mentor-reliability/**; PROGRESS_LOG.md
+WHAT: User reports repeated unavailable replies. A fresh authenticated concept request reproduces AI_REQUEST_INVALID (provider HTTP400), while historical failures lack a recorded reason. Adding allowlisted provider diagnostics and distinguishing invalid/revoked credentials from rejected generation settings, without logging provider bodies, prompts, tokens or keys. Also repairing failed requests consuming the daily user allowance.
+WHY: The previous successful samples do not establish current reliability. Diagnose the observed rejection before changing models or retrying repeatedly; retain current quotas and authentication protections.
+EVIDENCE: Signed-in hosted UI shows The AI request configuration needs attention from the app administrator for a fresh proximity/similarity doubt on 26 October. Current code maps every400 to configuration error and increments quota before provider completion without releasing it on failure.
+NEXT: Verify the diagnostic and quota changes with isolated Worker tests/typecheck, publish under standing release authorization, replay one real request and inspect only sanitized diagnostic codes. Existing broad feature acceptance remains open; source-answer issue CONTENT-NAT-001 identified during the previous run is still pending and has not been silently fixed.
+
+### [2026-10-26 09:52 UTC] Codex — Phase 8: Mentor provider rejection recovery published
+STATUS: DONE
+FILES: api-worker/src/{index.ts,index.test.mjs}; reports/mentor-reliability/{README.md,live-acceptance.json,live-stable-reply.png}; tmp/mentor-reliability/{worker-tests.log,typecheck.log,worker-deploy-ipv4.log,safe-tail.cjs}; PROGRESS_LOG.md
+WHAT: Added privacy-safe provider-failure classification and released application quota reservations after definitive provider rejections. Published Worker c6951642-a876-4940-9976-401631b36513, then verified the exact previously rejected doubt and two fresh independent doubts through the signed-in hosted Mentor UI. All three returned real answers with AI connected.
+WHY: The prior Worker reduced every provider HTTP400 to the same generic configuration failure and kept the failed request counted against the daily Mentor cap. This made repeated retries both opaque and capable of exhausting the user's application allowance without a delivered AI answer.
+EVIDENCE: Worker18/18 PASS and TypeScript PASS. The invalid-credential regression proves two provider rejections can both reach the provider under a one-call app cap, the counter returns to zero, the public code is AI_PROVIDER_AUTH, and only an allowlisted diagnostic object is logged with no key/token, prompt, uid or provider body. Wrangler deployment completed at the existing ownpace-api route. Three consecutive authenticated hosted replies succeeded after deployment; a bounded sanitized tail recorded no provider-failure event during those checks. Final visible screenshot and structured acceptance record are retained in reports/mentor-reliability.
+NEXT: Resume the separate signed-in whole-product acceptance matrix and repair CONTENT-NAT-001 under its own evidence trail. Do not treat three successful samples as universal provider uptime or this increment as full Phase5/8 completion. No unrelated pre-existing untracked work was staged or committed.
+
+### [2026-10-26 13:14 UTC] Antigravity — Phase 6: Import Spatial and Visual Test 02
+STATUS: DONE
+FILES: fixtures/spatial-visual-test-02.json, public/media/spatial-visual-test-02/*, scripts/import-spatial-visual-02.js, test/spatial-visual-test-02.test.js, PROGRESS_LOG.md
+WHAT: Imported UCEED Spatial & Visual Test 01 test bank archive as Spatial and Visual Test 02 (id: spatial-visual-test-02). Extracted all 40 diagram images to public/media/spatial-visual-test-02/, converted questions to valid CBT schema (32 MCQ, 6 NAT, 2 MSQ, 128 marks), and imported into SQLite database.
+WHY: User requested importing J:\downloads\UCEED_Spatial_Visual_Test_01_Closest_Answers_JSON_and_Images.zip with name spatial and visual test 02.
+EVIDENCE: Automated test suite test/spatial-visual-test-02.test.js passed 1/1 (validation, all 40 diagram media accesses, and 128/128 score). Script scripts/import-spatial-visual-02.js executed with 11 student assignments.
+NEXT: Available in the exam library and practice builder under Spatial and Visual Test 02.
